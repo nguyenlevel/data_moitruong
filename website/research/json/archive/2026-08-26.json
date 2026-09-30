@@ -1,0 +1,1064 @@
+{
+  "meta": {
+    "date": "2026-08-26",
+    "papers_tracked": 15,
+    "technologies_discovered": 39,
+    "opportunities_identified": 0,
+    "last_update": "2026-08-26 05:57 UTC",
+    "backend": "llm7",
+    "model": "Research Curator v1"
+  },
+  "brief": [
+    "Agentic Tool Orchestration: Research is shifting from simple tool calling to joint optimization of tool creation and execution. Product builders should prioritize frameworks that allow LLMs to dynamically generate and refine their own utility libraries, moving beyond static API integrations to self-evolving agentic workflows.",
+    "Resource-Aware Embodied Reasoning: New RL-based hierarchical frameworks enable robots to decide when to 'think' versus when to act. This is a critical product opportunity for edge-deployed robotics, where minimizing latency and compute costs is essential for real-time decision-making in enterprise environments.",
+    "Multimodal Inference Optimization: Breakthroughs in visual KV cache pruning (e.g., VisCache) are making high-resolution vision-language models viable for real-time edge applications. This enables a new class of enterprise products that can process complex visual inputs (CAD, engineering drawings) without prohibitive cloud-compute costs.",
+    "Simulation-Driven Scientific Discovery: LLM agents are moving from passive knowledge retrieval to active experimentation via simulation models. This creates a massive opportunity for 'Digital Twin' platforms where agents autonomously run controlled experiments to optimize industrial processes or healthcare protocols.",
+    "Cross-Modal Reasoning for Specialized Domains: The integration of structure-aware evidence generation and 3D/2D multimodal analysis is maturing. This allows for the development of high-fidelity enterprise tools that can interpret complex technical documentation and physical schematics with higher accuracy and reduced hallucination."
+  ],
+  "top_cards": [
+    {
+      "id": "new_technologies",
+      "title": "New Technologies",
+      "value": "39",
+      "label": "discovered this scan",
+      "detail": "Agentic Tool Planning, Multimodal Learning, Retrieval Augmented Generation, Knowledge Distillation, Mixture of Experts, Low-Rank Adaptation, Reinforcement Learning from Human Feedback, Reinforcement Learning",
+      "color": "accent"
+    },
+    {
+      "id": "emerging_trends",
+      "title": "Emerging Trends",
+      "value": "39",
+      "label": "active trend clusters",
+      "detail": "Multimodal Learning, Retrieval Augmented Generation, Mixture of Experts, Reinforcement Learning from Human Feedback, Reinforcement Learning",
+      "color": "green"
+    },
+    {
+      "id": "highest_potential",
+      "title": "Highest Potential",
+      "value": "8.3",
+      "label": "avg opportunity score",
+      "detail": "ATP-Bench: Towards Agentic Tool Planning for MLLM Interleaved Generation",
+      "color": "amber"
+    },
+    {
+      "id": "biggest_surprise",
+      "title": "Biggest Surprise",
+      "value": "ATP-Bench: Towards Agentic Too",
+      "label": "confidence 80%",
+      "detail": "",
+      "color": "purple"
+    },
+    {
+      "id": "most_practical",
+      "title": "Most Practical",
+      "value": "MAVEN-T: Reinforced Heterogene",
+      "label": "highest confidence paper",
+      "detail": "Real-time autonomous driving systems with improved trajectory prediction, Enhanced safety features in autonomous vehicles through collision avoidance and comfort optimization",
+      "color": "success"
+    },
+    {
+      "id": "most_innovative",
+      "title": "Most Innovative",
+      "value": "7",
+      "label": "early-stage technologies",
+      "detail": "LLM Agents Perform Controlled Experiments Using Simulation Models",
+      "color": "blue"
+    }
+  ],
+  "papers": [
+    {
+      "id": "2603.29902",
+      "title": "ATP-Bench: Towards Agentic Tool Planning for MLLM Interleaved Generation",
+      "authors": [],
+      "categories": [
+        "cs.AI"
+      ],
+      "published": "2026-08-25",
+      "updated": "2026-08-25",
+      "summary": "arXiv:2603.29902v2 Announce Type: replace Abstract: Interleaved text-and-image generation represents a significant frontier for Multimodal Large Language Models (MLLMs), offering a more intuitive way to convey complex information. Current paradigms rely on either image generation or retrieval augmentation, yet they typically treat the two as mutually exclusive paths, failing to unify factuality with creativity. We argue that the next milestone in this field is Agentic Tool Planning, where the model serves as a central controller that autonomously determines when, where, and which tools to invoke to produce interleaved responses for visual-critical queries. To systematically evaluate this paradigm, we introduce ATP-Bench, a novel benchmark comprising 7,702 QA pairs (including 1,592 VQA pairs) across eight categories and 25 visual-critical intents, featuring human-verified queries and ground truths. Furthermore, to evaluate agentic planning independent of end-to-end execution and changing tool backends, we propose a Multi-Agent MLLM-as-a-Judge (MAM) system. MAM evaluates tool-call precision, identifies missed opportunities for tool use, and assesses overall response quality without requiring ground-truth references. Our extensive experiments on 10 state-of-the-art MLLMs reveal that models struggle with coherent interleaved planning and exhibit significant variations in tool-use behavior, highlighting substantial room for improvement and providing actionable guidance for advancing interleaved generation. Dataset and code are available at https://github.com/Qwen-Applications/ATP-Bench.",
+      "pdf_url": "https://arxiv.org/abs/2603.29902",
+      "comment": "",
+      "technologies": [
+        "Agentic Tool Planning",
+        "Multimodal Learning",
+        "Retrieval Augmented Generation"
+      ],
+      "maturity": "early",
+      "confidence": 0.8,
+      "curator_score": 6.0,
+      "product_potential": [
+        "Developing an AI assistant that can autonomously determine when and how to use various tools (e.g., image generation, retrieval, etc.) to provide interleaved text-and-image responses for complex queries.",
+        "Creating a benchmarking tool for evaluating the performance of MLLMs in agentic tool planning and interleaved generation tasks."
+      ],
+      "domain_applications": [
+        "education",
+        "creative",
+        "enterprise",
+        "other"
+      ]
+    },
+    {
+      "id": "2604.10169",
+      "title": "MAVEN-T: Reinforced Heterogeneous Distillation for Real-Time Multi-Agent Trajectory Prediction",
+      "authors": [],
+      "categories": [
+        "cs.AI"
+      ],
+      "published": "2026-08-25",
+      "updated": "2026-08-25",
+      "summary": "arXiv:2604.10169v4 Announce Type: replace Abstract: Trajectory prediction is a key component of autonomous driving systems because future motions directly affect collision checking, behavior planning, and control. The task remains challenging under dense interactions, heterogeneous behaviors, multimodal futures, and limited on-board computation. Existing graph, attention, and generative predictors improve interaction reasoning or uncertainty modeling, but their high-capacity designs are often costly for real-time deployment. Lightweight predictors and conventional distillation reduce inference cost, yet usually rely on static imitation and do not explicitly correct safety-relevant teacher bias. This paper proposes \\textbf{MAVEN-T}, a reinforced heterogeneous distillation framework for real-time multi-agent trajectory prediction. A high-capacity teacher models directed local interactions with a surround-aware graph encoder, combines efficient temporal filtering with shifted-window spatial attention, and decodes maneuver-specific futures through a sparse Mixture-of-Experts head. A compact GRU--Squeeze-and-Excitation student with a Low-Rank Adapted policy head is trained by feature-, attention-, and semantic-level distillation. To align prediction with downstream behavior, the student is further refined by Proximal Policy Optimization rewards for collision avoidance, comfort, and progress, while a complexity-aware curriculum and Elastic Weight Consolidation stabilize stage-wise training. Experiments on NGSIM, HighD, MoCAD, Argoverse~2, and the Waymo Open Motion Dataset evaluate accuracy, efficiency, generalization, robustness, and closed-loop safety. The student achieves 6.2$\\times$ parameter compression, 3.7$\\times$ inference acceleration, and 14.6,ms latency on an NVIDIA Jetson AGX Orin while maintaining competitive accuracy.",
+      "pdf_url": "https://arxiv.org/abs/2604.10169",
+      "comment": "",
+      "technologies": [
+        "Knowledge Distillation",
+        "Mixture of Experts",
+        "Low-Rank Adaptation",
+        "Reinforcement Learning from Human Feedback"
+      ],
+      "maturity": "medium",
+      "confidence": 0.85,
+      "curator_score": 6.0,
+      "product_potential": [
+        "Real-time autonomous driving systems with improved trajectory prediction",
+        "Enhanced safety features in autonomous vehicles through collision avoidance and comfort optimization"
+      ],
+      "domain_applications": [
+        "robotics",
+        "automotive"
+      ]
+    },
+    {
+      "id": "2606.08405",
+      "title": "Self-Evolving Scientific Agent Discovers Generalizable Physically-Reasoned Fluid Control",
+      "authors": [],
+      "categories": [
+        "cs.AI"
+      ],
+      "published": "2026-08-25",
+      "updated": "2026-08-25",
+      "summary": "arXiv:2606.08405v2 Announce Type: replace Abstract: While data-intensive deep reinforcement learning can optimize complex control policies, scientific control design in physical systems fundamentally requires an interpretable chain of reasoning that connects physical evidence to structured control architectures. Here, we present a self-evolving scientific agent workflow, driven by large language models and iterative code generation, that automates controller construction while preserving strict interpretability and rigorous physical reasoning. Instead of adjusting weights, the agent deploys candidate whitebox controllers into physical simulations, actively diagnoses dynamic behaviors from multimodal evidence, and translates these observations into progressive source-code refinements. We demonstrate this framework on a highly non-linear fluid-structure interaction problem: an underactuated, two-joint dogfish swimmer tasked with spatial target reaching in an unsteady flow using only joint angular accelerations. Starting from a target-blind propulsive seed, the agent autonomously designs and refines a unified controller that reaches a target embedded in an unsteady four-cylinder wake. Without retraining, retuning or case-specific branching, the retained controller achieves target capture across the full generalization test matrix, spanning variations in target position, rear-row geometry, cylinder count and inflow speed. The auditable evolution log reveals an emergent control architecture built upon travelling-wave propulsion, body-frame bearing guidance, phase-selective steering, corrective burst and adaptive relief. Our results show that an autonomous scientific agent can successfully transform accumulated physical evidence into a robust, mathematically readable control policy, while maintaining a fully traceable process of scientific control design.",
+      "pdf_url": "https://arxiv.org/abs/2606.08405",
+      "comment": "",
+      "technologies": [
+        "Reinforcement Learning",
+        "Large Language Models",
+        "Code Generation",
+        "Multimodal Learning"
+      ],
+      "maturity": "early",
+      "confidence": 0.7,
+      "curator_score": 6.0,
+      "product_potential": [
+        "Automated design of fluid control systems for underwater vehicles",
+        "Interpretable AI-driven control policies for industrial fluid dynamics"
+      ],
+      "domain_applications": [
+        "science",
+        "robotics"
+      ]
+    },
+    {
+      "id": "2603.16673",
+      "title": "When Should a Robot Think? Resource-Aware Reasoning via Reinforcement Learning for Embodied Robotic Decision-Making",
+      "authors": [],
+      "categories": [
+        "cs.AI"
+      ],
+      "published": "2026-08-25",
+      "updated": "2026-08-25",
+      "summary": "arXiv:2603.16673v5 Announce Type: replace-cross Abstract: Embodied robotic systems increasingly rely on large language model (LLM)-based agents to support high-level reasoning, planning, and decision-making during interactions with the environment. However, invoking LLM reasoning introduces substantial computational latency and resource overhead, which can interrupt action execution and reduce system reliability. Excessive reasoning may delay actions, while insufficient reasoning often leads to incorrect decisions and task failures. This raises a fundamental question for embodied agents: when should the agent reason, and when should it act? In this work, we propose RARRL (Resource-Aware Reasoning via Reinforcement Learning), a hierarchical framework for resource-aware orchestration of embodied agents. Rather than learning low-level control policies, RARRL learns a high-level orchestration policy that operates at the agent's decision-making layer. This policy enables the agent to adaptively determine whether to invoke reasoning, which reasoning role to employ, and how much computational budget to allocate based on current observations, execution history, and remaining resources. Extensive experiments, including evaluations with empirical latency profiles derived from the ALFRED benchmark, show that RARRL consistently improves task success rates while reducing execution latency and enhancing robustness compared with fixed or heuristic reasoning strategies. These results demonstrate that adaptive reasoning control is essential for building reliable and efficient embodied robotic agents.",
+      "pdf_url": "https://arxiv.org/abs/2603.16673",
+      "comment": "",
+      "technologies": [
+        "Reinforcement Learning",
+        "Hierarchical Framework"
+      ],
+      "maturity": "medium",
+      "confidence": 0.8,
+      "curator_score": 6.0,
+      "product_potential": [
+        "Adaptive robotic assistants for dynamic environments",
+        "Efficient task automation systems with real-time decision-making",
+        "Resource-optimized AI-driven robotic systems"
+      ],
+      "domain_applications": [
+        "robotics",
+        "enterprise"
+      ]
+    },
+    {
+      "id": "2608.23622",
+      "title": "LLM Agents Perform Controlled Experiments Using Simulation Models",
+      "authors": [],
+      "categories": [
+        "cs.AI"
+      ],
+      "published": "2026-08-26",
+      "updated": "2026-08-26",
+      "summary": "arXiv:2608.23622v1 Announce Type: new Abstract: Large language models (LLMs) have shown strong capabilities in reasoning, planning, and tool use, but many scientific and engineering tasks require more than plausible text and code generation. They require understanding how a system responds to intervention, which in practice depends on controlled experimentation. In this work, we propose a multi-agent framework that enables LLM agents to conduct controlled experiments with scientific simulation models for pharmaceutical process design. Given a user query and a baseline configuration, the system constructs a structured task representation, designs experiments, executes comparative simulation, interprets the resulting outcomes, and synthesizes evidence-based recommendations for process parameter optimization. By coupling language models with high-fidelity simulation models in an interactive agent framework, the proposed system supports reasoning through intervention, comparison, and observation. As a result, it produces more specific and actionable outputs than language-only reasoning. In an industrial application setting, this advantage is reflected in higher output specificity as well as improved user-rated correctness and helpfulness. Ablation studies and visualized case analyses further demonstrate the effectiveness and practical utility of simulation-integrated experimental reasoning.",
+      "pdf_url": "https://arxiv.org/abs/2608.23622",
+      "comment": "",
+      "technologies": [
+        "Multi-agent Systems",
+        "Agentic Workflow",
+        "Simulation-based Inference",
+        "Chain-of-Thought Prompting",
+        "Tool Use"
+      ],
+      "maturity": "medium",
+      "confidence": 0.85,
+      "curator_score": 6.0,
+      "product_potential": [
+        "Automated R&D optimization platform for chemical and pharmaceutical process engineering",
+        "Simulation-integrated decision support system for industrial manufacturing parameter tuning",
+        "Autonomous scientific discovery engine for material science and synthetic biology"
+      ],
+      "domain_applications": [
+        "science",
+        "enterprise",
+        "healthcare"
+      ]
+    },
+    {
+      "id": "2608.24063",
+      "title": "VisCache: Visual KV Cache Pruning for Efficient Vision Large Language Model Inference",
+      "authors": [],
+      "categories": [
+        "cs.AI"
+      ],
+      "published": "2026-08-26",
+      "updated": "2026-08-26",
+      "summary": "arXiv:2608.24063v1 Announce Type: cross Abstract: While Vision Large Language Models (VLLMs) have achieved remarkable success in multimodal reasoning, their long-context inference remains prohibitively expensive due to the massive computation and memory overhead of visual Key-Value (KV) caches. Existing KV compression methods often apply uniform pruning across visual tokens and layers, leading to substantial information loss and degraded performance.To address this challenge, we propose \\textbf{VisCache}, a plug-and-play framework for coarse-to-fine \\textbf{Vis}ual KV \\textbf{Cache} pruning without training, which consists of two synergistic stages. First, a lightweight VLM filters temporal redundancy by selectively forwarding semantically informative keyframes. Second, we introduce {PruneKV}, a surgical KV compression algorithm tailored to the attention dynamics of VLLMs. Unlike rigid pruning strategies, PruneKV adopts a parabolic layer-wise budget allocation together with an asymmetric update mechanism that selectively prunes keys while fusing values, thereby preserving critical contextual information. Extensive experiments demonstrate that VisCache substantially improves inference efficiency, achieving up to {2.35$\\times$ speedup} and significant memory reduction while maintaining competitive performance with only {19--28\\%} KV cache retention. VisCache consistently outperforms existing baselines, establishing a new Pareto frontier between efficiency and performance for long-context VLLM inference. Code is available at https://github.com/Wlklk/VisCache",
+      "pdf_url": "https://arxiv.org/abs/2608.24063",
+      "comment": "",
+      "technologies": [
+        "KV Cache Optimization",
+        "Multimodal Learning",
+        "Vision Transformer",
+        "Sparse Attention"
+      ],
+      "maturity": "medium",
+      "confidence": 0.85,
+      "curator_score": 6.0,
+      "product_potential": [
+        "Real-time edge-based video analysis for security and surveillance",
+        "Low-latency multimodal assistant for long-form document and video processing",
+        "On-device VLLM deployment for mobile augmented reality applications"
+      ],
+      "domain_applications": [
+        "enterprise",
+        "robotics",
+        "accessibility"
+      ]
+    },
+    {
+      "id": "2608.21796",
+      "title": "SAFE-G: Structure-aware Faithful Evidence-guided Generation for Knowledge-based Visual Question Answering",
+      "authors": [],
+      "categories": [
+        "cs.AI"
+      ],
+      "published": "2026-08-25",
+      "updated": "2026-08-25",
+      "summary": "arXiv:2608.21796v1 Announce Type: cross Abstract: Knowledge-based Visual Question Answering (KB-VQA) aims to answer queries that necessitate reasoning over external knowledge sources beyond the visual content. Typically, current methods fuse multimodal features to retrieve external information, subsequently leveraging Multimodal Large Language Models (MLLMs) to derive answers from the retrieved evidence. However, these methods often struggle to capture structural associations within complex contexts to effectively filter noise. Furthermore, they frequently fail to ensure that the reasoning process remains strictly faithful to the retrieved evidence. To address these challenges, we propose SAFE-G, a Structure-Aware Faithful Evidence-guided Generation framework, which enables precise evidence localization and trustworthy reasoning. Specifically, we first employ a coarse-grained hybrid search fusing visual and textual modalities to recall candidate documents, and subsequently implement a structure-aware fine-grained graph retrieval that captures structural dependencies to filter noise and pinpoint precise evidence. Moreover, we introduce a reinforcement learning (RL) strategy with an evidence-grounded reward that assigns credit to correct answers only when the selected evidence is correct. This strict alignment constraint compels the model to anchor its response in the retrieved context, effectively enhancing its capability to locate evidence via multimodal features and perform faithful reasoning. Extensive experiments on the Encyclopedic-VQA and InfoSeek benchmarks demonstrate that SAFE-G outperforms prior methods by a margin of 8.9% and 3.5%, substantially enhancing the overall reasoning accuracy. Our source code is publicly available at: https://github.com/MINE-USTC/SAFE-G.",
+      "pdf_url": "https://arxiv.org/abs/2608.21796",
+      "comment": "",
+      "technologies": [
+        "Multimodal Learning",
+        "Retrieval Augmented Generation",
+        "Reinforcement Learning from Human Feedback"
+      ],
+      "maturity": "medium",
+      "confidence": 0.8,
+      "curator_score": 5.7,
+      "product_potential": [
+        "A multimodal AI assistant for educational platforms that can answer complex questions by integrating visual and textual information with external knowledge sources.",
+        "A healthcare AI system that can provide accurate medical information by leveraging visual data and external medical knowledge sources."
+      ],
+      "domain_applications": [
+        "education",
+        "healthcare"
+      ]
+    },
+    {
+      "id": "2608.24571",
+      "title": "Joint Optimization of Tool Creation and Use for Large Language Model Agents",
+      "authors": [
+        "Zhi Rui Tam",
+        "Chieh-Yen Lin",
+        "Yun-Nung Chen",
+        "Shao-Hua Sun",
+        "Hung-yi Lee"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.SE"
+      ],
+      "published": "2026-08-25",
+      "updated": "2026-08-25",
+      "summary": "Tool-augmented language models are bounded by the APIs humans bothered to write; existing tool-creation systems patch this by prompting a frozen LLM at inference time, leaving the model that writes a tool decoupled from the one that uses it, with no signal that the schemas it produces are schemas it can invoke. We propose SMITH (Schema-grounded Multi-task Iterative Tool Honing), a reinforcement learning framework that jointly trains tool creation and tool use inside a single policy. Each rollout is either a build task (write a tool from a few examples) or a use task (invoke a pooled tool on a held-out question). Three separate reward axes catch schema, code, and outcome failures independently, so each failure mode contributes its own gradient. A 4B Qwen3 trained with SMITH on 13 procedural reasoning tasks with exact verifiers reaches 79.8 macro-average accuracy on held-out tasks, the best across all evaluated methods and ahead of an untrained 30B-A3B tool-writer. It also reaches 40.4 on TabMWP-Hard and 42.6 on out-of-domain GQA (+7.6 over the best same-backbone inference-time baseline), without any visual or tabular training data. Tools written by our 4B models also lifted the performance of LFM-2.5-350M and Qwen3-30B-A3B under same reasoning tasks.",
+      "pdf_url": "https://arxiv.org/pdf/2608.24571v1",
+      "comment": "",
+      "technologies": [
+        "Reinforcement Learning",
+        "Multi-task Learning",
+        "Policy Gradient Methods",
+        "Tool-Augmented Language Models",
+        "Procedural Reasoning"
+      ],
+      "maturity": "early",
+      "confidence": 0.85,
+      "curator_score": 5.7,
+      "product_potential": [
+        "Autonomous software engineering agents that dynamically generate and refine internal utility libraries to solve novel enterprise workflows.",
+        "Self-optimizing data analysis platforms that create custom data-processing functions on-the-fly based on unique user query patterns.",
+        "Adaptive API integration layers for LLMs that automatically bridge gaps between proprietary internal systems without manual schema definition."
+      ],
+      "domain_applications": [
+        "enterprise",
+        "science",
+        "finance"
+      ]
+    },
+    {
+      "id": "2608.24039",
+      "title": "Design-to-Plan: A Large Language Model-Based Multi-Agent Framework for Manufacturing Process Planning from 3D CAD Models and 2D Engineering Drawings",
+      "authors": [],
+      "categories": [
+        "cs.AI"
+      ],
+      "published": "2026-08-26",
+      "updated": "2026-08-26",
+      "summary": "arXiv:2608.24039v1 Announce Type: cross Abstract: Manufacturing process planning transforms heterogeneous design information into coherent manufacturing decisions. However, existing approaches focus on isolated subtasks, such as feature recognition, drawing interpretation, or tool selection, and struggle to support the full reasoning chain from design artifacts to process plans. This is critical when planning must interpret 3D CAD models, 2D engineering drawings, materials, and domain-specific rules. To address this gap, this paper presents Design-to-Plan, a large language model (LLM)-based multi-agent framework for end-to-end manufacturing process planning. An orchestrator coordinates specialized agents for 3D feature recognition, 2D drawing analysis, 2D-3D context fusion, knowledge retrieval, process sequencing, tool selection, and report generation. Rather than using LLMs as standalone text generators, the framework deploys them as reasoning agents that interact with deterministic modules and knowledge sources to produce consistent and traceable decisions. In this hybrid design, deterministic modules and specialized agents extract structured information from CAD and drawing inputs, while LLM agents perform context-aware reasoning, retrieve manufacturing rules, resolve conflicts, and generate planning outputs. The framework is evaluated using 300 benchmark cases across three downstream ReAct-enabled agents, plus separate evaluations of CAD feature recognition, drawing analysis, and 2D-3D context fusion. The parallel architecture achieves 100% success across downstream agents, Tool F1 scores of 95.9%-97.6%, 90% source detection accuracy in conflict analysis, and a 60%-68% reduction in token usage for key planning tasks. Results show that structured LLM-based multi-agent coordination can bridge design representations and manufacturing knowledge, enabling scalable, efficient, and traceable design-to-plan automation.",
+      "pdf_url": "https://arxiv.org/abs/2608.24039",
+      "comment": "",
+      "technologies": [
+        "Multimodal Learning",
+        "Chain-of-Thought Prompting",
+        "Retrieval Augmented Generation",
+        "Object Detection",
+        "Depth Estimation"
+      ],
+      "maturity": "medium",
+      "confidence": 0.85,
+      "curator_score": 5.7,
+      "product_potential": [
+        "Automated CNC programming and toolpath generation software",
+        "Intelligent manufacturing ERP integration for real-time cost estimation and supply chain planning",
+        "Automated design-for-manufacturing (DFM) feedback systems for mechanical engineers"
+      ],
+      "domain_applications": [
+        "enterprise",
+        "robotics"
+      ]
+    },
+    {
+      "id": "2506.11578",
+      "title": "Efficient LLM Collaboration via Planning",
+      "authors": [],
+      "categories": [
+        "cs.AI"
+      ],
+      "published": "2026-08-26",
+      "updated": "2026-08-26",
+      "summary": "arXiv:2506.11578v5 Announce Type: replace Abstract: Recently, large language models (LLMs) have demonstrated strong performance, ranging from simple to complex tasks. However, while large models achieve remarkable results across diverse tasks, they often incur substantial monetary inference cost, making frequent use impractical for many applications. In contrast, small models are often freely available and easy to deploy locally, but their performance on complex tasks remains limited. This trade-off raises a natural question: how can small and large models efficiently collaborate to combine their complementary strengths? To bridge this trade-off, we propose COPE, a test-time collaboration framework. A planner model first generates a plan that serves as a lightweight intermediate that guides a downstream executor model. Small and large models take turns acting as planner and executor, exchanging plans in a multi-stage cascade to collaboratively solve tasks. Through comprehensive experiments on benchmarks spanning mathematical reasoning, code generation, open-ended tasks, and agent tasks, we demonstrate that COPE achieves performance comparable to large proprietary models, while drastically reducing the inference API cost. These results highlight planning as an effective prior for cost-efficient inference.",
+      "pdf_url": "https://arxiv.org/abs/2506.11578",
+      "comment": "",
+      "technologies": [
+        "Chain-of-Thought Prompting",
+        "Model Cascading",
+        "Inference Optimization",
+        "Agentic Workflow"
+      ],
+      "maturity": "medium",
+      "confidence": 0.85,
+      "curator_score": 5.7,
+      "product_potential": [
+        "Cost-optimized enterprise API gateway that dynamically routes tasks between small local models and large cloud models",
+        "Latency-sensitive agentic frameworks for autonomous task execution",
+        "Hybrid inference infrastructure for high-throughput LLM applications"
+      ],
+      "domain_applications": [
+        "enterprise",
+        "finance",
+        "science"
+      ]
+    },
+    {
+      "id": "2605.10426",
+      "title": "CoWorld-VLA: Thinking in a Multi-Expert World Model for Autonomous Driving",
+      "authors": [],
+      "categories": [
+        "cs.AI"
+      ],
+      "published": "2026-08-26",
+      "updated": "2026-08-26",
+      "summary": "arXiv:2605.10426v3 Announce Type: replace-cross Abstract: Vision-Language-Action (VLA) models have emerged as a promising paradigm for end-to-end autonomous driving. However, existing reasoning mechanisms still struggle to provide planning-oriented intermediate representations: textual Chain-of-Thought (CoT) fails to preserve continuous spatiotemporal structure, while latent world reasoning remains difficult to use as a direct condition for action generation. In this paper, we propose CoWorld-VLA, a multi-expert world reasoning framework for autonomous driving, where world representations serve as explicit conditions to guide action planning. CoWorld-VLA extracts complementary world information through multi-source supervision and encodes it into expert tokens within the VLA, thereby providing planner-accessible conditioning signals. Specifically, we construct four types of tokens: semantic interaction, geometric structure, dynamic evolution, and ego trajectory tokens, which respectively model interaction intent, spatial structure, future temporal dynamics, and behavioral goals. During action generation, CoWorld-VLA employs a diffusion-based hierarchical multi-expert fusion planner, which is coupled with scene context throughout the joint denoising process to generate continuous ego trajectories. Experiments on NAVSIM v1 & v2 demonstrate future-scene modeling capability and strong planning performance, including collision avoidance and trajectory accuracy. Ablation studies further validate the complementarity of expert tokens and their effectiveness as planning conditions for action generation. Code will be available at https://github.com/AFARI-Research/CoWorld-VLA.",
+      "pdf_url": "https://arxiv.org/abs/2605.10426",
+      "comment": "",
+      "technologies": [
+        "Vision-Language-Action Models",
+        "Mixture of Experts",
+        "Diffusion Models",
+        "Multimodal Learning",
+        "Chain-of-Thought Prompting"
+      ],
+      "maturity": "early",
+      "confidence": 0.85,
+      "curator_score": 5.7,
+      "product_potential": [
+        "End-to-end autonomous driving stack with interpretable planning logic",
+        "Simulated driving environment for training and validating safety-critical edge cases",
+        "Predictive driver assistance systems for real-time hazard anticipation"
+      ],
+      "domain_applications": [
+        "robotics"
+      ]
+    },
+    {
+      "id": "2603.16654",
+      "title": "Omanic: Towards Step-wise Evaluation of Multi-hop Reasoning in Large Language Models",
+      "authors": [],
+      "categories": [
+        "cs.AI"
+      ],
+      "published": "2026-08-26",
+      "updated": "2026-08-26",
+      "summary": "arXiv:2603.16654v3 Announce Type: replace-cross Abstract: Evaluating the reasoning abilities of large language models (LLMs) solely from final answers can obscure failures in intermediate steps, especially in multi-hop QA benchmarks without step-level annotations. To address this gap, we introduce Omanic, an open-domain 4-hop QA benchmark designed not only to measure final-answer accuracy but also to diagnose where reasoning breaks down. Omanic contains 10,296 machine-generated training examples (OmanicSynth) and 967 expert-reviewed human-annotated evaluation examples (OmanicBench), with each evaluation question decomposed into single-hop sub-questions, intermediate answers, and structured graph topologies. Experiments with proprietary and open-source LLMs show that Omanic is challenging, while step-wise analysis reveals a later-hop bottleneck, factual knowledge floor, and error propagation along reasoning chains. Fine-tuning on OmanicSynth transfers to six reasoning and mathematics benchmarks, yielding a 7.41-point average gain and validating its effectiveness as supervision for reasoning-capability transfer. We release the data at https://huggingface.co/datasets/li-lab/Omanic and the code at https://github.com/XiaojieGu/Omanic.",
+      "pdf_url": "https://arxiv.org/abs/2603.16654",
+      "comment": "",
+      "technologies": [
+        "Chain-of-Thought Prompting",
+        "Supervised Fine-Tuning",
+        "Multi-hop Reasoning",
+        "Knowledge Distillation"
+      ],
+      "maturity": "medium",
+      "confidence": 0.85,
+      "curator_score": 5.6,
+      "product_potential": [
+        "Automated reasoning diagnostic tools for LLM quality assurance",
+        "Synthetic data generation pipelines for improving multi-step logic in enterprise agents",
+        "Step-level verification middleware for high-stakes decision support systems"
+      ],
+      "domain_applications": [
+        "enterprise",
+        "science",
+        "finance",
+        "education"
+      ]
+    },
+    {
+      "id": "2607.01388",
+      "title": "RusFinChain: A Russian Benchmark for Verifiable Chain-of-Thought Reasoning in Finance with Fuzzy-Aligned Evaluation",
+      "authors": [],
+      "categories": [
+        "cs.CL"
+      ],
+      "published": "2026-08-26",
+      "updated": "2026-08-26",
+      "summary": "arXiv:2607.01388v2 Announce Type: replace Abstract: Multi-step symbolic reasoning is essential for robust financial analysis, yet most benchmarks neglect intermediate reasoning steps. FinChain introduced verifiable Chain-of-Thought (CoT) evaluation but is limited to English. FINESSE-Bench includes a Russian block but relies on multiple-choice questions without step-level supervision. We present RusFinChain, the first Russian-language symbolic benchmark for verifiable CoT reasoning in finance. It spans 17 domains, 172 topics, and comprises 5,280 parameterized examples from executable Python templates, ensuring contamination-free evaluation. Each example includes a gold-standard reasoning chain with intermediate numeric values for automatic verification. We also introduce enhanced metrics: Fuzzy Numeric Alignment and Soft-Attention Alignment. We evaluate 8 open-weight LLMs on a stratified sample, generating 8,100 responses. Results reveal a substantial reasoning gap: models achieve Hard F1 of ~0.65 for step alignment, but only ~29% of final answers are correct. Our fuzzy and soft metrics show stronger correlation with final-answer correctness (Spearman rho approx 0.48) than the original ChainEval (rho approx 0.38-0.46), demonstrating superior diagnostic power. We release dataset, code, and evaluation framework to foster verifiable financial AI for the Russian-speaking community.",
+      "pdf_url": "https://arxiv.org/abs/2607.01388",
+      "comment": "",
+      "technologies": [
+        "Chain-of-Thought Prompting",
+        "Automated Benchmarking",
+        "Symbolic Reasoning"
+      ],
+      "maturity": "medium",
+      "confidence": 0.85,
+      "curator_score": 5.6,
+      "product_potential": [
+        "Automated financial audit and compliance verification tool",
+        "Explainable AI platform for Russian-language investment advisory",
+        "Diagnostic evaluation suite for enterprise LLM deployment in regulated sectors"
+      ],
+      "domain_applications": [
+        "finance",
+        "enterprise"
+      ]
+    },
+    {
+      "id": "2608.23329",
+      "title": "Thinking Beyond Videos: Unifying Video Reasoning and Deep Research for Open-World Video Agents",
+      "authors": [
+        "Wenqi Liu",
+        "Shijie Ma",
+        "Yunxiao Wang",
+        "Meng Liu",
+        "Qile Su",
+        "Han Liu",
+        "Bohan Hou",
+        "Xuanyu Zheng",
+        "Changyi Liu",
+        "Tianke Zhang",
+        "Haonan Fan",
+        "Kaiyu Jiang",
+        "Yingxin Li",
+        "Jiankang Chen",
+        "Xu Wang",
+        "Bin Wen",
+        "Tingting Gao",
+        "Han Li",
+        "Jianhua Yin",
+        "Yinwei Wei",
+        "Xuemeng Song"
+      ],
+      "categories": [
+        "cs.CV",
+        "cs.AI"
+      ],
+      "published": "2026-08-24",
+      "updated": "2026-08-24",
+      "summary": "Open-world video understanding often requires a model to locate sparse visual evidence and acquire external knowledge that is absent from the video and its parametric memory. While Thinking-with-Videos enables active temporal perception and Deep Research supports multi-step information seeking, the two capabilities are typically developed in isolation. We introduce VideoRover, a unified Video Deep Research framework that iteratively coordinates video cropping, multimodal search, and webpage browsing. Given a video-question pair, VideoRover uses each tool result to select the next action, so localized video clips guide external retrieval and retrieved evidence triggers further video inspection and verification. To develop this capability, we construct an automated data curation pipeline, producing 26K verified SFT trajectories and 3K challenging RL instances. We also introduce VideoRover-Bench, a benchmark stratified by video duration and research difficulty. Experiments on VideoDR and VideoRover-Bench show that our VideoRover-8B-RL achieves performance comparable to proprietary models in the direct-answer setting without tool use while outperforming larger open-source models equipped with the same tool suite. Ablation studies and training dynamics further validate the complementary roles of active video grounding, external retrieval, and long-horizon reinforcement learning.",
+      "pdf_url": "https://arxiv.org/pdf/2608.23329v1",
+      "comment": "",
+      "technologies": [
+        "Video Understanding",
+        "Multimodal Learning",
+        "Reinforcement Learning",
+        "Retrieval Augmented Generation",
+        "Active Video Grounding"
+      ],
+      "maturity": "early",
+      "confidence": 0.8,
+      "curator_score": 5.5,
+      "product_potential": [
+        "AI-powered video analysis tool for content creators",
+        "Personalized video recommendation system with deep research capabilities",
+        "AI assistant for educational content creation and analysis"
+      ],
+      "domain_applications": [
+        "education",
+        "creative",
+        "other"
+      ]
+    },
+    {
+      "id": "2608.24300",
+      "title": "Contrastive Branch Policy Optimization",
+      "authors": [
+        "Ying Wang",
+        "Changlin Qiu",
+        "Bang Lin",
+        "Linbo Jin",
+        "Wen Jiang",
+        "Zhe Sun",
+        "Jingli Yang"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "published": "2026-08-25",
+      "updated": "2026-08-25",
+      "summary": "Reinforcement learning with verifiable rewards (RLVR) enables language models to learn multi-turn interaction with external tools, yet its sparse outcome rewards provide no signal for identifying which intermediate decisions are responsible for success. Branch sampling induces local comparisons among alternative continuations, but existing methods tend to conflate two distinct problems: allocating a fixed rollout budget and translating branch outcomes into token-level credit. We introduce Contrastive Branch Policy Optimization (CBPO), which disentangles these two problems and assigns a dedicated mechanism to each. Generation entropy screens candidate branch positions across the entire response, while path-level and node-level decay distribute a fixed budget across trajectories and positions to prevent exploration from collapsing onto a few paths or adjacent tokens. A parent trajectory together with the branches that share an identical token prefix forms an exact-prefix group, and the reward variation within this controlled group defines the Contrastive Branch Value (CBV), an outcome-based estimate of local decision sensitivity that rescales continuation advantages without altering their sign. When multiple nodes are selected along the same trajectory, CBPO partitions it into non-overlapping credit segments, thereby avoiding duplicated gradients on shared tokens. Requiring only outcome rewards and no process-level annotation, CBPO provides a practical solution for fine-grained credit assignment in tool-integrated agent training. Extensive experiments on ten benchmarks, including five for mathematical reasoning and five for knowledge-intensive search, show that CBPO consistently outperforms state-of-the-art policy-optimization and branch-based methods, attaining the highest macro-average accuracy in both domains and across two model scales.",
+      "pdf_url": "https://arxiv.org/pdf/2608.24300v1",
+      "comment": "10 pages, 5 figures, 3 tables",
+      "technologies": [
+        "Reinforcement Learning from Human Feedback",
+        "Reinforcement Learning with Verifiable Rewards",
+        "Policy Optimization",
+        "Credit Assignment",
+        "Multi-turn Interaction"
+      ],
+      "maturity": "medium",
+      "confidence": 0.85,
+      "curator_score": 5.5,
+      "product_potential": [
+        "Autonomous agent training platforms for complex multi-step tool use",
+        "Automated reasoning engines for high-stakes mathematical and scientific problem solving",
+        "Self-improving search-based information retrieval systems"
+      ],
+      "domain_applications": [
+        "science",
+        "finance",
+        "enterprise"
+      ]
+    }
+  ],
+  "technologies": [
+    {
+      "name": "Agentic Tool Planning",
+      "papers": 1,
+      "maturity": "early",
+      "confidence": 0.6,
+      "trend": "rising",
+      "applications": [
+        "other",
+        "creative",
+        "education",
+        "enterprise"
+      ]
+    },
+    {
+      "name": "Multimodal Learning",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.8,
+      "trend": "rising",
+      "applications": [
+        "other",
+        "creative",
+        "enterprise",
+        "accessibility",
+        "healthcare",
+        "science",
+        "education",
+        "robotics"
+      ]
+    },
+    {
+      "name": "Retrieval Augmented Generation",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.8,
+      "trend": "rising",
+      "applications": [
+        "other",
+        "creative",
+        "enterprise",
+        "healthcare",
+        "education",
+        "robotics"
+      ]
+    },
+    {
+      "name": "Knowledge Distillation",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.7,
+      "trend": "rising",
+      "applications": [
+        "enterprise",
+        "finance",
+        "science",
+        "education",
+        "automotive",
+        "robotics"
+      ]
+    },
+    {
+      "name": "Mixture of Experts",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.8,
+      "trend": "rising",
+      "applications": [
+        "automotive",
+        "robotics"
+      ]
+    },
+    {
+      "name": "Low-Rank Adaptation",
+      "papers": 1,
+      "maturity": "early",
+      "confidence": 0.6,
+      "trend": "rising",
+      "applications": [
+        "automotive",
+        "robotics"
+      ]
+    },
+    {
+      "name": "Reinforcement Learning from Human Feedback",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.8,
+      "trend": "rising",
+      "applications": [
+        "enterprise",
+        "finance",
+        "healthcare",
+        "science",
+        "education",
+        "automotive",
+        "robotics"
+      ]
+    },
+    {
+      "name": "Reinforcement Learning",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.8,
+      "trend": "rising",
+      "applications": [
+        "other",
+        "creative",
+        "enterprise",
+        "finance",
+        "science",
+        "education",
+        "robotics"
+      ]
+    },
+    {
+      "name": "Large Language Models",
+      "papers": 1,
+      "maturity": "early",
+      "confidence": 0.6,
+      "trend": "rising",
+      "applications": [
+        "science",
+        "robotics"
+      ]
+    },
+    {
+      "name": "Code Generation",
+      "papers": 1,
+      "maturity": "early",
+      "confidence": 0.6,
+      "trend": "rising",
+      "applications": [
+        "science",
+        "robotics"
+      ]
+    },
+    {
+      "name": "Hierarchical Framework",
+      "papers": 1,
+      "maturity": "early",
+      "confidence": 0.6,
+      "trend": "rising",
+      "applications": [
+        "enterprise",
+        "robotics"
+      ]
+    },
+    {
+      "name": "Multi-agent Systems",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.8,
+      "trend": "rising",
+      "applications": [
+        "science",
+        "enterprise",
+        "healthcare"
+      ]
+    },
+    {
+      "name": "Agentic Workflow",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.8,
+      "trend": "rising",
+      "applications": [
+        "finance",
+        "science",
+        "enterprise",
+        "healthcare"
+      ]
+    },
+    {
+      "name": "Simulation-based Inference",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.8,
+      "trend": "rising",
+      "applications": [
+        "science",
+        "enterprise",
+        "healthcare"
+      ]
+    },
+    {
+      "name": "Chain-of-Thought Prompting",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.8,
+      "trend": "rising",
+      "applications": [
+        "enterprise",
+        "finance",
+        "healthcare",
+        "science",
+        "education",
+        "robotics"
+      ]
+    },
+    {
+      "name": "Tool Use",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.8,
+      "trend": "rising",
+      "applications": [
+        "science",
+        "enterprise",
+        "healthcare"
+      ]
+    },
+    {
+      "name": "KV Cache Optimization",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.8,
+      "trend": "rising",
+      "applications": [
+        "accessibility",
+        "enterprise",
+        "robotics"
+      ]
+    },
+    {
+      "name": "Vision Transformer",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.8,
+      "trend": "rising",
+      "applications": [
+        "accessibility",
+        "enterprise",
+        "robotics"
+      ]
+    },
+    {
+      "name": "Sparse Attention",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.8,
+      "trend": "rising",
+      "applications": [
+        "accessibility",
+        "enterprise",
+        "robotics"
+      ]
+    },
+    {
+      "name": "Multi-task Learning",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.8,
+      "trend": "rising",
+      "applications": [
+        "finance",
+        "science",
+        "enterprise"
+      ]
+    },
+    {
+      "name": "Policy Gradient Methods",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.8,
+      "trend": "rising",
+      "applications": [
+        "finance",
+        "science",
+        "enterprise"
+      ]
+    },
+    {
+      "name": "Tool-Augmented Language Models",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.8,
+      "trend": "rising",
+      "applications": [
+        "finance",
+        "science",
+        "enterprise"
+      ]
+    },
+    {
+      "name": "Procedural Reasoning",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.8,
+      "trend": "rising",
+      "applications": [
+        "finance",
+        "science",
+        "enterprise"
+      ]
+    },
+    {
+      "name": "Object Detection",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.8,
+      "trend": "rising",
+      "applications": [
+        "enterprise",
+        "robotics"
+      ]
+    },
+    {
+      "name": "Depth Estimation",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.8,
+      "trend": "rising",
+      "applications": [
+        "enterprise",
+        "robotics"
+      ]
+    },
+    {
+      "name": "Model Cascading",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.8,
+      "trend": "rising",
+      "applications": [
+        "finance",
+        "science",
+        "enterprise"
+      ]
+    },
+    {
+      "name": "Inference Optimization",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.8,
+      "trend": "rising",
+      "applications": [
+        "finance",
+        "science",
+        "enterprise"
+      ]
+    },
+    {
+      "name": "Vision-Language-Action Models",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.8,
+      "trend": "rising",
+      "applications": [
+        "robotics"
+      ]
+    },
+    {
+      "name": "Diffusion Models",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.8,
+      "trend": "rising",
+      "applications": [
+        "robotics"
+      ]
+    },
+    {
+      "name": "Supervised Fine-Tuning",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.7,
+      "trend": "rising",
+      "applications": [
+        "finance",
+        "science",
+        "education",
+        "enterprise"
+      ]
+    },
+    {
+      "name": "Multi-hop Reasoning",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.7,
+      "trend": "rising",
+      "applications": [
+        "finance",
+        "science",
+        "education",
+        "enterprise"
+      ]
+    },
+    {
+      "name": "Automated Benchmarking",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.7,
+      "trend": "rising",
+      "applications": [
+        "finance",
+        "enterprise"
+      ]
+    },
+    {
+      "name": "Symbolic Reasoning",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.7,
+      "trend": "rising",
+      "applications": [
+        "finance",
+        "enterprise"
+      ]
+    },
+    {
+      "name": "Video Understanding",
+      "papers": 1,
+      "maturity": "early",
+      "confidence": 0.6,
+      "trend": "rising",
+      "applications": [
+        "other",
+        "creative",
+        "education"
+      ]
+    },
+    {
+      "name": "Active Video Grounding",
+      "papers": 1,
+      "maturity": "early",
+      "confidence": 0.6,
+      "trend": "rising",
+      "applications": [
+        "other",
+        "creative",
+        "education"
+      ]
+    },
+    {
+      "name": "Reinforcement Learning with Verifiable Rewards",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.8,
+      "trend": "rising",
+      "applications": [
+        "finance",
+        "science",
+        "enterprise"
+      ]
+    },
+    {
+      "name": "Policy Optimization",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.8,
+      "trend": "rising",
+      "applications": [
+        "finance",
+        "science",
+        "enterprise"
+      ]
+    },
+    {
+      "name": "Credit Assignment",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.8,
+      "trend": "rising",
+      "applications": [
+        "finance",
+        "science",
+        "enterprise"
+      ]
+    },
+    {
+      "name": "Multi-turn Interaction",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.8,
+      "trend": "rising",
+      "applications": [
+        "finance",
+        "science",
+        "enterprise"
+      ]
+    }
+  ],
+  "product_opportunities": []
+}

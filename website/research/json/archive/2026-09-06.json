@@ -1,0 +1,1348 @@
+{
+  "meta": {
+    "date": "2026-09-06",
+    "papers_tracked": 15,
+    "technologies_discovered": 52,
+    "opportunities_identified": 15,
+    "last_update": "2026-09-06 09:33 UTC",
+    "backend": "llm7",
+    "model": "Research Curator v1"
+  },
+  "brief": [
+    {
+      "technology": "Diffusion Models and Speculative Decoding",
+      "why_it_matters": "These technologies promise significant speedups in LLMs without loss of quality, which is crucial for real-time applications and reducing costs in enterprise and educational settings.",
+      "opportunity": "Developing faster, more efficient LLM applications for enterprise and educational use cases, such as real-time language translation or instant feedback systems."
+    },
+    {
+      "technology": "Multimodal and Multilingual Learning",
+      "why_it_matters": "These technologies enable models to understand and generate content across multiple modalities and languages, which is essential for global and diverse user bases.",
+      "opportunity": "Creating multilingual and multimodal applications for enterprise and educational settings, such as global customer support systems or multilingual educational tools."
+    },
+    {
+      "technology": "Retrieval Augmented Generation (RAG)",
+      "why_it_matters": "RAG enhances the accuracy and relevance of generated content by retrieving information from external sources, which is critical for applications requiring up-to-date or specialized knowledge.",
+      "opportunity": "Building RAG-powered applications for healthcare, education, and enterprise, such as medical diagnosis support systems or personalized educational platforms."
+    },
+    {
+      "technology": "World Models and Agent Policies",
+      "why_it_matters": "These technologies enable agents to learn and adapt in complex environments, which is crucial for applications in robotics, enterprise automation, and other dynamic settings.",
+      "opportunity": "Developing autonomous agents for robotics, enterprise automation, and other dynamic environments, such as smart factories or autonomous robots."
+    },
+    {
+      "technology": "Concept Erasure in Diffusion Models",
+      "why_it_matters": "This technology allows for the removal of specific concepts from generated content, which is important for maintaining privacy, avoiding biases, and complying with regulations.",
+      "opportunity": "Creating applications that can generate content without sensitive or biased information, such as medical training tools or creative content generation platforms."
+    }
+  ],
+  "top_cards": [
+    {
+      "id": "new_technologies",
+      "title": "New Technologies",
+      "value": "52",
+      "label": "discovered this scan",
+      "detail": "Diffusion Models, Speculative Decoding, Multimodal Learning, Multilingual Learning, Bidirectional Transformer Encoder, Masked Discrete-Diffusion Text Objective, Hierarchical Token Pooling, Asymmetric Quantization",
+      "color": "accent"
+    },
+    {
+      "id": "emerging_trends",
+      "title": "Emerging Trends",
+      "value": "52",
+      "label": "active trend clusters",
+      "detail": "Diffusion Models, Multilingual Learning, Bidirectional Transformer Encoder, Masked Discrete-Diffusion Text Objective, Hierarchical Token Pooling",
+      "color": "green"
+    },
+    {
+      "id": "highest_potential",
+      "title": "Highest Potential",
+      "value": "8.0",
+      "label": "avg opportunity score",
+      "detail": "Unlocking Lossless Speedups in LLMs via Discrete Diffusion",
+      "color": "amber"
+    },
+    {
+      "id": "biggest_surprise",
+      "title": "Biggest Surprise",
+      "value": "Unlocking Lossless Speedups in",
+      "label": "confidence 80%",
+      "detail": "",
+      "color": "purple"
+    },
+    {
+      "id": "most_practical",
+      "title": "Most Practical",
+      "value": "NeoMME: A Single-Tower Multimo",
+      "label": "highest confidence paper",
+      "detail": "Multilingual multimodal document retrieval system, Efficient on-device multimodal processing for mobile applications",
+      "color": "success"
+    },
+    {
+      "id": "most_innovative",
+      "title": "Most Innovative",
+      "value": "0",
+      "label": "early-stage technologies",
+      "detail": "Bioinfoysis Technical Report",
+      "color": "blue"
+    }
+  ],
+  "papers": [
+    {
+      "id": "2609.04010",
+      "title": "Unlocking Lossless Speedups in LLMs via Discrete Diffusion",
+      "authors": [
+        "Subham Sekhar Sahoo",
+        "Lingjie Chen",
+        "Khiem Pham",
+        "Jonathan Geuter",
+        "Chaitanya Dwivedi",
+        "Varad Pimpalkhute",
+        "Yash Akhauri",
+        "Alexander Moreno",
+        "Mikhail Yurochkin",
+        "Zhenting Wang",
+        "Mostafa Elhoushi",
+        "Nolan Dey",
+        "Shane Bergsma",
+        "Joel Hestness",
+        "John Thickstun",
+        "Eric Xing",
+        "Zhengzhong Liu"
+      ],
+      "categories": [
+        "cs.LG"
+      ],
+      "published": "2026-09-03",
+      "updated": "2026-09-03",
+      "summary": "Large Language Models (LLMs) owe much of their success to next-token prediction (NTP), but their autoregressive (AR) structure requires slow, sequential token generation. To overcome this bottleneck, we introduce diffusion-augmented LLMs, a new class of models that defines an AR model distribution while using diffusion to draw multiple tokens in parallel from that distribution. We decouple the parameters of these models into two sets: AR weights, trained using the standard NTP objective, and lightweight diffusion weights, trained to generate multiple tokens simultaneously. The diffusion weights are learned through a simple Diffusion Distillation phase that adds negligible overhead to existing LLM training pipelines. We also introduce $Ψ$-Spec, a family of samplers that enables lossless acceleration and inference-time scaling at a fixed context length. Unlike speculative decoding, our method requires no separate draft model. Unlike diffusion LLMs (d-LLMs), it accelerates generation without sacrificing the quality of the underlying AR model. The resulting models, called Uno, can be trained from scratch or built by augmenting existing open-weight AR LLMs. Uno achieves higher throughput than leading speculative-decoding methods at every evaluated batch size and delivers up to $3\\times$ speedups over the base AR model, including at the largest batch size supported by the device. Notably, our 8B Uno model outperforms the leading open d-LLM, the 26B DiffusionGemma, and the proprietary Mercury 2 across all evaluated benchmarks in agentic tool use, coding, and long-context reasoning. We release code and checkpoints at: https://s-sahoo.github.io/uno/",
+      "pdf_url": "https://arxiv.org/pdf/2609.04010v1",
+      "comment": "Code and Checkpoints at https://s-sahoo.github.io/uno/",
+      "technologies": [
+        "Diffusion Models",
+        "Speculative Decoding"
+      ],
+      "maturity": "early",
+      "confidence": 0.8,
+      "curator_score": 6.0,
+      "product_potential": [
+        "Developing a high-throughput, real-time chatbot or virtual assistant that can handle multiple user queries simultaneously without compromising response quality.",
+        "Creating an accelerated coding assistant that can generate multiple lines of code in parallel, significantly speeding up the development process."
+      ],
+      "domain_applications": [
+        "education",
+        "enterprise",
+        "other"
+      ]
+    },
+    {
+      "id": "2609.01657",
+      "title": "NeoMME: A Single-Tower Multimodal-Native Multilingual Foundation Encoder for Efficient Fine-Tuning and Inference",
+      "authors": [],
+      "categories": [
+        "cs.AI"
+      ],
+      "published": "2026-09-03",
+      "updated": "2026-09-03",
+      "summary": "arXiv:2609.01657v1 Announce Type: cross Abstract: Multimodal models often build on architectures designed for generative vision-language modeling, typically combining separately pretrained vision encoders with causal language models. Visual document retrievers such as ColPali repurpose these models as encoders, carrying over the parameter and compute overhead of a VLM for a non-generative task. We introduce NeoMME, a family of 260M and 800M-parameter Multimodal and Multilingual bidirectional Encoders that process multilingual text and raw image patches in a single bidirectional Transformer encoder. Both models are pretrained from scratch with a masked discrete-diffusion text objective, conditioned on visible image patches for multimodal examples. Both support a 16,384-token context, enough to encode up to two standard 4K UHD images. To demonstrate its downstream capabilities, we fine-tune NeoMME with jointly trained dense and late-interaction heads. On the ViDoRe v3 benchmark, the resulting NeoMME-Retriever 260M outperforms all evaluated models strictly below 800M parameters with 0.523 nDCG@10, while NeoMME-Retriever 800M reaches 0.556. At a matched 2048x2048 image input size on an NVIDIA L40S, NeoMME-260M encodes pages with about 2x the throughput of ColModernVBERT. Hierarchical token pooling and asymmetric quantization compress late-interaction multimodal document embeddings by 255x while preserving over 95% of baseline nDCG@10. We contribute NeoMME to Hugging Face Transformers and release the pretrained backbone and retrieval-compatible checkpoints under Apache 2.0 at https://hf.co/collections/Hcompany/neomme.",
+      "pdf_url": "https://arxiv.org/abs/2609.01657",
+      "comment": "",
+      "technologies": [
+        "Multimodal Learning",
+        "Multilingual Learning",
+        "Bidirectional Transformer Encoder",
+        "Masked Discrete-Diffusion Text Objective",
+        "Hierarchical Token Pooling",
+        "Asymmetric Quantization"
+      ],
+      "maturity": "medium",
+      "confidence": 0.85,
+      "curator_score": 5.7,
+      "product_potential": [
+        "Multilingual multimodal document retrieval system",
+        "Efficient on-device multimodal processing for mobile applications"
+      ],
+      "domain_applications": [
+        "education",
+        "enterprise",
+        "other"
+      ]
+    },
+    {
+      "id": "2609.03871",
+      "title": "Bioinfoysis Technical Report",
+      "authors": [
+        "Qingyang Shao",
+        "Xin Zhang",
+        "Zhouyang Yuan",
+        "Xianying Chen",
+        "Yujia Xiang",
+        "Zihao Yang",
+        "Tong Ye",
+        "Yangqi Zhang",
+        "Jiakang Xu",
+        "Xiaoqing Yan",
+        "Xuan Luo",
+        "Keyi Li",
+        "Enci Fan",
+        "Kai Kang",
+        "Zhuohan Liu",
+        "Xingyu Jin",
+        "Chunran Teng",
+        "Tao Li",
+        "Xinyu Lv",
+        "Minghui Wang",
+        "Wenfeng Li",
+        "Yidan Gao",
+        "Siyu Liu",
+        "Mingrui Luo",
+        "Zhu Liang",
+        "Guanren Qiao",
+        "Zhiping Xu"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.MA"
+      ],
+      "published": "2026-09-03",
+      "updated": "2026-09-03",
+      "summary": "Large language model agents have shown promise in bioinformatics, but most existing systems focus primarily on producing final answers, treating planning, tool use, and code execution as transient interactions. This design is poorly suited to long-horizon bioinformatics tasks, where conclusions must remain connected to the data, computations, and intermediate evidence that support them. We introduce \\textbf{Bioinfoysis}, a multi-agent harness that represents each request as a persistent, artifact-grounded analysis run. Bioinfoysis combines global planning with step-wise, evidence-driven replanning: the planner maintains an executable checklist and revises pending steps using structured handoffs returned after each worker execution. These handoffs bind intermediate results to their responsible agent, checklist step, and plan generation, preventing stale evidence from being silently reused after replanning. A controlled runtime validates generated scripts, tables, and figures before they are used in downstream analysis or reporting, while role-specific context, persistent memory, and governed bioinformatics skills support reliable execution over long analysis trajectories. We evaluate Bioinfoysis on BixBench and two question-answering tracks of LAB-Bench 2. On BixBench, Bioinfoysis achieves state-of-the-art accuracy of 82.4\\%. Across four underlying language models, Bioinfoysis increases average accuracy from 27.81\\% to 64.13\\% on SeqQA2 and from 3.13\\% to 31.25\\% on DbQA2. These results demonstrate that reliable bioinformatics automation depends not only on model capability, but also on the harness that governs planning, execution, memory, and evidence flow. We hope that the emergence of Bioinfoysis will play a driving and leading role in the development of the bioinformatics community. Our demo website can be seen in https://report.bioinfoysis.com/.",
+      "pdf_url": "https://arxiv.org/pdf/2609.03871v1",
+      "comment": "",
+      "technologies": [
+        "Multi-Agent Systems",
+        "Artifact-Grounded Analysis",
+        "Global Planning with Step-wise Replanning",
+        "Structured Handoffs",
+        "Evidence-Driven Replanning",
+        "Persistent Memory",
+        "Governed Bioinformatics Skills"
+      ],
+      "maturity": "medium",
+      "confidence": 0.8,
+      "curator_score": 5.7,
+      "product_potential": [
+        "Bioinformatics Automation Platform: A platform that enables reliable, long-horizon bioinformatics tasks by managing planning, execution, memory, and evidence flow.",
+        "Bioinformatics Agent Marketplace: A marketplace that allows users to discover, share, and use specialized bioinformatics agents with governed skills."
+      ],
+      "domain_applications": [
+        "healthcare",
+        "science"
+      ]
+    },
+    {
+      "id": "2606.02372",
+      "title": "CoMAP: Co-Evolving World Models and Agent Policies for LLM Agents",
+      "authors": [],
+      "categories": [
+        "cs.AI"
+      ],
+      "published": "2026-09-05",
+      "updated": "2026-09-05",
+      "summary": "arXiv:2606.02372v2 Announce Type: replace Abstract: Equipping language agents with world models enables them to anticipate environment dynamics and evaluate candidate actions before execution. However, existing textual world models are typically fixed after training, preventing them from adapting to the on-policy state-action distributions induced by an evolving agent. Meanwhile, agent-improvement methods often rely on external rewards or verifiers, limiting their applicability in realistic interactive environments. In this paper, we propose COMAP, a novel framework that co-evolves textual world models and agent policies through closed-loop interaction. At each decision step, the world model predicts future state feedback for candidate actions, and the agent performs future-aware reflection by estimating the reliability of this feedback and refining its action accordingly. The resulting on-policy trajectories are then used to update the world model via self-distillation, allowing it to better match the agent's evolving interaction distribution. Across embodied task planning, Web navigation, and tool-use benchmarks, COMAP consistently outperforms competitive baselines, e.g., +16.75% relative improvement with Qwen3-4B. Further analyses show that the co-evolutionary loop improves the world model's prediction accuracy over time and leads to more effective long-horizon decision-making. Our code is available at: https://github.com/loyiv/CoMAP.",
+      "pdf_url": "https://arxiv.org/abs/2606.02372",
+      "comment": "",
+      "technologies": [
+        "Co-Evolving World Models",
+        "Agent Policies",
+        "Self-Distillation for World Model Update"
+      ],
+      "maturity": "medium",
+      "confidence": 0.8,
+      "curator_score": 5.7,
+      "product_potential": [
+        "Adaptive AI Agents for Dynamic Environments",
+        "Improved Decision Making in Interactive Systems"
+      ],
+      "domain_applications": [
+        "enterprise",
+        "robotics",
+        "other"
+      ]
+    },
+    {
+      "id": "2609.03414",
+      "title": "StrixAE: An Intelligent Agent for Audio Enhancement under Complex Distortion Coupling in Real-World Scenarios",
+      "authors": [],
+      "categories": [
+        "cs.AI"
+      ],
+      "published": "2026-09-04",
+      "updated": "2026-09-04",
+      "summary": "arXiv:2609.03414v1 Announce Type: cross Abstract: Audio enhancement in real-world scenarios involves complex distortion couplings and requires personalized enhancement. Existing solutions struggle to address both simultaneously. To improve robustness and enable autonomous operation in such scenarios, we propose StrixAE, an agent based on a multimodal large language model (MLLM). StrixAE leverages the MLLM as a controller to coordinate multiple audio enhancement and personalization models. To further enhance system robustness, reduce artifacts, and improve generalization across diverse real-world scenarios, StrixAE is trained through a two-stage process: first, CoT supervised fine-tuning on AcoustBench to ground basic reasoning and tool invocation; second, Audio Perception Reinforcement Learning (APRL), a reward design specifically tailored for audio restoration pipelines that jointly optimizes format validity, structural coherence, and perceptual quality. Unlike generic RL fine-tuning, APRL introduces structured rewards that enforce executable pipelines and logical section ordering, enabling the agent to produce reliable, interpretable enhancement plans without hallucinated tools. Based on real-world test datasets, our proposed method outperforms most existing open-source and proprietary solutions, achieving state-of-the-art performance across multiple perceptual metrics and demonstrating strong generalization robustness.",
+      "pdf_url": "https://arxiv.org/abs/2609.03414",
+      "comment": "",
+      "technologies": [
+        "Multimodal Learning",
+        "Reinforcement Learning from Human Feedback",
+        "Chain-of-Thought Prompting"
+      ],
+      "maturity": "medium",
+      "confidence": 0.8,
+      "curator_score": 5.5,
+      "product_potential": [
+        "Smart audio enhancement app for professional audio engineers",
+        "Autonomous audio restoration system for media archives"
+      ],
+      "domain_applications": [
+        "creative",
+        "enterprise"
+      ]
+    },
+    {
+      "id": "2508.00669",
+      "title": "Medical Reasoning in the Era of LLMs: A Systematic Review of Enhancement Techniques and Applications",
+      "authors": [],
+      "categories": [
+        "cs.AI"
+      ],
+      "published": "2026-09-04",
+      "updated": "2026-09-04",
+      "summary": "arXiv:2508.00669v2 Announce Type: replace-cross Abstract: The proliferation of Large Language Models (LLMs) in medicine has enabled impressive capabilities, yet a critical gap remains in their ability to perform systematic, transparent, and verifiable reasoning, a cornerstone of clinical practice. This has catalyzed a shift from single-step answer generation to the development of LLMs explicitly designed for medical reasoning. This paper provides the first systematic review of this emerging field. We propose a taxonomy of reasoning enhancement techniques, categorized into training-time strategies (e.g., supervised fine-tuning, reinforcement learning) and test-time mechanisms (e.g., prompt engineering, multi-agent systems). We analyze how these techniques are applied across different data modalities (text, image, code) and in key clinical applications such as diagnosis, education, and treatment planning. Furthermore, we survey the evolution of evaluation benchmarks from simple accuracy metrics to sophisticated assessments of reasoning quality and visual interpretability. Based on an analysis of 60 seminal studies from 2022-2025, we conclude by identifying critical challenges, including the faithfulness-plausibility gap and the need for native multimodal reasoning, and outlining future directions toward building efficient, robust, and sociotechnically responsible medical AI.",
+      "pdf_url": "https://arxiv.org/abs/2508.00669",
+      "comment": "",
+      "technologies": [
+        "Retrieval Augmented Generation",
+        "Reinforcement Learning from Human Feedback",
+        "Multimodal Learning",
+        "Direct Preference Optimization"
+      ],
+      "maturity": "medium",
+      "confidence": 0.8,
+      "curator_score": 5.5,
+      "product_potential": [
+        "A multimodal medical assistant that integrates text, image, and code data for comprehensive patient diagnosis and treatment planning.",
+        "An AI-driven educational tool for medical students that uses reasoning enhancement techniques to provide transparent and verifiable learning experiences."
+      ],
+      "domain_applications": [
+        "healthcare",
+        "education"
+      ]
+    },
+    {
+      "id": "2601.08955",
+      "title": "Imagine-then-Plan: Agent Learning from Adaptive Lookahead with World Models",
+      "authors": [],
+      "categories": [
+        "cs.AI"
+      ],
+      "published": "2026-09-04",
+      "updated": "2026-09-04",
+      "summary": "arXiv:2601.08955v3 Announce Type: replace-cross Abstract: Recent advances in world models have shown promise for modeling future dynamics of environmental states, enabling agents to reason and act without accessing real environments. Current methods mainly perform single-step or fixed-horizon rollouts, leaving their potential for complex task planning under-exploited. We propose Imagine-then-Plan (\\texttt{ITP}), a unified framework for agent learning via lookahead imagination, where an agent's policy model interacts with the learned world model, yielding multi-step ``imagined'' trajectories. Since the imagination horizon may vary by tasks and stages, we introduce a novel adaptive lookahead mechanism by trading off the ultimate goal and task progress. The resulting imagined trajectories provide rich signals about future consequences, such as achieved progress and potential conflicts, which are fused with current observations, formulating a partially \\textit{observable} and \\textit{imaginable} Markov decision process to guide policy learning. We instantiate \\texttt{ITP} with both training-free and reinforcement-trained variants. Extensive experiments across representative agent benchmarks demonstrate that \\texttt{ITP} significantly outperforms competitive baselines. Further analyses validate that our adaptive lookahead largely enhances agents' reasoning capability, providing valuable insights into addressing broader, complex tasks. Our code and data will be publicly available at https://github.com/loyiv/ITP.",
+      "pdf_url": "https://arxiv.org/abs/2601.08955",
+      "comment": "",
+      "technologies": [
+        "Adaptive Lookahead",
+        "World Models",
+        "Multi-step Imagination",
+        "Partially Observable Markov Decision Process"
+      ],
+      "maturity": "medium",
+      "confidence": 0.8,
+      "curator_score": 5.5,
+      "product_potential": [
+        "Advanced AI Planning and Scheduling Systems",
+        "Improved Autonomous Agent Decision Making in Complex Environments"
+      ],
+      "domain_applications": [
+        "robotics",
+        "enterprise",
+        "other"
+      ]
+    },
+    {
+      "id": "2609.03874",
+      "title": "STAIR (STructure Aware Information Retriever): A novel dataset and LLM based retriever for document structure augmentation",
+      "authors": [
+        "Vineet Kumar",
+        "Meghanadh Pulivarthi",
+        "vishwajeet kumar",
+        "Jaydeep Sen",
+        "Riyaz Ahmad Bhat",
+        "Sachindra Joshi"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "published": "2026-09-03",
+      "updated": "2026-09-03",
+      "summary": "Retrieval Augmented Generation (RAG) is a key component for generating accurate and hallucination free answers using Large Language Models (LLMs). LLMs are improving at handling long context, but still suffer from \"lost in the middle\" problem. Thus, precise and accurate retrieval is important. Current retrievers chunk long context into length-based manageable chunks - in the process throwing away rich and informative semantic global structure in the corpus. We introduce a novel retrieval system STAIR that empowers an LLM to exploit global structure in a corpus such as a Table of Contents (ToC) to efficiently store and retrieve information from its model parameters. Our thorough and careful ablation studies with a finetuned Differentiable Search Index (DSI) system show that ToC helps build a low hallucination (less than 0.05%) generative Information Retrieval (IR) system and can generalize to examples where very few training samples are available. To further research in this novel direction of ToC based retrieval we release SearchTome - a diverse benchmark created from 18 books across 6 diverse domains to further research in this novel direction. STAIR achieves a high Recall@1 score of 82.6% on SearchTome as compared to DSI (76.9%), where the difference is found to be statistically significant. STAIR easily beats other strong baselines such as BM25 (59.5%), DPR (68.7%) and out-of-the-box Mistral (13.8%).",
+      "pdf_url": "https://arxiv.org/pdf/2609.03874v1",
+      "comment": "",
+      "technologies": [
+        "Retrieval Augmented Generation",
+        "Differentiable Search Index"
+      ],
+      "maturity": "medium",
+      "confidence": 0.8,
+      "curator_score": 5.4,
+      "product_potential": [
+        "A specialized search engine that leverages document structure (like ToC) to improve retrieval accuracy and reduce hallucinations in RAG systems.",
+        "An AI-powered document analysis tool that can understand and utilize the global structure of documents to provide more accurate and context-aware information retrieval."
+      ],
+      "domain_applications": [
+        "education",
+        "enterprise",
+        "science",
+        "other"
+      ]
+    },
+    {
+      "id": "2609.03629",
+      "title": "EraseSAE: Surgical Concept Erasure in Text-to-Video Diffusion Models via Sparse Autoencoders",
+      "authors": [],
+      "categories": [
+        "cs.AI"
+      ],
+      "published": "2026-09-05",
+      "updated": "2026-09-05",
+      "summary": "arXiv:2609.03629v1 Announce Type: cross Abstract: Recent advances in text-to-video (T2V) diffusion models have demonstrated remarkable generative capabilities, yet their reliance on loosely curated training data raises pressing safety and copyright concerns. Concept erasure offers a principled remedy by removing unwanted semantics from pretrained models while preserving remaining concepts. However, existing approaches typically operate at a coarse granularity misaligned with the fine-grained, distributed nature of concept representations, leading to incomplete removal or degraded generation quality. We argue that surgical erasure fundamentally requires intervention at the level of monosemantic features, where each unit encodes a single interpretable concept. To this end, we propose EraseSAE, a novel framework that leverages sparse autoencoders to achieve surgical concept erasure in DiT-based T2V diffusion models via a principled decompose-attribute-erase pipeline. We first introduce the Partitioned Convolutional Sparse Autoencoder, which decomposes dense spatiotemporal activations into disentangled, interpretable sparse features while preserving spatiotemporal coherence. A contrastive attribution mechanism then contrasts activations from paired prompts to isolate concept-specific feature kernels. At inference, timestep-resolved spatiotemporal masks derived from the identified kernels confine erasure to regions where the target concept is active, leaving unrelated content intact. Extensive experiments across diverse diffusion models and concept erasure tasks demonstrate that EraseSAE achieves precise and robust concept removal with minimal quality degradation, substantially outperforming state-of-the-art methods. The code is available at https://github.com/HiDream-ai/EraseSAE.",
+      "pdf_url": "https://arxiv.org/abs/2609.03629",
+      "comment": "",
+      "technologies": [
+        "Sparse Autoencoders",
+        "Concept Erasure",
+        "Partitioned Convolutional Sparse Autoencoder",
+        "Contrastive Attribution Mechanism",
+        "Timestep-Resolved Spatiotemporal Masks"
+      ],
+      "maturity": "medium",
+      "confidence": 0.7,
+      "curator_score": 5.4,
+      "product_potential": [
+        "AI-assisted content moderation tool for generative models",
+        "Customizable AI content creator for safe and ethical generation"
+      ],
+      "domain_applications": [
+        "healthcare",
+        "creative",
+        "enterprise"
+      ]
+    },
+    {
+      "id": "2602.10009",
+      "title": "Discovering High Level Patterns from Simulation Traces",
+      "authors": [],
+      "categories": [
+        "cs.AI"
+      ],
+      "published": "2026-09-05",
+      "updated": "2026-09-05",
+      "summary": "arXiv:2602.10009v3 Announce Type: replace Abstract: Large Language Models (LLMs) are unable to reliably reason about specific physical systems. Attempts to imbue LLMs with knowledge of the necessary physics concepts have shown great promise, but explainability and validation remain open challenges. An emerging alternative is tooling, where LLMs can query physical simulators and use the resulting simulation traces as context for validation. This approach suffers from poor scalability since simulation traces contain large volumes of fine-grained numerical and semantic data. We show that translating simulation traces to a sparse representation of \"high-level\" structural patterns leads to more effective interpretation by LLMs. We propose an unsupervised learning scheme to perform this translation, or annotation, via program synthesis. Our learning results in a library of programs that act as pattern detectors which can translate simulation traces to sparse, annotated pattern sequences. The detected patterns may optionally be guided by human experts via string labels (rigid collision, stretching spring, etc.). We show, using a recent physics benchmark, that such annotated representations are more amenable to natural language reasoning about specific physical systems. The synthesized programs serve as transparent, explainable functions that map system states to a sparse and efficient annotation space. As an example application, we show how goals within physical systems that are specified in natural language may be converted to reward programs which are maximized to find solutions.",
+      "pdf_url": "https://arxiv.org/abs/2602.10009",
+      "comment": "",
+      "technologies": [
+        "Program Synthesis",
+        "Sparse Representation Learning",
+        "Physics-Informed Language Models",
+        "Reinforcement Learning for Goal Specification"
+      ],
+      "maturity": "medium",
+      "confidence": 0.7,
+      "curator_score": 5.4,
+      "product_potential": [
+        "Physics Simulation Assistant: A tool that uses LLMs and physics simulators to interpret and reason about complex physical systems, enabling more efficient and accurate analysis.",
+        "Goal-Oriented Physics Engine: A system that allows users to specify goals in natural language and uses reinforcement learning to find optimal solutions within physical simulations."
+      ],
+      "domain_applications": [
+        "science",
+        "engineering",
+        "robotics"
+      ]
+    },
+    {
+      "id": "2512.09108",
+      "title": "Evolving Excellence: Automated Optimization of LLM-based Agents",
+      "authors": [],
+      "categories": [
+        "cs.AI"
+      ],
+      "published": "2026-09-05",
+      "updated": "2026-09-05",
+      "summary": "arXiv:2512.09108v2 Announce Type: replace-cross Abstract: Agentic AI systems built on large language models (LLMs) offer significant potential for automating complex workflows, from software development to customer support. However, LLM agents often underperform due to suboptimal configurations; poorly tuned prompts, tool descriptions, and parameters that typically require weeks of manual refinement. Existing optimization methods either are too complex for general use or treat components in isolation, missing critical interdependencies. We present ARTEMIS, a no-code evolutionary optimization platform that jointly optimizes agent configurations through semantically-aware genetic operators. Given only a benchmark script and natural language goals, ARTEMIS automatically discovers configurable components, extracts performance signals from execution logs, and evolves configurations without requiring architectural modifications. We evaluate ARTEMIS on four representative agent systems: the \\emph{ALE Agent} for competitive programming on AtCoder Heuristic Contest, achieving a \\textbf{$13.6\\%$ improvement} in acceptance rate; the \\emph{Mini-SWE Agent} for code optimization on SWE-Perf, with a statistically significant \\textbf{10.1\\% performance gain}; and the \\emph{CrewAI Agent} for cost and mathematical reasoning on Math Odyssey, achieving a statistically significant \\textbf{$36.9\\%$ reduction} in the number of tokens required for evaluation. We also evaluate the \\emph{MathTales-Teacher Agent} powered by a smaller open-source model (Qwen2.5-7B) on GSM8K primary-level mathematics problems, achieving a \\textbf{22\\% accuracy improvement} and demonstrating that ARTEMIS can optimize agents based on both commercial and local models.",
+      "pdf_url": "https://arxiv.org/abs/2512.09108",
+      "comment": "",
+      "technologies": [
+        "Evolutionary Optimization",
+        "Semantically-aware Genetic Operators"
+      ],
+      "maturity": "medium",
+      "confidence": 0.85,
+      "curator_score": 5.4,
+      "product_potential": [
+        "A no-code platform for optimizing LLM-based agents across various domains, reducing the time and expertise required for configuration.",
+        "An automated tool for continuous improvement of agent performance, enabling real-time adaptation to changing requirements and environments."
+      ],
+      "domain_applications": [
+        "education",
+        "enterprise",
+        "science",
+        "other"
+      ]
+    },
+    {
+      "id": "2512.15116",
+      "title": "FADTI: Fourier and Attention Driven Diffusion for Multivariate Time Series Imputation",
+      "authors": [],
+      "categories": [
+        "cs.AI"
+      ],
+      "published": "2026-09-05",
+      "updated": "2026-09-05",
+      "summary": "arXiv:2512.15116v3 Announce Type: replace-cross Abstract: Multivariate time series imputation is fundamental in applications such as healthcare, traffic forecasting, and biological modeling, where sensor failures and irregular sampling lead to pervasive missing values. Existing Transformer- and diffusion-based imputers achieve strong performance, but they often rely mainly on time-domain modeling and lack adaptive spectral bias for recovering structured temporal gaps. We propose FADTI, a Fourier- and attention-driven diffusion framework for multivariate time series imputation. FADTI introduces a Fourier Bias Projection (FBP) module that injects learnable frequency-aware bias into intermediate hidden states during denoising. It projects intermediate hidden states onto Fourier bases, avoiding direct spectral estimation from masked or zero-filled inputs. With DFT, STFT, and FSST instantiations, FBP captures global periodicity, localized time--frequency variations, and non-stationary oscillatory patterns. By coupling FBP with self-attention and gated convolution, FADTI integrates frequency-domain guidance, temporal dependency modeling, and probabilistic denoising in a unified framework. Experiments on multiple benchmarks, including a new biological imputation benchmark, show that FADTI improves accuracy, uncertainty estimation, and sampling efficiency, especially under high missing rates and structured missing patterns. Code is available at https://github.com/RazeenLI/FADTI",
+      "pdf_url": "https://arxiv.org/abs/2512.15116",
+      "comment": "",
+      "technologies": [
+        "Diffusion Models",
+        "Fourier Transform",
+        "Self-Attention",
+        "Gated Convolution"
+      ],
+      "maturity": "medium",
+      "confidence": 0.85,
+      "curator_score": 5.4,
+      "product_potential": [
+        "A real-time data imputation tool for IoT sensors in industrial applications to ensure continuous data flow and analysis.",
+        "A predictive maintenance system for manufacturing equipment that uses imputed time series data to forecast failures and optimize maintenance schedules."
+      ],
+      "domain_applications": [
+        "healthcare",
+        "science",
+        "enterprise"
+      ]
+    },
+    {
+      "id": "2602.07106",
+      "title": "Ex-Omni: Enabling 3D Facial Animation Generation for Omni-modal Large Language Models",
+      "authors": [],
+      "categories": [
+        "cs.AI"
+      ],
+      "published": "2026-09-05",
+      "updated": "2026-09-05",
+      "summary": "arXiv:2602.07106v3 Announce Type: replace-cross Abstract: Omni-modal large language models (OLLMs) aim to unify multimodal understanding and generation, yet extending them to jointly produce speech and 3D facial animation remains largely underexplored. A key challenge is the mismatch between the discrete semantic reasoning of LLMs and the dense temporal dynamics required for 3D facial motion. We propose Expressive Omni (Ex-Omni), a framework that augments OLLMs with speech-accompanied 3D facial animation. Ex-Omni decouples semantic reasoning from temporal generation through a speech-unit generator with blendshape co-supervision and a non-autoregressive blendshape decoder, where speech units provide temporal scaffolding and hidden speech representations carry facially relevant cues. We further introduce a token-as-query gated fusion (TQGF) interface for controlled semantic injection, as well as InstructS2SF-1200K, a 1.2M-sample weakly supervised dataset for speech-accompanied facial animation. Extensive experiments show that Ex-Omni retains competitive speech QA capability while natively generating coordinated text, speech, and 3D facial animation, and approaches the Audio2Face-3D teacher cascade in synchronization and human preference.",
+      "pdf_url": "https://arxiv.org/abs/2602.07106",
+      "comment": "",
+      "technologies": [
+        "Multimodal Learning",
+        "Speech-unit Generator",
+        "Blendshape Co-supervision",
+        "Non-autoregressive Blendshape Decoder",
+        "Token-as-Query Gated Fusion"
+      ],
+      "maturity": "early",
+      "confidence": 0.75,
+      "curator_score": 5.4,
+      "product_potential": [
+        "Virtual avatars for customer service and e-commerce",
+        "Accessible communication tools for individuals with speech impairments",
+        "Enhanced virtual reality and augmented reality experiences"
+      ],
+      "domain_applications": [
+        "creative",
+        "accessibility",
+        "enterprise"
+      ]
+    },
+    {
+      "id": "2609.00791",
+      "title": "Instella-MoE Technical Report",
+      "authors": [],
+      "categories": [
+        "cs.AI"
+      ],
+      "published": "2026-09-02",
+      "updated": "2026-09-02",
+      "summary": "arXiv:2609.00791v1 Announce Type: cross Abstract: In this work, we introduce Instella-MoE, a fully open Mixture-of-Experts (MoE) language model with 16 billion total parameters and 2.8 billion active parameters per token, trained entirely from scratch on AMD Instinct MI300X and MI325X GPUs. Instella-MoE combines a sparsely activated MoE design with architectural and system-level innovations, including Gated Multi-head Latent Attention (Gated MLA) and FarSkip-Collective connectivity, enabling efficient large-scale training and inference. The model is developed through a multi-stage pipeline comprising pre-training, mid-training, long-context extension, supervised fine-tuning with feedback-driven data curation, direct preference optimization, and reinforcement learning with Multi-Teacher On-Policy Distillation. Instella-MoE achieves an average score of 76.7 across standard pre-training benchmarks, outperforming prior fully open models including OLMo-3-7B, SmolLM3-3B, and OLMoE-1B-7B, while remaining competitive with open-weight MoE and dense baselines at comparable active-parameter scales, including Moonlight-16B-A3B and Qwen3.5-4B. After post-training, our final Think checkpoint achieves an average score of 73.2 across instruction-following, reasoning, math, coding, and chat benchmarks, outperforming both fully open and open-weight models with comparable or larger active parameter counts in our evaluation. To support transparent and reproducible research, we release the complete Instella-MoE model flow, including model weights, training configurations, data mixtures, and training code. Together, these contributions establish Instella-MoE a strong, fully open foundation for efficient, high-performing MoE models and reproducible research.",
+      "pdf_url": "https://arxiv.org/abs/2609.00791",
+      "comment": "",
+      "technologies": [
+        "Mixture of Experts",
+        "Gated Multi-head Latent Attention",
+        "FarSkip-Collective connectivity",
+        "Direct Preference Optimization",
+        "Multi-Teacher On-Policy Distillation"
+      ],
+      "maturity": "medium",
+      "confidence": 0.85,
+      "curator_score": 5.2,
+      "product_potential": [
+        "A scalable, efficient language model for enterprise applications requiring high performance and low latency",
+        "A foundation model for customizable AI assistants across various domains, leveraging the model's strong performance in instruction-following and reasoning tasks"
+      ],
+      "domain_applications": [
+        "education",
+        "enterprise",
+        "creative",
+        "other"
+      ]
+    },
+    {
+      "id": "2604.16729",
+      "title": "Agentic Large Language Models for Training-Free Neuro-Radiological Image Analysis",
+      "authors": [],
+      "categories": [
+        "cs.AI"
+      ],
+      "published": "2026-09-02",
+      "updated": "2026-09-02",
+      "summary": "arXiv:2604.16729v2 Announce Type: replace-cross Abstract: State-of-the-art large language models (LLMs) show high performance in general visual question answering. However, a fundamental limitation remains: current architectures lack the native 3D spatial reasoning required to directly analyze volumetric medical imaging, such as CT or MRI. Emerging agentic AI offers a new solution, eliminating the need for intrinsic 3D processing by enabling LLMs to orchestrate and leverage specialized external tools. Yet, the feasibility of such agentic frameworks in complex, multi-step radiological workflows remains underexplored. In this work, we present a training-free agentic pipeline for automated brain MRI analysis. Validating our methodology on several LLMs (GPT-5.4, Gemini 3.1 Pro, Claude Sonnet 4.6) with off-the-shelf domain-specific tools, our system autonomously executes complex end-to-end workflows, including preprocessing (skull stripping, registration), pathology segmentation (glioma, meningioma, metastases), and volumetric reasoning. We evaluate our framework across increasingly complex radiological tasks, from single-scan tumor and anatomy analysis to longitudinal response assessment requiring multi-timepoint comparisons. We analyze the impact of architectural design by comparing single-agent models against multi-agent \"domain-expert\" collaborations. To support rigorous evaluation of future agentic systems, we release a benchmark dataset of image-prompt-answer tuples derived from public data. Our results demonstrate that agentic AI can solve highly neuro-radiological image analysis tasks through tool use without the need for training or fine-tuning.",
+      "pdf_url": "https://arxiv.org/abs/2604.16729",
+      "comment": "",
+      "technologies": [
+        "Agentic AI",
+        "Tool Use in LLMs",
+        "Multi-Agent Collaboration"
+      ],
+      "maturity": "early",
+      "confidence": 0.8,
+      "curator_score": 5.2,
+      "product_potential": [
+        "Automated neuro-radiological analysis tool for radiologists to assist in diagnosis and treatment planning",
+        "Multi-agent AI system for collaborative medical image analysis and interpretation"
+      ],
+      "domain_applications": [
+        "healthcare"
+      ]
+    }
+  ],
+  "technologies": [
+    {
+      "name": "Diffusion Models",
+      "papers": 2,
+      "maturity": "medium",
+      "confidence": 0.85,
+      "trend": "rising",
+      "applications": [
+        "creative",
+        "healthcare",
+        "science"
+      ]
+    },
+    {
+      "name": "Speculative Decoding",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.8,
+      "trend": "rising",
+      "applications": [
+        "education",
+        "enterprise",
+        "other"
+      ]
+    },
+    {
+      "name": "Multimodal Learning",
+      "papers": 5,
+      "maturity": "medium",
+      "confidence": 0.8,
+      "trend": "rising",
+      "applications": [
+        "healthcare",
+        "creative",
+        "enterprise"
+      ]
+    },
+    {
+      "name": "Multilingual Learning",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.85,
+      "trend": "rising",
+      "applications": [
+        "education",
+        "enterprise",
+        "other"
+      ]
+    },
+    {
+      "name": "Bidirectional Transformer Encoder",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.85,
+      "trend": "rising",
+      "applications": [
+        "education",
+        "enterprise",
+        "other"
+      ]
+    },
+    {
+      "name": "Masked Discrete-Diffusion Text Objective",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.85,
+      "trend": "rising",
+      "applications": [
+        "education",
+        "enterprise",
+        "other"
+      ]
+    },
+    {
+      "name": "Hierarchical Token Pooling",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.85,
+      "trend": "rising",
+      "applications": [
+        "education",
+        "enterprise",
+        "other"
+      ]
+    },
+    {
+      "name": "Asymmetric Quantization",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.85,
+      "trend": "rising",
+      "applications": [
+        "education",
+        "enterprise",
+        "other"
+      ]
+    },
+    {
+      "name": "Multi-Agent Systems",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.8,
+      "trend": "rising",
+      "applications": [
+        "healthcare",
+        "science"
+      ]
+    },
+    {
+      "name": "Artifact-Grounded Analysis",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.8,
+      "trend": "rising",
+      "applications": [
+        "healthcare",
+        "science"
+      ]
+    },
+    {
+      "name": "Global Planning with Step-wise Replanning",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.8,
+      "trend": "rising",
+      "applications": [
+        "healthcare",
+        "science"
+      ]
+    },
+    {
+      "name": "Structured Handoffs",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.8,
+      "trend": "rising",
+      "applications": [
+        "healthcare",
+        "science"
+      ]
+    },
+    {
+      "name": "Evidence-Driven Replanning",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.8,
+      "trend": "rising",
+      "applications": [
+        "healthcare",
+        "science"
+      ]
+    },
+    {
+      "name": "Persistent Memory",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.8,
+      "trend": "rising",
+      "applications": [
+        "healthcare",
+        "science"
+      ]
+    },
+    {
+      "name": "Governed Bioinformatics Skills",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.8,
+      "trend": "rising",
+      "applications": [
+        "healthcare",
+        "science"
+      ]
+    },
+    {
+      "name": "Co-Evolving World Models",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.8,
+      "trend": "rising",
+      "applications": [
+        "enterprise",
+        "robotics",
+        "other"
+      ]
+    },
+    {
+      "name": "Agent Policies",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.8,
+      "trend": "rising",
+      "applications": [
+        "enterprise",
+        "robotics",
+        "other"
+      ]
+    },
+    {
+      "name": "Self-Distillation for World Model Update",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.8,
+      "trend": "rising",
+      "applications": [
+        "enterprise",
+        "robotics",
+        "other"
+      ]
+    },
+    {
+      "name": "Reinforcement Learning from Human Feedback",
+      "papers": 3,
+      "maturity": "medium",
+      "confidence": 0.8,
+      "trend": "rising",
+      "applications": [
+        "creative",
+        "enterprise",
+        "healthcare"
+      ]
+    },
+    {
+      "name": "Chain-of-Thought Prompting",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.8,
+      "trend": "rising",
+      "applications": [
+        "creative",
+        "enterprise"
+      ]
+    },
+    {
+      "name": "Retrieval Augmented Generation",
+      "papers": 3,
+      "maturity": "medium",
+      "confidence": 0.8,
+      "trend": "rising",
+      "applications": [
+        "healthcare",
+        "education",
+        "enterprise"
+      ]
+    },
+    {
+      "name": "Direct Preference Optimization",
+      "papers": 2,
+      "maturity": "medium",
+      "confidence": 0.8,
+      "trend": "rising",
+      "applications": [
+        "healthcare",
+        "education",
+        "enterprise"
+      ]
+    },
+    {
+      "name": "Adaptive Lookahead",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.8,
+      "trend": "rising",
+      "applications": [
+        "robotics",
+        "enterprise",
+        "other"
+      ]
+    },
+    {
+      "name": "World Models",
+      "papers": 2,
+      "maturity": "medium",
+      "confidence": 0.8,
+      "trend": "rising",
+      "applications": [
+        "robotics",
+        "enterprise",
+        "other"
+      ]
+    },
+    {
+      "name": "Multi-step Imagination",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.8,
+      "trend": "rising",
+      "applications": [
+        "robotics",
+        "enterprise",
+        "other"
+      ]
+    },
+    {
+      "name": "Partially Observable Markov Decision Process",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.8,
+      "trend": "rising",
+      "applications": [
+        "robotics",
+        "enterprise",
+        "other"
+      ]
+    },
+    {
+      "name": "Differentiable Search Index",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.8,
+      "trend": "rising",
+      "applications": [
+        "education",
+        "enterprise",
+        "science",
+        "other"
+      ]
+    },
+    {
+      "name": "Sparse Autoencoders",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.7,
+      "trend": "rising",
+      "applications": [
+        "healthcare",
+        "creative",
+        "enterprise"
+      ]
+    },
+    {
+      "name": "Concept Erasure",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.7,
+      "trend": "rising",
+      "applications": [
+        "healthcare",
+        "creative",
+        "enterprise"
+      ]
+    },
+    {
+      "name": "Partitioned Convolutional Sparse Autoencoder",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.7,
+      "trend": "rising",
+      "applications": [
+        "healthcare",
+        "creative",
+        "enterprise"
+      ]
+    },
+    {
+      "name": "Contrastive Attribution Mechanism",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.7,
+      "trend": "rising",
+      "applications": [
+        "healthcare",
+        "creative",
+        "enterprise"
+      ]
+    },
+    {
+      "name": "Timestep-Resolved Spatiotemporal Masks",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.7,
+      "trend": "rising",
+      "applications": [
+        "healthcare",
+        "creative",
+        "enterprise"
+      ]
+    },
+    {
+      "name": "Program Synthesis",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.7,
+      "trend": "rising",
+      "applications": [
+        "science",
+        "engineering",
+        "robotics"
+      ]
+    },
+    {
+      "name": "Sparse Representation Learning",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.7,
+      "trend": "rising",
+      "applications": [
+        "science",
+        "engineering",
+        "robotics"
+      ]
+    },
+    {
+      "name": "Physics-Informed Language Models",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.7,
+      "trend": "rising",
+      "applications": [
+        "science",
+        "engineering",
+        "robotics"
+      ]
+    },
+    {
+      "name": "Reinforcement Learning for Goal Specification",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.7,
+      "trend": "rising",
+      "applications": [
+        "science",
+        "engineering",
+        "robotics"
+      ]
+    },
+    {
+      "name": "Evolutionary Optimization",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.85,
+      "trend": "rising",
+      "applications": [
+        "education",
+        "enterprise",
+        "science",
+        "other"
+      ]
+    },
+    {
+      "name": "Semantically-aware Genetic Operators",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.85,
+      "trend": "rising",
+      "applications": [
+        "education",
+        "enterprise",
+        "science",
+        "other"
+      ]
+    },
+    {
+      "name": "Fourier Transform",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.85,
+      "trend": "rising",
+      "applications": [
+        "healthcare",
+        "science",
+        "enterprise"
+      ]
+    },
+    {
+      "name": "Self-Attention",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.85,
+      "trend": "rising",
+      "applications": [
+        "healthcare",
+        "science",
+        "enterprise"
+      ]
+    },
+    {
+      "name": "Gated Convolution",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.85,
+      "trend": "rising",
+      "applications": [
+        "healthcare",
+        "science",
+        "enterprise"
+      ]
+    },
+    {
+      "name": "Speech-unit Generator",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.75,
+      "trend": "rising",
+      "applications": [
+        "creative",
+        "accessibility",
+        "enterprise"
+      ]
+    },
+    {
+      "name": "Blendshape Co-supervision",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.75,
+      "trend": "rising",
+      "applications": [
+        "creative",
+        "accessibility",
+        "enterprise"
+      ]
+    },
+    {
+      "name": "Non-autoregressive Blendshape Decoder",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.75,
+      "trend": "rising",
+      "applications": [
+        "creative",
+        "accessibility",
+        "enterprise"
+      ]
+    },
+    {
+      "name": "Token-as-Query Gated Fusion",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.75,
+      "trend": "rising",
+      "applications": [
+        "creative",
+        "accessibility",
+        "enterprise"
+      ]
+    },
+    {
+      "name": "Mixture of Experts",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.85,
+      "trend": "rising",
+      "applications": [
+        "education",
+        "enterprise",
+        "creative",
+        "other"
+      ]
+    },
+    {
+      "name": "Gated Multi-head Latent Attention",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.85,
+      "trend": "rising",
+      "applications": [
+        "education",
+        "enterprise",
+        "creative",
+        "other"
+      ]
+    },
+    {
+      "name": "FarSkip-Collective connectivity",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.85,
+      "trend": "rising",
+      "applications": [
+        "education",
+        "enterprise",
+        "creative",
+        "other"
+      ]
+    },
+    {
+      "name": "Multi-Teacher On-Policy Distillation",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.85,
+      "trend": "rising",
+      "applications": [
+        "education",
+        "enterprise",
+        "creative",
+        "other"
+      ]
+    },
+    {
+      "name": "Agentic AI",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.8,
+      "trend": "rising",
+      "applications": [
+        "healthcare"
+      ]
+    },
+    {
+      "name": "Tool Use in LLMs",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.8,
+      "trend": "rising",
+      "applications": [
+        "healthcare"
+      ]
+    },
+    {
+      "name": "Multi-Agent Collaboration",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.8,
+      "trend": "rising",
+      "applications": [
+        "healthcare"
+      ]
+    }
+  ],
+  "product_opportunities": [
+    {
+      "technology": "Diffusion Models",
+      "idea": "ArtFlow: AI art generator for non-artists",
+      "business_value": 7,
+      "engineering_difficulty": 6,
+      "competitive_advantage": "medium",
+      "development_time": "2-3 months"
+    },
+    {
+      "technology": "Multilingual Learning",
+      "idea": "PolyTalk: AI-powered simultaneous translation app",
+      "business_value": 8,
+      "engineering_difficulty": 7,
+      "competitive_advantage": "medium",
+      "development_time": "3-4 months"
+    },
+    {
+      "technology": "Bidirectional Transformer Encoder",
+      "idea": "Summize: AI document summarizer for professionals",
+      "business_value": 6,
+      "engineering_difficulty": 5,
+      "competitive_advantage": "low",
+      "development_time": "2-3 weeks"
+    },
+    {
+      "technology": "Masked Discrete-Diffusion Text Objective",
+      "idea": "WordCraft: AI language learning game",
+      "business_value": 5,
+      "engineering_difficulty": 6,
+      "competitive_advantage": "low",
+      "development_time": "4-6 weeks"
+    },
+    {
+      "technology": "Hierarchical Token Pooling",
+      "idea": "TopicTree: AI topic modeling for content creators",
+      "business_value": 6,
+      "engineering_difficulty": 5,
+      "competitive_advantage": "low",
+      "development_time": "3-4 weeks"
+    },
+    {
+      "technology": "Asymmetric Quantization",
+      "idea": "QuantumText: AI text compression tool",
+      "business_value": 5,
+      "engineering_difficulty": 6,
+      "competitive_advantage": "low",
+      "development_time": "4-6 weeks"
+    },
+    {
+      "technology": "Evolutionary Optimization",
+      "idea": "EvoStrat: AI strategy game generator",
+      "business_value": 4,
+      "engineering_difficulty": 7,
+      "competitive_advantage": "low",
+      "development_time": "2-3 months"
+    },
+    {
+      "technology": "Semantically-aware Genetic Operators",
+      "idea": "IdeaEvo: AI idea generation tool for brainstorming",
+      "business_value": 5,
+      "engineering_difficulty": 6,
+      "competitive_advantage": "low",
+      "development_time": "4-6 weeks"
+    },
+    {
+      "technology": "Fourier Transform",
+      "idea": "BioSense: AI signal processing for healthcare diagnostics",
+      "business_value": 8,
+      "engineering_difficulty": 7,
+      "competitive_advantage": "medium",
+      "development_time": "3-4 months"
+    },
+    {
+      "technology": "Self-Attention",
+      "idea": "ContextWrite: AI writing assistant for content creators",
+      "business_value": 7,
+      "engineering_difficulty": 6,
+      "competitive_advantage": "medium",
+      "development_time": "2-3 months"
+    },
+    {
+      "technology": "Gated Convolution",
+      "idea": "ImageFuse: AI image inpainting tool for designers",
+      "business_value": 6,
+      "engineering_difficulty": 5,
+      "competitive_advantage": "low",
+      "development_time": "3-4 weeks"
+    },
+    {
+      "technology": "Mixture of Experts",
+      "idea": "StyleFusion: AI art style transfer tool",
+      "business_value": 6,
+      "engineering_difficulty": 6,
+      "competitive_advantage": "low",
+      "development_time": "4-6 weeks"
+    },
+    {
+      "technology": "Gated Multi-head Latent Attention",
+      "idea": "LatentArt: AI latent space exploration for artists",
+      "business_value": 5,
+      "engineering_difficulty": 7,
+      "competitive_advantage": "low",
+      "development_time": "2-3 months"
+    },
+    {
+      "technology": "FarSkip-Collective connectivity",
+      "idea": "NetConnect: AI network visualization tool",
+      "business_value": 5,
+      "engineering_difficulty": 6,
+      "competitive_advantage": "low",
+      "development_time": "4-6 weeks"
+    },
+    {
+      "technology": "Multi-Teacher On-Policy Distillation",
+      "idea": "SkillShare: AI skill learning platform",
+      "business_value": 7,
+      "engineering_difficulty": 7,
+      "competitive_advantage": "medium",
+      "development_time": "3-4 months"
+    }
+  ]
+}

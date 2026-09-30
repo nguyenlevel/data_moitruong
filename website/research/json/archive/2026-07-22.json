@@ -1,0 +1,1253 @@
+{
+  "meta": {
+    "date": "2026-07-22",
+    "papers_tracked": 15,
+    "technologies_discovered": 46,
+    "opportunities_identified": 15,
+    "last_update": "2026-07-22 07:46 UTC",
+    "backend": "llm7",
+    "model": "Research Curator v1"
+  },
+  "brief": [
+    {
+      "technology": "Reinforcement Learning",
+      "why_it_matters": "Reinforcement Learning is advancing rapidly, enabling more sophisticated decision-making and automation in various domains.",
+      "opportunity": "Product builders can leverage RL to create adaptive systems that learn and improve over time, enhancing user experience and operational efficiency."
+    },
+    {
+      "technology": "On-device AI",
+      "why_it_matters": "On-device AI reduces latency and enhances privacy by processing data locally, which is crucial for real-time applications.",
+      "opportunity": "Product builders can develop on-device AI solutions for edge devices, enabling faster response times and improved user privacy."
+    },
+    {
+      "technology": "Multimodal Learning",
+      "why_it_matters": "Multimodal Learning allows systems to process and understand multiple types of data, leading to more comprehensive insights.",
+      "opportunity": "Product builders can create multimodal applications that integrate text, images, and other data types, offering richer user interactions."
+    },
+    {
+      "technology": "Agent Harness Evolution",
+      "why_it_matters": "Agent Harness Evolution improves the quality of coding agents by evolving their capabilities through iterative reasoning loops.",
+      "opportunity": "Product builders can develop more sophisticated AI agents that can evolve and adapt to new tasks and environments, enhancing productivity and innovation."
+    },
+    {
+      "technology": "Continual Learning",
+      "why_it_matters": "Continual Learning enables systems to adapt to new tasks without forgetting previously learned information, which is essential for long-term performance.",
+      "opportunity": "Product builders can create systems that can learn continuously and adapt to evolving domains, ensuring sustained performance and relevance."
+    }
+  ],
+  "top_cards": [
+    {
+      "id": "new_technologies",
+      "title": "New Technologies",
+      "value": "46",
+      "label": "discovered this scan",
+      "detail": "Behavioral Auditing, Black-Box Auditing, Parametric Hindsight, Partially Observable Markov Decision Process (POMDP), Reinforcement Learning, Graph-based Memory, Multimodal Learning, Self-Correction",
+      "color": "accent"
+    },
+    {
+      "id": "emerging_trends",
+      "title": "Emerging Trends",
+      "value": "46",
+      "label": "active trend clusters",
+      "detail": "Multimodal Learning, Rubric-based Feedback Evaluation, Adaptive Gated Feedback Optimization, Adjacent Contrastive Reasoning, On-device AI",
+      "color": "green"
+    },
+    {
+      "id": "highest_potential",
+      "title": "Highest Potential",
+      "value": "8.1",
+      "label": "avg opportunity score",
+      "detail": "HindsightBench: A Black-Box Behavioral Audit Protocol for Parametric Hindsight i",
+      "color": "amber"
+    },
+    {
+      "id": "biggest_surprise",
+      "title": "Biggest Surprise",
+      "value": "HindsightBench: A Black-Box Be",
+      "label": "confidence 80%",
+      "detail": "",
+      "color": "purple"
+    },
+    {
+      "id": "most_practical",
+      "title": "Most Practical",
+      "value": "Beyond Score Prediction: LLM-B",
+      "label": "highest confidence paper",
+      "detail": "Automated essay scoring and feedback system for educational institutions, AI-powered writing assistant with real-time feedback for students",
+      "color": "success"
+    },
+    {
+      "id": "most_innovative",
+      "title": "Most Innovative",
+      "value": "0",
+      "label": "early-stage technologies",
+      "detail": "Assistax: A Multi-Agent Hardware-Accelerated Reinforcement Learning Benchmark fo",
+      "color": "blue"
+    }
+  ],
+  "papers": [
+    {
+      "id": "2607.18867",
+      "title": "HindsightBench: A Black-Box Behavioral Audit Protocol for Parametric Hindsight in Time-Indexed LLM Decision Tasks",
+      "authors": [
+        "Haozhe Jia"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.CL"
+      ],
+      "published": "2026-07-21",
+      "updated": "2026-07-21",
+      "summary": "Large language models leak parametric knowledge of realized outcomes into historical financial decision tasks. Existence is settled; what users lack is a cheap way to audit a given model for it. We present HindsightBench, a black-box behavioral audit protocol that profiles parametric hindsight in any time-indexed LLM decision task at probe-level cost (no backtests, no logprobs, no corpus access). The protocol chains a four-arm date-manipulation matrix (revealed/date-only/masked/transplanted), dual memory probes (date recovery; outcome recall), and six per-model metrics -- trigger strength, transplant effect, post-cutoff placebo, recoverability, behaviorally effective knowledge cutoff, and a recall-accuracy dissociation coefficient -- with explicit gates where identifiability is data-dependent. Applying it to 15 models from seven vendors on a 258-node vintage-correct macro panel yields three headline patterns: (i) the date-trigger reflex tracks training generation, not scale -- absent across the 2024 open-weight generation from 1B to 70B, present in every tested 2026-generation model, and switching on within one vendor lineage (Qwen3 -> Qwen3.6) at fixed MoE architecture and 3B active parameters; (ii) effective cutoffs span 22 months across vendors and precede vendor-reported dates by up to eight months, invalidating calendar-window placebo designs; (iii) audit results are not invariant to serving -- BF16 serving of an FP8-referenced model breaks the trigger estimate's stability while AWQ-INT4 preserves it, and a provider-locked reasoning regime makes one probe non-convergent -- so the protocol ships with operational requirements (pin quantization and thinking regime; disclose parser and sampling policy). We release the panel, frozen preregistrations, per-model audit rows with measured dollar costs, transcripts, and one-command regeneration.",
+      "pdf_url": "https://arxiv.org/pdf/2607.18867v1",
+      "comment": "15 pages, 3 figures. Code, panel, and per-model audit rows: https://github.com/Khaozhe/hindsightbench (v1.0 release archived at doi:10.5281/zenodo.21453191)",
+      "technologies": [
+        "Behavioral Auditing",
+        "Black-Box Auditing",
+        "Parametric Hindsight"
+      ],
+      "maturity": "early",
+      "confidence": 0.8,
+      "curator_score": 6.2,
+      "product_potential": [
+        "A SaaS platform for auditing LLMs for parametric hindsight in financial decision tasks, helping organizations ensure compliance and transparency.",
+        "A tool for developers to integrate into their applications to audit LLMs in real-time, providing insights into potential biases and parametric knowledge leaks."
+      ],
+      "domain_applications": [
+        "finance",
+        "enterprise"
+      ]
+    },
+    {
+      "id": "2607.17038",
+      "title": "Reward-Driven LLM Agent Workflows: Synthesizing POMDP Routing and Self-Correction for Autonomous Decision-Making",
+      "authors": [],
+      "categories": [
+        "cs.AI"
+      ],
+      "published": "2026-07-21",
+      "updated": "2026-07-21",
+      "summary": "arXiv:2607.17038v1 Announce Type: new Abstract: This paper addresses key technical challenges in current large language model (LLM) agent applications, including long-horizon planning, sparse reward attribution, and dynamic environmental interaction, by designing and optimizing an intelligent agent workflow. The proposed architecture is based on the synthesis of core AI paradigms: Visual, Language, Generative, Graph, Multimodal, Reinforcement, and Agent Intelligence. Unlike conventional baseline models that rely on static prompting and lack robust perception-action loops, our approach introduces a Partially Observable Markov Decision Process (POMDP) routing mechanism. This mechanism is augmented with an internal, self-correcting reward model that evaluates decision trajectories before execution. By integrating multimodal inputs and advanced reinforcement learning principles (such as proximal policy optimization and value function approximation), the agent maintains long-term structural memory and dynamically adapts its reasoning pathways to mitigate error accumulation. Empirical experiments on the ALFWorld embodied simulation environment and the WebShop online navigation benchmark demonstrate a 24.5% absolute improvement in task success rate and trajectory efficiency over mainstream baselines like the standard ReAct framework. Comprehensive ablation studies confirm the significant contribution of the reward-driven critique module in suppressing hallucination rates. This research bridges theoretical foundations of reinforcement learning and graph-based memory with autonomous agent workflows. Ultimately, the resulting architecture offers a practical, scalable reference framework for developing artificial intelligence technologies in complex, multi-step autonomous systems. Code is available at https://github.com/01Amez/RLAW_Implementation.",
+      "pdf_url": "https://arxiv.org/abs/2607.17038",
+      "comment": "",
+      "technologies": [
+        "Partially Observable Markov Decision Process (POMDP)",
+        "Reinforcement Learning",
+        "Graph-based Memory",
+        "Multimodal Learning",
+        "Self-Correction"
+      ],
+      "maturity": "medium",
+      "confidence": 0.8,
+      "curator_score": 6.0,
+      "product_potential": [
+        "Autonomous decision-making systems for complex environments",
+        "Enhanced AI agents for long-horizon planning tasks"
+      ],
+      "domain_applications": [
+        "robotics",
+        "enterprise",
+        "other"
+      ]
+    },
+    {
+      "id": "2607.19219",
+      "title": "Beyond Score Prediction: LLM-Based Essay Scoring and Feedback Generation via Reinforcement Learning with Rubric Rewards",
+      "authors": [
+        "Xuefeng Jin",
+        "Jiashuo Zhang",
+        "Teng Cao",
+        "Bin Yang"
+      ],
+      "categories": [
+        "cs.CL",
+        "cs.AI"
+      ],
+      "published": "2026-07-21",
+      "updated": "2026-07-21",
+      "summary": "Large language models (LLMs) have been widely applied to automated essay scoring (AES) and automated feedback generation (AFG). However, existing studies rely primarily on prompt engineering or supervised fine-tuning, while systematic research on reinforcement learning (RL) post-training and automated evaluation of feedback quality remains limited. We propose RLAES, a unified LLM framework that jointly optimizes essay scoring and feedback generation through RL. To make feedback quality measurable, interpretable, and usable for training, we introduce Rubric-based Feedback Evaluation (RFE), an essay-grounded feedback evaluation framework comprising 166 fine-grained binary rubric items and an LLM-as-judge. Building on RFE, we propose Adaptive Gated Feedback Optimization (AGFO), which activates rubric-based feedback rewards on demand during RL, reducing evaluation overhead while improving feedback quality. We also propose Adjacent Contrastive Reasoning (ACR) to improve ordinal score calibration by explicitly contrasting adjacent score levels. Experimental results show that the RFE framework captures essay-feedback consistency, exhibits strong pairwise discriminative power, and closely aligns with expert preferences. On the ASAP benchmark, RLAES-AGFO achieves the best scoring performance among LLM-based methods (QWK = 0.803), while maintaining feedback quality comparable to GPT-5.5 and avoiding the feedback degradation observed under score-only RL. Code and datasets are publicly available at https://github.com/hellomuyi/RLAES.",
+      "pdf_url": "https://arxiv.org/pdf/2607.19219v1",
+      "comment": "12 pages, 4 figures, 9 tables",
+      "technologies": [
+        "Reinforcement Learning",
+        "Rubric-based Feedback Evaluation",
+        "Adaptive Gated Feedback Optimization",
+        "Adjacent Contrastive Reasoning"
+      ],
+      "maturity": "medium",
+      "confidence": 0.85,
+      "curator_score": 6.0,
+      "product_potential": [
+        "Automated essay scoring and feedback system for educational institutions",
+        "AI-powered writing assistant with real-time feedback for students",
+        "Customizable feedback generation platform for educators"
+      ],
+      "domain_applications": [
+        "education"
+      ]
+    },
+    {
+      "id": "2406.18082",
+      "title": "Octo-planner: On-device Language Model for Planner-Action Agents",
+      "authors": [],
+      "categories": [
+        "cs.CL"
+      ],
+      "published": "2026-07-21",
+      "updated": "2026-07-21",
+      "summary": "arXiv:2406.18082v2 Announce Type: replace Abstract: AI agents have become increasingly significant in various domains, enabling autonomous decision-making and problem-solving. To function effectively, these agents require a planning process that determines the best course of action and then executes the planned actions. In this paper, we present an efficient on-device Planner-Action framework that separates planning and action execution into two distinct components: a planner agent based on Phi-3 Mini, a 3.8 billion parameter LLM optimized for edge devices, and an action agent using the Octopus model for function execution. The planner agent first responds to user queries by decomposing tasks into a sequence of sub-steps, which are then executed by the action agent. To optimize performance on resource-constrained devices, we employ model fine-tuning instead of in-context learning, reducing computational costs and energy consumption while improving response times. Our approach involves using GPT-4 to generate diverse planning queries and responses based on available functions, with subsequent validations to ensure data quality. We fine-tune the Phi-3 Mini model on this curated dataset, achieving a 97\\% success rate in our in-domain test environment. To address multi-domain planning challenges, we developed a multi-LoRA training method that merges weights from LoRAs trained on distinct function subsets. This approach enables flexible handling of complex, multi-domain queries while maintaining computational efficiency on resource-constrained devices. To support further research, we have open-sourced our model weights at https://huggingface.co/NexaAIDev/octopus-planning. For the demo, please refer to https://www.nexa4ai.com/octo-planner.",
+      "pdf_url": "https://arxiv.org/abs/2406.18082",
+      "comment": "",
+      "technologies": [
+        "On-device AI",
+        "Low-Rank Adaptation",
+        "Chain-of-Thought Prompting"
+      ],
+      "maturity": "medium",
+      "confidence": 0.85,
+      "curator_score": 5.9,
+      "product_potential": [
+        "Offline-first AI assistant for edge devices",
+        "Customizable AI planner for enterprise workflows",
+        "Multi-domain AI agent for resource-constrained environments"
+      ],
+      "domain_applications": [
+        "education",
+        "enterprise",
+        "robotics",
+        "other"
+      ]
+    },
+    {
+      "id": "2507.21638",
+      "title": "Assistax: A Multi-Agent Hardware-Accelerated Reinforcement Learning Benchmark for Assistive Robotics",
+      "authors": [],
+      "categories": [
+        "cs.AI"
+      ],
+      "published": "2026-07-22",
+      "updated": "2026-07-22",
+      "summary": "arXiv:2507.21638v3 Announce Type: replace Abstract: As embodied autonomous systems capable of assisting humans in daily activities remain a major goal for robotics, efficient and appropriate reinforcement learning (RL) simulation testbeds are increasingly important. Many common RL environments are too simple to provide insight into complex robotics domains, and many robotics simulations have throughput too low for RL. Very few simulators target multi-agent interactions: most treat the robot as an isolated agent, yet real-world tasks such as home assistance and caretaking are inherently multi-agent. Assistax addresses these limitations by providing a high-throughput, scalable suite of GPU-accelerated assistive robotics tasks built on JAX and MuJoCo-MJX, and includes an active humanoid agent as a simulated human partner, trainable alongside the robot using multi-agent RL (MARL). Beyond its use as a MARL benchmark, we formulate the human-robot interaction as an Ad-Hoc Teamwork (AHT) problem, where the robot's policy must generalise to unseen humans with varying disabilities and preferences. To this end, we provide an extensive AHT benchmarking pipeline: we use MARL to pre-train a diverse population of humanoid partners, and evaluate robot policies' ability to coordinate with a withheld set of humanoid policies. In contrast to other benchmarks, we also release reactive MARL-pre-trained humanoid policies via Hugging Face, enabling faster iteration in AHT research. With hardware acceleration, Assistax achieves up to 412$\\times$ faster open-loop simulation than comparable CPU-based environments on a single GPU. Our AHT pipeline reveals a coordination gap for existing RL algorithms on unseen partners with novel preference combinations. This RL-native test suite for embodied multi-agent interaction provides a practical benchmark for advancing RL in assistive care. Code is available at: https://github.com/assistive-autonomy/assistax.",
+      "pdf_url": "https://arxiv.org/abs/2507.21638",
+      "comment": "",
+      "technologies": [
+        "Reinforcement Learning",
+        "Multi-Agent Reinforcement Learning",
+        "Ad-Hoc Teamwork",
+        "GPU Acceleration",
+        "JAX",
+        "MuJoCo-MJX"
+      ],
+      "maturity": "medium",
+      "confidence": 0.8,
+      "curator_score": 5.9,
+      "product_potential": [
+        "A hardware-accelerated assistive robotics platform for home care and caregiving tasks",
+        "A benchmarking tool for evaluating and improving multi-agent reinforcement learning algorithms in assistive robotics"
+      ],
+      "domain_applications": [
+        "robotics",
+        "healthcare",
+        "accessibility"
+      ]
+    },
+    {
+      "id": "2607.03691",
+      "title": "Don't Blame the Large Language Model: How Agent Harness Evolution Shapes Coding Agent Quality",
+      "authors": [],
+      "categories": [
+        "cs.AI"
+      ],
+      "published": "2026-07-22",
+      "updated": "2026-07-22",
+      "summary": "arXiv:2607.03691v2 Announce Type: replace-cross Abstract: Coding agents, autonomous systems that use large language models (LLMs) to resolve software engineering tasks, rely on agent harness: a middleware layer in between a developer and a large language model that orchestrates system prompts, tool execution, context management, and iterative reasoning loops. While these agent harnesses evolve at extreme velocities, no study has examined how this evolution affects agent quality (i.e., effectiveness and efficiency) over time. Practitioners regularly report quality regressions after agent harness updates, yet consistently attribute them to the underlying model rather than the harness itself. In this paper, we address this gap by conducting the first controlled longitudinal study that isolates the agent harness contribution. Unlike prior work that fixes the agent harness and varies the model, we fix the model and vary only the agent harness, evaluating 35 sequential releases to measure their impact on agent effectiveness and efficiency. We first empirically study the development and release evolution of five major open-source agent harnesses (i.e., Codex, Qwen Code, Gemini, OpenCode, and OpenHands), revealing extreme release velocities exceeding two releases per day and thousands of issues within months. We then perform a controlled deep dive into 35 sequential releases of the Qwen Code CLI, evaluating each against 50 stratified SWE-bench Verified tasks while holding the underlying LLM constant. We trace the resulting quality fluctuations to specific development patterns and architectural components, and illustrate our findings with concrete qualitative evidence linking individual pull requests to measured quality shifts.",
+      "pdf_url": "https://arxiv.org/abs/2607.03691",
+      "comment": "",
+      "technologies": [
+        "Agent Harness Evolution",
+        "Iterative Reasoning Loops",
+        "Context Management"
+      ],
+      "maturity": "early",
+      "confidence": 0.8,
+      "curator_score": 5.9,
+      "product_potential": [
+        "Automated Software Development Platform",
+        "AI-Powered Debugging Assistant"
+      ],
+      "domain_applications": [
+        "education",
+        "enterprise",
+        "science"
+      ]
+    },
+    {
+      "id": "2607.18716",
+      "title": "Continual Video-MLLM Adaptation over Evolving Domains",
+      "authors": [],
+      "categories": [
+        "cs.CV"
+      ],
+      "published": "2026-07-22",
+      "updated": "2026-07-22",
+      "summary": "arXiv:2607.18716v1 Announce Type: new Abstract: Video multimodal large language models have shown strong capability in video understanding, yet their adaptation to sequentially evolving domains remains underexplored. In real-world deployments, video data often arrives continuously from heterogeneous domains, requiring the model to acquire new domain-specific knowledge without overwriting previously learned capabilities. Existing continual learning methods typically rely on shared adaptation spaces, which can induce severe cross-domain interference and catastrophic forgetting. We propose Distribution-Aware Expert Routing, a parameter-efficient framework for continual Video-MLLM adaptation over evolving domains. DAER maintains domain-isolated lightweight experts while keeping the pretrained Video-MLLM backbone frozen, thereby decoupling domain-specific adaptation from the general multimodal knowledge of the pretrained model. To enable fine-grained specialization, we introduce an intra-domain distribution-aware routing mechanism that matches each input to expert-level prototype reservoirs using MMD. To address the absence of task identities at inference time, we further propose an inter-domain routing mechanism that performs prototype matching in a discriminative subspace for robust domain identification. In addition, we introduce adaptive domain merging to improve parameter scalability and adopt a two-stage optimization strategy to stabilize expert specialization during continual learning. We evaluate DAER by curating a domain-incremental benchmark built from ten VidQA datasets covering diverse visual environments and reasoning demands. Experiments on two strong Video-MLLM backbones show that DAER consistently outperforms prior methods.",
+      "pdf_url": "https://arxiv.org/abs/2607.18716",
+      "comment": "",
+      "technologies": [
+        "Continual Learning",
+        "Multimodal Learning",
+        "Expert Routing",
+        "Parameter-efficient Adaptation",
+        "Distribution-Aware Routing",
+        "Domain Identification"
+      ],
+      "maturity": "early",
+      "confidence": 0.8,
+      "curator_score": 5.9,
+      "product_potential": [
+        "A video analysis tool for healthcare that can continually adapt to new medical imaging techniques and patient populations",
+        "An educational platform that can adapt to new teaching styles and student needs over time",
+        "A robotics system that can continually learn and adapt to new environments and tasks"
+      ],
+      "domain_applications": [
+        "healthcare",
+        "education",
+        "robotics"
+      ]
+    },
+    {
+      "id": "2607.16204",
+      "title": "Masked Diffusion Language Models are Strong and Steerable Text-Based World Models for Agentic RL",
+      "authors": [],
+      "categories": [
+        "cs.AI"
+      ],
+      "published": "2026-07-21",
+      "updated": "2026-07-21",
+      "summary": "arXiv:2607.16204v1 Announce Type: new Abstract: Recent growth in reinforcement learning (RL) has surfaced a need for diverse, specialized training environments. Hand-curated environments with fixed task and reward difficulties become ineffective signals as model performance improves, and sparse rewards over long horizons induce mode collapse on specific workflows or tool structures. World models that simulate environment states have matched pure rollout performance, making them promising for scaling diversity on-demand. However, autoregressive (AR) world models suffer from a left-to-right bias preventing conditioning on globally interdependent state anchors such as tool schemas, prior turns, and expected outcomes. We (i) formalize text-based world modeling as a steerable transition-dynamics problem decomposed into initial state, task context, tool schemas, domain rules, and steering directives, and (ii) curate 239,403 grounded state-action trajectories spanning nine open-source environments and twelve frontier model families. We compare AR LMs and masked diffusion language models (MDLMs), showing MDLMs, via bidirectional anchor-aware denoising, achieve better coherence, groundedness, and empirically validated rollout diversity than LLMs over 4x their parameter size, at comparable inference latency. We introduce a plug-and-play GRPO training framework with deterministic state checks, and perform zero-shot transfer ablations on three OOD environments (ScienceWorld, ALFWorld, AppWorld) across three 1.2B-7B agent backbones (LFM2.5, Qwen3, Mistral), achieving up to 47% absolute gains over baselines without environment-specific fine-tuning. We further conduct behavioral analysis of failure modes under adversarial scenarios and human evaluation on realism, outcome correctness, and training utility. We open-source our work to encourage research in this direction.",
+      "pdf_url": "https://arxiv.org/abs/2607.16204",
+      "comment": "",
+      "technologies": [
+        "Masked Diffusion Language Models",
+        "Reinforcement Learning from Human Feedback",
+        "World Models",
+        "Steerable Text-Based World Models"
+      ],
+      "maturity": "medium",
+      "confidence": 0.85,
+      "curator_score": 5.7,
+      "product_potential": [
+        "Developing a plug-and-play GRPO training framework for RL agents",
+        "Creating a platform for zero-shot transfer of RL agents across different environments"
+      ],
+      "domain_applications": [
+        "robotics",
+        "science",
+        "other"
+      ]
+    },
+    {
+      "id": "2607.17437",
+      "title": "Empirical Grounding Improves the Realism of LLM Agents Simulating Human Behavior During Disruptions",
+      "authors": [],
+      "categories": [
+        "cs.AI"
+      ],
+      "published": "2026-07-21",
+      "updated": "2026-07-21",
+      "summary": "arXiv:2607.17437v1 Announce Type: new Abstract: Large language model (LLM) agents offer a generative approach to simulating human behavior under conditions that may have few or no direct historical analogues, a common challenge in disaster and infrastructure-disruption planning. However, this generative capacity creates a validity problem: individually plausible agent reasoning may fail to reproduce empirical population behavior. We evaluate whether empirical grounding improves the statistical realism of LLM-agent simulations during disruptions. Specifically, we develop an empirically grounded LLM-agent framework that embeds demographic profiles from the American Community Survey, baseline routines from the American Time Use Survey, and urban spatial context into agent initialization, memory, decision prompts, and activity execution. An independent household survey conducted during the July 2024 Philadelphia heatwave is reserved as an external validation benchmark. Compared with an ungrounded LLM-agent baseline, the grounded model improved reconstruction of normal daily routines, increasing mean correlation with empirical activity profiles from 0.528 to 0.912 and reducing mean squared error from 0.066 to 0.008. Under heatwave conditions, the grounded model better reproduced survey-derived activity profiles, increasing mean correlation from 0.349 to 0.836 and reducing mean squared error from 0.098 to 0.012. The grounded model captured 46.4% of observed heatwave response amplitude, compared with 20.6% for the ungrounded baseline. These findings show that empirical grounding can make LLM agents more statistically credible simulators of population behavior while revealing remaining gaps in modeling human adaptation during disruptions.",
+      "pdf_url": "https://arxiv.org/abs/2607.17437",
+      "comment": "",
+      "technologies": [
+        "Empirical Grounding",
+        "Retrieval Augmented Generation"
+      ],
+      "maturity": "medium",
+      "confidence": 0.85,
+      "curator_score": 5.7,
+      "product_potential": [
+        "Disaster preparedness and response simulation tool for governments and emergency services",
+        "Personalized urban planning and infrastructure development tool for city planners and urban developers"
+      ],
+      "domain_applications": [
+        "science",
+        "enterprise",
+        "other"
+      ]
+    },
+    {
+      "id": "2607.16283",
+      "title": "GenSyn10: A Multi-Generative AI Dataset For Benchmarking Image Classification",
+      "authors": [],
+      "categories": [
+        "cs.AI"
+      ],
+      "published": "2026-07-21",
+      "updated": "2026-07-21",
+      "summary": "arXiv:2607.16283v1 Announce Type: cross Abstract: The rapid advancement of generative AI has outpaced our ability to reliably detect its outputs, particularly when detectors encounter generators they have not seen before. We introduce GenSyn10, a CIFAR-10-aligned synthetic image dataset of 60,000 images (10 classes, 32$\\times$32, 50k/10k split) generated using three architecturally diverse state-of-the-art models: FLUX.2-dev (Rectified Flow Transformer), HunyuanImage-3.0 (MoE Transformer), and Qwen-Image-2512 (Multimodal Diffusion Transformer), to advance research in AI-generated image detection. A central challenge in this domain is that detectors perform well on known generators but degrade on unseen ones. GenSyn10 addresses this limitation by curating data from multiple contemporary architectures under a standardized generation protocol, enabling controlled and systematic evaluation of out-of-distribution (OOD) generalization to novel generators. Images are generated using a template-based prompt engine and downsampled to ensure consistency. We evaluate 17 image classification models under a four-stage protocol: real-data baseline, zero-shot transfer, fine-tuning, and retention. Despite a measurable domain gap, CIFAR-10-trained models achieve up to 96.86\\% zero-shot accuracy on GenSyn10, increasing to 99.88\\% after fine-tuning. In binary real-vs-synthetic classification, fine-tuned models achieve 97-99.9\\% accuracy on seen generators but drop to 79-96\\% on images from an unseen generator, highlighting persistent limitations in OOD generalization. These results establish GenSyn10 as a controlled benchmark for studying synthetic image detection beyond single-generator settings, supporting research on robustness, domain adaptation, and cross-generator generalization.",
+      "pdf_url": "https://arxiv.org/abs/2607.16283",
+      "comment": "",
+      "technologies": [
+        "Vision Transformer",
+        "Multimodal Learning",
+        "Diffusion Models",
+        "Mixture of Experts"
+      ],
+      "maturity": "early",
+      "confidence": 0.8,
+      "curator_score": 5.7,
+      "product_potential": [
+        "AI-generated image detection tool for content moderation platforms",
+        "Benchmarking tool for AI model developers to evaluate cross-generator generalization"
+      ],
+      "domain_applications": [
+        "creative",
+        "enterprise",
+        "other"
+      ]
+    },
+    {
+      "id": "2607.16303",
+      "title": "Med-OPD: Improving Medical Vision-Language Models via Evidence-Aware On-Policy Distillation",
+      "authors": [],
+      "categories": [
+        "cs.AI"
+      ],
+      "published": "2026-07-21",
+      "updated": "2026-07-21",
+      "summary": "arXiv:2607.16303v1 Announce Type: cross Abstract: Medical Vision-Language Models (Med-VLMs) require reliable reasoning from fine-grained visual evidence, yet existing models can produce plausible clinical answers by relying on language priors or medical templates rather than truly attending to diagnosis-critical regions. On-Policy Distillation (OPD) offers dense token-level supervision on student-generated trajectories and provides a privacy-compatible means of capability transfer without requiring the redistribution of raw patient data. However, standard OPD uniformly distills all tokens, causing sparse evidence-dependent tokens to be diluted by abundant clinical narrative tokens. Inspired by the success of OPD in the large language model community, we propose \\textbf{Med-OPD}, to our knowledge the first unified post-training framework that integrates on-policy distillation with medical evidence-aware supervision for Med-VLMs. We introduce \\textbf{Medical Evidence Advantage} (MEA), a teacher-grounded counterfactual signal that uses an answer-aware hint to focus teacher scoring on evidence supporting the target diagnosis, and measures each token's dependence on medical visual evidence by comparing teacher likelihoods under the original and evidence-degraded imaging modalities. Based on MEA, Med-OPD redistributes the distillation signal at both the token and trajectory levels, emphasizing diagnosis-critical tokens and evidence-reliant rollouts. Experiments on OmniMedVQA subsets show that Med-OPD consistently outperforms SFT and standard OPD across CT, MRI, Disease Diagnosis, and Lesion Grading. These results demonstrate that evidence-aware distillation can better strengthen medical VLMs' reliance on key visual evidence and improve reliable multimodal medical reasoning. The source code and data is publicly available at: https://github.com/yunhang8658/MedOPD.git",
+      "pdf_url": "https://arxiv.org/abs/2607.16303",
+      "comment": "",
+      "technologies": [
+        "On-Policy Distillation",
+        "Multimodal Learning"
+      ],
+      "maturity": "early",
+      "confidence": 0.8,
+      "curator_score": 5.7,
+      "product_potential": [
+        "Enhanced medical imaging analysis tools for radiologists",
+        "AI-assisted diagnostic systems for primary care physicians"
+      ],
+      "domain_applications": [
+        "healthcare"
+      ]
+    },
+    {
+      "id": "2607.16409",
+      "title": "Think, Plan, Paint: Layout-Aware Reasoning for Controllable Image Generation in Unified Models",
+      "authors": [],
+      "categories": [
+        "cs.AI"
+      ],
+      "published": "2026-07-21",
+      "updated": "2026-07-21",
+      "summary": "arXiv:2607.16409v1 Announce Type: cross Abstract: Unified Multimodal Large Language Models (MLLMs) offer a promising paradigm for unifying visual understanding and generation, yet they still struggle to follow complex spatial instructions and logical constraints in controllable image generation. To address this gap, we present ATLAS, a unified framework that equips MLLMs with a human-like \"Think, Plan, and Paint\" paradigm. We adopt layout as the shared representation that connects the three stages, enabling the model to reason about spatial requirements, plan explicit object arrangements, and render the final image. We further improve plan-to-image fidelity with reinforcement-learning-based layout alignment. We instantiate ATLAS at 7B and 80B scales, achieving state-of-the-art performance among MLLMs on image generation benchmarks and an average 65.31% improvement over existing layout-based unified MLLMs. On spatially related tasks, ATLAS obtains an average 23.06% gain over the base models. Through the same layout interface, ATLAS also supports instruction-guided editing and multimodal grounding. We further introduce ATLAS-Reasoning, a benchmark for evaluating generation under complex spatial instructions.",
+      "pdf_url": "https://arxiv.org/abs/2607.16409",
+      "comment": "",
+      "technologies": [
+        "Unified Multimodal Large Language Models",
+        "Reinforcement Learning from Human Feedback",
+        "Layout-Aware Reasoning"
+      ],
+      "maturity": "medium",
+      "confidence": 0.8,
+      "curator_score": 5.7,
+      "product_potential": [
+        "AI-powered design assistant for architects and interior designers",
+        "Customizable image generation platform for e-commerce and marketing",
+        "Interactive storytelling tool for educational content creation"
+      ],
+      "domain_applications": [
+        "creative",
+        "education",
+        "enterprise"
+      ]
+    },
+    {
+      "id": "2511.15830",
+      "title": "Mini Amusement Parks (MAPs): A Testbed for Modelling Business Decisions",
+      "authors": [],
+      "categories": [
+        "cs.AI"
+      ],
+      "published": "2026-07-21",
+      "updated": "2026-07-21",
+      "summary": "arXiv:2511.15830v3 Announce Type: replace Abstract: Despite rapid progress in artificial intelligence, current systems struggle with the interconnected challenges that define real-world decision making. Practical domains such as business management require open-ended optimization, actively learning environment dynamics from sparse experience, planning over long horizons in stochastic settings, and reasoning over spatial information. Yet no existing human--AI benchmarks assess how well agents integrate these challenges in a grounded decision-making context. To this end, we introduce Mini Amusement Parks (MAPs), an amusement-park simulator designed to evaluate an agent's ability to model its environment, anticipate long-term consequences under uncertainty, and strategically operate a complex business. We provide expert human performance and a comprehensive evaluation of state-of-the-art agents, finding experts outperform these systems by 11.4x on easy mode and 15.3x on medium mode. Our analysis reveals persistent weaknesses in long-horizon planning, sample-efficient learning, spatial reasoning, and modelling uncertainty. By unifying these challenges within a single environment, MAPs offers a new foundation for benchmarking agents capable of adaptable decision making. Code: https://github.com/Skyfall-Research/MAPs",
+      "pdf_url": "https://arxiv.org/abs/2511.15830",
+      "comment": "",
+      "technologies": [
+        "Reinforcement Learning from Human Feedback",
+        "Sparse Attention",
+        "Retrieval Augmented Generation"
+      ],
+      "maturity": "early",
+      "confidence": 0.7,
+      "curator_score": 5.7,
+      "product_potential": [
+        "AI-powered business strategy simulator for training and decision-making",
+        "Adaptive AI agents for long-horizon planning in dynamic environments",
+        "Spatial reasoning AI for complex business environments"
+      ],
+      "domain_applications": [
+        "enterprise",
+        "finance",
+        "other"
+      ]
+    },
+    {
+      "id": "2505.11765",
+      "title": "OMAC: A Holistic Optimization Framework for LLM-Based Multi-Agent Collaboration",
+      "authors": [],
+      "categories": [
+        "cs.AI"
+      ],
+      "published": "2026-07-21",
+      "updated": "2026-07-21",
+      "summary": "arXiv:2505.11765v5 Announce Type: replace-cross Abstract: Agents powered by advanced large language models (LLMs) have demonstrated impressive capabilities across diverse complex applications. Recently, Multi-Agent Systems (MAS), wherein multiple agents collaborate and communicate with each other, have exhibited enhanced capabilities in complex tasks, such as high-quality code generation and arithmetic reasoning. However, the development of such systems often relies on handcrafted methods, and the literature on systematic design and optimization of LLM-based MAS remains limited. In this work, we introduce \\textbf{OMAC}, a general framework designed for holistic optimization of LLM-based MAS. Specifically, we identify five key optimization dimensions for MAS, encompassing both agent functionality and collaboration structure. Building upon these dimensions, we first propose a general algorithm, utilizing two actors termed the Semantic Initializer and the Contrastive Comparator, to optimize any single dimension. Then, we present an algorithm for joint optimization across multiple dimensions. Extensive experiments demonstrate the superior performance of OMAC on diverse tasks against recent approaches.",
+      "pdf_url": "https://arxiv.org/abs/2505.11765",
+      "comment": "",
+      "technologies": [
+        "Multi-Agent Systems",
+        "LLM Optimization",
+        "Contrastive Learning"
+      ],
+      "maturity": "early",
+      "confidence": 0.8,
+      "curator_score": 5.7,
+      "product_potential": [
+        "Enhanced AI-driven collaboration tools for enterprise workflows",
+        "Advanced AI tutors for personalized education",
+        "Automated multi-agent systems for complex scientific simulations"
+      ],
+      "domain_applications": [
+        "education",
+        "enterprise",
+        "science"
+      ]
+    },
+    {
+      "id": "2607.19339",
+      "title": "OmniReasoner: Thinking with Long Audio-Video via Native Tool Use",
+      "authors": [
+        "Yu Chen",
+        "Caorui Li",
+        "Ziyu Xiong",
+        "Yidong Wang",
+        "Mingqi Gao",
+        "Shuman Liu",
+        "Biao Liu",
+        "Chunfeng Yang",
+        "Anxiang Zeng",
+        "Haibo Zhang",
+        "Chaofan Chen"
+      ],
+      "categories": [
+        "cs.CV"
+      ],
+      "published": "2026-07-21",
+      "updated": "2026-07-21",
+      "summary": "Long audio-video reasoning is difficult for omnimodal LLMs because the decisive evidence is often sparse, cross-modal, and too expensive to preserve with uniformly high-fidelity inputs. We introduce OmniReasoner, a tool-use post-training framework for Thinking with Long Audio-Video: omni-modal LLMs learn, via supervised fine-tuning and reinforcement learning, to decide whether and where to call a zoom-in tool before answering. OmniReasoner first builds a low-cost global preview of the full stream and then, when needed, calls the zoom-in tool with a requested temporal interval for higher-fidelity visual and audio inspection before answering. Because the model observes different sampling granularities before and after this call -- a sparse global preview and a denser local clip -- we introduce TimeAnchor, which keeps the tool's temporal argument valid and round-trip-consistent across these granularities, rather than tied to frame indices from a particular sampling rate. To make this tool-use behavior trainable without expensive manual interval annotation, we build a Temporal Augmented Data Engine that synthesizes tool-use post-training trajectories by video editing and composition. Experiments across omnimodal and video benchmarks show that OmniReasoner improves both answer accuracy and temporal grounding while concentrating high-fidelity computation on informative regions. Code is available at https://github.com/RockyChen0205/OmniReasoner.",
+      "pdf_url": "https://arxiv.org/pdf/2607.19339v1",
+      "comment": "",
+      "technologies": [
+        "Multimodal Learning",
+        "Tool Use",
+        "Reinforcement Learning",
+        "Temporal Augmentation",
+        "TimeAnchor"
+      ],
+      "maturity": "early",
+      "confidence": 0.8,
+      "curator_score": 5.7,
+      "product_potential": [
+        "AI-powered video analysis tool for content creators",
+        "Automated surveillance system with selective high-fidelity inspection",
+        "AI assistant for medical professionals analyzing long patient videos"
+      ],
+      "domain_applications": [
+        "creative",
+        "enterprise",
+        "healthcare"
+      ]
+    }
+  ],
+  "technologies": [
+    {
+      "name": "Behavioral Auditing",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.8,
+      "trend": "rising",
+      "applications": [
+        "finance",
+        "enterprise"
+      ]
+    },
+    {
+      "name": "Black-Box Auditing",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.8,
+      "trend": "rising",
+      "applications": [
+        "finance",
+        "enterprise"
+      ]
+    },
+    {
+      "name": "Parametric Hindsight",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.8,
+      "trend": "rising",
+      "applications": [
+        "finance",
+        "enterprise"
+      ]
+    },
+    {
+      "name": "Partially Observable Markov Decision Process (POMDP)",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.8,
+      "trend": "rising",
+      "applications": [
+        "robotics",
+        "enterprise",
+        "other"
+      ]
+    },
+    {
+      "name": "Reinforcement Learning",
+      "papers": 6,
+      "maturity": "medium",
+      "confidence": 0.8,
+      "trend": "rising",
+      "applications": [
+        "robotics",
+        "education",
+        "enterprise",
+        "science",
+        "healthcare",
+        "creative"
+      ]
+    },
+    {
+      "name": "Graph-based Memory",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.8,
+      "trend": "rising",
+      "applications": [
+        "robotics",
+        "enterprise",
+        "other"
+      ]
+    },
+    {
+      "name": "Multimodal Learning",
+      "papers": 5,
+      "maturity": "medium",
+      "confidence": 0.85,
+      "trend": "rising",
+      "applications": [
+        "robotics",
+        "education",
+        "enterprise",
+        "science",
+        "healthcare",
+        "creative"
+      ]
+    },
+    {
+      "name": "Self-Correction",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.8,
+      "trend": "rising",
+      "applications": [
+        "robotics",
+        "enterprise",
+        "other"
+      ]
+    },
+    {
+      "name": "Rubric-based Feedback Evaluation",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.85,
+      "trend": "rising",
+      "applications": [
+        "education"
+      ]
+    },
+    {
+      "name": "Adaptive Gated Feedback Optimization",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.85,
+      "trend": "rising",
+      "applications": [
+        "education"
+      ]
+    },
+    {
+      "name": "Adjacent Contrastive Reasoning",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.85,
+      "trend": "rising",
+      "applications": [
+        "education"
+      ]
+    },
+    {
+      "name": "On-device AI",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.85,
+      "trend": "rising",
+      "applications": [
+        "education",
+        "enterprise",
+        "robotics",
+        "other"
+      ]
+    },
+    {
+      "name": "Low-Rank Adaptation",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.85,
+      "trend": "rising",
+      "applications": [
+        "education",
+        "enterprise",
+        "robotics",
+        "other"
+      ]
+    },
+    {
+      "name": "Chain-of-Thought Prompting",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.85,
+      "trend": "rising",
+      "applications": [
+        "education",
+        "enterprise",
+        "robotics",
+        "other"
+      ]
+    },
+    {
+      "name": "Multi-Agent Reinforcement Learning",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.8,
+      "trend": "rising",
+      "applications": [
+        "robotics",
+        "healthcare",
+        "accessibility"
+      ]
+    },
+    {
+      "name": "Ad-Hoc Teamwork",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.8,
+      "trend": "rising",
+      "applications": [
+        "robotics",
+        "healthcare",
+        "accessibility"
+      ]
+    },
+    {
+      "name": "GPU Acceleration",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.8,
+      "trend": "rising",
+      "applications": [
+        "robotics",
+        "healthcare",
+        "accessibility"
+      ]
+    },
+    {
+      "name": "JAX",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.8,
+      "trend": "rising",
+      "applications": [
+        "robotics",
+        "healthcare",
+        "accessibility"
+      ]
+    },
+    {
+      "name": "MuJoCo-MJX",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.8,
+      "trend": "rising",
+      "applications": [
+        "robotics",
+        "healthcare",
+        "accessibility"
+      ]
+    },
+    {
+      "name": "Agent Harness Evolution",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.8,
+      "trend": "rising",
+      "applications": [
+        "education",
+        "enterprise",
+        "science"
+      ]
+    },
+    {
+      "name": "Iterative Reasoning Loops",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.8,
+      "trend": "rising",
+      "applications": [
+        "education",
+        "enterprise",
+        "science"
+      ]
+    },
+    {
+      "name": "Context Management",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.8,
+      "trend": "rising",
+      "applications": [
+        "education",
+        "enterprise",
+        "science"
+      ]
+    },
+    {
+      "name": "Continual Learning",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.8,
+      "trend": "rising",
+      "applications": [
+        "healthcare",
+        "education",
+        "robotics"
+      ]
+    },
+    {
+      "name": "Expert Routing",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.8,
+      "trend": "rising",
+      "applications": [
+        "healthcare",
+        "education",
+        "robotics"
+      ]
+    },
+    {
+      "name": "Parameter-efficient Adaptation",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.8,
+      "trend": "rising",
+      "applications": [
+        "healthcare",
+        "education",
+        "robotics"
+      ]
+    },
+    {
+      "name": "Distribution-Aware Routing",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.8,
+      "trend": "rising",
+      "applications": [
+        "healthcare",
+        "education",
+        "robotics"
+      ]
+    },
+    {
+      "name": "Domain Identification",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.8,
+      "trend": "rising",
+      "applications": [
+        "healthcare",
+        "education",
+        "robotics"
+      ]
+    },
+    {
+      "name": "Masked Diffusion Language Models",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.85,
+      "trend": "rising",
+      "applications": [
+        "robotics",
+        "science",
+        "other"
+      ]
+    },
+    {
+      "name": "Reinforcement Learning from Human Feedback",
+      "papers": 3,
+      "maturity": "medium",
+      "confidence": 0.8,
+      "trend": "rising",
+      "applications": [
+        "robotics",
+        "science",
+        "other",
+        "creative",
+        "education",
+        "enterprise"
+      ]
+    },
+    {
+      "name": "World Models",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.85,
+      "trend": "rising",
+      "applications": [
+        "robotics",
+        "science",
+        "other"
+      ]
+    },
+    {
+      "name": "Steerable Text-Based World Models",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.85,
+      "trend": "rising",
+      "applications": [
+        "robotics",
+        "science",
+        "other"
+      ]
+    },
+    {
+      "name": "Empirical Grounding",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.85,
+      "trend": "rising",
+      "applications": [
+        "science",
+        "enterprise",
+        "other"
+      ]
+    },
+    {
+      "name": "Retrieval Augmented Generation",
+      "papers": 2,
+      "maturity": "medium",
+      "confidence": 0.85,
+      "trend": "rising",
+      "applications": [
+        "science",
+        "enterprise",
+        "other",
+        "finance"
+      ]
+    },
+    {
+      "name": "Vision Transformer",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.8,
+      "trend": "rising",
+      "applications": [
+        "creative",
+        "enterprise",
+        "other"
+      ]
+    },
+    {
+      "name": "Diffusion Models",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.8,
+      "trend": "rising",
+      "applications": [
+        "creative",
+        "enterprise",
+        "other"
+      ]
+    },
+    {
+      "name": "Mixture of Experts",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.8,
+      "trend": "rising",
+      "applications": [
+        "creative",
+        "enterprise",
+        "other"
+      ]
+    },
+    {
+      "name": "On-Policy Distillation",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.8,
+      "trend": "rising",
+      "applications": [
+        "healthcare"
+      ]
+    },
+    {
+      "name": "Unified Multimodal Large Language Models",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.8,
+      "trend": "rising",
+      "applications": [
+        "creative",
+        "education",
+        "enterprise"
+      ]
+    },
+    {
+      "name": "Layout-Aware Reasoning",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.8,
+      "trend": "rising",
+      "applications": [
+        "creative",
+        "education",
+        "enterprise"
+      ]
+    },
+    {
+      "name": "Sparse Attention",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.7,
+      "trend": "rising",
+      "applications": [
+        "enterprise",
+        "finance",
+        "other"
+      ]
+    },
+    {
+      "name": "Multi-Agent Systems",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.8,
+      "trend": "rising",
+      "applications": [
+        "education",
+        "enterprise",
+        "science"
+      ]
+    },
+    {
+      "name": "LLM Optimization",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.8,
+      "trend": "rising",
+      "applications": [
+        "education",
+        "enterprise",
+        "science"
+      ]
+    },
+    {
+      "name": "Contrastive Learning",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.8,
+      "trend": "rising",
+      "applications": [
+        "education",
+        "enterprise",
+        "science"
+      ]
+    },
+    {
+      "name": "Tool Use",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.8,
+      "trend": "rising",
+      "applications": [
+        "creative",
+        "enterprise",
+        "healthcare"
+      ]
+    },
+    {
+      "name": "Temporal Augmentation",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.8,
+      "trend": "rising",
+      "applications": [
+        "creative",
+        "enterprise",
+        "healthcare"
+      ]
+    },
+    {
+      "name": "TimeAnchor",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.8,
+      "trend": "rising",
+      "applications": [
+        "creative",
+        "enterprise",
+        "healthcare"
+      ]
+    }
+  ],
+  "product_opportunities": [
+    {
+      "technology": "Multimodal Learning",
+      "idea": "MultiSense: AI-powered robot assistant that understands and responds to voice, text, and visual cues",
+      "business_value": 9,
+      "engineering_difficulty": 8,
+      "competitive_advantage": "high",
+      "development_time": "3-6 months"
+    },
+    {
+      "technology": "Rubric-based Feedback Evaluation",
+      "idea": "GradeSmart: AI tutor that provides detailed, rubric-based feedback on student assignments",
+      "business_value": 8,
+      "engineering_difficulty": 7,
+      "competitive_advantage": "medium",
+      "development_time": "2-4 months"
+    },
+    {
+      "technology": "Adaptive Gated Feedback Optimization",
+      "idea": "AdaptLearn: AI learning platform that adapts and optimizes feedback based on student performance",
+      "business_value": 8,
+      "engineering_difficulty": 7,
+      "competitive_advantage": "medium",
+      "development_time": "3-5 months"
+    },
+    {
+      "technology": "Adjacent Contrastive Reasoning",
+      "idea": "ContrastThink: AI tool that helps students develop critical thinking skills through adjacent contrastive reasoning",
+      "business_value": 7,
+      "engineering_difficulty": 6,
+      "competitive_advantage": "medium",
+      "development_time": "2-3 months"
+    },
+    {
+      "technology": "On-device AI",
+      "idea": "EdgeLearn: AI-powered educational app that runs entirely on-device for privacy and efficiency",
+      "business_value": 8,
+      "engineering_difficulty": 7,
+      "competitive_advantage": "high",
+      "development_time": "3-6 months"
+    },
+    {
+      "technology": "Low-Rank Adaptation",
+      "idea": "EfficientLearn: AI educational platform that uses low-rank adaptation to reduce computational costs",
+      "business_value": 7,
+      "engineering_difficulty": 6,
+      "competitive_advantage": "medium",
+      "development_time": "2-4 months"
+    },
+    {
+      "technology": "Chain-of-Thought Prompting",
+      "idea": "ThinkChain: AI tutor that guides students through complex problems using chain-of-thought prompting",
+      "business_value": 8,
+      "engineering_difficulty": 7,
+      "competitive_advantage": "medium",
+      "development_time": "2-3 months"
+    },
+    {
+      "technology": "Masked Diffusion Language Models",
+      "idea": "DiffuseLearn: AI educational platform that uses masked diffusion language models to generate diverse learning content",
+      "business_value": 8,
+      "engineering_difficulty": 8,
+      "competitive_advantage": "high",
+      "development_time": "3-6 months"
+    },
+    {
+      "technology": "World Models",
+      "idea": "WorldSim: AI-powered simulation tool for robotics and scientific research",
+      "business_value": 9,
+      "engineering_difficulty": 8,
+      "competitive_advantage": "very high",
+      "development_time": "4-8 months"
+    },
+    {
+      "technology": "Steerable Text-Based World Models",
+      "idea": "SteerSim: AI-powered simulation tool that allows users to steer and control simulations using text-based commands",
+      "business_value": 9,
+      "engineering_difficulty": 8,
+      "competitive_advantage": "very high",
+      "development_time": "4-8 months"
+    },
+    {
+      "technology": "Empirical Grounding",
+      "idea": "GroundTruth: AI tool that helps researchers and scientists ground their work in empirical evidence",
+      "business_value": 8,
+      "engineering_difficulty": 7,
+      "competitive_advantage": "high",
+      "development_time": "3-5 months"
+    },
+    {
+      "technology": "Retrieval Augmented Generation",
+      "idea": "RetrieveGen: AI-powered content generation tool that retrieves and augments information from a knowledge base",
+      "business_value": 8,
+      "engineering_difficulty": 7,
+      "competitive_advantage": "high",
+      "development_time": "3-5 months"
+    },
+    {
+      "technology": "Behavioral Auditing",
+      "idea": "AuditBot: AI tool that audits and analyzes the behavior of AI models to ensure fairness and transparency",
+      "business_value": 8,
+      "engineering_difficulty": 7,
+      "competitive_advantage": "medium",
+      "development_time": "2-4 months"
+    },
+    {
+      "technology": "Black-Box Auditing",
+      "idea": "BoxAudit: AI tool that audits and analyzes the behavior of black-box AI models to ensure fairness and transparency",
+      "business_value": 8,
+      "engineering_difficulty": 7,
+      "competitive_advantage": "medium",
+      "development_time": "2-4 months"
+    },
+    {
+      "technology": "Parametric Hindsight",
+      "idea": "Hindsight: AI tool that helps financial analysts and researchers understand the implications of different parameters and scenarios",
+      "business_value": 8,
+      "engineering_difficulty": 7,
+      "competitive_advantage": "medium",
+      "development_time": "2-4 months"
+    }
+  ]
+}

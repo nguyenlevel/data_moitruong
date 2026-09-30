@@ -1,0 +1,1262 @@
+{
+  "meta": {
+    "date": "2026-09-28",
+    "papers_tracked": 15,
+    "technologies_discovered": 49,
+    "opportunities_identified": 15,
+    "last_update": "2026-09-28 11:53 UTC",
+    "backend": "llm7",
+    "model": "Research Curator v1"
+  },
+  "brief": [
+    {
+      "technology": "Diffusion Models",
+      "why_it_matters": "Diffusion models are advancing rapidly in creative applications, offering high-quality generation of human motion and other complex data.",
+      "opportunity": "Product builders can leverage diffusion models to create innovative tools in creative industries, such as virtual reality, animation, and interactive media."
+    },
+    {
+      "technology": "Latent Reasoning",
+      "why_it_matters": "Latent reasoning enhances the ability of multimodal large language models to perform complex reasoning tasks, which is crucial for applications in healthcare, robotics, and science.",
+      "opportunity": "Product builders can develop advanced AI systems that require deep reasoning capabilities, such as diagnostic tools in healthcare or autonomous systems in robotics."
+    },
+    {
+      "technology": "Reinforcement Learning",
+      "why_it_matters": "Reinforcement learning is being applied to a wide range of domains, including robotics, enterprise, and creative applications, enabling agents to learn and adapt in complex environments.",
+      "opportunity": "Product builders can create intelligent agents that can autonomously learn and adapt, such as robotic assistants in enterprise settings or immersive video role-playing games."
+    },
+    {
+      "technology": "Multimodal Learning",
+      "why_it_matters": "Multimodal learning allows AI systems to process and integrate information from multiple modalities, such as text, images, and video, which is essential for applications in creative, education, and enterprise domains.",
+      "opportunity": "Product builders can develop multimodal AI systems that can understand and generate content across different modalities, such as virtual assistants that can process and respond to both text and voice inputs."
+    },
+    {
+      "technology": "Neuro-Symbolic Integration",
+      "why_it_matters": "Neuro-symbolic integration combines the strengths of neural networks and symbolic reasoning, enabling AI systems to perform complex reasoning tasks and adapt to novel situations.",
+      "opportunity": "Product builders can create AI systems that require both deep learning and symbolic reasoning capabilities, such as robotic systems that can plan and execute tasks in dynamic environments."
+    }
+  ],
+  "top_cards": [
+    {
+      "id": "new_technologies",
+      "title": "New Technologies",
+      "value": "49",
+      "label": "discovered this scan",
+      "detail": "Diffusion Models, Multimodal Learning, Latent Reasoning, Chain-of-Thought Prompting, Reinforcement Learning, Skill Cascading Attacks, Agentic Protocol-to-Task Compiler, Decoupled GRPO-based Framework",
+      "color": "accent"
+    },
+    {
+      "id": "emerging_trends",
+      "title": "Emerging Trends",
+      "value": "49",
+      "label": "active trend clusters",
+      "detail": "Mixture of Experts, Large Language Models, Diffusion Models, Multimodal Learning, Latent Reasoning",
+      "color": "green"
+    },
+    {
+      "id": "highest_potential",
+      "title": "Highest Potential",
+      "value": "7.8",
+      "label": "avg opportunity score",
+      "detail": "Timo: $\textbf{T}$aming ... Diffusion Transformer for Human $\textbf{Mo}$tion Gene",
+      "color": "amber"
+    },
+    {
+      "id": "biggest_surprise",
+      "title": "Biggest Surprise",
+      "value": "Timo: $\textbf{T}$aming ... Dif",
+      "label": "confidence 80%",
+      "detail": "",
+      "color": "purple"
+    },
+    {
+      "id": "most_practical",
+      "title": "Most Practical",
+      "value": "Qwen3.8-Omni: Towards Native O",
+      "label": "highest confidence paper",
+      "detail": "A multimodal AI assistant capable of handling video editing, long-form audio and video translation, and music-conditioned music video generation., A real-time multimodal agent framework for responsive, real-time interactions in various domains.",
+      "color": "success"
+    },
+    {
+      "id": "most_innovative",
+      "title": "Most Innovative",
+      "value": "4",
+      "label": "early-stage technologies",
+      "detail": "BioEVAL: A global, multi-institutional benchmark of large language and multimoda",
+      "color": "blue"
+    }
+  ],
+  "papers": [
+    {
+      "id": "2609.30761",
+      "title": "Timo: $\\textbf{T}$aming Mult$\\textbf{i}$modal Diffusion Transformer for Human $\\textbf{Mo}$tion Generation",
+      "authors": [],
+      "categories": [
+        "cs.CV"
+      ],
+      "published": "2026-09-28",
+      "updated": "2026-09-28",
+      "summary": "arXiv:2609.30761v1 Announce Type: new Abstract: Most existing human motion generation (HMG) methods use cross-attention modules to inject text semantics, but ignore the importance of bidirectional modeling between motion and text tokens, which limits text comprehension. A straightforward idea is introducing multimodal diffusion transformers (MMDiT), which have shown effective joint text--visual modeling in vision generation, into HMG. However, we find that articulated motion is temporally coherent but weakly correlated across joints, in which directly applying an MMDiT with flow matching produces poorly coordinated and jerky motion. In this work, we propose Timo, a novel kinematics-aware MMDiT framework tailored for HMG. Timo combines fully shared multimodal attention for bidirectional text--motion modeling with flow matching, geometric and rotational-kinematics supervision that compares actual rotations and their changes over time, and a two-stage curriculum progressing from broad motion learning to detailed caption alignment. Further, we construct a benchmark of $40{,}025$ held-out clips from six public datasets spanning diverse actions, assessing six complementary dimensions under a common evaluator and scoring protocol. Our model substantially outperforms state-of-the-art methods in both quantitative and qualitative evaluations. Remarkably, Timo surpasses Kimodo on five of six dimensions, achieving a $40.8$% relative improvement in the average benchmark score. Project page: https://kyfafyd.wang/projects/timo. Demo page: https://timo.kyfafyd.wang.",
+      "pdf_url": "https://arxiv.org/abs/2609.30761",
+      "comment": "",
+      "technologies": [
+        "Diffusion Models",
+        "Multimodal Learning"
+      ],
+      "maturity": "medium",
+      "confidence": 0.8,
+      "curator_score": 6.2,
+      "product_potential": [
+        "Virtual fitness trainers that generate personalized motion sequences based on user input",
+        "Augmented reality applications for sports coaching and analysis",
+        "Interactive virtual avatars for gaming and social media"
+      ],
+      "domain_applications": [
+        "creative",
+        "education",
+        "healthcare"
+      ]
+    },
+    {
+      "id": "2609.30783",
+      "title": "Skip the Talk, Re-Focus on Vision: Latent Reasoning for Reasoning Segmentation in Multimodal Large Language Models",
+      "authors": [],
+      "categories": [
+        "cs.AI"
+      ],
+      "published": "2026-09-28",
+      "updated": "2026-09-28",
+      "summary": "arXiv:2609.30783v1 Announce Type: cross Abstract: Reasoning segmentation aims to interpret implicit textual queries and enable fine-grained visual perception, which is critical for applications such as human-computer interaction and embodied agents. Existing methods typically generate explicit Chain-of-Thought (CoT) by multimodal large language models (MLLMs) before localizing the target. Although intuitive, such explicit verbal reasoning introduces substantial attention interference: redundant textual tokens disrupt attention during perception-token generation and also increase the effective distance between visual tokens. To address this issue, we propose LIRSeg, which fully replaces explicit CoT with a compact set of learnable latent tokens for reasoning segmentation. LIRSeg is trained in two stages: spatial alignment grounds the latent tokens in object-relevant visual evidence, and GRPO further optimizes them with segmentation rewards. To make these compact latent tokens more informative, we introduce three complementary mechanisms from an information perspective: extreme-advantage sampling for selecting informative training signals, decoupled exploration-stability updates for learning complementary representations, and latent diversity amplification for preventing representational collapse. Extensive experiments on benchmarks demonstrate that LIRSeg consistently improves both segmentation accuracy and reasoning efficiency. Compared with the VisionReasoner baseline, LIRSeg achieves absolute gIoU improvements of 4.9% on ReasonSeg, 7.1% on MUSE, and 4.7% on MMR, while achieving a approximately 16x reduction in reasoning tokens. Code is available in supplementary materials.",
+      "pdf_url": "https://arxiv.org/abs/2609.30783",
+      "comment": "",
+      "technologies": [
+        "Latent Reasoning",
+        "Multimodal Learning",
+        "Chain-of-Thought Prompting",
+        "Spatial Alignment",
+        "Direct Preference Optimization"
+      ],
+      "maturity": "early",
+      "confidence": 0.8,
+      "curator_score": 6.0,
+      "product_potential": [
+        "Enhanced multimodal AI assistants with improved visual reasoning capabilities",
+        "Advanced image segmentation tools for medical imaging and autonomous vehicles",
+        "Efficient reasoning systems for robotics and embodied agents"
+      ],
+      "domain_applications": [
+        "healthcare",
+        "robotics",
+        "science",
+        "other"
+      ]
+    },
+    {
+      "id": "2605.06869",
+      "title": "Agentick: A Unified Benchmark for General Sequential Decision-Making Agents",
+      "authors": [],
+      "categories": [
+        "cs.AI"
+      ],
+      "published": "2026-09-28",
+      "updated": "2026-09-28",
+      "summary": "arXiv:2605.06869v3 Announce Type: replace Abstract: AI agent research spans a wide spectrum: from RL agents that learn from scratch to foundation model agents that leverage pre-trained knowledge, yet no unified benchmark enables fair comparison across these approaches. We present Agentick, a benchmark for sequential decision-making agents designed to evaluate RL, LLM, VLM, hybrid, and human agents on common ground and to power research on the fundamental challenges of sequential decision-making. Agentick provides 37 procedurally generated tasks across six capability categories, four difficulty levels, and five observation modalities, all exposed through a single Gymnasium-compatible interface. The benchmark ships with a Coding API, oracle reference policies for all tasks, pre-built SFT datasets, a composable agent harness, and a live leaderboard. An evaluation spanning 27 configurations and over 90,000 episodes reveals that no single approach dominates: GPT-5 mini leads overall at 0.309 oracle-normalized score while PPO dominates planning and multi-agent tasks; the reasoning harness multiplies LLM performance by 3-10x; and ASCII observations consistently outperform natural language. These findings highlight the substantial room for improvement that remains across all agent paradigms. Agentick's capability-decomposed, multi-modal design provides the empirical infrastructure needed to drive progress toward general autonomous agents, both as an evaluation framework and as a training ground for RL post-training of foundation models in truly sequential environments.",
+      "pdf_url": "https://arxiv.org/abs/2605.06869",
+      "comment": "",
+      "technologies": [
+        "Reinforcement Learning",
+        "Multimodal Learning",
+        "Chain-of-Thought Prompting"
+      ],
+      "maturity": "early",
+      "confidence": 0.8,
+      "curator_score": 5.7,
+      "product_potential": [
+        "A unified platform for training and evaluating AI agents across different paradigms, enabling fair comparison and progress in sequential decision-making.",
+        "A benchmarking tool for developers to test and optimize their AI agents, with procedurally generated tasks and a live leaderboard."
+      ],
+      "domain_applications": [
+        "robotics",
+        "enterprise",
+        "science",
+        "other"
+      ]
+    },
+    {
+      "id": "2609.30383",
+      "title": "Stealth Apart, Harm Together: Skill Cascading Attacks on Skill-Based Agent Systems",
+      "authors": [],
+      "categories": [
+        "cs.AI"
+      ],
+      "published": "2026-09-28",
+      "updated": "2026-09-28",
+      "summary": "arXiv:2609.30383v1 Announce Type: new Abstract: A skill is a modular package of natural-language instructions, executable scripts, and reference resources that an agent can load at runtime to extend its capabilities for a specific task. Skill-based agent systems therefore enable flexible reuse of third-party capabilities, but the openness of this skill ecosystem also opens up a new attack surface. Prior work has focused on vulnerabilities within individual skills, but little attention has been paid to risks that arise from interactions across skills. In this paper, we introduce skill cascading attacks, a threat paradigm in which a malicious objective is distributed across multiple skills so that each modification looks benign in isolation, yet their combined execution is harmful. For instance, in a prescription-review pipeline, the first skill weakens signals of recently discontinued medications in the extracted history, the second downgrades the severity of any drug interaction tied to them, and the third suppresses the resulting low-priority alert in the final summary, so that a severe drug-interaction warning silently disappears before reaching the physician. To systematically study this safety blind spot, we develop SkillCascade, an automated multi-agent red-teaming framework, and release SkillCascade-Bench, a benchmark of 213 validated cascading test cases across multiple agent systems and domains. Across representative agents (e.g., OpenClaw, Claude Code, Codex) and LLM backbones, cascaded interactions reliably induce harmful behaviors while evading existing per-skill scanners and runtime monitors. Our findings highlight a gap between component-level integrity and system-level safety, and call for defenses that reason over cross-skill interactions rather than individual skills in isolation.",
+      "pdf_url": "https://arxiv.org/abs/2609.30383",
+      "comment": "",
+      "technologies": [
+        "Skill Cascading Attacks",
+        "Multi-agent Red-teaming Framework"
+      ],
+      "maturity": "early",
+      "confidence": 0.8,
+      "curator_score": 5.6,
+      "product_potential": [
+        "Automated multi-agent red-teaming framework for cybersecurity",
+        "Cross-skill interaction reasoning for system-level safety in AI agents"
+      ],
+      "domain_applications": [
+        "enterprise",
+        "science",
+        "other"
+      ]
+    },
+    {
+      "id": "2609.30971",
+      "title": "SciHorizon-eLab: An Agentic Protocol-to-Task Compiler for Scalable Benchmarking of Scientific Embodied Agents",
+      "authors": [],
+      "categories": [
+        "cs.AI"
+      ],
+      "published": "2026-09-28",
+      "updated": "2026-09-28",
+      "summary": "arXiv:2609.30971v1 Announce Type: new Abstract: Embodied agents offer a promising route to automating scientific experimentation, yet their progress is constrained by the lack of reliable and systematic evaluation environments. Existing simulation-based laboratory benchmarks rely heavily on manual task engineering, making it challenging to systematically compile diverse scientific protocols into executable and verifiable embodied tasks at scale. To address this challenge, we introduce SciHorizon-eLab, an agentic protocol-to-task compiler that formulates scientific embodied task construction as a compilation problem. Given a natural-language protocol of scientific experiments, SciHorizon-eLab progressively compiles laboratory protocols into semantic-preserving embodied tasks through semantic grounding, executable task synthesis, and multi-stage simulation-based certification. The system generates semantically grounded environments, executable manipulation programs, and step-level success specifications, while enabling reproducible generation of expert demonstrations and execution traces. Using this pipeline, we further construct \\BenchName, a ready-to-use benchmark comprising 300 certified tasks across diverse laboratory operations. It supports HIL task execution, reproducible expert-demonstration generation, and ordered step-level evaluation. Across representative tasks, the strongest policy attains an average success rate of only 49.7%, with further evaluations revealing pronounced weaknesses in human and embodied agent coordination. We publicly release the code, benchmark data, and evaluation toolkit at https://github.com/SciHorizon-elab/SciHorizon-elab.",
+      "pdf_url": "https://arxiv.org/abs/2609.30971",
+      "comment": "",
+      "technologies": [
+        "Agentic Protocol-to-Task Compiler",
+        "Semantic Grounding",
+        "Executable Task Synthesis",
+        "Multi-stage Simulation-based Certification"
+      ],
+      "maturity": "early",
+      "confidence": 0.7,
+      "curator_score": 5.6,
+      "product_potential": [
+        "Automated scientific experimentation platform",
+        "Benchmarking tool for embodied agents",
+        "Simulation-based certification system for scientific tasks"
+      ],
+      "domain_applications": [
+        "science",
+        "robotics"
+      ]
+    },
+    {
+      "id": "2605.04733",
+      "title": "Reward-Decomposed Reinforcement Learning for Immersive Video Role-Playing",
+      "authors": [],
+      "categories": [
+        "cs.AI"
+      ],
+      "published": "2026-09-28",
+      "updated": "2026-09-28",
+      "summary": "arXiv:2605.04733v3 Announce Type: replace Abstract: Text-based role-playing models can imitate character styles, but often fail to capture scene atmosphere and evolving tension, which are crucial for immersive applications such as VR games and interactive narratives. We study video-grounded role-playing dialogue and introduce EBM-RL (Eye--Brain--Mouth Reinforcement Learning), a decoupled GRPO-based framework that separates observation ( ), reasoning ( ), and utterance generation ( ). This design mimics the human See-Think-Speak process, enabling the model to ground dialogue in visual perception before reasoning and response generation. To optimize this See-Think-Speak process, EBM-RL integrates complementary rewards for scene--text alignment, perceptual--cognitive utility, answer faithfulness, and format consistency. Extensive experiments show that EBM-RL substantially outperforms text-only role-playing baselines and larger-scale vision-language models on our immersive role-playing benchmark, improving both visual-atmosphere consistency and character authenticity. Moreover, EBM-RL demonstrates strong zero-shot transfer to out-of-domain VideoQA benchmarks without additional fine-tuning. We also release an open-source dataset for video-grounded role-playing dialogue.",
+      "pdf_url": "https://arxiv.org/abs/2605.04733",
+      "comment": "",
+      "technologies": [
+        "Decoupled GRPO-based Framework",
+        "EBM-RL (Eye--Brain--Mouth Reinforcement Learning)",
+        "Complementary Rewards (Scene--Text Alignment, Perceptual--Cognitive Utility, Answer Faithfulness, Format Consistency)"
+      ],
+      "maturity": "medium",
+      "confidence": 0.8,
+      "curator_score": 5.6,
+      "product_potential": [
+        "Immersive Virtual Reality Game Dialogue System",
+        "Interactive Narrative Generation Platform for Video Content"
+      ],
+      "domain_applications": [
+        "creative",
+        "enterprise"
+      ]
+    },
+    {
+      "id": "2609.29421",
+      "title": "Rufus-Air: An Open LLM Post-Training Recipe",
+      "authors": [],
+      "categories": [
+        "cs.AI"
+      ],
+      "published": "2026-09-28",
+      "updated": "2026-09-28",
+      "summary": "arXiv:2609.29421v2 Announce Type: replace-cross Abstract: Rufus-Air is an open and reproducible post-training recipe on GLM-4.5-Air-Base (106B-A12B), organized as a serial pipeline of eight stages: SFT, Reasoning RL, Coding RL, Instruction-Following RL, General Agent, Coding Agent, Search Agent, and RLHF. We document the data, reward design, infrastructure, stage order, and stagewise results needed to reproduce the recipe. Stages progress from basic to advanced capabilities and from hard, verifiable rewards to softer judge-based signals. Training builds on open-source components and public data, much of it used as released, without new human annotation or an in-house distillation teacher. Our main findings are that (i) diverse, high-quality SFT establishes a strong capability floor; (ii) difficulty filtering keeps RL prompts within a productive learning range; (iii) reward reliability provides a practical principle for ordering stages; and (iv) infrastructure and engineering choices are part of the recipe, not just an implementation detail. Rufus-Air improves over the official GLM-4.5-Air post-trained release and is competitive with similarly sized open models.",
+      "pdf_url": "https://arxiv.org/abs/2609.29421",
+      "comment": "",
+      "technologies": [
+        "Reinforcement Learning from Human Feedback",
+        "Instruction Tuning",
+        "Reasoning RL",
+        "Coding RL",
+        "RLHF",
+        "Serial Pipeline Training",
+        "Open and Reproducible Recipe"
+      ],
+      "maturity": "medium",
+      "confidence": 0.7,
+      "curator_score": 5.6,
+      "product_potential": [
+        "A customizable AI agent builder platform that allows users to select and combine different training stages to create AI agents tailored to specific tasks or industries.",
+        "A service that provides pre-trained AI models with diverse capabilities, built using the Rufus-Air recipe, for integration into third-party applications."
+      ],
+      "domain_applications": [
+        "enterprise",
+        "creative",
+        "education",
+        "other"
+      ]
+    },
+    {
+      "id": "2609.30769",
+      "title": "Query-Conditioned Prototype Adaptation for Cross-Domain Few-Shot Learning: Single-Query Inference, Controlled Comparisons, and Failure Modes",
+      "authors": [],
+      "categories": [
+        "cs.CV"
+      ],
+      "published": "2026-09-28",
+      "updated": "2026-09-28",
+      "summary": "arXiv:2609.30769v1 Announce Type: new Abstract: Cross-domain few-shot learning requires adapting a classifier to a new visual domain from very few labelled examples without target-time parameter updates. We isolate one question: under a fixed global representation, what does joint query-support adaptation contribute to prototype construction? The Within-Instance Prototypical Transformer (WIPT) implements single-query test-time prototype adaptation by jointly transforming one unlabelled query and the labelled support embeddings, then forming query-specific class means. Using a shared frozen ViT-S/16 encoder, miniImageNet source training, and CUB, EuroSAT and ISIC targets, we replicate the key comparisons across five independent training seeds. In 1-shot evaluation, WIPT improves frozen ProtoNet in every run on CUB (+0.21 percentage points) and EuroSAT (+2.07), but decreases ISIC (-0.22). In 5-shot evaluation, ProtoNet remains strongest overall, while WIPT consistently improves a capacity-matched support-only Transformer on ISIC (+0.99). Joint processing of up to five queries yields no reliable accuracy gain; in a head-only 5-shot benchmark, g = 5 reduces analytical attention-token pairs by 73% and peak allocated memory by 29% relative to g = 1, although latency is non-monotonic. Across all target/shot conditions, WIPT changes uncertain ProtoNet decisions far more than confident ones, and rescue/break decomposition accounts for the observed gains and losses. Source-shift and scorer controls further show that the benefit is not universal. Overall, WIPT provides a streaming-compatible form of test-time prototype adaptation that can improve difficult low-shot cross-domain decisions without target-time optimization.",
+      "pdf_url": "https://arxiv.org/abs/2609.30769",
+      "comment": "",
+      "technologies": [
+        "Within-Instance Prototypical Transformer",
+        "Prototype Adaptation",
+        "Test-Time Adaptation",
+        "Cross-Domain Few-Shot Learning"
+      ],
+      "maturity": "medium",
+      "confidence": 0.8,
+      "curator_score": 5.6,
+      "product_potential": [
+        "A real-time image classification system for medical professionals to diagnose skin conditions with limited labeled data",
+        "An educational tool that can adapt to new subjects with minimal training data, improving learning experiences for students"
+      ],
+      "domain_applications": [
+        "healthcare",
+        "education"
+      ]
+    },
+    {
+      "id": "2609.25611",
+      "title": "Qwen3.8-Omni: Towards Native Omni-Modal Agents",
+      "authors": [],
+      "categories": [
+        "cs.CL"
+      ],
+      "published": "2026-09-23",
+      "updated": "2026-09-23",
+      "summary": "arXiv:2609.25611v1 Announce Type: new Abstract: We introduce Qwen3.8-Omni-Flash, a natively multimodal agentic model for real-world multimodal productivity. Compared with previous omni models, which primarily emphasized perception and interaction, Qwen3.8-Omni-Flash substantially improves multimodal understanding and reasoning, as well as performance on long-horizon agentic tasks. These capabilities are supported by a native multimodal co-training strategy that preserves strong text-domain capabilities while facilitating the transfer of agentic capabilities from text to audio and video tasks. The model inherits the sparse mixture-of-experts (MoE) architecture of Qwen3.8-Next and extends the context window to one million tokens, supporting long-context multimodal reasoning and long-horizon planning. These advances enable integration into production workflows as a primary agent or a specialized sub-agent, supporting video editing, long-form audio and video translation, music-conditioned music video or movie generation, and video-based note or omni-skill creation. To address the lack of native audio and video support in existing agent harnesses, we release Qwen-MM-Plugins, a lightweight open-source plugin framework for multimodal productivity. We further frame real-time multimodal interaction as a system-level challenge requiring orchestration of context and memory management, tool use, and sub-agent delegation. Accordingly, we release Qwen-Live-Harness, an open-source framework for building responsive, real-time multimodal agents based on Qwen3.8-Omni-Flash. Extensive evaluations demonstrate that Qwen3.8-Omni-Flash achieves strong performance across multimodal understanding, reasoning, long-horizon agentic execution, and video productivity tasks. These results and the accompanying open-source tools support Qwen3.8-Omni-Flash as a practical foundation for deploying natively multimodal agents in research and production.",
+      "pdf_url": "https://arxiv.org/abs/2609.25611",
+      "comment": "",
+      "technologies": [
+        "Multimodal Learning",
+        "Mixture of Experts",
+        "Long-Context Multimodal Reasoning",
+        "Native Multimodal Co-training"
+      ],
+      "maturity": "medium",
+      "confidence": 0.85,
+      "curator_score": 5.5,
+      "product_potential": [
+        "A multimodal AI assistant capable of handling video editing, long-form audio and video translation, and music-conditioned music video generation.",
+        "A real-time multimodal agent framework for responsive, real-time interactions in various domains."
+      ],
+      "domain_applications": [
+        "creative",
+        "education",
+        "enterprise",
+        "other"
+      ]
+    },
+    {
+      "id": "2603.11351",
+      "title": "Novelty Adaptation Through Hybrid Large Language Model (LLM)-Symbolic Planning and LLM-guided Reinforcement Learning",
+      "authors": [],
+      "categories": [
+        "cs.AI"
+      ],
+      "published": "2026-09-25",
+      "updated": "2026-09-25",
+      "summary": "arXiv:2603.11351v2 Announce Type: replace-cross Abstract: In dynamic open-world environments, autonomous agents often encounter novelties that hinder their ability to find plans to achieve their goals. Specifically, traditional symbolic planners fail to generate plans when the robot's planning domain lacks the operators that enable it to interact appropriately with novel objects in the environment. We propose a neuro-symbolic architecture that integrates symbolic planning, reinforcement learning, and a large language model (LLM) to learn how to handle novel objects. In particular, we leverage the common sense reasoning capability of the LLM to identify missing operators, generate plans with the symbolic AI planner, and write reward functions to guide the reinforcement learning agent in learning control policies for newly identified operators. Our method outperforms the state-of-the-art methods in operator discovery as well as operator learning in continuous robotic domains.Our webpage and code can be access here: helenlu66.github.io/hybridLLMguided/",
+      "pdf_url": "https://arxiv.org/abs/2603.11351",
+      "comment": "",
+      "technologies": [
+        "Neuro-Symbolic Integration",
+        "LLM-guided Reinforcement Learning",
+        "Symbolic Planning"
+      ],
+      "maturity": "medium",
+      "confidence": 0.8,
+      "curator_score": 5.5,
+      "product_potential": [
+        "Adaptive robotic assistants for dynamic environments",
+        "Autonomous systems for novel object interaction in logistics and manufacturing"
+      ],
+      "domain_applications": [
+        "robotics",
+        "enterprise"
+      ]
+    },
+    {
+      "id": "2606.31825",
+      "title": "Breaking Failure Cascades: Step-Aware Reinforcement Learning for Medical Multimodal Reasoning",
+      "authors": [],
+      "categories": [
+        "cs.AI"
+      ],
+      "published": "2026-09-25",
+      "updated": "2026-09-25",
+      "summary": "arXiv:2606.31825v2 Announce Type: replace-cross Abstract: Recent multimodal large language models have shown great promise in clinical image reasoning, but existing post-training pipelines remain predominantly outcome-centric, relying on final answer correctness or sequence-level preferences. This suffers from sparse credit assignment, making it difficult to optimize the reasoning process essential for clinical applications. Our analysis reveals that cascading errors from early-stage reasoning failures are a leading cause of incorrect predictions in medical visual question answering (VQA) benchmarks. Motivated by this, we propose Medical Reasoning-aware Policy Optimization (MRPO), an RL algorithm that incorporates step-wise process rewards. When the final answer is incorrect, MRPO assigns exponentially larger penalties to tokens in earlier invalid reasoning steps, breaking failure cascades without compromising successful paths. Across four multimodal LLM backbones, MRPO consistently outperforms standard GRPO and a recent RL baseline, and on Qwen3-VL-8B-Thinking even surpasses substantially larger medical MLLMs such as HuatuoGPT-Vision-34B by 4.59 points. Moreover, MRPO reduces early-stage reasoning failures from 58.6% to 13.4%, showing that targeted mitigation of cascading failures improves both reasoning quality and final answer accuracy. Our code is available at https://github.com/dmis-lab/MRPO",
+      "pdf_url": "https://arxiv.org/abs/2606.31825",
+      "comment": "",
+      "technologies": [
+        "Reinforcement Learning",
+        "Multimodal Learning"
+      ],
+      "maturity": "early",
+      "confidence": 0.8,
+      "curator_score": 5.5,
+      "product_potential": [
+        "A medical diagnostic assistant that uses multimodal reasoning to improve accuracy and reduce cascading errors in clinical decision-making.",
+        "A training platform for medical students and professionals to practice and improve their diagnostic reasoning skills using AI-generated feedback."
+      ],
+      "domain_applications": [
+        "healthcare"
+      ]
+    },
+    {
+      "id": "2602.01034",
+      "title": "Stepwise Intrinsic Rewards for Reasoning in Large Language Models",
+      "authors": [],
+      "categories": [
+        "cs.AI"
+      ],
+      "published": "2026-09-28",
+      "updated": "2026-09-28",
+      "summary": "arXiv:2602.01034v2 Announce Type: replace Abstract: Reinforcement learning (RL) has become a widely used paradigm for improving the reasoning abilities of large language models (LLMs) and Vision-language models (VLMs). Sparse binary outcome rewards, however, score only final correctness and cannot identify which intermediate steps contributed to it; in multimodal tasks, they may also reward answers driven by linguistic priors rather than visual evidence. Process reward models (PRMs) densify supervision but usually require process annotations, auxiliary models, or inference-time search. In this paper, we introduce Stepwise Marginal Information Gain (MIG), an intrinsic process reward computed from the policy itself. MIG measures how each structured reasoning prefix changes the length-normalized, teacher-forced log-likelihood of the reference answer. A monotonic historical watermark rewards only new likelihood maxima, avoiding duplicate credit after sub-record detours. We combine this signal with outcome and format rewards and a gated self-distillation objective that retains only structurally valid and correct trajectories. For VLMs, a real-versus-blank likelihood gate down-weights rewards when answers remain predictable without the image. Across eight task-specific benchmarks, the full method exceeds outcome-only GRPO in every single-run comparison. In broad-data transfer, it improves average accuracy by up to 4.8 points over binary-reward training and gains 12.6 points on MathVerse. At 7B, it exceeds an external PRM-BoN@16 baseline by 12.9 points on vision-language transfer without inference-time reranking. These results support policy-derived stepwise credit as an annotation-free alternative to explicit process reward modeling.",
+      "pdf_url": "https://arxiv.org/abs/2602.01034",
+      "comment": "",
+      "technologies": [
+        "Reinforcement Learning",
+        "Process Reward Models",
+        "Stepwise Marginal Information Gain",
+        "Self-Distillation",
+        "Multimodal Learning"
+      ],
+      "maturity": "early",
+      "confidence": 0.8,
+      "curator_score": 5.5,
+      "product_potential": [
+        "Developing an AI tutor that provides step-by-step reasoning and feedback for students solving math problems",
+        "Creating an AI assistant for medical professionals that can analyze patient data and provide reasoning steps for diagnosis"
+      ],
+      "domain_applications": [
+        "education",
+        "healthcare",
+        "science"
+      ]
+    },
+    {
+      "id": "2609.30489",
+      "title": "BioEVAL: A global, multi-institutional benchmark of large language and multimodal models for bioengineering",
+      "authors": [],
+      "categories": [
+        "cs.AI"
+      ],
+      "published": "2026-09-28",
+      "updated": "2026-09-28",
+      "summary": "arXiv:2609.30489v1 Announce Type: new Abstract: Large Language Models (LLMs) have demonstrated historic breakthroughs in general reasoning with early successes in biomedical science. However, existing LLM benchmarking emphasizes factual recall, offering limited insight into model performance on frontier and multimodal tasks. We assembled BioEVAL (BioEngineering Validation of AI and LLMs), a global, multi-institutional initiative designed to assess experimental reasoning capability across bioengineering (BE) subfields. BioEVAL spans 11 major BE subfields plus a set of uncategorized items, bringing together 22 research groups to create a PhD-level benchmark comprising 608 evaluation items: 1) 380 multiple-choice questions (MCQs, 359 retained after audit), 2) 218 literature synthesis tasks, and 3) 10 multimodal problems with experimental image interpretation. Benchmark items underwent authoring-group expert review and centralized quality control before evaluation. Following evaluation, a blinded cross-group consensus audit of the highest- and lowest-accuracy MCQ items flagged 21 questions for revision or removal; these were withheld, and all reported MCQ results are computed on the 359 retained items. We evaluated diverse cloud-scale foundation/multimodal models (e.g., ChatGPT, Gemini, and Grok) and locally deployable models suitable for inference on consumer-grade GPUs. Models achieved the highest accuracy of up to 90% on MCQs, similarity score of 0.72 on literature synthesis, and accuracy of 80% on a small sample of multimodal reasoning questions, with substantial performance variation across subfields. Leaderboard rankings characterize current capabilities, limitations, and development priorities across the evaluated BE task categories. BioEVAL is maintained as an extensible benchmark with standardized protocols for continuing expert item contribution and model evaluation.",
+      "pdf_url": "https://arxiv.org/abs/2609.30489",
+      "comment": "",
+      "technologies": [
+        "Large Language Models",
+        "Multimodal Models",
+        "Foundation Models",
+        "Benchmarking Frameworks",
+        "Cloud-Scale Inference",
+        "Consumer-Grade GPU Inference",
+        "Experimental Reasoning Assessment",
+        "Knowledge Evaluation Protocols"
+      ],
+      "maturity": "medium",
+      "confidence": 0.82,
+      "curator_score": 5.4,
+      "product_potential": [
+        "Bioengineering Research Assistant - AI-powered tool for literature synthesis and experimental reasoning support across 11 bioengineering subfields",
+        "PhD-Level Assessment Platform - Educational platform using BioEVAL-style questions for evaluating and training bioengineering students and researchers",
+        "Multimodal Bioengineering Diagnostic Tool - Vision-language model system for interpreting experimental images and assisting with laboratory analysis"
+      ],
+      "domain_applications": [
+        "science",
+        "education",
+        "healthcare"
+      ]
+    },
+    {
+      "id": "2609.30734",
+      "title": "Learning What to Skip: Counterfactual Credit Assignment for Efficient Multi-Agent LLM Workflows",
+      "authors": [],
+      "categories": [
+        "cs.AI"
+      ],
+      "published": "2026-09-28",
+      "updated": "2026-09-28",
+      "summary": "arXiv:2609.30734v1 Announce Type: new Abstract: Multi-agent LLM workflows use planning, execution, verification, and summarization to improve task performance, yet the value of each component depends on the state already produced. Executing every component can waste computation or overwrite a correct intermediate answer. We formulate component omission as counterfactual credit assignment: full-workflow logs reveal the executed trajectory's reward, while controlled skip interventions reveal the consequences of omitting a future step. We introduce Learning What to Skip (LW2S), which learns action-specific safety models from these interventions and combines held-out calibration with domain-native guards to select skips. When an early skip is rejected, the controller can continue execution and reconsider a later component. Across mathematical reasoning, multiple-choice QA, and code generation with two instruction-model families, LW2S reduces recorded token cost while matching or improving aggregate full-workflow accuracy in the evaluated settings. Scale-up and second-topology experiments further examine component redundancy, while shared-error cases reveal why agreement alone is insufficient for skip selection. These findings connect efficient workflow execution to learning the conditional utility of individual components.",
+      "pdf_url": "https://arxiv.org/abs/2609.30734",
+      "comment": "",
+      "technologies": [
+        "Counterfactual Credit Assignment",
+        "Multi-Agent LLM Workflows"
+      ],
+      "maturity": "early",
+      "confidence": 0.7,
+      "curator_score": 5.4,
+      "product_potential": [
+        "Developing an AI-driven workflow optimization tool for enterprises to reduce computational costs while maintaining task accuracy.",
+        "Creating an adaptive AI assistant that can dynamically skip unnecessary steps in multi-agent workflows, improving efficiency and user experience."
+      ],
+      "domain_applications": [
+        "enterprise",
+        "other"
+      ]
+    },
+    {
+      "id": "2609.30604",
+      "title": "The Hard Part Comes After Search: Benchmarking Web Agents on Synthesizing, Organizing, and Displaying Knowledge",
+      "authors": [],
+      "categories": [
+        "cs.AI"
+      ],
+      "published": "2026-09-28",
+      "updated": "2026-09-28",
+      "summary": "arXiv:2609.30604v1 Announce Type: cross Abstract: Existing computer-use agent benchmarks do not fully evaluate agents acting as assistants. A useful assistant retrieves information across complex, multi-step workflows, synthesizes it into artifacts (documents, presentations, spreadsheets), and navigates program interfaces to produce a coherent final product. Such workflows demand reasoning and synthesis, decomposition of complex tasks, as well as visual and spatial understanding. To study agents on workflows like these, we introduce KNOWS, a benchmark of open-ended, complex, browser-based tasks that jointly evaluate these capabilities, with each task culminating in a produced artifact. To write tasks, we develop a task design rubric and a protocol for ensuring that tasks meet the requirements. Each task is paired with an evaluator, a program that combines deterministic checks with LLM judgments to balance the richness, reliability, and automation tradeoff inherent to agent evaluation. We evaluate and analyze frontier computer-use agents and browser-based harnesses. They achieve moderate scores on partial-success metrics, but the best performer fully succeeds in fewer than 3% of our complex, long-horizon tasks. Failures on visual steps render the resulting artifacts unusable, even when agents complete more than 50% of other evaluation steps. Our results expose limitations of current agents acting as end-to-end assistants, and call for progress on tool use, visual understanding, and long-horizon reasoning.",
+      "pdf_url": "https://arxiv.org/abs/2609.30604",
+      "comment": "",
+      "technologies": [
+        "Retrieval Augmented Generation",
+        "Visual Understanding",
+        "Long-horizon Reasoning"
+      ],
+      "maturity": "early",
+      "confidence": 0.7,
+      "curator_score": 5.4,
+      "product_potential": [
+        "AI-powered personal assistant that can synthesize information from multiple sources and create coherent artifacts like documents or presentations",
+        "Browser-based AI agent that can navigate complex workflows and produce usable outputs, even with visual understanding requirements"
+      ],
+      "domain_applications": [
+        "enterprise",
+        "creative",
+        "education"
+      ]
+    }
+  ],
+  "technologies": [
+    {
+      "name": "Diffusion Models",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.8,
+      "trend": "rising",
+      "applications": [
+        "creative",
+        "education",
+        "healthcare"
+      ]
+    },
+    {
+      "name": "Multimodal Learning",
+      "papers": 9,
+      "maturity": "medium",
+      "confidence": 0.8,
+      "trend": "rising",
+      "applications": [
+        "creative",
+        "education",
+        "healthcare",
+        "robotics",
+        "enterprise",
+        "science"
+      ]
+    },
+    {
+      "name": "Latent Reasoning",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.8,
+      "trend": "rising",
+      "applications": [
+        "healthcare",
+        "robotics",
+        "science"
+      ]
+    },
+    {
+      "name": "Chain-of-Thought Prompting",
+      "papers": 2,
+      "maturity": "medium",
+      "confidence": 0.8,
+      "trend": "rising",
+      "applications": [
+        "healthcare",
+        "robotics",
+        "science"
+      ]
+    },
+    {
+      "name": "Reinforcement Learning",
+      "papers": 5,
+      "maturity": "medium",
+      "confidence": 0.8,
+      "trend": "rising",
+      "applications": [
+        "robotics",
+        "enterprise",
+        "science",
+        "healthcare",
+        "education"
+      ]
+    },
+    {
+      "name": "Skill Cascading Attacks",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.8,
+      "trend": "rising",
+      "applications": [
+        "enterprise",
+        "science"
+      ]
+    },
+    {
+      "name": "Agentic Protocol-to-Task Compiler",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.7,
+      "trend": "rising",
+      "applications": [
+        "science",
+        "robotics"
+      ]
+    },
+    {
+      "name": "Decoupled GRPO-based Framework",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.8,
+      "trend": "rising",
+      "applications": [
+        "creative",
+        "enterprise"
+      ]
+    },
+    {
+      "name": "Reinforcement Learning from Human Feedback",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.7,
+      "trend": "rising",
+      "applications": [
+        "enterprise",
+        "creative",
+        "education"
+      ]
+    },
+    {
+      "name": "Within-Instance Prototypical Transformer",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.8,
+      "trend": "rising",
+      "applications": [
+        "healthcare",
+        "education"
+      ]
+    },
+    {
+      "name": "Mixture of Experts",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.85,
+      "trend": "rising",
+      "applications": [
+        "creative",
+        "education",
+        "enterprise"
+      ]
+    },
+    {
+      "name": "Neuro-Symbolic Integration",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.8,
+      "trend": "rising",
+      "applications": [
+        "robotics",
+        "enterprise"
+      ]
+    },
+    {
+      "name": "Process Reward Models",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.8,
+      "trend": "rising",
+      "applications": [
+        "education",
+        "healthcare",
+        "science"
+      ]
+    },
+    {
+      "name": "Large Language Models",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.82,
+      "trend": "rising",
+      "applications": [
+        "science",
+        "education",
+        "healthcare"
+      ]
+    },
+    {
+      "name": "Counterfactual Credit Assignment",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.7,
+      "trend": "rising",
+      "applications": [
+        "enterprise"
+      ]
+    },
+    {
+      "name": "Retrieval Augmented Generation",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.7,
+      "trend": "rising",
+      "applications": [
+        "enterprise",
+        "creative",
+        "education"
+      ]
+    },
+    {
+      "name": "Spatial Alignment",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.7,
+      "trend": "rising",
+      "applications": [
+        "science",
+        "robotics",
+        "other",
+        "healthcare"
+      ]
+    },
+    {
+      "name": "Direct Preference Optimization",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.7,
+      "trend": "rising",
+      "applications": [
+        "science",
+        "robotics",
+        "other",
+        "healthcare"
+      ]
+    },
+    {
+      "name": "Multi-agent Red-teaming Framework",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.7,
+      "trend": "rising",
+      "applications": [
+        "science",
+        "enterprise",
+        "other"
+      ]
+    },
+    {
+      "name": "Semantic Grounding",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.7,
+      "trend": "rising",
+      "applications": [
+        "science",
+        "robotics"
+      ]
+    },
+    {
+      "name": "Executable Task Synthesis",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.7,
+      "trend": "rising",
+      "applications": [
+        "science",
+        "robotics"
+      ]
+    },
+    {
+      "name": "Multi-stage Simulation-based Certification",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.7,
+      "trend": "rising",
+      "applications": [
+        "science",
+        "robotics"
+      ]
+    },
+    {
+      "name": "EBM-RL (Eye--Brain--Mouth Reinforcement Learning)",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.7,
+      "trend": "rising",
+      "applications": [
+        "enterprise",
+        "creative"
+      ]
+    },
+    {
+      "name": "Complementary Rewards (Scene--Text Alignment, Perceptual--Cognitive Utility, Answer Faithfulness, Format Consistency)",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.7,
+      "trend": "rising",
+      "applications": [
+        "enterprise",
+        "creative"
+      ]
+    },
+    {
+      "name": "Instruction Tuning",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.8,
+      "trend": "rising",
+      "applications": [
+        "other",
+        "enterprise",
+        "education",
+        "creative"
+      ]
+    },
+    {
+      "name": "Reasoning RL",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.8,
+      "trend": "rising",
+      "applications": [
+        "other",
+        "enterprise",
+        "education",
+        "creative"
+      ]
+    },
+    {
+      "name": "Coding RL",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.8,
+      "trend": "rising",
+      "applications": [
+        "other",
+        "enterprise",
+        "education",
+        "creative"
+      ]
+    },
+    {
+      "name": "RLHF",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.8,
+      "trend": "rising",
+      "applications": [
+        "other",
+        "enterprise",
+        "education",
+        "creative"
+      ]
+    },
+    {
+      "name": "Serial Pipeline Training",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.8,
+      "trend": "rising",
+      "applications": [
+        "other",
+        "enterprise",
+        "education",
+        "creative"
+      ]
+    },
+    {
+      "name": "Open and Reproducible Recipe",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.8,
+      "trend": "rising",
+      "applications": [
+        "other",
+        "enterprise",
+        "education",
+        "creative"
+      ]
+    },
+    {
+      "name": "Prototype Adaptation",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.7,
+      "trend": "rising",
+      "applications": [
+        "healthcare",
+        "education"
+      ]
+    },
+    {
+      "name": "Test-Time Adaptation",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.7,
+      "trend": "rising",
+      "applications": [
+        "healthcare",
+        "education"
+      ]
+    },
+    {
+      "name": "Cross-Domain Few-Shot Learning",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.7,
+      "trend": "rising",
+      "applications": [
+        "healthcare",
+        "education"
+      ]
+    },
+    {
+      "name": "Long-Context Multimodal Reasoning",
+      "papers": 1,
+      "maturity": "early",
+      "confidence": 0.55,
+      "trend": "emerging",
+      "applications": [
+        "other",
+        "enterprise",
+        "education",
+        "creative"
+      ]
+    },
+    {
+      "name": "Native Multimodal Co-training",
+      "papers": 1,
+      "maturity": "early",
+      "confidence": 0.55,
+      "trend": "emerging",
+      "applications": [
+        "other",
+        "enterprise",
+        "education",
+        "creative"
+      ]
+    },
+    {
+      "name": "LLM-guided Reinforcement Learning",
+      "papers": 1,
+      "maturity": "early",
+      "confidence": 0.55,
+      "trend": "emerging",
+      "applications": [
+        "robotics",
+        "enterprise"
+      ]
+    },
+    {
+      "name": "Symbolic Planning",
+      "papers": 1,
+      "maturity": "early",
+      "confidence": 0.55,
+      "trend": "emerging",
+      "applications": [
+        "robotics",
+        "enterprise"
+      ]
+    },
+    {
+      "name": "Stepwise Marginal Information Gain",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.7,
+      "trend": "rising",
+      "applications": [
+        "science",
+        "healthcare",
+        "education"
+      ]
+    },
+    {
+      "name": "Self-Distillation",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.7,
+      "trend": "rising",
+      "applications": [
+        "science",
+        "healthcare",
+        "education"
+      ]
+    },
+    {
+      "name": "Multimodal Models",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.7,
+      "trend": "rising",
+      "applications": [
+        "science",
+        "healthcare",
+        "education"
+      ]
+    },
+    {
+      "name": "Foundation Models",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.7,
+      "trend": "rising",
+      "applications": [
+        "science",
+        "healthcare",
+        "education"
+      ]
+    },
+    {
+      "name": "Benchmarking Frameworks",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.7,
+      "trend": "rising",
+      "applications": [
+        "science",
+        "healthcare",
+        "education"
+      ]
+    },
+    {
+      "name": "Cloud-Scale Inference",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.7,
+      "trend": "rising",
+      "applications": [
+        "science",
+        "healthcare",
+        "education"
+      ]
+    },
+    {
+      "name": "Consumer-Grade GPU Inference",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.7,
+      "trend": "rising",
+      "applications": [
+        "science",
+        "healthcare",
+        "education"
+      ]
+    },
+    {
+      "name": "Experimental Reasoning Assessment",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.7,
+      "trend": "rising",
+      "applications": [
+        "science",
+        "healthcare",
+        "education"
+      ]
+    },
+    {
+      "name": "Knowledge Evaluation Protocols",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.7,
+      "trend": "rising",
+      "applications": [
+        "science",
+        "healthcare",
+        "education"
+      ]
+    },
+    {
+      "name": "Multi-Agent LLM Workflows",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.7,
+      "trend": "rising",
+      "applications": [
+        "enterprise",
+        "other"
+      ]
+    },
+    {
+      "name": "Visual Understanding",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.7,
+      "trend": "rising",
+      "applications": [
+        "enterprise",
+        "education",
+        "creative"
+      ]
+    },
+    {
+      "name": "Long-horizon Reasoning",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.7,
+      "trend": "rising",
+      "applications": [
+        "enterprise",
+        "education",
+        "creative"
+      ]
+    }
+  ],
+  "product_opportunities": [
+    {
+      "technology": "Mixture of Experts",
+      "idea": "ExpertAI: AI-powered platform for personalized learning and creative content generation",
+      "business_value": 8,
+      "engineering_difficulty": 7,
+      "competitive_advantage": "high",
+      "development_time": "3-6 months"
+    },
+    {
+      "technology": "Large Language Models",
+      "idea": "DocuMind: AI-driven document analysis and summarization tool for researchers and healthcare professionals",
+      "business_value": 9,
+      "engineering_difficulty": 6,
+      "competitive_advantage": "high",
+      "development_time": "2-4 months"
+    },
+    {
+      "technology": "Diffusion Models",
+      "idea": "ArtGen: AI-powered image and video generation platform for creative professionals",
+      "business_value": 7,
+      "engineering_difficulty": 8,
+      "competitive_advantage": "medium",
+      "development_time": "4-6 months"
+    },
+    {
+      "technology": "Multimodal Learning",
+      "idea": "MediaMind: AI-driven platform for analyzing and generating multimedia content",
+      "business_value": 8,
+      "engineering_difficulty": 7,
+      "competitive_advantage": "high",
+      "development_time": "3-5 months"
+    },
+    {
+      "technology": "Latent Reasoning",
+      "idea": "LatentX: AI-powered platform for medical diagnosis and scientific research",
+      "business_value": 9,
+      "engineering_difficulty": 8,
+      "competitive_advantage": "very high",
+      "development_time": "4-6 months"
+    },
+    {
+      "technology": "Chain-of-Thought Prompting",
+      "idea": "ThinkChain: AI-powered platform for complex problem-solving and decision-making",
+      "business_value": 8,
+      "engineering_difficulty": 7,
+      "competitive_advantage": "high",
+      "development_time": "3-5 months"
+    },
+    {
+      "technology": "Reinforcement Learning",
+      "idea": "RLBot: AI-powered platform for optimizing business processes and robotics",
+      "business_value": 9,
+      "engineering_difficulty": 8,
+      "competitive_advantage": "very high",
+      "development_time": "4-6 months"
+    },
+    {
+      "technology": "Skill Cascading Attacks",
+      "idea": "SecureNet: AI-powered platform for enterprise security and threat detection",
+      "business_value": 8,
+      "engineering_difficulty": 7,
+      "competitive_advantage": "high",
+      "development_time": "3-5 months"
+    },
+    {
+      "technology": "Decoupled GRPO-based Framework",
+      "idea": "CreativeMind: AI-powered platform for creative content generation and enterprise applications",
+      "business_value": 7,
+      "engineering_difficulty": 6,
+      "competitive_advantage": "medium",
+      "development_time": "2-4 months"
+    },
+    {
+      "technology": "Within-Instance Prototypical Transformer",
+      "idea": "ProtoLearn: AI-powered platform for personalized learning and healthcare applications",
+      "business_value": 8,
+      "engineering_difficulty": 7,
+      "competitive_advantage": "high",
+      "development_time": "3-5 months"
+    },
+    {
+      "technology": "Neuro-Symbolic Integration",
+      "idea": "NeuroMind: AI-powered platform for robotics and enterprise applications",
+      "business_value": 9,
+      "engineering_difficulty": 8,
+      "competitive_advantage": "very high",
+      "development_time": "4-6 months"
+    },
+    {
+      "technology": "Process Reward Models",
+      "idea": "RewardMind: AI-powered platform for optimizing educational and healthcare processes",
+      "business_value": 8,
+      "engineering_difficulty": 7,
+      "competitive_advantage": "high",
+      "development_time": "3-5 months"
+    },
+    {
+      "technology": "Instruction Tuning",
+      "idea": "TuneMind: AI-powered platform for enterprise and educational applications",
+      "business_value": 7,
+      "engineering_difficulty": 6,
+      "competitive_advantage": "medium",
+      "development_time": "2-4 months"
+    },
+    {
+      "technology": "Reasoning RL",
+      "idea": "ReasonMind: AI-powered platform for complex problem-solving and decision-making",
+      "business_value": 8,
+      "engineering_difficulty": 7,
+      "competitive_advantage": "high",
+      "development_time": "3-5 months"
+    },
+    {
+      "technology": "Coding RL",
+      "idea": "CodeMind: AI-powered platform for automated coding and software development",
+      "business_value": 9,
+      "engineering_difficulty": 8,
+      "competitive_advantage": "very high",
+      "development_time": "4-6 months"
+    }
+  ]
+}

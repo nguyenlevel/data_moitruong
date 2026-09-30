@@ -1,0 +1,847 @@
+'use strict';
+
+const state = {
+    repos: [], devs: [], bots: [],
+    tab: 'repos',
+    search: '', category: 'all', stackLayer: 'all', sort: '',
+    page: 1, perPage: 50,
+    filtered: [],
+    updatedAt: '',
+    mobileView: localStorage.getItem('ailMobileView') === 'true',
+};
+
+function classifyStackLayer(repo) {
+    const cat = repo.category || '';
+    const name = (repo.name || '').toLowerCase();
+    const desc = (repo.description || '').toLowerCase();
+    const topics = (repo.topics || []).map(t => t.toLowerCase());
+    const text = name + ' ' + desc + ' ' + topics.join(' ');
+
+    if (/\b(infrastructure|inference|serving|deploy|gateway|orchestrat|compute|hosting|runtime|engine)\b/.test(text)) return 'Infra';
+    if (/\b(framework|sdk|library|api|sdk|agent.*framework|orchestrat|protocol)\b/.test(text) && !/\b(demo|app|ui|dashboard|cli)\b/.test(text)) return 'Framework';
+    if (/\b(dataset|benchmark|evaluation|eval|data.*pipeline|embedding|vector.*db|chroma|milvus|qdrant)\b/.test(text)) return 'Data';
+    if (/\b(design|creative|media|video|image|audio|3d|render|animate|art|photo|music)\b/.test(text)) return 'Creative';
+    if (/\b(dev.?tool|cli|plugin|extension|editor|terminal|git|ci|cd)\b/.test(text) || cat === 'Developer Tools') return 'Tool';
+    if (/\b(app|platform|dashboard|studio|desktop|web.?ui|ui.?ux|demo|product|launcher)\b/.test(text) && cat !== 'Infrastructure') return 'Product';
+    if (cat === 'Applications' || cat === 'Vision & Media') return 'Product';
+    if (cat === 'Agents & Automation' || cat === 'AI Engineering') return 'Framework';
+    if (cat === 'Infrastructure' || cat === 'Models & Inference') return 'Infra';
+    if (cat === 'Data & Evaluation') return 'Data';
+    if (cat === 'Research & Knowledge') return 'Framework';
+    return 'Other';
+}
+
+const DATA_URL = 'data/ailist.json?v=' + Date.now();
+
+const TAB_CONFIG = {
+    repos: {
+        label: 'repos',
+        hasCategory: true,
+        sorts: [
+            ['stars_desc', 'Stars'],
+            ['forks_desc', 'Forks'],
+            ['name_asc', 'Name'],
+        ],
+        searchFields: (r) => [r.name, r.description, r.language, r.category, (r.topics || []).join(' ')].join(' '),
+    },
+    devs: {
+        label: 'developers',
+        hasCategory: false,
+        sorts: [
+            ['weighted_desc', 'Weighted'],
+            ['contributions_desc', 'Contributions'],
+            ['repos_desc', 'Repos'],
+            ['login_asc', 'Name'],
+        ],
+        searchFields: (a) => [a.login, (a.top_repos || []).map((t) => t.name).join(' ')].join(' '),
+    },
+    bots: {
+        label: 'bots',
+        hasCategory: false,
+        sorts: [
+            ['weighted_desc', 'Weighted'],
+            ['contributions_desc', 'Contributions'],
+            ['repos_desc', 'Repos'],
+            ['login_asc', 'Name'],
+        ],
+        searchFields: (a) => [a.login, (a.top_repos || []).map((t) => t.name).join(' ')].join(' '),
+    },
+};
+
+function escapeHtml(v) {
+    return String(v ?? '').replaceAll('&', '&amp;').replaceAll('<', '&lt;').replaceAll('>', '&gt;').replaceAll('"', '&quot;').replaceAll("'", '&#39;');
+}
+function getRepoThumbnail(repo) {
+    return `https://opengraph.githubassets.com/${repo.id || 1}/${encodeURIComponent(repo.owner)}/${encodeURIComponent(repo.repo_name)}`;
+}
+
+function renderBasicMarkdown(text) {
+    let html = text
+        .replace(/&/g, '&amp;')
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;');
+    html = html
+        .replace(/```[\s\S]*?```/g, '<pre><code>[code block]</code></pre>')
+        .replace(/`([^`]+)`/g, '<code>$1</code>')
+        .replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>')
+        .replace(/__([^_]+)__/g, '<strong>$1</strong>')
+        .replace(/\*([^*]+)\*/g, '<em>$1</em>')
+        .replace(/_([^_]+)_/g, '<em>$1</em>')
+        .replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2">$1</a>')
+        .replace(/^### (.+)/gm, '<h6>$1</h6>')
+        .replace(/^## (.+)/gm, '<h5>$1</h5>')
+        .replace(/^# (.+)/gm, '<h4>$1</h4>')
+        .replace(/^\s*[-*]\s+(.+)/gm, '• $1');
+    const parts = html.split(/\n\n+/);
+    return parts.map(p => {
+        const t = p.trim();
+        if (!t) return '';
+        if (/^<h[456]/.test(t) || /^<pre/.test(t)) return t;
+        return `<p>${t}</p>`;
+    }).join('\n');
+}
+
+async function fetchReadmeFallback(repo, readmeEl) {
+    const branch = repo.default_branch || 'main';
+    const url = `https://raw.githubusercontent.com/${repo.owner}/${repo.repo_name}/${branch}/README.md`;
+    try {
+        const res = await fetch(url);
+        if (!res.ok) throw new Error('HTTP ' + res.status);
+        const text = await res.text();
+        const cleaned = text
+            .replace(/\r\n/g, '\n')
+            .replace(/<!--[\s\S]*?-->/g, '')
+            .replace(/!\[[^\]]*\]\([^)]+\)/g, '')
+            .replace(/<img[^>]*>/gi, '');
+        const lines = cleaned.split('\n').filter(l => l.trim());
+        let excerpt = '';
+        let count = 0;
+        for (const line of lines) {
+            if (count > 300) break;
+            excerpt += line + '\n';
+            count++;
+        }
+        readmeEl.innerHTML = renderBasicMarkdown(excerpt.trim());
+    } catch {
+        readmeEl.innerHTML = '<span class="drawer-muted">README preview unavailable.</span>';
+    }
+}
+function fmt(n) {
+    n = Number(n || 0);
+    if (n >= 1_000_000) return (n / 1_000_000).toFixed(1) + 'M';
+    if (n >= 1_000) return (n / 1_000).toFixed(1) + 'k';
+    return n.toLocaleString();
+}
+
+function currentRows() {
+    return state[state.tab];
+}
+
+// ── Filtering / sorting ───────────────────────────────────────────────────────
+function applyFilters() {
+    const cfg = TAB_CONFIG[state.tab];
+    const q = state.search.trim().toLowerCase();
+    let rows = currentRows().slice();
+
+    if (state.tab === 'repos' && state.category !== 'all') {
+        rows = rows.filter((r) => r.category === state.category);
+    }
+    if (state.tab === 'repos' && state.stackLayer !== 'all') {
+        rows = rows.filter((r) => classifyStackLayer(r) === state.stackLayer);
+    }
+    if (q) {
+        const terms = q.split(',').map((t) => t.trim()).filter(Boolean);
+        rows = rows.filter((r) => {
+            const hay = cfg.searchFields(r).toLowerCase();
+            return terms.every((t) => hay.includes(t));
+        });
+    }
+
+    rows.sort((a, b) => {
+        switch (state.sort) {
+            case 'stars_desc': return b.stars - a.stars;
+            case 'forks_desc': return b.forks - a.forks;
+            case 'weighted_desc': return b.weighted - a.weighted;
+            case 'contributions_desc': return b.contributions - a.contributions;
+            case 'repos_desc': return b.repos - a.repos;
+            case 'name_asc': return a.name.localeCompare(b.name);
+            case 'login_asc': return a.login.localeCompare(b.login);
+            default: return 0;
+        }
+    });
+
+    state.filtered = rows;
+    const totalPages = Math.max(1, Math.ceil(rows.length / state.perPage));
+    if (state.page > totalPages) state.page = totalPages;
+    render();
+    syncUrl();
+}
+
+// ── Rendering ─────────────────────────────────────────────────────────────────
+function render() {
+    const isMobile = state.mobileView;
+    const tableShell = document.querySelector('.ail-table') ? document.querySelector('.table-shell') : null;
+    const mobileList = document.getElementById('ail-mobile-list');
+    const paginationBar = document.querySelector('.pagination-bar');
+
+    if (tableShell) tableShell.style.display = isMobile ? 'none' : '';
+    if (mobileList) mobileList.style.display = isMobile ? 'block' : 'none';
+    if (paginationBar) paginationBar.style.display = isMobile ? 'none' : '';
+
+    if (isMobile) {
+        renderMobileList();
+        return;
+    }
+
+    renderHead();
+    renderBody();
+    renderPagination();
+    document.getElementById('ail-meta').textContent = state.filtered.length.toLocaleString() + ' ' + TAB_CONFIG[state.tab].label;
+    renderCopyLabel();
+}
+
+function renderHead() {
+    const thead = document.getElementById('ail-thead');
+    if (state.tab === 'repos') {
+        thead.innerHTML = `<tr><th class="ail-num">#</th><th>Repo</th><th class="ail-right">Stars</th><th class="ail-right ail-hide-sm">Forks</th><th class="ail-hide-sm">Language</th><th class="ail-hide-sm">Category</th><th class="ail-hide-sm">Description</th></tr>`;
+    } else {
+        const who = state.tab === 'bots' ? 'Bot' : 'Developer';
+        thead.innerHTML = `<tr><th class="ail-num">#</th><th>${who}</th><th class="ail-right">Repos</th><th class="ail-right">Contributions</th><th class="ail-right ail-hide-sm">Weighted</th><th class="ail-hide-sm">Top repos</th></tr>`;
+    }
+}
+
+function renderBody() {
+    const tbody = document.getElementById('ail-tbody');
+    const start = (state.page - 1) * state.perPage;
+    const page = state.filtered.slice(start, start + state.perPage);
+    const colspan = state.tab === 'repos' ? 7 : 6;
+
+    if (!page.length) {
+        tbody.innerHTML = `<tr><td colspan="${colspan}" class="ail-empty">No matches. Try a broader search.</td></tr>`;
+        return;
+    }
+
+    if (state.tab === 'repos') {
+        tbody.innerHTML = page.map((r, i) => `
+            <tr class="ail-row" data-ail-idx="${start + i}" tabindex="0" role="button" aria-label="Open details for ${escapeHtml(r.repo_name)}">
+                <td class="ail-num">${r.rank}</td>
+                <td>
+                    <a class="ail-repo-name" href="${escapeHtml(r.url)}" target="_blank" rel="noreferrer">${escapeHtml(r.repo_name)}</a>
+                    <div class="ail-owner">${escapeHtml(r.owner)}</div>
+                </td>
+                <td class="ail-right">${fmt(r.stars)}</td>
+                <td class="ail-right ail-hide-sm">${fmt(r.forks)}</td>
+                <td class="ail-hide-sm">${escapeHtml(r.language || '—')}</td>
+                <td class="ail-hide-sm"><span class="ail-pill">${escapeHtml(r.category)}</span></td>
+                <td class="ail-hide-sm">
+                    <div class="desc-wrap">
+                        <div class="ail-desc">${escapeHtml(r.description)}</div>
+                        <button class="desc-expand" type="button" aria-label="Show more"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg></button>
+                    </div>
+                </td>
+            </tr>`).join('');
+
+        tbody.querySelectorAll('.desc-wrap').forEach((wrap) => {
+            const desc = wrap.querySelector('.ail-desc');
+            if (desc && desc.scrollHeight > desc.clientHeight) {
+                wrap.classList.add('has-overflow');
+            }
+        });
+        tbody.querySelectorAll('.desc-expand').forEach((btn) => {
+            btn.addEventListener('click', (e) => {
+                e.stopPropagation();
+                const wrap = btn.closest('.desc-wrap');
+                const desc = wrap.querySelector('.ail-desc');
+                desc.classList.toggle('expanded');
+                btn.classList.toggle('open');
+            });
+        });
+        return;
+    }
+
+    tbody.innerHTML = page.map((a, i) => {
+        const top = (a.top_repos || []).map((t) =>
+            `<a class="ail-pill" href="https://github.com/${escapeHtml(t.name)}" target="_blank" rel="noreferrer">${escapeHtml(t.name)}</a>`).join('');
+        const idx2 = start + i;
+        return `
+            <tr class="ail-row" data-ail-idx="${idx2}" tabindex="0" role="button" aria-label="Open details for ${escapeHtml(a.login)}">
+                <td class="ail-num">${a.rank}</td>
+                <td>
+                    <div class="ail-acct">
+                        <img class="ail-avatar" src="${escapeHtml(a.avatar_url)}" alt="" loading="lazy" width="34" height="34">
+                        <a class="ail-acct-name" href="${escapeHtml(a.profile_url)}" target="_blank" rel="noreferrer">${escapeHtml(a.login)}</a>
+                    </div>
+                </td>
+                <td class="ail-right">${a.repos.toLocaleString()}</td>
+                <td class="ail-right">${a.contributions.toLocaleString()}</td>
+                <td class="ail-right ail-hide-sm">${a.weighted.toLocaleString()}</td>
+                <td class="ail-hide-sm"><div class="ail-toprepos">${top}</div></td>
+            </tr>`;
+    }).join('');
+}
+
+function renderMobileList() {
+    const list = document.getElementById('ail-mobile-list');
+    const start = (state.page - 1) * state.perPage;
+    const pageItems = state.filtered.slice(start, start + state.perPage);
+
+    if (pageItems.length === 0) {
+        list.innerHTML = '<div class="mobile-empty">No matches. Try a broader search.</div>';
+        return;
+    }
+
+    const prefix = 'ail-item-';
+    if (state.tab === 'repos') {
+        list.innerHTML = pageItems.map((r, i) => {
+            const rowNumber = start + i + 1;
+            const idx = start + i;
+            return `
+                <div class="mobile-card" data-ail-idx="${idx}" tabindex="0" role="button" aria-label="Open details for ${escapeHtml(r.repo_name)}">
+                    <div class="mobile-card-num">${rowNumber}</div>
+                    <div class="mobile-card-body">
+                        <div class="mobile-card-name">
+                            <span class="repo-link">${escapeHtml(r.repo_name)}</span>
+                            <span class="mobile-card-owner">${escapeHtml(r.owner)}</span>
+                        </div>
+                        <div class="mobile-card-desc-wrap">
+                            <div class="mobile-card-desc">${escapeHtml(r.description)}</div>
+                            <button class="mobile-card-expand" type="button" aria-label="Show more"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg></button>
+                        </div>
+                        <img class="mobile-card-ogimg" src="${getRepoThumbnail(r)}" alt="" loading="lazy">
+                        <div class="mobile-card-footer">
+                            <div class="mobile-card-meta">
+                                <span class="ail-pill">${escapeHtml(r.category)}</span>
+                                <span class="language-pill">${escapeHtml(r.language)}</span>
+                            </div>
+                            <div style="display:flex;align-items:center;gap:10px">
+                                <div class="mobile-card-stars">
+                                    <svg viewBox="0 0 24 24" aria-hidden="true" class="star-icon"><path d="m12 3 2.8 5.68 6.27.91-4.54 4.43 1.07 6.24L12 17.3l-5.6 2.94 1.07-6.24L2.93 9.6l6.27-.91z"/></svg>
+                                    <span>${fmt(r.stars)}</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            `;
+        }).join('');
+        list.querySelectorAll('.mobile-card').forEach((el) => {
+            const idx = Number(el.dataset.ailIdx);
+            el.addEventListener('click', () => openAilDrawer(state.filtered[idx]));
+            el.addEventListener('keydown', (e) => {
+                if (e.key === 'Enter' || e.key === ' ') {
+                    e.preventDefault();
+                    openAilDrawer(state.filtered[idx]);
+                }
+            });
+        });
+        return;
+    }
+
+    list.innerHTML = pageItems.map((a, i) => {
+        const rowNumber = start + i + 1;
+        const idx = start + i;
+        const topRepos = (a.top_repos || []).slice(0, 2).map((t) =>
+            `<a class="ail-pill" href="https://github.com/${escapeHtml(t.name)}" target="_blank" rel="noreferrer">${escapeHtml(t.name)}</a>`).join('');
+        const who = state.tab === 'bots' ? 'Bot' : 'Dev';
+        return `
+            <div class="mobile-card" data-ail-idx="${idx}" tabindex="0" role="button" aria-label="Open details for ${escapeHtml(a.login)}">
+                <div class="mobile-card-num">${rowNumber}</div>
+                <div class="mobile-card-body">
+                    <div class="mobile-card-name">
+                        <span class="repo-link">${escapeHtml(a.login)}</span>
+                        <span class="mobile-card-owner">${who}</span>
+                    </div>
+                    <div class="mobile-card-desc">${a.repos.toLocaleString()} repos · ${a.contributions.toLocaleString()} contributions</div>
+                    <div class="mobile-card-footer">
+                        <div class="mobile-card-meta" style="align-items:center">
+                            <img class="ail-avatar" src="${escapeHtml(a.avatar_url)}" alt="" loading="lazy" width="24" height="24" style="border-radius:999px;background:var(--bg-soft);flex-shrink:0">
+                            ${topRepos}
+                        </div>
+                        <div style="display:flex;align-items:center;gap:10px">
+                            <span class="sig-badge">Σ${a.weighted.toLocaleString()}</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        `;
+    }).join('');
+    list.querySelectorAll('.mobile-card').forEach((el) => {
+        const idx = Number(el.dataset.ailIdx);
+        el.addEventListener('click', () => openAilDrawer(state.filtered[idx]));
+        el.addEventListener('keydown', (e) => {
+            if (e.key === 'Enter' || e.key === ' ') {
+                e.preventDefault();
+                openAilDrawer(state.filtered[idx]);
+            }
+        });
+    });
+
+    list.querySelectorAll('.mobile-card-desc-wrap').forEach((wrap) => {
+        const desc = wrap.querySelector('.mobile-card-desc');
+        if (desc && desc.scrollHeight > desc.clientHeight) {
+            wrap.classList.add('has-overflow');
+        }
+    });
+
+    list.querySelectorAll('.mobile-card-expand').forEach((btn) => {
+        btn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            const wrap = btn.closest('.mobile-card-desc-wrap');
+            const desc = wrap.querySelector('.mobile-card-desc');
+            desc.classList.toggle('expanded');
+        });
+    });
+}
+
+function openAilDrawer(item) {
+    if (!item) return;
+    const body = document.getElementById('ail-drawer-body');
+    const overline = document.getElementById('ail-drawer-overline');
+    const title = document.getElementById('ail-drawer-title');
+
+    if (state.tab === 'repos') {
+        overline.textContent = escapeHtml(item.category || 'Repository');
+        title.textContent = escapeHtml(item.repo_name);
+        body.innerHTML = `
+            <div class="drawer-hero">
+                <div class="drawer-hero-copy">
+                    <div class="drawer-owner">${escapeHtml(item.owner)}</div>
+                    <p class="drawer-description">${escapeHtml(item.description)}</p>
+                    <div class="drawer-badges">
+                        <span class="language-pill">${escapeHtml(item.language || '—')}</span>
+                    </div>
+                </div>
+                <div class="drawer-actions">
+                    <a class="drawer-action primary" href="${escapeHtml(item.url)}" target="_blank" rel="noreferrer">Open GitHub</a>
+                    <button class="drawer-action drawer-ask-ai-action" type="button" data-ask-ai-repo="${escapeHtml(item.name)}"><svg viewBox="0 0 24 24" aria-hidden="true" width="14" height="14" style="flex-shrink:0"><path d="M12 3a9 9 0 0 0-7.74 13.55L3 21l4.6-1.2A9 9 0 1 0 12 3Z"/><path d="M8.5 11h7"/><path d="M8.5 14h4"/></svg>Ask AI</button>
+                </div>
+            </div>
+            <div class="drawer-metric-grid">
+                <div class="drawer-metric">
+                    <span class="drawer-metric-label">Stars</span>
+                    <strong>${fmt(item.stars)}</strong>
+                </div>
+                <div class="drawer-metric">
+                    <span class="drawer-metric-label">Forks</span>
+                    <strong>${fmt(item.forks)}</strong>
+                </div>
+            </div>
+            <div class="drawer-section-grid">
+                <section class="drawer-section">
+                    <h5>README Preview</h5>
+                    <div class="drawer-readme-wrap">
+                        <div class="drawer-readme-path">README.md</div>
+                        <div class="drawer-readme"><span class="drawer-muted">Loading README…</span></div>
+                    </div>
+                </section>
+            </div>
+        `;
+        const readmeEl = body.querySelector('.drawer-readme');
+        if (readmeEl && !item.readme_excerpt) {
+            fetchReadmeFallback(item, readmeEl);
+        } else if (readmeEl && item.readme_excerpt) {
+            readmeEl.innerHTML = item.readme_excerpt;
+        }
+    } else {
+        const who = state.tab === 'bots' ? 'Bot' : 'Developer';
+        overline.textContent = who;
+        title.textContent = escapeHtml(item.login);
+        const top = (item.top_repos || []).map((t) =>
+            `<a class="ail-pill" href="https://github.com/${escapeHtml(t.name)}" target="_blank" rel="noreferrer">${escapeHtml(t.name)}</a>`).join('');
+        body.innerHTML = `
+            <div class="drawer-hero">
+                <div class="drawer-hero-copy">
+                    <div style="display:flex;align-items:center;gap:12px;margin-bottom:12px">
+                        <img src="${escapeHtml(item.avatar_url)}" alt="" width="48" height="48" style="border-radius:999px;background:var(--bg-soft)">
+                    </div>
+                    <p class="drawer-description">${item.repos.toLocaleString()} repositories · ${item.contributions.toLocaleString()} contributions</p>
+                </div>
+                <div class="drawer-actions">
+                    <a class="drawer-action primary" href="${escapeHtml(item.profile_url)}" target="_blank" rel="noreferrer">View Profile</a>
+                </div>
+            </div>
+            <div class="drawer-metric-grid">
+                <div class="drawer-metric">
+                    <span class="drawer-metric-label">Repositories</span>
+                    <strong>${item.repos.toLocaleString()}</strong>
+                </div>
+                <div class="drawer-metric">
+                    <span class="drawer-metric-label">Contributions</span>
+                    <strong>${item.contributions.toLocaleString()}</strong>
+                </div>
+                <div class="drawer-metric">
+                    <span class="drawer-metric-label">Weighted</span>
+                    <strong>${item.weighted.toLocaleString()}</strong>
+                </div>
+            </div>
+            ${top ? `<div class="drawer-section-grid"><section class="drawer-section"><h5>Top Repos</h5><div style="display:flex;flex-wrap:wrap;gap:6px">${top}</div></section></div>` : ''}
+        `;
+    }
+
+    const askAiBtn = body.querySelector('.drawer-ask-ai-action');
+    if (askAiBtn) {
+        askAiBtn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            const repoName = askAiBtn.dataset.askAiRepo;
+            const prompt = `I'm looking at the GitHub repository "${repoName}" (${item.url}). ${item.description ? item.description + '. ' : ''}Can you give me a detailed overview of what this project does, its key features, who it's for, and how it compares to alternatives?`;
+            copyText(prompt);
+            window.open(`https://www.google.com/search?q=${encodeURIComponent(prompt)}&udm=50`, '_blank', 'noopener');
+        });
+    }
+
+    document.getElementById('ail-drawer-backdrop').hidden = false;
+    document.getElementById('ail-drawer').classList.add('open');
+    document.getElementById('ail-drawer').setAttribute('aria-hidden', 'false');
+    document.body.classList.add('drawer-open');
+}
+
+function closeAilDrawer() {
+    document.getElementById('ail-drawer-backdrop').hidden = true;
+    document.getElementById('ail-drawer').classList.remove('open');
+    document.getElementById('ail-drawer').setAttribute('aria-hidden', 'true');
+    document.body.classList.remove('drawer-open');
+}
+
+function renderPagination() {
+    const total = Math.max(1, Math.ceil(state.filtered.length / state.perPage));
+    document.getElementById('ail-page-info').textContent = state.page + ' / ' + total;
+    document.getElementById('ail-prev').disabled = state.page <= 1;
+    document.getElementById('ail-next').disabled = state.page >= total;
+}
+
+function renderTabs() {
+    document.querySelectorAll('.ail-tab').forEach((b) => b.classList.toggle('active', b.dataset.tab === state.tab));
+    const showCat = TAB_CONFIG[state.tab].hasCategory;
+    document.getElementById('category-wrap').style.display = showCat ? '' : 'none';
+    document.getElementById('ail-stack').closest('.control').style.display = showCat ? '' : 'none';
+}
+
+function populateControls() {
+    // sort
+    const sortSel = document.getElementById('ail-sort');
+    sortSel.innerHTML = TAB_CONFIG[state.tab].sorts.map(([v, l]) => `<option value="${v}">${l}</option>`).join('');
+    if (!state.sort || !TAB_CONFIG[state.tab].sorts.some(([v]) => v === state.sort)) {
+        state.sort = TAB_CONFIG[state.tab].sorts[0][0];
+    }
+    sortSel.value = state.sort;
+
+    // category (repos only)
+    const catSel = document.getElementById('ail-category');
+    const cats = [...new Set(state.repos.map((r) => r.category))].sort();
+    catSel.innerHTML = `<option value="all">All categories (${state.repos.length})</option>` +
+        cats.map((c) => `<option value="${escapeHtml(c)}">${escapeHtml(c)} (${state.repos.filter((r) => r.category === c).length})</option>`).join('');
+    catSel.value = state.category;
+
+    document.getElementById('ail-search').value = state.search;
+    document.getElementById('ail-stack').value = state.stackLayer;
+}
+
+// ── Export / copy / share ─────────────────────────────────────────────────────
+function rowsForExport() { return state.filtered; }
+
+function buildRows() {
+    const rows = rowsForExport();
+    if (state.tab === 'repos') {
+        return { header: ['rank', 'repo', 'url', 'stars', 'forks', 'language', 'category'], lines: rows.map((r) => [r.rank, r.name, r.url, r.stars, r.forks, r.language, r.category]) };
+    }
+    return { header: ['rank', 'login', 'profile', 'repos', 'contributions', 'weighted', 'top_repos'], lines: rows.map((a) => [a.rank, a.login, a.profile_url, a.repos, a.contributions, a.weighted, (a.top_repos || []).map((t) => t.name).join('|')]) };
+}
+
+function csvCell(v) { const s = String(v ?? ''); return /[",\n]/.test(s) ? `"${s.replaceAll('"', '""')}"` : s; }
+function buildCsv() { const { header, lines } = buildRows(); return [header.join(','), ...lines.map((l) => l.map(csvCell).join(','))].join('\n'); }
+function buildMd() {
+    const { header, lines } = buildRows();
+    return [`# AI Landscape — ${state.tab} (${lines.length})`, '', '| ' + header.join(' | ') + ' |', '| ' + header.map(() => '---').join(' | ') + ' |',
+        ...lines.map((l) => '| ' + l.map((c) => String(c ?? '').replaceAll('|', '\\|')).join(' | ') + ' |')].join('\n');
+}
+
+async function copyText(t) {
+    try { await navigator.clipboard.writeText(t); return true; } catch { return false; }
+}
+function download(name, content) {
+    const blob = new Blob([content], { type: 'text/plain' });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url; a.download = name; document.body.appendChild(a); a.click(); a.remove();
+    setTimeout(() => URL.revokeObjectURL(url), 0);
+}
+function flash(id, label, restore) {
+    const el = document.querySelector(`#${id} span`) || document.getElementById(id);
+    if (!el) return;
+    const span = el.querySelector ? el : el;
+    const target = span.tagName === 'SPAN' ? span : (span.querySelector('span') || span);
+    const old = restore ?? target.textContent;
+    target.textContent = label;
+    setTimeout(() => { target.textContent = old; }, 1400);
+}
+function renderCopyLabel() {
+    const el = document.querySelector('#ail-copy span');
+    if (el) el.textContent = `Copy filtered (${state.filtered.length})`;
+}
+
+// ── URL state ─────────────────────────────────────────────────────────────────
+function syncUrl() {
+    const p = new URLSearchParams();
+    if (state.tab !== 'repos') p.set('tab', state.tab);
+    if (state.search.trim()) p.set('q', state.search.trim());
+    if (state.category !== 'all') p.set('category', state.category);
+    if (state.stackLayer !== 'all') p.set('stack', state.stackLayer);
+    const url = new URL(window.location.href);
+    url.search = p.toString();
+    window.history.replaceState({}, '', url);
+}
+function restoreUrl() {
+    const p = new URLSearchParams(window.location.search);
+    const t = p.get('tab');
+    if (t && TAB_CONFIG[t]) state.tab = t;
+    state.search = p.get('q') || '';
+    state.category = p.get('category') || 'all';
+    state.stackLayer = p.get('stack') || 'all';
+}
+
+// ── Ask AI ────────────────────────────────────────────────────────────────────
+const AI_URL_SOFT_LIMIT = 7500;
+const PROMPTS_STORAGE_KEY = 'ai-list-custom-prompts';
+const BUILTIN_PROMPTS = {
+    repos: [
+        ['🔥 Landscape', [
+            ['What are the major themes in this AI list and which repos define each? Group them and name the standout project per theme.', 'Themes & standouts'],
+            ['Which of these repos are the de-facto standards vs the promising challengers? Tell me when to pick the challenger.', 'Standard vs challenger'],
+            ['Identify fast-rising or underrated repos here that are not yet mainstream, and explain why each is worth watching.', 'Underrated / rising'],
+        ]],
+        ['🛠️ Build', [
+            ['I want to build an AI app. Which of these repos make the best foundation, and how would they fit together in a stack?', 'Best foundation stack'],
+            ['Which repos are easiest to self-host with minimal setup? Prioritize good docs, Docker, low dependencies.', 'Easy to self-host'],
+        ]],
+    ],
+    devs: [
+        ['👤 People', [
+            ['Who are the most influential developers in this list and what are they known for? Summarize each in one line.', 'Who are they'],
+            ['Group these developers by the area they work in (frameworks, models, agents, infra, tooling) and name the leaders in each.', 'Group by area'],
+            ['Which of these developers would be most valuable to follow or learn from, and why?', 'Who to follow'],
+        ]],
+    ],
+    bots: [
+        ['🤖 Automation', [
+            ['What does each of these bots do, and which are worth adding to my own AI repo? Rank by usefulness.', 'What & worth adding'],
+            ['Group these bots by purpose (dependencies, CI, code review, security) and recommend a minimal set for a healthy repo.', 'Minimal bot setup'],
+        ]],
+    ],
+};
+
+function aiRows() {
+    const limit = Number(document.getElementById('ail-ask-count').value);
+    const rows = state.filtered;
+    return limit > 0 ? rows.slice(0, limit) : rows;
+}
+function defaultQuestion() {
+    if (state.tab === 'repos') return 'Here is a list of open-source AI repositories. Give me a concise overview, group them by purpose, highlight the strongest, and recommend which to try first.';
+    if (state.tab === 'devs') return 'Here is a list of top open-source AI developers and what they work on. Summarize who the key people are and what each is known for.';
+    return 'Here is a list of bots active across open-source AI repos. Explain what each does and which are worth adopting.';
+}
+function buildAiList(rows) {
+    if (state.tab === 'repos') {
+        return rows.map((r, i) => `${i + 1}. ${r.name} (${fmt(r.stars)}★) — https://github.com/${r.name} — ${(r.description || '').slice(0, 140)}`).join('\n');
+    }
+    return rows.map((a, i) => `${i + 1}. ${a.login} — ${a.contributions.toLocaleString()} contributions across ${a.repos} AI repos — top: ${(a.top_repos || []).map((t) => t.name).join(', ')} — ${a.profile_url}`).join('\n');
+}
+function buildPrompt() {
+    const q = (document.getElementById('ail-ask-question').value || defaultQuestion()).trim();
+    const rows = aiRows();
+    return `${q}\n\n${state.tab[0].toUpperCase() + state.tab.slice(1)} (${rows.length}):\n${buildAiList(rows)}`;
+}
+function aiUrl(query) { return 'https://www.google.com/search?q=' + encodeURIComponent(query.trim()) + '&udm=50'; }
+
+function renderAiPreview() {
+    const prompt = buildPrompt();
+    const rows = aiRows();
+    document.getElementById('ail-ask-preview').value = prompt;
+    const len = aiUrl(prompt).length;
+    document.getElementById('ail-ask-meter').textContent = `${rows.length} ${state.tab} • ${prompt.length.toLocaleString()} chars • URL ~${len.toLocaleString()}`;
+    document.getElementById('ail-ask-context').textContent = state.filtered.length === rows.length
+        ? `Asking about all ${rows.length} filtered ${state.tab}.`
+        : `Asking about the top ${rows.length} of ${state.filtered.length} filtered ${state.tab}.`;
+    const warn = document.getElementById('ail-ask-warning');
+    if (len > AI_URL_SOFT_LIMIT) { warn.hidden = false; warn.textContent = 'Long prompt — Google may trim it. It is copied to your clipboard as a backup.'; }
+    else { warn.hidden = true; }
+}
+function renderPromptsMenu() {
+    const menu = document.getElementById('ail-prompts-menu');
+    const groups = BUILTIN_PROMPTS[state.tab] || [];
+    let html = groups.map(([title, items]) =>
+        `<div class="prompts-group"><div class="prompts-group-title">${title}</div>` +
+        items.map(([prompt, label]) => `<button class="prompts-item" data-prompt="${escapeHtml(prompt)}">${escapeHtml(label)}</button>`).join('') +
+        `</div>`).join('');
+    const custom = loadCustomPrompts();
+    html += `<div class="prompts-divider"></div>`;
+    if (custom.length) {
+        html += `<div class="prompts-group"><div class="prompts-group-title">📝 Your Prompts</div>` +
+            custom.map((p, i) => `<div class="prompts-custom-item" data-index="${i}"><span class="prompts-custom-text">${escapeHtml(p)}</span><button class="prompts-del" data-index="${i}" type="button" aria-label="Delete">✕</button></div>`).join('') +
+            `</div>`;
+    }
+    html += `<button class="prompts-add-btn" id="ail-prompts-add" type="button">➕ Add your own prompt</button>`;
+    menu.innerHTML = html;
+
+    menu.querySelectorAll('.prompts-item[data-prompt]').forEach((el) => el.addEventListener('click', () => injectPrompt(el.dataset.prompt)));
+    menu.querySelectorAll('.prompts-custom-item').forEach((el) => el.addEventListener('click', (e) => {
+        if (e.target.closest('.prompts-del')) return;
+        const c = loadCustomPrompts(); if (c[el.dataset.index]) injectPrompt(c[el.dataset.index]);
+    }));
+    menu.querySelectorAll('.prompts-del').forEach((b) => b.addEventListener('click', (e) => {
+        e.stopPropagation(); const c = loadCustomPrompts(); c.splice(Number(b.dataset.index), 1); saveCustomPrompts(c); renderPromptsMenu();
+    }));
+    document.getElementById('ail-prompts-add').addEventListener('click', () => {
+        const t = window.prompt('Enter your custom prompt:');
+        if (t && t.trim()) { const c = loadCustomPrompts(); c.push(t.trim()); saveCustomPrompts(c); renderPromptsMenu(); injectPrompt(t.trim()); }
+    });
+}
+function loadCustomPrompts() { try { return JSON.parse(localStorage.getItem(PROMPTS_STORAGE_KEY)) || []; } catch { return []; } }
+function saveCustomPrompts(p) { localStorage.setItem(PROMPTS_STORAGE_KEY, JSON.stringify(p)); }
+function injectPrompt(text) { const ta = document.getElementById('ail-ask-question'); ta.value = text; renderAiPreview(); closePromptsMenu(); }
+function closePromptsMenu() { document.getElementById('ail-prompts-menu').hidden = true; document.getElementById('ail-prompts-btn').classList.remove('open'); }
+function togglePromptsMenu() { const m = document.getElementById('ail-prompts-menu'); const open = !m.hidden; if (open) { closePromptsMenu(); } else { renderPromptsMenu(); m.hidden = false; document.getElementById('ail-prompts-btn').classList.add('open'); } }
+
+function openAsk() {
+    if (!state.filtered.length) return;
+    closePromptsMenu();
+    const qta = document.getElementById('ail-ask-question');
+    qta.value = defaultQuestion();
+    document.getElementById('ail-ask-title').textContent = 'Ask AI about these ' + state.tab;
+    renderAiPreview();
+    const m = document.getElementById('ail-ask-modal'); m.classList.add('open'); m.setAttribute('aria-hidden', 'false');
+}
+function closeAsk() {
+    closePromptsMenu();
+    const m = document.getElementById('ail-ask-modal'); m.classList.remove('open'); m.setAttribute('aria-hidden', 'true');
+}
+async function launchAsk() {
+    const prompt = buildPrompt();
+    await copyText(prompt);
+    window.open(aiUrl(prompt), '_blank', 'noopener');
+    const span = document.querySelector('#ail-ask-open span');
+    if (span) { span.textContent = 'Opened ✓ (copied)'; setTimeout(() => { span.textContent = 'Open in Google AI Mode'; }, 1800); }
+}
+
+// ── Wiring ────────────────────────────────────────────────────────────────────
+function switchTab(tab) {
+    if (tab === state.tab) return;
+    state.tab = tab;
+    state.page = 1;
+    state.search = '';
+    state.category = 'all';
+    renderTabs();
+    populateControls();
+    applyFilters();
+}
+
+function bind() {
+    document.querySelectorAll('.ail-tab').forEach((b) => b.addEventListener('click', () => switchTab(b.dataset.tab)));
+
+    let timer;
+    document.getElementById('ail-search').addEventListener('input', (e) => {
+        clearTimeout(timer); timer = setTimeout(() => { state.search = e.target.value; state.page = 1; applyFilters(); }, 250);
+    });
+    document.getElementById('ail-category').addEventListener('change', (e) => { state.category = e.target.value; state.page = 1; applyFilters(); });
+    document.getElementById('ail-stack').addEventListener('change', (e) => { state.stackLayer = e.target.value; state.page = 1; applyFilters(); });
+    document.getElementById('ail-sort').addEventListener('change', (e) => { state.sort = e.target.value; applyFilters(); });
+    document.getElementById('ail-prev').addEventListener('click', () => { if (state.page > 1) { state.page--; render(); window.scrollTo({ top: 0, behavior: 'smooth' }); } });
+    document.getElementById('ail-next').addEventListener('click', () => { const t = Math.ceil(state.filtered.length / state.perPage); if (state.page < t) { state.page++; render(); window.scrollTo({ top: 0, behavior: 'smooth' }); } });
+
+    document.getElementById('ail-copy').addEventListener('click', async () => {
+        const ok = await copyText(buildMd());
+        flash('ail-copy', ok ? 'Copied ✓' : 'Failed', `Copy filtered (${state.filtered.length})`);
+    });
+    document.getElementById('ail-share').addEventListener('click', async () => { const ok = await copyText(window.location.href); flash('ail-share', ok ? 'Copied URL' : 'Failed', 'Share URL'); });
+    document.getElementById('ail-csv').addEventListener('click', () => { download(`ai-landscape-${state.tab}.csv`, buildCsv()); flash('ail-csv', 'Done', 'CSV'); });
+    document.getElementById('ail-md').addEventListener('click', () => { download(`ai-landscape-${state.tab}.md`, buildMd()); flash('ail-md', 'Done', 'MD'); });
+
+    const viewToggle = document.getElementById('ail-view-toggle');
+    if (viewToggle) {
+        viewToggle.addEventListener('click', () => {
+            state.mobileView = !state.mobileView;
+            localStorage.setItem('ailMobileView', state.mobileView);
+            const icon = document.getElementById('ail-view-toggle-icon');
+            const label = document.getElementById('ail-view-toggle-label');
+            if (state.mobileView) {
+                if (icon) icon.textContent = '💻';
+                if (label) label.textContent = 'Desktop View';
+            } else {
+                if (icon) icon.textContent = '📱';
+                if (label) label.textContent = 'Mobile View';
+            }
+            render();
+        });
+        if (state.mobileView) {
+            const icon = document.getElementById('ail-view-toggle-icon');
+            const label = document.getElementById('ail-view-toggle-label');
+            if (icon) icon.textContent = '💻';
+            if (label) label.textContent = 'Desktop View';
+        }
+    }
+
+    document.getElementById('ail-drawer-close').addEventListener('click', closeAilDrawer);
+    document.getElementById('ail-drawer-backdrop').addEventListener('click', closeAilDrawer);
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && document.getElementById('ail-drawer').classList.contains('open')) closeAilDrawer();
+    });
+
+    document.getElementById('ail-ask-ai').addEventListener('click', openAsk);
+    document.getElementById('ail-ask-close').addEventListener('click', closeAsk);
+    document.getElementById('ail-ask-count').addEventListener('change', renderAiPreview);
+    document.getElementById('ail-ask-question').addEventListener('input', renderAiPreview);
+    document.getElementById('ail-ask-open').addEventListener('click', launchAsk);
+    document.getElementById('ail-ask-copy').addEventListener('click', async () => { const ok = await copyText(buildPrompt()); flash('ail-ask-copy', ok ? 'Copied ✓' : 'Failed', 'Copy prompt'); });
+    document.getElementById('ail-prompts-btn').addEventListener('click', (e) => { e.stopPropagation(); togglePromptsMenu(); });
+    document.addEventListener('click', (e) => { const w = document.querySelector('.ai-ask-prompts-wrapper'); if (w && !w.contains(e.target)) closePromptsMenu(); });
+    document.addEventListener('keydown', (e) => { if (e.key === 'Escape' && document.getElementById('ail-ask-modal').classList.contains('open')) closeAsk(); });
+
+    const atb = document.getElementById('ail-tbody');
+    if (atb) {
+        atb.addEventListener('click', (e) => {
+            if (e.target.closest('a, .desc-expand, button')) return;
+            const row = e.target.closest('.ail-row');
+            if (!row) return;
+            const item = state.filtered[Number(row.dataset.ailIdx)];
+            if (item) openAilDrawer(item);
+        });
+        atb.addEventListener('keydown', (e) => {
+            if (e.key !== 'Enter' && e.key !== ' ') return;
+            if (e.target.closest('a, .desc-expand, button')) return;
+            const row = e.target.closest('.ail-row');
+            if (!row) return;
+            e.preventDefault();
+            const item = state.filtered[Number(row.dataset.ailIdx)];
+            if (item) openAilDrawer(item);
+        });
+    }
+}
+
+async function load() {
+    const res = await fetch(DATA_URL);
+    if (!res.ok) throw new Error('ailist.json HTTP ' + res.status);
+    const d = await res.json();
+    state.repos = d.repos || [];
+    state.devs = d.devs || [];
+    state.bots = d.bots || [];
+    state.updatedAt = d.updated_at || '';
+
+    document.getElementById('stat-repos').textContent = fmt(state.repos.length);
+    document.getElementById('stat-devs').textContent = fmt(state.devs.length);
+    document.getElementById('stat-bots').textContent = fmt(state.bots.length);
+    document.getElementById('stat-updated').textContent = state.updatedAt ? new Date(state.updatedAt).toLocaleDateString() : '-';
+    document.getElementById('count-repos').textContent = state.repos.length.toLocaleString();
+    document.getElementById('count-devs').textContent = state.devs.length.toLocaleString();
+    document.getElementById('count-bots').textContent = state.bots.length.toLocaleString();
+
+    renderTabs();
+    populateControls();
+    applyFilters();
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+    restoreUrl();
+    bind();
+    load().catch((e) => {
+        document.getElementById('ail-tbody').innerHTML = `<tr><td colspan="7" class="ail-empty">Failed to load data: ${escapeHtml(e.message)}</td></tr>`;
+    });
+});

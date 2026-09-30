@@ -1,0 +1,533 @@
+{
+  "date": "2026-08-01",
+  "generated_at": "2026-08-01T02:22:30.525968+00:00",
+  "backend": "llm7",
+  "model": "default",
+  "brief": [
+    "🔥 FIRECRAWL (firecrawl/firecrawl) — Best bet: Web scraping API for AI agents. Every RAG pipeline and agent needs fresh web data. Ship this as a managed service, charge per crawl.",
+    "⏰ BREAKOUT NOW: Web data pipelines are the missing link between LLMs and real-time knowledge. First-mover advantage in agent-native scraping.",
+    "⚡ Complementary plays: mattpocock/skills (agent framework) + Graphify-Labs/graphify (codebase graphs) = full dev stack for AI-native tooling.",
+    "💡 Skip: Books (bojieli/ai-agent-book) and self-hosted companions (moeru-ai/airi) — too niche or too far from immediate developer pain."
+  ],
+  "items": [
+    {
+      "name": "mattpocock/skills",
+      "url": "https://github.com/mattpocock/skills",
+      "stars": 197892,
+      "category": "Agents & Automation",
+      "delta_7d": 11080,
+      "delta_7d_pct": 5.93,
+      "timing": "breakout",
+      "signals": [],
+      "cross_signal": false,
+      "one_liner": "Agent automation framework for developers",
+      "pain_point": "Developers struggle with repetitive tasks and lack automation tools",
+      "app_ideas": [
+        "Developer productivity tool for automating repetitive tasks",
+        "Plugin for popular IDEs to integrate agent automation",
+        "CLI tool for managing and executing automation scripts"
+      ],
+      "monetization": "Freemium with enterprise features and support",
+      "opportunity": 8,
+      "why_now": "Increasing demand for automation tools in the developer community"
+    },
+    {
+      "name": "bojieli/ai-agent-book",
+      "url": "https://github.com/bojieli/ai-agent-book",
+      "stars": 28499,
+      "category": "Agents & Automation",
+      "delta_7d": 9313,
+      "delta_7d_pct": 48.54,
+      "timing": "breakout",
+      "signals": [],
+      "cross_signal": false,
+      "one_liner": "AI Agent design principles and engineering practices book",
+      "pain_point": "Helps developers build AI agents for businesses, solving automation and decision-making problems for enterprises",
+      "app_ideas": [
+        "AI-powered customer support chatbot for small businesses",
+        "Automated data analysis agent for non-technical users",
+        "AI-driven personal assistant for productivity"
+      ],
+      "monetization": "Freemium model with premium features and enterprise support",
+      "opportunity": 8,
+      "why_now": "Growing demand for AI automation and decision-making tools"
+    },
+    {
+      "name": "diegosouzapw/OmniRoute",
+      "url": "https://github.com/diegosouzapw/OmniRoute",
+      "stars": 36164,
+      "category": "Developer Tools",
+      "delta_7d": 7276,
+      "delta_7d_pct": 25.19,
+      "timing": "breakout",
+      "signals": [],
+      "cross_signal": false,
+      "one_liner": "AI gateway for developers with 290+ providers and 500+ models",
+      "pain_point": "Developers struggle with AI integration due to fragmented APIs and high costs, enterprises pay for unified AI access",
+      "app_ideas": [
+        "AI-powered code completion extension for VS Code",
+        "AI-driven API documentation generator for developers",
+        "AI-assisted debugging tool for developers"
+      ],
+      "monetization": "B2B API wrapper with tiered pricing based on usage",
+      "opportunity": 8,
+      "why_now": "Growing demand for AI integration in developer tools and enterprises"
+    },
+    {
+      "name": "stablyai/orca",
+      "url": "https://github.com/stablyai/orca",
+      "stars": 34658,
+      "category": "Developer Tools",
+      "delta_7d": 6279,
+      "delta_7d_pct": 22.13,
+      "timing": "breakout",
+      "signals": [],
+      "cross_signal": false,
+      "one_liner": "ADE for managing parallel coding agents",
+      "pain_point": "Developers and teams struggle with managing multiple coding agents efficiently, leading to inefficiencies and increased costs",
+      "app_ideas": [
+        "Agent Dashboard: A web app for monitoring and managing multiple coding agents",
+        "Agent Marketplace: A platform for discovering and integrating new coding agents",
+        "Agent Automation Tool: A CLI tool for automating agent workflows"
+      ],
+      "monetization": "Freemium with B2B API wrapper for enterprise integrations",
+      "opportunity": 8,
+      "why_now": "Increased demand for AI-powered development tools and the rise of multi-agent systems"
+    },
+    {
+      "name": "Graphify-Labs/graphify",
+      "url": "https://github.com/Graphify-Labs/graphify",
+      "stars": 99769,
+      "category": "Developer Tools",
+      "delta_7d": 4470,
+      "delta_7d_pct": 4.69,
+      "timing": "breakout",
+      "signals": [],
+      "cross_signal": false,
+      "one_liner": "Queryable knowledge graph for codebases",
+      "pain_point": "Developers spend hours navigating codebases; enterprises pay for better code understanding",
+      "app_ideas": [
+        "Codebase Explorer: Visualize and query any codebase with a simple CLI",
+        "Team Onboarding Tool: Generate interactive knowledge graphs for new hires",
+        "Legacy Code Analyzer: Identify dependencies and refactoring opportunities in old codebases"
+      ],
+      "monetization": "Freemium with enterprise pricing for advanced features and support",
+      "opportunity": 8,
+      "why_now": "Increased demand for AI-assisted development tools and the rise of local-first AI solutions"
+    },
+    {
+      "name": "DietrichGebert/ponytail",
+      "url": "https://github.com/DietrichGebert/ponytail",
+      "stars": 93073,
+      "category": "Developer Tools",
+      "delta_7d": 4068,
+      "delta_7d_pct": 4.57,
+      "timing": "breakout",
+      "signals": [],
+      "cross_signal": false,
+      "one_liner": "Lazy dev's AI agent for efficient coding",
+      "pain_point": "Reduces developer workload by automating repetitive tasks, saving time and money for companies and developers",
+      "app_ideas": [
+        "Ponytail-powered VS Code extension for auto-completing boilerplate code",
+        "Ponytail API wrapper for integrating lazy coding into CI/CD pipelines",
+        "Ponytail-based chatbot for internal developer communities"
+      ],
+      "monetization": "Freemium with enterprise pricing for API access and custom integrations",
+      "opportunity": 8,
+      "why_now": "Increasing demand for AI-assisted development tools and remote work trends"
+    },
+    {
+      "name": "obra/superpowers",
+      "url": "https://github.com/obra/superpowers",
+      "stars": 264478,
+      "category": "Agents & Automation",
+      "delta_7d": 3857,
+      "delta_7d_pct": 1.48,
+      "timing": "breakout",
+      "signals": [],
+      "cross_signal": false,
+      "one_liner": "Agentic skills framework for automation",
+      "pain_point": "Developers struggle with complex automation tasks; enterprises pay for efficiency",
+      "app_ideas": [
+        "Automated social media manager for small businesses",
+        "Personal assistant for developers to manage repetitive tasks",
+        "Automated customer support chatbot for e-commerce"
+      ],
+      "monetization": "Freemium with enterprise API wrapper",
+      "opportunity": 8,
+      "why_now": "Rise of AI and automation tools creates demand for agentic frameworks"
+    },
+    {
+      "name": "affaan-m/ECC",
+      "url": "https://github.com/affaan-m/ECC",
+      "stars": 236652,
+      "category": "Agents & Automation",
+      "delta_7d": 3726,
+      "delta_7d_pct": 1.6,
+      "timing": "breakout",
+      "signals": [],
+      "cross_signal": false,
+      "one_liner": "AI agent performance optimization system",
+      "pain_point": "Developers struggle with inefficient AI agent performance, costing time and money. Enterprises pay for optimized AI solutions.",
+      "app_ideas": [
+        "AI Agent Performance Dashboard: Real-time analytics for developers to monitor and optimize their AI agents.",
+        "AI Agent Optimization API: A service for enterprises to optimize their AI agents without in-house expertise."
+      ],
+      "monetization": "Freemium for developers, B2B API wrapper for enterprises",
+      "opportunity": 8,
+      "why_now": "Growing demand for AI agents and increasing awareness of performance optimization"
+    },
+    {
+      "name": "1jehuang/jcode",
+      "url": "https://github.com/1jehuang/jcode",
+      "stars": 14638,
+      "category": "Developer Tools",
+      "delta_7d": 3416,
+      "delta_7d_pct": 30.44,
+      "timing": "breakout",
+      "signals": [],
+      "cross_signal": false,
+      "one_liner": "RAM-efficient harness for AI model training",
+      "pain_point": "High RAM usage in AI model training slows down developers and increases costs",
+      "app_ideas": [
+        "A cloud-based AI model training platform with RAM optimization",
+        "A plugin for popular IDEs to optimize RAM usage during local training"
+      ],
+      "monetization": "Freemium with enterprise pricing for cloud-based platform",
+      "opportunity": 8,
+      "why_now": "Increased demand for AI models and the need for efficient resource usage"
+    },
+    {
+      "name": "NousResearch/hermes-agent",
+      "url": "https://github.com/NousResearch/hermes-agent",
+      "stars": 223439,
+      "category": "Agents & Automation",
+      "delta_7d": 3400,
+      "delta_7d_pct": 1.55,
+      "timing": "breakout",
+      "signals": [],
+      "cross_signal": false,
+      "one_liner": "Self-improving AI agent for personal productivity",
+      "pain_point": "Helps individuals and teams automate repetitive tasks and manage workflows, appealing to productivity SaaS users and enterprises",
+      "app_ideas": [
+        "Personal assistant app for managing emails, calendar, and tasks",
+        "Team collaboration tool for automating workflows and knowledge sharing",
+        "Vertical SaaS for specific industries like healthcare or finance"
+      ],
+      "monetization": "Freemium with enterprise pricing, B2B API wrapper, vertical SaaS",
+      "opportunity": 8,
+      "why_now": "Increasing demand for AI-powered productivity tools and automation"
+    },
+    {
+      "name": "moeru-ai/airi",
+      "url": "https://github.com/moeru-ai/airi",
+      "stars": 46216,
+      "category": "Vision & Media",
+      "delta_7d": 3162,
+      "delta_7d_pct": 7.34,
+      "timing": "breakout",
+      "signals": [],
+      "cross_signal": false,
+      "one_liner": "Self-hosted AI companion for real-time voice chat and gaming",
+      "pain_point": "Solves loneliness and social interaction needs for gamers and AI enthusiasts, who would pay for a personalized, self-hosted AI companion",
+      "app_ideas": [
+        "AI-powered Discord bot for gaming communities",
+        "Voice-controlled AI assistant for Minecraft and Factorio",
+        "Web-based AI companion with customizable avatars"
+      ],
+      "monetization": "Freemium with premium features and customization options",
+      "opportunity": 8,
+      "why_now": "Rising interest in AI companions and self-hosted solutions, especially during the pandemic"
+    },
+    {
+      "name": "firecrawl/firecrawl",
+      "url": "https://github.com/firecrawl/firecrawl",
+      "stars": 158740,
+      "category": "Agents & Automation",
+      "delta_7d": 3135,
+      "delta_7d_pct": 2.01,
+      "timing": "breakout",
+      "signals": [],
+      "cross_signal": false,
+      "one_liner": "Web scraping and automation API for developers",
+      "pain_point": "Developers struggle with web scraping and automation, saving time and money for businesses",
+      "app_ideas": [
+        "A tool for competitive analysis, allowing businesses to track competitors' pricing and product offerings",
+        "A lead generation app that scrapes contact information from websites and integrates with CRM systems",
+        "A content aggregation platform that pulls articles and blog posts from various sources for publishers"
+      ],
+      "monetization": "B2B API wrapper with freemium tier for developers",
+      "opportunity": 8,
+      "why_now": "Increased demand for web scraping and automation due to the rise of AI and data-driven decision making"
+    },
+    {
+      "name": "Panniantong/Agent-Reach",
+      "url": "https://github.com/Panniantong/Agent-Reach",
+      "stars": 63440,
+      "category": "Infrastructure",
+      "delta_7d": 2814,
+      "delta_7d_pct": 4.64,
+      "timing": "breakout",
+      "signals": [],
+      "cross_signal": false,
+      "one_liner": "Unified social media API for AI agents to search all platforms",
+      "pain_point": "AI developers waste weeks integrating fragmented, expensive APIs. Building any social intelligence feature requires 6+ platform integrations with different auth, rate limits, and $0.01-0.05/req costs. They'd pay for unified, cheap, reliable access.",
+      "app_ideas": [
+        "AI-powered brand monitoring SaaS: real-time alerts when your company/product gets mentioned across Twitter, Reddit, YouTube, GitHub with sentiment analysis",
+        "Competitive intelligence dashboard: auto-track competitor launches, reviews, and user complaints across all platforms in one view",
+        "Creator trend aggregator: show a creator what's trending about their niche across platforms so they can ride waves"
+      ],
+      "monetization": "B2B API wrapper with usage-based pricing ($0.001/req target), free tier for dev, then tiered plans by volume. Add a managed dashboard product on top.",
+      "opportunity": 8,
+      "why_now": "AI agent market exploding (50B+ invested in 2024), every agent needs web data, and existing scraping solutions are getting blocked or priced out"
+    },
+    {
+      "name": "emilkowalski/skills",
+      "url": "https://github.com/emilkowalski/skills",
+      "stars": 23370,
+      "category": "Other",
+      "delta_7d": 2810,
+      "delta_7d_pct": 13.67,
+      "timing": "breakout",
+      "signals": [],
+      "cross_signal": false,
+      "one_liner": "AI-powered design engineering skills database",
+      "pain_point": "Helps engineers find relevant skills for design projects, solving time-to-market issues for companies in tech and manufacturing",
+      "app_ideas": [
+        "AI-powered design engineering skills database with search and filtering capabilities",
+        "Mobile app for engineers to quickly find and learn new skills for design projects",
+        "Web-based platform for companies to manage and track design engineering skills across teams"
+      ],
+      "monetization": "Freemium model with premium features for companies, B2B API wrapper for integration with existing systems",
+      "opportunity": 8,
+      "why_now": "Increased demand for AI-powered tools in engineering and design due to the COVID-19 pandemic"
+    },
+    {
+      "name": "mvanhorn/last30days-skill",
+      "url": "https://github.com/mvanhorn/last30days-skill",
+      "stars": 56248,
+      "category": "Agents & Automation",
+      "delta_7d": 2792,
+      "delta_7d_pct": 5.22,
+      "timing": "breakout",
+      "signals": [],
+      "cross_signal": false,
+      "one_liner": "AI agent for multi-platform research and synthesis",
+      "pain_point": "Saves time for researchers, marketers, and analysts by aggregating and summarizing insights from multiple platforms",
+      "app_ideas": [
+        "Research Assistant: A browser extension that provides quick, synthesized summaries of trending topics on Reddit, X, and YouTube",
+        "Market Analyzer: A tool for traders and investors that aggregates and synthesizes insights from multiple platforms to provide a comprehensive view of market trends",
+        "Content Curator: A service for content creators that automatically curates and synthesizes relevant content from multiple platforms to inspire new ideas and topics"
+      ],
+      "monetization": "Freemium model with premium features for advanced users, and B2B API wrapper for enterprises",
+      "opportunity": 8,
+      "why_now": "Increased demand for AI-powered research and analysis tools due to the rise of social media and online communities"
+    },
+    {
+      "name": "CoreBunch/Instatic",
+      "url": "https://github.com/CoreBunch/Instatic",
+      "stars": 6982,
+      "category": "Developer Tools",
+      "delta_7d": 2676,
+      "delta_7d_pct": 62.15,
+      "timing": "breakout",
+      "signals": [],
+      "cross_signal": false,
+      "one_liner": "Self-hosted visual CMS for static sites",
+      "pain_point": "Developers and marketers who need a fast, secure, and customizable CMS without the complexity of traditional systems",
+      "app_ideas": [
+        "Instatic for Portfolio Sites: A pre-configured Instatic instance with portfolio-specific plugins and templates",
+        "Instatic Headless CMS: A decoupled version of Instatic for developers who want to build custom frontends",
+        "Instatic for Small Businesses: A simplified, vertical-specific version of Instatic for small businesses"
+      ],
+      "monetization": "Freemium with premium plugins and templates, B2B API wrapper for enterprise clients",
+      "opportunity": 8,
+      "why_now": "Increasing demand for static site generators and JAMstack architecture"
+    },
+    {
+      "name": "Leonxlnx/taste-skill",
+      "url": "https://github.com/Leonxlnx/taste-skill",
+      "stars": 69752,
+      "category": "Agents & Automation",
+      "delta_7d": 2461,
+      "delta_7d_pct": 3.66,
+      "timing": "breakout",
+      "signals": [],
+      "cross_signal": false,
+      "one_liner": "AI taste filter for better content generation",
+      "pain_point": "Boring AI output frustrates users and brands; businesses pay for premium content",
+      "app_ideas": [
+        "Content curation tool for marketers to filter AI-generated articles",
+        "AI-powered recipe generator for food bloggers with taste refinement",
+        "AI-assisted copywriter for e-commerce with taste control"
+      ],
+      "monetization": "Freemium with enterprise API for taste-controlled content generation",
+      "opportunity": 8,
+      "why_now": "Growing demand for high-quality AI-generated content and privacy concerns"
+    },
+    {
+      "name": "sindresorhus/awesome",
+      "url": "https://github.com/sindresorhus/awesome",
+      "stars": 491039,
+      "category": "Research & Knowledge",
+      "delta_7d": 2411,
+      "delta_7d_pct": 0.49,
+      "timing": "breakout",
+      "signals": [],
+      "cross_signal": false,
+      "one_liner": "Curated lists of awesome resources for various topics",
+      "pain_point": "Developers and researchers struggle to find high-quality, curated resources for their projects and studies",
+      "app_ideas": [
+        "Curated AI resources aggregator for developers",
+        "Research paper summarizer and recommendation engine",
+        "Topic-specific resource discovery tool for students and professionals"
+      ],
+      "monetization": "Freemium with premium features like advanced search, personalized recommendations, and API access",
+      "opportunity": 8,
+      "why_now": "Increased demand for curated resources in the AI and developer communities"
+    },
+    {
+      "name": "different-ai/openwork",
+      "url": "https://github.com/different-ai/openwork",
+      "stars": 19540,
+      "category": "Other",
+      "delta_7d": 2403,
+      "delta_7d_pct": 14.02,
+      "timing": "breakout",
+      "signals": [],
+      "cross_signal": false,
+      "one_liner": "Open-source alternative to Claude Cowork, powered by opencode",
+      "pain_point": "Solves the problem of managing and collaborating on AI projects for developers and teams, with potential enterprise adoption",
+      "app_ideas": [
+        "AI-powered project management tool for solo developers",
+        "Collaborative AI coding environment for small teams",
+        "AI-driven code review and suggestion platform"
+      ],
+      "monetization": "Freemium with enterprise pricing for advanced features and support",
+      "opportunity": 8,
+      "why_now": "Growing demand for AI tools and the rise of open-source alternatives"
+    },
+    {
+      "name": "baidu/Unlimited-OCR",
+      "url": "https://github.com/baidu/Unlimited-OCR",
+      "stars": 21097,
+      "category": "Vision & Media",
+      "delta_7d": 2394,
+      "delta_7d_pct": 12.8,
+      "timing": "breakout",
+      "signals": [],
+      "cross_signal": false,
+      "one_liner": "OCR for long documents in one shot",
+      "pain_point": "Businesses and individuals struggle with extracting text from long documents, who would pay for efficient, accurate OCR solutions",
+      "app_ideas": [
+        "Document scanning app for professionals",
+        "Automated contract review tool",
+        "Historical document digitization service"
+      ],
+      "monetization": "Freemium with enterprise API wrapper",
+      "opportunity": 8,
+      "why_now": "Increased demand for digital document processing due to remote work and automation trends"
+    },
+    {
+      "name": "nextlevelbuilder/ui-ux-pro-max-skill",
+      "url": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill",
+      "stars": 112200,
+      "category": "Applications",
+      "delta_7d": 2391,
+      "delta_7d_pct": 2.18,
+      "timing": "breakout",
+      "signals": [],
+      "cross_signal": false,
+      "one_liner": "AI-powered UI/UX design intelligence tool",
+      "pain_point": "Saves designers time and ensures consistency across platforms, paid by agencies and freelancers",
+      "app_ideas": [
+        "Web app for designers to generate UI components with AI suggestions",
+        "Mobile app for on-the-go design inspiration and component generation",
+        "Browser extension for real-time design feedback during development"
+      ],
+      "monetization": "Freemium with advanced features and integrations behind a paywall",
+      "opportunity": 8,
+      "why_now": "Increased demand for cross-platform design tools and AI integration"
+    },
+    {
+      "name": "calesthio/OpenMontage",
+      "url": "https://github.com/calesthio/OpenMontage",
+      "stars": 44395,
+      "category": "Vision & Media",
+      "delta_7d": 2390,
+      "delta_7d_pct": 5.69,
+      "timing": "breakout",
+      "signals": [],
+      "cross_signal": false,
+      "one_liner": "Open-source AI-driven video production system",
+      "pain_point": "Saves content creators time and resources by automating video production, attracting freelancers and small studios",
+      "app_ideas": [
+        "AI-powered video template generator for social media",
+        "Automated video editing tool for YouTubers",
+        "API wrapper for integrating OpenMontage into existing CMS platforms"
+      ],
+      "monetization": "Freemium with enterprise API and vertical SaaS options",
+      "opportunity": 8,
+      "why_now": "Rise of AI tools and demand for automated content creation"
+    },
+    {
+      "name": "NanmiCoder/MediaCrawler",
+      "url": "https://github.com/NanmiCoder/MediaCrawler",
+      "stars": 59532,
+      "category": "Agents & Automation",
+      "delta_7d": 2285,
+      "delta_7d_pct": 3.99,
+      "timing": "breakout",
+      "signals": [],
+      "cross_signal": false,
+      "one_liner": "Automated social media data crawler",
+      "pain_point": "Businesses need social media insights but lack scalable data collection tools",
+      "app_ideas": [
+        "Social Media Insights Dashboard",
+        "Competitor Analysis Tool",
+        "Sentiment Analysis API"
+      ],
+      "monetization": "B2B SaaS with tiered pricing",
+      "opportunity": 8,
+      "why_now": "Growing demand for social media analytics and AI-driven insights"
+    },
+    {
+      "name": "microsoft/AI-For-Beginners",
+      "url": "https://github.com/microsoft/AI-For-Beginners",
+      "stars": 55364,
+      "category": "Vision & Media",
+      "delta_7d": 2543,
+      "delta_7d_pct": 4.81,
+      "timing": "breakout",
+      "signals": [],
+      "cross_signal": false,
+      "one_liner": "AI education platform for vision & media",
+      "pain_point": "Teaches AI concepts to non-technical users in media industry, who would pay for certification",
+      "app_ideas": [
+        "Interactive AI course app with quizzes and projects",
+        "AI-powered media toolkit with tutorials and templates",
+        "Community platform for AI enthusiasts in media"
+      ],
+      "monetization": "Freemium with premium courses and certifications",
+      "opportunity": 7,
+      "why_now": "Growing demand for AI literacy in media industry"
+    },
+    {
+      "name": "bradautomates/claude-video",
+      "url": "https://github.com/bradautomates/claude-video",
+      "stars": 13124,
+      "category": "Vision & Media",
+      "delta_7d": 3189,
+      "delta_7d_pct": 32.1,
+      "timing": "breakout",
+      "signals": [],
+      "cross_signal": false,
+      "one_liner": "",
+      "pain_point": "",
+      "app_ideas": [],
+      "monetization": "",
+      "opportunity": 5,
+      "why_now": ""
+    }
+  ]
+}

@@ -1,0 +1,1412 @@
+{
+  "meta": {
+    "date": "2026-09-27",
+    "papers_tracked": 15,
+    "technologies_discovered": 48,
+    "opportunities_identified": 15,
+    "last_update": "2026-09-27 10:38 UTC",
+    "backend": "llm7",
+    "model": "Research Curator v1"
+  },
+  "brief": [
+    {
+      "technology": "Multimodal Learning",
+      "why_it_matters": "Enables AI systems to process and understand multiple types of data (text, images, audio, etc.), leading to more versatile and context-aware applications.",
+      "opportunity": "Develop AI systems that can integrate and analyze diverse data types, such as medical imaging and patient records, to improve diagnostics and treatment planning."
+    },
+    {
+      "technology": "Reinforcement Learning",
+      "why_it_matters": "Allows AI systems to learn through interaction with their environment, making them adaptable to complex and dynamic scenarios.",
+      "opportunity": "Create AI-driven solutions for robotics, healthcare, and enterprise applications that can learn and improve over time through real-world interactions."
+    },
+    {
+      "technology": "Vision-Language Models",
+      "why_it_matters": "Bridges the gap between visual and textual data, enabling AI systems to understand and generate descriptions of images and videos.",
+      "opportunity": "Build AI systems that can interpret and describe visual data, such as medical images or industrial equipment, to assist in diagnostics, monitoring, and maintenance."
+    },
+    {
+      "technology": "3D Foundation Models",
+      "why_it_matters": "Provides a robust foundation for understanding and processing 3D data, which is crucial for applications in healthcare, science, and enterprise.",
+      "opportunity": "Develop AI systems that can analyze and interpret 3D data, such as CT scans or 3D models of molecules, to enhance diagnostics, drug discovery, and product design."
+    },
+    {
+      "technology": "Neuro-Symbolic Integration",
+      "why_it_matters": "Combines the strengths of neural networks and symbolic reasoning, leading to more interpretable and reliable AI systems.",
+      "opportunity": "Create AI systems that can integrate neural network learning with symbolic reasoning, such as in robotics and enterprise applications, to improve decision-making and problem-solving."
+    }
+  ],
+  "top_cards": [
+    {
+      "id": "new_technologies",
+      "title": "New Technologies",
+      "value": "48",
+      "label": "discovered this scan",
+      "detail": "Multimodal Learning, Mixture of Experts, Reinforcement Learning, Vision-Language Models, Low-Rank Adaptation, Sparse Attention, Neuro-Symbolic Integration, Symbolic Planning",
+      "color": "accent"
+    },
+    {
+      "id": "emerging_trends",
+      "title": "Emerging Trends",
+      "value": "48",
+      "label": "active trend clusters",
+      "detail": "Multimodal Learning, Mixture of Experts, Reinforcement Learning, Vision-Language Models, Low-Rank Adaptation",
+      "color": "green"
+    },
+    {
+      "id": "highest_potential",
+      "title": "Highest Potential",
+      "value": "8.3",
+      "label": "avg opportunity score",
+      "detail": "OptiSAR-Net++: A Large-Scale Benchmark and Transformer-Free Framework for Cross-",
+      "color": "amber"
+    },
+    {
+      "id": "biggest_surprise",
+      "title": "Biggest Surprise",
+      "value": "OptiSAR-Net++: A Large-Scale B",
+      "label": "confidence 82%",
+      "detail": "",
+      "color": "purple"
+    },
+    {
+      "id": "most_practical",
+      "title": "Most Practical",
+      "value": "Qwen3.8-Omni: Towards Native O",
+      "label": "highest confidence paper",
+      "detail": "A multimodal AI assistant capable of handling video editing, long-form audio and video translation, and music-conditioned music video generation., A real-time multimodal agent framework for responsive, real-time interactions in various domains.",
+      "color": "success"
+    },
+    {
+      "id": "most_innovative",
+      "title": "Most Innovative",
+      "value": "36",
+      "label": "early-stage technologies",
+      "detail": "Mind What Matters for Reasoning: Aligning Cross-Modal Attention via Selective Pr",
+      "color": "blue"
+    }
+  ],
+  "papers": [
+    {
+      "id": "2603.24876",
+      "title": "OptiSAR-Net++: A Large-Scale Benchmark and Transformer-Free Framework for Cross-Domain Remote Sensing Visual Grounding",
+      "authors": [],
+      "categories": [
+        "cs.CV"
+      ],
+      "published": "2026-09-26",
+      "updated": "2026-09-26",
+      "summary": "arXiv:2603.24876v2 Announce Type: replace Abstract: Remote sensing visual grounding (RSVG) aims to localize specific targets in remote sensing images using natural language expressions. However, existing methods are restricted to single-sensor domains, i.e., either optical or synthetic aperture radar (SAR), limiting their real-world applicability. In this paper, we introduce the Cross-Domain RSVG (CD-RSVG) task and construct OptSAR-RSVG, the first large-scale benchmark dataset for this setting. To tackle the challenges of cross-domain feature modeling, computational inefficiency, and fine-grained semantic discrimination, we propose OptiSAR-Net++. Our framework features a patch-level Low-Rank Adaptation Mixture of Experts (PL-MoE) for efficient cross-domain feature decoupling. To mitigate the substantial computational overhead of Transformer decoding frameworks, we adopt a CLIP-based contrastive paradigm and further incorporate dynamic adversarial negative sampling, thereby transforming generative regression into an efficient cross-modal matching process. Additionally, a text-guided dual-gate fusion module (TGDF-SSA) and a region-aware auxiliary head are introduced to enhance semantic-visual alignment and spatial modeling. Extensive experiments demonstrate that OptiSAR-Net++ achieves SOTA performance on both OptSAR-RSVG and DIOR-RSVG benchmarks, offering significant advantages in localization accuracy and efficiency. The model and dataset have been made publicly available at https://github.com/JunDong-dev/OptiSAR-Net-PlusPlus.",
+      "pdf_url": "https://arxiv.org/abs/2603.24876",
+      "comment": "",
+      "technologies": [
+        "Low-Rank Adaptation",
+        "Mixture of Experts",
+        "CLIP-based Contrastive Learning",
+        "Visual Grounding",
+        "Cross-Domain Learning",
+        "Dynamic Adversarial Negative Sampling",
+        "Vision-Language Models",
+        "Synthetic Aperture Radar Processing"
+      ],
+      "maturity": "medium",
+      "confidence": 0.82,
+      "curator_score": 5.7,
+      "product_potential": [
+        "Cross-domain satellite imagery search engine enabling natural language queries for geospatial analysts to locate targets across optical and SAR sensor data",
+        "Automated agricultural and land-use monitoring platform that bridges optical and radar imagery for crop classification, deforestation tracking, and yield estimation",
+        "Defense and intelligence visual analysis system for cross-domain target localization and reconnaissance with natural language guidance"
+      ],
+      "domain_applications": [
+        "science",
+        "climate",
+        "enterprise"
+      ]
+    },
+    {
+      "id": "2609.25611",
+      "title": "Qwen3.8-Omni: Towards Native Omni-Modal Agents",
+      "authors": [],
+      "categories": [
+        "cs.CL"
+      ],
+      "published": "2026-09-23",
+      "updated": "2026-09-23",
+      "summary": "arXiv:2609.25611v1 Announce Type: new Abstract: We introduce Qwen3.8-Omni-Flash, a natively multimodal agentic model for real-world multimodal productivity. Compared with previous omni models, which primarily emphasized perception and interaction, Qwen3.8-Omni-Flash substantially improves multimodal understanding and reasoning, as well as performance on long-horizon agentic tasks. These capabilities are supported by a native multimodal co-training strategy that preserves strong text-domain capabilities while facilitating the transfer of agentic capabilities from text to audio and video tasks. The model inherits the sparse mixture-of-experts (MoE) architecture of Qwen3.8-Next and extends the context window to one million tokens, supporting long-context multimodal reasoning and long-horizon planning. These advances enable integration into production workflows as a primary agent or a specialized sub-agent, supporting video editing, long-form audio and video translation, music-conditioned music video or movie generation, and video-based note or omni-skill creation. To address the lack of native audio and video support in existing agent harnesses, we release Qwen-MM-Plugins, a lightweight open-source plugin framework for multimodal productivity. We further frame real-time multimodal interaction as a system-level challenge requiring orchestration of context and memory management, tool use, and sub-agent delegation. Accordingly, we release Qwen-Live-Harness, an open-source framework for building responsive, real-time multimodal agents based on Qwen3.8-Omni-Flash. Extensive evaluations demonstrate that Qwen3.8-Omni-Flash achieves strong performance across multimodal understanding, reasoning, long-horizon agentic execution, and video productivity tasks. These results and the accompanying open-source tools support Qwen3.8-Omni-Flash as a practical foundation for deploying natively multimodal agents in research and production.",
+      "pdf_url": "https://arxiv.org/abs/2609.25611",
+      "comment": "",
+      "technologies": [
+        "Multimodal Learning",
+        "Mixture of Experts",
+        "Long-Context Multimodal Reasoning",
+        "Native Multimodal Co-training"
+      ],
+      "maturity": "medium",
+      "confidence": 0.85,
+      "curator_score": 5.5,
+      "product_potential": [
+        "A multimodal AI assistant capable of handling video editing, long-form audio and video translation, and music-conditioned music video generation.",
+        "A real-time multimodal agent framework for responsive, real-time interactions in various domains."
+      ],
+      "domain_applications": [
+        "creative",
+        "education",
+        "enterprise",
+        "other"
+      ]
+    },
+    {
+      "id": "2603.11351",
+      "title": "Novelty Adaptation Through Hybrid Large Language Model (LLM)-Symbolic Planning and LLM-guided Reinforcement Learning",
+      "authors": [],
+      "categories": [
+        "cs.AI"
+      ],
+      "published": "2026-09-25",
+      "updated": "2026-09-25",
+      "summary": "arXiv:2603.11351v2 Announce Type: replace-cross Abstract: In dynamic open-world environments, autonomous agents often encounter novelties that hinder their ability to find plans to achieve their goals. Specifically, traditional symbolic planners fail to generate plans when the robot's planning domain lacks the operators that enable it to interact appropriately with novel objects in the environment. We propose a neuro-symbolic architecture that integrates symbolic planning, reinforcement learning, and a large language model (LLM) to learn how to handle novel objects. In particular, we leverage the common sense reasoning capability of the LLM to identify missing operators, generate plans with the symbolic AI planner, and write reward functions to guide the reinforcement learning agent in learning control policies for newly identified operators. Our method outperforms the state-of-the-art methods in operator discovery as well as operator learning in continuous robotic domains.Our webpage and code can be access here: helenlu66.github.io/hybridLLMguided/",
+      "pdf_url": "https://arxiv.org/abs/2603.11351",
+      "comment": "",
+      "technologies": [
+        "Neuro-Symbolic Integration",
+        "LLM-guided Reinforcement Learning",
+        "Symbolic Planning"
+      ],
+      "maturity": "medium",
+      "confidence": 0.8,
+      "curator_score": 5.5,
+      "product_potential": [
+        "Adaptive robotic assistants for dynamic environments",
+        "Autonomous systems for novel object interaction in logistics and manufacturing"
+      ],
+      "domain_applications": [
+        "robotics",
+        "enterprise"
+      ]
+    },
+    {
+      "id": "2606.31825",
+      "title": "Breaking Failure Cascades: Step-Aware Reinforcement Learning for Medical Multimodal Reasoning",
+      "authors": [],
+      "categories": [
+        "cs.AI"
+      ],
+      "published": "2026-09-25",
+      "updated": "2026-09-25",
+      "summary": "arXiv:2606.31825v2 Announce Type: replace-cross Abstract: Recent multimodal large language models have shown great promise in clinical image reasoning, but existing post-training pipelines remain predominantly outcome-centric, relying on final answer correctness or sequence-level preferences. This suffers from sparse credit assignment, making it difficult to optimize the reasoning process essential for clinical applications. Our analysis reveals that cascading errors from early-stage reasoning failures are a leading cause of incorrect predictions in medical visual question answering (VQA) benchmarks. Motivated by this, we propose Medical Reasoning-aware Policy Optimization (MRPO), an RL algorithm that incorporates step-wise process rewards. When the final answer is incorrect, MRPO assigns exponentially larger penalties to tokens in earlier invalid reasoning steps, breaking failure cascades without compromising successful paths. Across four multimodal LLM backbones, MRPO consistently outperforms standard GRPO and a recent RL baseline, and on Qwen3-VL-8B-Thinking even surpasses substantially larger medical MLLMs such as HuatuoGPT-Vision-34B by 4.59 points. Moreover, MRPO reduces early-stage reasoning failures from 58.6% to 13.4%, showing that targeted mitigation of cascading failures improves both reasoning quality and final answer accuracy. Our code is available at https://github.com/dmis-lab/MRPO",
+      "pdf_url": "https://arxiv.org/abs/2606.31825",
+      "comment": "",
+      "technologies": [
+        "Reinforcement Learning",
+        "Multimodal Learning"
+      ],
+      "maturity": "early",
+      "confidence": 0.8,
+      "curator_score": 5.5,
+      "product_potential": [
+        "A medical diagnostic assistant that uses multimodal reasoning to improve accuracy and reduce cascading errors in clinical decision-making.",
+        "A training platform for medical students and professionals to practice and improve their diagnostic reasoning skills using AI-generated feedback."
+      ],
+      "domain_applications": [
+        "healthcare"
+      ]
+    },
+    {
+      "id": "2609.29964",
+      "title": "World Action Agent: Harnessing VLMs for Robot Manipulation via World Action Rehearsal",
+      "authors": [
+        "Yehang Zhang",
+        "Haojian Huang",
+        "Yifan Chang",
+        "Jianchong Su",
+        "Bohan Zhou",
+        "Yingjie Xu",
+        "Wosong Chen",
+        "Tianhao Zhou",
+        "Chenxu Wang",
+        "Tianyi Zhang",
+        "Yangkai Wei",
+        "Wenqian Li",
+        "Shiyuan Deng",
+        "Yinchuan Li",
+        "Ying-Cong Chen",
+        "Zexi Li"
+      ],
+      "categories": [
+        "cs.RO",
+        "cs.AI"
+      ],
+      "published": "2026-09-24",
+      "updated": "2026-09-24",
+      "summary": "General-purpose vision-language models (VLMs) bring broad knowledge and spatial reasoning to robot manipulation, yet existing systems either use them indirectly, to predict constraints or write programs, or give them a view of the scene rather than a world in which to act. We present World Action Agent (WAA), a multi-agent harness through which VLMs pilot robots with basic tools, making every decision within a visual action workspace. The workspace has three properties. Contact views, selected automatically from the scene geometry, present the scene around the current interaction. Action rehearsal turns each action into an editable proposal that the agent, alone or through an Imagination Agent, previews and revises against planning feedback before execution. In-view correction closes the loop between observation, rehearsal, and low-level execution, letting the agent remove residual offsets in the view where it observes them. Through the same workspace, WAA acquires embodied procedural knowledge in two ways: it evolves multimodal skills from expert videos and human teaching under evidence-based review and consults them through a Skill Agent, and its interaction traces train smaller VLMs to pilot the same harness. On LIBERO-Pro, WAA with skills evolved only from LIBERO-90 reaches a state-of-the-art 75.6% average success, outperforming end-to-end VLAs, code-as-policy agents, and a visual-harness baseline with the same backbone; the same skills remain effective on robosuite without further learning. Fine-tuning Qwen3.5-9B on harness traces raises its out-of-domain success from 1.7% to 43.3%.",
+      "pdf_url": "https://arxiv.org/pdf/2609.29964v1",
+      "comment": "Working in progress",
+      "technologies": [
+        "Multimodal Learning",
+        "Reinforcement Learning from Human Feedback",
+        "Vision-Language Models",
+        "Robot Manipulation",
+        "Action Rehearsal"
+      ],
+      "maturity": "medium",
+      "confidence": 0.85,
+      "curator_score": 5.5,
+      "product_potential": [
+        "Autonomous robotic assistants for household tasks",
+        "Enhanced robotic surgery systems with real-time visual feedback",
+        "Smart manufacturing robots with adaptive learning capabilities"
+      ],
+      "domain_applications": [
+        "robotics",
+        "healthcare",
+        "enterprise"
+      ]
+    },
+    {
+      "id": "2609.29940",
+      "title": "Mind What Matters for Reasoning: Aligning Cross-Modal Attention via Selective Probability Mass Concentration",
+      "authors": [
+        "Jiaqi Deng",
+        "Zonghan Wu",
+        "Zhan Heng",
+        "Xiaoshui Huang",
+        "Huan Huo",
+        "Guandong Xu"
+      ],
+      "categories": [
+        "cs.CV",
+        "cs.AI"
+      ],
+      "published": "2026-09-24",
+      "updated": "2026-09-24",
+      "summary": "Multimodal large language models (MLLMs) achieve strong performance on visual reasoning tasks, yet remain prone to hallucinations and over-reliance on language priors, often generating answers without adequately using task-relevant visual evidence. Existing approaches primarily improve reasoning through reasoning-oriented supervision or inference-time strategies. In this work, we study a complementary question: can multimodal reasoning be improved by strengthening implicit visual grounding without directly supervising the reasoning process? Motivated by the functional specialization of attention heads, we investigate whether reasoning can be improved by guiding only the heads most responsive to visual evidence grounding. We propose Selective Probability Mass Concentration (sPMC), a training framework that identifies grounding-responsive heads and selectively regularizes their text-to-image attention. sPMC treats normalized attention over visual tokens as a spatial probability distribution and encourages the probability mass to be assigned to semantically relevant regions using segmentation-derived spatial priors. Adaptive Head Selection restricts this guidance to visually responsive heads while leaving the remaining heads unconstrained to preserve their complementary functions. Across 6 multimodal benchmark suites, sPMC achieves an average zero-shot improvement of 3% and gains of up to 11.3% across multiple MLLMs while regularizing only 3%-15% of their attention heads. These results demonstrate that targeted guidance of sparse and implicit visual evidence pathways can directly improve multimodal reasoning.",
+      "pdf_url": "https://arxiv.org/pdf/2609.29940v1",
+      "comment": "",
+      "technologies": [
+        "Multimodal Large Language Models",
+        "Visual Grounding",
+        "Cross-Modal Attention Alignment",
+        "Sparse Attention",
+        "Spatial Probability Distribution",
+        "Zero-Shot Learning",
+        "Attention Head Specialization",
+        "Visual Reasoning",
+        "Segmentation-Derived Spatial Priors",
+        "Adaptive Head Selection"
+      ],
+      "maturity": "medium",
+      "confidence": 0.82,
+      "curator_score": 5.5,
+      "product_potential": [
+        "Reduced-hallucination medical imaging analysis systems that ground diagnostic text in visual evidence",
+        "More reliable visual question answering for accessibility applications serving visually impaired users",
+        "Improved document understanding systems that properly align text descriptions with visual content in enterprise workflows"
+      ],
+      "domain_applications": [
+        "healthcare",
+        "accessibility",
+        "enterprise",
+        "science",
+        "robotics"
+      ]
+    },
+    {
+      "id": "2609.29892",
+      "title": "Qwen-Planner-Agent: A Closed-Loop AI-for-AI Framework for Real-World Mobile Planner Agents",
+      "authors": [
+        "Tingyu Qu",
+        "Weigao Sun",
+        "Yuecheng Liu",
+        "Yucheng Zhao",
+        "Yi Zhu",
+        "Yifeng Ding",
+        "Qiyi Wang",
+        "Sihan Cao",
+        "Pengkun Jiao",
+        "Hanlei Xie",
+        "Xiongwei Wu",
+        "Qichao Wang",
+        "Haodong Zhang",
+        "Jiajun Liu",
+        "Yuhao Wang",
+        "Yuqing Xie",
+        "Junpeng Zhao",
+        "Long Chen",
+        "Ming Ma",
+        "Sihan Yang",
+        "Ziwang Zhao",
+        "Yanhao Jia",
+        "Liangquan Gong",
+        "Feida Zhu",
+        "Yiran Zhong",
+        "Steven Hoi"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "published": "2026-09-24",
+      "updated": "2026-09-24",
+      "summary": "The rapid progression of large language models is extending AI from passive content generation into the active workflows of engineering and scientific discovery. This shift raises a compelling question: can AI be both the object of development and an active participant in building next-generation AI systems? We explore this question by building Qwen-Planner-Agent within a closed-loop AI-for-AI framework for scalable development and iterative improvement. Mobile planning offers a demanding test of this approach: complex, long-horizon tasks challenge agent reliability, while costly real-device interaction limits development scalability. The framework connects data production, model training, and deployment through a shared action-feedback-verification contract. (i) AI for Data builds a human-gated agentic data flywheel in which specialized agents construct tasks, collect interaction trajectories, curate and balance training data, and use training feedback to guide subsequent data generation. (ii) AI for Training combines a supervised planning cold start with hybrid-environment online agentic reinforcement learning, where we introduce Competence-Aware Reward-and-Advantage Engineering (CARE) to reduce reasoning and tool-use costs while preserving task performance. (iii) AI drives model--harness co-evolution through an execution-evidence-driven loop that orchestrates memory, skills, and tools at runtime and feeds structured action feedback and preserved failure traces back into coordinated model and harness adaptation. Qwen-Planner-Agent achieves the best overall performance among all evaluated models and systems on MobilePA-Bench, improving over its base model across tool use, memory, skills, and sub-agent coordination. Further evaluations of our model show improvements across non-mobile agentic benchmarks while largely preserving general capabilities.",
+      "pdf_url": "https://arxiv.org/pdf/2609.29892v1",
+      "comment": "https://tongyi-mai.github.io/Qwen-Planner-Agent/",
+      "technologies": [
+        "Reinforcement Learning from Human Feedback",
+        "Competence-Aware Reward-and-Advantage Engineering"
+      ],
+      "maturity": "medium",
+      "confidence": 0.8,
+      "curator_score": 5.5,
+      "product_potential": [
+        "AI-driven mobile planning assistant with adaptive learning capabilities",
+        "Closed-loop AI framework for iterative improvement of AI systems"
+      ],
+      "domain_applications": [
+        "enterprise",
+        "robotics",
+        "other"
+      ]
+    },
+    {
+      "id": "2609.28554",
+      "title": "Pistis Technical Report",
+      "authors": [],
+      "categories": [
+        "cs.CV"
+      ],
+      "published": "2026-09-26",
+      "updated": "2026-09-26",
+      "summary": "arXiv:2609.28554v1 Announce Type: cross Abstract: We introduce the Pistis model family, comprising 27B- and 9B-parameter multimodal large language models built on Qwen3.6 and Qwen3.5, respectively, and developed through a general and scalable post-training framework. The framework first establishes a strong foundation through large-scale multimodal supervised fine-tuning (SFT). Building on this SFT foundation, we propose Interleaved Distillation and Reinforcement Learning (IDRL), a novel post-training paradigm that tightly integrates on-policy distillation and reinforcement learning within a single training loop. By alternating between the two objectives, rather than optimizing either in isolation or combining them in a static joint loss, IDRL enables more effective knowledge transfer, greater optimization stability, and more precise credit assignment for long-horizon agentic trajectories, leading to stronger performance while mitigating common capability trade-offs. At both model scales, the framework produces two specialized variants: Pistis-Thinking, designed to strengthen deep multimodal reasoning, and Pistis-Agentic, which additionally incorporates agentic trajectory data to support long-horizon planning, iterative reasoning, and tool use. Pistis-Agentic is particularly strong in multimodal search. Both scales outperform their corresponding base models. Beyond model-parameter optimization, we further introduce Pistis-Auto-Harnessing (PAH), a system-level method that automatically improves the agent's inference harness through iterative optimization. Experiments demonstrate that PAH enhances the model performance without updating the model parameters or increasing the interaction budget.",
+      "pdf_url": "https://arxiv.org/abs/2609.28554",
+      "comment": "",
+      "technologies": [
+        "Multimodal Learning",
+        "Interleaved Distillation and Reinforcement Learning",
+        "Agentic Trajectory Data",
+        "Pistis-Auto-Harnessing"
+      ],
+      "maturity": "medium",
+      "confidence": 0.8,
+      "curator_score": 5.5,
+      "product_potential": [
+        "Multimodal AI assistant for enterprise workflows",
+        "AI-powered search engine with advanced reasoning capabilities",
+        "Automated optimization system for AI agents"
+      ],
+      "domain_applications": [
+        "enterprise",
+        "science",
+        "other"
+      ]
+    },
+    {
+      "id": "2609.26924",
+      "title": "nnFoundation: 3D Foundation Models for Radiology",
+      "authors": [],
+      "categories": [
+        "cs.CV"
+      ],
+      "published": "2026-09-24",
+      "updated": "2026-09-24",
+      "summary": "arXiv:2609.26924v1 Announce Type: new Abstract: Radiological artificial intelligence has advanced rapidly, yet most systems remain narrowly task-specific, data-intensive, and fragile under domain shift. Foundation models promise more transferable and data-efficient solutions, but existing approaches are limited in scale, evaluated narrowly, and often assume that a single pretrained model can support diverse downstream tasks. Here we present nnFoundation, complementary convolutional and transformer-based 3D radiological foundation models. Developed within the Human Radiome Project (THRP), nnFoundation is trained on 2.1 million CT, MRI, and PET image volumes from 125 institutional and public datasets. We evaluate them across 108 tasks spanning segmentation, detection, classification, report generation, and image retrieval, including evaluations under domain shift, by external partners and in low-data and low-compute regimes. Across all task types, our convolution- and transformer-based nnFoundation models consistently outperform both prior 3D foundation models and training from scratch, establishing state-of-the-art performance for radiological imaging. However, performance follows a consistent task-dependent structure: the convolutional nnFoundation model dominates spatially localized tasks, whereas the transformer-based nnFoundation model excels in tasks requiring global semantic reasoning and in frozen-feature settings. Dynamically aligning the foundation model topology with the dataset characteristics post-hoc further improves transfer across heterogeneous 3D settings. These results show that transferable 3D radiological performance is governed not by a single universal model, but by the interplay of scalable pretraining, complementary architectures, and dataset-aware adaptation. We release nnFoundation models integrated into nnU-Net and nnDetection, enabling immediate application across established radiology workflows.",
+      "pdf_url": "https://arxiv.org/abs/2609.26924",
+      "comment": "",
+      "technologies": [
+        "3D Foundation Models",
+        "Multimodal Learning",
+        "Low-Rank Adaptation",
+        "Depth Estimation",
+        "Object Detection"
+      ],
+      "maturity": "medium",
+      "confidence": 0.85,
+      "curator_score": 5.4,
+      "product_potential": [
+        "AI-powered radiology assistant for clinical decision support",
+        "Portable medical imaging device with on-device AI for low-resource settings",
+        "Radiology training platform with interactive 3D imaging simulations"
+      ],
+      "domain_applications": [
+        "healthcare",
+        "science"
+      ]
+    },
+    {
+      "id": "2609.27511",
+      "title": "NV-Reason-CT: 3D Visual Language Model for CT Analysis",
+      "authors": [],
+      "categories": [
+        "cs.CV"
+      ],
+      "published": "2026-09-24",
+      "updated": "2026-09-24",
+      "summary": "arXiv:2609.27511v1 Announce Type: new Abstract: We present NV-Reason-CT, a generative vision--language model for chest and abdominal CT combining native 3D visual encoding with radiologist-guided reasoning. The model couples a native 3D vision transformer with a language model, passing all visual tokens and their explicit 3D coordinates into language decoding without further spatial token merging. This retains volumetric spatial information within the vision encoder and through the language model's positional encoding during joint processing with text. We train on a curated corpus of approximately 550,000 multimodal instruction examples from 70,111 unique CT image inputs, combining standardized reports, abnormality-focused and anatomy-specific questions, multi-turn interactions, and radiologist-authored reasoning from recorded and transcribed expert CT interpretations. Expert annotations provide direct supervision and guide additional report-grounded synthetic reasoning. End-to-end supervised fine-tuning (SFT) is followed by Group Relative Policy Optimization (GRPO), with verifiable rewards over chest and abdominal abnormality sets. The model supports abnormality classification, report generation, and interactive reasoning with reviewable observations, differential diagnoses, and uncertainty. Evaluation spans public CT benchmarks and a held-out NIH cohort. On CT-RATE, NV-Reason-CT achieves a macro-F1 of 0.614 and macro-AUROC of 0.871 without a task-specific classification head; generated reports achieve a report-derived macro-F1 of 0.592. In a preliminary study with expert radiologists, AI-assisted review received favorable confidence ratings and was associated with a 50% reduction in average reported interpretation and reporting time. We release the model and training code to support reproducible research on explainable AI for volumetric medical imaging.",
+      "pdf_url": "https://arxiv.org/abs/2609.27511",
+      "comment": "",
+      "technologies": [
+        "Vision Transformer",
+        "Multimodal Learning",
+        "Group Relative Policy Optimization"
+      ],
+      "maturity": "medium",
+      "confidence": 0.8,
+      "curator_score": 5.4,
+      "product_potential": [
+        "AI-assisted radiology reporting tool for faster and more accurate CT analysis",
+        "Interactive 3D medical imaging platform for radiologists to explore and reason about CT scans"
+      ],
+      "domain_applications": [
+        "healthcare"
+      ]
+    },
+    {
+      "id": "2609.28757",
+      "title": "Small yet Assistive: Spatially-Aware Post-Training for Low Vision",
+      "authors": [],
+      "categories": [
+        "cs.CV"
+      ],
+      "published": "2026-09-26",
+      "updated": "2026-09-26",
+      "summary": "arXiv:2609.28757v1 Announce Type: new Abstract: An estimated 1 billion people worldwide live with vision impairment, yet current vision-language models (VLMs) produce descriptions too vague for safe navigation by blind and low-vision (BLV) users. Large VLMs can generate high-quality audio-description-compliant narrations but cannot run on mobile devices; small VLMs offer competitive latency but lack spatial detail, directional cues, and hazard awareness for navigational assistance. We present Smol-VL-BLV, a compact VLM for blind and low-vision users that closes this gap using a 500M decoder transformer model and two post-training mechanisms: (1) teacher-student distillation and (2) Group Relative Policy Optimization (GRPO) with a composite BLV reward targeting directional language, metric distances, and hazard detection. Because multi-stage post-training can induce catastrophic forgetting, we add a lightweight finetuning stage after the last stage GRPO finetuning to recover general descriptive quality while preserving BLV-specific spatial grounding. Our best model substantially outperforms the baseline across various benchmarks, including tasks: VQA, BLV captioning, OCR, and latency. Compared with the baseline for relative improvement, it improves the Spatial score gain of 19.3%, and the Social score gain of 14.8%. It also increases OCR-Bench by 101.5%, and raises TextVQA accuracy by 44.2%. These results show that BLV-focused post-training improves both accessibility-specific spatial grounding and general visual-text reasoning. Deployed on a mid-range Android smartphone via Mixed-Precision Quantization, the model remains approx. 450 MB and runs entirely on-device, offline and without network dependency, generating descriptions with latency dependent on host hardware capabilities. Our model, dataset, and code is publicly released at https://smol-vl-blv.github.io/Smol-VL-BLV-website/",
+      "pdf_url": "https://arxiv.org/abs/2609.28757",
+      "comment": "",
+      "technologies": [
+        "Vision-Language Models",
+        "Teacher-Student Distillation",
+        "Group Relative Policy Optimization",
+        "Mixed-Precision Quantization"
+      ],
+      "maturity": "medium",
+      "confidence": 0.85,
+      "curator_score": 5.4,
+      "product_potential": [
+        "On-device, offline navigation assistant for blind and low-vision users",
+        "Augmented reality glasses with real-time spatial audio descriptions",
+        "Mobile app for real-time object detection and hazard awareness for visually impaired users"
+      ],
+      "domain_applications": [
+        "accessibility"
+      ]
+    },
+    {
+      "id": "2609.28860",
+      "title": "Multimodal Routing and Region Refinement for Language-Guided Medical Image Segmentation",
+      "authors": [],
+      "categories": [
+        "cs.CV"
+      ],
+      "published": "2026-09-26",
+      "updated": "2026-09-26",
+      "summary": "arXiv:2609.28860v1 Announce Type: new Abstract: Textual descriptions can reduce ambiguity in medical image segmentation by specifying the finding and location to be delineated. Existing text-guided methods mainly improve where image and language features interact but generally retain a single learned update pathway across all image-text pairs. We propose MRSeg, a parameter-efficient framework that uses each image-text pair to route the adaptation of visual and textual features before dense prediction. Frozen ConvNeXt-Tiny and PubMedBERT encoders provide multiscale visual features and clinical text tokens. A joint router uses the deepest visual feature and pooled text to predict a sparse mixture over low-rank adapter bases. The resulting route is shared across separate adapter banks for two visual scales and text, coordinating their adaptation while keeping the feature-specific parameters separate. Region Bridge uses text-derived queries to aggregate dense visual tokens into latent regions, refines these regions through self-attention and text cross-attention, and redistributes the refined information back to the feature maps. Finally, a multiscale decoder combines refined semantic features with shallow image evidence. On QaTa-COV19 and MosMedData+, MRSeg achieves 90.90/83.32 and 81.53/68.82 Dice/mIoU, respectively, with 7.11M trainable parameters and 7.60 GFLOPs. Code: https://github.com/maklachur/MRSeg.",
+      "pdf_url": "https://arxiv.org/abs/2609.28860",
+      "comment": "",
+      "technologies": [
+        "Multimodal Learning",
+        "Low-Rank Adaptation",
+        "Sparse Attention",
+        "Retrieval Augmented Generation"
+      ],
+      "maturity": "early",
+      "confidence": 0.8,
+      "curator_score": 5.4,
+      "product_potential": [
+        "AI-powered medical imaging assistant for radiologists to improve segmentation accuracy using textual descriptions",
+        "Customizable medical image segmentation tool for researchers to explore different language-guided approaches"
+      ],
+      "domain_applications": [
+        "healthcare",
+        "science"
+      ]
+    },
+    {
+      "id": "2602.01163",
+      "title": "A Multimodal Large Language Model-Driven Framework for Context-Aware UAV Emergency Landing Site Selection",
+      "authors": [],
+      "categories": [
+        "cs.AI"
+      ],
+      "published": "2026-09-23",
+      "updated": "2026-09-23",
+      "summary": "arXiv:2602.01163v2 Announce Type: replace-cross Abstract: Safe UAV emergency landing requires more than just identifying flat terrain; it demands understanding complex semantic risks (e.g., crowds, temporary structures) invisible to traditional geometric sensors. In this paper, we propose a novel framework leveraging Remote Sensing (RS) imagery and Multimodal Large Language Models (MLLMs) for global context-aware landing site assessment. Unlike local geometric methods, our approach employs a coarse-to-fine pipeline: first, a lightweight semantic segmentation module efficiently pre-screens candidate areas; second, a vision-language reasoning agent fuses visual features with Point-of-Interest (POI) data to detect subtle hazards. To validate this approach, we construct and release the Emergency Landing Site Selection (ELSS) benchmark at https://github.com/chunlianghua/ELSS-dataset. ELSS includes a remote-sensing subset for simulation validation and a UAV aerial-video subset for real-world testing. Experiments demonstrate that our framework significantly outperforms geometric baselines in risk identification accuracy. Furthermore, qualitative results confirm its ability to generate human-like, interpretable justifications, enhancing trust in automated decision-making.",
+      "pdf_url": "https://arxiv.org/abs/2602.01163",
+      "comment": "",
+      "technologies": [
+        "Multimodal Learning",
+        "Vision-Language Reasoning",
+        "Semantic Segmentation",
+        "Remote Sensing"
+      ],
+      "maturity": "medium",
+      "confidence": 0.85,
+      "curator_score": 5.2,
+      "product_potential": [
+        "A UAV emergency landing assistant that uses multimodal data to identify safe landing sites in real-time.",
+        "A drone-based emergency response system that integrates visual and contextual data for autonomous decision-making."
+      ],
+      "domain_applications": [
+        "robotics",
+        "science",
+        "other"
+      ]
+    },
+    {
+      "id": "2609.27717",
+      "title": "SkillGym: Internalizing Human Skills into LLMs for Real-World Problem Solving",
+      "authors": [
+        "Zhilong Ge",
+        "Yuting Shao",
+        "Yutao Yang",
+        "Yuxuan Cai",
+        "Jie Zhou",
+        "Kai Chen",
+        "Bo Zhang",
+        "Qin Chen",
+        "Liang He"
+      ],
+      "categories": [
+        "cs.CL"
+      ],
+      "published": "2026-09-23",
+      "updated": "2026-09-23",
+      "summary": "Human-written agent skills encode rich workflows for real-world problem solving, but are typically used as external inference-time instructions rather than internalized as reusable model capabilities. We introduce \\texttt{SkillGym}, a framework that transforms these skills into executable, verifiable training environments for large language model agents. Its skill-to-task pipeline instantiates concrete tasks, verifies outcomes with code-based checkers, and assesses empirical skill dependence through contrastive executions. We construct and release 2,756 environments across 12 categories and collect 8,364 successful trajectories from multiple models and harnesses, averaging 49 tool calls and over 60k logged text tokens. These resources support supervised fine-tuning on verified workflows and reinforcement learning with outcome-based rewards. Under Claude Code, supervised fine-tuning improves Qwen3.5-35B-A3B by 199 Elo on GDPval-AA v2, 19.10 percentage points on Terminal-Bench 2.1, and 28.13 and 12.38 points on SkillsBench v1.1 with and without skills, respectively. Our 35B \\texttt{SkillGym-Agent} reaches 51.47\\% on skill-assisted SkillsBench, exceeding reported scores for Claude Sonnet 4.6, GPT-5.4 Mini, and DeepSeek V4 Pro. Without skills, it also surpasses skill-assisted bases under Codex and Claude Code, suggesting reusable procedural competence.",
+      "pdf_url": "https://arxiv.org/pdf/2609.27717v1",
+      "comment": "",
+      "technologies": [
+        "Skill-to-Task Pipeline",
+        "Code-based Checkers",
+        "Contrastive Executions",
+        "Outcome-based Rewards",
+        "Supervised Fine-tuning with Verified Workflows",
+        "Reinforcement Learning from Human Feedback"
+      ],
+      "maturity": "medium",
+      "confidence": 0.85,
+      "curator_score": 5.2,
+      "product_potential": [
+        "AI-powered assistant that can internalize and execute human skills for real-world problem solving",
+        "Automated workflow optimization tool that uses verified skills to improve productivity",
+        "Personalized learning platform that adapts to individual learning styles and skills"
+      ],
+      "domain_applications": [
+        "education",
+        "enterprise",
+        "other"
+      ]
+    },
+    {
+      "id": "2609.27284",
+      "title": "Hunyuan-A13B Technical Report",
+      "authors": [
+        "Tencent Hunyuan Team",
+        "Ao Liu",
+        "Botong Zhou",
+        "Can Xu",
+        "Chayse Zhou",
+        "ChenChen Zhang",
+        "Chengcheng Xu",
+        "Chenhao Wang",
+        "Decheng Wu",
+        "Dengpeng Wu",
+        "Dian Jiao",
+        "Dong Du",
+        "Dong Wang",
+        "Feng Zhang",
+        "Fengzong Lian",
+        "Guanghui Xu",
+        "Guanwei Zhang",
+        "Hai Wang",
+        "Haipeng Luo",
+        "Han Hu",
+        "Huilin Xu",
+        "Jiajia Wu",
+        "Jianchen Zhu",
+        "Jianfeng Yan",
+        "Jiaqi Zhu",
+        "Jihong Zhang",
+        "Jinbao Xue",
+        "Jun Xia",
+        "Junqiang Zheng",
+        "Kai Liu",
+        "Kai Zhang",
+        "Kai Zheng",
+        "Kejiao Li",
+        "Keyao Wang",
+        "Lan Jiang",
+        "Lixin Liu",
+        "Lulu Wu",
+        "Mengyuan Huang",
+        "Peijie Yu",
+        "Peiqi Wang",
+        "Qian Wang",
+        "Qianbiao Xiang",
+        "Qibin Liu",
+        "Qingfeng Sun",
+        "Richard Guo",
+        "Ruobing Xie",
+        "Saiyong Yang",
+        "Shaohua Chen",
+        "Shihui Hu",
+        "Shuai Li",
+        "Shuaipeng Li",
+        "Shuang Chen",
+        "Suncong Zheng",
+        "Tao Yang",
+        "Tian Zhang",
+        "Tinghao Yu",
+        "Weidong Han",
+        "Weijie Liu",
+        "Weijin Zhou",
+        "Weikang Wang",
+        "Wesleye Chen",
+        "Xiao Feng",
+        "Xiaoqin Ren",
+        "Xingwu Sun",
+        "Xiong Kuang",
+        "Xuemeng Huang",
+        "Xun Cao",
+        "Yanfeng Chen",
+        "Yang Du",
+        "Zhen Yang",
+        "Yangyu Tao",
+        "Yaping Deng",
+        "Yi Shen",
+        "Yigeng Hong",
+        "Yiqi Chen"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "published": "2026-09-23",
+      "updated": "2026-09-23",
+      "summary": "We present Hunyuan-A13B, an open-source large language model based on a Mixture-of-Experts architecture. It contains 80 billion total parameters but activates only 13 billion during inference, balancing model capability, computational efficiency, and deployment cost. The model is pretrained on a rigorously filtered 20T-token corpus with enhanced STEM data curation, improving factual reliability and reasoning ability. High-quality supervised fine-tuning and large-scale reinforcement learning further enhance its overall performance. Hunyuan-A13B also introduces a dual-mode Chain-of-Thought framework that adapts reasoning depth to task complexity: fast thinking for routine queries and slow thinking for complex, multi-step problems. Evaluations show competitive performance across mathematics, science, programming, general language understanding, and agent tasks, often approaching that of much larger models. Its high inference throughput makes it suitable for latency-sensitive applications. We release Hunyuan-A13B to support open research and practical LLM deployment.",
+      "pdf_url": "https://arxiv.org/pdf/2609.27284",
+      "comment": "",
+      "technologies": [
+        "Mixture of Experts",
+        "Chain-of-Thought Prompting"
+      ],
+      "maturity": "medium",
+      "confidence": 0.85,
+      "curator_score": 5.2,
+      "product_potential": [
+        "A real-time, low-latency AI assistant for enterprise applications that requires high computational efficiency",
+        "An adaptive educational platform that uses the dual-mode Chain-of-Thought framework to tailor learning experiences based on task complexity"
+      ],
+      "domain_applications": [
+        "education",
+        "enterprise",
+        "other"
+      ]
+    }
+  ],
+  "technologies": [
+    {
+      "name": "Multimodal Learning",
+      "papers": 10,
+      "maturity": "medium",
+      "confidence": 0.85,
+      "trend": "rising",
+      "applications": [
+        "healthcare",
+        "robotics",
+        "enterprise",
+        "science"
+      ]
+    },
+    {
+      "name": "Mixture of Experts",
+      "papers": 3,
+      "maturity": "medium",
+      "confidence": 0.85,
+      "trend": "rising",
+      "applications": [
+        "education",
+        "enterprise",
+        "other"
+      ]
+    },
+    {
+      "name": "Reinforcement Learning",
+      "papers": 5,
+      "maturity": "medium",
+      "confidence": 0.85,
+      "trend": "rising",
+      "applications": [
+        "robotics",
+        "healthcare",
+        "enterprise"
+      ]
+    },
+    {
+      "name": "Vision-Language Models",
+      "papers": 5,
+      "maturity": "medium",
+      "confidence": 0.85,
+      "trend": "rising",
+      "applications": [
+        "healthcare",
+        "accessibility",
+        "enterprise",
+        "science",
+        "robotics"
+      ]
+    },
+    {
+      "name": "Low-Rank Adaptation",
+      "papers": 3,
+      "maturity": "medium",
+      "confidence": 0.85,
+      "trend": "rising",
+      "applications": [
+        "healthcare",
+        "science",
+        "enterprise"
+      ]
+    },
+    {
+      "name": "Sparse Attention",
+      "papers": 2,
+      "maturity": "medium",
+      "confidence": 0.85,
+      "trend": "rising",
+      "applications": [
+        "healthcare",
+        "science"
+      ]
+    },
+    {
+      "name": "Neuro-Symbolic Integration",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.8,
+      "trend": "rising",
+      "applications": [
+        "robotics",
+        "enterprise"
+      ]
+    },
+    {
+      "name": "Symbolic Planning",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.8,
+      "trend": "rising",
+      "applications": [
+        "robotics",
+        "enterprise"
+      ]
+    },
+    {
+      "name": "Vision Transformer",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.8,
+      "trend": "rising",
+      "applications": [
+        "healthcare"
+      ]
+    },
+    {
+      "name": "3D Foundation Models",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.85,
+      "trend": "rising",
+      "applications": [
+        "healthcare",
+        "science"
+      ]
+    },
+    {
+      "name": "Retrieval Augmented Generation",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.8,
+      "trend": "rising",
+      "applications": [
+        "healthcare",
+        "science"
+      ]
+    },
+    {
+      "name": "Skill-to-Task Pipeline",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.85,
+      "trend": "rising",
+      "applications": [
+        "education",
+        "enterprise",
+        "other"
+      ]
+    },
+    {
+      "name": "CLIP-based Contrastive Learning",
+      "papers": 1,
+      "maturity": "early",
+      "confidence": 0.5700000000000001,
+      "trend": "emerging",
+      "applications": [
+        "enterprise",
+        "science",
+        "climate"
+      ]
+    },
+    {
+      "name": "Visual Grounding",
+      "papers": 1,
+      "maturity": "early",
+      "confidence": 0.5700000000000001,
+      "trend": "emerging",
+      "applications": [
+        "climate",
+        "robotics",
+        "accessibility",
+        "science",
+        "enterprise",
+        "healthcare"
+      ]
+    },
+    {
+      "name": "Cross-Domain Learning",
+      "papers": 1,
+      "maturity": "early",
+      "confidence": 0.5700000000000001,
+      "trend": "emerging",
+      "applications": [
+        "enterprise",
+        "science",
+        "climate"
+      ]
+    },
+    {
+      "name": "Dynamic Adversarial Negative Sampling",
+      "papers": 1,
+      "maturity": "early",
+      "confidence": 0.5700000000000001,
+      "trend": "emerging",
+      "applications": [
+        "enterprise",
+        "science",
+        "climate"
+      ]
+    },
+    {
+      "name": "Synthetic Aperture Radar Processing",
+      "papers": 1,
+      "maturity": "early",
+      "confidence": 0.5700000000000001,
+      "trend": "emerging",
+      "applications": [
+        "enterprise",
+        "science",
+        "climate"
+      ]
+    },
+    {
+      "name": "Long-Context Multimodal Reasoning",
+      "papers": 1,
+      "maturity": "early",
+      "confidence": 0.6,
+      "trend": "rising",
+      "applications": [
+        "education",
+        "creative",
+        "enterprise",
+        "other"
+      ]
+    },
+    {
+      "name": "Native Multimodal Co-training",
+      "papers": 1,
+      "maturity": "early",
+      "confidence": 0.6,
+      "trend": "rising",
+      "applications": [
+        "education",
+        "creative",
+        "enterprise",
+        "other"
+      ]
+    },
+    {
+      "name": "LLM-guided Reinforcement Learning",
+      "papers": 1,
+      "maturity": "early",
+      "confidence": 0.6,
+      "trend": "rising",
+      "applications": [
+        "enterprise",
+        "robotics"
+      ]
+    },
+    {
+      "name": "Reinforcement Learning from Human Feedback",
+      "papers": 1,
+      "maturity": "early",
+      "confidence": 0.5700000000000001,
+      "trend": "emerging",
+      "applications": [
+        "robotics",
+        "education",
+        "enterprise",
+        "other",
+        "healthcare"
+      ]
+    },
+    {
+      "name": "Robot Manipulation",
+      "papers": 1,
+      "maturity": "early",
+      "confidence": 0.55,
+      "trend": "emerging",
+      "applications": [
+        "enterprise",
+        "robotics",
+        "healthcare"
+      ]
+    },
+    {
+      "name": "Action Rehearsal",
+      "papers": 1,
+      "maturity": "early",
+      "confidence": 0.55,
+      "trend": "emerging",
+      "applications": [
+        "enterprise",
+        "robotics",
+        "healthcare"
+      ]
+    },
+    {
+      "name": "Multimodal Large Language Models",
+      "papers": 1,
+      "maturity": "early",
+      "confidence": 0.55,
+      "trend": "emerging",
+      "applications": [
+        "robotics",
+        "accessibility",
+        "science",
+        "enterprise",
+        "healthcare"
+      ]
+    },
+    {
+      "name": "Cross-Modal Attention Alignment",
+      "papers": 1,
+      "maturity": "early",
+      "confidence": 0.55,
+      "trend": "emerging",
+      "applications": [
+        "robotics",
+        "accessibility",
+        "science",
+        "enterprise",
+        "healthcare"
+      ]
+    },
+    {
+      "name": "Spatial Probability Distribution",
+      "papers": 1,
+      "maturity": "early",
+      "confidence": 0.55,
+      "trend": "emerging",
+      "applications": [
+        "robotics",
+        "accessibility",
+        "science",
+        "enterprise",
+        "healthcare"
+      ]
+    },
+    {
+      "name": "Zero-Shot Learning",
+      "papers": 1,
+      "maturity": "early",
+      "confidence": 0.55,
+      "trend": "emerging",
+      "applications": [
+        "robotics",
+        "accessibility",
+        "science",
+        "enterprise",
+        "healthcare"
+      ]
+    },
+    {
+      "name": "Attention Head Specialization",
+      "papers": 1,
+      "maturity": "early",
+      "confidence": 0.55,
+      "trend": "emerging",
+      "applications": [
+        "robotics",
+        "accessibility",
+        "science",
+        "enterprise",
+        "healthcare"
+      ]
+    },
+    {
+      "name": "Visual Reasoning",
+      "papers": 1,
+      "maturity": "early",
+      "confidence": 0.55,
+      "trend": "emerging",
+      "applications": [
+        "robotics",
+        "accessibility",
+        "science",
+        "enterprise",
+        "healthcare"
+      ]
+    },
+    {
+      "name": "Segmentation-Derived Spatial Priors",
+      "papers": 1,
+      "maturity": "early",
+      "confidence": 0.55,
+      "trend": "emerging",
+      "applications": [
+        "robotics",
+        "accessibility",
+        "science",
+        "enterprise",
+        "healthcare"
+      ]
+    },
+    {
+      "name": "Adaptive Head Selection",
+      "papers": 1,
+      "maturity": "early",
+      "confidence": 0.55,
+      "trend": "emerging",
+      "applications": [
+        "robotics",
+        "accessibility",
+        "science",
+        "enterprise",
+        "healthcare"
+      ]
+    },
+    {
+      "name": "Competence-Aware Reward-and-Advantage Engineering",
+      "papers": 1,
+      "maturity": "early",
+      "confidence": 0.55,
+      "trend": "emerging",
+      "applications": [
+        "robotics",
+        "enterprise",
+        "other"
+      ]
+    },
+    {
+      "name": "Interleaved Distillation and Reinforcement Learning",
+      "papers": 1,
+      "maturity": "early",
+      "confidence": 0.55,
+      "trend": "emerging",
+      "applications": [
+        "enterprise",
+        "other",
+        "science"
+      ]
+    },
+    {
+      "name": "Agentic Trajectory Data",
+      "papers": 1,
+      "maturity": "early",
+      "confidence": 0.55,
+      "trend": "emerging",
+      "applications": [
+        "enterprise",
+        "other",
+        "science"
+      ]
+    },
+    {
+      "name": "Pistis-Auto-Harnessing",
+      "papers": 1,
+      "maturity": "early",
+      "confidence": 0.55,
+      "trend": "emerging",
+      "applications": [
+        "enterprise",
+        "other",
+        "science"
+      ]
+    },
+    {
+      "name": "Depth Estimation",
+      "papers": 1,
+      "maturity": "early",
+      "confidence": 0.54,
+      "trend": "emerging",
+      "applications": [
+        "healthcare",
+        "science"
+      ]
+    },
+    {
+      "name": "Object Detection",
+      "papers": 1,
+      "maturity": "early",
+      "confidence": 0.54,
+      "trend": "emerging",
+      "applications": [
+        "healthcare",
+        "science"
+      ]
+    },
+    {
+      "name": "Group Relative Policy Optimization",
+      "papers": 1,
+      "maturity": "early",
+      "confidence": 0.54,
+      "trend": "emerging",
+      "applications": [
+        "healthcare",
+        "accessibility"
+      ]
+    },
+    {
+      "name": "Teacher-Student Distillation",
+      "papers": 1,
+      "maturity": "early",
+      "confidence": 0.54,
+      "trend": "emerging",
+      "applications": [
+        "accessibility"
+      ]
+    },
+    {
+      "name": "Mixed-Precision Quantization",
+      "papers": 1,
+      "maturity": "early",
+      "confidence": 0.54,
+      "trend": "emerging",
+      "applications": [
+        "accessibility"
+      ]
+    },
+    {
+      "name": "Vision-Language Reasoning",
+      "papers": 1,
+      "maturity": "early",
+      "confidence": 0.5700000000000001,
+      "trend": "emerging",
+      "applications": [
+        "robotics",
+        "other",
+        "science"
+      ]
+    },
+    {
+      "name": "Semantic Segmentation",
+      "papers": 1,
+      "maturity": "early",
+      "confidence": 0.5700000000000001,
+      "trend": "emerging",
+      "applications": [
+        "robotics",
+        "other",
+        "science"
+      ]
+    },
+    {
+      "name": "Remote Sensing",
+      "papers": 1,
+      "maturity": "early",
+      "confidence": 0.5700000000000001,
+      "trend": "emerging",
+      "applications": [
+        "robotics",
+        "other",
+        "science"
+      ]
+    },
+    {
+      "name": "Code-based Checkers",
+      "papers": 1,
+      "maturity": "early",
+      "confidence": 0.5700000000000001,
+      "trend": "emerging",
+      "applications": [
+        "education",
+        "enterprise",
+        "other"
+      ]
+    },
+    {
+      "name": "Contrastive Executions",
+      "papers": 1,
+      "maturity": "early",
+      "confidence": 0.5700000000000001,
+      "trend": "emerging",
+      "applications": [
+        "education",
+        "enterprise",
+        "other"
+      ]
+    },
+    {
+      "name": "Outcome-based Rewards",
+      "papers": 1,
+      "maturity": "early",
+      "confidence": 0.5700000000000001,
+      "trend": "emerging",
+      "applications": [
+        "education",
+        "enterprise",
+        "other"
+      ]
+    },
+    {
+      "name": "Supervised Fine-tuning with Verified Workflows",
+      "papers": 1,
+      "maturity": "early",
+      "confidence": 0.5700000000000001,
+      "trend": "emerging",
+      "applications": [
+        "education",
+        "enterprise",
+        "other"
+      ]
+    },
+    {
+      "name": "Chain-of-Thought Prompting",
+      "papers": 1,
+      "maturity": "early",
+      "confidence": 0.5700000000000001,
+      "trend": "emerging",
+      "applications": [
+        "education",
+        "enterprise",
+        "other"
+      ]
+    }
+  ],
+  "product_opportunities": [
+    {
+      "technology": "Multimodal Learning",
+      "idea": "MediScan: AI-powered medical imaging analysis tool that combines images, text reports, and patient data for accurate diagnostics",
+      "business_value": 9,
+      "engineering_difficulty": 8,
+      "competitive_advantage": "high",
+      "development_time": "3-6 months"
+    },
+    {
+      "technology": "Mixture of Experts",
+      "idea": "ExpertTutor: AI tutoring platform that uses a mixture of expert models to provide personalized, adaptive learning experiences",
+      "business_value": 8,
+      "engineering_difficulty": 7,
+      "competitive_advantage": "medium",
+      "development_time": "2-4 months"
+    },
+    {
+      "technology": "Reinforcement Learning",
+      "idea": "RL-DrugDiscovery: AI-driven platform for drug discovery and optimization using reinforcement learning algorithms",
+      "business_value": 9,
+      "engineering_difficulty": 8,
+      "competitive_advantage": "high",
+      "development_time": "4-6 months"
+    },
+    {
+      "technology": "Vision-Language Models",
+      "idea": "VisioAccess: AI-powered tool that combines vision and language models to provide real-time descriptions and assistance for visually impaired users",
+      "business_value": 8,
+      "engineering_difficulty": 7,
+      "competitive_advantage": "medium",
+      "development_time": "3-5 months"
+    },
+    {
+      "technology": "Low-Rank Adaptation",
+      "idea": "LRA-Health: AI-powered platform for personalized medicine and treatment optimization using low-rank adaptation techniques",
+      "business_value": 9,
+      "engineering_difficulty": 8,
+      "competitive_advantage": "high",
+      "development_time": "3-6 months"
+    },
+    {
+      "technology": "Sparse Attention",
+      "idea": "SparseSci: AI-powered research assistant that uses sparse attention mechanisms to efficiently analyze and summarize scientific literature",
+      "business_value": 8,
+      "engineering_difficulty": 7,
+      "competitive_advantage": "medium",
+      "development_time": "2-4 months"
+    },
+    {
+      "technology": "3D Foundation Models",
+      "idea": "3DMed: AI-powered platform for 3D medical imaging analysis and visualization, enabling more accurate diagnostics and treatment planning",
+      "business_value": 9,
+      "engineering_difficulty": 8,
+      "competitive_advantage": "high",
+      "development_time": "4-6 months"
+    },
+    {
+      "technology": "Skill-to-Task Pipeline",
+      "idea": "TaskMaster: AI-powered platform that helps users break down complex tasks into manageable skills and provides personalized learning paths",
+      "business_value": 7,
+      "engineering_difficulty": 6,
+      "competitive_advantage": "medium",
+      "development_time": "2-3 months"
+    },
+    {
+      "technology": "Neuro-Symbolic Integration",
+      "idea": "NeuroBot: AI-powered robotics platform that integrates neural networks with symbolic reasoning for more intelligent and adaptable robotic systems",
+      "business_value": 9,
+      "engineering_difficulty": 8,
+      "competitive_advantage": "high",
+      "development_time": "4-6 months"
+    },
+    {
+      "technology": "Symbolic Planning",
+      "idea": "PlanBot: AI-powered robotics platform that uses symbolic planning techniques to enable more efficient and adaptable robotic systems",
+      "business_value": 8,
+      "engineering_difficulty": 7,
+      "competitive_advantage": "medium",
+      "development_time": "3-5 months"
+    },
+    {
+      "technology": "Vision Transformer",
+      "idea": "VT-Health: AI-powered medical imaging analysis tool that uses vision transformers for more accurate and efficient diagnostics",
+      "business_value": 9,
+      "engineering_difficulty": 8,
+      "competitive_advantage": "high",
+      "development_time": "3-6 months"
+    },
+    {
+      "technology": "Retrieval Augmented Generation",
+      "idea": "RAG-Sci: AI-powered research assistant that uses retrieval augmented generation techniques to efficiently analyze and summarize scientific literature",
+      "business_value": 8,
+      "engineering_difficulty": 7,
+      "competitive_advantage": "medium",
+      "development_time": "2-4 months"
+    },
+    {
+      "technology": "Long-Context Multimodal Reasoning",
+      "idea": "LMC-Art: AI-powered creative platform that uses long-context multimodal reasoning techniques to generate and analyze complex artistic works",
+      "business_value": 7,
+      "engineering_difficulty": 6,
+      "competitive_advantage": "medium",
+      "development_time": "3-5 months"
+    },
+    {
+      "technology": "Native Multimodal Co-training",
+      "idea": "NMC-Edu: AI-powered educational platform that uses native multimodal co-training techniques to provide personalized, adaptive learning experiences",
+      "business_value": 8,
+      "engineering_difficulty": 7,
+      "competitive_advantage": "medium",
+      "development_time": "2-4 months"
+    },
+    {
+      "technology": "LLM-guided Reinforcement Learning",
+      "idea": "LLM-RL: AI-powered platform that uses LLM-guided reinforcement learning techniques to enable more intelligent and adaptable robotic systems",
+      "business_value": 9,
+      "engineering_difficulty": 8,
+      "competitive_advantage": "high",
+      "development_time": "4-6 months"
+    }
+  ]
+}

@@ -1,0 +1,1321 @@
+{
+  "meta": {
+    "date": "2026-08-17",
+    "papers_tracked": 15,
+    "technologies_discovered": 62,
+    "opportunities_identified": 0,
+    "last_update": "2026-08-17 06:01 UTC",
+    "backend": "llm7",
+    "model": "Research Curator v1"
+  },
+  "brief": [
+    "Agent Transaction Integrity: ACID-compliant agent systems (Agentic Transaction) are moving from research to production. For product builders, this unlocks reliable multi-step agentic workflows in finance/healthcare where partial failures are unacceptable. Opportunity: middleware/frameworks for semantic atomicity in agent pipelines.",
+    "Agent Memory Infrastructure: MemoryLake/MemoryArena benchmarks reveal agents lack robust memory backends. As agents scale to long-horizon tasks, persistent, queryable memory becomes critical infrastructure. Opportunity: managed memory services for agentic applications, similar to how databases underpin web apps.",
+    "Tool-Augmented Multimodal Reasoning: ActFER and VISOR demonstrate agents combining vision, tools, and iterative reasoning. This pattern (see-think-act loop) is becoming the dominant architecture for embodied/visual agents. Opportunity: tool marketplaces and orchestration frameworks for multimodal agents.",
+    "AI Output Evaluation & Forensics: HumanForge (deepfake detection) and Debiasing T2I Evaluation address trust in AI outputs. As AI-generated content proliferates, evaluation frameworks and content authenticity tools become essential. Opportunity: B2B forensics APIs and bias evaluation tooling for enterprise AI deployments.",
+    "Live Agent Benchmarking: TimeSage-EV introduces real-time benchmarking for self-evolving agents in dynamic environments. This signals a shift from static evaluation to continuous agent monitoring in production. Opportunity: agent observability platforms and live performance dashboards for deployed agentic systems."
+  ],
+  "top_cards": [
+    {
+      "id": "new_technologies",
+      "title": "New Technologies",
+      "value": "62",
+      "label": "discovered this scan",
+      "detail": "Video Diffusion Models, Multi-Agent Orchestration, Mixture of Experts, Vision-Language Models, Digital Content Forensics, Contrastive Forgery Rationales, Generation-to-Annotation Pipeline, Cross-Generator Generalization",
+      "color": "accent"
+    },
+    {
+      "id": "emerging_trends",
+      "title": "Emerging Trends",
+      "value": "62",
+      "label": "active trend clusters",
+      "detail": "Video Diffusion Models, Multi-Agent Orchestration, Mixture of Experts, Vision-Language Models, Digital Content Forensics",
+      "color": "green"
+    },
+    {
+      "id": "highest_potential",
+      "title": "Highest Potential",
+      "value": "7.8",
+      "label": "avg opportunity score",
+      "detail": "HumanForge: A Human-Centric Deepfake Video Benchmark with Multi-Agent Forgery Ra",
+      "color": "amber"
+    },
+    {
+      "id": "biggest_surprise",
+      "title": "Biggest Surprise",
+      "value": "HumanForge: A Human-Centric De",
+      "label": "confidence 78%",
+      "detail": "",
+      "color": "purple"
+    },
+    {
+      "id": "most_practical",
+      "title": "Most Practical",
+      "value": "VISOR: Agentic Visual Retrieva",
+      "label": "highest confidence paper",
+      "detail": "An AI-powered document analysis tool for enterprises to extract and reason over information across multiple visually rich documents, A visual search assistant for education and healthcare domains to help users find and understand complex information scattered across various sources",
+      "color": "success"
+    },
+    {
+      "id": "most_innovative",
+      "title": "Most Innovative",
+      "value": "7",
+      "label": "early-stage technologies",
+      "detail": "HumanForge: A Human-Centric Deepfake Video Benchmark with Multi-Agent Forgery Ra",
+      "color": "blue"
+    }
+  ],
+  "papers": [
+    {
+      "id": "2607.08705",
+      "title": "HumanForge: A Human-Centric Deepfake Video Benchmark with Multi-Agent Forgery Rationales",
+      "authors": [],
+      "categories": [
+        "cs.CV"
+      ],
+      "published": "2026-08-17",
+      "updated": "2026-08-17",
+      "summary": "arXiv:2607.08705v2 Announce Type: replace Abstract: Rapid advancements in video diffusion models and temporal editing tools have enabled the generation of highly realistic human-centric videos, presenting unprecedented challenges to digital content forensics. Existing benchmarks primarily focus on face-swapping or global text-to-video synthesis, overlooking the crucial dimensions of multimodal alignment and complex human-object or human-human interactions. To address these limitations, we introduce HumanForge, a unified, large-scale, and multi-paradigm human-centric video forgery benchmark containing over 18,000 synthesized videos across four distinct scenarios: audio-driven, pose-driven, semantic-driven, and interaction. To construct and annotate this dataset without labor-intensive manual labeling or blind monolithic prompting, we propose Gen2Anno (Generation-to-Annotation), a cooperative multi-agent pipeline. Gen2Anno orchestrates six specialized agents-ranging from driving asset profiling to MoE-based reference analysis and closed-loop verification-to dynamically execute video synthesis and produce structured annotations containing binary authenticity labels, generative model attribution, and natural-language contrastive forgery rationales. By systematically contrasting expected states derived from generation provenance with actual visual observations, the framework generates logically grounded forensic reasoning chains. Extensive benchmarks using state-of-the-art traditional detectors and Vision-Language Models demonstrate the significant challenges of cross-generator generalization, perturbation robustness, and explainable reasoning on HumanForge. The code and dataset will be publicly released.",
+      "pdf_url": "https://arxiv.org/abs/2607.08705",
+      "comment": "",
+      "technologies": [
+        "Video Diffusion Models",
+        "Multi-Agent Orchestration",
+        "Mixture of Experts",
+        "Vision-Language Models",
+        "Digital Content Forensics",
+        "Contrastive Forgery Rationales",
+        "Generation-to-Annotation Pipeline",
+        "Cross-Generator Generalization",
+        "Closed-Loop Verification",
+        "Temporal Editing Tools"
+      ],
+      "maturity": "medium",
+      "confidence": 0.78,
+      "curator_score": 6.0,
+      "product_potential": [
+        "Enterprise media authenticity verification platform for newsrooms and legal departments to detect synthetic video content",
+        "Content moderation API for social platforms and video sharing services to identify deepfake videos across diverse generation methods",
+        "Automated forensic analysis tool for journalism and fact-checking organizations to generate explainable authenticity reports with natural language reasoning"
+      ],
+      "domain_applications": [
+        "enterprise",
+        "creative",
+        "other"
+      ]
+    },
+    {
+      "id": "2608.13900",
+      "title": "Agentic Transaction: Towards ACID-Compliant Agent Systems",
+      "authors": [],
+      "categories": [
+        "cs.AI"
+      ],
+      "published": "2026-08-17",
+      "updated": "2026-08-17",
+      "summary": "arXiv:2608.13900v1 Announce Type: cross Abstract: Large language model (LLM) agents are evolving from conversational assistants into autonomous systems that execute long-horizon tasks through reasoning, tool use, code generation, and workspace manipulation. As agents increasingly operate over persistent environments and multi-step workflows, they face challenges analogous to those addressed by transactional database systems: reliable execution, consistent outcomes, safe concurrency, and durable state management. We introduce the concept of an agentic transaction and propose an ACID-compliant agent system framework that reinterprets the classical ACID properties for agent execution through four semantic guarantees: Semantic Atomicity, Semantic Consistency, Semantic Isolation, and Semantic Durability. Together, these properties provide a principled foundation for building reliable agent systems despite model uncertainty and dynamic execution environments. To instantiate this framework, we develop an ACID-compliant data agent that realizes these guarantees through transactional exploration-execution-validation cycles, transactional skill hubs, confidence divergence-based validation, semantic dependency-aware isolation, and transaction-aware semantic state management. Experimental results on widely used benchmarks show that our system achieves a 10.6% improvement over state-of-the-art agents, including Claude Code. This work opens a broader research agenda on extending transactional principles and system architectures toward building trustworthy, scalable, and self-evolving AI agent systems.",
+      "pdf_url": "https://arxiv.org/abs/2608.13900",
+      "comment": "",
+      "technologies": [
+        "LLM Agents",
+        "Semantic Atomicity",
+        "Semantic Consistency",
+        "Semantic Isolation",
+        "Semantic Durability",
+        "Transactional Exploration-Execution-Validation Cycles",
+        "Confidence Divergence-Based Validation",
+        "Semantic Dependency-Aware Isolation",
+        "Transaction-Aware Semantic State Management",
+        "Exploration-Exploitation Balancing"
+      ],
+      "maturity": "early",
+      "confidence": 0.55,
+      "curator_score": 5.7,
+      "product_potential": [
+        "Enterprise autonomous workflow orchestration platforms with guaranteed execution reliability and rollback capabilities for multi-step agentic tasks",
+        "Mission-critical data processing pipelines that require transactional semantics for AI agent operations in finance, healthcare, or legal domains",
+        "Multi-agent coordination middleware providing ACID-like guarantees for distributed agent systems handling complex interdependent tasks"
+      ],
+      "domain_applications": [
+        "enterprise",
+        "finance",
+        "science"
+      ]
+    },
+    {
+      "id": "2607.15740",
+      "title": "Debiasing Text-to-Image Evaluation via Implicit Cultural Alignment Reward Modeling",
+      "authors": [],
+      "categories": [
+        "cs.AI"
+      ],
+      "published": "2026-08-17",
+      "updated": "2026-08-17",
+      "summary": "arXiv:2607.15740v2 Announce Type: replace-cross Abstract: As Text-to-Image (T2I) systems rapidly advance, evaluating the cultural authenticity of synthesized content has become increasingly important for fair and trustworthy generative AI. Existing T2I evaluation metrics and multimodal judges often rely on visual-semantic representations that underrepresent implicit cultural norms, leading to biased preference judgments and the omission of fine-grained cultural cues. In addition, visual question answering (VQA)-based evaluators typically depend on autoregressive text generation, which limits their scalability for real-time reward modeling. To address these limitations, we introduce an Implicit Cultural Alignment Reward Model built upon a lightweight 4.2-billion-parameter Multimodal Large Language Model (MLLM). Our framework integrates an Implicit Cultural Probe with a Skip-connection Cross-Attention (SkipCA) mechanism, enabling late-stage semantic features to directly attend to early-stage visual representations and better preserve culturally salient details. Evaluations on 3,323 challenging and carefully curated image pairs from the CulturalFrames benchmark show that our approach achieves 82.12% pairwise accuracy, with Pearson and Kendall correlation coefficients of 0.585 and 0.412, respectively, outperforming representative vision-language metrics and MLLM-based evaluators. Moreover, by bypassing autoregressive text generation, our model processes each evaluation in 0.21 seconds under our local inference setup, achieving a $10\\times$ speedup over standard VQA-based evaluators. These results suggest that the proposed reward model can provide an efficient and culturally aware scalar signal for preference optimization pipelines such as Reinforcement Learning from Human Feedback and Direct Preference Optimization. Additional resources are available on our project page at https://bensonch1214.github.io/Implicit_Cultural_Alignment/.",
+      "pdf_url": "https://arxiv.org/abs/2607.15740",
+      "comment": "",
+      "technologies": [
+        "Multimodal Large Language Model",
+        "Reward Modeling",
+        "Skip-connection Cross-Attention",
+        "Reinforcement Learning from Human Feedback",
+        "Direct Preference Optimization",
+        "Text-to-Image Evaluation",
+        "Cultural Alignment",
+        "Vision-Language Models",
+        "Preference Optimization"
+      ],
+      "maturity": "medium",
+      "confidence": 0.75,
+      "curator_score": 5.7,
+      "product_potential": [
+        "Cultural bias detection dashboard for auditing AI-generated image datasets and model outputs",
+        "Integration module for RLHF/DPO pipelines to optimize T2I models for cultural fairness",
+        "Automated cultural compliance scoring system for brand safety and content moderation"
+      ],
+      "domain_applications": [
+        "creative",
+        "enterprise",
+        "accessibility"
+      ]
+    },
+    {
+      "id": "2512.10441",
+      "title": "Decoding Student Minds: Leveraging Conversational Agents for Psychological and Learning Analysis",
+      "authors": [],
+      "categories": [
+        "cs.CL"
+      ],
+      "published": "2026-08-17",
+      "updated": "2026-08-17",
+      "summary": "arXiv:2512.10441v2 Announce Type: replace Abstract: This paper presents a psychologically-aware conversational agent designed to enhance both learning performance and emotional well-being in educational settings. The system combines Large Language Models (LLMs), a knowledge graph-enhanced BERT (KG-BERT), and a bidirectional Long Short-Term Memory (LSTM) network with attention to classify students' cognitive and affective states in real time. Unlike prior chatbots limited to either tutoring or affective support, our approach leverages multimodal data-including textual semantics, prosodic speech features, and temporal behavioral trends-to infer engagement, stress, and conceptual understanding. A pilot study with 45 university students demonstrated improved motivation, reduced stress, and moderate academic gains compared to unimodal baselines. We explicitly discuss the exploratory nature of this small-sample pilot, report effect sizes and inter-rater reliability alongside significance tests, and provide an ablation analysis isolating the contribution of the knowledge-graph component and of each modality. These results underline the promise-while acknowledging the current limits in scale and modality balance-of integrating semantic reasoning, multimodal fusion, and temporal modeling to support adaptive, student-centered educational interventions.",
+      "pdf_url": "https://arxiv.org/abs/2512.10441",
+      "comment": "",
+      "technologies": [
+        "Multimodal Learning",
+        "Knowledge Distillation",
+        "Retrieval Augmented Generation"
+      ],
+      "maturity": "medium",
+      "confidence": 0.7,
+      "curator_score": 5.5,
+      "product_potential": [
+        "An adaptive learning platform that uses multimodal data to personalize educational content and support student well-being",
+        "A real-time student engagement and stress monitoring tool for educators to provide timely interventions"
+      ],
+      "domain_applications": [
+        "education",
+        "healthcare"
+      ]
+    },
+    {
+      "id": "2601.08151",
+      "title": "Where Does Vision Meet Language? Understanding and Refining Visual Fusion in MLLMs via Contrastive Attention",
+      "authors": [],
+      "categories": [
+        "cs.CV"
+      ],
+      "published": "2026-08-17",
+      "updated": "2026-08-17",
+      "summary": "arXiv:2601.08151v2 Announce Type: replace Abstract: Multimodal Large Language Models (MLLMs) have achieved remarkable progress in vision-language understanding, yet how they internally integrate visual and textual information remains poorly understood. To bridge this gap, we perform a systematic layer-wise masking analysis across multiple architectures, revealing how visual-text fusion evolves within MLLMs. The results show that fusion emerges at several specific layers rather than being uniformly distributed across the network, and certain models exhibit a late-stage \"review\" phenomenon where visual signals are reactivated before output generation. Besides, we further analyze layer-wise attention evolution and observe persistent high-attention noise on irrelevant regions, along with gradually increasing attention on text-aligned areas. Guided by these insights, we introduce a training-free contrastive attention framework that models the transformation between early fusion and final layers to highlight meaningful attention shifts. Extensive experiments across various MLLMs and benchmarks validate our analysis and demonstrate that the proposed approach improves multimodal reasoning performance.",
+      "pdf_url": "https://arxiv.org/abs/2601.08151",
+      "comment": "",
+      "technologies": [
+        "Multimodal Learning",
+        "Contrastive Attention",
+        "Visual-Text Fusion Analysis"
+      ],
+      "maturity": "medium",
+      "confidence": 0.8,
+      "curator_score": 5.5,
+      "product_potential": [
+        "Enhanced multimodal AI assistants that can better integrate visual and textual information for more accurate and context-aware responses.",
+        "Advanced image captioning and visual storytelling tools that leverage improved visual-text fusion for more coherent and detailed descriptions."
+      ],
+      "domain_applications": [
+        "education",
+        "creative",
+        "enterprise",
+        "other"
+      ]
+    },
+    {
+      "id": "2604.08990",
+      "title": "ActFER: Agentic Facial Expression Recognition via Active Tool-Augmented Visual Reasoning",
+      "authors": [],
+      "categories": [
+        "cs.CV"
+      ],
+      "published": "2026-08-17",
+      "updated": "2026-08-17",
+      "summary": "arXiv:2604.08990v2 Announce Type: replace Abstract: Recent advances in Multimodal Large Language Models (MLLMs) have created new opportunities for facial expression recognition (FER), moving it beyond pure label prediction toward reasoning-based affect understanding. However, existing MLLM-based FER methods still follow a passive paradigm: they rely on externally prepared facial inputs and perform single-pass reasoning over fixed visual evidence, without the capability for active facial perception. To address this limitation, we propose ActFER, an agentic framework that reformulates FER as active visual evidence acquisition followed by multimodal reasoning. Specifically, ActFER dynamically invokes tools for face detection and alignment, selectively zooms into informative local regions, and reasons over facial Action Units (AUs) and emotions through a visual Chain-of-Thought. To realize such behavior, we further develop Utility-Calibrated GRPO (UC-GRPO), a reinforcement learning algorithm tailored to agentic FER. UC-GRPO uses AU-grounded multi-level verifiable rewards to densify supervision, query-conditional contrastive utility estimation to enable sample-aware dynamic credit assignment for local inspection, and emotion-aware EMA calibration to reduce noisy utility estimates while capturing emotion-wise inspection tendencies. This algorithm enables ActFER to learn both when local inspection is beneficial and how to reason over the acquired evidence. Comprehensive experiments show that ActFER trained with UC-GRPO consistently outperforms passive MLLM-based FER baselines and substantially improves AU prediction accuracy.",
+      "pdf_url": "https://arxiv.org/abs/2604.08990",
+      "comment": "",
+      "technologies": [
+        "Multimodal Learning",
+        "Chain-of-Thought Prompting",
+        "Reinforcement Learning from Human Feedback",
+        "Object Detection",
+        "Depth Estimation"
+      ],
+      "maturity": "early",
+      "confidence": 0.8,
+      "curator_score": 5.5,
+      "product_potential": [
+        "AI-powered facial expression analysis for mental health monitoring",
+        "Enhanced emotional intelligence in human-computer interaction",
+        "Automated facial expression-based feedback in educational settings"
+      ],
+      "domain_applications": [
+        "healthcare",
+        "education",
+        "enterprise",
+        "accessibility"
+      ]
+    },
+    {
+      "id": "2608.14270",
+      "title": "TimeSage-EV: A Live Benchmark for Agentic Time Series Analysis in Evolving Environments",
+      "authors": [
+        "Qingren Yao",
+        "Yaxuan Kong",
+        "Yuqi Nie",
+        "Yichen Li",
+        "Stefan Zohren",
+        "Anna Vettoruzzo",
+        "Qingsong Wen",
+        "Ming Jin",
+        "Joaquin Vanschoren"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "published": "2026-08-14",
+      "updated": "2026-08-14",
+      "summary": "Time series analysis in high-stakes domains relies on recurring data releases, where new observations can alter the evidence base and the validity of later conclusions. Existing time series QA benchmarks mostly rely on fixed snapshots, leaving temporal validity and cutoff-aware evidence use unevaluated. We introduce TimeSage-EV, a live benchmark for agentic time series analysis in evolving environments. It tracks 60 real institutional scenarios across 6 domains, comprising 1,485 scenario-period QA pairs from Feb 2023 to May 2026 and spanning monthly, weekly, daily, and irregular release cadences. At each period, large language model (LLM) agents receive time series data and source reports, while the withheld target release provides ground truth. TimeSage-EV evaluates state identification, data summarization, and outlook reasoning. Experiments with frontier LLM agents and TimeSage-1.0, a novel self-evolving agent with a reusable analytical skill library, reveal significant performance gaps across model tiers and recurring failures in temporal validity, exogenous context use, and adaptation. We release TimeSage-EV as a research resource with monthly updates, code, a leaderboard, and failure-mode analyses.",
+      "pdf_url": "https://arxiv.org/pdf/2608.14270v1",
+      "comment": "",
+      "technologies": [
+        "Live Benchmarking",
+        "Agentic Time Series Analysis",
+        "Self-Evolving Agents",
+        "Temporal Validity Evaluation"
+      ],
+      "maturity": "early",
+      "confidence": 0.8,
+      "curator_score": 5.4,
+      "product_potential": [
+        "Real-time financial forecasting and risk assessment tools",
+        "Dynamic healthcare monitoring and predictive analytics systems",
+        "Adaptive enterprise resource planning systems"
+      ],
+      "domain_applications": [
+        "finance",
+        "healthcare",
+        "enterprise"
+      ]
+    },
+    {
+      "id": "2608.13883",
+      "title": "MemoryLake on MemoryArena: A Matched Study of Agent Memory Backends",
+      "authors": [],
+      "categories": [
+        "cs.AI"
+      ],
+      "published": "2026-08-17",
+      "updated": "2026-08-17",
+      "summary": "arXiv:2608.13883v1 Announce Type: new Abstract: Most agent-memory benchmarks test post-hoc recall, whereas MemoryArena evaluates whether memory supports interdependent, multi-session task completion. We compare MemoryLake, a structured multi-track memory backend, with Mem0, text-embedding-3-small vector RAG, and a long-context control across all five MemoryArena domains. The systems share the same agent framework, requested gpt-5-mini model alias, task samples, and scoring code; the memory integration is the intentionally changed component. Because each backend bundles write, retrieval, consolidation, budgeting, and prompt-assembly choices, the study is a matched system-level comparison, not a representation-only ablation or a cost-matched experiment. On the shared evaluation sets, MemoryLake has the highest observed success rate (SR) in mathematics (9/40), physics (12/20), and progressive retrieval (4/20). Every system has zero SR in travel planning, and web shopping yields a single bundle-level success (long context, 1/150); MemoryLake ranks third on both the travel soft process score and shopping step match. Following MemoryArena's suite-level convention, a post-hoc equal-weight average over the five SRs is 20.5% for MemoryLake versus 13.6% for the best comparator. These are point estimates: sample sizes are modest, confidence intervals overlap, and we do not report paired significance tests. A separate MemoryLake-only run over all 221 progressive queries yields a failure-counted SR of 26.7% (59/221) and is not a baseline comparison. The results support a workload-dependent view of memory backends and an observed lead among the four evaluated systems on the shared sets; they do not establish benchmark-wide state of the art or a causal advantage of representation structure.",
+      "pdf_url": "https://arxiv.org/abs/2608.13883",
+      "comment": "",
+      "technologies": [
+        "MemoryLake",
+        "MemoryArena"
+      ],
+      "maturity": "early",
+      "confidence": 0.7,
+      "curator_score": 5.4,
+      "product_potential": [
+        "Developing a structured memory backend for AI agents to improve task completion across multiple sessions",
+        "Creating a benchmarking suite for evaluating different memory backends in AI agents"
+      ],
+      "domain_applications": [
+        "education",
+        "enterprise",
+        "other"
+      ]
+    },
+    {
+      "id": "2509.24148",
+      "title": "TENET: One Step Toward Test-Driven Development for Repository-Level Code Generation",
+      "authors": [],
+      "categories": [
+        "cs.AI"
+      ],
+      "published": "2026-08-17",
+      "updated": "2026-08-17",
+      "summary": "arXiv:2509.24148v4 Announce Type: replace-cross Abstract: Test-Driven Development (TDD) is a widely adopted practice that requires developers to create and execute tests alongside implementation. With recent advances in Large Language Models (LLMs), developers can shift from manually writing the code to defining tests as executable specifications and delegating code synthesis to AI agents. However, enabling repository-level TDD under developer-written tests is challenging, requiring: (1) specification enhancement: identifying a concise yet representative test subset from large suites with rich task semantics; (2) retrieval augmentation: using tests to guide reasoning and context retrieval; and (3) test-driven refinement: interpreting test feedback for iterative improvement. We propose TENET, an agentic framework for repository-level code generation under the TDD paradigm. TENET includes: (1) a test harness mechanism that selects a concise test suite to maximize diversity of the target usage scenarios; (2) a tailored agent toolset for efficient retrieval and debugging; and (3) a reflection-based refinement workflow that iteratively analyzes failures and updates implementations. TENET consistently outperforms the strongest baselines across backbones, achieving 69.08% and 81.77% Pass@1 on RepoCod and RepoEval with Claude Sonnet 4, improving by 9.49 and 2.17 percentage points, respectively. Additionally, we present the first systematic study of how test suite characteristics influence LLM agent performance in TDD settings.",
+      "pdf_url": "https://arxiv.org/abs/2509.24148",
+      "comment": "",
+      "technologies": [
+        "Test-Driven Development",
+        "Retrieval Augmented Generation",
+        "Agentic Framework"
+      ],
+      "maturity": "medium",
+      "confidence": 0.8,
+      "curator_score": 5.4,
+      "product_potential": [
+        "An AI-powered code assistant that generates and refines code based on developer-written tests, improving developer productivity.",
+        "A test-driven development platform that integrates with version control systems to automate code generation and refinement."
+      ],
+      "domain_applications": [
+        "education",
+        "enterprise",
+        "other"
+      ]
+    },
+    {
+      "id": "2604.09508",
+      "title": "VISOR: Agentic Visual Retrieval-Augmented Generation via Iterative Search and Over-horizon Reasoning",
+      "authors": [],
+      "categories": [
+        "cs.AI"
+      ],
+      "published": "2026-08-17",
+      "updated": "2026-08-17",
+      "summary": "arXiv:2604.09508v2 Announce Type: replace-cross Abstract: Visual Retrieval-Augmented Generation (VRAG) empowers Vision-Language Models to retrieve and reason over visually rich documents. To tackle complex queries requiring multi-step reasoning, agentic VRAG systems interleave reasoning with iterative retrieval. However, existing agentic VRAG faces two critical bottlenecks. (1) Visual Evidence Sparsity: key evidence is scattered across pages yet processed in isolation, hindering cross-page reasoning; moreover, fine-grained intra-image evidence often requires precise visual actions, whose misuse degrades retrieval quality; (2) Search Drift in Long Horizons: the accumulation of visual tokens across retrieved pages dilutes context and causes cognitive overload, leading agents to deviate from their search objective. To address these challenges, we propose VISOR (Visual Retrieval-Augmented Generation via Iterative Search and Over-horizon Reasoning), a unified single-agent framework. VISOR features a structured Evidence Space for progressive cross-page reasoning, coupled with a Visual Action Evaluation and Correction mechanism to manage visual actions. Additionally, we introduce a Dynamic Trajectory with Sliding Window and Intent Injection to mitigate search drift. They anchor the evidence space while discarding earlier raw interactions, preventing context from being overwhelmed by visual tokens. We train VISOR using a Group Relative Policy Optimization-based Reinforcement Learning (GRPO-based RL) pipeline with state masking and credit assignment tailored for dynamic context reconstruction. Extensive experiments on ViDoSeek, SlideVQA, and MMLongBench demonstrate that VISOR achieves state-of-the-art performance while maintaining reasonable and controllable computational costs for long-horizon visual reasoning tasks. The source code is available at https://github.com/syc1336/VISOR.",
+      "pdf_url": "https://arxiv.org/abs/2604.09508",
+      "comment": "",
+      "technologies": [
+        "Retrieval Augmented Generation",
+        "Reinforcement Learning from Human Feedback",
+        "Group Relative Policy Optimization",
+        "Visual Action Evaluation and Correction",
+        "Dynamic Trajectory with Sliding Window",
+        "Intent Injection"
+      ],
+      "maturity": "medium",
+      "confidence": 0.85,
+      "curator_score": 5.4,
+      "product_potential": [
+        "An AI-powered document analysis tool for enterprises to extract and reason over information across multiple visually rich documents",
+        "A visual search assistant for education and healthcare domains to help users find and understand complex information scattered across various sources"
+      ],
+      "domain_applications": [
+        "enterprise",
+        "education",
+        "healthcare"
+      ]
+    },
+    {
+      "id": "2608.13889",
+      "title": "Consensus-gated Multi-Agent Neural Architecture Search for Seismic Fault Segmentation",
+      "authors": [],
+      "categories": [
+        "cs.CV"
+      ],
+      "published": "2026-08-17",
+      "updated": "2026-08-17",
+      "summary": "arXiv:2608.13889v1 Announce Type: new Abstract: Neural networks for seismic fault segmentation are often borrowed from computer vision and medical imaging domains where they train under relatively much larger labeled data resources. Optimizing their architecture under tight labeled data budgets as are common in geophysical applications is not a trivial problem. Manually designing data-optimal architectures is time-consuming while classical neural architecture search (NAS) is restricted to hand-crafted search spaces and large compute budgets. We present an agentic NAS system in which a panel of three large language models (Claude, GPT-5.1, and Gemini~2.5~Pro) debates each candidate architecture to unanimous consensus, authors the complete PyTorch implementation, cross-reviews it, and submits it to an automated validate-train-score loop with a hard 450K parameter budget, keep-or-revert lineage, and a memory of failed mechanisms. Operating on source code rather than a predefined operation menu, the search ran on a single consumer GPU and trained only eight candidates. It discovered \\ours{}: a 425K-parameter encoder-decoder with a strip-pooling bottleneck, squeeze-and-excitation gating, an asymmetric one-conv decoder, and a feature-pyramid fusion neck. Trained under a protocol identical to all baselines on sections derived from the Thebe fault dataset, it attains the highest F1 (0.578) and IoU of all models tested while being the smallest, outperforming a published-capacity U-Net (31M parameters, F1 0.484), DeepLabV3-ResNet50 (39.6M, 0.516), an Attention U-Net(1.83M, 0.502). The search cost 101 LLM calls ($\\sim$1.15M input / 0.39M output tokens) and roughly one GPU-day, making consensus-gated LLM panels a practical, low-cost route to domain-specific architecture discovery.",
+      "pdf_url": "https://arxiv.org/abs/2608.13889",
+      "comment": "",
+      "technologies": [
+        "Neural Architecture Search",
+        "Multi-Agent Systems",
+        "Consensus Gating",
+        "Large Language Models"
+      ],
+      "maturity": "medium",
+      "confidence": 0.85,
+      "curator_score": 5.4,
+      "product_potential": [
+        "Automated architecture optimization for seismic data analysis tools",
+        "Low-cost, domain-specific neural network design for geophysical applications"
+      ],
+      "domain_applications": [
+        "science",
+        "other"
+      ]
+    },
+    {
+      "id": "2608.13602",
+      "title": "Omni-LiveAvatar: Minute-Level Real-Time Streaming Joint Audio-Visual Avatar Generation",
+      "authors": [],
+      "categories": [
+        "cs.CV"
+      ],
+      "published": "2026-08-17",
+      "updated": "2026-08-17",
+      "summary": "arXiv:2608.13602v1 Announce Type: cross Abstract: Joint audio-video generative models serve as foundation for immersive and interactive digital-human generation. Nevertheless, most existing models rely on bidirectional attention and multi-step denoising and can generate only short clips, making them unsuitable for real-time interaction over extended durations. We present Omni-LiveAvatar, the first framework for minute-level, real-time streaming joint audio-video avatar generation. Specifically, we propose (1) a progressive autoregressive distillation pipeline that transfers a large bidirectional joint audio-video diffusion model into a few-step autoregressive generator without auxiliary stabilization mechanisms; (2) a synchronized audio-video long-short-term memory that preserves global consistency under a bounded memory budget; and (3) a hierarchical rolling prompt planning strategy that enables coherent semantic evolution and seamless prompt transitions. Extensive experiments show that Omni-LiveAvatar generates high-quality, synchronized minute-level avatars in real time. In terms of speed, it achieves a 33$\\times$ generation speedup over its teacher, LTX-2, on a single NVIDIA H200 GPU; in terms of generation quality, it outperforms accelerated baselines across visual quality, audio quality, cross-modal synchronization, and human fidelity. Our code is available at https://github.com/Aoko955/Omni-LiveAvatar.",
+      "pdf_url": "https://arxiv.org/abs/2608.13602",
+      "comment": "",
+      "technologies": [
+        "Diffusion Models",
+        "Knowledge Distillation",
+        "Autoregressive Models",
+        "Long-Short Term Memory",
+        "Multimodal Learning"
+      ],
+      "maturity": "medium",
+      "confidence": 0.85,
+      "curator_score": 5.4,
+      "product_potential": [
+        "Real-time virtual assistants for customer service and support",
+        "Interactive virtual tutors for educational platforms",
+        "Virtual presenters for corporate events and webinars"
+      ],
+      "domain_applications": [
+        "education",
+        "enterprise",
+        "creative"
+      ]
+    },
+    {
+      "id": "2608.03682",
+      "title": "PhyAI: Real-Time Physical AI at the Edge, Scalable Rollouts in the Cloud",
+      "authors": [],
+      "categories": [
+        "cs.AI"
+      ],
+      "published": "2026-08-17",
+      "updated": "2026-08-17",
+      "summary": "arXiv:2608.03682v3 Announce Type: replace Abstract: Physical AI policies require inference throughout their lifecycle, including model evaluation, cloud reinforcement learning rollout, edge GPU serving, and onboard deployment. Although these settings share the same checkpoint and action semantics, they often rely on separate inference programs. To unify them, we build PhyAI, a Physical AI inference engine with a single runtime that keeps architecture-specific conditioning, solver, cache, and output logic in model adapters while sharing graph execution, kernels, memory management, and parallel services. The same codebase runs vision-language-action (VLA) models and world-action models (WAMs) on single or multiple GPUs across onboard, edge, and cloud deployments. We used the adapter interface to add MiniCPM-Robot on the day of its release. PhyAI achieves 1.40x-4.65x speedups over the official implementations of pi0, pi0.5, GR00T N1.7, and MiniCPM-Robot. On Cosmos3-Nano-Policy-DROID it reduces latency from 2.46 to 1.18 s on eight H20 GPUs (CFG=2, TP=4), a 2.08x speedup. Specialized runtimes remain faster in several configurations, so our goal is one runtime with competitive latency rather than the fastest result in every case. Detailed profiles reveal why different models need different execution policies: on a Hopper-series GPU at batch size one, the pi0.5 action expert accounts for 8.8% of FLOPs but 57.2% of latency; at batch size 32 its share drops to 13.5% and throughput reaches about 100 samples/s. Cosmos3 remains generation-dominated and gains only 14.3% throughput as batch size increases from 1 to 16. We further introduce the control-time Roofline, which distinguishes inference-bound from environment-bound control; the measured pi0.5 points on four LIBERO suites are environment-bound while Cosmos3 stays inference-bound. Code and benchmarks: https://github.com/mingti-org/phyai.",
+      "pdf_url": "https://arxiv.org/abs/2608.03682",
+      "comment": "",
+      "technologies": [],
+      "maturity": "early",
+      "confidence": 0.0,
+      "curator_score": 5.3,
+      "product_potential": [],
+      "domain_applications": []
+    },
+    {
+      "id": "2608.13239",
+      "title": "Reasoning for Social Audio-Visual Question Answering: Where Do We Stand?",
+      "authors": [
+        "Koen P. de Vries",
+        "Xavier Alameda-Pineda",
+        "Estefanía Talavera",
+        "Stéphane Lathuilière"
+      ],
+      "categories": [
+        "cs.CV"
+      ],
+      "published": "2026-08-13",
+      "updated": "2026-08-13",
+      "summary": "Training Multimodal Large Language Models for audio-visual social understanding is a crucial step toward embodied social intelligence. Chain-of-thought (CoT) reasoning has become the dominant approach, with HumanOmniV2 and its IntentBench benchmark as a prominent reference point. In this context, we report three findings. First, IntentBench is highly noisy: $\\sim$7% of questions are broken and $\\sim$23% are trivially answerable without the video input. We remove the affected questions and release Intentbench-Prime. Second, current reasoning approaches are expensive and surprisingly ineffective. A simple Vanilla SFT baseline matches or outperforms existing reasoning methods across three benchmarks at a fraction of the cost, establishing it as an essential baseline for evaluating novel fine-tuning techniques. Third, our analysis reveals that substantial priors can be learned solely from the text modality and that using a textual caption instead of the video yields performance on par with Vanilla SFT. These surprising findings reveal the limitations of current MLLMs when it comes to social understanding. IntentBench-Prime, Vanilla SFT model, and code are publicly available.",
+      "pdf_url": "https://arxiv.org/pdf/2608.13239v1",
+      "comment": "Accepted at HCMIW ECCV workshop. Code available here: https://github.com/koenv759/VanillaSFT",
+      "technologies": [
+        "Multimodal Large Language Models",
+        "Chain-of-Thought Prompting",
+        "Audio-Visual Question Answering",
+        "Supervised Fine-Tuning",
+        "Vision-Language Models",
+        "Benchmark Development",
+        "Social Intelligence"
+      ],
+      "maturity": "medium",
+      "confidence": 0.78,
+      "curator_score": 5.2,
+      "product_potential": [
+        "Social interaction analysis systems for healthcare settings to assess patient communication patterns",
+        "Accessibility tools for deaf and hard-of-hearing users that provide real-time social context descriptions",
+        "Enhanced video conferencing AI assistants that can interpret meeting dynamics and social cues"
+      ],
+      "domain_applications": [
+        "healthcare",
+        "accessibility",
+        "enterprise"
+      ]
+    },
+    {
+      "id": "2511.22651",
+      "title": "Automated Design Optimization via Strategic Search with Large Language Models",
+      "authors": [],
+      "categories": [
+        "cs.AI"
+      ],
+      "published": "2026-08-15",
+      "updated": "2026-08-15",
+      "summary": "arXiv:2511.22651v2 Announce Type: replace-cross Abstract: Optimization methods have long advanced many fields, yet they struggle when faced with design problems where the search space and design parameters are difficult to define. Large language models (LLMs) offer a promising alternative by dynamically interpreting design spaces and leveraging encoded domain knowledge. To this end, we present AUTO: an iterative optimization framework that treats design optimization as a strategic search guided by LLM reasoning. The framework separates high-level planning by a Strategist agent from low-level implementation by concurrent Implementor agents, iteratively refining designs through explore-exploit strategies. We demonstrate AUTO on three GPU code optimization problems. For chemical kinetics, AUTO outperforms in-lab-optimized code by up to 1.74$\\times$ for problem sizes up to $10^5$ cells. For matrix multiplication, AUTO achieves up to 94\\% of cuBLAS double-precision performance. For KernelBench, we achieve speedups of up to 118$\\times$ over PyTorch baselines across 29 problems spanning individual operators and full neural network architectures; however, cheating was frequently observed. A posteriori analysis reveals 50~--~70\\% alignment with Bayesian optimization sampling strategies. All AUTO simulations ran within 100 iterations (about 10 hours), with estimated costs of \\$15~--~159 per run for proprietary models. Furthermore, AUTO is built entirely on open-source LLMs and libraries, demonstrating affordability and data privacy. Given AUTO's generizability and flexibility, future work will explore domains beyond GPUs and supercomputing.",
+      "pdf_url": "https://arxiv.org/abs/2511.22651",
+      "comment": "",
+      "technologies": [
+        "Agentic Workflow",
+        "Chain-of-Thought Prompting",
+        "Iterative Optimization",
+        "Large Language Models"
+      ],
+      "maturity": "medium",
+      "confidence": 0.85,
+      "curator_score": 5.2,
+      "product_potential": [
+        "Automated compiler and kernel optimization tool for high-performance computing",
+        "Generative design platform for complex engineering and material science simulations",
+        "Autonomous software refactoring and performance tuning agent for cloud infrastructure"
+      ],
+      "domain_applications": [
+        "science",
+        "enterprise"
+      ]
+    }
+  ],
+  "technologies": [
+    {
+      "name": "Video Diffusion Models",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.7,
+      "trend": "rising",
+      "applications": [
+        "enterprise",
+        "creative",
+        "other"
+      ]
+    },
+    {
+      "name": "Multi-Agent Orchestration",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.7,
+      "trend": "rising",
+      "applications": [
+        "enterprise",
+        "creative",
+        "other"
+      ]
+    },
+    {
+      "name": "Mixture of Experts",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.7,
+      "trend": "rising",
+      "applications": [
+        "enterprise",
+        "creative",
+        "other"
+      ]
+    },
+    {
+      "name": "Vision-Language Models",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.7,
+      "trend": "rising",
+      "applications": [
+        "accessibility",
+        "other",
+        "creative",
+        "healthcare",
+        "enterprise"
+      ]
+    },
+    {
+      "name": "Digital Content Forensics",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.7,
+      "trend": "rising",
+      "applications": [
+        "enterprise",
+        "creative",
+        "other"
+      ]
+    },
+    {
+      "name": "Contrastive Forgery Rationales",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.7,
+      "trend": "rising",
+      "applications": [
+        "enterprise",
+        "creative",
+        "other"
+      ]
+    },
+    {
+      "name": "Generation-to-Annotation Pipeline",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.7,
+      "trend": "rising",
+      "applications": [
+        "enterprise",
+        "creative",
+        "other"
+      ]
+    },
+    {
+      "name": "Cross-Generator Generalization",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.7,
+      "trend": "rising",
+      "applications": [
+        "enterprise",
+        "creative",
+        "other"
+      ]
+    },
+    {
+      "name": "Closed-Loop Verification",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.7,
+      "trend": "rising",
+      "applications": [
+        "enterprise",
+        "creative",
+        "other"
+      ]
+    },
+    {
+      "name": "Temporal Editing Tools",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.7,
+      "trend": "rising",
+      "applications": [
+        "enterprise",
+        "creative",
+        "other"
+      ]
+    },
+    {
+      "name": "LLM Agents",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.7,
+      "trend": "rising",
+      "applications": [
+        "enterprise",
+        "science",
+        "finance"
+      ]
+    },
+    {
+      "name": "Semantic Atomicity",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.7,
+      "trend": "rising",
+      "applications": [
+        "enterprise",
+        "science",
+        "finance"
+      ]
+    },
+    {
+      "name": "Semantic Consistency",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.7,
+      "trend": "rising",
+      "applications": [
+        "enterprise",
+        "science",
+        "finance"
+      ]
+    },
+    {
+      "name": "Semantic Isolation",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.7,
+      "trend": "rising",
+      "applications": [
+        "enterprise",
+        "science",
+        "finance"
+      ]
+    },
+    {
+      "name": "Semantic Durability",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.7,
+      "trend": "rising",
+      "applications": [
+        "enterprise",
+        "science",
+        "finance"
+      ]
+    },
+    {
+      "name": "Transactional Exploration-Execution-Validation Cycles",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.7,
+      "trend": "rising",
+      "applications": [
+        "enterprise",
+        "science",
+        "finance"
+      ]
+    },
+    {
+      "name": "Confidence Divergence-Based Validation",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.7,
+      "trend": "rising",
+      "applications": [
+        "enterprise",
+        "science",
+        "finance"
+      ]
+    },
+    {
+      "name": "Semantic Dependency-Aware Isolation",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.7,
+      "trend": "rising",
+      "applications": [
+        "enterprise",
+        "science",
+        "finance"
+      ]
+    },
+    {
+      "name": "Transaction-Aware Semantic State Management",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.7,
+      "trend": "rising",
+      "applications": [
+        "enterprise",
+        "science",
+        "finance"
+      ]
+    },
+    {
+      "name": "Exploration-Exploitation Balancing",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.7,
+      "trend": "rising",
+      "applications": [
+        "enterprise",
+        "science",
+        "finance"
+      ]
+    },
+    {
+      "name": "Multimodal Large Language Model",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.7,
+      "trend": "rising",
+      "applications": [
+        "enterprise",
+        "accessibility",
+        "creative"
+      ]
+    },
+    {
+      "name": "Reward Modeling",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.7,
+      "trend": "rising",
+      "applications": [
+        "enterprise",
+        "accessibility",
+        "creative"
+      ]
+    },
+    {
+      "name": "Skip-connection Cross-Attention",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.7,
+      "trend": "rising",
+      "applications": [
+        "enterprise",
+        "accessibility",
+        "creative"
+      ]
+    },
+    {
+      "name": "Reinforcement Learning from Human Feedback",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.7,
+      "trend": "rising",
+      "applications": [
+        "education",
+        "accessibility",
+        "creative",
+        "healthcare",
+        "enterprise"
+      ]
+    },
+    {
+      "name": "Direct Preference Optimization",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.7,
+      "trend": "rising",
+      "applications": [
+        "enterprise",
+        "accessibility",
+        "creative"
+      ]
+    },
+    {
+      "name": "Text-to-Image Evaluation",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.7,
+      "trend": "rising",
+      "applications": [
+        "enterprise",
+        "accessibility",
+        "creative"
+      ]
+    },
+    {
+      "name": "Cultural Alignment",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.7,
+      "trend": "rising",
+      "applications": [
+        "enterprise",
+        "accessibility",
+        "creative"
+      ]
+    },
+    {
+      "name": "Preference Optimization",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.7,
+      "trend": "rising",
+      "applications": [
+        "enterprise",
+        "accessibility",
+        "creative"
+      ]
+    },
+    {
+      "name": "Multimodal Learning",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.7,
+      "trend": "rising",
+      "applications": [
+        "education",
+        "accessibility",
+        "other",
+        "creative",
+        "healthcare",
+        "enterprise"
+      ]
+    },
+    {
+      "name": "Knowledge Distillation",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.7,
+      "trend": "rising",
+      "applications": [
+        "enterprise",
+        "education",
+        "creative",
+        "healthcare"
+      ]
+    },
+    {
+      "name": "Retrieval Augmented Generation",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.7,
+      "trend": "rising",
+      "applications": [
+        "enterprise",
+        "education",
+        "other",
+        "healthcare"
+      ]
+    },
+    {
+      "name": "Contrastive Attention",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.7,
+      "trend": "rising",
+      "applications": [
+        "enterprise",
+        "education",
+        "other",
+        "creative"
+      ]
+    },
+    {
+      "name": "Visual-Text Fusion Analysis",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.7,
+      "trend": "rising",
+      "applications": [
+        "enterprise",
+        "education",
+        "other",
+        "creative"
+      ]
+    },
+    {
+      "name": "Chain-of-Thought Prompting",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.7,
+      "trend": "rising",
+      "applications": [
+        "education",
+        "accessibility",
+        "science",
+        "healthcare",
+        "enterprise"
+      ]
+    },
+    {
+      "name": "Object Detection",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.7,
+      "trend": "rising",
+      "applications": [
+        "enterprise",
+        "accessibility",
+        "education",
+        "healthcare"
+      ]
+    },
+    {
+      "name": "Depth Estimation",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.7,
+      "trend": "rising",
+      "applications": [
+        "enterprise",
+        "accessibility",
+        "education",
+        "healthcare"
+      ]
+    },
+    {
+      "name": "Live Benchmarking",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.7,
+      "trend": "rising",
+      "applications": [
+        "enterprise",
+        "healthcare",
+        "finance"
+      ]
+    },
+    {
+      "name": "Agentic Time Series Analysis",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.7,
+      "trend": "rising",
+      "applications": [
+        "enterprise",
+        "healthcare",
+        "finance"
+      ]
+    },
+    {
+      "name": "Self-Evolving Agents",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.7,
+      "trend": "rising",
+      "applications": [
+        "enterprise",
+        "healthcare",
+        "finance"
+      ]
+    },
+    {
+      "name": "Temporal Validity Evaluation",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.7,
+      "trend": "rising",
+      "applications": [
+        "enterprise",
+        "healthcare",
+        "finance"
+      ]
+    },
+    {
+      "name": "MemoryLake",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.7,
+      "trend": "rising",
+      "applications": [
+        "enterprise",
+        "education",
+        "other"
+      ]
+    },
+    {
+      "name": "MemoryArena",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.7,
+      "trend": "rising",
+      "applications": [
+        "enterprise",
+        "education",
+        "other"
+      ]
+    },
+    {
+      "name": "Test-Driven Development",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.7,
+      "trend": "rising",
+      "applications": [
+        "enterprise",
+        "education",
+        "other"
+      ]
+    },
+    {
+      "name": "Agentic Framework",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.7,
+      "trend": "rising",
+      "applications": [
+        "enterprise",
+        "education",
+        "other"
+      ]
+    },
+    {
+      "name": "Group Relative Policy Optimization",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.7,
+      "trend": "rising",
+      "applications": [
+        "enterprise",
+        "education",
+        "healthcare"
+      ]
+    },
+    {
+      "name": "Visual Action Evaluation and Correction",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.7,
+      "trend": "rising",
+      "applications": [
+        "enterprise",
+        "education",
+        "healthcare"
+      ]
+    },
+    {
+      "name": "Dynamic Trajectory with Sliding Window",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.7,
+      "trend": "rising",
+      "applications": [
+        "enterprise",
+        "education",
+        "healthcare"
+      ]
+    },
+    {
+      "name": "Intent Injection",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.7,
+      "trend": "rising",
+      "applications": [
+        "enterprise",
+        "education",
+        "healthcare"
+      ]
+    },
+    {
+      "name": "Neural Architecture Search",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.7,
+      "trend": "rising",
+      "applications": [
+        "other",
+        "science"
+      ]
+    },
+    {
+      "name": "Multi-Agent Systems",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.7,
+      "trend": "rising",
+      "applications": [
+        "other",
+        "science"
+      ]
+    },
+    {
+      "name": "Consensus Gating",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.7,
+      "trend": "rising",
+      "applications": [
+        "other",
+        "science"
+      ]
+    },
+    {
+      "name": "Large Language Models",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.7,
+      "trend": "rising",
+      "applications": [
+        "enterprise",
+        "other",
+        "science"
+      ]
+    },
+    {
+      "name": "Diffusion Models",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.7,
+      "trend": "rising",
+      "applications": [
+        "enterprise",
+        "education",
+        "creative"
+      ]
+    },
+    {
+      "name": "Autoregressive Models",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.7,
+      "trend": "rising",
+      "applications": [
+        "enterprise",
+        "education",
+        "creative"
+      ]
+    },
+    {
+      "name": "Long-Short Term Memory",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.7,
+      "trend": "rising",
+      "applications": [
+        "enterprise",
+        "education",
+        "creative"
+      ]
+    },
+    {
+      "name": "Multimodal Large Language Models",
+      "papers": 1,
+      "maturity": "early",
+      "confidence": 0.5700000000000001,
+      "trend": "emerging",
+      "applications": [
+        "enterprise",
+        "accessibility",
+        "healthcare"
+      ]
+    },
+    {
+      "name": "Audio-Visual Question Answering",
+      "papers": 1,
+      "maturity": "early",
+      "confidence": 0.5700000000000001,
+      "trend": "emerging",
+      "applications": [
+        "enterprise",
+        "accessibility",
+        "healthcare"
+      ]
+    },
+    {
+      "name": "Supervised Fine-Tuning",
+      "papers": 1,
+      "maturity": "early",
+      "confidence": 0.5700000000000001,
+      "trend": "emerging",
+      "applications": [
+        "enterprise",
+        "accessibility",
+        "healthcare"
+      ]
+    },
+    {
+      "name": "Benchmark Development",
+      "papers": 1,
+      "maturity": "early",
+      "confidence": 0.5700000000000001,
+      "trend": "emerging",
+      "applications": [
+        "enterprise",
+        "accessibility",
+        "healthcare"
+      ]
+    },
+    {
+      "name": "Social Intelligence",
+      "papers": 1,
+      "maturity": "early",
+      "confidence": 0.5700000000000001,
+      "trend": "emerging",
+      "applications": [
+        "enterprise",
+        "accessibility",
+        "healthcare"
+      ]
+    },
+    {
+      "name": "Agentic Workflow",
+      "papers": 1,
+      "maturity": "early",
+      "confidence": 0.5700000000000001,
+      "trend": "emerging",
+      "applications": [
+        "enterprise",
+        "science"
+      ]
+    },
+    {
+      "name": "Iterative Optimization",
+      "papers": 1,
+      "maturity": "early",
+      "confidence": 0.5700000000000001,
+      "trend": "emerging",
+      "applications": [
+        "enterprise",
+        "science"
+      ]
+    }
+  ],
+  "product_opportunities": []
+}

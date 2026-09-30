@@ -1,0 +1,1028 @@
+{
+  "meta": {
+    "date": "2026-07-14",
+    "papers_tracked": 15,
+    "technologies_discovered": 33,
+    "opportunities_identified": 15,
+    "last_update": "2026-07-14 07:24 UTC",
+    "backend": "llm7",
+    "model": "Research Curator v1"
+  },
+  "brief": [
+    "Multimodal Learning is rapidly advancing, enabling agents to process and reason across various data types. This is crucial for product builders as it opens up new applications in robotics, quantum code generation, and sports video analysis. The opportunity lies in developing agents that can seamlessly integrate and interpret diverse data streams, enhancing decision-making and automation in complex environments.",
+    "Retrieval Augmented Generation (RAG) is gaining traction, particularly in long-context management and multi-agent systems. This technology allows for more accurate and context-aware responses, which is valuable for product builders in domains like education, healthcare, and enterprise. The opportunity is to create systems that can dynamically retrieve and integrate relevant information, improving the accuracy and relevance of outputs.",
+    "On-Policy Distillation is emerging as a method to improve the efficiency and effectiveness of large language models. This is significant for product builders as it can reduce computational costs and enhance model performance. The opportunity is to develop frameworks that leverage on-policy distillation to create more efficient and powerful language models for various applications.",
+    "Long-Horizon Planning and Long-Context Management are areas of focus in AI research, addressing challenges in complex, extended tasks. This is relevant for product builders in enterprise and scientific domains. The opportunity is to develop systems that can effectively manage and plan over long periods, enabling more sophisticated and autonomous operations.",
+    "Agentic Routing and the Harness-Native Data Flywheel are being explored to optimize data flow and agent interactions. This is important for product builders in enterprise and scientific settings. The opportunity is to create systems that can efficiently route and manage data flow, enhancing the performance and scalability of AI-driven applications."
+  ],
+  "top_cards": [
+    {
+      "id": "new_technologies",
+      "title": "New Technologies",
+      "value": "33",
+      "label": "discovered this scan",
+      "detail": "Dense Reward-Based Grading, Long-Horizon Planning, Long-Context Management, Multimodal Learning, Lifelong Learning, Graph Memory, Self-Evolution, Embodied AI",
+      "color": "accent"
+    },
+    {
+      "id": "emerging_trends",
+      "title": "Emerging Trends",
+      "value": "33",
+      "label": "active trend clusters",
+      "detail": "Vision Transformer, Chain-of-Thought Prompting, Agentic Research Systems, Governed Computational Routing, Reproducible Workflow Orchestration",
+      "color": "green"
+    },
+    {
+      "id": "highest_potential",
+      "title": "Highest Potential",
+      "value": "7.8",
+      "label": "avg opportunity score",
+      "detail": "Long-Horizon-Terminal-Bench: Testing the Limits of Agents on Long-Horizon Termin",
+      "color": "amber"
+    },
+    {
+      "id": "biggest_surprise",
+      "title": "Biggest Surprise",
+      "value": "Long-Horizon-Terminal-Bench: T",
+      "label": "confidence 80%",
+      "detail": "",
+      "color": "purple"
+    },
+    {
+      "id": "most_practical",
+      "title": "Most Practical",
+      "value": "Beyond the Single Camera: Agen",
+      "label": "highest confidence paper",
+      "detail": "A multi-camera sports analysis tool for coaches and analysts to review player performance from multiple angles., An AI-powered referee assistant that uses multi-view video analysis to make more accurate decisions in real-time.",
+      "color": "success"
+    },
+    {
+      "id": "most_innovative",
+      "title": "Most Innovative",
+      "value": "0",
+      "label": "early-stage technologies",
+      "detail": "ABot-AgentOS: A General Robotic Agent OS with Lifelong Multi-modal Memory",
+      "color": "blue"
+    }
+  ],
+  "papers": [
+    {
+      "id": "2607.08964",
+      "title": "Long-Horizon-Terminal-Bench: Testing the Limits of Agents on Long-Horizon Terminal Tasks with Dense Reward-Based Grading",
+      "authors": [],
+      "categories": [
+        "cs.AI"
+      ],
+      "published": "2026-07-13",
+      "updated": "2026-07-13",
+      "summary": "arXiv:2607.08964v1 Announce Type: new Abstract: AI agents have become capable of autonomously completing short, well-specified tasks. However, existing terminal benchmarks largely focus on simple problems that finish within minutes and are evaluated only by their final outcome. This setup overlooks intermediate progress and partial solutions, yielding sparse reward signals and an incomplete picture of agent capability. We introduce Long-Horizon-Terminal-Bench, a terminal benchmark of 46 long-horizon tasks spanning nine categories, including experiment reproduction, software engineering, multimodal analysis, interactive games, and scientific computing. Each task follows a Terminal-Bench-style setup with a reference solution or simulation engine, but is further decomposed into fine-grained graded subtasks. This design enables dense intermediate rewards and partial credit, allowing evaluation to capture not only whether an agent reaches the final goal, but also how far it progresses on open-ended workflows. Tasks in Long-Horizon-Terminal-Bench typically require hundreds of episodes and minutes to hours of execution, stressing long-horizon planning, long-context management, and iterative debugging rather than one-shot problem solving. We evaluate 15 frontier models and find that agents consume on average 9.9M tokens per task, with roughly 231 episodes and 85.3 minutes of execution time per run, making Long-Horizon-Terminal-Bench more demanding than prior terminal-based benchmarks. Even the strongest tested model achieves 15.2% pass@1 at a partial-reward threshold of 0.95 and 10.9% at a perfect-reward threshold of 1.0, while the mean pass rate across models is 4.3% and 1.7% under the two thresholds, respectively. These results reveal headroom for improvement. We further analyze failure modes and error patterns, and release Long-Horizon-Terminal-Bench to support future progress on long-horizon terminal agents.",
+      "pdf_url": "https://arxiv.org/abs/2607.08964",
+      "comment": "",
+      "technologies": [
+        "Dense Reward-Based Grading",
+        "Long-Horizon Planning",
+        "Long-Context Management"
+      ],
+      "maturity": "early",
+      "confidence": 0.8,
+      "curator_score": 6.2,
+      "product_potential": [
+        "Automated scientific experiment reproduction and analysis",
+        "Advanced software engineering assistant with iterative debugging capabilities"
+      ],
+      "domain_applications": [
+        "science",
+        "enterprise"
+      ]
+    },
+    {
+      "id": "2607.10350",
+      "title": "ABot-AgentOS: A General Robotic Agent OS with Lifelong Multi-modal Memory",
+      "authors": [],
+      "categories": [
+        "cs.AI"
+      ],
+      "published": "2026-07-14",
+      "updated": "2026-07-14",
+      "summary": "arXiv:2607.10350v1 Announce Type: new Abstract: Recent VLM and VLA systems have improved robotic perception and action prediction, yet long-horizon embodied agents still require a general runtime layer for reasoning, memory, tool use, verification, and cross-embodiment execution. We present ABot-AgentOS, a general robotic Agent Operating System that sits above low-level controllers and provides a deliberative agent layer for scene-conditioned planning, context-isolated skill execution, multi-stage verification, multi-modal memory, and edge-cloud collaboration. To evaluate such systems, we introduce EmbodiedWorldBench, an executable benchmark with 16 indoor, outdoor, and hybrid scenes, four difficulty levels, and over 200 tasks involving navigation, object search, NPC dialogue, dynamic events, and trace-grounded scoring. ABot-AgentOS further introduces Universal Multi-modal Graph Memory, a persistent source-grounded substrate that converts dialogue, visual observations, spatial context, temporal relations, and task traces into typed nodes and edges. A failure-driven self-evolution loop converts diagnosed memory failures into gated runtime evo-assets that are promoted only to later evaluation splits, preventing current-split ground-truth leakage while enabling continual improvement. On an initial EmbodiedWorldBench subset, ABot-AgentOS improves over a single-controller baseline in both task success and goal completion. Across memory benchmarks, ABot-AgentOS Static achieves 87.5 on LoCoMo, 59.9 on OpenEQA EM-EQA, 88.6 on Mem-Gallery, and 76.5 Acc@All on NExT-QA; self-evolution further improves LoCoMo to 88.7, OpenEQA to 60.4, and Mem-Gallery to 89.0. These results suggest that a general Agent OS layer can improve long-horizon embodied execution while providing persistent, auditable memory for continual interaction.",
+      "pdf_url": "https://arxiv.org/abs/2607.10350",
+      "comment": "",
+      "technologies": [
+        "Multimodal Learning",
+        "Lifelong Learning",
+        "Graph Memory",
+        "Self-Evolution",
+        "Embodied AI"
+      ],
+      "maturity": "early",
+      "confidence": 0.8,
+      "curator_score": 6.0,
+      "product_potential": [
+        "A general-purpose robotic agent OS for home and enterprise applications",
+        "A persistent, auditable memory system for robotic agents to improve over time"
+      ],
+      "domain_applications": [
+        "robotics",
+        "enterprise"
+      ]
+    },
+    {
+      "id": "2601.07372",
+      "title": "Conditional Memory via Scalable Lookup: A New Axis of Sparsity for Large Language Models",
+      "authors": [],
+      "categories": [
+        "cs.AI"
+      ],
+      "published": "2026-07-14",
+      "updated": "2026-07-14",
+      "summary": "arXiv:2601.07372v2 Announce Type: replace-cross Abstract: While Mixture-of-Experts (MoE) scales capacity via conditional computation, Transformers lack a native primitive for knowledge lookup, forcing them to inefficiently simulate retrieval through computation. To address this, we introduce conditional memory as a complementary sparsity axis, instantiated via Engram, a module that modernizes classic $N$-gram embedding for O(1) lookup. By formulating the Sparsity Allocation problem, we uncover a U-shaped scaling law that optimizes the trade-off between neural computation (MoE) and static memory (Engram). Guided by this law, we scale Engram to 27B parameters, achieving superior performance over a strictly iso-parameter and iso-FLOPs MoE baseline. Most notably, while the memory module is expected to aid knowledge retrieval (e.g., MMLU +3.4; CMMLU +4.0), we observe even larger gains in general reasoning (e.g., BBH +5.0; ARC-Challenge +3.7) and code/math domains~(HumanEval +3.0; MATH +2.4). Mechanistic analyses reveal that Engram relieves the backbone's early layers from static reconstruction, effectively deepening the network for complex reasoning. Furthermore, by delegating local dependencies to lookups, it frees up attention capacity for global context, substantially boosting long-context retrieval (e.g., Multi-Query NIAH: 84.2 to 97.0). Finally, Engram establishes infrastructure-aware efficiency: its deterministic addressing enables runtime prefetching from host memory, incurring negligible overhead. We envision conditional memory as an indispensable modeling primitive for next-generation sparse models.",
+      "pdf_url": "https://arxiv.org/abs/2601.07372",
+      "comment": "",
+      "technologies": [
+        "Conditional Memory",
+        "Engram",
+        "Mixture of Experts",
+        "Sparse Attention"
+      ],
+      "maturity": "medium",
+      "confidence": 0.8,
+      "curator_score": 6.0,
+      "product_potential": [
+        "Enhanced long-context retrieval in AI assistants",
+        "Improved reasoning capabilities in educational and enterprise applications",
+        "Efficient memory management for on-device AI applications"
+      ],
+      "domain_applications": [
+        "education",
+        "enterprise",
+        "accessibility",
+        "other"
+      ]
+    },
+    {
+      "id": "2607.11715",
+      "title": "JobHop v2: A Large-Scale Career Trajectory Dataset from Unstructured Resumes",
+      "authors": [
+        "Iman Johary",
+        "Guillaume Bied",
+        "Alexandru C. Mara",
+        "Tijl De Bie"
+      ],
+      "categories": [
+        "cs.CL"
+      ],
+      "published": "2026-07-13",
+      "updated": "2026-07-13",
+      "summary": "Large-scale, richly annotated career trajectory data underpins workforce planning, job recommendation, and labour market analysis, yet publicly available datasets are either small, closed to independent use, or built from pre-standardized occupational codes with LLM-synthesized rather than authentic free text. We present JobHop~v2, an improved version of the publicly available JobHop dataset, constructed through end-to-end large language model (LLM) extraction from a corpus of ${\\sim}440{,}000$ pseudonymized, multilingual resumes provided by VDAB, the Flemish Public Employment Service. The released dataset comprises $355{,}315$ career trajectories annotated with ESCO occupational codes, quarter-level temporal information, and normalized five-level education attainment, broadening both the coverage and the annotation richness of the original release. Relative to v1, JobHop~v2 introduces a redesigned extraction pipeline based on reasoning-controlled LLM inference with a retry mechanism (achieving a 100% JSON parse rate), a richer extraction schema, and a revised evaluation protocol scored against three complementary annotation baselines. Evaluated against these baselines, our best extractor comes closest to the inter-annotator agreement ceiling among all compared models, trailing it by only 1.1-2.7 percentage points. The dataset and code are publicly released to support reproducible career-trajectory research.",
+      "pdf_url": "https://arxiv.org/pdf/2607.11715v1",
+      "comment": "",
+      "technologies": [
+        "Large Language Models",
+        "Reasoning-controlled LLM Inference",
+        "Retry Mechanism"
+      ],
+      "maturity": "medium",
+      "confidence": 0.8,
+      "curator_score": 5.9,
+      "product_potential": [
+        "Career trajectory analysis tool for workforce planning and job recommendation",
+        "Personalized career guidance platform leveraging richly annotated career trajectory data"
+      ],
+      "domain_applications": [
+        "enterprise",
+        "education"
+      ]
+    },
+    {
+      "id": "2607.10057",
+      "title": "Quantum Circuit Vision: Cost-Aware Evaluation of Visual AI Agents for Quantum Code Generation",
+      "authors": [],
+      "categories": [
+        "cs.AI"
+      ],
+      "published": "2026-07-14",
+      "updated": "2026-07-14",
+      "summary": "arXiv:2607.10057v1 Announce Type: cross Abstract: Can AI agents visually comprehend quantum circuit diagrams and generate verified executable code--and at what cost? We present Quantum Circuit Vision, a cost-aware evaluation framework for multimodal AI agents on quantum circuit visual understanding. We construct a 132-circuit benchmark spanning 13 categories ($1$--$10$ qubits) with executable Amazon Braket code and unitary-fidelity verification. Evaluating three frontier Claude-family models at different capability-cost tiers with $n=5$ repeated trials, we find that the mid-tier model (Sonnet 4.6, $1.30\\times$ credits) offers the most favorable balance on the cost-accuracy frontier: 91% pass rate on the core subset at 18% of the per-call cost of the strongest model (Opus 4.6), whose accuracy advantage is not statistically significant (paired $t$: $p=0.083$). Logistic regression confirms that circuit depth--not qubit count--is the primary predictor of failure ($p 0.18$, $n=5$), suggesting that visual pattern recognition outweighs explicit reasoning strategy for structurally coupled diagrams. We propose a cascade routing strategy (cheap $\\rightarrow$ expensive models) that achieves 84% accuracy at 38% of single-model cost, demonstrating that model routing dominates prompt engineering as a cost lever. We release QCV-Dataset (132 circuits, 5 modalities, 1,931 files) on Hugging Face Hub as an open evaluation infrastructure with structured metadata for discoverability, interoperability, and responsible AI documentation, and all evaluation code, cost logs, and verification scripts on GitHub for full reproducibility.",
+      "pdf_url": "https://arxiv.org/abs/2607.10057",
+      "comment": "",
+      "technologies": [
+        "Multimodal Learning",
+        "Cost-Aware Evaluation"
+      ],
+      "maturity": "early",
+      "confidence": 0.7,
+      "curator_score": 5.9,
+      "product_potential": [
+        "Quantum Circuit Design Assistant: An AI-powered tool that helps quantum researchers and engineers design and verify quantum circuits by interpreting visual diagrams and generating executable code.",
+        "Cost-Optimized Quantum Development Platform: A platform that leverages cost-aware evaluation to provide the most efficient AI models for quantum circuit generation, reducing the overall cost of quantum software development."
+      ],
+      "domain_applications": [
+        "science"
+      ]
+    },
+    {
+      "id": "2607.11012",
+      "title": "EasyOPD: An Easy-to-use On-Policy Distillation Framework for Large Language Models",
+      "authors": [],
+      "categories": [
+        "cs.CL"
+      ],
+      "published": "2026-07-14",
+      "updated": "2026-07-14",
+      "summary": "arXiv:2607.11012v1 Announce Type: new Abstract: Conventional language-model distillation often relies on fixed teacher-generated data, which may not cover the states encountered by an evolving student policy. On-policy distillation (OPD) instead collects teacher or evaluator supervision on student-generated rollouts. However, existing OPD methods differ substantially in supervision form, tokenizer compatibility, teacher access, and supervision granularity, leading to fragmented implementations that are difficult to reproduce and extend. We present \\textsc{EasyOPD}, an on-policy distillation framework built on verl, a distributed reinforcement-learning framework for large language models. \\textsc{EasyOPD} separates user-side configuration, method-specific supervision logic, and verl-based execution. Its method modules connect to the shared backend through extension boundaries for loss construction, rollout metadata, reward processing, tokenizer alignment, and teacher-side computation. We instantiate representative methods for three OPD settings -- cross-tokenizer OPD, on-policy self-distillation, and step-wise OPD. Experiments on reasoning, code-generation, scientific-knowledge, and tool-use benchmarks show that these implementations can be executed through the same verl-based backend while retaining their method-specific objectives and task-dependent performance profiles. We release \\textsc{EasyOPD} with runnable YAML configurations, documentation, and an installable demonstration package and video.",
+      "pdf_url": "https://arxiv.org/abs/2607.11012",
+      "comment": "",
+      "technologies": [
+        "On-Policy Distillation",
+        "Knowledge Distillation"
+      ],
+      "maturity": "early",
+      "confidence": 0.7,
+      "curator_score": 5.9,
+      "product_potential": [
+        "A unified platform for developing and deploying on-policy distillation methods for large language models",
+        "A framework for integrating and comparing different on-policy distillation techniques in a standardized manner"
+      ],
+      "domain_applications": [
+        "education",
+        "science",
+        "enterprise",
+        "other"
+      ]
+    },
+    {
+      "id": "2508.20134",
+      "title": "QAgent: An LLM-based Multi-Agent System for Autonomous OpenQASM programming",
+      "authors": [],
+      "categories": [
+        "cs.AI"
+      ],
+      "published": "2026-07-13",
+      "updated": "2026-07-13",
+      "summary": "arXiv:2508.20134v2 Announce Type: replace Abstract: Programming quantum circuits at the OpenQASM level is essential for achieving hardware-aware optimization and reliable execution on noisy intermediate-scale quantum (NISQ) devices, yet it remains challenging due to the need for domain-specific planning, iterative code synthesis, and low-level calibration. In this paper, we present QAgent, the first autonomous multi-agent framework for end-to-end OpenQASM code generation. QAgent integrates schema-aware task planning, example- and tool-driven code synthesis, and hardware-aware calibration within a unified planning-synthesis-calibration workflow. The system leverages retrieval-augmented generation (RAG) to access structured kernel knowledge, examples, and backend constraints, and employs coordinated multi-agent reasoning with iterative execution feedback to ensure correctness. We evaluate QAgent on 12 representative quantum kernels and their compositions across five large language models (LLMs). Results show that QAgent improves Pass@1 accuracy by 47-70% on single-kernel tasks and achieves over 88% accuracy on multi-kernel workflows for large models, substantially outperforming existing baselines. Furthermore, under realistic hardware frequency drift, QAgent maintains near-unit execution fidelity through automated calibration, whereas SDK-based LLM methods suffer significant degradation. These results demonstrate that integrating planning, synthesis, and calibration is critical for reliable quantum program generation. The implementation of QAgent is open-sourced at https://github.com/fuzhenxiao/QAgent",
+      "pdf_url": "https://arxiv.org/abs/2508.20134",
+      "comment": "",
+      "technologies": [
+        "Retrieval Augmented Generation",
+        "Multi-Agent Systems"
+      ],
+      "maturity": "early",
+      "confidence": 0.8,
+      "curator_score": 5.7,
+      "product_potential": [
+        "Automated quantum circuit design tool for researchers and engineers",
+        "Quantum programming assistant for educational purposes"
+      ],
+      "domain_applications": [
+        "science",
+        "education"
+      ]
+    },
+    {
+      "id": "2508.15806",
+      "title": "REAL: REtrieval-reAsoning and Logic-constructed Attention Behaviors for Long-Context KV Cache Compression",
+      "authors": [],
+      "categories": [
+        "cs.AI"
+      ],
+      "published": "2026-07-13",
+      "updated": "2026-07-13",
+      "summary": "arXiv:2508.15806v2 Announce Type: replace-cross Abstract: The growing sequence length of large language models poses significant challenges for key-value (KV) caches. Existing state-of-the-art cache eviction methods primarily analyze the inference behavior of attention heads in successful retrieval-reasoning cases, often overlooking diverse behaviors in failure cases, such as bias and distraction. This oversight limits the potential to leverage heterogeneous head behaviors for improved eviction performance. Inspired by the confusion matrix, we introduce an Attention Behavior Matrix to comprehensively analyze attention head behaviors in both success and failure scenarios. By maximizing the signal-to-noise ratio -- strengthening valid reasoning pathways in success cases while inhibiting noise from bias and distraction in failure cases -- we propose REtrieval-reAsoning and Logic-constructed (REAL) KV cache eviction, the first method to leverage multi-behavior analysis. Comprehensive evaluations show that REAL achieves remarkable performance across various models and benchmarks; notably, on LongBench v2, it achieves comparable accuracy to the strongest baseline, HeadKV-R2, while requiring 32x less space (Figure 1). By offering a novel perspective on behavior analysis, we pave the way for a shift from success-only to comprehensive, failure-aware methods in long-context modeling. Our code is available at https://github.com/yonseicasl/REAL.",
+      "pdf_url": "https://arxiv.org/abs/2508.15806",
+      "comment": "",
+      "technologies": [
+        "KV Cache Optimization",
+        "Retrieval Augmented Generation"
+      ],
+      "maturity": "medium",
+      "confidence": 0.8,
+      "curator_score": 5.7,
+      "product_potential": [
+        "Optimized long-context language models for enterprise applications",
+        "Enhanced retrieval-augmented generation systems for healthcare and education"
+      ],
+      "domain_applications": [
+        "enterprise",
+        "healthcare",
+        "education"
+      ]
+    },
+    {
+      "id": "2607.11844",
+      "title": "Beyond the Single Camera: Agentic Multi-View Reasoning in Sports Video Understanding",
+      "authors": [
+        "Kerui Chen",
+        "Jinglu Wang",
+        "Xiaoyi Zhang",
+        "Yan Lu"
+      ],
+      "categories": [
+        "cs.CV"
+      ],
+      "published": "2026-07-13",
+      "updated": "2026-07-13",
+      "summary": "Recent Multimodal Large Language Models (MLLMs) achieve strong performance on single-view video understanding benchmarks. However, sports videos involve dense occlusion, rapid motion, and complex interactions that are difficult to resolve from a single viewpoint. In practice, sports events are recorded from multiple camera angles, providing complementary evidence used by referees. Yet, no existing benchmark evaluates MLLMs on multi-view sports video understanding. To address this gap, we introduce SportMV-Bench, a comprehensive benchmark built from official match recordings, through a dedicated pipeline combining LLM-based generation, MLLM-based verification, and human filtering to ensure quality and consistency. SportMV-Bench containing 787 multi-view video bundles and 2592 question-answer pairs across three categories: Perception-Aware Recognition (PAR), Rule-aware Event Interpretation (REI), and Adjudicative Decision Reasoning(ADR). Our analysis shows that current MLLMs fail to effectively exploit multi-view information, with the bottlenecks lying in fine-grained visual perception and view selection rather than logical reasoning or domain knowledge. We propose SportMV-Agent, an agentic framework that orchestrates an iterative loop of active view selection, perception tool execution, and evidence-grounded reasoning, achieving a significant 14.46% relative improvement over the strongest MLLM baseline.",
+      "pdf_url": "https://arxiv.org/pdf/2607.11844v1",
+      "comment": "",
+      "technologies": [
+        "Multimodal Learning",
+        "Vision Transformer",
+        "Retrieval Augmented Generation",
+        "Chain-of-Thought Prompting"
+      ],
+      "maturity": "medium",
+      "confidence": 0.85,
+      "curator_score": 5.7,
+      "product_potential": [
+        "A multi-camera sports analysis tool for coaches and analysts to review player performance from multiple angles.",
+        "An AI-powered referee assistant that uses multi-view video analysis to make more accurate decisions in real-time."
+      ],
+      "domain_applications": [
+        "science",
+        "sports"
+      ]
+    },
+    {
+      "id": "2607.11399",
+      "title": "Agentic Routing: The Harness-Native Data Flywheel",
+      "authors": [
+        "Xinchen Liu",
+        "Hang Zhou",
+        "Yingjie Zong",
+        "Yuchuan Tian",
+        "Liuyang Song",
+        "Shuo Zhang",
+        "Yulong Li",
+        "Wei He",
+        "Mengyu Zheng",
+        "Runke Liu",
+        "Siyang Cheng",
+        "Xiang Kuang",
+        "Hailin Hu",
+        "Kai Han",
+        "Yunhe Wang"
+      ],
+      "categories": [
+        "cs.CL",
+        "cs.AI"
+      ],
+      "published": "2026-07-13",
+      "updated": "2026-07-13",
+      "summary": "Large language model agents are increasingly executed not by a single model call, but by an execution harness that manages observation, context, control, action, state, and verification. At the same time, frontier and open models are becoming structurally specialized: a model that is strong at code editing, long-context recovery, tool use, mathematical reasoning, or low-latency response may not dominate on the other axes. This makes model selection inside an agent a core systems problem rather than a per-query serving trick. Existing routing methods mostly optimize single-turn cost-quality trade-offs and therefore miss the execution state, intermediate failures, and feedback loops that make agents different from chat completion. We propose Harness-Native agentic routing, a step-level routing paradigm that selects either a single best-fit model for cost-effective execution or multiple complementary models for ensemble-style accuracy improvement, conditioned on the full harness state. The key insight is that every routing decision naturally produces a structured data record -- consisting of the query, harness state, model choice or model set, execution trace, outcome, and cost -- whose labels are supplied by the environment rather than by the router itself. These records form a harness-native data flywheel: execution traces train better routers and harness-native models, which improve cost-quality trade-offs and generate more traces under the same budget. We instantiate this idea in OpenSquilla with a four-layer routing stack, an open LightGBM cold-start ranker, and a staged router-model path that turns logged arena records into progressively stronger routing policies. The report studies singleton and multi-model routing on agentic benchmarks including DRACO and PinchBench, and argues that agentic routing is not merely cost control, but a data engine for agent-native training.",
+      "pdf_url": "https://arxiv.org/pdf/2607.11399v1",
+      "comment": "Code: https://github.com/opensquilla/opensquilla",
+      "technologies": [
+        "Agentic Routing",
+        "Harness-Native Data Flywheel"
+      ],
+      "maturity": "early",
+      "confidence": 0.8,
+      "curator_score": 5.7,
+      "product_potential": [
+        "Multi-agent systems with dynamic model selection for cost-effective execution",
+        "Ensemble-style accuracy improvement for complex tasks",
+        "Agent-native training data engine for improving routing policies"
+      ],
+      "domain_applications": [
+        "enterprise",
+        "science",
+        "other"
+      ]
+    },
+    {
+      "id": "2607.10286",
+      "title": "Can Agentic Trading Systems Pay for Their Own Intelligence?",
+      "authors": [],
+      "categories": [
+        "cs.AI"
+      ],
+      "published": "2026-07-14",
+      "updated": "2026-07-14",
+      "summary": "arXiv:2607.10286v1 Announce Type: new Abstract: Large language model (LLM) agents are increasingly used in trading systems, where model reasoning, tool use, and continual decisions incur costs that are expected to produce trading value. Existing evaluations typically report performance metrics, but rarely examine agentic viability: whether dynamic LLM-mediated decisions convert their induced costs into measurable incremental profit. To apply this criterion, we introduce TradeLens, a trace-grounded diagnostic toolkit for evaluating agentic trading systems from their trading records, runtime traces, and deployment configurations. It reconstructs trading trajectories, attributes profit and cost to interpretable evidence, and diagnoses whether and why an agent pays for its own intelligence. We conduct extensive analysis across backbone models, capital scales, trading frequencies, and system architectures, together with deployment discussion. Our results show that viability hinges on intelligence-to-profit conversion: models exhibit different failure patterns, such as poor asset selection in DeepSeek-V3.2 and negative timing in GLM-4.7, while capital scale, trading frequency, and architecture matter only by amplifying or degrading decision-attributed timing value. These findings reframe the evaluation of LLM-based trading agents from capability-centric performance ranking to trace-grounded diagnosis of intelligence-to-profit conversion. Our code is available at https://anonymous.4open.science/r/TradeLens.",
+      "pdf_url": "https://arxiv.org/abs/2607.10286",
+      "comment": "",
+      "technologies": [
+        "TradeLens",
+        "Reinforcement Learning from Human Feedback"
+      ],
+      "maturity": "early",
+      "confidence": 0.7,
+      "curator_score": 5.7,
+      "product_potential": [
+        "A diagnostic tool for evaluating the profitability of AI-driven trading systems",
+        "A framework for optimizing AI agent performance in financial markets"
+      ],
+      "domain_applications": [
+        "finance"
+      ]
+    },
+    {
+      "id": "2607.11084",
+      "title": "NVAITC AI Scientist: A Governed End-to-End Research System -- A Hypertension GWAS Case Study",
+      "authors": [],
+      "categories": [
+        "cs.AI"
+      ],
+      "published": "2026-07-14",
+      "updated": "2026-07-14",
+      "summary": "arXiv:2607.11084v1 Announce Type: new Abstract: Agentic research systems are emerging as a new paradigm for coordinating scientific workflows beyond isolated model inference, code generation, or statistical analysis. However, deployment in institutional biomedical environments requires governed mechanisms for research planning, data access, workflow orchestration, evidence tracking, reproducibility, and human oversight. We present NVAITC AI Scientist (NAIS), a governed end-to-end agentic research system designed to support domain-general scientific workflows while keeping protected data within institutional privacy boundaries. NAIS integrates proposal review, execution planning, governed computational routing, reproducible workflow orchestration, evidence generation, and scientist-in-the-loop oversight. We validate NAIS in a real-world hypertension genome-wide association study (GWAS) using hospital-linked genotype and electronic health record (EHR) data from 286,422 individuals under an aggregate-only data policy. The agent planned cohort extraction, orchestrated GWAS execution, generated quality-control summaries, and drafted publication-oriented outputs. Human-AI review identified phenotype discrepancies and enabled iterative refinement of the hypertension definition. After reconciliation, the agent-orchestrated GWAS reproduced established hypertension loci, including FGF5, ATP2B1, CNNM2, FTO, and GRB14, with the strongest signal at FGF5 reaching $-\\log_{10}(p) \\sim 70$. As a secondary demonstration, NAIS also supported a drug-induced liver injury prediction workflow, achieving a multimodal graph neural network AUC of 0.842. These results demonstrate that governed agentic research systems can support scalable AI-assisted biomedical discovery while producing outputs comparable to expert-led workflows.",
+      "pdf_url": "https://arxiv.org/abs/2607.11084",
+      "comment": "",
+      "technologies": [
+        "Agentic Research Systems",
+        "Governed Computational Routing",
+        "Reproducible Workflow Orchestration",
+        "Multimodal Learning"
+      ],
+      "maturity": "medium",
+      "confidence": 0.85,
+      "curator_score": 5.7,
+      "product_potential": [
+        "AI-assisted biomedical research platform",
+        "Governed AI research workflow automation",
+        "Multimodal data integration for scientific discovery"
+      ],
+      "domain_applications": [
+        "healthcare",
+        "science"
+      ]
+    },
+    {
+      "id": "2607.10180",
+      "title": "ActiveFly-Bench: Aligning Embodied Question Answering with Vision-Language-Action for Aerial Embodied Perception",
+      "authors": [],
+      "categories": [
+        "cs.AI"
+      ],
+      "published": "2026-07-14",
+      "updated": "2026-07-14",
+      "summary": "arXiv:2607.10180v1 Announce Type: cross Abstract: We introduce ActiveFly-Bench, the first benchmark to bridge cyberspace reasoning and physical-world interaction for UAV embodied perception. The benchmark decomposes active perception into three hierarchical tasks: Aerial Embodied Question Answering (Air-EQA), Observation Behavior Planning (OBP), and Fine-grained Language-guided UAV Control (FLUC), explicitly connecting high-level task understanding, behavior planning, and low-level control. The datasets are collected from both real-world and simulated outdoor environments for training and evaluation. We further develop ActiveFly, a closed-loop UAV agent that integrates visual-language reasoning with fine-grained control, and deploy it on a physical UAV platform. Experiments with representative VLMs and VLA models show that current UAV agents still struggle with behavior planning, viewpoint adjustment, and robust task completion in active perception. These results establish ActiveFly-Bench as a new testbed for embodied aerial intelligence.",
+      "pdf_url": "https://arxiv.org/abs/2607.10180",
+      "comment": "",
+      "technologies": [
+        "Vision-Language-Action",
+        "Embodied Question Answering",
+        "Fine-grained Language-guided UAV Control"
+      ],
+      "maturity": "early",
+      "confidence": 0.7,
+      "curator_score": 5.7,
+      "product_potential": [
+        "Autonomous aerial inspection systems for infrastructure monitoring",
+        "AI-powered drones for search and rescue operations",
+        "Smart surveillance drones with advanced perception capabilities"
+      ],
+      "domain_applications": [
+        "robotics",
+        "science",
+        "enterprise"
+      ]
+    },
+    {
+      "id": "2607.11207",
+      "title": "ProgramTab: Boosting Table Reasoning of LLMs via Programmatic Paradigm",
+      "authors": [],
+      "categories": [
+        "cs.AI"
+      ],
+      "published": "2026-07-14",
+      "updated": "2026-07-14",
+      "summary": "arXiv:2607.11207v1 Announce Type: cross Abstract: Table-based reasoning with large language models (LLMs), which requires reasoning based on natural language questions and structured tabular data, has gained widespread attention. However, a series of issues still constrain the application of this task. The previous approaches suffered from significant performance degradation when faced with large tables due to the difficulty of long text modeling and the limitation of input length for LLMs. The text-to-SQL approach is used to efficiently extract key information from tables and generate smaller sub-tables. However, tabular data, especially web tables, often lack the necessary structure and consistency, making them unsuitable for performing mathematical logic operations using SQL queries. We propose the ProgramTab framework, which guides LLMs employing in-context learning to perform tabular data preprocessing with Python code, as well as the momentous contents extraction with row and column extraction and SQL generation. The experiment results on table reasoning datasets demonstrate that the ProgramTab framework effectively deals with table-based reasoning tasks and outperforms all LLM-based baselines.",
+      "pdf_url": "https://arxiv.org/abs/2607.11207",
+      "comment": "",
+      "technologies": [],
+      "maturity": "early",
+      "confidence": 0.0,
+      "curator_score": 5.7,
+      "product_potential": [],
+      "domain_applications": []
+    },
+    {
+      "id": "2511.15830",
+      "title": "Mini Amusement Parks (MAPs): A Testbed for Modelling Business Decisions",
+      "authors": [],
+      "categories": [
+        "cs.AI"
+      ],
+      "published": "2026-07-14",
+      "updated": "2026-07-14",
+      "summary": "arXiv:2511.15830v2 Announce Type: replace Abstract: Despite rapid progress in artificial intelligence, current systems struggle with the interconnected challenges that define real-world decision making. Practical domains, such as business management, require optimizing an open-ended and multi-faceted objective, actively learning environment dynamics from sparse experience, planning over long horizons in stochastic settings, and reasoning over spatial information. Yet existing human--AI benchmarks isolate subsets of these capabilities, limiting our ability to assess holistic decision-making competence. We introduce Mini Amusement Parks (MAPs), an amusement-park simulator designed to evaluate an agent's ability to model its environment, anticipate long-term consequences under uncertainty, and strategically operate a complex business. We provide human baselines and a comprehensive evaluation of state-of-the-art LLM agents, finding that humans outperform these systems by 6.5x on easy mode and 9.8x on medium mode. Our analysis reveals persistent weaknesses in long-horizon optimization, sample-efficient learning, spatial reasoning, and world modelling. By unifying these challenges within a single environment, MAPs offers a new foundation for benchmarking agents capable of adaptable decision making. Code: https://github.com/Skyfall-Research/MAPs",
+      "pdf_url": "https://arxiv.org/abs/2511.15830",
+      "comment": "",
+      "technologies": [],
+      "maturity": "early",
+      "confidence": 0.0,
+      "curator_score": 5.7,
+      "product_potential": [],
+      "domain_applications": []
+    }
+  ],
+  "technologies": [
+    {
+      "name": "Dense Reward-Based Grading",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.8,
+      "trend": "rising",
+      "applications": [
+        "science",
+        "enterprise"
+      ]
+    },
+    {
+      "name": "Long-Horizon Planning",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.8,
+      "trend": "rising",
+      "applications": [
+        "science",
+        "enterprise"
+      ]
+    },
+    {
+      "name": "Long-Context Management",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.8,
+      "trend": "rising",
+      "applications": [
+        "science",
+        "enterprise"
+      ]
+    },
+    {
+      "name": "Multimodal Learning",
+      "papers": 3,
+      "maturity": "medium",
+      "confidence": 0.8,
+      "trend": "rising",
+      "applications": [
+        "robotics",
+        "enterprise",
+        "science",
+        "healthcare",
+        "sports"
+      ]
+    },
+    {
+      "name": "Lifelong Learning",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.8,
+      "trend": "rising",
+      "applications": [
+        "robotics",
+        "enterprise"
+      ]
+    },
+    {
+      "name": "Graph Memory",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.8,
+      "trend": "rising",
+      "applications": [
+        "robotics",
+        "enterprise"
+      ]
+    },
+    {
+      "name": "Self-Evolution",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.8,
+      "trend": "rising",
+      "applications": [
+        "robotics",
+        "enterprise"
+      ]
+    },
+    {
+      "name": "Embodied AI",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.8,
+      "trend": "rising",
+      "applications": [
+        "robotics",
+        "enterprise"
+      ]
+    },
+    {
+      "name": "Conditional Memory",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.8,
+      "trend": "rising",
+      "applications": [
+        "education",
+        "enterprise",
+        "accessibility",
+        "other"
+      ]
+    },
+    {
+      "name": "Engram",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.8,
+      "trend": "rising",
+      "applications": [
+        "education",
+        "enterprise",
+        "accessibility",
+        "other"
+      ]
+    },
+    {
+      "name": "Mixture of Experts",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.8,
+      "trend": "rising",
+      "applications": [
+        "education",
+        "enterprise",
+        "accessibility",
+        "other"
+      ]
+    },
+    {
+      "name": "Sparse Attention",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.8,
+      "trend": "rising",
+      "applications": [
+        "education",
+        "enterprise",
+        "accessibility",
+        "other"
+      ]
+    },
+    {
+      "name": "Large Language Models",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.8,
+      "trend": "rising",
+      "applications": [
+        "enterprise",
+        "education"
+      ]
+    },
+    {
+      "name": "Reasoning-controlled LLM Inference",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.8,
+      "trend": "rising",
+      "applications": [
+        "enterprise",
+        "education"
+      ]
+    },
+    {
+      "name": "Retry Mechanism",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.8,
+      "trend": "rising",
+      "applications": [
+        "enterprise",
+        "education"
+      ]
+    },
+    {
+      "name": "Cost-Aware Evaluation",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.7,
+      "trend": "rising",
+      "applications": [
+        "science"
+      ]
+    },
+    {
+      "name": "On-Policy Distillation",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.7,
+      "trend": "rising",
+      "applications": [
+        "education",
+        "science",
+        "enterprise",
+        "other"
+      ]
+    },
+    {
+      "name": "Knowledge Distillation",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.7,
+      "trend": "rising",
+      "applications": [
+        "education",
+        "science",
+        "enterprise",
+        "other"
+      ]
+    },
+    {
+      "name": "Retrieval Augmented Generation",
+      "papers": 3,
+      "maturity": "medium",
+      "confidence": 0.8,
+      "trend": "rising",
+      "applications": [
+        "science",
+        "education",
+        "enterprise",
+        "healthcare",
+        "sports"
+      ]
+    },
+    {
+      "name": "Multi-Agent Systems",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.8,
+      "trend": "rising",
+      "applications": [
+        "science",
+        "education"
+      ]
+    },
+    {
+      "name": "KV Cache Optimization",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.8,
+      "trend": "rising",
+      "applications": [
+        "enterprise",
+        "healthcare",
+        "education"
+      ]
+    },
+    {
+      "name": "Vision Transformer",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.85,
+      "trend": "rising",
+      "applications": [
+        "science",
+        "sports"
+      ]
+    },
+    {
+      "name": "Chain-of-Thought Prompting",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.85,
+      "trend": "rising",
+      "applications": [
+        "science",
+        "sports"
+      ]
+    },
+    {
+      "name": "Agentic Routing",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.8,
+      "trend": "rising",
+      "applications": [
+        "enterprise",
+        "science",
+        "other"
+      ]
+    },
+    {
+      "name": "Harness-Native Data Flywheel",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.8,
+      "trend": "rising",
+      "applications": [
+        "enterprise",
+        "science",
+        "other"
+      ]
+    },
+    {
+      "name": "TradeLens",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.7,
+      "trend": "rising",
+      "applications": [
+        "finance"
+      ]
+    },
+    {
+      "name": "Reinforcement Learning from Human Feedback",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.7,
+      "trend": "rising",
+      "applications": [
+        "finance"
+      ]
+    },
+    {
+      "name": "Agentic Research Systems",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.85,
+      "trend": "rising",
+      "applications": [
+        "healthcare",
+        "science"
+      ]
+    },
+    {
+      "name": "Governed Computational Routing",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.85,
+      "trend": "rising",
+      "applications": [
+        "healthcare",
+        "science"
+      ]
+    },
+    {
+      "name": "Reproducible Workflow Orchestration",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.85,
+      "trend": "rising",
+      "applications": [
+        "healthcare",
+        "science"
+      ]
+    },
+    {
+      "name": "Vision-Language-Action",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.7,
+      "trend": "rising",
+      "applications": [
+        "robotics",
+        "science",
+        "enterprise"
+      ]
+    },
+    {
+      "name": "Embodied Question Answering",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.7,
+      "trend": "rising",
+      "applications": [
+        "robotics",
+        "science",
+        "enterprise"
+      ]
+    },
+    {
+      "name": "Fine-grained Language-guided UAV Control",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.7,
+      "trend": "rising",
+      "applications": [
+        "robotics",
+        "science",
+        "enterprise"
+      ]
+    }
+  ],
+  "product_opportunities": [
+    {
+      "technology": "Vision Transformer",
+      "idea": "SportSight: AI-powered sports analytics tool that provides real-time player tracking and performance metrics",
+      "business_value": 8,
+      "engineering_difficulty": 7,
+      "competitive_advantage": "high",
+      "development_time": "3-6 months"
+    },
+    {
+      "technology": "Chain-of-Thought Prompting",
+      "idea": "ThinkAloud: AI-powered educational tool that generates step-by-step explanations for complex scientific concepts",
+      "business_value": 7,
+      "engineering_difficulty": 6,
+      "competitive_advantage": "medium",
+      "development_time": "2-4 weeks"
+    },
+    {
+      "technology": "Agentic Research Systems",
+      "idea": "ResearchMate: AI-powered research assistant that automates literature review, data collection, and analysis for scientists",
+      "business_value": 9,
+      "engineering_difficulty": 8,
+      "competitive_advantage": "very high",
+      "development_time": "4-6 months"
+    },
+    {
+      "technology": "Governed Computational Routing",
+      "idea": "HealthRoute: AI-powered healthcare system that optimizes patient flow and resource allocation in hospitals",
+      "business_value": 9,
+      "engineering_difficulty": 8,
+      "competitive_advantage": "very high",
+      "development_time": "4-6 months"
+    },
+    {
+      "technology": "Reproducible Workflow Orchestration",
+      "idea": "ReproMed: AI-powered healthcare platform that ensures reproducibility and traceability of clinical trials and research workflows",
+      "business_value": 8,
+      "engineering_difficulty": 7,
+      "competitive_advantage": "high",
+      "development_time": "3-6 months"
+    },
+    {
+      "technology": "Dense Reward-Based Grading",
+      "idea": "GradeSmart: AI-powered educational tool that provides detailed, actionable feedback on student assignments and exams",
+      "business_value": 7,
+      "engineering_difficulty": 6,
+      "competitive_advantage": "medium",
+      "development_time": "2-4 weeks"
+    },
+    {
+      "technology": "Long-Horizon Planning",
+      "idea": "PlanAhead: AI-powered project management tool that helps teams visualize and plan long-term goals and milestones",
+      "business_value": 8,
+      "engineering_difficulty": 7,
+      "competitive_advantage": "high",
+      "development_time": "3-6 months"
+    },
+    {
+      "technology": "Long-Context Management",
+      "idea": "ContextMaster: AI-powered document management system that helps users organize, search, and retrieve large volumes of information",
+      "business_value": 7,
+      "engineering_difficulty": 6,
+      "competitive_advantage": "medium",
+      "development_time": "2-4 weeks"
+    },
+    {
+      "technology": "Multimodal Learning",
+      "idea": "MultiBot: AI-powered robot that can learn and adapt to new tasks using a combination of visual, auditory, and tactile inputs",
+      "business_value": 9,
+      "engineering_difficulty": 8,
+      "competitive_advantage": "very high",
+      "development_time": "4-6 months"
+    },
+    {
+      "technology": "Lifelong Learning",
+      "idea": "LearnForever: AI-powered educational platform that enables continuous learning and skill development for students and professionals",
+      "business_value": 8,
+      "engineering_difficulty": 7,
+      "competitive_advantage": "high",
+      "development_time": "3-6 months"
+    },
+    {
+      "technology": "Graph Memory",
+      "idea": "GraphMind: AI-powered knowledge management system that helps users organize, connect, and retrieve information using graph-based memory",
+      "business_value": 7,
+      "engineering_difficulty": 6,
+      "competitive_advantage": "medium",
+      "development_time": "2-4 weeks"
+    },
+    {
+      "technology": "Self-Evolution",
+      "idea": "EvolveBot: AI-powered robot that can continuously improve and adapt its own behavior and performance over time",
+      "business_value": 9,
+      "engineering_difficulty": 8,
+      "competitive_advantage": "very high",
+      "development_time": "4-6 months"
+    },
+    {
+      "technology": "Embodied AI",
+      "idea": "EmbodiedBot: AI-powered robot that can interact with and manipulate objects in the physical world using its own body",
+      "business_value": 9,
+      "engineering_difficulty": 8,
+      "competitive_advantage": "very high",
+      "development_time": "4-6 months"
+    },
+    {
+      "technology": "Conditional Memory",
+      "idea": "Memorize: AI-powered memory aid that helps users remember and recall information based on specific conditions and contexts",
+      "business_value": 7,
+      "engineering_difficulty": 6,
+      "competitive_advantage": "medium",
+      "development_time": "2-4 weeks"
+    },
+    {
+      "technology": "Engram",
+      "idea": "EngramLearn: AI-powered educational tool that helps users create and retrieve personalized learning engrams for better memory and recall",
+      "business_value": 8,
+      "engineering_difficulty": 7,
+      "competitive_advantage": "high",
+      "development_time": "3-6 months"
+    }
+  ]
+}

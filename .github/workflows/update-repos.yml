@@ -1,0 +1,100 @@
+name: Update AI Repos Data
+
+on:
+  schedule:
+    - cron: '0 0 * * *'
+  workflow_dispatch:
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Generate repo data
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          python scripts/generate_data.py
+
+      - name: Generate ideas data
+        env:
+          PRODUCTHUNT_TOKEN: ${{ secrets.PRODUCTHUNT_TOKEN }}
+          REDDIT_CLIENT_ID: ${{ secrets.REDDIT_CLIENT_ID }}
+          REDDIT_CLIENT_SECRET: ${{ secrets.REDDIT_CLIENT_SECRET }}
+          REDDIT_USER_AGENT: idea-scraper/0.1
+          YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
+        run: |
+          python scripts/generate_ideas.py || echo "Ideas scraper completed (some sources may have been skipped)"
+
+      - name: Generate AI landscape data (repos / devs / bots)
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          AILIST_CONTRIB_REPOS: '300'
+        run: |
+          python scripts/generate_ailist.py || echo "AI landscape generation skipped/partial"
+
+      - name: Generate China AI Landscape
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          python scripts/generate_china_landscape.py || echo "China landscape generation skipped"
+
+      - name: Generate AI opportunity report (LLM distillation)
+        env:
+          LLM7_TOKEN: ${{ secrets.LLM7_TOKEN }}
+          REPORT_TOP_N: '25'
+        run: |
+          python scripts/generate_report.py || echo "Report generation skipped (LLM unavailable)"
+
+      - name: Generate CTO Letter
+        run: |
+          python scripts/generate_cto_letter.py || echo "CTO Letter generation skipped"
+
+      - name: Generate Automation Radar
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          python scripts/generate_automation.py || echo "Automation Radar generation skipped"
+
+      - name: Generate Hugging Face Daily Digest
+        run: |
+          python scripts/generate_hf_daily.py || echo "HF Daily Digest generation skipped"
+
+      - name: Generate Daily Top Picks
+        env:
+          PRODUCTHUNT_TOKEN: ${{ secrets.PRODUCTHUNT_TOKEN }}
+        run: |
+          python scripts/generate_daily_top.py || echo "Daily Top Picks generation skipped"
+
+      - name: Generate Agent & Skills Data
+        run: |
+          python scripts/generate_agent_skills.py || echo "Agent & Skills classification skipped"
+
+      - name: Commit and push changes
+        run: |
+          git config user.name "GitHub Actions"
+          git config user.email "actions@github.com"
+          git add data/ website/data/
+          git commit -m "chore: update repos & ideas data [skip ci]" || echo "No changes to commit"
+          git push
+
+      - name: Notify Telegram channel
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHANNEL: ${{ secrets.TELEGRAM_CHANNEL }}
+          TG_THREADS: ${{ secrets.TG_THREADS }}
+        continue-on-error: true
+        run: |
+          python scripts/notify_telegram.py

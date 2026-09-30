@@ -1,0 +1,175 @@
+{
+  "generated_at": "2026-09-30T03:40:02.042233+00:00",
+  "week_of": "2026-39",
+  "meta": {
+    "papers_tracked": 15,
+    "technologies_tracked": 31,
+    "ideas_tracked": 586,
+    "repos_tracked": 1654,
+    "last_research_update": ""
+  },
+  "accelerating_technologies": [
+    {
+      "name": "Multimodal Learning",
+      "description": "Multimodal Learning",
+      "trend": "rising",
+      "confidence": 0.8,
+      "maturity": "medium",
+      "paper_count": 1,
+      "signal": "rising"
+    },
+    {
+      "name": "Reinforcement Learning from Human Feedback",
+      "description": "Reinforcement Learning from Human Feedback",
+      "trend": "rising",
+      "confidence": 0.8,
+      "maturity": "medium",
+      "paper_count": 1,
+      "signal": "rising"
+    },
+    {
+      "name": "Self-Adaptive Latent Reasoning",
+      "description": "Self-Adaptive Latent Reasoning",
+      "trend": "rising",
+      "confidence": 0.8,
+      "maturity": "medium",
+      "paper_count": 1,
+      "signal": "rising"
+    }
+  ],
+  "startup_ideas_with_revenue": [
+    {
+      "title": "Show HN: San Francisco Compute – 512 H100s at <$2/hr for research and startups",
+      "url": "https://sfcompute.org/",
+      "revenue_signal": "$2",
+      "source": "hackernews",
+      "category": "",
+      "business_model": null,
+      "ai_potential": 45,
+      "score": 727
+    },
+    {
+      "title": "Show HN: Non.io, a Reddit-like platform Ive been working on for the last 4 years",
+      "url": "https://non.io",
+      "revenue_signal": "$2",
+      "source": "hackernews",
+      "category": "",
+      "business_model": "subscription,marketplace,ads,freemium",
+      "ai_potential": 40,
+      "score": 1943
+    },
+    {
+      "title": "Build a free chrome extension, added an optional subscription. Here's how I'm thinking about the free/paid split.",
+      "url": "https://reddit.com/r/SaaS/comments/1wtsich/",
+      "revenue_signal": "$4",
+      "source": "reddit",
+      "category": "",
+      "business_model": "subscription,freemium",
+      "ai_potential": 40,
+      "score": 0
+    }
+  ],
+  "hidden_gems": [
+    {
+      "technology": "Long-Horizon Sequential Decision Making",
+      "description": "Long-Horizon Sequential Decision Making",
+      "confidence": 0.7,
+      "paper_count": 1,
+      "related_papers": [
+        {
+          "title": "ECG-Scroll: A Long-Horizon, Streaming Benchmark and Agent Environment for Interpretation of Ambulatory Electrocardiograms",
+          "url": ""
+        }
+      ]
+    },
+    {
+      "technology": "Streaming Benchmark",
+      "description": "Streaming Benchmark",
+      "confidence": 0.7,
+      "paper_count": 1,
+      "related_papers": [
+        {
+          "title": "ECG-Scroll: A Long-Horizon, Streaming Benchmark and Agent Environment for Interpretation of Ambulatory Electrocardiograms",
+          "url": ""
+        }
+      ]
+    }
+  ],
+  "notable_repos": [
+    {
+      "name": "codecrafters-io/build-your-own-x",
+      "url": "https://github.com/codecrafters-io/build-your-own-x",
+      "description": "Master programming by recreating your favorite technologies from scratch.",
+      "stars": 550702,
+      "language": "Markdown",
+      "topics": [
+        "awesome-list",
+        "free",
+        "programming",
+        "tutorial-code",
+        "tutorial-exercises"
+      ],
+      "category": "Applications"
+    },
+    {
+      "name": "sindresorhus/awesome",
+      "url": "https://github.com/sindresorhus/awesome",
+      "description": "😎 Awesome lists about all kinds of interesting topics [NOTE: Pull requests are temporarily disabled until I have a chance to catch up with the existing ones]",
+      "stars": 512508,
+      "language": "",
+      "topics": [
+        "awesome",
+        "awesome-list",
+        "lists",
+        "resources",
+        "unicorns"
+      ],
+      "category": "Research & Knowledge"
+    },
+    {
+      "name": "public-apis/public-apis",
+      "url": "https://github.com/public-apis/public-apis",
+      "description": "A collective list of free APIs",
+      "stars": 484436,
+      "language": "Python",
+      "topics": [
+        "api",
+        "apis",
+        "dataset",
+        "development",
+        "free"
+      ],
+      "category": "Data & Evaluation"
+    },
+    {
+      "name": "EbookFoundation/free-programming-books",
+      "url": "https://github.com/EbookFoundation/free-programming-books",
+      "description": ":books: Freely available programming books",
+      "stars": 398174,
+      "language": "Python",
+      "topics": [
+        "books",
+        "education",
+        "hacktoberfest",
+        "list",
+        "resource"
+      ],
+      "category": "Other"
+    },
+    {
+      "name": "openclaw/openclaw",
+      "url": "https://github.com/openclaw/openclaw",
+      "description": "The AI that really does things. Any OS. Any Platform. The lobster way. 🦞 ",
+      "stars": 390803,
+      "language": "TypeScript",
+      "topics": [
+        "ai",
+        "assistant",
+        "crustacean",
+        "molty",
+        "openclaw"
+      ],
+      "category": "Applications"
+    }
+  ]
+}

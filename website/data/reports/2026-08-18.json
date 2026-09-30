@@ -1,0 +1,540 @@
+{
+  "date": "2026-08-18",
+  "generated_at": "2026-08-18T01:05:56.531075+00:00",
+  "backend": "llm7",
+  "model": "default",
+  "brief": [
+    "Ponytail is the single best bet: prompt engineering that makes AI code as lean as a lazy senior dev. Opportunity 9/10, breakout timing now.",
+    "Open-design turns agent outputs into professional design assets locally—perfect for the agent-to-product pipeline, breakout momentum building.",
+    "SVG diagram templates for Claude Code (no Mermaid slop) solves a real pain point; clean output, ready for breakout adoption.",
+    "Orca is the open-source ADE for orchestrating parallel coding agents with BYO subscriptions—infra layer ready to break out.",
+    "Keep an eye on skills (mattpocock) for real engineering workflows; it's quick-win tooling that could ride the breakout wave."
+  ],
+  "items": [
+    {
+      "name": "DietrichGebert/ponytail",
+      "url": "https://github.com/DietrichGebert/ponytail",
+      "stars": 104748,
+      "category": "Developer Tools",
+      "delta_7d": 4609,
+      "delta_7d_pct": 4.6,
+      "timing": "breakout",
+      "signals": [],
+      "cross_signal": false,
+      "one_liner": "AI prompts that cut generated code to lazy senior dev minimum.",
+      "pain_point": "AI assistants generate over-engineered, verbose code, wasting dev review time; tech leads and staff engineers pay to keep codebases minimal.",
+      "app_ideas": [
+        "CLI preprocessor that rewrites prompts for Copilot/Cursor to demand minimal, skip-able code",
+        "PR review bot that flags and annotates over-engineered AI-generated diffs with simpler alternatives",
+        "VS Code extension that scores generated snippets on 'laziness' and auto-suggests deletions"
+      ],
+      "monetization": "Freemium per-seat for devs, plus B2B API wrapper for teams enforcing code-minimalism policies",
+      "opportunity": 9,
+      "why_now": "AI codegen explosion means millions of devs are drowning in verbose output; lazy-minimal is the killer differentiator."
+    },
+    {
+      "name": "nexu-io/open-design",
+      "url": "https://github.com/nexu-io/open-design",
+      "stars": 88319,
+      "category": "Vision & Media",
+      "delta_7d": 3405,
+      "delta_7d_pct": 4.01,
+      "timing": "breakout",
+      "signals": [],
+      "cross_signal": false,
+      "one_liner": "Local-first AI engine converting coding agent outputs into professional design assets.",
+      "pain_point": "Developers struggle to turn code-based prototypes into polished, exportable assets for stakeholders.",
+      "app_ideas": [
+        "AI-to-Slide: A CLI tool converting Markdown/Codebase summaries into branded, editable PPTX decks.",
+        "Component-to-Video: A plugin turning React component code into high-fidelity product demo MP4s.",
+        "Landing-Page-Generator: A local app that exports production-ready HTML/Tailwind templates from design prompts."
+      ],
+      "monetization": "Freemium with a Pro subscription for advanced export formats and team collaboration features.",
+      "opportunity": 9,
+      "why_now": "The rise of coding agents creates a massive downstream need for non-code asset generation."
+    },
+    {
+      "name": "cathrynlavery/diagram-design",
+      "url": "https://github.com/cathrynlavery/diagram-design",
+      "stars": 20690,
+      "category": "Developer Tools",
+      "delta_7d": 15931,
+      "delta_7d_pct": 334.76,
+      "timing": "breakout",
+      "signals": [],
+      "cross_signal": false,
+      "one_liner": "Clean SVG diagram templates for Claude Code, no Mermaid slop",
+      "pain_point": "AI coding tools generate visually messy, inconsistent diagrams; developers and teams need publication-quality architecture/flow visuals for docs, PRs, and client deliverables",
+      "app_ideas": [
+        "API that turns text descriptions into editorial-style SVG diagrams, sold as a docs/chat widget",
+        "VSCode/Cursor extension generating clean diagrams from code structure or comments on the fly",
+        "Static-site generator plugin for technical docs that auto-renders diagrams from simple text specs"
+      ],
+      "monetization": "B2B API wrapper with freemium tier and usage-based pricing",
+      "opportunity": 8,
+      "why_now": "334% weekly star surge proves exploding demand for AI-native diagramming with no dominant standard yet"
+    },
+    {
+      "name": "public-apis/public-apis",
+      "url": "https://github.com/public-apis/public-apis",
+      "stars": 463220,
+      "category": "Data & Evaluation",
+      "delta_7d": 7851,
+      "delta_7d_pct": 1.72,
+      "timing": "breakout",
+      "signals": [],
+      "cross_signal": false,
+      "one_liner": "Curated directory of free public APIs for developers.",
+      "pain_point": "Developers waste hours discovering, vetting, and integrating APIs; companies pay for tools that reduce integration friction and ensure API reliability.",
+      "app_ideas": [
+        "API health monitor: tracks uptime, latency, and breaking changes for listed public APIs with alerts and dashboards.",
+        "Unified API gateway: one SDK/key to access multiple free APIs, with caching, rate-limit handling, and response normalization.",
+        "API comparison and codegen tool: interactive filterable explorer that auto-generates client code snippets for any listed API."
+      ],
+      "monetization": "B2B API wrapper with freemium tier: paid plans for reliability, advanced filtering, team collaboration, and support.",
+      "opportunity": 8,
+      "why_now": "Explosion of new APIs and LLM tooling demands a trustworthy, automated discovery and monitoring layer beyond a static list."
+    },
+    {
+      "name": "mattpocock/skills",
+      "url": "https://github.com/mattpocock/skills",
+      "stars": 220338,
+      "category": "Agents & Automation",
+      "delta_7d": 7759,
+      "delta_7d_pct": 3.65,
+      "timing": "breakout",
+      "signals": [],
+      "cross_signal": false,
+      "one_liner": "Curated AI agent skills for real engineering workflows",
+      "pain_point": "Developers waste time hand-crafting agent instructions; teams lack standardized, tested skills. Payers: dev teams, solo engineers, AI tooling vendors.",
+      "app_ideas": [
+        "A CLI/GUI skill manager to install, update, and share agent skills across repos and projects",
+        "A team workspace to collaboratively version, review, and deploy agent skills with CI checks",
+        "A curated skills marketplace with ratings, compatibility badges, and one-click integration into Claude/Codex/open-source agents"
+      ],
+      "monetization": "Freemium: free basic skill library, paid premium skill packs and team collaboration features; B2B API for enterprise skill management",
+      "opportunity": 8,
+      "why_now": "Agent skills are the new plugins; this repo's 3.65% weekly star surge shows massive demand from engineers standardizing AI workflows."
+    },
+    {
+      "name": "stablyai/orca",
+      "url": "https://github.com/stablyai/orca",
+      "stars": 47421,
+      "category": "Developer Tools",
+      "delta_7d": 5638,
+      "delta_7d_pct": 13.49,
+      "timing": "breakout",
+      "signals": [],
+      "cross_signal": false,
+      "one_liner": "Open-source ADE for orchestrating parallel coding agents with BYO subscriptions",
+      "pain_point": "Developers and agencies juggling multiple coding agents waste time switching contexts, lose visibility, and duplicate work; they need a self-hosted control plane to run many agents in parallel while keeping their own API subscriptions. Paying users: solo devs, dev shops, and AI-first SaaS teams.",
+      "app_ideas": [
+        "Agent Fleet Dashboard: web UI to assign tasks, monitor running parallel agents, and review outputs across projects",
+        "BYO-Key Agent Gateway: proxy that normalizes Claude/GPT/Cursor APIs into one Orca-compatible interface with cost metering and rate-limit controls",
+        "Mobile Approver: companion app to review agent diffs, approve actions, and trigger new parallel jobs from your phone"
+      ],
+      "monetization": "B2B API wrapper / self-hosted freemium: free core, paid features for teams (SSO, audit logs, shared dashboards, usage analytics)",
+      "opportunity": 8,
+      "why_now": "Agentic coding demand is exploding but orchestration tooling is still nascent; Orca's rapid star growth signals a gap for parallel multi-agent workflows"
+    },
+    {
+      "name": "xai-org/x-algorithm",
+      "url": "https://github.com/xai-org/x-algorithm",
+      "stars": 31783,
+      "category": "Other",
+      "delta_7d": 4815,
+      "delta_7d_pct": 17.85,
+      "timing": "breakout",
+      "signals": [],
+      "cross_signal": false,
+      "one_liner": "Open-source recommendation algorithm powering X's For You feed",
+      "pain_point": "Building a personalized feed from scratch is hard and generic ranking kills retention; startups and social platforms will pay for proven discovery",
+      "app_ideas": [
+        "Feed-as-a-Service API wrapping the algorithm for any new social app",
+        "Creator ranking analyzer that explains why posts surface and how to optimize",
+        "Niche community recommender for Reddit/Discord to surface top content automatically"
+      ],
+      "monetization": "B2B API wrapper / vertical SaaS",
+      "opportunity": 8,
+      "why_now": "xAI just open-sourced it; early movers can spin up alternative discovery engines before Big Tech matches it"
+    },
+    {
+      "name": "diegosouzapw/OmniRoute",
+      "url": "https://github.com/diegosouzapw/OmniRoute",
+      "stars": 49844,
+      "category": "Developer Tools",
+      "delta_7d": 4647,
+      "delta_7d_pct": 10.28,
+      "timing": "breakout",
+      "signals": [],
+      "cross_signal": false,
+      "one_liner": "Unified AI API gateway aggregating 340 providers with auto-fallback.",
+      "pain_point": "Developers and teams waste time on vendor-specific SDKs, hit quota limits, and overpay for LLM APIs; they need one abstraction with intelligent routing and cost optimization.",
+      "app_ideas": [
+        "Smart API fallback proxy: a self-hosted reverse proxy that automatically retries failed LLM calls across providers, includes caching and retry logic, configurable per-model.",
+        "LLM cost & quota analytics dashboard: a lightweight SaaS that ingests usage logs from the gateway and gives per-team spend alerts, model recommendations, and budget controls.",
+        "One-click CLI wrapper for coding assistants: a drop-in binary that makes Claude Code/Codex/Cursor switch between GPT, Gemini, Kimi, and DeepSeek with zero config changes."
+      ],
+      "monetization": "Open-core freemium: free MIT gateway, paid cloud hosting, advanced team analytics, role-based access, and priority support.",
+      "opportunity": 8,
+      "why_now": "Generative AI usage is exploding but provider fragmentation and pricing chaos peaked; the 10% weekly star growth shows massive developer demand for a neutral aggregation layer."
+    },
+    {
+      "name": "semantica-agi/semantica",
+      "url": "https://github.com/semantica-agi/semantica",
+      "stars": 8579,
+      "category": "Infrastructure",
+      "delta_7d": 4470,
+      "delta_7d_pct": 108.79,
+      "timing": "breakout",
+      "signals": [],
+      "cross_signal": false,
+      "one_liner": "Graph-native context layer for accountable AI agents",
+      "pain_point": "LLMs lack persistent structured context and audit trails, making AI decisions hard to trust in regulated industries; enterprises in finance, healthcare, and legal will pay for verifiable context.",
+      "app_ideas": [
+        "Compliance auditor for AI agents: build a knowledge graph of every agent decision and auto-generate audit reports",
+        "Support bot context hub: unify customer data into a graph, giving live LLM context with provenance for each answer",
+        "Personal AI memory: connect notes/files/contacts into a graph for a privacy-focused assistant"
+      ],
+      "monetization": "B2B API wrapper / vertical SaaS with freemium developer tier",
+      "opportunity": 8,
+      "why_now": "4470 stars in a week signals explosive GraphRAG/agent-memory demand, but infrastructure whitespace is still wide open."
+    },
+    {
+      "name": "github/spec-kit",
+      "url": "https://github.com/github/spec-kit",
+      "stars": 129839,
+      "category": "Applications",
+      "delta_7d": 3727,
+      "delta_7d_pct": 2.96,
+      "timing": "breakout",
+      "signals": [],
+      "cross_signal": false,
+      "one_liner": "Standardized toolkit for accelerating spec-driven software development workflows.",
+      "pain_point": "Developers waste time on inconsistent API/schema documentation; enterprise teams pay for reliable contract-first development.",
+      "app_ideas": [
+        "AI-powered OpenAPI spec generator that converts natural language prompts into production-ready schemas.",
+        "Automated contract testing dashboard that validates API endpoints against specs in CI/CD pipelines.",
+        "Spec-to-SDK generator that builds type-safe client libraries for niche programming languages."
+      ],
+      "monetization": "B2B SaaS subscription for teams or per-project licensing for enterprise compliance tools.",
+      "opportunity": 8,
+      "why_now": "Rising complexity in microservices and AI-agent integrations demands stricter contract-first development standards."
+    },
+    {
+      "name": "NousResearch/hermes-agent",
+      "url": "https://github.com/NousResearch/hermes-agent",
+      "stars": 232033,
+      "category": "Agents & Automation",
+      "delta_7d": 3565,
+      "delta_7d_pct": 1.56,
+      "timing": "breakout",
+      "signals": [],
+      "cross_signal": false,
+      "one_liner": "AI agent that adapts and grows with users",
+      "pain_point": "Helps users automate tasks and grow their digital presence, appealing to solo entrepreneurs, small businesses, and tech-savvy individuals",
+      "app_ideas": [
+        "Personal AI assistant for task automation and productivity",
+        "AI-powered content creator for social media and blogs",
+        "AI-driven customer support chatbot for small businesses"
+      ],
+      "monetization": "Freemium with premium features and enterprise API access",
+      "opportunity": 8,
+      "why_now": "Rising demand for AI automation and personal assistants"
+    },
+    {
+      "name": "firecrawl/firecrawl",
+      "url": "https://github.com/firecrawl/firecrawl",
+      "stars": 168641,
+      "category": "Agents & Automation",
+      "delta_7d": 3559,
+      "delta_7d_pct": 2.16,
+      "timing": "breakout",
+      "signals": [],
+      "cross_signal": false,
+      "one_liner": "Turns entire websites into clean, LLM-ready markdown for automated workflows.",
+      "pain_point": "Developers struggle with brittle web scrapers and messy HTML; AI agents need structured data to function reliably.",
+      "app_ideas": [
+        "Automated competitor pricing tracker that updates a Google Sheet daily.",
+        "AI-powered newsletter aggregator that summarizes niche industry blogs into weekly digests.",
+        "Lead generation tool that scrapes company 'Careers' pages to find specific hiring patterns."
+      ],
+      "monetization": "B2B SaaS subscription with tiered usage limits based on page credits.",
+      "opportunity": 8,
+      "why_now": "The explosion of AI agents has created an urgent, massive demand for high-quality, structured web context."
+    },
+    {
+      "name": "harry0703/MoneyPrinterTurbo",
+      "url": "https://github.com/harry0703/MoneyPrinterTurbo",
+      "stars": 106024,
+      "category": "Vision & Media",
+      "delta_7d": 3527,
+      "delta_7d_pct": 3.44,
+      "timing": "breakout",
+      "signals": [],
+      "cross_signal": false,
+      "one_liner": "Automated AI-driven short-form video generation from text prompts.",
+      "pain_point": "Content creators and marketers struggle with high production costs and time-intensive editing for viral short-form video content.",
+      "app_ideas": [
+        "Niche affiliate marketing video generator for Amazon/TikTok Shop products.",
+        "Automated daily news-to-video summarizer for LinkedIn thought leaders.",
+        "Real estate listing video creator that turns property photos and descriptions into walkthrough reels."
+      ],
+      "monetization": "Freemium subscription with credit-based rendering limits.",
+      "opportunity": 8,
+      "why_now": "Short-form video reach is peaking while AI video generation quality has reached a viable commercial threshold."
+    },
+    {
+      "name": "unslothai/unsloth",
+      "url": "https://github.com/unslothai/unsloth",
+      "stars": 73225,
+      "category": "Vision & Media",
+      "delta_7d": 3367,
+      "delta_7d_pct": 4.82,
+      "timing": "breakout",
+      "signals": [],
+      "cross_signal": false,
+      "one_liner": "Local UI to train and run LLMs and diffusion models efficiently.",
+      "pain_point": "Developers and SMBs need simple, private fine-tuning of large models without complex infrastructure; they'd pay for a user-friendly local hub.",
+      "app_ideas": [
+        "One-click fine-tuning studio for niche vertical datasets with preset recipes and auto-evaluation.",
+        "Local model garden: download, compare, and serve LLMs/diffusion models behind a single UI with benchmarks.",
+        "Dataset-to-deployment pipeline: clean data, fine-tune, and export to GGUF/Ollama with versioning."
+      ],
+      "monetization": "Freemium with pro tiers for unlimited runs; B2B API wrapper for private on-prem deployments.",
+      "opportunity": 8,
+      "why_now": "Explosive momentum (3.4K stars/week) signals demand for local model control amid privacy and cost shifts."
+    },
+    {
+      "name": "usestrix/strix",
+      "url": "https://github.com/usestrix/strix",
+      "stars": 54172,
+      "category": "Developer Tools",
+      "delta_7d": 3349,
+      "delta_7d_pct": 6.59,
+      "timing": "breakout",
+      "signals": [],
+      "cross_signal": false,
+      "one_liner": "AI-powered open-source pen testing tool for app vulnerabilities.",
+      "pain_point": "SMBs and indie devs can't afford expensive security audits, yet need to find and fix vulnerabilities before attackers exploit them. They'd pay for a cheaper, automated, AI-driven alternative.",
+      "app_ideas": [
+        "Automated security report generator that scans a GitHub repo with Strix and produces a plain-English prioritized fix list.",
+        "CI/CD GitHub Action wrapper that runs Strix on every PR and blocks merges with critical vulns.",
+        "Managed SaaS dashboard that runs Strix on a schedule, monitors new CVEs, and sends alerts with suggested patches."
+      ],
+      "monetization": "Freemium SaaS: free for open-source projects, paid tiers for private repos and advanced reporting; or B2B API wrapper for security teams.",
+      "opportunity": 8,
+      "why_now": "AI security tools are hot (3349 stars/week), yet open-source pen testing has few turnkey products—first-mover advantage for automated human-friendly wrappers."
+    },
+    {
+      "name": "TencentCloud/TencentDB-Agent-Memory",
+      "url": "https://github.com/TencentCloud/TencentDB-Agent-Memory",
+      "stars": 22622,
+      "category": "Infrastructure",
+      "delta_7d": 3210,
+      "delta_7d_pct": 16.54,
+      "timing": "breakout",
+      "signals": [],
+      "cross_signal": false,
+      "one_liner": "Team-level governed memory hub that equips AI agents across frameworks",
+      "pain_point": "AI agents lose context and teams lack a shared, governed knowledge base for conversations, docs, and code — paid by AI-native teams and enterprises building multi-agent workflows",
+      "app_ideas": [
+        "Slack/Teams memory bridge: ingest channel chats into shared Chat Memory, letting any agent answer with full team context",
+        "Dev onboarding copilot: use Code-Graph + LLM-Wiki to auto-generate repo guides and answer new-hire questions",
+        "Agent memory admin console: manage, curate, and version skill/wiki assets for customer-support AI teams"
+      ],
+      "monetization": "B2B API wrapper / vertical SaaS with freemium team tier, usage-based for enterprise governance",
+      "opportunity": 8,
+      "why_now": "Weekly star growth of 16.5% signals urgent demand for persistent, shareable agent memory as multi-agent frameworks hit production"
+    },
+    {
+      "name": "obra/superpowers",
+      "url": "https://github.com/obra/superpowers",
+      "stars": 273219,
+      "category": "Agents & Automation",
+      "delta_7d": 2984,
+      "delta_7d_pct": 1.1,
+      "timing": "breakout",
+      "signals": [],
+      "cross_signal": false,
+      "one_liner": "Agentic skills framework for software development",
+      "pain_point": "Developers struggle with repetitive tasks and lack a structured approach to building agentic applications. Enterprises pay for productivity tools and custom software solutions.",
+      "app_ideas": [
+        "A no-code platform for creating and managing agentic workflows for small businesses",
+        "A plugin for popular IDEs that automates common development tasks using agentic skills",
+        "A SaaS solution for enterprises to manage and scale their agentic applications"
+      ],
+      "monetization": "Freemium model with enterprise pricing for advanced features and support",
+      "opportunity": 8,
+      "why_now": "Increased interest in AI and automation, with a growing demand for agentic applications"
+    },
+    {
+      "name": "bojieli/ai-agent-book",
+      "url": "https://github.com/bojieli/ai-agent-book",
+      "stars": 38517,
+      "category": "Agents & Automation",
+      "delta_7d": 2818,
+      "delta_7d_pct": 7.89,
+      "timing": "breakout",
+      "signals": [],
+      "cross_signal": false,
+      "one_liner": "AI Agent design principles and engineering practices book",
+      "pain_point": "Helps developers understand AI agents and build them, solving the need for AI automation in various industries",
+      "app_ideas": [
+        "AI-powered personal assistant for developers",
+        "AI-driven customer support chatbot for small businesses",
+        "AI agent for automating repetitive tasks in a specific industry"
+      ],
+      "monetization": "Freemium model with premium features and enterprise support",
+      "opportunity": 8,
+      "why_now": "Increased interest in AI and automation due to COVID-19 and remote work trends"
+    },
+    {
+      "name": "zhaoxuya520/reverse-skill",
+      "url": "https://github.com/zhaoxuya520/reverse-skill",
+      "stars": 26026,
+      "category": "Developer Tools",
+      "delta_7d": 2670,
+      "delta_7d_pct": 11.43,
+      "timing": "breakout",
+      "signals": [],
+      "cross_signal": false,
+      "one_liner": "AI-powered automated security research and reverse engineering agentic workflow orchestrator.",
+      "pain_point": "Security researchers waste hours manually bootstrapping toolchains and context-switching between fragmented reverse engineering utilities.",
+      "app_ideas": [
+        "Automated Vulnerability Scanner: A Cline-integrated agent that auto-configures Ghidra/IDA environments for specific binary analysis tasks.",
+        "Security Knowledge Base SaaS: A RAG-powered platform that indexes internal pentest reports and maps them to automated tool execution scripts.",
+        "Compliance Auditor Agent: A tool that auto-scans infrastructure-as-code against security benchmarks using the repo's routing logic."
+      ],
+      "monetization": "B2B SaaS subscription for enterprise security teams or premium per-seat licensing for independent researchers.",
+      "opportunity": 8,
+      "why_now": "The rise of agentic coding environments (Claude Code/Cursor) makes specialized domain-specific tool orchestration highly viable."
+    },
+    {
+      "name": "anomalyco/opencode",
+      "url": "https://github.com/anomalyco/opencode",
+      "stars": 198479,
+      "category": "Agents & Automation",
+      "delta_7d": 2663,
+      "delta_7d_pct": 1.36,
+      "timing": "breakout",
+      "signals": [],
+      "cross_signal": false,
+      "one_liner": "Autonomous AI agent for end-to-end software development and codebase maintenance.",
+      "pain_point": "Developers waste hours on boilerplate, refactoring, and bug fixes; enterprise teams pay for efficiency.",
+      "app_ideas": [
+        "Automated PR reviewer that enforces custom architectural patterns and security standards.",
+        "Legacy codebase migration agent that translates monolithic modules into microservices.",
+        "Self-healing test suite generator that updates unit tests when business logic changes."
+      ],
+      "monetization": "B2B SaaS subscription for teams or per-repository usage-based pricing.",
+      "opportunity": 8,
+      "why_now": "LLM reasoning capabilities have finally reached the threshold for reliable multi-file code manipulation."
+    },
+    {
+      "name": "virgiliojr94/book-to-skill",
+      "url": "https://github.com/virgiliojr94/book-to-skill",
+      "stars": 22558,
+      "category": "Other",
+      "delta_7d": 2535,
+      "delta_7d_pct": 12.66,
+      "timing": "breakout",
+      "signals": [],
+      "cross_signal": false,
+      "one_liner": "Convert technical PDFs into interactive, context-aware AI coding assistants.",
+      "pain_point": "Developers struggle to apply complex concepts from massive technical books to real-time coding tasks.",
+      "app_ideas": [
+        "SaaS platform that ingests O'Reilly/Packt PDFs to create specialized, project-integrated coding agents.",
+        "Chrome extension that turns documentation PDFs into sidebar chat interfaces for active development.",
+        "Enterprise internal tool for onboarding devs by converting proprietary technical manuals into queryable AI mentors."
+      ],
+      "monetization": "Subscription-based SaaS with tier-based PDF upload limits.",
+      "opportunity": 8,
+      "why_now": "The rise of Claude Code and agentic workflows makes 'context-as-a-service' highly valuable for developer productivity."
+    },
+    {
+      "name": "Graphify-Labs/graphify",
+      "url": "https://github.com/Graphify-Labs/graphify",
+      "stars": 107516,
+      "category": "Developer Tools",
+      "delta_7d": 2515,
+      "delta_7d_pct": 2.4,
+      "timing": "breakout",
+      "signals": [],
+      "cross_signal": false,
+      "one_liner": "Queryable knowledge graph for codebases using deterministic AST parsing.",
+      "pain_point": "Developers waste hours navigating complex, undocumented legacy codebases; enterprise engineering teams would pay for instant architectural clarity.",
+      "app_ideas": [
+        "Graphify-Docs: Auto-generating real-time sequence diagrams and dependency maps for GitHub repos.",
+        "Graphify-Audit: A security tool that maps data flow from SQL schemas to API endpoints to identify PII leaks.",
+        "Graphify-Onboard: A CLI tool that generates a 'knowledge map' for new hires to query codebase logic."
+      ],
+      "monetization": "B2B SaaS with tiered pricing based on repo size and team seat count.",
+      "opportunity": 8,
+      "why_now": "LLMs are currently hallucinating codebase context; deterministic graph-based retrieval is the necessary next step for reliable AI coding agents."
+    },
+    {
+      "name": "msitarzewski/agency-agents",
+      "url": "https://github.com/msitarzewski/agency-agents",
+      "stars": 145993,
+      "category": "Agents & Automation",
+      "delta_7d": 4156,
+      "delta_7d_pct": 2.93,
+      "timing": "breakout",
+      "signals": [],
+      "cross_signal": false,
+      "one_liner": "An AI agency of specialized expert agents with distinct personalities",
+      "pain_point": "Businesses need diverse expert work (marketing, social, support) but lack turnkey multi-agent orchestration; agencies would pay for out-of-the-box team outputs",
+      "app_ideas": [
+        "Agency-in-a-box SaaS: deploy a team of AI specialists per client project, with handoff workflows and branded deliverables",
+        "Reddit/community ninja bot: auto-engage on Reddit, Discord, or forums with persona-driven replies and reputation management",
+        "Brand voice whimsy injector: API that rewrites dry copy into personality-rich content for marketing teams"
+      ],
+      "monetization": "B2B vertical SaaS with usage-based subscription tiers, or an API wrapper for agency workflows",
+      "opportunity": 7,
+      "why_now": "Star growth of 2.93% weekly signals surging demand for persona-driven multi-agent teams during the LLM agent explosion"
+    },
+    {
+      "name": "liquidslr/system-design-notes",
+      "url": "https://github.com/liquidslr/system-design-notes",
+      "stars": 12347,
+      "category": "Applications",
+      "delta_7d": 3568,
+      "delta_7d_pct": 40.64,
+      "timing": "breakout",
+      "signals": [],
+      "cross_signal": false,
+      "one_liner": "Comprehensive study notes for mastering technical system design interviews.",
+      "pain_point": "Engineers struggle to synthesize massive architectural concepts; job seekers pay for structured, actionable preparation.",
+      "app_ideas": [
+        "Interactive system design diagram builder with pre-built templates for common interview patterns.",
+        "AI-powered mock interview simulator that critiques architectural trade-offs in real-time.",
+        "Flashcard-based spaced repetition platform specifically for system design scaling constraints."
+      ],
+      "monetization": "Freemium SaaS with paywalled advanced architectural patterns and mock interview credits.",
+      "opportunity": 7,
+      "why_now": "High-interest rate environment is forcing engineers to upskill for competitive, high-paying roles."
+    },
+    {
+      "name": "sindresorhus/awesome",
+      "url": "https://github.com/sindresorhus/awesome",
+      "stars": 496998,
+      "category": "Research & Knowledge",
+      "delta_7d": 2661,
+      "delta_7d_pct": 0.54,
+      "timing": "breakout",
+      "signals": [],
+      "cross_signal": false,
+      "one_liner": "A curated directory of the best resources for every technical niche.",
+      "pain_point": "Information overload; developers waste hours vetting high-quality learning resources from noise.",
+      "app_ideas": [
+        "AI-powered search engine that indexes and summarizes all GitHub awesome lists.",
+        "Browser extension that injects 'Awesome' resource recommendations directly into Google search results.",
+        "Personalized 'Learning Path' generator that compiles awesome list links into structured curricula."
+      ],
+      "monetization": "Freemium SaaS for curated, interactive learning paths and progress tracking.",
+      "opportunity": 7,
+      "why_now": "LLMs can now synthesize fragmented markdown lists into structured, actionable knowledge graphs."
+    }
+  ]
+}

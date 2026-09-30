@@ -1,0 +1,1129 @@
+{
+  "meta": {
+    "date": "2026-07-16",
+    "papers_tracked": 15,
+    "technologies_discovered": 38,
+    "opportunities_identified": 15,
+    "last_update": "2026-07-16 07:35 UTC",
+    "backend": "llm7",
+    "model": "Research Curator v1"
+  },
+  "brief": [],
+  "top_cards": [
+    {
+      "id": "new_technologies",
+      "title": "New Technologies",
+      "value": "38",
+      "label": "discovered this scan",
+      "detail": "Multimodal Learning, Reinforcement Learning from Human Feedback, Retrieval Augmented Generation, Large Language Models, Reinforcement Learning, Benchmarking, Long-Horizon Planning, Neuro-Symbolic AI",
+      "color": "accent"
+    },
+    {
+      "id": "emerging_trends",
+      "title": "Emerging Trends",
+      "value": "38",
+      "label": "active trend clusters",
+      "detail": "Reinforcement Learning from Human Feedback, Retrieval Augmented Generation, Multi-Agent Systems, Multimodal Learning, Large Language Models",
+      "color": "green"
+    },
+    {
+      "id": "highest_potential",
+      "title": "Highest Potential",
+      "value": "8.0",
+      "label": "avg opportunity score",
+      "detail": "Beyond Description: Cognitively Benchmarking Fine-Grained Action for Embodied Ag",
+      "color": "amber"
+    },
+    {
+      "id": "biggest_surprise",
+      "title": "Biggest Surprise",
+      "value": "Beyond Description: Cognitivel",
+      "label": "confidence 70%",
+      "detail": "",
+      "color": "purple"
+    },
+    {
+      "id": "most_practical",
+      "title": "Most Practical",
+      "value": "Infinity-Parser2 Technical Rep",
+      "label": "highest confidence paper",
+      "detail": "A document parsing and analysis tool for enterprises to automate data extraction from diverse document types., A low-latency document processing API for real-time applications in healthcare and finance.",
+      "color": "success"
+    },
+    {
+      "id": "most_innovative",
+      "title": "Most Innovative",
+      "value": "10",
+      "label": "early-stage technologies",
+      "detail": "Infinity-Parser2 Technical Report",
+      "color": "blue"
+    }
+  ],
+  "papers": [
+    {
+      "id": "2511.18685",
+      "title": "Beyond Description: Cognitively Benchmarking Fine-Grained Action for Embodied Agents",
+      "authors": [],
+      "categories": [
+        "cs.CV"
+      ],
+      "published": "2026-07-16",
+      "updated": "2026-07-16",
+      "summary": "arXiv:2511.18685v4 Announce Type: replace Abstract: Multimodal Large Language Models (MLLMs) show promising results as decision-making engines for embodied agents operating in complex, physical environments. However, existing benchmarks often prioritize high-level planning or spatial reasoning, leaving the fine-grained action intelligence required for embodied physical interaction underexplored. To address this gap, we introduce CFG-Bench, a new benchmark designed to systematically evaluate this crucial capability. CFG-Bench consists of 1,368 curated videos paired with 19,562 question-answer pairs spanning three evaluation paradigms targeting four cognitive abilities: 1) Physical Interaction, 2) Temporal-Causal Relation, 3) Intentional Understanding, and 4) Evaluative Judgment. Together, these dimensions provide a systematic framework for assessing a model's ability to translate visual observations into actionable knowledge, moving beyond mere surface-level recognition. Our comprehensive evaluation on CFG-Bench reveals that leading MLLMs struggle to produce detailed instructions for physical interactions and exhibit profound limitations in the higher-order reasoning of intention and evaluation. Moreover, supervised fine-tuning (SFT) on our data demonstrates that teaching an MLLMs to articulate fine-grained actions directly translates to significant performance gains on established embodied benchmarks. Our analysis highlights these limitations and offers insights for developing more capable and grounded embodied agents. Project page: https://cfg-bench.github.io/",
+      "pdf_url": "https://arxiv.org/abs/2511.18685",
+      "comment": "",
+      "technologies": [
+        "Multimodal Learning",
+        "Benchmarking"
+      ],
+      "maturity": "early",
+      "confidence": 0.7,
+      "curator_score": 6.0,
+      "product_potential": [
+        "Developing a virtual assistant that can provide detailed, context-aware instructions for physical tasks based on visual input.",
+        "Creating a training platform for embodied agents to improve their ability to understand and execute fine-grained actions in real-world scenarios."
+      ],
+      "domain_applications": [
+        "robotics",
+        "education",
+        "accessibility"
+      ]
+    },
+    {
+      "id": "2607.07836",
+      "title": "Infinity-Parser2 Technical Report",
+      "authors": [],
+      "categories": [
+        "cs.AI"
+      ],
+      "published": "2026-07-16",
+      "updated": "2026-07-16",
+      "summary": "arXiv:2607.07836v3 Announce Type: replace Abstract: We present Infinity-Parser2, a large multimodal model that couples a controllable data-synthesis pipeline with multi-task reinforcement learning for end-to-end document parsing, addressing the persistent scarcity of faithfully annotated parsing corpora. Our contributions are threefold. First, we build a scalable synthesis engine, pairing a controllable rendering framework with an iterative refinement loop, and use it to construct and open-source Infinity-Doc2-5M: a 5-million-sample bilingual (Chinese/English) corpus spanning diverse document types, annotated with element bounding boxes, canonical content forms (Markdown, HTML, LaTeX, SMILES, structured charts), and full-page reading order. Second, we introduce a verifiable, multi-task reward system that enables Joint Reinforcement Learning across eight co-trained objectives (document parsing, layout analysis, table parsing, math formula parsing, chart parsing, chemical formula parsing, document VQA, and general multimodal understanding), unifying perception, structure, and reasoning in a single optimization signal. Third, we release two variants under a shared architecture: Infinity-Parser2-Flash, optimized for low-latency inference with a 3.68x throughput gain over Infinity-Parser-7B, and Infinity-Parser2-Pro, engineered for precision-critical settings. Infinity-Parser2-Pro reaches state-of-the-art 87.6% on olmOCR-Bench and 74.3% on ParseBench, surpassing DeepSeek-OCR-2, PaddleOCR-VL-1.5, and MinerU2.5, with strong generalization to charts, chemical formulas, and document VQA.",
+      "pdf_url": "https://arxiv.org/abs/2607.07836",
+      "comment": "",
+      "technologies": [
+        "Multimodal Learning",
+        "Reinforcement Learning from Human Feedback",
+        "Retrieval Augmented Generation",
+        "Knowledge Distillation",
+        "Low-Rank Adaptation"
+      ],
+      "maturity": "medium",
+      "confidence": 0.85,
+      "curator_score": 5.9,
+      "product_potential": [
+        "A document parsing and analysis tool for enterprises to automate data extraction from diverse document types.",
+        "A low-latency document processing API for real-time applications in healthcare and finance."
+      ],
+      "domain_applications": [
+        "enterprise",
+        "healthcare",
+        "finance",
+        "education",
+        "science"
+      ]
+    },
+    {
+      "id": "2607.09142",
+      "title": "MedRealMM: A Real-World Multimodal Benchmark for Chinese Online Medical Consultation",
+      "authors": [],
+      "categories": [
+        "cs.AI"
+      ],
+      "published": "2026-07-16",
+      "updated": "2026-07-16",
+      "summary": "arXiv:2607.09142v2 Announce Type: replace Abstract: Large language models (LLMs) are increasingly deployed in online medical consultation, yet existing benchmarks remain poorly aligned with real clinical practice. Many rely on synthetic conversations or patient simulators, omit patient-uploaded medical images, or evaluate open-ended clinical responses using multiple-choice or lexical-overlap metrics that poorly reflect clinical quality. We introduce \\textbf{MedRealMM}, a large-scale benchmark for multimodal online medical consultation built from de-identified patient-doctor interactions collected from a nationwide Chinese internet hospital. MedRealMM uses a Multimodal Clinical Challenge Point (MCCP) extraction framework to identify clinically demanding moments in authentic consultation trajectories and converts each into a standardized next-response generation task while preserving the preceding text-image context. Each instance is paired with a case-specific rubric refined by physicians that rewards clinically desirable behaviors and penalizes unsafe, unsupported, or contradictory responses. The current release contains 5,620 real-world multimodal cases spanning 64 clinical departments. We evaluate 19 general-purpose and medical-specialized LLMs, including text-only and multimodal systems. Our results show that image information is critical for reliable clinical performance and that current frontier models remain below the online physician response. Although some frontier models satisfy as many or more positive clinical criteria than physicians, they trigger more negative criteria, indicating that safety-sensitive error avoidance remains a central bottleneck. MedRealMM offers a realistic and reproducible benchmark for evaluating multimodal medical reasoning in real-world online consultation. The dataset will be publicly available on Hugging Face at https://huggingface.co/datasets/jdh-algo/MedRealMM.",
+      "pdf_url": "https://arxiv.org/abs/2607.09142",
+      "comment": "",
+      "technologies": [
+        "Multimodal Learning",
+        "Retrieval Augmented Generation"
+      ],
+      "maturity": "early",
+      "confidence": 0.8,
+      "curator_score": 5.9,
+      "product_potential": [
+        "A specialized AI assistant for online medical consultations that can interpret and respond to both text and medical images, improving diagnostic accuracy and patient care.",
+        "A training platform for medical students and professionals to practice and evaluate their responses in a realistic, multimodal setting, using the MedRealMM benchmark."
+      ],
+      "domain_applications": [
+        "healthcare"
+      ]
+    },
+    {
+      "id": "2607.11715",
+      "title": "JobHop v2: A Large-Scale Career Trajectory Dataset from Unstructured Resumes",
+      "authors": [],
+      "categories": [
+        "cs.CL"
+      ],
+      "published": "2026-07-16",
+      "updated": "2026-07-16",
+      "summary": "arXiv:2607.11715v2 Announce Type: replace Abstract: Large-scale, richly annotated career trajectory data underpins workforce planning, job recommendation, and labour market analysis, yet publicly available datasets are either small, closed to independent use, or built from pre-standardized occupational codes with LLM-synthesized rather than authentic free text. We present JobHop~v2, an improved version of the publicly available JobHop dataset, constructed through end-to-end large language model (LLM) extraction from a corpus of ${\\sim}440{,}000$ pseudonymized, multilingual resumes provided by VDAB, the Flemish Public Employment Service. The released dataset comprises $355{,}315$ career trajectories annotated with ESCO occupational codes, quarter-level temporal information, and normalized five-level education attainment, broadening both the coverage and the annotation richness of the original release. Relative to v1, JobHop~v2 introduces a redesigned extraction pipeline based on reasoning-controlled LLM inference with a retry mechanism (achieving a 100% JSON parse rate), a richer extraction schema, and a revised evaluation protocol scored against three complementary annotation baselines. Evaluated against these baselines, our best extractor comes closest to the inter-annotator agreement ceiling among all compared models, trailing it by only 1.1-2.7 percentage points. The dataset and code are publicly released to support reproducible career-trajectory research.",
+      "pdf_url": "https://arxiv.org/abs/2607.11715",
+      "comment": "",
+      "technologies": [
+        "Large Language Models",
+        "Reasoning-controlled LLM Inference",
+        "Retry Mechanism"
+      ],
+      "maturity": "medium",
+      "confidence": 0.8,
+      "curator_score": 5.9,
+      "product_potential": [
+        "Career trajectory analysis tool for job seekers to visualize and plan their career paths",
+        "Job recommendation system that leverages career trajectory data to suggest suitable job roles",
+        "Workforce planning tool for employers to analyze labor market trends and make informed hiring decisions"
+      ],
+      "domain_applications": [
+        "enterprise",
+        "education",
+        "other"
+      ]
+    },
+    {
+      "id": "2607.08964",
+      "title": "Long-Horizon-Terminal-Bench: Testing the Limits of Agents on Long-Horizon Terminal Tasks with Dense Reward-Based Grading",
+      "authors": [],
+      "categories": [
+        "cs.AI"
+      ],
+      "published": "2026-07-13",
+      "updated": "2026-07-13",
+      "summary": "arXiv:2607.08964v1 Announce Type: new Abstract: AI agents have become capable of autonomously completing short, well-specified tasks. However, existing terminal benchmarks largely focus on simple problems that finish within minutes and are evaluated only by their final outcome. This setup overlooks intermediate progress and partial solutions, yielding sparse reward signals and an incomplete picture of agent capability. We introduce Long-Horizon-Terminal-Bench, a terminal benchmark of 46 long-horizon tasks spanning nine categories, including experiment reproduction, software engineering, multimodal analysis, interactive games, and scientific computing. Each task follows a Terminal-Bench-style setup with a reference solution or simulation engine, but is further decomposed into fine-grained graded subtasks. This design enables dense intermediate rewards and partial credit, allowing evaluation to capture not only whether an agent reaches the final goal, but also how far it progresses on open-ended workflows. Tasks in Long-Horizon-Terminal-Bench typically require hundreds of episodes and minutes to hours of execution, stressing long-horizon planning, long-context management, and iterative debugging rather than one-shot problem solving. We evaluate 15 frontier models and find that agents consume on average 9.9M tokens per task, with roughly 231 episodes and 85.3 minutes of execution time per run, making Long-Horizon-Terminal-Bench more demanding than prior terminal-based benchmarks. Even the strongest tested model achieves 15.2% pass@1 at a partial-reward threshold of 0.95 and 10.9% at a perfect-reward threshold of 1.0, while the mean pass rate across models is 4.3% and 1.7% under the two thresholds, respectively. These results reveal headroom for improvement. We further analyze failure modes and error patterns, and release Long-Horizon-Terminal-Bench to support future progress on long-horizon terminal agents.",
+      "pdf_url": "https://arxiv.org/abs/2607.08964",
+      "comment": "",
+      "technologies": [
+        "Dense Reward-Based Grading",
+        "Long-Horizon Planning",
+        "Long-Context Management"
+      ],
+      "maturity": "early",
+      "confidence": 0.8,
+      "curator_score": 5.7,
+      "product_potential": [
+        "Automated scientific experiment reproduction and analysis",
+        "Advanced software engineering assistant with iterative debugging capabilities"
+      ],
+      "domain_applications": [
+        "science",
+        "enterprise"
+      ]
+    },
+    {
+      "id": "2607.13988",
+      "title": "TRACE: Turn-level Reward Assignment via Credit Estimation for Long-Horizon Agents",
+      "authors": [
+        "Leitian Tao",
+        "Baolin Peng",
+        "Wenlin Yao",
+        "Tao Ge",
+        "Hao Cheng",
+        "Mike Hang Wang",
+        "Jianfeng Gao",
+        "Sharon Li"
+      ],
+      "categories": [
+        "cs.LG"
+      ],
+      "published": "2026-07-15",
+      "updated": "2026-07-15",
+      "summary": "Multi-turn agents solve complex tasks through extended sequences of tool interactions before producing a final answer, making credit assignment a fundamental challenge during post-training. Outcome rewards provide reliable supervision for short-horizon reasoning, but become sparse and high-variance as trajectories grow to tens or hundreds of tool calls. They can also be misleading: a failed rollout may contain many useful actions that move the agent closer to the goal, yet outcome-only training assigns them the same negative advantage as the eventual mistake. We propose TRACE (Turn-level Reward Assignment via Credit Estimation), a dense credit-assignment method for agentic reinforcement learning. TRACE represents rollouts as state transitions at tool-call boundaries, obtains gold-answer log-probabilities from a frozen reference model, transforms them into log-ratio state values, and derives per-action rewards as Temporal-Difference changes in those values. This requires no additional critic or process-label training, and its one-step log-ratio TD component telescopes across redundant tool calls. On long-horizon complex search, TRACE substantially improves base-model tool-use ability using pure RL, without a cold-start supervised fine-tuning stage, an agentic mid-training stage, or training on live-web data. On the closed-web BrowseComp-Plus benchmark, it raises Qwen3-4B from $7.2$ to $35.6$ and Qwen3-30B-A3B from $8.4$ to $42.6$. The learned search behavior also transfers to open-web benchmarks, and the learning curves show earlier improvement and faster convergence during RL training.",
+      "pdf_url": "https://arxiv.org/pdf/2607.13988v1",
+      "comment": "26 pages",
+      "technologies": [
+        "Reinforcement Learning",
+        "Credit Assignment",
+        "Temporal-Difference Learning"
+      ],
+      "maturity": "medium",
+      "confidence": 0.8,
+      "curator_score": 5.7,
+      "product_potential": [
+        "Enhanced AI agents for complex task automation in enterprise environments",
+        "Improved AI-driven search and information retrieval systems",
+        "Advanced AI assistants for long-horizon decision-making in healthcare and finance"
+      ],
+      "domain_applications": [
+        "enterprise",
+        "science",
+        "finance"
+      ]
+    },
+    {
+      "id": "2607.13681",
+      "title": "Towards Spatial Supersensing in the Wild",
+      "authors": [
+        "Tianjun Gu",
+        "Tianyu Xin",
+        "Kuan Zhang",
+        "Bowen Yang",
+        "Kok-Chung Chua",
+        "Peize Li",
+        "Xinran Zhang",
+        "Yupeng Chen",
+        "Qiyue Zhao",
+        "Qinlei Xie",
+        "Jianhang Liu",
+        "Yucheng Lu",
+        "Yinan Han",
+        "Marco Pavone",
+        "Yiming Li"
+      ],
+      "categories": [
+        "cs.CV"
+      ],
+      "published": "2026-07-15",
+      "updated": "2026-07-15",
+      "summary": "Humans can efficiently parse continuous sensory streams, from hours to years, scaffolding an internal world model that grounds spatial reasoning and prediction. To mimic this capacity, spatial supersensing challenges multimodal models to move beyond linguistic understanding toward true world modeling. However, their benchmark relies on synthetic long videos, formed by concatenating random short clips, and is mostly limited to household scenes, leaving real-world continuity and diversity underexplored. To address the gap, we introduce $\\textbf{VSI-Super-Wild}$, a large-scale benchmark for evaluating spatial supersensing over long temporal horizons in diverse in-the-wild scenes. Notably, inspired by cognitive studies on how humans structure experience, we systematically probe the full triad of world state: the agent (observer), objects (scene items), and the environment (places and global layout). In total, VSI-Super-Wild contains $\\textbf{6,980}$ human-verified question-answer pairs derived from $\\textbf{442}$ real-world videos spanning 8 scene categories, including long-form recordings exceeding 4 hours. Results on VSI-Super-Wild expose a fundamental disconnect: despite advances in static image understanding, models consistently fail at tasks that require coherent world-state tracking over time. We characterize how performance degrades with world-state complexity and temporal horizon, and diagnose four failure modes: spatial collapse, semantic shortcuts, insufficient update, and instance confusion. This taxonomy reveals that models lack mechanisms to bind objects, agents, and environments into a unified spatial world model, a fundamental gap that defines the path forward for spatial supersensing.",
+      "pdf_url": "https://arxiv.org/pdf/2607.13681v1",
+      "comment": "Accepted to ECCV 2026. Project page: https://vsi-super-wild.github.io/",
+      "technologies": [
+        "Spatial Supersensing",
+        "World State Tracking",
+        "Multimodal Learning"
+      ],
+      "maturity": "early",
+      "confidence": 0.7,
+      "curator_score": 5.7,
+      "product_potential": [
+        "AI-powered spatial reasoning assistant for augmented reality applications",
+        "Autonomous navigation system with real-time world state tracking",
+        "Interactive storytelling platform with dynamic scene generation"
+      ],
+      "domain_applications": [
+        "robotics",
+        "creative",
+        "science"
+      ]
+    },
+    {
+      "id": "2607.13653",
+      "title": "Exploratory, Communicative, and Deployable: Vision-Driven Embodied Agents for Open-World Mobile Manipulation",
+      "authors": [
+        "Boyu Mi",
+        "Mengchen Ma",
+        "Yifei Yao",
+        "Xing Gao",
+        "Junting Chen",
+        "Yangzi Li",
+        "Zihou Zhu",
+        "Guohao Li",
+        "Zhenfei Yin",
+        "Tai Wang",
+        "Yao Mu",
+        "Jiangmiao Pang",
+        "Hanqing Wang"
+      ],
+      "categories": [
+        "cs.CV",
+        "cs.RO"
+      ],
+      "published": "2026-07-15",
+      "updated": "2026-07-15",
+      "summary": "Real-world deployment of embodied agents requires active exploration, visual grounding, and interactive intent disambiguation. However, existing frameworks often rely on privileged simulator states or assume complete instructions, bypassing realistic deployment challenges. To bridge this gap, we present REAL, an agentic framework for open-world mobile manipulation. REAL establishes sim-to-real-consistent environment APIs without oracle perception and integrates a simulated user to enable human-in-the-loop interaction. Within this environment, we design diverse task compositions to drive data collection, supervised fine-tuning, and online reinforcement learning, systematically optimizing agent performance. To comprehensively evaluate this approach, we introduce REAL-Bench, a benchmark spanning 241 tasks across active exploration, visual distraction, articulated manipulation, and interactive disambiguation. Experimental results demonstrate that our trained agent outperforms leading commercial closed-source VLMs on interactive tasks with a 56.9% success rate. Further empirical analysis reveals that our hierarchical training pipeline successfully aligns the model's tool-use capabilities while maintaining robust open-vocabulary reasoning under extended exploration horizons. Finally, we deploy and evaluate our framework on a physical dual-arm mobile robot, where it achieves a 78.3% end-to-end success rate over 60 real-world episodes. These physical trials demonstrate robust zero-shot transferability to unseen household scenarios, validating that our sim-to-real-consistent design successfully bridges the reality gap for long-horizon mobile manipulation. Code is available at https://github.com/InternRobotics/REAL.",
+      "pdf_url": "https://arxiv.org/pdf/2607.13653v1",
+      "comment": "Accepted to ECCV 2026. 57 pages. Code available at https://github.com/InternRobotics/REAL",
+      "technologies": [
+        "Reinforcement Learning from Human Feedback",
+        "Sim-to-Real Transfer",
+        "Hierarchical Training",
+        "Vision-Language Models",
+        "Mobile Manipulation"
+      ],
+      "maturity": "medium",
+      "confidence": 0.85,
+      "curator_score": 5.7,
+      "product_potential": [
+        "A home assistant robot that can perform complex tasks through visual and interactive instructions",
+        "An industrial robotics system for automated warehouse operations with real-time human feedback integration"
+      ],
+      "domain_applications": [
+        "robotics",
+        "enterprise",
+        "other"
+      ]
+    },
+    {
+      "id": "2603.16307",
+      "title": "NeSy-Route: A Neuro-Symbolic Benchmark for Constrained Route Planning in Remote Sensing",
+      "authors": [],
+      "categories": [
+        "cs.AI"
+      ],
+      "published": "2026-07-16",
+      "updated": "2026-07-16",
+      "summary": "arXiv:2603.16307v3 Announce Type: replace Abstract: Remote sensing underpins crucial applications such as disaster relief and ecological field surveys, where systems must understand complex scenes and constraints and make reliable decisions. Current remote-sensing benchmarks mainly focus on evaluating perception and reasoning capabilities of multimodal large language models (MLLMs). They fail to assess planning capability, stemming either from the difficulty of curating and validating planning tasks at scale or from evaluation protocols that are inaccurate and inadequate. To address these limitations, we introduce NeSy-Route, a large-scale neuro-symbolic benchmark for constrained route planning in remote sensing. Within this benchmark, we introduce an automated data-generation framework that integrates high-fidelity semantic masks with heuristic search to produce diverse route-planning tasks with provably optimal solutions. This allows NeSy-Route to comprehensively evaluate planning across 10,821 route-planning samples, nearly 10 times larger than the largest prior benchmark. Furthermore, a three-level hierarchical neuro-symbolic evaluation protocol is developed to enable accurate assessment and support fine-grained analysis on perception, reasoning, and planning simultaneously. Our comprehensive evaluation of various state-of-the-art MLLMs demonstrates that existing MLLMs show significant deficiencies in perception and planning capabilities. We hope NeSy-Route can support further research and development of more powerful MLLMs for remote sensing. The dataset and code are available at https://mingyang1010.github.io/NeSy-Route/.",
+      "pdf_url": "https://arxiv.org/abs/2603.16307",
+      "comment": "",
+      "technologies": [
+        "Neuro-Symbolic AI",
+        "Multimodal Learning",
+        "Heuristic Search",
+        "Benchmarking"
+      ],
+      "maturity": "early",
+      "confidence": 0.8,
+      "curator_score": 5.7,
+      "product_potential": [
+        "Developing AI-powered route planning tools for disaster relief and ecological field surveys",
+        "Creating a comprehensive evaluation framework for AI systems in remote sensing applications"
+      ],
+      "domain_applications": [
+        "science",
+        "climate",
+        "other"
+      ]
+    },
+    {
+      "id": "2607.13081",
+      "title": "SingGuard-NSFA: Extensible Guardrails for Agentic AI via Generative Reasoning and Real-Time Classification",
+      "authors": [],
+      "categories": [
+        "cs.AI"
+      ],
+      "published": "2026-07-16",
+      "updated": "2026-07-16",
+      "summary": "arXiv:2607.13081v1 Announce Type: cross Abstract: We present nsfaguard, a guardrail framework for securing agentic AI systems against operational threats, such as prompt injection, sensitive information extraction, malicious code requests, dangerous tool misuse, and resource exhaustion. We first introduce the NSFA taxonomy, which organizes 185 risk variants into a CIA-triad-grounded hierarchy and is cross-validated against three well-established OWASP guidelines. Based on this taxonomy, we construct a benchmark suite spanning 133 languages, comprising over 93K purpose-built samples targeting both user queries and agent responses, along with 3,435 cross-source samples adapted from five public agent-security datasets. To detect these operational threats in practice, we develop a dual-mode approach combining SFT-based generative reasoning for interpretable offline auditing with discriminative classification heads on the frozen backbone, enabling real-time detection at approximately 50,ms. We release four models with 0.8B, 2B, 4B, and 9B parameters, all achieving $\\geq$94% F1 on purpose-built benchmarks and surpassing the strongest competing guardrails by 6 to 12 absolute points. On cross-source evaluation, the 9B model attains 91.29% F1 with a more balanced precision--recall trade-off. Moreover, ablation experiments show that classification heads can equip a guardrail with risk detection capabilities beyond its original scope and achieve state-of-the-art performance. These results demonstrate the extensibility of the approach and its generality as a plug-in enhancement.",
+      "pdf_url": "https://arxiv.org/abs/2607.13081",
+      "comment": "",
+      "technologies": [
+        "Generative Reasoning",
+        "Real-Time Classification",
+        "Dual-Mode Approach"
+      ],
+      "maturity": "medium",
+      "confidence": 0.85,
+      "curator_score": 5.6,
+      "product_potential": [
+        "AI-powered security guardrails for enterprise applications",
+        "Real-time threat detection and mitigation for agentic AI systems",
+        "Extensible framework for custom risk detection and classification"
+      ],
+      "domain_applications": [
+        "enterprise",
+        "other"
+      ]
+    },
+    {
+      "id": "2605.08583",
+      "title": "Source or It Didn't Happen: A Multi-Agent Framework for Citation Hallucination Detection",
+      "authors": [],
+      "categories": [
+        "cs.CL"
+      ],
+      "published": "2026-07-16",
+      "updated": "2026-07-16",
+      "summary": "arXiv:2605.08583v2 Announce Type: replace Abstract: Large language models are increasingly used in scientific writing, yet they can fabricate citation-shaped references that appear plausible but fail bibliographic verification. Existing detectors often reduce verification to binary found/not-found decisions and rely on brittle parsing or incomplete retrieval, offering little field-level signal to auditors. We reframe citation hallucination detection as taxonomy-aligned field-level adjudication and introduce a 12-code taxonomy spanning Real, Potential, and Hallucinated citations. Based on this taxonomy, we build CiteTracer, a cascading multi-agent detector that extracts structured citations from PDF and BibTeX, retrieves evidence through cache lookup, URL fetch, scholar connectors, and web search, applies deterministic field matching, and routes ambiguous cases to class-specialist judgers. We release a benchmark of 2,450 synthetic citations built from real seeds with controlled LLM mutations, paired with 957 real-world fabricated citations drawn from ICLR 2026 and an anonymous conference desk-rejected submissions. CiteTracer reaches 97.1% accuracy on the synthetic benchmark, with class-level F1 scores of 97.0, 95.8, and 98.5 for Real, Potential, and Hallucinated, respectively, and detects 97.1% of fabrications on the real-world set without abstaining. Code: https://github.com/aaFrostnova/CiteTracer.",
+      "pdf_url": "https://arxiv.org/abs/2605.08583",
+      "comment": "",
+      "technologies": [
+        "Multi-Agent Systems",
+        "Retrieval Augmented Generation",
+        "Taxonomy-Aligned Field-Level Adjudication"
+      ],
+      "maturity": "medium",
+      "confidence": 0.85,
+      "curator_score": 5.6,
+      "product_potential": [
+        "A citation verification tool for academic writing platforms to reduce plagiarism and ensure accurate references.",
+        "An AI-powered editor for scientific journals to automatically flag and correct citation errors in submissions."
+      ],
+      "domain_applications": [
+        "education",
+        "science"
+      ]
+    },
+    {
+      "id": "2607.10350",
+      "title": "ABot-AgentOS: A General Robotic Agent OS with Lifelong Multi-modal Memory",
+      "authors": [],
+      "categories": [
+        "cs.AI"
+      ],
+      "published": "2026-07-14",
+      "updated": "2026-07-14",
+      "summary": "arXiv:2607.10350v1 Announce Type: new Abstract: Recent VLM and VLA systems have improved robotic perception and action prediction, yet long-horizon embodied agents still require a general runtime layer for reasoning, memory, tool use, verification, and cross-embodiment execution. We present ABot-AgentOS, a general robotic Agent Operating System that sits above low-level controllers and provides a deliberative agent layer for scene-conditioned planning, context-isolated skill execution, multi-stage verification, multi-modal memory, and edge-cloud collaboration. To evaluate such systems, we introduce EmbodiedWorldBench, an executable benchmark with 16 indoor, outdoor, and hybrid scenes, four difficulty levels, and over 200 tasks involving navigation, object search, NPC dialogue, dynamic events, and trace-grounded scoring. ABot-AgentOS further introduces Universal Multi-modal Graph Memory, a persistent source-grounded substrate that converts dialogue, visual observations, spatial context, temporal relations, and task traces into typed nodes and edges. A failure-driven self-evolution loop converts diagnosed memory failures into gated runtime evo-assets that are promoted only to later evaluation splits, preventing current-split ground-truth leakage while enabling continual improvement. On an initial EmbodiedWorldBench subset, ABot-AgentOS improves over a single-controller baseline in both task success and goal completion. Across memory benchmarks, ABot-AgentOS Static achieves 87.5 on LoCoMo, 59.9 on OpenEQA EM-EQA, 88.6 on Mem-Gallery, and 76.5 Acc@All on NExT-QA; self-evolution further improves LoCoMo to 88.7, OpenEQA to 60.4, and Mem-Gallery to 89.0. These results suggest that a general Agent OS layer can improve long-horizon embodied execution while providing persistent, auditable memory for continual interaction.",
+      "pdf_url": "https://arxiv.org/abs/2607.10350",
+      "comment": "",
+      "technologies": [
+        "Multimodal Learning",
+        "Lifelong Learning",
+        "Graph Memory",
+        "Self-Evolution",
+        "Embodied AI"
+      ],
+      "maturity": "early",
+      "confidence": 0.8,
+      "curator_score": 5.5,
+      "product_potential": [
+        "A general-purpose robotic agent OS for home and enterprise applications",
+        "A persistent, auditable memory system for robotic agents to improve over time"
+      ],
+      "domain_applications": [
+        "robotics",
+        "enterprise"
+      ]
+    },
+    {
+      "id": "2601.07372",
+      "title": "Conditional Memory via Scalable Lookup: A New Axis of Sparsity for Large Language Models",
+      "authors": [],
+      "categories": [
+        "cs.AI"
+      ],
+      "published": "2026-07-14",
+      "updated": "2026-07-14",
+      "summary": "arXiv:2601.07372v2 Announce Type: replace-cross Abstract: While Mixture-of-Experts (MoE) scales capacity via conditional computation, Transformers lack a native primitive for knowledge lookup, forcing them to inefficiently simulate retrieval through computation. To address this, we introduce conditional memory as a complementary sparsity axis, instantiated via Engram, a module that modernizes classic $N$-gram embedding for O(1) lookup. By formulating the Sparsity Allocation problem, we uncover a U-shaped scaling law that optimizes the trade-off between neural computation (MoE) and static memory (Engram). Guided by this law, we scale Engram to 27B parameters, achieving superior performance over a strictly iso-parameter and iso-FLOPs MoE baseline. Most notably, while the memory module is expected to aid knowledge retrieval (e.g., MMLU +3.4; CMMLU +4.0), we observe even larger gains in general reasoning (e.g., BBH +5.0; ARC-Challenge +3.7) and code/math domains~(HumanEval +3.0; MATH +2.4). Mechanistic analyses reveal that Engram relieves the backbone's early layers from static reconstruction, effectively deepening the network for complex reasoning. Furthermore, by delegating local dependencies to lookups, it frees up attention capacity for global context, substantially boosting long-context retrieval (e.g., Multi-Query NIAH: 84.2 to 97.0). Finally, Engram establishes infrastructure-aware efficiency: its deterministic addressing enables runtime prefetching from host memory, incurring negligible overhead. We envision conditional memory as an indispensable modeling primitive for next-generation sparse models.",
+      "pdf_url": "https://arxiv.org/abs/2601.07372",
+      "comment": "",
+      "technologies": [
+        "Conditional Memory",
+        "Engram",
+        "Mixture of Experts",
+        "Sparse Attention"
+      ],
+      "maturity": "medium",
+      "confidence": 0.8,
+      "curator_score": 5.5,
+      "product_potential": [
+        "Enhanced long-context retrieval in AI assistants",
+        "Improved reasoning capabilities in educational and enterprise applications",
+        "Efficient memory management for on-device AI applications"
+      ],
+      "domain_applications": [
+        "education",
+        "enterprise",
+        "accessibility",
+        "other"
+      ]
+    },
+    {
+      "id": "2607.12477",
+      "title": "Self in Space: Benchmarking Self-Awareness and Spatial Cognition in UAV Embodied Intelligence",
+      "authors": [
+        "Zhishan Zou",
+        "Guoyan Sun",
+        "Zhiwei Wei",
+        "Jiancheng Pan",
+        "Yujie Li",
+        "Mugen Peng",
+        "Wenjia Xu"
+      ],
+      "categories": [
+        "cs.CV"
+      ],
+      "published": "2026-07-14",
+      "updated": "2026-07-14",
+      "summary": "Autonomous UAV systems increasingly rely on multimodal large language models (MLLMs) to operate in complex real-world environments. Such embodied scenarios require not only understanding the surrounding space but also maintaining a coherent representation of the agent itself. However, existing UAV-oriented approaches and benchmarks remain largely environment-centric, primarily focusing on spatial understanding tasks, with the agent's self-awareness remaining implicit. To address this gap, we introduce SIS-Bench, a benchmark for evaluating embodied spatial intelligence in UAV scenarios under a unified self-in-space formulation. SIS-Bench organizes evaluation along two complementary dimensions, space and self, and a three-level hierarchy of perception, memory, and reasoning. It contains 4,856 question--answer pairs across 13 tasks derived from 1,646 real-world UAV videos through a task-conditioned construction pipeline with expert verification.Extensive evaluations reveal that current MLLMs exhibit fundamental limitations in modeling dynamic and agent-centered processes. In particular, we observe a clear imbalance between spatial cognition and self-awareness, as well as a progressive performance degradation across cognitive levels.Motivated by these findings, we further explore a motion-aware representation that incorporates self-related dynamics through optical flow and visual feature fusion. Experimental results show that modeling agent motion consistently improves perception and memory performance, not only in spatial cognition but also in self-awareness, and generalizes to downstream UAV decision-making tasks.Our results highlight the importance of self-awareness for advancing embodied spatial intelligence, and provide both a new benchmark and empirical evidence for motion-aware self-in-space modeling.",
+      "pdf_url": "https://arxiv.org/pdf/2607.12477v1",
+      "comment": "Website:https://choucisan.github.io/publications/self-in-space ; Code:https://github.com/IntelliSensing/Self-in-Space",
+      "technologies": [
+        "Multimodal Learning",
+        "Depth Estimation",
+        "Object Detection"
+      ],
+      "maturity": "medium",
+      "confidence": 0.8,
+      "curator_score": 5.5,
+      "product_potential": [
+        "Autonomous UAV navigation and obstacle avoidance systems with enhanced self-awareness",
+        "UAV-based surveillance and monitoring systems with improved spatial understanding and self-awareness",
+        "UAV-based delivery and logistics systems with enhanced decision-making capabilities"
+      ],
+      "domain_applications": [
+        "robotics",
+        "science",
+        "enterprise"
+      ]
+    },
+    {
+      "id": "2606.05711",
+      "title": "Beyond tokens: a unified framework for latent communication in LLM-based multi-agent systems",
+      "authors": [],
+      "categories": [
+        "cs.CL"
+      ],
+      "published": "2026-07-16",
+      "updated": "2026-07-16",
+      "summary": "arXiv:2606.05711v3 Announce Type: replace Abstract: Multi-agent systems built on large language models (LLMs) have become a prevailing paradigm for tackling complex reasoning, planning, and tool-use tasks. The dominant communication protocol in such systems is natural language: agents exchange messages token-by-token, verbalising their internal reasoning so that peers can read, verify, and respond. While convenient and interpretable, this protocol suffers from three structural drawbacks -- high inference cost, irreversible information loss during discretization, and ambiguity/redundancy of natural language. A growing body of work therefore explores an alternative protocol -- latent communication -- in which agents exchange continuous representations (embeddings, hidden states, or KV-caches) directly, bypassing the bottleneck of text generation. This paper presents a unified framework for organising the rapidly expanding literature on latent communication. We analyse existing methods along three orthogonal axes: (1) WHAT information is communicated (Embeddings, Hidden States, KV-Caches, or other continuous state); (2) WHICH sender-receiver alignment is used (latent-space alignment and layer alignment); and (3) HOW the communicated information is fused into the receiver (concatenation, prepending, mathematical operations, cross-attention, or cache restoration). Under this 3-axis framework, we systematically categorise eighteen representative methods proposed between 2024 and 2026, identify five major design patterns, and surface a set of open challenges -- including cross-architecture alignment, security of latent channels, compression for edge deployment, and the relationship between latent communication and latent chain-of-thought. We hope that this framework both lowers the barrier to entry for new researchers and provides a vocabulary for comparing future work.",
+      "pdf_url": "https://arxiv.org/abs/2606.05711",
+      "comment": "",
+      "technologies": [],
+      "maturity": "early",
+      "confidence": 0.0,
+      "curator_score": 5.5,
+      "product_potential": [],
+      "domain_applications": []
+    }
+  ],
+  "technologies": [
+    {
+      "name": "Multimodal Learning",
+      "papers": 7,
+      "maturity": "medium",
+      "confidence": 0.8,
+      "trend": "rising",
+      "applications": [
+        "robotics",
+        "healthcare",
+        "enterprise"
+      ]
+    },
+    {
+      "name": "Reinforcement Learning from Human Feedback",
+      "papers": 2,
+      "maturity": "medium",
+      "confidence": 0.85,
+      "trend": "rising",
+      "applications": [
+        "robotics",
+        "enterprise"
+      ]
+    },
+    {
+      "name": "Retrieval Augmented Generation",
+      "papers": 3,
+      "maturity": "medium",
+      "confidence": 0.85,
+      "trend": "rising",
+      "applications": [
+        "healthcare",
+        "enterprise",
+        "education"
+      ]
+    },
+    {
+      "name": "Large Language Models",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.8,
+      "trend": "rising",
+      "applications": [
+        "enterprise",
+        "education"
+      ]
+    },
+    {
+      "name": "Reinforcement Learning",
+      "papers": 2,
+      "maturity": "medium",
+      "confidence": 0.8,
+      "trend": "rising",
+      "applications": [
+        "enterprise",
+        "science"
+      ]
+    },
+    {
+      "name": "Benchmarking",
+      "papers": 2,
+      "maturity": "medium",
+      "confidence": 0.7,
+      "trend": "rising",
+      "applications": [
+        "robotics",
+        "science"
+      ]
+    },
+    {
+      "name": "Long-Horizon Planning",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.8,
+      "trend": "rising",
+      "applications": [
+        "science",
+        "enterprise"
+      ]
+    },
+    {
+      "name": "Neuro-Symbolic AI",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.8,
+      "trend": "rising",
+      "applications": [
+        "science",
+        "climate"
+      ]
+    },
+    {
+      "name": "Multi-Agent Systems",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.85,
+      "trend": "rising",
+      "applications": [
+        "education",
+        "science"
+      ]
+    },
+    {
+      "name": "Lifelong Learning",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.8,
+      "trend": "rising",
+      "applications": [
+        "robotics",
+        "enterprise"
+      ]
+    },
+    {
+      "name": "Conditional Memory",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.8,
+      "trend": "rising",
+      "applications": [
+        "education",
+        "enterprise"
+      ]
+    },
+    {
+      "name": "Knowledge Distillation",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.8,
+      "trend": "rising",
+      "applications": [
+        "science",
+        "enterprise",
+        "education",
+        "healthcare",
+        "finance"
+      ]
+    },
+    {
+      "name": "Low-Rank Adaptation",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.8,
+      "trend": "rising",
+      "applications": [
+        "science",
+        "enterprise",
+        "education",
+        "healthcare",
+        "finance"
+      ]
+    },
+    {
+      "name": "Reasoning-controlled LLM Inference",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.7,
+      "trend": "rising",
+      "applications": [
+        "other",
+        "enterprise",
+        "education"
+      ]
+    },
+    {
+      "name": "Retry Mechanism",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.7,
+      "trend": "rising",
+      "applications": [
+        "other",
+        "enterprise",
+        "education"
+      ]
+    },
+    {
+      "name": "Dense Reward-Based Grading",
+      "papers": 1,
+      "maturity": "early",
+      "confidence": 0.5700000000000001,
+      "trend": "emerging",
+      "applications": [
+        "science",
+        "enterprise"
+      ]
+    },
+    {
+      "name": "Long-Context Management",
+      "papers": 1,
+      "maturity": "early",
+      "confidence": 0.5700000000000001,
+      "trend": "emerging",
+      "applications": [
+        "science",
+        "enterprise"
+      ]
+    },
+    {
+      "name": "Credit Assignment",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.7,
+      "trend": "rising",
+      "applications": [
+        "science",
+        "enterprise",
+        "finance"
+      ]
+    },
+    {
+      "name": "Temporal-Difference Learning",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.7,
+      "trend": "rising",
+      "applications": [
+        "science",
+        "enterprise",
+        "finance"
+      ]
+    },
+    {
+      "name": "Spatial Supersensing",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.7,
+      "trend": "rising",
+      "applications": [
+        "robotics",
+        "science",
+        "creative"
+      ]
+    },
+    {
+      "name": "World State Tracking",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.7,
+      "trend": "rising",
+      "applications": [
+        "robotics",
+        "science",
+        "creative"
+      ]
+    },
+    {
+      "name": "Sim-to-Real Transfer",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.8,
+      "trend": "rising",
+      "applications": [
+        "robotics",
+        "enterprise",
+        "other"
+      ]
+    },
+    {
+      "name": "Hierarchical Training",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.8,
+      "trend": "rising",
+      "applications": [
+        "robotics",
+        "enterprise",
+        "other"
+      ]
+    },
+    {
+      "name": "Vision-Language Models",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.8,
+      "trend": "rising",
+      "applications": [
+        "robotics",
+        "enterprise",
+        "other"
+      ]
+    },
+    {
+      "name": "Mobile Manipulation",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.8,
+      "trend": "rising",
+      "applications": [
+        "robotics",
+        "enterprise",
+        "other"
+      ]
+    },
+    {
+      "name": "Heuristic Search",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.7,
+      "trend": "rising",
+      "applications": [
+        "climate",
+        "science",
+        "other"
+      ]
+    },
+    {
+      "name": "Generative Reasoning",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.8,
+      "trend": "rising",
+      "applications": [
+        "enterprise",
+        "other"
+      ]
+    },
+    {
+      "name": "Real-Time Classification",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.8,
+      "trend": "rising",
+      "applications": [
+        "enterprise",
+        "other"
+      ]
+    },
+    {
+      "name": "Dual-Mode Approach",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.8,
+      "trend": "rising",
+      "applications": [
+        "enterprise",
+        "other"
+      ]
+    },
+    {
+      "name": "Taxonomy-Aligned Field-Level Adjudication",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.7,
+      "trend": "rising",
+      "applications": [
+        "science",
+        "education"
+      ]
+    },
+    {
+      "name": "Graph Memory",
+      "papers": 1,
+      "maturity": "early",
+      "confidence": 0.6,
+      "trend": "rising",
+      "applications": [
+        "robotics",
+        "enterprise"
+      ]
+    },
+    {
+      "name": "Self-Evolution",
+      "papers": 1,
+      "maturity": "early",
+      "confidence": 0.6,
+      "trend": "rising",
+      "applications": [
+        "robotics",
+        "enterprise"
+      ]
+    },
+    {
+      "name": "Embodied AI",
+      "papers": 1,
+      "maturity": "early",
+      "confidence": 0.6,
+      "trend": "rising",
+      "applications": [
+        "robotics",
+        "enterprise"
+      ]
+    },
+    {
+      "name": "Engram",
+      "papers": 1,
+      "maturity": "early",
+      "confidence": 0.6,
+      "trend": "rising",
+      "applications": [
+        "other",
+        "enterprise",
+        "accessibility",
+        "education"
+      ]
+    },
+    {
+      "name": "Mixture of Experts",
+      "papers": 1,
+      "maturity": "early",
+      "confidence": 0.6,
+      "trend": "rising",
+      "applications": [
+        "other",
+        "enterprise",
+        "accessibility",
+        "education"
+      ]
+    },
+    {
+      "name": "Sparse Attention",
+      "papers": 1,
+      "maturity": "early",
+      "confidence": 0.6,
+      "trend": "rising",
+      "applications": [
+        "other",
+        "enterprise",
+        "accessibility",
+        "education"
+      ]
+    },
+    {
+      "name": "Depth Estimation",
+      "papers": 1,
+      "maturity": "early",
+      "confidence": 0.6,
+      "trend": "rising",
+      "applications": [
+        "robotics",
+        "science",
+        "enterprise"
+      ]
+    },
+    {
+      "name": "Object Detection",
+      "papers": 1,
+      "maturity": "early",
+      "confidence": 0.6,
+      "trend": "rising",
+      "applications": [
+        "robotics",
+        "science",
+        "enterprise"
+      ]
+    }
+  ],
+  "product_opportunities": [
+    {
+      "technology": "Reinforcement Learning from Human Feedback",
+      "idea": "FeedbackLoop: AI-driven product development platform that iterates based on human feedback",
+      "business_value": 8,
+      "engineering_difficulty": 7,
+      "competitive_advantage": "high",
+      "development_time": "3-6 months"
+    },
+    {
+      "technology": "Retrieval Augmented Generation",
+      "idea": "DocuGenie: AI-powered document generation tool that retrieves and synthesizes information from a knowledge base",
+      "business_value": 9,
+      "engineering_difficulty": 6,
+      "competitive_advantage": "high",
+      "development_time": "2-4 months"
+    },
+    {
+      "technology": "Multi-Agent Systems",
+      "idea": "CollabLearn: AI-driven collaborative learning platform for students and educators",
+      "business_value": 7,
+      "engineering_difficulty": 8,
+      "competitive_advantage": "medium",
+      "development_time": "4-6 months"
+    },
+    {
+      "technology": "Multimodal Learning",
+      "idea": "MediSense: AI-powered healthcare platform that analyzes medical images, text reports, and patient data",
+      "business_value": 9,
+      "engineering_difficulty": 7,
+      "competitive_advantage": "high",
+      "development_time": "3-6 months"
+    },
+    {
+      "technology": "Large Language Models",
+      "idea": "TextCraft: AI-powered content creation and editing tool for businesses and individuals",
+      "business_value": 8,
+      "engineering_difficulty": 6,
+      "competitive_advantage": "medium",
+      "development_time": "2-4 months"
+    },
+    {
+      "technology": "Reinforcement Learning",
+      "idea": "OptiRoute: AI-driven logistics optimization platform that learns and adapts to changing conditions",
+      "business_value": 8,
+      "engineering_difficulty": 7,
+      "competitive_advantage": "high",
+      "development_time": "3-6 months"
+    },
+    {
+      "technology": "Long-Horizon Planning",
+      "idea": "ClimateGuard: AI-powered climate change mitigation and adaptation planning tool",
+      "business_value": 9,
+      "engineering_difficulty": 8,
+      "competitive_advantage": "high",
+      "development_time": "4-6 months"
+    },
+    {
+      "technology": "Neuro-Symbolic AI",
+      "idea": "SymLogic: AI-driven symbolic reasoning and logic-based problem-solving platform",
+      "business_value": 8,
+      "engineering_difficulty": 7,
+      "competitive_advantage": "high",
+      "development_time": "3-6 months"
+    },
+    {
+      "technology": "Lifelong Learning",
+      "idea": "LearnForever: AI-powered lifelong learning platform that continuously adapts and improves",
+      "business_value": 7,
+      "engineering_difficulty": 8,
+      "competitive_advantage": "medium",
+      "development_time": "4-6 months"
+    },
+    {
+      "technology": "Conditional Memory",
+      "idea": "Memora: AI-powered memory aid and cognitive enhancement tool for students and professionals",
+      "business_value": 7,
+      "engineering_difficulty": 6,
+      "competitive_advantage": "medium",
+      "development_time": "2-4 months"
+    },
+    {
+      "technology": "Knowledge Distillation",
+      "idea": "KnowledgeMiner: AI-powered platform that extracts and distills knowledge from large datasets",
+      "business_value": 8,
+      "engineering_difficulty": 7,
+      "competitive_advantage": "high",
+      "development_time": "3-6 months"
+    },
+    {
+      "technology": "Low-Rank Adaptation",
+      "idea": "AdaptLearn: AI-powered platform that enables efficient and effective low-rank adaptation of models",
+      "business_value": 7,
+      "engineering_difficulty": 6,
+      "competitive_advantage": "medium",
+      "development_time": "2-4 months"
+    },
+    {
+      "technology": "Sim-to-Real Transfer",
+      "idea": "SimReal: AI-powered platform that enables efficient and effective transfer of skills learned in simulation to the real world",
+      "business_value": 8,
+      "engineering_difficulty": 7,
+      "competitive_advantage": "high",
+      "development_time": "3-6 months"
+    },
+    {
+      "technology": "Hierarchical Training",
+      "idea": "HierTrain: AI-powered platform that enables efficient and effective hierarchical training of complex systems",
+      "business_value": 7,
+      "engineering_difficulty": 8,
+      "competitive_advantage": "medium",
+      "development_time": "4-6 months"
+    },
+    {
+      "technology": "Vision-Language Models",
+      "idea": "SeeSay: AI-powered platform that enables seamless integration of vision and language processing",
+      "business_value": 8,
+      "engineering_difficulty": 7,
+      "competitive_advantage": "high",
+      "development_time": "3-6 months"
+    }
+  ]
+}

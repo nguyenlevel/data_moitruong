@@ -1,0 +1,1006 @@
+{
+  "meta": {
+    "date": "2026-07-13",
+    "papers_tracked": 15,
+    "technologies_discovered": 28,
+    "opportunities_identified": 15,
+    "last_update": "2026-07-13 08:31 UTC",
+    "backend": "llm7",
+    "model": "Research Curator v1"
+  },
+  "brief": [],
+  "top_cards": [
+    {
+      "id": "new_technologies",
+      "title": "New Technologies",
+      "value": "28",
+      "label": "discovered this scan",
+      "detail": "Dense Reward-Based Grading, Long-Horizon Planning, Long-Context Management, Retrieval Augmented Generation, Multi-Agent Systems, KV Cache Optimization, Deco-G Framework, Format Estimation Module",
+      "color": "accent"
+    },
+    {
+      "id": "emerging_trends",
+      "title": "Emerging Trends",
+      "value": "28",
+      "label": "active trend clusters",
+      "detail": "Dense Reward-Based Grading, Long-Horizon Planning, Long-Context Management, Retrieval Augmented Generation, KV Cache Optimization",
+      "color": "green"
+    },
+    {
+      "id": "highest_potential",
+      "title": "Highest Potential",
+      "value": "8.0",
+      "label": "avg opportunity score",
+      "detail": "Long-Horizon-Terminal-Bench: Testing the Limits of Agents on Long-Horizon Termin",
+      "color": "amber"
+    },
+    {
+      "id": "biggest_surprise",
+      "title": "Biggest Surprise",
+      "value": "Long-Horizon-Terminal-Bench: T",
+      "label": "confidence 80%",
+      "detail": "",
+      "color": "purple"
+    },
+    {
+      "id": "most_practical",
+      "title": "Most Practical",
+      "value": "Infinity-Parser2 Technical Rep",
+      "label": "highest confidence paper",
+      "detail": "AI-powered document processing platform for enterprises to automate data extraction from diverse document types, Multilingual document analysis tool for educational institutions to support students with learning disabilities",
+      "color": "success"
+    },
+    {
+      "id": "most_innovative",
+      "title": "Most Innovative",
+      "value": "12",
+      "label": "early-stage technologies",
+      "detail": "Infinity-Parser2 Technical Report",
+      "color": "blue"
+    }
+  ],
+  "papers": [
+    {
+      "id": "2607.08964",
+      "title": "Long-Horizon-Terminal-Bench: Testing the Limits of Agents on Long-Horizon Terminal Tasks with Dense Reward-Based Grading",
+      "authors": [],
+      "categories": [
+        "cs.AI"
+      ],
+      "published": "2026-07-13",
+      "updated": "2026-07-13",
+      "summary": "arXiv:2607.08964v1 Announce Type: new Abstract: AI agents have become capable of autonomously completing short, well-specified tasks. However, existing terminal benchmarks largely focus on simple problems that finish within minutes and are evaluated only by their final outcome. This setup overlooks intermediate progress and partial solutions, yielding sparse reward signals and an incomplete picture of agent capability. We introduce Long-Horizon-Terminal-Bench, a terminal benchmark of 46 long-horizon tasks spanning nine categories, including experiment reproduction, software engineering, multimodal analysis, interactive games, and scientific computing. Each task follows a Terminal-Bench-style setup with a reference solution or simulation engine, but is further decomposed into fine-grained graded subtasks. This design enables dense intermediate rewards and partial credit, allowing evaluation to capture not only whether an agent reaches the final goal, but also how far it progresses on open-ended workflows. Tasks in Long-Horizon-Terminal-Bench typically require hundreds of episodes and minutes to hours of execution, stressing long-horizon planning, long-context management, and iterative debugging rather than one-shot problem solving. We evaluate 15 frontier models and find that agents consume on average 9.9M tokens per task, with roughly 231 episodes and 85.3 minutes of execution time per run, making Long-Horizon-Terminal-Bench more demanding than prior terminal-based benchmarks. Even the strongest tested model achieves 15.2% pass@1 at a partial-reward threshold of 0.95 and 10.9% at a perfect-reward threshold of 1.0, while the mean pass rate across models is 4.3% and 1.7% under the two thresholds, respectively. These results reveal headroom for improvement. We further analyze failure modes and error patterns, and release Long-Horizon-Terminal-Bench to support future progress on long-horizon terminal agents.",
+      "pdf_url": "https://arxiv.org/abs/2607.08964",
+      "comment": "",
+      "technologies": [
+        "Dense Reward-Based Grading",
+        "Long-Horizon Planning",
+        "Long-Context Management"
+      ],
+      "maturity": "early",
+      "confidence": 0.8,
+      "curator_score": 6.2,
+      "product_potential": [
+        "Automated scientific experiment reproduction and analysis",
+        "Advanced software engineering assistant with iterative debugging capabilities"
+      ],
+      "domain_applications": [
+        "science",
+        "enterprise"
+      ]
+    },
+    {
+      "id": "2508.20134",
+      "title": "QAgent: An LLM-based Multi-Agent System for Autonomous OpenQASM programming",
+      "authors": [],
+      "categories": [
+        "cs.AI"
+      ],
+      "published": "2026-07-13",
+      "updated": "2026-07-13",
+      "summary": "arXiv:2508.20134v2 Announce Type: replace Abstract: Programming quantum circuits at the OpenQASM level is essential for achieving hardware-aware optimization and reliable execution on noisy intermediate-scale quantum (NISQ) devices, yet it remains challenging due to the need for domain-specific planning, iterative code synthesis, and low-level calibration. In this paper, we present QAgent, the first autonomous multi-agent framework for end-to-end OpenQASM code generation. QAgent integrates schema-aware task planning, example- and tool-driven code synthesis, and hardware-aware calibration within a unified planning-synthesis-calibration workflow. The system leverages retrieval-augmented generation (RAG) to access structured kernel knowledge, examples, and backend constraints, and employs coordinated multi-agent reasoning with iterative execution feedback to ensure correctness. We evaluate QAgent on 12 representative quantum kernels and their compositions across five large language models (LLMs). Results show that QAgent improves Pass@1 accuracy by 47-70% on single-kernel tasks and achieves over 88% accuracy on multi-kernel workflows for large models, substantially outperforming existing baselines. Furthermore, under realistic hardware frequency drift, QAgent maintains near-unit execution fidelity through automated calibration, whereas SDK-based LLM methods suffer significant degradation. These results demonstrate that integrating planning, synthesis, and calibration is critical for reliable quantum program generation. The implementation of QAgent is open-sourced at https://github.com/fuzhenxiao/QAgent",
+      "pdf_url": "https://arxiv.org/abs/2508.20134",
+      "comment": "",
+      "technologies": [
+        "Retrieval Augmented Generation",
+        "Multi-Agent Systems"
+      ],
+      "maturity": "early",
+      "confidence": 0.8,
+      "curator_score": 5.7,
+      "product_potential": [
+        "Automated quantum circuit design tool for researchers and engineers",
+        "Quantum programming assistant for educational purposes"
+      ],
+      "domain_applications": [
+        "science",
+        "education"
+      ]
+    },
+    {
+      "id": "2508.15806",
+      "title": "REAL: REtrieval-reAsoning and Logic-constructed Attention Behaviors for Long-Context KV Cache Compression",
+      "authors": [],
+      "categories": [
+        "cs.AI"
+      ],
+      "published": "2026-07-13",
+      "updated": "2026-07-13",
+      "summary": "arXiv:2508.15806v2 Announce Type: replace-cross Abstract: The growing sequence length of large language models poses significant challenges for key-value (KV) caches. Existing state-of-the-art cache eviction methods primarily analyze the inference behavior of attention heads in successful retrieval-reasoning cases, often overlooking diverse behaviors in failure cases, such as bias and distraction. This oversight limits the potential to leverage heterogeneous head behaviors for improved eviction performance. Inspired by the confusion matrix, we introduce an Attention Behavior Matrix to comprehensively analyze attention head behaviors in both success and failure scenarios. By maximizing the signal-to-noise ratio -- strengthening valid reasoning pathways in success cases while inhibiting noise from bias and distraction in failure cases -- we propose REtrieval-reAsoning and Logic-constructed (REAL) KV cache eviction, the first method to leverage multi-behavior analysis. Comprehensive evaluations show that REAL achieves remarkable performance across various models and benchmarks; notably, on LongBench v2, it achieves comparable accuracy to the strongest baseline, HeadKV-R2, while requiring 32x less space (Figure 1). By offering a novel perspective on behavior analysis, we pave the way for a shift from success-only to comprehensive, failure-aware methods in long-context modeling. Our code is available at https://github.com/yonseicasl/REAL.",
+      "pdf_url": "https://arxiv.org/abs/2508.15806",
+      "comment": "",
+      "technologies": [
+        "KV Cache Optimization",
+        "Retrieval Augmented Generation"
+      ],
+      "maturity": "medium",
+      "confidence": 0.8,
+      "curator_score": 5.7,
+      "product_potential": [
+        "Optimized long-context language models for enterprise applications",
+        "Enhanced retrieval-augmented generation systems for healthcare and education"
+      ],
+      "domain_applications": [
+        "enterprise",
+        "healthcare",
+        "education"
+      ]
+    },
+    {
+      "id": "2510.03595",
+      "title": "Decoupling Task-Solving and Output Formatting in LLM Generation",
+      "authors": [],
+      "categories": [
+        "cs.CL"
+      ],
+      "published": "2026-07-13",
+      "updated": "2026-07-13",
+      "summary": "arXiv:2510.03595v2 Announce Type: replace Abstract: Large language models (LLMs) are increasingly adept at solving complex problems, such as mathematical reasoning and automatic evaluation. However, performance often degrades when prompts intertwine task instructions with rigid formatting requirements. This entanglement creates competing goals for the model, hindering its reasoning capabilities. To address this, we introduce Deco-G, a decoding framework that explicitly decouples format adherence from problem solving. Deco-G delegates format adherence to a separate Format Estimation Module (FEM), which performs probabilistic lookahead to estimate future format compliance rate and reweighs token probabilities, allowing the LLM to focus solely on task resolution. To make this approach both practical and efficient, we introduce three key innovations: instruction-aware distillation, a flexible trie-building algorithm, and HMM state pruning. Experiments across mathematical reasoning, event argument extraction, and LLM-as-a-judge demonstrate that Deco-G constantly gains over prompting or structured generation baselines, with guaranteed format compliance. We release our code at https://github.com/haikangdeng/deco-g.",
+      "pdf_url": "https://arxiv.org/abs/2510.03595",
+      "comment": "",
+      "technologies": [
+        "Deco-G Framework",
+        "Format Estimation Module",
+        "Instruction-aware Distillation",
+        "HMM State Pruning"
+      ],
+      "maturity": "early",
+      "confidence": 0.8,
+      "curator_score": 5.6,
+      "product_potential": [
+        "AI-powered educational tools with guaranteed output formatting",
+        "Automated report generation in enterprise settings with strict formatting requirements"
+      ],
+      "domain_applications": [
+        "education",
+        "enterprise"
+      ]
+    },
+    {
+      "id": "2506.08797",
+      "title": "HunyuanVideo-HOMA: Generic Human-Object Interaction in Multimodal Driven Human Animation",
+      "authors": [],
+      "categories": [
+        "cs.CV"
+      ],
+      "published": "2026-07-09",
+      "updated": "2026-07-09",
+      "summary": "arXiv:2506.08797v2 Announce Type: replace Abstract: To address key limitations in human-object interaction (HOI) video generation -- specifically the reliance on curated motion data, limited generalization to novel objects/scenarios, and restricted accessibility -- we introduce HunyuanVideo-HOMA, a weakly conditioned multimodal-driven framework. HunyuanVideo-HOMA enhances controllability and reduces dependency on precise inputs through sparse, decoupled motion guidance. It encodes appearance and motion signals into the dual input space of a multimodal diffusion transformer (MMDiT), fusing them within a shared context space to synthesize temporally consistent and physically plausible interactions. To optimize training, we integrate a parameter-space HOI adapter initialized from pretrained MMDiT weights, preserving prior knowledge while enabling efficient adaptation, and a facial cross-attention adapter for anatomically accurate audio-driven lip synchronization. Extensive experiments confirm state-of-the-art performance in interaction naturalness and generalization under weak supervision. Finally, HunyuanVideo-HOMA demonstrates versatility in text-conditioned generation and interactive object manipulation, supported by a user-friendly demo interface. The project page is at https://https://bone-11.github.io/homa-page//.",
+      "pdf_url": "https://arxiv.org/abs/2506.08797",
+      "comment": "",
+      "technologies": [
+        "Multimodal Learning",
+        "Diffusion Models",
+        "Vision Transformer",
+        "Low-Rank Adaptation"
+      ],
+      "maturity": "medium",
+      "confidence": 0.8,
+      "curator_score": 5.5,
+      "product_potential": [
+        "Virtual reality training simulations for healthcare professionals",
+        "Interactive digital avatars for customer service and marketing",
+        "Augmented reality tools for designers and architects"
+      ],
+      "domain_applications": [
+        "healthcare",
+        "education",
+        "creative",
+        "robotics",
+        "other"
+      ]
+    },
+    {
+      "id": "2607.06008",
+      "title": "PolyWorkBench: Benchmarking Multilingual Long-Horizon LLM Agents",
+      "authors": [],
+      "categories": [
+        "cs.CL"
+      ],
+      "published": "2026-07-10",
+      "updated": "2026-07-10",
+      "summary": "arXiv:2607.06008v2 Announce Type: replace-cross Abstract: Large language model (LLM) agents have shown strong performance in long-horizon tasks that require planning, tool use, and interaction with external environments. However, most existing benchmarks implicitly assume a monolingual setting, where the entire execution process, including reasoning, tool invocation, and output generation, is conducted within a single language. In contrast, real-world applications often involve multilingual inputs and outputs within a unified workflow, yet the interaction between multilinguality and agentic execution remains underexplored. In this work, we introduce PolyWorkBench, a benchmark for evaluating LLM agents on multilingual long-horizon workplace workflows. PolyWorkBench consists of 67 tasks across five domains, including commerce, knowledge work, legal analysis, localization, and manufacturing, where agents must process heterogeneous multilingual inputs, perform iterative reasoning, invoke external tools, and produce structured outputs. To enable comprehensive evaluation, we propose a hybrid framework that combines structural grading, executable verification, and LLM-based semantic assessment. This design allows us to capture both functional correctness and linguistic consistency across complex workflows. Empirical results show that state-of-the-art LLM agents suffer significant performance degradation in multilingual workflow settings compared to monolingual counterparts. Our analysis suggests that multilinguality introduces compounding effects across reasoning and execution steps, highlighting the importance of jointly modeling language variation and procedural decision-making in agent evaluation.",
+      "pdf_url": "https://arxiv.org/abs/2607.06008",
+      "comment": "",
+      "technologies": [
+        "Multilingual Learning",
+        "Long-Horizon LLM Agents",
+        "Hybrid Evaluation Framework"
+      ],
+      "maturity": "early",
+      "confidence": 0.8,
+      "curator_score": 5.5,
+      "product_potential": [
+        "Multilingual AI assistants for global enterprises",
+        "AI-powered localization tools for content creators"
+      ],
+      "domain_applications": [
+        "enterprise",
+        "education",
+        "creative"
+      ]
+    },
+    {
+      "id": "2607.07836",
+      "title": "Infinity-Parser2 Technical Report",
+      "authors": [],
+      "categories": [
+        "cs.AI"
+      ],
+      "published": "2026-07-11",
+      "updated": "2026-07-11",
+      "summary": "arXiv:2607.07836v1 Announce Type: new Abstract: We present Infinity-Parser2, a large multimodal model that couples a controllable data-synthesis pipeline with multi-task reinforcement learning for end-to-end document parsing, addressing the persistent scarcity of faithfully annotated parsing corpora. Our contributions are threefold. First, we build a scalable synthesis engine, pairing a controllable rendering framework with an iterative refinement loop, and use it to construct and open-source Infinity-Doc2-5M: a 5-million-sample bilingual (Chinese/English) corpus spanning diverse document types, annotated with element bounding boxes, canonical content forms (Markdown, HTML, LaTeX, SMILES, structured charts), and full-page reading order. Second, we introduce a verifiable, multi-task reward system that enables Joint Reinforcement Learning across eight co-trained objectives (document parsing, layout analysis, table parsing, math formula parsing, chart parsing, chemical formula parsing, document VQA, and general multimodal understanding), unifying perception, structure, and reasoning in a single optimization signal. Third, we release two variants under a shared architecture: Infinity-Parser2-Flash, optimized for low-latency inference with a $3.68\\times$ throughput gain over Infinity-Parser-7B, and Infinity-Parser2-Pro, engineered for precision-critical settings. Infinity-Parser2-Pro reaches state-of-the-art 87.6% on olmOCR-Bench and 74.3% on ParseBench, surpassing DeepSeek-OCR-2, PaddleOCR-VL-1.5, and MinerU2.5, with strong generalization to charts, chemical formulas, and document VQA.",
+      "pdf_url": "https://arxiv.org/abs/2607.07836",
+      "comment": "",
+      "technologies": [
+        "Multimodal Learning",
+        "Reinforcement Learning from Human Feedback",
+        "Retrieval Augmented Generation",
+        "Low-Rank Adaptation",
+        "Direct Preference Optimization"
+      ],
+      "maturity": "medium",
+      "confidence": 0.85,
+      "curator_score": 5.4,
+      "product_potential": [
+        "AI-powered document processing platform for enterprises to automate data extraction from diverse document types",
+        "Multilingual document analysis tool for educational institutions to support students with learning disabilities"
+      ],
+      "domain_applications": [
+        "enterprise",
+        "education",
+        "accessibility"
+      ]
+    },
+    {
+      "id": "2607.09142",
+      "title": "MedRealMM: A Real-World Multimodal Benchmark for Chinese Online Medical Consultation",
+      "authors": [
+        "Runhan Shi",
+        "Quan Zhou",
+        "Yuqian Xu",
+        "Shuai Yang",
+        "Xin Wu",
+        "Zitong Zhou",
+        "Hui Liu",
+        "Bin Cha",
+        "Zheming Wang",
+        "Liya Li",
+        "Wei Wei",
+        "Haoyuan Hu",
+        "Jun Xu"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CL",
+        "cs.CV"
+      ],
+      "published": "2026-07-10",
+      "updated": "2026-07-10",
+      "summary": "Large language models (LLMs) are increasingly deployed in online medical consultation, yet existing benchmarks remain poorly aligned with real clinical practice. Many rely on synthetic conversations or patient simulators, omit patient-uploaded medical images, or evaluate open-ended clinical responses using multiple-choice or lexical-overlap metrics that poorly reflect clinical quality. We introduce \\textbf{MedRealMM}, a large-scale benchmark for multimodal online medical consultation built from de-identified patient-doctor interactions collected from a nationwide Chinese internet hospital. MedRealMM uses a Multimodal Clinical Challenge Point (MCCP) extraction framework to identify clinically demanding moments in authentic consultation trajectories and converts each into a standardized next-response generation task while preserving the preceding text-image context. Each instance is paired with a case-specific rubric refined by physicians that rewards clinically desirable behaviors and penalizes unsafe, unsupported, or contradictory responses. The current release contains 5,620 real-world multimodal cases spanning 64 clinical departments. We evaluate 19 general-purpose and medical-specialized LLMs, including text-only and multimodal systems. Our results show that image information is critical for reliable clinical performance and that current frontier models remain below the online physician response. Although some frontier models satisfy as many or more positive clinical criteria than physicians, they trigger more negative criteria, indicating that safety-sensitive error avoidance remains a central bottleneck. MedRealMM offers a realistic and reproducible benchmark for evaluating multimodal medical reasoning in real-world online consultation. The dataset will be publicly available on Hugging Face at https://huggingface.co/datasets/jdh-algo/MedRealMM.",
+      "pdf_url": "https://arxiv.org/pdf/2607.09142v1",
+      "comment": "",
+      "technologies": [
+        "Multimodal Learning",
+        "Retrieval Augmented Generation"
+      ],
+      "maturity": "medium",
+      "confidence": 0.8,
+      "curator_score": 5.4,
+      "product_potential": [
+        "Develop a multimodal AI assistant for online medical consultations that can interpret patient-uploaded images and provide accurate, context-aware responses.",
+        "Create a clinical decision support system that uses the MedRealMM benchmark to train and evaluate models for real-world medical scenarios, improving diagnostic accuracy and patient outcomes."
+      ],
+      "domain_applications": [
+        "healthcare"
+      ]
+    },
+    {
+      "id": "2601.09097",
+      "title": "Programming over Thinking: Efficient and Robust Multi-Constraint Planning",
+      "authors": [],
+      "categories": [
+        "cs.AI"
+      ],
+      "published": "2026-07-13",
+      "updated": "2026-07-13",
+      "summary": "arXiv:2601.09097v4 Announce Type: replace Abstract: Multi-constraint planning involves identifying, evaluating, and refining candidate plans while satisfying multiple, potentially conflicting constraints. Existing large language model (LLM) approaches face fundamental limitations in this domain. Pure reasoning paradigms, which rely on long natural language chains, are prone to inconsistency, error accumulation, and prohibitive cost as constraints compound. Conversely, LLMs combined with coding- or solver-based strategies lack flexibility: they often generate problem-specific code from scratch or depend on fixed solvers, failing to capture generalizable logic across diverse problems. To address these challenges, we introduce the Scalable COde Planning Engine (SCOPE), a framework that disentangles query-specific reasoning from generic code execution. By separating reasoning from execution, SCOPE produces solver functions that are consistent, deterministic, and reusable across queries while requiring only minimal changes to input parameters. SCOPE achieves state-of-the-art performance while lowering cost and latency. For example, with GPT-4o, it reaches 93.1% success on TravelPlanner, a 61.6% gain over the best baseline (CoT) while cutting inference cost by 1.4x and time by ~4.67x. Code is available at https://github.com/DerrickGXD/SCOPE.",
+      "pdf_url": "https://arxiv.org/abs/2601.09097",
+      "comment": "",
+      "technologies": [
+        "Multi-Constraint Planning",
+        "Scalable COde Planning Engine (SCOPE)"
+      ],
+      "maturity": "early",
+      "confidence": 0.8,
+      "curator_score": 5.4,
+      "product_potential": [
+        "A dynamic scheduling and planning tool for enterprises",
+        "An AI-powered travel planning assistant with real-time constraint handling"
+      ],
+      "domain_applications": [
+        "enterprise",
+        "other"
+      ]
+    },
+    {
+      "id": "2604.20140",
+      "title": "HiPO: Hierarchical Preference Optimization for Adaptive Reasoning in LLMs",
+      "authors": [],
+      "categories": [
+        "cs.AI"
+      ],
+      "published": "2026-07-13",
+      "updated": "2026-07-13",
+      "summary": "arXiv:2604.20140v2 Announce Type: replace Abstract: Direct Preference Optimization (DPO) is an effective framework for aligning large language models with human preferences, but it struggles with complex reasoning tasks. DPO optimizes for the likelihood of generating preferred over dispreferred responses in their entirety and lacks the granularity to provide feedback on subsections of many-step solutions typical of reasoning tasks. Existing methods excel at either stable preference learning (e.g., DPO variants like KTO and RSO) or structured reasoning (e.g., ReMA's multi-agent RL framework, Tree of Thoughts), but fail to merge these complementary strengths. We propose HiPO (Hierarchical Preference Optimization), an extension of DPO that separates responses into reasoning segments (query clarification and context, reasoning steps, and answer) and computes loss as a weighted sum of the DPO loss for each segment. Our approach enables segment-specific training while maintaining DPO's computational efficiency and training stability. We demonstrate that for multiple 7B LLMs fine-tuned using HiPO and DPO on the Math Stack Exchange preference dataset, the models trained with HiPO outperform the others on a variety of common math benchmarks and achieve greater organization, logical flow, and consistency as measured by GPT-4.1.",
+      "pdf_url": "https://arxiv.org/abs/2604.20140",
+      "comment": "",
+      "technologies": [
+        "Direct Preference Optimization",
+        "Hierarchical Preference Optimization"
+      ],
+      "maturity": "early",
+      "confidence": 0.8,
+      "curator_score": 5.4,
+      "product_potential": [
+        "An AI tutor that provides step-by-step reasoning for math problems, with the ability to adapt to student preferences and learning styles.",
+        "A customer support chatbot that can break down complex issues into manageable segments and provide tailored solutions."
+      ],
+      "domain_applications": [
+        "education",
+        "enterprise"
+      ]
+    },
+    {
+      "id": "2603.29943",
+      "title": "Diagnosing Long-Video Quantitative Reasoning in Multimodal LLMs via Enumeration and Counting",
+      "authors": [],
+      "categories": [
+        "cs.CV"
+      ],
+      "published": "2026-07-13",
+      "updated": "2026-07-13",
+      "summary": "arXiv:2603.29943v2 Announce Type: replace Abstract: Final-answer video QA can show whether a model predicts the right number, but not which instances it counted, when the supporting evidence occurs, or why it failed. We diagnose long-video quantitative reasoning in multimodal large language models (MLLMs) through three coupled abilities: enumerating query-relevant instances, temporally grounding supporting evidence, and aggregating the evidence into counts. To support this analysis, we build EC-Bench, an evidence-annotated evaluation suite with 152 untrimmed videos longer than 30 minutes, 1,699 open-ended queries across six reasoning categories, and human-verified evidence spans. We evaluate 22 open-source and proprietary MLLMs using timestamped visual frames and transcripts. The best average scores reach only 29.98% Enumeration F1 and 23.74% Counting accuracy, compared with human performance of 78.57% and 82.97%, respectively. Our analyses show that counting errors are rarely isolated arithmetic mistakes: Enumeration F1 is strongly associated with Counting accuracy, temporal grounding quality is associated with lower counting error, and Counting accuracy drops as supporting evidence becomes more distributed. These findings recast long-video counting as evidence retrieval, temporal grounding, deduplication, and aggregation across the video, rather than simple numerical prediction.",
+      "pdf_url": "https://arxiv.org/abs/2603.29943",
+      "comment": "",
+      "technologies": [
+        "Multimodal Learning",
+        "Retrieval Augmented Generation"
+      ],
+      "maturity": "early",
+      "confidence": 0.8,
+      "curator_score": 5.4,
+      "product_potential": [
+        "Developing a video analysis tool for educational content creators to automatically count and track specific objects or events in long-form videos.",
+        "Creating an AI-powered surveillance system that can accurately enumerate and count specific activities or objects in long surveillance footage."
+      ],
+      "domain_applications": [
+        "education",
+        "robotics",
+        "enterprise"
+      ]
+    },
+    {
+      "id": "2604.20730",
+      "title": "Render-in-the-Loop: Vector Graphics Generation via Visual Self-Feedback",
+      "authors": [],
+      "categories": [
+        "cs.CV"
+      ],
+      "published": "2026-07-13",
+      "updated": "2026-07-13",
+      "summary": "arXiv:2604.20730v3 Announce Type: replace Abstract: Multimodal Large Language Models (MLLMs) have shown promising capabilities in generating Scalable Vector Graphics (SVG) via direct code synthesis. However, existing paradigms typically adopt an open-loop \"blind drawing\" approach, where models generate symbolic code sequences without perceiving intermediate visual outcomes. This methodology severely underutilizes the powerful visual priors embedded in MLLMs vision encoders, treating SVG generation as a disjointed textual sequence modeling task rather than an integrated visuo-spatial one. Consequently, models struggle to reason about partial canvas states and implicit occlusion relationships, which are visually explicit but textually ambiguous. To bridge this gap, we propose Render-in-the-Loop, a novel generation paradigm that reformulates SVG synthesis as a step-wise, visual-context-aware process. By rendering intermediate code states into a cumulative canvas, the model explicitly observes the evolving visual context at each step, leveraging on-the-fly feedback to guide subsequent generation. However, we demonstrate that applying this visual loop naively to off-the-shelf models is suboptimal due to their inability to leverage incremental visual-code mappings. To address this, we first utilize fine-grained path decomposition to construct dense multi-step visual trajectories, and then introduce a Visual Self-Feedback (VSF) training strategy to condition the next primitive generation on intermediate visual states. Furthermore, a Render-and-Verify (RaV) inference mechanism is proposed to effectively filter degenerate and redundant primitives. Our framework, instantiated on a multimodal foundation model, outperforms strong open-weight baselines on the standard MMSVGBench. This result highlights the remarkable data efficiency and generalization capability of our Render-in-the-Loop paradigm for both Text-to-SVG and Image-to-SVG tasks.",
+      "pdf_url": "https://arxiv.org/abs/2604.20730",
+      "comment": "",
+      "technologies": [
+        "Visual Self-Feedback",
+        "Render-and-Verify",
+        "Multimodal Learning"
+      ],
+      "maturity": "early",
+      "confidence": 0.7,
+      "curator_score": 5.4,
+      "product_potential": [
+        "AI-powered vector graphics design tool",
+        "Automated SVG generation for web and mobile applications"
+      ],
+      "domain_applications": [
+        "creative",
+        "education",
+        "enterprise"
+      ]
+    },
+    {
+      "id": "2607.08182",
+      "title": "LEEVLA: Seeing What Matters in Latent Environment Evolution for Vision-Language-Action",
+      "authors": [
+        "Qi Lyu",
+        "Baicheng Liu",
+        "Xudong Wang",
+        "Jiahua Dong",
+        "Lianqing Liu",
+        "Zhi Han"
+      ],
+      "categories": [
+        "cs.CV",
+        "cs.AI"
+      ],
+      "published": "2026-07-09",
+      "updated": "2026-07-09",
+      "summary": "Vision-language-action (VLA) models aim to map multimodal inputs to robot actions. However, most existing approaches struggle to cover complex dynamic scenarios due to treating all visual tokens uniformly and reasoning with human-selected factors, which lack mechanisms to emphasize task-critical evidence and ignore underlying factors. To address this issue, we propose LEEVLA, a VLA architecture for seeing what matters in Latent Environment Evolution that explicitly guides the model toward informative regions while preserving the structured evolution of latent world representations. To identify salient and instruction-relevant regions, we introduce drift-guided dynamic prioritization (DGDP), which combines dynamic position prioritization (DPP) with semantic drift guidance (SDG) to guide the VLA agent where to attend during training. On top of this, we introduce structured feature flow generation (SFFG), which models how these prioritized features should evolve in latent space via prototype-to-periphery (P2P) prediction, and a mutual-neighborhood contrastive (MC) loss to maintain topological consistency among neighborhoods. Together, DGDP and SFFG form a task-aware \"where-how\" training framework. Extensive experiments on VLA benchmarks show that LEEVLA consistently outperforms prior methods, confirming that explicit task-evidence guidance and structured latent reasoning are both crucial for scalable VLA. Our code is available at https://github.com/LyuQi127/LEEVLA.",
+      "pdf_url": "https://arxiv.org/pdf/2607.08182v1",
+      "comment": "",
+      "technologies": [
+        "Multimodal Learning",
+        "Vision Transformer",
+        "Reinforcement Learning from Human Feedback",
+        "Attention Mechanisms",
+        "Contrastive Learning"
+      ],
+      "maturity": "medium",
+      "confidence": 0.8,
+      "curator_score": 5.2,
+      "product_potential": [
+        "Autonomous robotic systems for dynamic environments with enhanced task-aware perception",
+        "AI-driven surveillance systems that prioritize and track critical visual evidence in real-time",
+        "Adaptive assistive technologies for visually impaired individuals, focusing on contextually relevant environmental cues"
+      ],
+      "domain_applications": [
+        "robotics",
+        "enterprise",
+        "accessibility"
+      ]
+    },
+    {
+      "id": "2607.08080",
+      "title": "MASTE: A Multi-Agent Pipeline for Zero-Shot Aspect Sentiment Triplet Extraction",
+      "authors": [],
+      "categories": [
+        "cs.CL"
+      ],
+      "published": "2026-07-10",
+      "updated": "2026-07-10",
+      "summary": "arXiv:2607.08080v1 Announce Type: new Abstract: Aspect Sentiment Triplet Extraction (ASTE) requires jointly identifying (aspect, opinion, sentiment) triples from a given review sentence. While large language models (LLMs) achieve strong zero-shot performance on many NLP benchmarks, their effectiveness on ASTE remains limited, as single-pass generation forces the model to determine span boundaries, opinion grouping, and sentiment polarity in a single decoding step. Common remedies, such as few-shot in-context learning and chain-of-thought prompting, offer only marginal improvements and rely heavily on either in-domain demonstrations sampled from labeled training data or carefully engineered reasoning prompts, neither of which is broadly available in zero-shot deployment. Inspired by the classical agent paradigm, we propose MASTE, a multi-agent pipeline for zero-shot Aspect Sentiment Triplet Extraction. MASTE decomposes ASTE into four sequential stages, where specialized agents handle different compositional subtasks with explicit conditioning on prior outputs. This design enables entirely training-free zero-shot ASTE and generalizes across different backbones and datasets. Extensive experiments on four ASTE benchmarks show that MASTE substantially outperforms zero-shot and chain-of-thought LLM baselines under the same backbone, narrowing the gap to fully supervised methods without using any labeled triplets. Code is available at https://github.com/Hankerlove/MASTE.",
+      "pdf_url": "https://arxiv.org/abs/2607.08080",
+      "comment": "",
+      "technologies": [
+        "Multi-Agent Systems",
+        "Zero-Shot Learning",
+        "Aspect Sentiment Triplet Extraction"
+      ],
+      "maturity": "medium",
+      "confidence": 0.8,
+      "curator_score": 5.2,
+      "product_potential": [
+        "A customer feedback analysis tool that can extract and categorize sentiment from reviews without requiring labeled training data.",
+        "A real-time sentiment analysis dashboard for social media monitoring that can identify aspects, opinions, and sentiment in posts."
+      ],
+      "domain_applications": [
+        "enterprise",
+        "other"
+      ]
+    },
+    {
+      "id": "2607.09428",
+      "title": "Multimodal Scenario Similarity Search for Autonomous Driving",
+      "authors": [
+        "Tamás Matuszka",
+        "András Tamásy",
+        "Balázs Szolár"
+      ],
+      "categories": [
+        "cs.CV",
+        "cs.LG"
+      ],
+      "published": "2026-07-10",
+      "updated": "2026-07-10",
+      "summary": "Large-scale autonomous-driving datasets contain vast numbers of recorded scenarios, creating a need for efficient retrieval methods that can identify situations similar to a given query. Existing approaches typically rely on either visual representations or motion-based descriptions, making it difficult to understand their relative strengths and limitations for scenario retrieval. In this work, we present a multimodal framework for autonomous-driving scenario retrieval that combines visual and trajectory-based representations within a unified retrieval pipeline. We investigate two trajectory-based approaches: Exo-Trajectory, an explicit matching method based on surrounding-agent motion, and ScenarioFormer, a transformer-based representation learned from object trajectories using contrastive learning. We compare these approaches against strong vision-based baselines and analyze their behavior across a diverse set of driving scenarios. Experimental results show that trajectory representations provide strong retrieval performance for motion-centric events such as cut-ins, turning maneuvers, and traffic queueing, while visual embeddings excel when appearance cues are informative. Most importantly, combining visual and trajectory information consistently improves retrieval quality, yielding the best overall performance. These findings demonstrate that appearance and motion capture are complementary notions of scenario similarity and motivate multimodal retrieval systems for autonomous-driving data mining, dataset curation, and scenario-based validation.",
+      "pdf_url": "https://arxiv.org/pdf/2607.09428v1",
+      "comment": "",
+      "technologies": [
+        "Multimodal Learning",
+        "Contrastive Learning",
+        "Vision Transformer"
+      ],
+      "maturity": "medium",
+      "confidence": 0.8,
+      "curator_score": 5.2,
+      "product_potential": [
+        "Autonomous Driving Dataset Curation Tool",
+        "Scenario-Based Validation System for Autonomous Vehicles"
+      ],
+      "domain_applications": [
+        "robotics",
+        "other"
+      ]
+    }
+  ],
+  "technologies": [
+    {
+      "name": "Dense Reward-Based Grading",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.7,
+      "trend": "rising",
+      "applications": [
+        "enterprise",
+        "science"
+      ]
+    },
+    {
+      "name": "Long-Horizon Planning",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.7,
+      "trend": "rising",
+      "applications": [
+        "enterprise",
+        "science"
+      ]
+    },
+    {
+      "name": "Long-Context Management",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.7,
+      "trend": "rising",
+      "applications": [
+        "enterprise",
+        "science"
+      ]
+    },
+    {
+      "name": "Retrieval Augmented Generation",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.7,
+      "trend": "rising",
+      "applications": [
+        "accessibility",
+        "enterprise",
+        "healthcare",
+        "robotics",
+        "education",
+        "science"
+      ]
+    },
+    {
+      "name": "Multi-Agent Systems",
+      "papers": 1,
+      "maturity": "early",
+      "confidence": 0.52,
+      "trend": "emerging",
+      "applications": [
+        "education",
+        "enterprise",
+        "science",
+        "other"
+      ]
+    },
+    {
+      "name": "KV Cache Optimization",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.7,
+      "trend": "rising",
+      "applications": [
+        "education",
+        "enterprise",
+        "healthcare"
+      ]
+    },
+    {
+      "name": "Deco-G Framework",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.7,
+      "trend": "rising",
+      "applications": [
+        "education",
+        "enterprise"
+      ]
+    },
+    {
+      "name": "Format Estimation Module",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.7,
+      "trend": "rising",
+      "applications": [
+        "education",
+        "enterprise"
+      ]
+    },
+    {
+      "name": "Instruction-aware Distillation",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.7,
+      "trend": "rising",
+      "applications": [
+        "education",
+        "enterprise"
+      ]
+    },
+    {
+      "name": "HMM State Pruning",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.7,
+      "trend": "rising",
+      "applications": [
+        "education",
+        "enterprise"
+      ]
+    },
+    {
+      "name": "Multimodal Learning",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.7,
+      "trend": "rising",
+      "applications": [
+        "robotics",
+        "healthcare",
+        "other",
+        "enterprise",
+        "accessibility",
+        "education",
+        "creative"
+      ]
+    },
+    {
+      "name": "Diffusion Models",
+      "papers": 1,
+      "maturity": "early",
+      "confidence": 0.6,
+      "trend": "rising",
+      "applications": [
+        "robotics",
+        "healthcare",
+        "other",
+        "education",
+        "creative"
+      ]
+    },
+    {
+      "name": "Vision Transformer",
+      "papers": 1,
+      "maturity": "early",
+      "confidence": 0.6,
+      "trend": "rising",
+      "applications": [
+        "robotics",
+        "healthcare",
+        "other",
+        "enterprise",
+        "accessibility",
+        "education",
+        "creative"
+      ]
+    },
+    {
+      "name": "Low-Rank Adaptation",
+      "papers": 1,
+      "maturity": "early",
+      "confidence": 0.6,
+      "trend": "rising",
+      "applications": [
+        "robotics",
+        "healthcare",
+        "other",
+        "enterprise",
+        "accessibility",
+        "education",
+        "creative"
+      ]
+    },
+    {
+      "name": "Multilingual Learning",
+      "papers": 1,
+      "maturity": "early",
+      "confidence": 0.55,
+      "trend": "emerging",
+      "applications": [
+        "creative",
+        "education",
+        "enterprise"
+      ]
+    },
+    {
+      "name": "Long-Horizon LLM Agents",
+      "papers": 1,
+      "maturity": "early",
+      "confidence": 0.55,
+      "trend": "emerging",
+      "applications": [
+        "creative",
+        "education",
+        "enterprise"
+      ]
+    },
+    {
+      "name": "Hybrid Evaluation Framework",
+      "papers": 1,
+      "maturity": "early",
+      "confidence": 0.55,
+      "trend": "emerging",
+      "applications": [
+        "creative",
+        "education",
+        "enterprise"
+      ]
+    },
+    {
+      "name": "Reinforcement Learning from Human Feedback",
+      "papers": 1,
+      "maturity": "early",
+      "confidence": 0.5900000000000001,
+      "trend": "emerging",
+      "applications": [
+        "education",
+        "accessibility",
+        "enterprise",
+        "robotics"
+      ]
+    },
+    {
+      "name": "Direct Preference Optimization",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.7,
+      "trend": "rising",
+      "applications": [
+        "education",
+        "accessibility",
+        "enterprise"
+      ]
+    },
+    {
+      "name": "Multi-Constraint Planning",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.7,
+      "trend": "rising",
+      "applications": [
+        "enterprise",
+        "other"
+      ]
+    },
+    {
+      "name": "Scalable COde Planning Engine (SCOPE)",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.7,
+      "trend": "rising",
+      "applications": [
+        "enterprise",
+        "other"
+      ]
+    },
+    {
+      "name": "Hierarchical Preference Optimization",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.7,
+      "trend": "rising",
+      "applications": [
+        "education",
+        "enterprise"
+      ]
+    },
+    {
+      "name": "Visual Self-Feedback",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.7,
+      "trend": "rising",
+      "applications": [
+        "creative",
+        "education",
+        "enterprise"
+      ]
+    },
+    {
+      "name": "Render-and-Verify",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.7,
+      "trend": "rising",
+      "applications": [
+        "creative",
+        "education",
+        "enterprise"
+      ]
+    },
+    {
+      "name": "Attention Mechanisms",
+      "papers": 1,
+      "maturity": "early",
+      "confidence": 0.5700000000000001,
+      "trend": "emerging",
+      "applications": [
+        "accessibility",
+        "enterprise",
+        "robotics"
+      ]
+    },
+    {
+      "name": "Contrastive Learning",
+      "papers": 1,
+      "maturity": "early",
+      "confidence": 0.5700000000000001,
+      "trend": "emerging",
+      "applications": [
+        "accessibility",
+        "enterprise",
+        "robotics",
+        "other"
+      ]
+    },
+    {
+      "name": "Zero-Shot Learning",
+      "papers": 1,
+      "maturity": "early",
+      "confidence": 0.52,
+      "trend": "emerging",
+      "applications": [
+        "enterprise",
+        "other"
+      ]
+    },
+    {
+      "name": "Aspect Sentiment Triplet Extraction",
+      "papers": 1,
+      "maturity": "early",
+      "confidence": 0.52,
+      "trend": "emerging",
+      "applications": [
+        "enterprise",
+        "other"
+      ]
+    }
+  ],
+  "product_opportunities": [
+    {
+      "technology": "Dense Reward-Based Grading",
+      "idea": "RewardGrad: AI-driven grading system with continuous feedback for students",
+      "business_value": 8,
+      "engineering_difficulty": 7,
+      "competitive_advantage": "high",
+      "development_time": "3-5 months"
+    },
+    {
+      "technology": "Long-Horizon Planning",
+      "idea": "PlanMaster: AI project management tool for long-term strategic planning",
+      "business_value": 9,
+      "engineering_difficulty": 8,
+      "competitive_advantage": "high",
+      "development_time": "4-6 months"
+    },
+    {
+      "technology": "Long-Context Management",
+      "idea": "ContextPro: AI tool for managing and analyzing large-scale datasets",
+      "business_value": 7,
+      "engineering_difficulty": 6,
+      "competitive_advantage": "medium",
+      "development_time": "3-4 months"
+    },
+    {
+      "technology": "Retrieval Augmented Generation",
+      "idea": "DocGenius: AI document generation tool with real-time data retrieval",
+      "business_value": 8,
+      "engineering_difficulty": 7,
+      "competitive_advantage": "high",
+      "development_time": "3-5 months"
+    },
+    {
+      "technology": "KV Cache Optimization",
+      "idea": "CacheMaster: AI tool for optimizing database performance and reducing latency",
+      "business_value": 7,
+      "engineering_difficulty": 6,
+      "competitive_advantage": "medium",
+      "development_time": "2-3 months"
+    },
+    {
+      "technology": "Deco-G Framework",
+      "idea": "DecoLearn: AI educational platform with personalized learning paths",
+      "business_value": 8,
+      "engineering_difficulty": 7,
+      "competitive_advantage": "high",
+      "development_time": "3-5 months"
+    },
+    {
+      "technology": "Format Estimation Module",
+      "idea": "FormatPro: AI tool for automatic document formatting and standardization",
+      "business_value": 6,
+      "engineering_difficulty": 5,
+      "competitive_advantage": "low",
+      "development_time": "2-3 months"
+    },
+    {
+      "technology": "Instruction-aware Distillation",
+      "idea": "DistillLearn: AI educational tool for creating concise and effective learning materials",
+      "business_value": 7,
+      "engineering_difficulty": 6,
+      "competitive_advantage": "medium",
+      "development_time": "3-4 months"
+    },
+    {
+      "technology": "HMM State Pruning",
+      "idea": "StatePrune: AI tool for optimizing hidden Markov models in various applications",
+      "business_value": 6,
+      "engineering_difficulty": 5,
+      "competitive_advantage": "low",
+      "development_time": "2-3 months"
+    },
+    {
+      "technology": "Multimodal Learning",
+      "idea": "MultiLearn: AI platform for multimodal learning and data analysis",
+      "business_value": 9,
+      "engineering_difficulty": 8,
+      "competitive_advantage": "very high",
+      "development_time": "4-6 months"
+    },
+    {
+      "technology": "Direct Preference Optimization",
+      "idea": "PrefOpt: AI tool for optimizing user preferences and recommendations",
+      "business_value": 7,
+      "engineering_difficulty": 6,
+      "competitive_advantage": "medium",
+      "development_time": "3-4 months"
+    },
+    {
+      "technology": "Multi-Constraint Planning",
+      "idea": "PlanOpt: AI planning tool for complex multi-constraint scenarios",
+      "business_value": 8,
+      "engineering_difficulty": 7,
+      "competitive_advantage": "high",
+      "development_time": "3-5 months"
+    },
+    {
+      "technology": "Scalable COde Planning Engine (SCOPE)",
+      "idea": "CodeScope: AI tool for scalable code planning and optimization",
+      "business_value": 7,
+      "engineering_difficulty": 6,
+      "competitive_advantage": "medium",
+      "development_time": "3-4 months"
+    },
+    {
+      "technology": "Hierarchical Preference Optimization",
+      "idea": "HierPref: AI tool for hierarchical preference optimization in various applications",
+      "business_value": 6,
+      "engineering_difficulty": 5,
+      "competitive_advantage": "low",
+      "development_time": "2-3 months"
+    },
+    {
+      "technology": "Visual Self-Feedback",
+      "idea": "VisFeed: AI tool for visual self-feedback and improvement in creative and educational applications",
+      "business_value": 7,
+      "engineering_difficulty": 6,
+      "competitive_advantage": "medium",
+      "development_time": "3-4 months"
+    }
+  ]
+}

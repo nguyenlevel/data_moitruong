@@ -1,0 +1,1557 @@
+{
+  "meta": {
+    "date": "2026-07-06",
+    "papers_tracked": 15,
+    "technologies_discovered": 66,
+    "opportunities_identified": 15,
+    "last_update": "2026-07-06 19:37 UTC",
+    "backend": "llm7",
+    "model": "Research Curator v1"
+  },
+  "brief": [
+    "Step-Aware Reinforcement Learning in multimodal medical reasoning is advancing, enabling more precise and adaptive decision-making in healthcare. This matters for product builders as it can lead to more reliable AI-driven diagnostic tools. The opportunity lies in developing AI assistants for clinicians that can reason across text, imaging, and patient history with human-like step-by-step logic.",
+    "Recursive Evidence Replay (RECONTEXT) improves long-context reasoning in LLMs, allowing models to maintain coherence over extended interactions. This is critical for products requiring deep, sustained reasoning, such as legal analysis or complex customer support. The opportunity is to build LLM-powered applications that can handle long-form documents or multi-step workflows without losing context.",
+    "Cross-modal Feature Alignment Distillation (CFAD) in fashion detail generation enables high-fidelity, consistent multimodal outputs. This matters for e-commerce and design tools where visual and textual alignment is key. The opportunity is to create AI-driven fashion design platforms that generate detailed, customizable apparel from text or sketch inputs.",
+    "Offline-first multimodal Android assistants (e.g., VisionAId) are making accessibility tools more robust and private by leveraging on-device models. This is crucial for users with visual impairments who need real-time, reliable assistance without cloud dependency. The opportunity is to develop personalized, low-latency accessibility apps for edge devices.",
+    "Training-free robustness interventions in vision-language models (e.g., against typographic attacks) are improving security without additional training costs. This matters for enterprise and accessibility applications where adversarial resilience is critical. The opportunity is to integrate these mechanisms into existing VLM pipelines for safer deployments in high-stakes domains."
+  ],
+  "top_cards": [
+    {
+      "id": "new_technologies",
+      "title": "New Technologies",
+      "value": "66",
+      "label": "discovered this scan",
+      "detail": "Step-Aware Reinforcement Learning, Multimodal Learning, Medical Visual Question Answering, Reinforcement Learning from Human Feedback, Recursive Evidence Replay as LLM Harness for Long-Context Reasoning (RECONTEXT), Cross-modal Feature Alignment Distillation (CFAD), Consistency Reward Model, Multimodal Diffusion Transformer",
+      "color": "accent"
+    },
+    {
+      "id": "emerging_trends",
+      "title": "Emerging Trends",
+      "value": "66",
+      "label": "active trend clusters",
+      "detail": "Step-Aware Reinforcement Learning, Multimodal Learning, Medical Visual Question Answering, Reinforcement Learning from Human Feedback, Recursive Evidence Replay as LLM Harness for Long-Context Reasoning (RECONTEXT)",
+      "color": "green"
+    },
+    {
+      "id": "highest_potential",
+      "title": "Highest Potential",
+      "value": "8.3",
+      "label": "avg opportunity score",
+      "detail": "Breaking Failure Cascades: Step-Aware Reinforcement Learning for Medical Multimo",
+      "color": "amber"
+    },
+    {
+      "id": "biggest_surprise",
+      "title": "Biggest Surprise",
+      "value": "Breaking Failure Cascades: Ste",
+      "label": "confidence 85%",
+      "detail": "",
+      "color": "purple"
+    },
+    {
+      "id": "most_practical",
+      "title": "Most Practical",
+      "value": "Breaking Failure Cascades: Ste",
+      "label": "highest confidence paper",
+      "detail": "Clinical decision support system for radiologists, Automated medical diagnosis assistant for telemedicine platforms",
+      "color": "success"
+    },
+    {
+      "id": "most_innovative",
+      "title": "Most Innovative",
+      "value": "3",
+      "label": "early-stage technologies",
+      "detail": "VisionAId: An Offline-First Multimodal Android Assistant for People with Visual ",
+      "color": "blue"
+    }
+  ],
+  "papers": [
+    {
+      "id": "2606.31825",
+      "title": "Breaking Failure Cascades: Step-Aware Reinforcement Learning for Medical Multimodal Reasoning",
+      "authors": [
+        "Junha Jung",
+        "Minbyul Jeong",
+        "Suhyeon Lim",
+        "Sungwook Jung",
+        "Jaehoon Yun",
+        "Taeyun Roh",
+        "Mujeen Sung",
+        "Jaewoo Kang"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.multimodal_large_lan",
+        "cs.medical_visual_quest",
+        "cs.reinforcement_learni"
+      ],
+      "published": "2026-06-30",
+      "updated": "2026-06-30",
+      "summary": "Recent multimodal large language models have shown great promise in clinical image reasoning, but existing post-training pipelines remain predominantly outcome-centric, relying on final answer correctness or sequence-level preferences. This suffers from sparse credit assignment, making it difficult to optimize the reasoning process essential for clinical applications. Our analysis reveals that cascading errors from early-stage reasoning failures are a leading cause of incorrect predictions in medical visual question answering (VQA) benchmarks. Motivated by this, we propose Medical Reasoning-aware Policy Optimization (MRPO), an RL algorithm that incorporates step-wise process rewards. When the final answer is incorrect, MRPO assigns exponentially larger penalties to tokens in earlier invalid reasoning steps, breaking failure cascades without compromising successful paths. Across three multimodal LLM backbones, MRPO consistently outperforms standard GRPO and a recent RL baseline, and on Qwen3-VL-8B-Instruct even surpasses substantially larger medical MLLMs such as HuatuoGPT-Vision-34B by 2.79 points. Moreover, MRPO reduces early-stage reasoning failures from 64.0% to 13.0%, showing that targeted mitigation of cascading failures improves both reasoning quality and final answer accuracy. Our code is available at https://github.com/dmis-lab/MRPO\n\nAI Summary: A reinforcement learning approach called MRPO is introduced to improve clinical image reasoning by addressing cascading errors through step-wise process rewards, demonstrating superior performance over existing methods.",
+      "pdf_url": "https://arxiv.org/pdf/2606.31825",
+      "comment": "https://github.com/dmis-lab/MRPO",
+      "technologies": [
+        "Step-Aware Reinforcement Learning",
+        "Multimodal Learning",
+        "Medical Visual Question Answering",
+        "Reinforcement Learning from Human Feedback"
+      ],
+      "maturity": "medium",
+      "confidence": 0.85,
+      "curator_score": 5.0,
+      "product_potential": [
+        "Clinical decision support system for radiologists",
+        "Automated medical diagnosis assistant for telemedicine platforms",
+        "AI-powered medical training simulator for educational institutions"
+      ],
+      "domain_applications": [
+        "healthcare",
+        "education"
+      ]
+    },
+    {
+      "id": "2607.02509",
+      "title": "ReContext: Recursive Evidence Replay as LLM Harness for Long-Context Reasoning",
+      "authors": [
+        "Yanjun Zhao",
+        "Ruizhong Qiu",
+        "Tianxin Wei",
+        "Yuanchen Bei",
+        "Zhining Liu",
+        "Lingjie Chen",
+        "Ismini Lourentzou",
+        "Hanghang Tong",
+        "Jingrui He"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "published": "2026-07-02",
+      "updated": "2026-07-02",
+      "summary": "Understanding and reasoning over long contexts has become a key requirement for deploying large language models (LLMs) in realistic applications. Although recent LLMs support increasingly long context windows, they often fail to use relevant evidence that is already present in the input, revealing a gap between context access and effective context utilization. In this work, we propose Recursive Evidence Replay as LLM Harness for Long-Context Reasoning (RECONTEXT), a training-free inference method for improving long-context reasoning. RECONTEXT uses model-internal relevance signals to construct a query-conditioned evidence pool and replays it before final generation while preserving the full original context. This recursive selection process separates evidence organization from answer generation without training, external memory, or context pruning. We also provide a theoretical analysis based on associative memory, which characterizes the context as a memory store, the question as a retrieval cue, attention as cue-trace association, and replay as trace reactivation. Experiments on eight long-context datasets with 128K context length show that RECONTEXT consistently improves evidence utilization across Qwen3-4B, Qwen3-8B, and Llama3-8B, achieving the best average rank on all three backbones. Code is available at https://github.com/Yanjun-Zhao/ReContext.",
+      "pdf_url": "https://arxiv.org/pdf/2607.02509v1",
+      "comment": "",
+      "technologies": [
+        "Recursive Evidence Replay as LLM Harness for Long-Context Reasoning (RECONTEXT)"
+      ],
+      "maturity": "medium",
+      "confidence": 0.85,
+      "curator_score": 4.7,
+      "product_potential": [
+        "An AI-powered document analysis tool that can summarize and extract key points from long documents, such as legal contracts or research papers, by effectively utilizing evidence from the entire document.",
+        "A conversational AI assistant for customer support that can maintain context over long interactions, providing accurate and relevant responses by leveraging evidence from the entire conversation history."
+      ],
+      "domain_applications": []
+    },
+    {
+      "id": "2607.02220",
+      "title": "DetailAnywhere: Fashion Detail Generation via Cross-Modal Feature Alignment Distillation",
+      "authors": [
+        "Zijun Li",
+        "Yimin Zhou",
+        "Jia Sun",
+        "Honglie Wang",
+        "Pengcheng Wei",
+        "Junlong Wu",
+        "Yongrui Heng",
+        "Jiyuan Wang",
+        "Huan Ouyang",
+        "Boheng Zhang",
+        "Huaiqing Wang",
+        "Dewen Fan",
+        "Qianqian Gan",
+        "Fan Yang",
+        "Tingting Gao"
+      ],
+      "categories": [
+        "cs.CV"
+      ],
+      "published": "2026-07-02",
+      "updated": "2026-07-02",
+      "summary": "Diffusion-based generative AI has achieved remarkable success in e-commerce applications such as virtual try-on, poster generation, and product background synthesis. However, when making online purchasing decisions for apparel, consumers also desire the freedom to examine specific detail regions of interest, such as collars, cuffs, and fabric textures, yet existing methods have not explicitly studied this setting. We therefore formalize a new, non-template task: Fashion Detail Generation with focus conditioning, and release FDBench, the first benchmark comprising 40K+ human-verified reference-detail pairs across 41 different categories. This task poses a unique semantic gap challenge: the model must bridge the correspondence between a focus marker on a product reference image and a photorealistic close-up view of the indicated region, while faithfully preserving the garment's identity, without any precise prompt. To bridge this gap, we propose Cross-modal Feature Alignment Distillation (CFAD), which leverages a fine-tuned DINOv3 teacher to align both branches of a Multimodal Diffusion Transformer in a shared semantic space via dual-branch distillation. To further improve consistency between generated details and reference images, we introduce a consistency reward model that jointly scores image pairs along three quality axes and optimizes generation via reinforcement learning. Experiments show that our model DetailAnywhere significantly outperforms all state-of-the-art opensource methods across all metrics and human evaluations.",
+      "pdf_url": "https://arxiv.org/pdf/2607.02220v1",
+      "comment": "",
+      "technologies": [
+        "Cross-modal Feature Alignment Distillation (CFAD)",
+        "Consistency Reward Model",
+        "Multimodal Diffusion Transformer",
+        "FDBench benchmark"
+      ],
+      "maturity": "medium",
+      "confidence": 0.85,
+      "curator_score": 4.7,
+      "product_potential": [
+        "AI-powered virtual try-on with detailed focus regions",
+        "E-commerce platform with AI-generated product close-ups",
+        "Fashion design tool for creating and visualizing detailed garment features"
+      ],
+      "domain_applications": []
+    },
+    {
+      "id": "2607.02479",
+      "title": "EAGLE-360: Embodied Active Global-to-Local Exploration in 360$^\\circ$",
+      "authors": [
+        "Jingtao Xu",
+        "Zizhuo Lin",
+        "Jianwen Sun",
+        "Yi Yang",
+        "Yawei Luo"
+      ],
+      "categories": [
+        "cs.CV"
+      ],
+      "published": "2026-07-02",
+      "updated": "2026-07-02",
+      "summary": "While Multimodal Large Language Models (MLLMs) have demonstrated exceptional capabilities in standard visual understanding, adapting them for active visual search in 360$^\\circ$ panoramic environments exposes fundamental limitations. Specifically, standard MLLMs struggle to effectively model inherent panoramic properties, such as severe polar distortion and continuous cylindrical topologies, which significantly degrades target detection accuracy. Consequently, existing panoramic search methods attempt to compensate by relying heavily on fragmented local viewpoints. Burdened by rigid initialization and a lack of global panoramic priors, these approaches suffer from myopic, inefficient exploration and struggle with robust error recovery when targets are out of view. To overcome these challenges, we propose EAGLE-360, a novel Embodied Active Global-to-Local Exploration framework. Rather than performing exhaustive local searches, EAGLE-360 leverages global priors to establish an initial holistic perspective, iteratively reasoning and progressively narrowing the search space. Architecturally, we adapt RoPE Rolling, a coordinate-shifting positional encoding mechanism, to seamlessly model the continuous topologies of panoramas. To facilitate this paradigm, we construct the large-scale EAGLE-360 dataset, comprising 14,000+ 4K panoramas and 70,000+ rounds of high-quality VQA dialogues. By employing a training pipeline that integrates Supervised Fine-Tuning (SFT) with Group Relative Policy Optimization (GRPO), we effectively elicit complex spatial reasoning and tool-calling capabilities. Extensive experiments demonstrate that EAGLE-360 establishes a new state-of-the-art for 360$^\\circ$ visual search, achieving nearly an 8-fold increase in accuracy over the base model while significantly enhancing exploration efficiency.",
+      "pdf_url": "https://arxiv.org/pdf/2607.02479v1",
+      "comment": "Preprint",
+      "technologies": [
+        "RoPE Rolling",
+        "Group Relative Policy Optimization",
+        "Multimodal Learning"
+      ],
+      "maturity": "medium",
+      "confidence": 0.8,
+      "curator_score": 4.7,
+      "product_potential": [
+        "Enhanced panoramic visual search for augmented reality applications",
+        "Improved robotic navigation and exploration in 360° environments",
+        "Advanced spatial reasoning for virtual reality and gaming"
+      ],
+      "domain_applications": [
+        "robotics",
+        "creative",
+        "other"
+      ]
+    },
+    {
+      "id": "2607.02512",
+      "title": "Program-as-Weights: A Programming Paradigm for Fuzzy Functions",
+      "authors": [
+        "Wentao Zhang",
+        "Liliana Hotsko",
+        "Woojeong Kim",
+        "Pengyu Nie",
+        "Stuart Shieber",
+        "Yuntian Deng"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.AI",
+        "cs.CL"
+      ],
+      "published": "2026-07-02",
+      "updated": "2026-07-02",
+      "summary": "Many everyday programming tasks resist clean rule-based implementation, such as alerting on important log lines, repairing malformed JSON, or ranking search results by intent, and are increasingly outsourced to large language model APIs at the cost of locality, reproducibility, and price. We propose fuzzy-function programming: compiling such a function from a natural-language specification into a compact, locally-executable neural artifact. We instantiate this paradigm with Program-as-Weights (PAW), in which a 4B compiler trained on FuzzyBench, a 10M-example dataset we release, emits parameter-efficient adapters for a frozen, lightweight interpreter. A 0.6B Qwen3 interpreter executing PAW programs matches the performance of direct prompting of Qwen3-32B, while using roughly one fiftieth of the inference memory and running at 30 tokens/s on a MacBook M3. PAW reframes the foundation model from a per-input problem solver into a tool builder: invoked once per function definition, it produces a small reusable artifact whose subsequent calls per function application are cheap and offline.",
+      "pdf_url": "https://arxiv.org/pdf/2607.02512v1",
+      "comment": "",
+      "technologies": [
+        "Program-as-Weights (PAW)",
+        "Fuzzy-function programming",
+        "FuzzyBench dataset",
+        "Parameter-efficient adapters",
+        "Lightweight interpreter"
+      ],
+      "maturity": "medium",
+      "confidence": 0.85,
+      "curator_score": 4.6,
+      "product_potential": [
+        "A lightweight, locally-executable AI assistant for developers that can handle fuzzy tasks like log analysis and JSON repair without relying on cloud-based APIs.",
+        "A cost-effective, privacy-preserving AI tool for enterprises to process and analyze large datasets locally, reducing dependency on expensive cloud services."
+      ],
+      "domain_applications": []
+    },
+    {
+      "id": "2607.02371",
+      "title": "VisionAId: An Offline-First Multimodal Android Assistant for People with Visual Impairment, Featuring Personalized Object Retrieval",
+      "authors": [
+        "Cristian-Gabriel Florea",
+        "Stelian Spînu"
+      ],
+      "categories": [
+        "cs.CV",
+        "cs.AI"
+      ],
+      "published": "2026-07-02",
+      "updated": "2026-07-02",
+      "summary": "Over 285 million people worldwide live with a visual impairment, for whom everyday tasks such as avoiding obstacles, locating personal belongings, recognizing familiar faces, or handling cash remain persistent obstacles to personal autonomy. Existing assistive applications are typically limited to recognizing predefined categories, depend heavily on cloud connectivity, or require dedicated hardware. We present VisionAId, an Android application that turns a commodity smartphone into a real-time visual assistant. The system integrates six on-device deep learning models (metric monocular depth estimation, instance segmentation, visual and facial embeddings, face detection, and a custom banknote detector) running entirely through ONNX Runtime, with an optional cloud large language model (Google Gemini Flash) used only for narrative scene description and automatic object labeling. A distinctive contribution is a few-shot pipeline for personal objects: the user photographs an object from several angles, and the system later locates that specific instance in the environment, guiding the user toward it with augmented-reality markers, spatial audio, and distance-proportional haptics. All feedback is multimodal (Romanian speech synthesis, voice commands, vibration). On a reference device (Samsung Galaxy S21 Ultra), INT8 quantization reduces depth latency from ~1200 ms to ~491 ms, the custom banknote detector reaches an mAP@50 of 0.986, and metric depth is calibrated to below 1 cm of error within 3 m.",
+      "pdf_url": "https://arxiv.org/pdf/2607.02371v1",
+      "comment": "8 pages, 4 figures. Project repository available at: github.com",
+      "technologies": [
+        "Offline-first multimodal Android assistant",
+        "On-device deep learning models",
+        "Few-shot pipeline for personal objects",
+        "Multimodal feedback (speech, voice commands, vibration)",
+        "Augmented-reality markers and spatial audio",
+        "Distance-proportional haptics",
+        "Custom banknote detector",
+        "Metric monocular depth estimation",
+        "Instance segmentation",
+        "Visual and facial embeddings",
+        "Face detection",
+        "ONNX Runtime integration",
+        "INT8 quantization for latency reduction"
+      ],
+      "maturity": "medium",
+      "confidence": 0.85,
+      "curator_score": 4.4,
+      "product_potential": [
+        "A standalone visual assistant app for the visually impaired, leveraging on-device AI to provide real-time assistance without internet connectivity.",
+        "A few-shot learning system for personal objects, allowing users to photograph items and later locate them in their environment using AR markers and spatial audio."
+      ],
+      "domain_applications": []
+    },
+    {
+      "id": "2607.02497",
+      "title": "Seek to Segment: Active Perception for Panoramic Referring Segmentation",
+      "authors": [
+        "Song Tang",
+        "Shuming Hu",
+        "Xincheng Shuai",
+        "Henghui Ding",
+        "Yu-Gang Jiang"
+      ],
+      "categories": [
+        "cs.CV"
+      ],
+      "published": "2026-07-02",
+      "updated": "2026-07-02",
+      "summary": "Existing referring segmentation models passively process static images captured from fixed perspectives, limiting their applicability in Embodied AI, where agents must perform active perception in the continuous 360$^\\circ$ environments. To bridge this gap, we introduce a novel task: Active Panoramic Referring Segmentation (APRS). In this setting, an agent is required to adjust its viewing direction ($Δθ, Δφ$) to explore the 360$^\\circ$ environment, seeking the object specified by a user instruction for segmentation. To tackle this challenging task, we propose PanoSeeker, a memory-augmented agent for efficient APRS. Rather than relying on heuristic scanning, PanoSeeker integrates a Vision-Language Model (VLM) with EgoSphere, an explicit spatial visual memory. By progressively integrating sequential local observations into a unified 360$^\\circ$ representation, EgoSphere enables the agent to plan efficient and non-redundant search trajectories. Once the target is found, the agent performs active viewpoint alignment and outputs the segmentation mask. Furthermore, we curate an expert-annotated search trajectory dataset with memory timelines for Supervised Fine-Tuning, followed by Reinforcement Learning post-training to explicitly optimize PanoSeeker's exploration efficiency. Extensive experiments on our newly established APRS benchmark demonstrate that PanoSeeker achieves superior search efficiency and segmentation accuracy, significantly outperforming adapted state-of-the-art baselines.",
+      "pdf_url": "https://arxiv.org/pdf/2607.02497v1",
+      "comment": "ECCV 2026, Project Page: https://henghuiding.com/APRS/",
+      "technologies": [
+        "Active Perception for Panoramic Referring Segmentation (APRS)",
+        "PanoSeeker",
+        "EgoSphere",
+        "Vision-Language Model (VLM) integration"
+      ],
+      "maturity": "medium",
+      "confidence": 0.85,
+      "curator_score": 4.4,
+      "product_potential": [
+        "Virtual reality (VR) and augmented reality (AR) applications for real estate, interior design, and tourism, where users can explore 360° environments and get detailed information about objects or spaces.",
+        "AI-powered home assistants that can actively search for and segment objects in a user's home, providing visual feedback and assistance."
+      ],
+      "domain_applications": []
+    },
+    {
+      "id": "2607.02494",
+      "title": "Towards Robustness against Typographic Attack with Training-free Concept Localization",
+      "authors": [
+        "Bohan Liu",
+        "Wenqian Ye",
+        "Guangzhi Xiong",
+        "Zhenghao He",
+        "Sanchit Sinha",
+        "Aidong Zhang"
+      ],
+      "categories": [
+        "cs.CV",
+        "cs.CL"
+      ],
+      "published": "2026-07-02",
+      "updated": "2026-07-02",
+      "summary": "Models trained via Contrastive Language-Image Pretraining (CLIP) serve as the foundational vision encoders for most modern Large Vision Language Models (LVLMs). Despite their widespread adoption, CLIP models exhibit a critical yet underexplored failure mode: irrelevant text appearing within images confounds visual representations, biasing them toward lexical meaning rather than true visual semantics. This robustness issue, commonly described as a Typographic Attack (TA), exposes a vulnerability that poses a significant risk to safety-critical applications such as autonomous driving. To achieve interpretable and effective robustness against TA, we propose a novel, training-free mechanistic interpretability method. Our method provides sampling-based interpretations of hidden state representations and quantitatively attributes semantic versus lexical focus to individual attention heads. Through probabilistic analysis and circuit mining, we isolate specific Vision Transformer (ViT) components that disproportionately encode lexical information, thereby identifying the mechanistic source of TA. We further show that simple interventions applied directly to the identified circuits, without any additional training, can substantially improve robustness against Typographic Attacks in object classification. These interventions, such as selective adjustment of attention weights, also outperform both supervised and training-free defense methods. Our experiments demonstrate that applying the proposed intervention to the vision encoders of several state-of-the-art LVLMs yields substantial gains in Visual Question Answering accuracy under Typographic Attack interference on RIO-Bench. These results confirm both the efficacy and the generalizability of our mechanistic approach. Code is released at https://github.com/Liu-524/SamplingTAR.",
+      "pdf_url": "https://arxiv.org/pdf/2607.02494v1",
+      "comment": "15 pages main text, provisionally accepted to ECCV 2026",
+      "technologies": [
+        "Contrastive Language-Image Pretraining",
+        "Vision Transformer",
+        "Mechanistic Interpretability",
+        "Attention Mechanism Analysis",
+        "Training-free Robustness Intervention"
+      ],
+      "maturity": "medium",
+      "confidence": 0.85,
+      "curator_score": 4.4,
+      "product_potential": [
+        "A robustness toolkit for Large Vision Language Models (LVLMs) to mitigate typographic attacks in safety-critical applications",
+        "An interpretability framework for analyzing and debugging attention mechanisms in Vision Transformers",
+        "A plug-and-play defense module for autonomous driving systems to filter out irrelevant textual interference in visual inputs"
+      ],
+      "domain_applications": [
+        "robotics",
+        "enterprise",
+        "accessibility"
+      ]
+    },
+    {
+      "id": "2607.02390",
+      "title": "DecompRL: Solving Harder Problems by Learning Modular Code Generation",
+      "authors": [
+        "Juliette Decugis",
+        "Fabian Gloeckle",
+        "Francis Bach",
+        "Taco Cohen",
+        "Gabriel Synnaeve"
+      ],
+      "categories": [
+        "cs.LG"
+      ],
+      "published": "2026-07-02",
+      "updated": "2026-07-02",
+      "summary": "How can Large Language Models (LLMs) solve problems they currently cannot? Repeated sampling scales test-time compute but GPU cost grows linearly with attempts, while reinforcement learning (RL) with verifiable rewards improves single-attempt accuracy at the expense of sample diversity. Both strategies ultimately fail when the base policy has near-zero probability of producing a correct solution: no amount of sampling or gradient signal can overcome a search space that is simply too large. We take a different approach: rather than sampling harder, we make the task easier by decomposing problems into smaller, independently solvable sub-functions whose implementations can be recombined. Since off-the-shelf models are not trained for this modular generation, we introduce DecompRL, an RL algorithm that explicitly learns to decompose and implement hierarchical code structures. Recombining $k$ implementations of $n$ modules yields up to $k^{n}$ candidate solutions, shifting the bottleneck from GPU inference to cheap CPU evaluation and cutting GPU token cost by $\\sim$50$\\times$. On LiveCodeBench and CodeContests (Qwen~2.5~7B, Code World Model~32B), DecompRL outperforms standard and diversity-optimized RL baselines beyond $10^5$ tokens per problem, solving problems that standard generation cannot reach.",
+      "pdf_url": "https://arxiv.org/pdf/2607.02390v1",
+      "comment": "",
+      "technologies": [
+        "Reinforcement Learning",
+        "Modular Code Generation",
+        "Hierarchical Code Structures",
+        "Large Language Models"
+      ],
+      "maturity": "medium",
+      "confidence": 0.8,
+      "curator_score": 4.4,
+      "product_potential": [
+        "Automated code decomposition and generation tool for software development",
+        "AI-assisted modular programming platform for educational purposes",
+        "Enhanced code synthesis engine for low-resource environments"
+      ],
+      "domain_applications": [
+        "education",
+        "enterprise",
+        "other"
+      ]
+    },
+    {
+      "id": "2607.02007",
+      "title": "EduArt: An educational-level benchmark for evaluating art history knowledge in large language models",
+      "authors": [
+        "Gianmarco Spinaci",
+        "Lukas Klic",
+        "Giovanni Colavizza"
+      ],
+      "categories": [
+        "cs.CL",
+        "cs.CV"
+      ],
+      "published": "2026-07-02",
+      "updated": "2026-07-02",
+      "summary": "Large language models now score near ceiling on general benchmarks, but these aggregate measures reveal little about how models behave within single disciplines. Existing art-focused evaluations rely on synthetic questions and rarely report item-level properties. This paper introduces EduArt, an educational-level benchmark for art-historical knowledge and visual reasoning in multimodal LLMs. EduArt comprises 871 human-authored questions from Italian secondary-school exercises and US Advanced Placement Art History exams, spanning two languages and seven formats from multiple choice to in-text word placement and error identification. Twelve models from six provider families were evaluated under a default answer-only condition and a motivation condition requiring written justification, and characterized using Classical Test Theory and a logistic regression isolating the effects of format, language, image presence, and model. The benchmark showed strong psychometric properties (mean discrimination 0.514, 82.3 percent good discriminators), while multiple-choice accuracy saturated near ceiling for six models, showing recognition formats alone cannot distinguish frontier models. Format was a strong independent predictor of accuracy: models exceeding 94 percent on multiple choice fell to 23.9 percent on open completion (Claude Opus 4.6) and 6.2 percent on error identification (Claude Sonnet 4.6). The motivation condition changed accuracy in a predominantly negative, family-dependent direction. These dissociations indicate that art-historical knowledge and the ability to deploy it are distinct capabilities, and that single-format benchmarks overestimate what models can reliably do. Mapping this capability profile is a precondition for responsible use of multimodal LLMs in art-historical scholarship, where tasks demand producing and manipulating content rather than selecting from fixed options.",
+      "pdf_url": "https://arxiv.org/pdf/2607.02007v1",
+      "comment": "",
+      "technologies": [
+        "Multimodal Learning",
+        "Benchmark Design",
+        "Classical Test Theory",
+        "Logistic Regression Analysis"
+      ],
+      "maturity": "medium",
+      "confidence": 0.85,
+      "curator_score": 4.4,
+      "product_potential": [
+        "AI-powered art history tutoring platform with multimodal reasoning capabilities",
+        "Automated art history assessment tool for educational institutions",
+        "Multimodal LLM fine-tuning service for domain-specific knowledge enhancement"
+      ],
+      "domain_applications": [
+        "education",
+        "creative"
+      ]
+    },
+    {
+      "id": "2607.00052",
+      "title": "AGE: Adaptive-masking for Graph Embedding in Graph Retrieval-Augmented Generation",
+      "authors": [
+        "Bao Long Nguyen Huu",
+        "Atsushi Hashimoto"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.retrieval-augmented_",
+        "cs.large_language_model",
+        "cs.graph-structured_dat"
+      ],
+      "published": "2026-06-30",
+      "updated": "2026-06-30",
+      "summary": "GraphRAG is an extension of retrieval-augmented generation (RAG) that supports large language models (LLMs) by referring to graph-structured data as external knowledge. While this technique ideally captures intricate relationships, it often struggles with graph representations for LLMs, particularly for frozen LLMs, due to the misalignment between graph-based and text-based latent features. We tackle this issue by introducing the {\\it Adaptive-masking for Graph Embedding (AGE)}. AGE employs a Transformer in a mask-based self-supervised learning (SSL) approach. We designed the architecture similar to text embedding encoders, addressing the latent feature misalignment. In contrast to natural language texts, graphs are concise representations, and there exist {\\it key nodes} that hold dominant contextual information, which are challenging to predict from their surroundings. Masking such key nodes leads to inefficiency in the SSL process. Therefore, AGE focuses on predicting nodes apart from key nodes, utilizing a learnable node sampler. Our experimental results indicate that AGE significantly improves approaches using non-parametric search component in GraphQA tasks, achieving superior accuracy across four benchmark datasets with distinct characteristics.\n\nAI Summary: GraphRAG extends RAG by incorporating graph-structured data for LLMs, addressing latent feature misalignment through Adaptive-masking for Graph Embedding (AGE) that uses Transformer-based self-supervised learning with learnable node sampling.",
+      "pdf_url": "https://arxiv.org/pdf/2607.00052",
+      "comment": "",
+      "technologies": [
+        "Retrieval Augmented Generation",
+        "Graph Embedding",
+        "Self-Supervised Learning",
+        "Transformer",
+        "Adaptive Masking"
+      ],
+      "maturity": "medium",
+      "confidence": 0.85,
+      "curator_score": 4.4,
+      "product_potential": [
+        "Enhanced knowledge retrieval systems for enterprise applications",
+        "Improved graph-based question-answering tools for scientific research",
+        "Advanced graph data integration for large language models in finance"
+      ],
+      "domain_applications": [
+        "enterprise",
+        "science",
+        "finance"
+      ]
+    },
+    {
+      "id": "2607.02300",
+      "title": "Search-based Testing of Vision Language Models for In-Car Scene Understanding",
+      "authors": [
+        "Lev Sorokin",
+        "Chen Yang",
+        "Ken E. Friedl",
+        "Andrea Stocco"
+      ],
+      "categories": [
+        "cs.CV",
+        "cs.SE"
+      ],
+      "published": "2026-07-02",
+      "updated": "2026-07-02",
+      "summary": "In the automotive domain, in-car scene understanding (ISU) enables the detection of safety-critical events, such as driver distraction, and supports drivers or passengers by analyzing the in-car scene and adapting the environment (e.g., ambient lighting). The industry is increasingly exploring vision-language models (VLMs) to interpret camera-recorded in-car scenes and extract information for downstream reasoning tasks. However, VLMs may generate incomplete, erroneous, or misleading scene descriptions, highlighting the need for systematic testing. Collecting real in-vehicle data is costly, difficult to scale, and often infeasible, particularly in early design stages. In this paper, we present ISU-Test, an automated testing approach that combines rendering-based scene generation with search-based testing to evaluate ISU systems. By framing testing as an optimization problem and systematically modifying scene parameters, our method generates diverse in-car scenarios and explores a wide range of configurations. We evaluate ISU-Test on both an industrial prototype and open-source VLMs across two case studies: question answering and captioning, comparing against randomized scenario generation. Results show that ISU-Test significantly outperforms the baseline, achieving up to 10 times higher failure rates and up to 3.6 times higher failure coverage.",
+      "pdf_url": "https://arxiv.org/pdf/2607.02300v1",
+      "comment": "Accepted at the Industry Track of the 41st IEEE/ACM International Conference on Automated Software Engineering (ASE 2026)",
+      "technologies": [
+        "Vision Language Models",
+        "Search-based Testing",
+        "Scene Generation",
+        "Multimodal Learning",
+        "Automated Testing"
+      ],
+      "maturity": "medium",
+      "confidence": 0.8,
+      "curator_score": 4.3,
+      "product_potential": [
+        "Automated testing framework for in-car scene understanding systems",
+        "Synthetic data generation pipeline for training and validating vision-language models in automotive applications",
+        "Optimization tool for improving the robustness of in-car safety and assistance systems"
+      ],
+      "domain_applications": [
+        "robotics",
+        "other"
+      ]
+    },
+    {
+      "id": "2607.02290",
+      "title": "DisciplineGen-1M: A Large-Scale Dataset for Multidisciplinary Visual Generation and Editing",
+      "authors": [
+        "Zhaokai Wang",
+        "Mingxin Liu",
+        "Zirun Zhu",
+        "Ziqian Fan",
+        "Yiguo He",
+        "Mohan Zhang",
+        "Leyao Gu",
+        "Xiangyu Zhao",
+        "Ning Liao",
+        "Shaofeng Zhang",
+        "Xuanhe Zhou",
+        "Zhihang Zhong",
+        "Junchi Yan",
+        "Xue Yang"
+      ],
+      "categories": [
+        "cs.CV"
+      ],
+      "published": "2026-07-02",
+      "updated": "2026-07-02",
+      "summary": "Recent image generation and editing models can produce visually appealing natural images, yet they remain unreliable when the target image is a knowledge-intensive diagram whose correctness depends on disciplinary concepts, symbolic structure, and precise spatial relations. We introduce DisciplineGen-1M, a million-scale multidisciplinary dataset that supports text-to-image generation and image editing. It contains 1.2M samples spanning mathematics, physics, chemistry, biology, geography, computer science, economics, history, music, and sports. To construct the dataset, we design a scalable framework that combines vector-graphics rendering, OCR-based editing, curated programmatic synthesis, and large-scale text-to-image filtering. These pipelines produce captions, editing instructions, structured annotations, and paired images with controllable semantic differences. Building on DisciplineGen-1M, we further introduce a discipline-informed reasoning-generation model for both text-to-image generation and image editing. Experiments on discipline-related benchmarks, GenExam and GRADE, show substantial improvements over open-source baselines, while evaluations on general reasoning-informed benchmarks, WISE and RISE, further indicate broader transfer. The results suggest that large-scale structured academic visual data is a key ingredient for moving image generation from aesthetic plausibility toward verifiable knowledge-grounded visual creation. We will publicly release our dataset, model, and source code of the data curation pipeline to ensure reproducibility and benefit future research.",
+      "pdf_url": "https://arxiv.org/pdf/2607.02290v1",
+      "comment": "",
+      "technologies": [
+        "Multimodal Learning",
+        "Diffusion Models",
+        "Vision Transformer",
+        "OCR-based Editing",
+        "Structured Data Synthesis"
+      ],
+      "maturity": "medium",
+      "confidence": 0.85,
+      "curator_score": 4.3,
+      "product_potential": [
+        "Knowledge-grounded visual content generation platform for educational materials",
+        "Automated diagram and infographic creation tool for academic and professional use",
+        "Domain-specific image editing and annotation system for scientific and technical disciplines"
+      ],
+      "domain_applications": [
+        "education",
+        "science",
+        "creative",
+        "enterprise"
+      ]
+    },
+    {
+      "id": "2607.02255",
+      "title": "AgenticSTS: A Bounded-Memory Testbed for Long-Horizon LLM Agents",
+      "authors": [
+        "Xiangchen Cheng",
+        "Yunwei Jiang",
+        "Jianwen Sun",
+        "Zizhen Li",
+        "Chuanhao Li",
+        "Xiangcheng Cao",
+        "Yihao Liu",
+        "Fanrui Zhang",
+        "Li Jin",
+        "Kaipeng Zhang"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CL"
+      ],
+      "published": "2026-07-02",
+      "updated": "2026-07-02",
+      "summary": "Memory for a long-horizon LLM agent is a contract about what each future decision is allowed to see. The simplest contract appends past observations, tool calls, and reflections to every prompt, which makes prior context easy to access but also turns it into a jumbled mixture in which the effect of any single memory component is hard to isolate. We introduce and instrument an alternative bounded contract: every decision is made from a fresh user message assembled by typed retrieval, with no raw cross-decision transcript appended. The prompt thus stays bounded across runs of any length, and any single layer can be ablated in isolation. We instantiate the contract in Slay the Spire 2, a closed-rule stochastic deck-building game whose runs require hundreds of tactical and strategic decisions. A public online benchmark of frontier LLMs on the same game reports zero wins at the lowest difficulty across five configurations, and the developer-reported human win rate at the same difficulty is 16%; the task is hard but not saturated. Within our harness, a fixed-A0 ablation shows the largest observed difference when triggered strategic skills are enabled: the no-store baseline wins 3/10 games and adding the skill layer 6/10. At this sample size the comparison is directional rather than statistically decisive (Fisher exact p\\approx0.37); a cross-backbone probe and public accumulating-context baselines are reported as operational comparisons rather than controlled tests of the contract variable itself. We release a reproducible testbed: 298 completed trajectories with condition tags, frozen memory/skill snapshots, prompt records, and analysis scripts -- an agent design and a validated, reusable methodology for studying how explicit memory layers shape long-horizon LLM-agent decisions.",
+      "pdf_url": "https://arxiv.org/pdf/2607.02255v1",
+      "comment": "",
+      "technologies": [
+        "Retrieval Augmented Generation",
+        "Long-Horizon Decision Making",
+        "Memory-Bounded Agent Architectures",
+        "Ablation Studies for LLM Agents"
+      ],
+      "maturity": "early",
+      "confidence": 0.7,
+      "curator_score": 4.3,
+      "product_potential": [
+        "A modular LLM agent framework for strategic decision-making in gaming and simulation environments",
+        "A benchmarking toolkit for evaluating memory-constrained LLM agents in long-horizon tasks",
+        "An enterprise-grade decision support system leveraging bounded-memory retrieval for complex workflows"
+      ],
+      "domain_applications": [
+        "enterprise",
+        "robotics",
+        "science",
+        "other"
+      ]
+    },
+    {
+      "id": "2606.31227",
+      "title": "Securing the AI Agent: A Unified Framework for Multi-Layer Agent Red Teaming",
+      "authors": [
+        "Yong Yang",
+        "Xing Zheng",
+        "Huiyu Wu",
+        "Huangsheng Cheng",
+        "Xiaorong Shi",
+        "Jing Guo",
+        "Bo Yang",
+        "Yi Zhou",
+        "Xiangfan Wu",
+        "Zonghao Ying"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.AI_red_teaming",
+        "cs.Model_Context_Protoc",
+        "cs.LLM-driven_agentic_a"
+      ],
+      "published": "2026-06-30",
+      "updated": "2026-06-30",
+      "summary": "The fast growth of open-source AI infrastructure, from model serving engines and agent platforms to the Model Context Protocol (MCP) ecosystem and the language models themselves, has outpaced the security tooling available to defend it. We present AI-Infra-Guard, an open-source framework that organizes AI red teaming around a single observation: the attack surface of an AI agent is stratified across layers (infrastructure, protocol/tool, agent behavior, and model), and no single detection paradigm fits all of them. The framework therefore matches a paradigm to each layer, from deterministic rule matching over 75+ AI components and 1{,}400+ vulnerability rules, through LLM-driven agentic auditing of MCP servers and agent-skill packages and multi-turn black-box agent red teaming, to a jailbreak harness with 26+ attack operators over sixteen datasets. To our knowledge it is the only open-source framework to span all of these, including supply-chain auditing of the agent skills that increasingly extend AI agents. We release AI-Infra-Guard as open source so that layer-paradigm matching can serve as a practical foundation for agent security and a shared base for the community to build on.\n\nAI Summary: AI-Infra-Guard is an open-source framework that addresses AI infrastructure security through layered detection paradigms spanning infrastructure, protocol, agent behavior, and model layers.",
+      "pdf_url": "https://arxiv.org/pdf/2606.31227",
+      "comment": "",
+      "technologies": [
+        "Multi-Layer Agent Red Teaming",
+        "Deterministic Rule Matching",
+        "LLM-driven Agentic Auditing",
+        "Multi-turn Black-box Agent Red Teaming",
+        "Jailbreak Harness",
+        "Supply-Chain Auditing"
+      ],
+      "maturity": "medium",
+      "confidence": 0.85,
+      "curator_score": 4.3,
+      "product_potential": [
+        "AI Infrastructure Security Platform",
+        "Automated Agent Vulnerability Scanner",
+        "Agent Skill Supply-Chain Security Tool"
+      ],
+      "domain_applications": [
+        "enterprise",
+        "science",
+        "other"
+      ]
+    }
+  ],
+  "technologies": [
+    {
+      "name": "Step-Aware Reinforcement Learning",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.85,
+      "trend": "rising",
+      "applications": [
+        "healthcare",
+        "education"
+      ]
+    },
+    {
+      "name": "Multimodal Learning",
+      "papers": 6,
+      "maturity": "medium",
+      "confidence": 0.85,
+      "trend": "rising",
+      "applications": [
+        "healthcare",
+        "education",
+        "robotics",
+        "creative",
+        "enterprise",
+        "science"
+      ]
+    },
+    {
+      "name": "Medical Visual Question Answering",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.85,
+      "trend": "rising",
+      "applications": [
+        "healthcare"
+      ]
+    },
+    {
+      "name": "Reinforcement Learning from Human Feedback",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.85,
+      "trend": "rising",
+      "applications": [
+        "healthcare",
+        "education"
+      ]
+    },
+    {
+      "name": "Recursive Evidence Replay as LLM Harness for Long-Context Reasoning (RECONTEXT)",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.85,
+      "trend": "rising",
+      "applications": [
+        "enterprise",
+        "education"
+      ]
+    },
+    {
+      "name": "Cross-modal Feature Alignment Distillation (CFAD)",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.85,
+      "trend": "rising",
+      "applications": [
+        "fashion",
+        "retail"
+      ]
+    },
+    {
+      "name": "Consistency Reward Model",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.85,
+      "trend": "rising",
+      "applications": [
+        "fashion",
+        "retail"
+      ]
+    },
+    {
+      "name": "Multimodal Diffusion Transformer",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.85,
+      "trend": "rising",
+      "applications": [
+        "fashion",
+        "retail"
+      ]
+    },
+    {
+      "name": "FDBench benchmark",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.85,
+      "trend": "rising",
+      "applications": [
+        "fashion",
+        "retail"
+      ]
+    },
+    {
+      "name": "RoPE Rolling",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.8,
+      "trend": "rising",
+      "applications": [
+        "robotics",
+        "creative"
+      ]
+    },
+    {
+      "name": "Group Relative Policy Optimization",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.8,
+      "trend": "rising",
+      "applications": [
+        "robotics",
+        "creative"
+      ]
+    },
+    {
+      "name": "Program-as-Weights (PAW)",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.85,
+      "trend": "rising",
+      "applications": [
+        "software development",
+        "automation"
+      ]
+    },
+    {
+      "name": "Fuzzy-function programming",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.85,
+      "trend": "rising",
+      "applications": [
+        "software development",
+        "automation"
+      ]
+    },
+    {
+      "name": "FuzzyBench dataset",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.85,
+      "trend": "rising",
+      "applications": [
+        "software development",
+        "automation"
+      ]
+    },
+    {
+      "name": "Parameter-efficient adapters",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.85,
+      "trend": "rising",
+      "applications": [
+        "software development",
+        "automation"
+      ]
+    },
+    {
+      "name": "Lightweight interpreter",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.85,
+      "trend": "rising",
+      "applications": [
+        "software development",
+        "automation"
+      ]
+    },
+    {
+      "name": "Offline-first multimodal Android assistant",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.85,
+      "trend": "rising",
+      "applications": [
+        "accessibility",
+        "mobile computing"
+      ]
+    },
+    {
+      "name": "On-device deep learning models",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.85,
+      "trend": "rising",
+      "applications": [
+        "accessibility",
+        "mobile computing"
+      ]
+    },
+    {
+      "name": "Few-shot pipeline for personal objects",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.85,
+      "trend": "rising",
+      "applications": [
+        "accessibility",
+        "mobile computing"
+      ]
+    },
+    {
+      "name": "Multimodal feedback (speech, voice commands, vibration)",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.85,
+      "trend": "rising",
+      "applications": [
+        "accessibility",
+        "mobile computing"
+      ]
+    },
+    {
+      "name": "Augmented-reality markers and spatial audio",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.85,
+      "trend": "rising",
+      "applications": [
+        "accessibility",
+        "mobile computing"
+      ]
+    },
+    {
+      "name": "Distance-proportional haptics",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.85,
+      "trend": "rising",
+      "applications": [
+        "accessibility",
+        "mobile computing"
+      ]
+    },
+    {
+      "name": "Custom banknote detector",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.85,
+      "trend": "rising",
+      "applications": [
+        "accessibility",
+        "mobile computing"
+      ]
+    },
+    {
+      "name": "Metric monocular depth estimation",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.85,
+      "trend": "rising",
+      "applications": [
+        "accessibility",
+        "mobile computing"
+      ]
+    },
+    {
+      "name": "Instance segmentation",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.85,
+      "trend": "rising",
+      "applications": [
+        "accessibility",
+        "mobile computing"
+      ]
+    },
+    {
+      "name": "Visual and facial embeddings",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.85,
+      "trend": "rising",
+      "applications": [
+        "accessibility",
+        "mobile computing"
+      ]
+    },
+    {
+      "name": "Face detection",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.85,
+      "trend": "rising",
+      "applications": [
+        "accessibility",
+        "mobile computing"
+      ]
+    },
+    {
+      "name": "ONNX Runtime integration",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.85,
+      "trend": "rising",
+      "applications": [
+        "accessibility",
+        "mobile computing"
+      ]
+    },
+    {
+      "name": "INT8 quantization for latency reduction",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.85,
+      "trend": "rising",
+      "applications": [
+        "accessibility",
+        "mobile computing"
+      ]
+    },
+    {
+      "name": "Active Perception for Panoramic Referring Segmentation (APRS)",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.85,
+      "trend": "rising",
+      "applications": [
+        "robotics",
+        "autonomous systems"
+      ]
+    },
+    {
+      "name": "PanoSeeker",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.85,
+      "trend": "rising",
+      "applications": [
+        "robotics",
+        "autonomous systems"
+      ]
+    },
+    {
+      "name": "EgoSphere",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.85,
+      "trend": "rising",
+      "applications": [
+        "robotics",
+        "autonomous systems"
+      ]
+    },
+    {
+      "name": "Vision-Language Model (VLM) integration",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.85,
+      "trend": "rising",
+      "applications": [
+        "robotics",
+        "autonomous systems"
+      ]
+    },
+    {
+      "name": "Contrastive Language-Image Pretraining",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.85,
+      "trend": "rising",
+      "applications": [
+        "robotics",
+        "enterprise",
+        "accessibility"
+      ]
+    },
+    {
+      "name": "Vision Transformer",
+      "papers": 2,
+      "maturity": "medium",
+      "confidence": 0.85,
+      "trend": "rising",
+      "applications": [
+        "robotics",
+        "enterprise",
+        "accessibility",
+        "science"
+      ]
+    },
+    {
+      "name": "Mechanistic Interpretability",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.85,
+      "trend": "rising",
+      "applications": [
+        "robotics",
+        "enterprise",
+        "accessibility"
+      ]
+    },
+    {
+      "name": "Attention Mechanism Analysis",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.85,
+      "trend": "rising",
+      "applications": [
+        "robotics",
+        "enterprise",
+        "accessibility"
+      ]
+    },
+    {
+      "name": "Training-free Robustness Intervention",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.85,
+      "trend": "rising",
+      "applications": [
+        "robotics",
+        "enterprise",
+        "accessibility"
+      ]
+    },
+    {
+      "name": "Modular Code Generation",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.8,
+      "trend": "rising",
+      "applications": [
+        "education",
+        "enterprise",
+        "software development"
+      ]
+    },
+    {
+      "name": "Hierarchical Code Structures",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.8,
+      "trend": "rising",
+      "applications": [
+        "education",
+        "enterprise",
+        "software development"
+      ]
+    },
+    {
+      "name": "Benchmark Design",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.85,
+      "trend": "rising",
+      "applications": [
+        "education",
+        "creative"
+      ]
+    },
+    {
+      "name": "Classical Test Theory",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.85,
+      "trend": "rising",
+      "applications": [
+        "education",
+        "creative"
+      ]
+    },
+    {
+      "name": "Logistic Regression Analysis",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.85,
+      "trend": "rising",
+      "applications": [
+        "education",
+        "creative"
+      ]
+    },
+    {
+      "name": "Retrieval Augmented Generation",
+      "papers": 2,
+      "maturity": "medium",
+      "confidence": 0.85,
+      "trend": "rising",
+      "applications": [
+        "enterprise",
+        "science",
+        "finance",
+        "education",
+        "robotics"
+      ]
+    },
+    {
+      "name": "Graph Embedding",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.85,
+      "trend": "rising",
+      "applications": [
+        "enterprise",
+        "science",
+        "finance"
+      ]
+    },
+    {
+      "name": "Self-Supervised Learning",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.85,
+      "trend": "rising",
+      "applications": [
+        "enterprise",
+        "science",
+        "finance"
+      ]
+    },
+    {
+      "name": "Transformer",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.85,
+      "trend": "rising",
+      "applications": [
+        "enterprise",
+        "science",
+        "finance"
+      ]
+    },
+    {
+      "name": "Adaptive Masking",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.85,
+      "trend": "rising",
+      "applications": [
+        "enterprise",
+        "science",
+        "finance"
+      ]
+    },
+    {
+      "name": "Search-based Testing",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.8,
+      "trend": "rising",
+      "applications": [
+        "robotics",
+        "automotive"
+      ]
+    },
+    {
+      "name": "Scene Generation",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.8,
+      "trend": "rising",
+      "applications": [
+        "robotics",
+        "automotive"
+      ]
+    },
+    {
+      "name": "Automated Testing",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.8,
+      "trend": "rising",
+      "applications": [
+        "robotics",
+        "automotive"
+      ]
+    },
+    {
+      "name": "Diffusion Models",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.85,
+      "trend": "rising",
+      "applications": [
+        "education",
+        "science",
+        "creative",
+        "enterprise"
+      ]
+    },
+    {
+      "name": "OCR-based Editing",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.85,
+      "trend": "rising",
+      "applications": [
+        "education",
+        "science",
+        "creative",
+        "enterprise"
+      ]
+    },
+    {
+      "name": "Structured Data Synthesis",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.85,
+      "trend": "rising",
+      "applications": [
+        "education",
+        "science",
+        "creative",
+        "enterprise"
+      ]
+    },
+    {
+      "name": "Long-Horizon Decision Making",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.7,
+      "trend": "rising",
+      "applications": [
+        "enterprise",
+        "robotics",
+        "science"
+      ]
+    },
+    {
+      "name": "Memory-Bounded Agent Architectures",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.7,
+      "trend": "rising",
+      "applications": [
+        "enterprise",
+        "robotics",
+        "science"
+      ]
+    },
+    {
+      "name": "Ablation Studies for LLM Agents",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.7,
+      "trend": "rising",
+      "applications": [
+        "enterprise",
+        "robotics",
+        "science"
+      ]
+    },
+    {
+      "name": "Multi-Layer Agent Red Teaming",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.85,
+      "trend": "rising",
+      "applications": [
+        "enterprise",
+        "science",
+        "cybersecurity"
+      ]
+    },
+    {
+      "name": "Deterministic Rule Matching",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.85,
+      "trend": "rising",
+      "applications": [
+        "enterprise",
+        "science",
+        "cybersecurity"
+      ]
+    },
+    {
+      "name": "LLM-driven Agentic Auditing",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.85,
+      "trend": "rising",
+      "applications": [
+        "enterprise",
+        "science",
+        "cybersecurity"
+      ]
+    },
+    {
+      "name": "Multi-turn Black-box Agent Red Teaming",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.85,
+      "trend": "rising",
+      "applications": [
+        "enterprise",
+        "science",
+        "cybersecurity"
+      ]
+    },
+    {
+      "name": "Jailbreak Harness",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.85,
+      "trend": "rising",
+      "applications": [
+        "enterprise",
+        "science",
+        "cybersecurity"
+      ]
+    },
+    {
+      "name": "Supply-Chain Auditing",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.85,
+      "trend": "rising",
+      "applications": [
+        "enterprise",
+        "science",
+        "cybersecurity"
+      ]
+    },
+    {
+      "name": "Reinforcement Learning",
+      "papers": 1,
+      "maturity": "early",
+      "confidence": 0.44000000000000006,
+      "trend": "emerging",
+      "applications": [
+        "other",
+        "enterprise",
+        "education"
+      ]
+    },
+    {
+      "name": "Large Language Models",
+      "papers": 1,
+      "maturity": "early",
+      "confidence": 0.44000000000000006,
+      "trend": "emerging",
+      "applications": [
+        "other",
+        "enterprise",
+        "education"
+      ]
+    },
+    {
+      "name": "Vision Language Models",
+      "papers": 1,
+      "maturity": "early",
+      "confidence": 0.43,
+      "trend": "emerging",
+      "applications": [
+        "other",
+        "robotics"
+      ]
+    }
+  ],
+  "product_opportunities": [
+    {
+      "technology": "Step-Aware Reinforcement Learning",
+      "idea": "AdaptLearn: Personalized learning platform that adjusts difficulty in real-time based on student performance and confidence levels",
+      "business_value": 8,
+      "engineering_difficulty": 7,
+      "competitive_advantage": "high",
+      "development_time": "3-6 months"
+    },
+    {
+      "technology": "Multimodal Learning",
+      "idea": "ClinicSense: AI assistant for doctors that integrates patient records, lab results, and medical imaging for faster diagnostics",
+      "business_value": 9,
+      "engineering_difficulty": 8,
+      "competitive_advantage": "very high",
+      "development_time": "6-9 months"
+    },
+    {
+      "technology": "Medical Visual Question Answering",
+      "idea": "RadiologyQA: AI tool that answers clinical questions from radiology images (e.g., 'Is this nodule malignant?') with evidence highlighting",
+      "business_value": 9,
+      "engineering_difficulty": 7,
+      "competitive_advantage": "very high",
+      "development_time": "4-7 months"
+    },
+    {
+      "technology": "Reinforcement Learning from Human Feedback",
+      "idea": "TeachMate: AI tutoring system that refines explanations based on student feedback and engagement metrics",
+      "business_value": 7,
+      "engineering_difficulty": 6,
+      "competitive_advantage": "medium",
+      "development_time": "2-4 months"
+    },
+    {
+      "technology": "Recursive Evidence Replay as LLM Harness for Long-Context Reasoning (RECONTEXT)",
+      "idea": "DeepReview: Enterprise document analysis tool that summarizes and cross-references long legal/financial reports with traceable reasoning",
+      "business_value": 8,
+      "engineering_difficulty": 8,
+      "competitive_advantage": "high",
+      "development_time": "5-8 months"
+    },
+    {
+      "technology": "Cross-modal Feature Alignment Distillation (CFAD)",
+      "idea": "StyleSync: Fashion retail tool that matches customer uploads (photos/sketches) to inventory using aligned visual-texture features",
+      "business_value": 7,
+      "engineering_difficulty": 6,
+      "competitive_advantage": "medium",
+      "development_time": "3-5 months"
+    },
+    {
+      "technology": "Consistency Reward Model",
+      "idea": "TrendLock: AI stylist that ensures outfit recommendations align with a user’s historical preferences and seasonal trends",
+      "business_value": 6,
+      "engineering_difficulty": 5,
+      "competitive_advantage": "low",
+      "development_time": "2-3 months"
+    },
+    {
+      "technology": "Multimodal Diffusion Transformer",
+      "idea": "FashionForge: Generative design tool for apparel brands that creates novel clothing designs from text prompts + fabric swatches",
+      "business_value": 8,
+      "engineering_difficulty": 9,
+      "competitive_advantage": "high",
+      "development_time": "6-10 months"
+    },
+    {
+      "technology": "FDBench benchmark",
+      "idea": "FashionIQ Pro: Standardized evaluation suite for retail AI models, sold as a SaaS benchmarking service for e-commerce platforms",
+      "business_value": 5,
+      "engineering_difficulty": 4,
+      "competitive_advantage": "low",
+      "development_time": "1-2 months"
+    },
+    {
+      "technology": "Program-as-Weights (PAW)",
+      "idea": "CodeWeave: Low-code platform where business logic is defined as neural weights, enabling non-developers to build workflows",
+      "business_value": 7,
+      "engineering_difficulty": 9,
+      "competitive_advantage": "very high",
+      "development_time": "8-12 months"
+    },
+    {
+      "technology": "Fuzzy-function programming",
+      "idea": "FlexiLogic: API for embedding tolerant, fuzzy business rules (e.g., 'approve loans for credit scores ~700') into applications",
+      "business_value": 6,
+      "engineering_difficulty": 7,
+      "competitive_advantage": "medium",
+      "development_time": "4-6 months"
+    },
+    {
+      "technology": "FuzzyBench dataset",
+      "idea": "ToleranceTest: Dataset + testing framework for validating AI robustness to noisy or ambiguous inputs, licensed to enterprise teams",
+      "business_value": 4,
+      "engineering_difficulty": 5,
+      "competitive_advantage": "low",
+      "development_time": "2-3 months"
+    },
+    {
+      "technology": "Parameter-efficient adapters",
+      "idea": "MicroTune: Drop-in library that lets developers customize large language models for niche tasks with <1% of original parameters",
+      "business_value": 8,
+      "engineering_difficulty": 6,
+      "competitive_advantage": "high",
+      "development_time": "3-5 months"
+    },
+    {
+      "technology": "Lightweight interpreter",
+      "idea": "EdgeScript: Ultra-light JavaScript interpreter for IoT devices, enabling offline automation scripts on low-power hardware",
+      "business_value": 7,
+      "engineering_difficulty": 7,
+      "competitive_advantage": "medium",
+      "development_time": "4-7 months"
+    },
+    {
+      "technology": "Offline-first multimodal Android assistant",
+      "idea": "OfflineGuide: Accessibility app that provides voice + visual assistance (e.g., object recognition, navigation) without requiring internet",
+      "business_value": 9,
+      "engineering_difficulty": 8,
+      "competitive_advantage": "very high",
+      "development_time": "6-9 months"
+    }
+  ]
+}

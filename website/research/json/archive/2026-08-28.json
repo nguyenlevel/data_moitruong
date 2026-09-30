@@ -1,0 +1,1011 @@
+{
+  "meta": {
+    "date": "2026-08-28",
+    "papers_tracked": 15,
+    "technologies_discovered": 27,
+    "opportunities_identified": 15,
+    "last_update": "2026-08-28 17:33 UTC",
+    "backend": "llm7",
+    "model": "Research Curator v1"
+  },
+  "brief": [],
+  "top_cards": [
+    {
+      "id": "new_technologies",
+      "title": "New Technologies",
+      "value": "27",
+      "label": "discovered this scan",
+      "detail": "Retrieval Augmented Generation, Reinforcement Learning from Human Feedback, Multimodal Learning, Direct Preference Optimization, Object Detection, Adaptive Reasoning, Agentic AI, Ensemble Learning",
+      "color": "accent"
+    },
+    {
+      "id": "emerging_trends",
+      "title": "Emerging Trends",
+      "value": "27",
+      "label": "active trend clusters",
+      "detail": "Multi-Agent LLM Framework, Tool-Grounded Reasoning, Deterministic Computation Planning, Reinforcement Learning from Human Feedback, Multimodal Learning",
+      "color": "green"
+    },
+    {
+      "id": "highest_potential",
+      "title": "Highest Potential",
+      "value": "7.6",
+      "label": "avg opportunity score",
+      "detail": "ClueWeaver: Reward-Guided Dual-Agent Evidence Reasoning for Compact LLMs on Lite",
+      "color": "amber"
+    },
+    {
+      "id": "biggest_surprise",
+      "title": "Biggest Surprise",
+      "value": "ClueWeaver: Reward-Guided Dual",
+      "label": "confidence 80%",
+      "detail": "",
+      "color": "purple"
+    },
+    {
+      "id": "most_practical",
+      "title": "Most Practical",
+      "value": "CIFQA: A Deterministic Tool-Gr",
+      "label": "highest confidence paper",
+      "detail": "A specialized financial assistant that provides accurate, calculation-intensive responses to user queries, An enterprise solution for financial institutions to automate and standardize financial query answering",
+      "color": "success"
+    },
+    {
+      "id": "most_innovative",
+      "title": "Most Innovative",
+      "value": "6",
+      "label": "early-stage technologies",
+      "detail": "MLLM-Routed Heterogeneous Ensembles for Robust Cross-Dataset Image Classificatio",
+      "color": "blue"
+    }
+  ],
+  "papers": [
+    {
+      "id": "2608.25531",
+      "title": "ClueWeaver: Reward-Guided Dual-Agent Evidence Reasoning for Compact LLMs on Literary Long Narratives",
+      "authors": [],
+      "categories": [
+        "cs.CL"
+      ],
+      "published": "2026-08-27",
+      "updated": "2026-08-27",
+      "summary": "arXiv:2608.25531v1 Announce Type: new Abstract: Humanities and social science research requires close reading of long narrative materials such as novels, scripts, archives, and case reports, yet many users have limited access to costly proprietary long-context models. Compact, locally deployable language models are a practical alternative, but directly feeding them an entire long context remains costly, hard to inspect, and prone to missing sparse evidence. We present ClueWeaver, an evidence-aware dual-agent framework for long-narrative question answering with compact local models. A Finder identifies passages containing answer-critical clues through retrieval-guided segmentation, while an Interpreter derives the answer from the selected evidence, produces rationales with paragraph-ID citations, and applies an internal self-calibration pass for high-risk questions. Both agents are optimized with reward-guided reinforcement learning: Finder rewards emphasize evidence retention and faithful paragraph-ID references, and Interpreter rewards emphasize correctness, grounding, and concise explanations. This decomposition makes evidence selection and reasoning more inspectable than end-to-end prompting. Experiments across multiple long-context narrative question answering and claim verification settings show that ClueWeaver substantially improves local end-to-end language models while providing evidence coverage and paragraph-referenced reasoning traces. Code is available at https://github.com/Ameame1/ClueWeaver.",
+      "pdf_url": "https://arxiv.org/abs/2608.25531",
+      "comment": "",
+      "technologies": [
+        "Retrieval Augmented Generation",
+        "Reinforcement Learning from Human Feedback"
+      ],
+      "maturity": "medium",
+      "confidence": 0.8,
+      "curator_score": 6.0,
+      "product_potential": [
+        "A compact, locally deployable tool for literary analysis and close reading of long narratives",
+        "An evidence-aware assistant for historians and researchers to verify claims and find critical passages in large archives"
+      ],
+      "domain_applications": [
+        "education",
+        "science",
+        "other"
+      ]
+    },
+    {
+      "id": "2608.26193",
+      "title": "AffectOmni: RL-Verifiable People-Centric Grounded Affective Reasoning for Social and Art-Related Scenes",
+      "authors": [],
+      "categories": [
+        "cs.AI"
+      ],
+      "published": "2026-08-28",
+      "updated": "2026-08-28",
+      "summary": "arXiv:2608.26193v1 Announce Type: new Abstract: Multimodal large language models (MLLMs) achieve strong performance on VQA and scene understanding, yet affective reasoning remains vulnerable to shortcut behavior. Models may predict correct answers while neglecting people-centric cues such as micro expressions and body language, which weakens traceability and external verification. Prior reinforcement learning approaches mainly reward context or logical coherence without explicitly enforcing attention to human evidence. In addition, LLM as a Judge scoring often suffers from score clustering, which reduces reward discriminability. We propose AffectOmni, a GRPO trained framework for verifiable affective reasoning. AffectOmni introduces People Focus and Temporal Order rewards to encourage people-centric evidence selection and temporally structured reasoning, and it adopts within-group comparative scoring to produce more stable and discriminative reward signals. For verification, a Thinking Summarizer converts free form rationales into executable evidence instructions, which are grounded into pixel level evidence regions via SAM3 to provide an externally auditable interface outside the training loop. Experiments on IntentBench, Daily Omni, and WorldSense show consistent improvements over open source 7B scale baselines, including gains of 4.66% on emotion recognition and +14.29% on temporally sensitive tasks. Code is available at https://github.com/eliot127825-rgb/AffectOmni_nobody.",
+      "pdf_url": "https://arxiv.org/abs/2608.26193",
+      "comment": "",
+      "technologies": [
+        "Reinforcement Learning from Human Feedback",
+        "Multimodal Learning",
+        "Direct Preference Optimization",
+        "Object Detection"
+      ],
+      "maturity": "medium",
+      "confidence": 0.8,
+      "curator_score": 6.0,
+      "product_potential": [
+        "Affective reasoning assistant for social media platforms to analyze user emotions and interactions",
+        "Artistic emotion analysis tool for artists and galleries to understand audience reactions"
+      ],
+      "domain_applications": [
+        "creative",
+        "social media",
+        "healthcare"
+      ]
+    },
+    {
+      "id": "2608.26442",
+      "title": "Don't Overthink, Don't Underthink: Toward Adaptive Reasoning in Agentic AI",
+      "authors": [],
+      "categories": [
+        "cs.AI"
+      ],
+      "published": "2026-08-28",
+      "updated": "2026-08-28",
+      "summary": "arXiv:2608.26442v1 Announce Type: new Abstract: Recent advances in Large Language Models (LLMs) have shown that increased inference-time reasoning can improve performance on complex tasks. However, many existing approaches rely on fixed or preallocated reasoning controls, such as fixed token budgets, pre-execution difficulty estimates, or activation-space interventions, and are often evaluated on standalone reasoning benchmarks rather than full agentic workflows. These assumptions may not hold in agentic AI systems, where reasoning requirements evolve dynamically through planning, tool use, memory retrieval, and agent-to-agent interactions. Consequently, reasoning can become either excessive or insufficient, resulting in unnecessary computation, increased latency, planning drift, excessive tool use, or incomplete solutions. We argue that a major challenge for next-generation agentic AI is not merely how much reasoning a language model should perform, but how it should allocate reasoning according to evolving task demands. We characterize over-reasoning and under-reasoning as recurring failure modes of misallocated reasoning and evaluate them on MATH-500 and the GAIA public validation benchmark. Using tool-decision latency, token consumption, token-limit exhaustion, and answer correctness, our results suggest that cases classified as over-reasoning are associated with higher computational cost without proportional accuracy gains, whereas cases classified as under-reasoning are consistently associated with incorrect or incomplete solutions. These findings motivate future research on adaptive reasoning mechanisms for agentic AI.",
+      "pdf_url": "https://arxiv.org/abs/2608.26442",
+      "comment": "",
+      "technologies": [
+        "Adaptive Reasoning",
+        "Agentic AI"
+      ],
+      "maturity": "early",
+      "confidence": 0.7,
+      "curator_score": 6.0,
+      "product_potential": [
+        "Dynamic reasoning allocation in AI agents",
+        "Optimized computational resource usage in agentic workflows"
+      ],
+      "domain_applications": [
+        "education",
+        "enterprise",
+        "other"
+      ]
+    },
+    {
+      "id": "2608.13463",
+      "title": "MLLM-Routed Heterogeneous Ensembles for Robust Cross-Dataset Image Classification",
+      "authors": [],
+      "categories": [
+        "cs.AI"
+      ],
+      "published": "2026-08-28",
+      "updated": "2026-08-28",
+      "summary": "arXiv:2608.13463v2 Announce Type: replace-cross Abstract: Modern image classification models excel when trained on single task-specific datasets but often struggle to generalize across domains and difficulty levels. We propose ARMDIL, an Adaptive Router for Multi-Domain Image Classification with LLMs. ARMDIL is an ensemble that uses a multimodal large language model (MLLM) agent to dynamically route each image to the most suitable vision backbone. Our diverse ensemble employs convolutional neural networks (ResNets), self-supervised representation learners (SSL), and vision language models (VLMs), each trained on a unified label space constructed from multiple image datasets with differing distributions and characteristics. Empirical evaluations illuminate the distinct capabilities and vulnerabilities of each architecture across disparate visual domains. Crucially, we show that ARMDIL effectively navigates these tradeoffs, performing competitively with specialized training-based routers. Furthermore, it drastically improves adaptability by allowing new information to be integrated via simple prompt modifications, while enhancing interpretability through natural language reasoning traces. These advances in cross-dataset image classification pave the way for more reliable general-purpose vision systems such as AI assistants and autonomous robots.",
+      "pdf_url": "https://arxiv.org/abs/2608.13463",
+      "comment": "",
+      "technologies": [
+        "Multimodal Learning",
+        "Ensemble Learning",
+        "Vision Transformer",
+        "Convolutional Neural Networks",
+        "Self-Supervised Learning",
+        "Vision Language Models"
+      ],
+      "maturity": "medium",
+      "confidence": 0.8,
+      "curator_score": 6.0,
+      "product_potential": [
+        "Dynamic AI assistant that adapts to user-specific image classification tasks",
+        "Autonomous robot vision system that can handle diverse environments and tasks"
+      ],
+      "domain_applications": [
+        "robotics",
+        "enterprise",
+        "other"
+      ]
+    },
+    {
+      "id": "2605.30931",
+      "title": "MineExplorer: Evaluating Open-World Exploration of MLLM Agents in Minecraft",
+      "authors": [],
+      "categories": [
+        "cs.CL"
+      ],
+      "published": "2026-08-28",
+      "updated": "2026-08-28",
+      "summary": "arXiv:2605.30931v3 Announce Type: replace Abstract: Multimodal large language models (MLLMs) have shown strong capabilities in perception, reasoning, and action generation. However, their ability to sustain exploration in dynamic open worlds remains unclear. Existing embodied and game-based benchmarks often compress interaction into short-horizon tasks or entangle success with domain-specific game mechanics. In this paper, we introduce MineExplorer benchmark for evaluating open-world exploration capabilities of MLLM agents in Minecraft. We first filter atomic tasks whose solutions rely heavily on Minecraft-specific knowledge to better reflect general open-world reasoning. Then we organize the benchmark around a ReAct-style capability formulation and compose atomic tasks into implicit multi-hop tasks. To further construct reliable instances, MineExplorer uses a multi-agent synthesis workflow that jointly designs task graphs, sandbox scenes, and rule-based milestone evaluators. Human evaluation shows that the multi-agent synthesis workflow produces significantly more reliable instances than a single-agent baseline. Experiments with advanced MLLM agents show that open-world exploration remains challenging, as strong models can handle many single-hop tasks but degrade sharply when hidden prerequisites must be coordinated over longer trajectories. Further analysis finds that task difficulty tracks agent completion, and larger models or thinking modes do not consistently translate into better performance. Code and dataset are available at https://github.com/meituanlongcat/MineExplorer.",
+      "pdf_url": "https://arxiv.org/abs/2605.30931",
+      "comment": "",
+      "technologies": [
+        "Reinforcement Learning from Human Feedback",
+        "Multimodal Learning"
+      ],
+      "maturity": "early",
+      "confidence": 0.7,
+      "curator_score": 6.0,
+      "product_potential": [
+        "AI-powered game assistants that can navigate and solve complex tasks in open-world environments",
+        "Virtual tutors for teaching problem-solving and critical thinking skills in educational games"
+      ],
+      "domain_applications": [
+        "education",
+        "creative"
+      ]
+    },
+    {
+      "id": "2608.25398",
+      "title": "OmniPhys: A Unified Multimodal Benchmark for Physics Understanding and Generation from Chinese Educational Corpora",
+      "authors": [],
+      "categories": [
+        "cs.CL"
+      ],
+      "published": "2026-08-27",
+      "updated": "2026-08-27",
+      "summary": "arXiv:2608.25398v1 Announce Type: new Abstract: Multimodal Large Language Models (MLLMs) have demonstrated strong abilities in solving diverse visual and textual reasoning tasks. However, their development in the physics domain is significantly hindered by the lack of a comprehensive benchmark. To fill this gap, we introduce OmniPhys, a large-scale benchmark for multimodal physics understanding and reasoning, covering middle school through university-level problems from Chinese Educational Corpora. OmniPhys consists of 15,246 questions and 19,850 images, accompanied by detailed annotations that support fine-grained analysis of reasoning processes and knowledge usage. Beyond conventional evaluation, OmniPhys is a benchmark that systematically evaluates multimodal outputs in the physics domain, including models' ability to generate structured physics diagrams, which constitute a fundamental component of authentic physics problem solving. Extensive evaluations reveal critical gaps in the capabilities of current MLLMs, especially in complex reasoning and visual generation. To address this, we release OmniPhys to serve as a foundational resource for advancing multimodal intelligence in physics and scientific domains. Codes and data are available at https://github.com/ECNU-RAIL/OmniPhys-EMNLP2026.",
+      "pdf_url": "https://arxiv.org/abs/2608.25398",
+      "comment": "",
+      "technologies": [
+        "Multimodal Learning"
+      ],
+      "maturity": "early",
+      "confidence": 0.7,
+      "curator_score": 5.9,
+      "product_potential": [
+        "An AI-powered physics tutor that can generate structured diagrams and explanations for complex physics problems.",
+        "A multimodal educational platform for students to practice and understand physics concepts through interactive visual and textual content."
+      ],
+      "domain_applications": [
+        "education",
+        "science"
+      ]
+    },
+    {
+      "id": "2608.27110",
+      "title": "DocTalkBN: A Novel Dataset of Expert Telemedicine Conversations in Bengali",
+      "authors": [
+        "Anik Saha",
+        "Fahmida Sultana Naznin",
+        "Sadatul Islam Sadi",
+        "Ananya Shahrin Promi",
+        "Wahid Al Azad Navid",
+        "Rifat Shahriyar"
+      ],
+      "categories": [
+        "cs.CL"
+      ],
+      "published": "2026-08-27",
+      "updated": "2026-08-27",
+      "summary": "Reliable medical conversational AI requires authentic expert--patient interaction data, yet such datasets remain scarce, especially for low-resource languages such as Bengali. We present DocTalkBN, a large-scale multimodal dataset of real-world expert telemedicine conversations in Bengali, collected from nationally broadcast telemedicine programs featuring board-certified physicians. DocTalkBN contains 557.63 hours of paired audio and text, 1,515 multi-turn patient calls, 10,274 host--doctor question--answer exchanges, totaling 1.7M tokens, spanning 26 medical specialties. Unlike prior resources derived from medical forums, written health content, or synthetic data, our dataset preserves the spontaneity, contextual richness, and spoken characteristics of authentic medical interactions in a low-resource setting. To support benchmark-driven research, we further construct three downstream tasks from the corpus, medical triage classification, advice safety evaluation, and medical named entity recognition, and benchmark a diverse set of large language models and encoder-based baselines. Our results show that DocTalkBN is a practically useful resource, particularly for clinically grounded reasoning tasks. We release this resource to facilitate future research on reliable medical NLP and safer, more culturally grounded healthcare systems for low-resource languages. Our source codes and dataset are publicly available at https://anonymous.4open.science/r/doctalk.",
+      "pdf_url": "https://arxiv.org/pdf/2608.27110v1",
+      "comment": "",
+      "technologies": [
+        "Multimodal Learning"
+      ],
+      "maturity": "early",
+      "confidence": 0.7,
+      "curator_score": 5.9,
+      "product_potential": [
+        "A telemedicine platform with AI-powered multilingual support for Bengali-speaking patients",
+        "An AI assistant for medical professionals to improve triage and advice safety evaluation"
+      ],
+      "domain_applications": [
+        "healthcare"
+      ]
+    },
+    {
+      "id": "2608.23035",
+      "title": "MobilePA-Bench: Benchmarking Mobile Planner Agents on Complex Real-World Tasks",
+      "authors": [],
+      "categories": [
+        "cs.AI"
+      ],
+      "published": "2026-08-27",
+      "updated": "2026-08-27",
+      "summary": "arXiv:2608.23035v2 Announce Type: replace Abstract: As on-device LLM agents evolve into personal copilots, the mobile operating system has become a key testbed for this paradigm, making rigorous capability evaluation essential. Yet existing benchmarks fall into two camps, each with a critical blind spot: GUI-centric benchmarks test surface-level screen manipulation while overlooking background tool use and long-horizon planning, whereas static function-calling benchmarks rely on offline API matching that is detached from real runtime constraints. To close this gap, we present \\textbf{MobilePA-Bench}, an interactive, stateful, and tool-centric benchmark for evaluating the tool-calling and planning abilities of mobile planning agents. MobilePA-Bench runs on an executable sandbox that maintains live application databases and returns structured feedback, spanning $13$ functional domains and $212$ realistic mobile tools. Beyond basic tool use, it evaluates a central planning agent along three advanced dimensions: \\emph{(1)~Sub-agent Collaboration}---decomposing a complex task and delegating specialized work to capable sub-agents; \\emph{(2)~Memory Usage}---recalling stored memories, user profiles, and past preferences to resolve implicit requests; and \\emph{(3)~Skill Usage}---invoking pre-packaged composite skills instead of planning every step from scratch. Extensive experiments show that current frontier LLMs remain unreliable in mobile settings: performance drops sharply under strict tool ordering, permission limits, and unexpected runtime errors. By pairing an interactive function-calling sandbox with evidence-based verification, MobilePA-Bench serves as both a practical diagnostic benchmark and an interactive foundation for agentic reinforcement learning---accelerating the development of dependable mobile agents.",
+      "pdf_url": "https://arxiv.org/abs/2608.23035",
+      "comment": "",
+      "technologies": [
+        "Reinforcement Learning from Human Feedback",
+        "Retrieval Augmented Generation"
+      ],
+      "maturity": "medium",
+      "confidence": 0.8,
+      "curator_score": 5.7,
+      "product_potential": [
+        "Interactive mobile AI assistant with advanced planning capabilities",
+        "Tool-centric benchmarking platform for mobile AI agents"
+      ],
+      "domain_applications": [
+        "education",
+        "enterprise",
+        "accessibility",
+        "other"
+      ]
+    },
+    {
+      "id": "2409.18073",
+      "title": "Infer Human's Intentions Before Following Natural Language Instructions",
+      "authors": [],
+      "categories": [
+        "cs.CL"
+      ],
+      "published": "2026-08-27",
+      "updated": "2026-08-27",
+      "summary": "arXiv:2409.18073v2 Announce Type: replace-cross Abstract: For AI agents to be helpful to humans, they should be able to follow natural language instructions to complete everyday cooperative tasks in human environments. However, real human instructions inherently possess ambiguity, because the human speakers assume sufficient prior knowledge about their hidden goals and intentions. Standard language grounding and planning methods fail to address such ambiguities because they do not model human internal goals as additional partially observable factors in the environment. We propose a new framework, Follow Instructions with Social and Embodied Reasoning (FISER), aiming for better natural language instruction following in collaborative embodied tasks. Our framework makes explicit inferences about human goals and intentions as intermediate reasoning steps. We implement a set of Transformer-based models and evaluate them over a challenging benchmark, HandMeThat. We empirically demonstrate that using social reasoning to explicitly infer human intentions before making action plans surpasses purely end-to-end approaches. We also compare our implementation with strong baselines, including Chain of Thought prompting on the largest available pre-trained language models, and find that FISER provides better performance on the embodied social reasoning tasks under investigation, reaching the state-of-the-art on HandMeThat.",
+      "pdf_url": "https://arxiv.org/abs/2409.18073",
+      "comment": "",
+      "technologies": [
+        "Social and Embodied Reasoning",
+        "Transformer-based Models"
+      ],
+      "maturity": "early",
+      "confidence": 0.7,
+      "curator_score": 5.7,
+      "product_potential": [
+        "AI-powered home assistants that can infer and respond to implicit human intentions",
+        "Collaborative robots that can understand and anticipate human intentions in shared tasks"
+      ],
+      "domain_applications": [
+        "robotics",
+        "accessibility"
+      ]
+    },
+    {
+      "id": "2604.06156",
+      "title": "MMEmb-R1: Reasoning-Enhanced Multimodal Embedding with Pair-Aware Selection and Adaptive Control",
+      "authors": [],
+      "categories": [
+        "cs.CL"
+      ],
+      "published": "2026-08-27",
+      "updated": "2026-08-27",
+      "summary": "arXiv:2604.06156v2 Announce Type: replace-cross Abstract: MLLMs have been successfully applied to multimodal embedding tasks, yet their generative reasoning capabilities remain underutilized. Directly incorporating chain-of-thought reasoning into embedding learning introduces two fundamental challenges. First, structural misalignment between instance-level reasoning and pairwise contrastive supervision may lead to shortcut behavior, where the model merely learns the superficial format of reasoning. Second, reasoning is not universally beneficial for embedding tasks. Enforcing reasoning for all inputs may introduce unnecessary computation and latency, and can even obscure salient semantic signals for simple cases. To address these issues, we propose MMEmb-R1, an adaptive reasoning-based multimodal embedding framework. We formulate reasoning as a latent variable and introduce pair-aware reasoning selection that employs counterfactual intervention to identify reasoning paths beneficial for query-target alignment. Furthermore, we adopt reinforcement learning to selectively invoke reasoning only when necessary. Experiments on the MMEB-V2 benchmark demonstrate that our model achieves a score of 71.2 with only 4B parameters, establishing a new state-of-the-art while significantly reducing reasoning overhead and inference latency.",
+      "pdf_url": "https://arxiv.org/abs/2604.06156",
+      "comment": "",
+      "technologies": [
+        "Multimodal Learning",
+        "Chain-of-Thought Prompting",
+        "Reinforcement Learning"
+      ],
+      "maturity": "medium",
+      "confidence": 0.8,
+      "curator_score": 5.7,
+      "product_potential": [
+        "Adaptive multimodal search engines that dynamically adjust reasoning complexity based on query complexity",
+        "Personalized content recommendation systems that leverage reasoning-enhanced embeddings for better user understanding"
+      ],
+      "domain_applications": [
+        "education",
+        "enterprise",
+        "other"
+      ]
+    },
+    {
+      "id": "2608.27456",
+      "title": "UrbanGround: From Local Perception to Spatial Agency in a Real-Scale City",
+      "authors": [
+        "Tianjie Ju",
+        "Zheng Wu",
+        "Yueqing Sun",
+        "Yuhan Cui",
+        "Bobo Li",
+        "Shengqiong Wu",
+        "Pengzhou Cheng",
+        "Haodong Zhao",
+        "Zongru Wu",
+        "Xinbei Ma",
+        "Doris Zhang",
+        "Kunling Li",
+        "Mong-Li Lee",
+        "Wynne Hsu",
+        "Hao Fei",
+        "Qi Gu",
+        "Gongshen Liu",
+        "Zhuosheng Zhang"
+      ],
+      "categories": [
+        "cs.CV"
+      ],
+      "published": "2026-08-27",
+      "updated": "2026-08-27",
+      "summary": "Multimodal large language models (MLLMs) can interpret a street view, but urban agency depends on whether such local evidence remains useful after the agent starts to move. In this paper, we investigate how far current MLLM agents can turn local urban perception into reliable action in a complicated real-scale city. We propose UrbanGround, the first sandbox to make this question testable in a physically constrained replica of Hong Kong built from territory-wide 3D geospatial data. UrbanGround supports closed-loop interaction from a first-person view and provides an interactive map for navigation. Agents can directly enter the 3D city and explore from a first-person view. Our analysis follows the growth of the spatial problem through three research questions. We first test whether an agent can ground a local scene well enough to answer spatial questions after active observation. Then we ask whether that grounding supports navigation as destinations become farther away and less explicit. Finally, we examine whether the resulting behavior survives changes in route availability and pedestrian motion. Contemporary MLLM agents usually show useful atomic abilities in visual recognition and short-range spatial reasoning, while orientation and pedestrian-aware movement remain unreliable. Their central failure emerges over extended exploration, where local abilities do not compose into sustained goal-directed behavior and errors accumulate without effective correction. We hope UrbanGround will support broader study of how far current MLLM agents can explore reliably in complex, open-ended urban environments.",
+      "pdf_url": "https://arxiv.org/pdf/2608.27456v1",
+      "comment": "35 pages, 11 figures, 7 tables. Project Page: https://urbanground.github.io, Code Repository: https://github.com/UrbanGround/UrbanGround",
+      "technologies": [
+        "Multimodal Learning",
+        "Vision Transformer",
+        "Depth Estimation",
+        "Object Detection"
+      ],
+      "maturity": "early",
+      "confidence": 0.7,
+      "curator_score": 5.7,
+      "product_potential": [
+        "Urban navigation assistant with real-time spatial reasoning",
+        "Interactive 3D city exploration platform for urban planning",
+        "Autonomous urban delivery robot with pedestrian-aware movement"
+      ],
+      "domain_applications": [
+        "robotics",
+        "enterprise",
+        "other"
+      ]
+    },
+    {
+      "id": "2608.27158",
+      "title": "Diffusion Policies for Short-Horizon Planning in Robot Crowd Navigation",
+      "authors": [
+        "Wendong Li",
+        "Jochen Garcke"
+      ],
+      "categories": [
+        "cs.LG"
+      ],
+      "published": "2026-08-27",
+      "updated": "2026-08-27",
+      "summary": "Robot crowd navigation requires safe and efficient decision-making under dense, dynamic, and multimodal human--robot interactions. Existing reinforcement-learning methods typically output a single reactive action at each timestep, which limits their ability to represent diverse short-term avoidance strategies. We propose Planning Diffusion Policy Optimization (PDPO), an offline-to-online reinforcement-learning framework that uses a diffusion policy to generate short-horizon action chunks for crowd navigation. PDPO is first pretrained on collision-avoidance demonstrations and then fine-tuned online with PPO by treating the denoising process as an internal decision process. During execution, the policy generates a five-step action chunk and applies it in a receding-horizon manner. Furthermore, we observe an evaluation artifact in common crowd-navigation benchmarks: without explicit boundary constraints, learned agents may leave the valid domain and bypass dense crowds. To address this, we introduce a setting in which boundary violations are treated as collisions. Experiments show that PDPO obtains an improved success rate over strong baselines, and ablations demonstrate that action chunks are especially important for the modified bounded benchmark.",
+      "pdf_url": "https://arxiv.org/pdf/2608.27158v1",
+      "comment": "",
+      "technologies": [
+        "Diffusion Models",
+        "Reinforcement Learning",
+        "Planning Diffusion Policy Optimization (PDPO)"
+      ],
+      "maturity": "medium",
+      "confidence": 0.8,
+      "curator_score": 5.7,
+      "product_potential": [
+        "Autonomous delivery robots that navigate crowded urban environments efficiently and safely.",
+        "Service robots in retail environments that can navigate around customers and staff to deliver items."
+      ],
+      "domain_applications": [
+        "robotics"
+      ]
+    },
+    {
+      "id": "2608.27142",
+      "title": "GRAIN: Bridging Name and Narrative Shifts in Real-World Graph Reasoning through Invariance-Rewarded Agentic RL",
+      "authors": [
+        "Zike Yuan",
+        "Han Zhang",
+        "Jianzhi Yan",
+        "Le Liu",
+        "Cai Ke",
+        "Huozhi Zhou",
+        "Jian Xie",
+        "Jiran Yin",
+        "Yukun Cao",
+        "Yue Yu",
+        "Hui Wang",
+        "Ming Liu",
+        "Bing Qin"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "published": "2026-08-27",
+      "updated": "2026-08-27",
+      "summary": "Despite their potential in standardized graph tasks, Large Language Models (LLMs) remain brittle to real-world shifts in node identifiers and task formulation. While deterministic graph tools are invariant to such shifts, extracting topological structures from noisy text is highly fragile for LLMs, which often overfit to surface patterns. Moreover, mitigating these parsing failures via multi-agent systems incurs prohibitive latency. To address this, we propose GRAIN, a single-agent framework optimized via reinforcement learning. GRAIN models reasoning as a semantic parsing and tool-execution pipeline, guided by a Structure Invariance Reward. By validating extracted intermediate graphs against ground-truth topologies, this reward forces the LLM to learn robust text-to-structure mappings rather than memorizing linguistic artifacts. We also introduce GRIT, a benchmark evaluating sensitivity to such linguistic shifts. GRAIN outperforms multi-agent baselines by 16.45\\% in accuracy with approximately 24\\% lower latency. Furthermore, it demonstrates superior structural generalization, halving the out-of-distribution (OOD) gap of SFT models (from 15.77\\% to 7.80\\%) and maintaining robustness on large-scale graphs beyond the training distribution.",
+      "pdf_url": "https://arxiv.org/pdf/2608.27142v1",
+      "comment": "",
+      "technologies": [
+        "Reinforcement Learning from Human Feedback",
+        "Structure Invariance Reward"
+      ],
+      "maturity": "medium",
+      "confidence": 0.75,
+      "curator_score": 5.7,
+      "product_potential": [
+        "Enhanced graph reasoning tools for enterprise data analysis",
+        "Robust AI agents for real-world applications requiring structural generalization"
+      ],
+      "domain_applications": [
+        "enterprise",
+        "science"
+      ]
+    },
+    {
+      "id": "2608.26950",
+      "title": "From Atomic to Agentic: Towards Interpretable Evaluation of LLMs' Agentic Mathematical Capabilities",
+      "authors": [
+        "Jiayi Kuang",
+        "Yinghui Li",
+        "Yunze Song",
+        "Keyu Chen",
+        "Zhifeng Shen",
+        "Yangning Li",
+        "Yidong Wang",
+        "Di Yin",
+        "Ruizhi Qiao",
+        "Xing Sun",
+        "Kai Jin",
+        "Ying Shen",
+        "Liang Lin",
+        "Philip S. Yu"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CL"
+      ],
+      "published": "2026-08-27",
+      "updated": "2026-08-27",
+      "summary": "Large Language Models (LLMs) are evolving from performing end-to-end mathematical reasoning to integrating agentic intelligence. However, most existing math benchmarks evaluate only final answers. This outcome-oriented evaluation provides limited diagnostic value for identifying process-level failures or rigorous logic, failing to guide the transformation of LLMs into robust agents. To bridge this gap, we present a process-level benchmark designed to evaluate the inherent agentic mathematical reasoning abilities of LLMs. Our framework aligns problem-solving agentic behaviors with a structured taxonomy of reusable mathematical atomic capabilities. We design a comprehensive suite of planning, action, and feedback tasks across both textual and multimodal contexts, supported by an automated pipeline that synthesizes high-quality trajectories and produces fine-grained annotations via controlled LLM rewriting. Experiments reveal that models with similar end-to-end accuracy can exhibit markedly different agentic capability profiles. This demonstrates that process-level evaluation is crucial for interpreting the true potential of LLMs and guiding the development of next-generation mathematical agents.",
+      "pdf_url": "https://arxiv.org/pdf/2608.26950v1",
+      "comment": "EMNLP 2026",
+      "technologies": [
+        "Agentic Mathematical Reasoning Evaluation",
+        "Process-level Benchmarking",
+        "Automated Trajectory Synthesis",
+        "Controlled LLM Rewriting"
+      ],
+      "maturity": "early",
+      "confidence": 0.8,
+      "curator_score": 5.7,
+      "product_potential": [
+        "Developing AI tutors that provide step-by-step mathematical reasoning explanations",
+        "Creating AI agents for automated mathematical problem-solving and verification in educational and research settings"
+      ],
+      "domain_applications": [
+        "education",
+        "science"
+      ]
+    },
+    {
+      "id": "2608.26114",
+      "title": "CIFQA: A Deterministic Tool-Grounded Multi-Agent LLM Framework for Financial Query Answering",
+      "authors": [],
+      "categories": [
+        "cs.AI"
+      ],
+      "published": "2026-08-28",
+      "updated": "2026-08-28",
+      "summary": "arXiv:2608.26114v1 Announce Type: new Abstract: Calculation-intensive financial question answering requires exact reasoning over structured rates, temporal conditions, numerical formulas, and rule-based constraints. Although Large Language Models (LLMs) perform strongly on natural language tasks, they often produce numerically incorrect yet plausible answers when solving multi-step financial calculations. To address this limitation, we introduce CIFQA (Calculation-Intensive Financial Query Answering), a deterministic tool-grounded multi-agent LLM framework for financial question answering. CIFQA separates language understanding from numerical execution by assigning specialized agents to query interpretation, routing, parameter extraction, computation planning, and response generation, while deterministic Python-based tools perform financial calculations and rule application. We instantiate CIFQA for fixed deposit query answering and evaluate it on a curated benchmark of fixed deposit queries. CIFQA achieves 95.54% accuracy on calculation-intensive queries and 90.87% overall accuracy, substantially outperforming direct LLM baselines even when provided with complete formulas, rate cards, and benchmark instructions. Ablation studies show that deterministic components such as exact rate lookup, tenure computation, rolling-year adjustment, and premature-withdrawal logic are critical contributors to performance. Notably, a 17B open-source backbone operating within CIFQA outperforms substantially larger frontier models evaluated with the same financial information, demonstrating that architectural design is a more important determinant of numerical reliability than model scale. While evaluated on fixed deposit queries, CIFQA provides a generalizable framework for calculation-intensive financial reasoning tasks.",
+      "pdf_url": "https://arxiv.org/abs/2608.26114",
+      "comment": "",
+      "technologies": [
+        "Multi-Agent LLM Framework",
+        "Tool-Grounded Reasoning",
+        "Deterministic Computation Planning"
+      ],
+      "maturity": "medium",
+      "confidence": 0.85,
+      "curator_score": 5.7,
+      "product_potential": [
+        "A specialized financial assistant that provides accurate, calculation-intensive responses to user queries",
+        "An enterprise solution for financial institutions to automate and standardize financial query answering"
+      ],
+      "domain_applications": [
+        "finance",
+        "enterprise"
+      ]
+    }
+  ],
+  "technologies": [
+    {
+      "name": "Retrieval Augmented Generation",
+      "papers": 1,
+      "maturity": "early",
+      "confidence": 0.6,
+      "trend": "rising",
+      "applications": [
+        "other",
+        "enterprise",
+        "science",
+        "accessibility",
+        "education"
+      ]
+    },
+    {
+      "name": "Reinforcement Learning from Human Feedback",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.7,
+      "trend": "rising",
+      "applications": [
+        "enterprise",
+        "healthcare",
+        "creative",
+        "science",
+        "social media",
+        "accessibility",
+        "other",
+        "education"
+      ]
+    },
+    {
+      "name": "Multimodal Learning",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.7,
+      "trend": "rising",
+      "applications": [
+        "other",
+        "robotics",
+        "education",
+        "enterprise",
+        "creative",
+        "science",
+        "social media",
+        "healthcare"
+      ]
+    },
+    {
+      "name": "Direct Preference Optimization",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.7,
+      "trend": "rising",
+      "applications": [
+        "social media",
+        "healthcare",
+        "creative"
+      ]
+    },
+    {
+      "name": "Object Detection",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.7,
+      "trend": "rising",
+      "applications": [
+        "other",
+        "robotics",
+        "enterprise",
+        "creative",
+        "social media",
+        "healthcare"
+      ]
+    },
+    {
+      "name": "Adaptive Reasoning",
+      "papers": 1,
+      "maturity": "early",
+      "confidence": 0.6,
+      "trend": "rising",
+      "applications": [
+        "other",
+        "education",
+        "enterprise"
+      ]
+    },
+    {
+      "name": "Agentic AI",
+      "papers": 1,
+      "maturity": "early",
+      "confidence": 0.6,
+      "trend": "rising",
+      "applications": [
+        "other",
+        "education",
+        "enterprise"
+      ]
+    },
+    {
+      "name": "Ensemble Learning",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.7,
+      "trend": "rising",
+      "applications": [
+        "other",
+        "robotics",
+        "enterprise"
+      ]
+    },
+    {
+      "name": "Vision Transformer",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.7,
+      "trend": "rising",
+      "applications": [
+        "other",
+        "robotics",
+        "enterprise"
+      ]
+    },
+    {
+      "name": "Convolutional Neural Networks",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.7,
+      "trend": "rising",
+      "applications": [
+        "other",
+        "robotics",
+        "enterprise"
+      ]
+    },
+    {
+      "name": "Self-Supervised Learning",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.7,
+      "trend": "rising",
+      "applications": [
+        "other",
+        "robotics",
+        "enterprise"
+      ]
+    },
+    {
+      "name": "Vision Language Models",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.7,
+      "trend": "rising",
+      "applications": [
+        "other",
+        "robotics",
+        "enterprise"
+      ]
+    },
+    {
+      "name": "Social and Embodied Reasoning",
+      "papers": 1,
+      "maturity": "early",
+      "confidence": 0.5700000000000001,
+      "trend": "emerging",
+      "applications": [
+        "accessibility",
+        "robotics"
+      ]
+    },
+    {
+      "name": "Transformer-based Models",
+      "papers": 1,
+      "maturity": "early",
+      "confidence": 0.5700000000000001,
+      "trend": "emerging",
+      "applications": [
+        "accessibility",
+        "robotics"
+      ]
+    },
+    {
+      "name": "Chain-of-Thought Prompting",
+      "papers": 1,
+      "maturity": "early",
+      "confidence": 0.5700000000000001,
+      "trend": "emerging",
+      "applications": [
+        "other",
+        "education",
+        "enterprise"
+      ]
+    },
+    {
+      "name": "Reinforcement Learning",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.7,
+      "trend": "rising",
+      "applications": [
+        "other",
+        "education",
+        "robotics",
+        "enterprise"
+      ]
+    },
+    {
+      "name": "Depth Estimation",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.7,
+      "trend": "rising",
+      "applications": [
+        "other",
+        "robotics",
+        "enterprise"
+      ]
+    },
+    {
+      "name": "Diffusion Models",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.7,
+      "trend": "rising",
+      "applications": [
+        "robotics"
+      ]
+    },
+    {
+      "name": "Planning Diffusion Policy Optimization (PDPO)",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.7,
+      "trend": "rising",
+      "applications": [
+        "robotics"
+      ]
+    },
+    {
+      "name": "Structure Invariance Reward",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.7,
+      "trend": "rising",
+      "applications": [
+        "enterprise",
+        "science"
+      ]
+    },
+    {
+      "name": "Agentic Mathematical Reasoning Evaluation",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.7,
+      "trend": "rising",
+      "applications": [
+        "education",
+        "science"
+      ]
+    },
+    {
+      "name": "Process-level Benchmarking",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.7,
+      "trend": "rising",
+      "applications": [
+        "education",
+        "science"
+      ]
+    },
+    {
+      "name": "Automated Trajectory Synthesis",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.7,
+      "trend": "rising",
+      "applications": [
+        "education",
+        "science"
+      ]
+    },
+    {
+      "name": "Controlled LLM Rewriting",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.7,
+      "trend": "rising",
+      "applications": [
+        "education",
+        "science"
+      ]
+    },
+    {
+      "name": "Multi-Agent LLM Framework",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.8,
+      "trend": "rising",
+      "applications": [
+        "finance",
+        "enterprise"
+      ]
+    },
+    {
+      "name": "Tool-Grounded Reasoning",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.8,
+      "trend": "rising",
+      "applications": [
+        "finance",
+        "enterprise"
+      ]
+    },
+    {
+      "name": "Deterministic Computation Planning",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.8,
+      "trend": "rising",
+      "applications": [
+        "finance",
+        "enterprise"
+      ]
+    }
+  ],
+  "product_opportunities": [
+    {
+      "technology": "Multi-Agent LLM Framework",
+      "idea": "FinSim: AI-powered financial simulation and risk assessment tool for investment firms",
+      "business_value": 9,
+      "engineering_difficulty": 8,
+      "competitive_advantage": "high",
+      "development_time": "3-6 months"
+    },
+    {
+      "technology": "Tool-Grounded Reasoning",
+      "idea": "TradeBot: AI-driven trading assistant that integrates with multiple financial tools and platforms",
+      "business_value": 8,
+      "engineering_difficulty": 7,
+      "competitive_advantage": "medium",
+      "development_time": "2-4 months"
+    },
+    {
+      "technology": "Deterministic Computation Planning",
+      "idea": "PlanIt: AI-powered project planning and management tool for enterprise teams",
+      "business_value": 7,
+      "engineering_difficulty": 6,
+      "competitive_advantage": "medium",
+      "development_time": "2-3 months"
+    },
+    {
+      "technology": "Reinforcement Learning from Human Feedback",
+      "idea": "HealthCoach: AI personal health assistant that learns from user feedback to provide tailored health advice",
+      "business_value": 8,
+      "engineering_difficulty": 7,
+      "competitive_advantage": "high",
+      "development_time": "3-6 months"
+    },
+    {
+      "technology": "Multimodal Learning",
+      "idea": "EduBot: AI-powered educational assistant that can understand and respond to both text and visual inputs",
+      "business_value": 7,
+      "engineering_difficulty": 6,
+      "competitive_advantage": "medium",
+      "development_time": "2-3 months"
+    },
+    {
+      "technology": "Direct Preference Optimization",
+      "idea": "ArtGen: AI art generator that learns from user preferences to create personalized artwork",
+      "business_value": 8,
+      "engineering_difficulty": 7,
+      "competitive_advantage": "high",
+      "development_time": "3-6 months"
+    },
+    {
+      "technology": "Object Detection",
+      "idea": "SecureCam: AI-powered security camera system that can detect and alert users to suspicious activities",
+      "business_value": 7,
+      "engineering_difficulty": 6,
+      "competitive_advantage": "medium",
+      "development_time": "2-3 months"
+    },
+    {
+      "technology": "Ensemble Learning",
+      "idea": "PredictPro: AI-powered predictive analytics tool that combines multiple models to provide accurate forecasts",
+      "business_value": 8,
+      "engineering_difficulty": 7,
+      "competitive_advantage": "high",
+      "development_time": "3-6 months"
+    },
+    {
+      "technology": "Vision Transformer",
+      "idea": "VisionBot: AI-powered visual assistant that can understand and respond to complex visual inputs",
+      "business_value": 7,
+      "engineering_difficulty": 6,
+      "competitive_advantage": "medium",
+      "development_time": "2-3 months"
+    },
+    {
+      "technology": "Convolutional Neural Networks",
+      "idea": "ImageGen: AI-powered image generation tool that can create realistic images from text descriptions",
+      "business_value": 8,
+      "engineering_difficulty": 7,
+      "competitive_advantage": "high",
+      "development_time": "3-6 months"
+    },
+    {
+      "technology": "Self-Supervised Learning",
+      "idea": "LearnBot: AI-powered educational assistant that can learn from user interactions without the need for labeled data",
+      "business_value": 7,
+      "engineering_difficulty": 6,
+      "competitive_advantage": "medium",
+      "development_time": "2-3 months"
+    },
+    {
+      "technology": "Vision Language Models",
+      "idea": "VisioBot: AI-powered visual assistant that can understand and respond to complex visual and textual inputs",
+      "business_value": 8,
+      "engineering_difficulty": 7,
+      "competitive_advantage": "high",
+      "development_time": "3-6 months"
+    },
+    {
+      "technology": "Reinforcement Learning",
+      "idea": "GameMaster: AI-powered game master that can learn and adapt to user preferences to create personalized gaming experiences",
+      "business_value": 7,
+      "engineering_difficulty": 6,
+      "competitive_advantage": "medium",
+      "development_time": "2-3 months"
+    },
+    {
+      "technology": "Depth Estimation",
+      "idea": "DepthBot: AI-powered depth estimation tool that can create 3D models from 2D images",
+      "business_value": 8,
+      "engineering_difficulty": 7,
+      "competitive_advantage": "high",
+      "development_time": "3-6 months"
+    },
+    {
+      "technology": "Diffusion Models",
+      "idea": "DiffuBot: AI-powered image generation tool that can create realistic images from text descriptions using diffusion models",
+      "business_value": 9,
+      "engineering_difficulty": 8,
+      "competitive_advantage": "very high",
+      "development_time": "4-8 months"
+    }
+  ]
+}

@@ -1,0 +1,1081 @@
+{
+  "meta": {
+    "date": "2026-09-20",
+    "papers_tracked": 15,
+    "technologies_discovered": 38,
+    "opportunities_identified": 15,
+    "last_update": "2026-09-20 09:54 UTC",
+    "backend": "llm7",
+    "model": "Research Curator v1"
+  },
+  "brief": [
+    "Signal 1: Rapid Advancements in Sparse Attention and KV Cache Optimization for Efficient Autoregressive Image Generation (cs.CV)",
+    "Signal 2: Emerging Retrieval Augmented Generation Techniques for Interdisciplinary Scientific Reasoning (cs.AI)",
+    "Signal 3: Long-context Pattern Understanding and Simulated Human-Agent Interaction for Enhanced Human-Agent Partnerships (cs.AI)",
+    "Signal 4: Advances in Skill Blocks and Multimodal Learning for General Robot Learning and Human-Agent Interaction (cs.AI)",
+    "Signal 5: New Benchmarks and Techniques for Reliable Multimodal Learning in Vision Question Answering (cs.CV)"
+  ],
+  "top_cards": [
+    {
+      "id": "new_technologies",
+      "title": "New Technologies",
+      "value": "38",
+      "label": "discovered this scan",
+      "detail": "Sparse Attention, KV Cache Optimization, Retrieval Augmented Generation, Long-context Pattern Understanding, Simulated Human-Agent Interaction, Behavioral Rule Inference, Skill Blocks, Experience Memory",
+      "color": "accent"
+    },
+    {
+      "id": "emerging_trends",
+      "title": "Emerging Trends",
+      "value": "38",
+      "label": "active trend clusters",
+      "detail": "Skill Blocks, Experience Memory, Chain-of-Thought Prompting, Reinforcement Learning from Human Feedback, Direct Preference Optimization",
+      "color": "green"
+    },
+    {
+      "id": "highest_potential",
+      "title": "Highest Potential",
+      "value": "7.9",
+      "label": "avg opportunity score",
+      "detail": "Understanding and Exploiting Diagonal Attention Sparsity in Autoregressive Image",
+      "color": "amber"
+    },
+    {
+      "id": "biggest_surprise",
+      "title": "Biggest Surprise",
+      "value": "Understanding and Exploiting D",
+      "label": "confidence 80%",
+      "detail": "",
+      "color": "purple"
+    },
+    {
+      "id": "most_practical",
+      "title": "Most Practical",
+      "value": "Teach and Grow: An Agent-Cente",
+      "label": "highest confidence paper",
+      "detail": "A robotics platform that allows users to teach robots new skills through demonstrations, enabling rapid adaptation to new tasks without retraining., A home automation system that uses multimodal learning to understand and execute complex tasks based on user demonstrations, improving reliability and reducing the need for manual programming.",
+      "color": "success"
+    },
+    {
+      "id": "most_innovative",
+      "title": "Most Innovative",
+      "value": "0",
+      "label": "early-stage technologies",
+      "detail": "Bioinfoysis Technical Report",
+      "color": "blue"
+    }
+  ],
+  "papers": [
+    {
+      "id": "2609.19702",
+      "title": "Understanding and Exploiting Diagonal Attention Sparsity in Autoregressive Image Generation",
+      "authors": [],
+      "categories": [
+        "cs.CV"
+      ],
+      "published": "2026-09-18",
+      "updated": "2026-09-18",
+      "summary": "arXiv:2609.19702v1 Announce Type: new Abstract: Autoregressive image generation has emerged as a paradigm for multimodal AI systems due to its compatibility with transformer-based LLM serving infrastructures. However, generating thousands of visual tokens per request makes decoding increasingly bottlenecked by KV cache accesses during attention computation. Sparse attention is particularly attractive for this workload because many visual generation applications tolerate moderate quality degradation in exchange for improved performance and efficiency. While sparse attention has been extensively explored for text-based LLM inference, it remains unclear whether its sparsity assumptions generalize effectively to autoregressive image generation. We present the first systematic characterization of attention sparsity in autoregressive image generation across diverse workloads and representative open-source models. Our analysis reveals several distinguishing properties, including a pronounced prefill-decode asymmetry, strong attention concentration on prompt and local tokens, and a unique diagonal attention sparsity pattern arising from the spatial locality of visual tokens. Motivated by these observations, we propose a diagonal-aware sparse attention mechanism that selectively skips KV entries along the diagonal attention direction within a recent window. Implemented on top of a GPU-based serving system using FlexGen, FlashAttention-2, and custom kernels, our approach achieves up to 3.1x throughput and 1.19x latency improvements with less than 2% quality degradation compared to dense inference.",
+      "pdf_url": "https://arxiv.org/abs/2609.19702",
+      "comment": "",
+      "technologies": [
+        "Sparse Attention",
+        "KV Cache Optimization"
+      ],
+      "maturity": "medium",
+      "confidence": 0.8,
+      "curator_score": 5.5,
+      "product_potential": [
+        "Faster image generation for creative applications like AI art tools and design software",
+        "Improved performance and efficiency for real-time image generation in robotics and AR/VR applications"
+      ],
+      "domain_applications": [
+        "creative",
+        "robotics"
+      ]
+    },
+    {
+      "id": "2609.19180",
+      "title": "BioPhys-Bridge: A Benchmark for Interdisciplinary Scientific Reasoning in Physics-Grounded Biological Research",
+      "authors": [],
+      "categories": [
+        "cs.AI"
+      ],
+      "published": "2026-09-18",
+      "updated": "2026-09-18",
+      "summary": "arXiv:2609.19180v1 Announce Type: new Abstract: Language models face unique challenges in analyzing interdisciplinary scientific research literature. In biophysics research, faithful answers require grounding observed data in source evidence, interpreting it through a quantitative physics model, and linking it to a biological mechanism. To address this challenge, we introduce BioPhys-Bridge, a novel benchmark dataset for evidence-grounded scientific reasoning over biophysical literature. Each case contains evidence blocks, stable evidence IDs, quantitative values, units, equations, assumptions, mechanisms, and next decisions as grounding targets for question answering (QA) and retrieval-augmented generation (RAG). The initial release contains 500 cases, 1,517 agent-facing tasks, and covers six biological domains and nine physical model families, including three sparse families reserved for future expansion. We enforce strict quality gates for all cases in schema, evidence-integrity, quantitative-grounding, source-license, duplicate, unit-normalization, with domain expert review and annotation for 81 cases. Preliminary evaluations show that DeepSeek-V4-Flash obtain the highest evidence-ID $F_1$ score (0.360), followed by Qwen3.7-Max (0.316) and GPT-4o-mini (0.294). BioPhys-Bridge is an interdisciplinary benchmark for evaluating attribution, faithfulness, hallucination reduction, and biological experiment design with complex, multi-step scientific reasoning. Future works will increase the size and complexity of the dataset and perform comprehensive evaluations. Code and data are available in the GitHub repository and on Hugging Face.",
+      "pdf_url": "https://arxiv.org/abs/2609.19180",
+      "comment": "",
+      "technologies": [
+        "Retrieval Augmented Generation"
+      ],
+      "maturity": "early",
+      "confidence": 0.7,
+      "curator_score": 5.4,
+      "product_potential": [
+        "A scientific research assistant that can ground answers in source evidence and interpret data through quantitative physics models.",
+        "A tool for educators to teach interdisciplinary scientific reasoning in physics-grounded biological research."
+      ],
+      "domain_applications": [
+        "science",
+        "education"
+      ]
+    },
+    {
+      "id": "2609.19610",
+      "title": "SIMLIFE: Pattern Understanding for Long-Horizon Human-Agent Partnership",
+      "authors": [],
+      "categories": [
+        "cs.AI"
+      ],
+      "published": "2026-09-18",
+      "updated": "2026-09-18",
+      "summary": "arXiv:2609.19610v1 Announce Type: new Abstract: Understanding humans over long horizons requires agents to infer not only what people need in the moment, but also how routines form, why they repeat, and when they change. We introduce SimLife, a scalable platform for simulating long-term household life with rich visual observations, ground-truth action logs, and synthetic dialogues with audio. Built on SimLife, SimLife-BP evaluates long-context pattern understanding: the ability to infer latent behavioral rules from weeks or months of everyday observations. The benchmark contains 106 episodes averaging 15.49 hours and 38.57 in-game days, and 1,439 question-answer pairs. Each task probes direct, counterfactual, noisy, and inverse reasoning under different levels of rule hints. Evaluating frontier models and architectures, we find that current models often achieve surface-level prediction without comprehensive rule understanding, rely on frequency-based heuristics rather than if-then reasoning over evidence, and struggle to adapt when behavioral patterns change. These findings suggest that long-context pattern understanding remains a major bottleneck for future embodied agents, while SimLife opens a broader space for studying memory, personalization, adaptation, and long-horizon planning in everyday human-AI interaction.",
+      "pdf_url": "https://arxiv.org/abs/2609.19610",
+      "comment": "",
+      "technologies": [
+        "Long-context Pattern Understanding",
+        "Simulated Human-Agent Interaction",
+        "Behavioral Rule Inference"
+      ],
+      "maturity": "early",
+      "confidence": 0.8,
+      "curator_score": 5.2,
+      "product_potential": [
+        "Personalized AI assistants that understand and adapt to long-term user routines",
+        "Smart home systems that predict and respond to changing user behaviors over time"
+      ],
+      "domain_applications": [
+        "healthcare",
+        "robotics",
+        "enterprise",
+        "other"
+      ]
+    },
+    {
+      "id": "2608.17209",
+      "title": "Teach and Grow: An Agent-Centered Architecture for General Robot Learning",
+      "authors": [],
+      "categories": [
+        "cs.AI"
+      ],
+      "published": "2026-09-18",
+      "updated": "2026-09-18",
+      "summary": "arXiv:2608.17209v2 Announce Type: replace-cross Abstract: Vision-language-action (VLA) and world-action models typically absorb unfamiliar manipulation tasks through additional robot data collection and policy optimization. This recurring retraining burden slows the acquisition of new behavior. We present Teach-and-Grow Learning (TGL), a training-free architecture that turns a few successful demonstrations into reusable robot skills. Task acquisition requires no gradient updates, fine-tuning, or reinforcement learning: pretrained model weights remain fixed as the robot expands its explicit knowledge. Teaching is an accelerator, not a precondition, because the agent can also drive the robot directly, and demonstrations mainly improve reliability. Our implementation uses OpenAI GPT-6 Astra for multimodal reasoning and Codex to connect the agent to robot tools. The agent identifies subgoals shared across demonstrations, expresses them as closed-loop Skill Blocks, and grounds each block in the current scene. Physical feedback guides the next action and any recovery. Verified behaviors enter a persistent Skill Library; Experience Memory records the conditions and repairs that inform later decisions. TGL reaches 99.9% mean success on four LIBERO suites and 92.4% on seven LIBERO-Plus perturbation categories. Controlled studies show that taught blocks persist and improve related-task execution under the same model weights and executors. We further formulate a scaling hypothesis that relates effective reusable experience to falling future-task error and teaching demand. Code and demonstration videos: https://tgl.changnie.top .",
+      "pdf_url": "https://arxiv.org/abs/2608.17209",
+      "comment": "",
+      "technologies": [
+        "Skill Blocks",
+        "Experience Memory",
+        "Multimodal Learning"
+      ],
+      "maturity": "medium",
+      "confidence": 0.85,
+      "curator_score": 5.2,
+      "product_potential": [
+        "A robotics platform that allows users to teach robots new skills through demonstrations, enabling rapid adaptation to new tasks without retraining.",
+        "A home automation system that uses multimodal learning to understand and execute complex tasks based on user demonstrations, improving reliability and reducing the need for manual programming."
+      ],
+      "domain_applications": [
+        "robotics",
+        "education",
+        "enterprise"
+      ]
+    },
+    {
+      "id": "2607.21653",
+      "title": "Molt: A Scalable PyTorch-Native Training Framework for Agentic Reinforcement Learning",
+      "authors": [],
+      "categories": [
+        "cs.CL"
+      ],
+      "published": "2026-09-18",
+      "updated": "2026-09-18",
+      "summary": "arXiv:2607.21653v2 Announce Type: replace-cross Abstract: Agentic reinforcement learning requires infrastructure that researchers can modify without sacrificing model scale or control over agent execution. We present Molt, a lightweight PyTorch-native framework that combines trillion-parameter training with standard agent interfaces. Molt integrates four capabilities: a compact training implementation built on composable model parallelism; unified OpenAI and Anthropic interfaces with automatic trajectory segmentation after context compaction; fully asynchronous rollout and optimization; and distributed experience storage for long, multimodal trajectories. Existing agents retain their execution and context-management logic while a shared capture layer records generated tokens and behavior probabilities. Rollout workers place heavy experience payloads in Ray's object store, and trainer ranks retrieve their assigned experiences by reference, avoiding a centralized gather of the full rollout batch. The framework-owned RL implementation comprises approximately 9.2K Python code lines, and its rollout, weight-refit, and training-update path has executed end to end on a one-trillion-parameter policy. On a 35B multimodal mixture-of-experts workload, speculative decoding accelerates the generation stage by 5.14x, and optimizer offload reduces peak actor memory by 18.3 GB. Together, these results establish a compact training framework for agentic RL research at trillion-parameter scale.",
+      "pdf_url": "https://arxiv.org/abs/2607.21653",
+      "comment": "",
+      "technologies": [
+        "Reinforcement Learning",
+        "Model Parallelism",
+        "Speculative Decoding",
+        "Mixture of Experts"
+      ],
+      "maturity": "medium",
+      "confidence": 0.8,
+      "curator_score": 5.2,
+      "product_potential": [
+        "Developing a scalable AI training platform for enterprises to train large-scale reinforcement learning models",
+        "Creating a framework for researchers to experiment with agentic reinforcement learning at trillion-parameter scale"
+      ],
+      "domain_applications": [
+        "enterprise",
+        "science"
+      ]
+    },
+    {
+      "id": "2609.19393",
+      "title": "WZPlanner: Safe End-to-End Path Planning for Autonomous Driving in Work Zones",
+      "authors": [],
+      "categories": [
+        "cs.CV"
+      ],
+      "published": "2026-09-18",
+      "updated": "2026-09-18",
+      "summary": "arXiv:2609.19393v1 Announce Type: new Abstract: Work zones alter lane geometry through temporary traffic controls and closures that may be absent from on-board maps, challenging autonomous vehicle (AV) perception and planning. Generalization is also limited by scarce public datasets with structured geometric supervision. We present WorkZonePlan, a dataset comprising 149K+ synthetic and 5K+ real-world multimodal samples with 3D annotations for lane boundaries, work zone boundaries, and driving trajectory options. It also provides 76 closed-loop CARLA scenarios replayed under three weather conditions, yielding 228 Bench2Drive-format evaluation routes. We introduce WAVE (Work-zone-focused AV data generation in Virtual and rEal Environments), a semi-automated pipeline for creating the dataset, and BoundaryFormer (BF), a transformer-based model that jointly predicts lane and work zone boundary polynomials and driving trajectories. BF uses slot attention for boundary prediction. Ablations show that a separate trajectory decoder using boundary slot features substantially improves trajectory prediction over a slot-attention-only approach. Building on this finding, BF++ offers Camera and Camera+LiDAR variants with metric ground-plane encoding, typed boundary/trajectory queries, long-range point anchors, image-space curve refinement, and conservative gated LiDAR fusion. On the 211 routes common to all four models at the evaluation freeze, BF++-Camera and BF++-Camera+LiDAR achieve Driving Scores of 63.0 and 64.4, respectively, compared with 59.3 for SimLingo and 26.1 for TransFuser++ (TF++). BF++ is 40 times smaller than SimLingo and more than 10 times smaller than TF++, while achieving higher Driving Scores. These results support jointly predicting lane boundaries, work zone boundaries, and driving trajectories as a promising direction toward safer AV operation in work zones. Code and dataset: https://github.com/Nishad-Sahu/WZPlanner.",
+      "pdf_url": "https://arxiv.org/abs/2609.19393",
+      "comment": "",
+      "technologies": [
+        "Slot Attention",
+        "BoundaryFormer",
+        "WAVE",
+        "WorkZonePlan"
+      ],
+      "maturity": "medium",
+      "confidence": 0.8,
+      "curator_score": 5.2,
+      "product_potential": [
+        "Enhanced autonomous vehicle navigation in work zones",
+        "Improved safety features for autonomous vehicles in dynamic environments",
+        "Advanced driver assistance systems for work zone scenarios"
+      ],
+      "domain_applications": [
+        "robotics",
+        "enterprise",
+        "science"
+      ]
+    },
+    {
+      "id": "2511.22341",
+      "title": "Unexplored flaws in multiple-choice VQA make benchmarking unreliable",
+      "authors": [],
+      "categories": [
+        "cs.CV"
+      ],
+      "published": "2026-09-18",
+      "updated": "2026-09-18",
+      "summary": "arXiv:2511.22341v3 Announce Type: replace Abstract: Previous works identify sensitivity to option order as a key issue in multiple-choice VQA (MC-VQA) evaluation and propose protocols to mitigate this effect. We show that such mitigation is insufficient to ensure the validity of MC-VQA as a reliable benchmark for Multimodal Large Language Model (MLLMs): performance remains highly sensitive to semantically neutral prompt format choices that are not controlled by current benchmarks. In a large-scale study spanning seven MLLMs and five MC-VQAs datasets, we find frequent rank reversals even under order-invariant evaluation. These reversals arise when we systematically vary option ID sets, delimiters, and separators, yielding 48 semantically equivalent prompt formats. Mechanistic analyses trace this instability to low-level language modeling effects: tokenizer-induced fusion or removal of option ID tokens introduces corrupted option ID tokens into the input sequence, while the choice of option ID sets directly affects the reliability of attention patterns for option selection. Accordingly, MC-VQA rankings correlate weakly with open-ended evaluation, indicating that MC-VQA reflects option-selection dynamics in addition to multimodal reasoning. These findings identify prompt formatting as a major, previously under-controlled confounder in MC-VQA benchmarking and motivate evaluation protocols that explicitly control prompt format sensitivity.",
+      "pdf_url": "https://arxiv.org/abs/2511.22341",
+      "comment": "",
+      "technologies": [
+        "Multimodal Learning"
+      ],
+      "maturity": "early",
+      "confidence": 0.7,
+      "curator_score": 5.2,
+      "product_potential": [
+        "Developing standardized prompt formatting guidelines for MC-VQA benchmarks to ensure reliable evaluation of MLLMs",
+        "Creating tools to automatically generate and test multiple semantically equivalent prompt formats for MC-VQA tasks"
+      ],
+      "domain_applications": [
+        "science"
+      ]
+    },
+    {
+      "id": "2609.03871",
+      "title": "Bioinfoysis Technical Report",
+      "authors": [],
+      "categories": [
+        "cs.AI"
+      ],
+      "published": "2026-09-15",
+      "updated": "2026-09-15",
+      "summary": "arXiv:2609.03871v2 Announce Type: replace Abstract: Large language model agents have shown promise in bioinformatics, but most existing systems focus primarily on producing final answers, treating planning, tool use, and code execution as transient interactions. This design is poorly suited to long-horizon bioinformatics tasks, where conclusions must remain connected to the data, computations, and intermediate evidence that support them. We introduce \\textbf{Bioinfoysis}, a multi-agent harness that represents each request as a persistent, artifact-grounded analysis run. Bioinfoysis combines global planning with step-wise, evidence-driven replanning: the planner maintains an executable checklist and revises pending steps using structured handoffs returned after each worker execution. These handoffs bind intermediate results to their responsible agent, checklist step, and plan generation, preventing stale evidence from being silently reused after replanning. A controlled runtime validates generated scripts, tables, and figures before they are used in downstream analysis or reporting, while role-specific context, persistent memory, and governed bioinformatics skills support reliable execution over long analysis trajectories. We evaluate Bioinfoysis on BixBench and two question-answering tracks of LAB-Bench 2. On BixBench, Bioinfoysis achieves state-of-the-art accuracy of 82.4\\%. Across four underlying language models, Bioinfoysis increases average accuracy from 27.81\\% to 64.13\\% on SeqQA2 and from 3.13\\% to 31.25\\% on DbQA2. These results demonstrate that reliable bioinformatics automation depends not only on model capability, but also on the harness that governs planning, execution, memory, and evidence flow. We hope that the emergence of Bioinfoysis will play a driving and leading role in the development of the bioinformatics community. Our demo website can be seen in https://report.bioinfoysis.com/.",
+      "pdf_url": "https://arxiv.org/abs/2609.03871",
+      "comment": "",
+      "technologies": [
+        "Multi-Agent Systems",
+        "Artifact-Grounded Planning",
+        "Evidence-Driven Replanning",
+        "Persistent Memory",
+        "Governed Bioinformatics Skills"
+      ],
+      "maturity": "medium",
+      "confidence": 0.7,
+      "curator_score": 5.2,
+      "product_potential": [
+        "Bioinformatics Automation Platform",
+        "AI-driven Bioinformatics Research Assistant"
+      ],
+      "domain_applications": [
+        "science",
+        "healthcare"
+      ]
+    },
+    {
+      "id": "2511.19046",
+      "title": "MedSAM3: Delving into Segment Anything with Medical Concepts",
+      "authors": [],
+      "categories": [
+        "cs.AI"
+      ],
+      "published": "2026-09-15",
+      "updated": "2026-09-15",
+      "summary": "arXiv:2511.19046v2 Announce Type: replace-cross Abstract: Medical image segmentation is fundamental for biomedical discovery. Existing methods lack generalizability and demand extensive, time-consuming manual annotation for new clinical application. Here, we propose MedSAM-3, a text promptable medical segmentation model for medical image and video segmentation. By fine-tuning the Segment Anything Model (SAM) 3 architecture on medical images paired with semantic conceptual labels, our MedSAM-3 enables medical Promptable Concept Segmentation (PCS), allowing precise targeting of anatomical structures via open-vocabulary text descriptions rather than solely geometric prompts. We further introduce the MedSAM-3 Agent, a framework that integrates Multimodal Large Language Models (MLLMs) to perform complex reasoning and iterative refinement in an agent-in-the-loop workflow. Comprehensive experiments across diverse medical imaging modalities, including X-ray, MRI, Ultrasound, CT, and video, demonstrate that our approach significantly outperforms existing specialist and foundation models. We will release our code and model at https://github.com/Joey-S-Liu/MedSAM3.",
+      "pdf_url": "https://arxiv.org/abs/2511.19046",
+      "comment": "",
+      "technologies": [
+        "Segment Anything Model (SAM) 3",
+        "Promptable Concept Segmentation (PCS)",
+        "Multimodal Learning",
+        "Agent-in-the-loop workflow"
+      ],
+      "maturity": "early",
+      "confidence": 0.8,
+      "curator_score": 5.2,
+      "product_potential": [
+        "AI-powered medical imaging assistant for radiologists",
+        "Automated medical image annotation tool for researchers",
+        "Interactive medical image segmentation platform for clinicians"
+      ],
+      "domain_applications": [
+        "healthcare"
+      ]
+    },
+    {
+      "id": "2508.16129",
+      "title": "Bridging the Gap in Ophthalmic AI: MM-Retinal-Reason Dataset and OphthaReason Model toward Dynamic Multimodal Reasoning",
+      "authors": [],
+      "categories": [
+        "cs.AI"
+      ],
+      "published": "2026-09-17",
+      "updated": "2026-09-17",
+      "summary": "arXiv:2508.16129v5 Announce Type: replace Abstract: Multimodal large language models (MLLMs) have recently demonstrated remarkable reasoning abilities under reinforcement learning (RL) paradigm. However, most existing multimodal medical reasoning models focus on basic reasoning, which refers to shallow inference based on visual feature matching. In contrast, real-world clinical diagnosis extends beyond basic reasoning, demanding complex reasoning that integrates heterogeneous clinical information (such as chief complaints and medical history) with multimodal medical imaging data. To bridge this gap, we introduce MM-Retinal-Reason, an ophthalmic multimodal dataset covering the full spectrum of perception and reasoning. Specifically, it is the first dataset in ophthalmology to encompass both basic and complex reasoning tasks with Chain-of-Thought (CoT) trajectories, aiming to enhance visual-centric reasoning and emulate realistic clinical decision-making. Building upon MM-Retinal-Reason, we propose OphthaReason, the first RL-enhanced ophthalmic multimodal reasoning model with step-by-step reasoning traces. To enable flexible adaptation to both basic and complex reasoning tasks, we further introduce Uncertainty-Aware Dynamic Thinking (UADT), which estimates sample-level uncertainty via entropy and dynamically modulates exploration depth through a shaped advantage mechanism. Comprehensive experiments demonstrate the effectiveness of our model on both basic and complex reasoning tasks, outperforming general-purpose MLLMs, medical MLLMs, RL-based medical MLLMs, and ophthalmic MLLMs by at least 15.47\\%. Project Page: \\href{https://github.com/lxirich/OphthaReason}{link}.",
+      "pdf_url": "https://arxiv.org/abs/2508.16129",
+      "comment": "",
+      "technologies": [
+        "Multimodal Learning",
+        "Chain-of-Thought Prompting",
+        "Reinforcement Learning from Human Feedback"
+      ],
+      "maturity": "medium",
+      "confidence": 0.85,
+      "curator_score": 5.2,
+      "product_potential": [
+        "AI-powered ophthalmic diagnostic assistant for healthcare professionals",
+        "Multimodal AI tool for medical education and training"
+      ],
+      "domain_applications": [
+        "healthcare",
+        "education"
+      ]
+    },
+    {
+      "id": "2609.16680",
+      "title": "little m: An AI Agent for Industrial Process Optimization",
+      "authors": [],
+      "categories": [
+        "cs.AI"
+      ],
+      "published": "2026-09-17",
+      "updated": "2026-09-17",
+      "summary": "arXiv:2609.16680v2 Announce Type: replace Abstract: Manufacturing consumes one third of global energy and still has significant room for improvement in terms of energy efficiency. Optimal process control is essential for this purpose. However, synthesizing mathematical optimization models from messy, real-world industrial specifications requires bridging unstructured natural language and spatial diagrams with rigorous mathematical syntax. This poses a profound challenge for general-purpose Large Language Models (LLMs), which may introduce invalid constraints when tasked with modeling continuous multi-physics dynamics. To address this, we introduce little m, an AI agent designed to assist the formulation of industrial process control models. Combining a domain-specific knowledge repository with LLM-driven interaction, the proposed framework formulates real-world optimization problems as mathematical models. For systematic evaluation, we introduce the Industrial Process Control Benchmark (IPC-Bench), a novel multimodal dataset of 50 canonical scenarios requiring joint reasoning over text and process diagrams. Through comprehensive automated structural assessments and double-blind human evaluation, little m substantially outperforms state-of-the-art LLMs, generating semantically correct models. These evaluations assess formulation quality rather than solver feasibility, formal physical validity, or closed-loop industrial performance. The implementation of little m and the IPC-Bench dataset are available at https://github.com/yeyongchao/process-modeling-benchmark.",
+      "pdf_url": "https://arxiv.org/abs/2609.16680",
+      "comment": "",
+      "technologies": [
+        "Retrieval Augmented Generation",
+        "Multimodal Learning"
+      ],
+      "maturity": "early",
+      "confidence": 0.8,
+      "curator_score": 5.2,
+      "product_potential": [
+        "AI-powered industrial process optimization tool for manufacturing companies",
+        "Automated mathematical model generation from natural language and spatial diagrams for process control"
+      ],
+      "domain_applications": [
+        "enterprise",
+        "science"
+      ]
+    },
+    {
+      "id": "2606.16847",
+      "title": "Follow the Latent Roadmap: Navigating Revocable Decoding for Diffusion LLMs with Anchor Tokens",
+      "authors": [],
+      "categories": [
+        "cs.AI"
+      ],
+      "published": "2026-09-17",
+      "updated": "2026-09-17",
+      "summary": "arXiv:2606.16847v5 Announce Type: replace-cross Abstract: Diffusion Large Language Models (dLLMs) offer a promising avenue for parallel generation but face a trade-off between decoding speed and quality. While revocable decoding strategies attempt to mitigate errors by verifying and remasking tokens, they typically operate within a mixed-quality context. This leads to two critical failures: \\textit{Error Propagation}, where new tokens absorb toxic information from erroneous context, and \\textit{Local Error Reinforcement}, where errors mutually reinforce each other to evade detection. To alleviate these challenges, we propose ASRD (Anchor Supervised Revocable Decoding), a training-free framework that operates within the embedding space. ASRD explicitly decouples the decoding context into trusted \\textit{Anchor Tokens}, which are identified via temporal consistency, and uncertain candidates. Leveraging a dynamic Anchor Tokens Cache, we introduce two complementary mechanisms: (1) Anchor-Guided Generation, which injects entropy-weighted anchor signals into masked positions to implicitly rectify attention toward the reliable global skeleton; and (2) Anchor-Perturbed Verification, which applies orthogonal perturbations to uncertain candidate tokens, destabilizing and remasking errors driven by fragile local consensus. Extensive experiments on math and coding benchmarks demonstrate that ASRD outperforms recent remasking baselines, achieving accuracy improvements of up to 6.4\\% while accelerating inference throughput by up to 7.2$\\times$.The code is available at https://github.com/preordinary/ASRD.",
+      "pdf_url": "https://arxiv.org/abs/2606.16847",
+      "comment": "",
+      "technologies": [
+        "Diffusion Models",
+        "Revocable Decoding",
+        "Anchor Tokens"
+      ],
+      "maturity": "early",
+      "confidence": 0.8,
+      "curator_score": 5.2,
+      "product_potential": [
+        "Developing a real-time, high-quality text generation system for creative writing and content creation.",
+        "Creating an AI-powered coding assistant that can generate and verify code snippets in real-time."
+      ],
+      "domain_applications": [
+        "creative",
+        "education",
+        "enterprise"
+      ]
+    },
+    {
+      "id": "2607.15740",
+      "title": "Debiasing Text-to-Image Evaluation via Implicit Cultural Alignment Reward Modeling",
+      "authors": [],
+      "categories": [
+        "cs.AI"
+      ],
+      "published": "2026-09-17",
+      "updated": "2026-09-17",
+      "summary": "arXiv:2607.15740v3 Announce Type: replace-cross Abstract: As Text-to-Image (T2I) systems rapidly advance, evaluating the cultural authenticity of synthesized content has become increasingly important for fair and trustworthy generative AI. Existing T2I evaluation metrics and multimodal judges often rely on visual-semantic representations that underrepresent implicit cultural norms, leading to biased preference judgments and the omission of fine-grained cultural cues. In addition, visual question answering (VQA)-based evaluators typically depend on autoregressive text generation, which limits their scalability for real-time reward modeling. To address these limitations, we introduce an Implicit Cultural Alignment Reward Model built upon a lightweight 4.2-billion-parameter Multimodal Large Language Model (MLLM). Our framework integrates an Implicit Cultural Probe with a Skip-connection Cross-Attention (SkipCA) mechanism, enabling late-stage semantic features to directly attend to early-stage visual representations and better preserve culturally salient details. Evaluations on 3,323 challenging and carefully curated image pairs from the CulturalFrames benchmark show that our approach achieves 83.49% pairwise accuracy, with Pearson and Kendall correlation coefficients of 0.5268 and 0.3749, respectively, outperforming representative vision-language metrics and MLLM-based evaluators. Moreover, by bypassing autoregressive text generation, our model processes each evaluation in 0.21 seconds under our local inference setup, achieving a $10\\times$ speedup over standard VQA-based evaluators. These results suggest that the proposed reward model can provide an efficient and culturally aware scalar signal for preference optimization pipelines such as Reinforcement Learning from Human Feedback and Direct Preference Optimization. Additional resources are available on our project page at https://bensonch1214.github.io/Implicit_Cultural_Alignment/.",
+      "pdf_url": "https://arxiv.org/abs/2607.15740",
+      "comment": "",
+      "technologies": [
+        "Multimodal Learning",
+        "Reinforcement Learning from Human Feedback",
+        "Direct Preference Optimization"
+      ],
+      "maturity": "medium",
+      "confidence": 0.85,
+      "curator_score": 5.2,
+      "product_potential": [
+        "A culturally aware content moderation tool for social media platforms to filter and flag biased or culturally insensitive images generated by AI.",
+        "An AI-powered design assistant that helps creators generate culturally authentic visual content for marketing campaigns and advertisements."
+      ],
+      "domain_applications": [
+        "creative",
+        "enterprise",
+        "other"
+      ]
+    },
+    {
+      "id": "2609.20034",
+      "title": "Astronex-World 1.0: Real-Time Interactive World Model Foundation",
+      "authors": [
+        "Xin Zhou",
+        "Cong Miao"
+      ],
+      "categories": [
+        "cs.CV",
+        "cs.AI",
+        "cs.RO"
+      ],
+      "published": "2026-09-17",
+      "updated": "2026-09-17",
+      "summary": "We present Astronex-World 1.0, an open controllable video world-model foundation. Given a text prompt (text-to-video) or an initial observation (image-to-video), the model predicts future visual states under frame-aligned camera trajectories, continuous actions, and an embodiment identifier, and accepts text events inserted at a specified position of a rollout. The family provides a bidirectional model for full-context generation and a causal model with block-causal attention and cross-block KV caching for persistent generation, both built on the Wan2.2-TI2V-5B prior. PRoPE injects camera intrinsics and extrinsics, while a 64-dimensional action stream modulates every Transformer layer. A five-stage training path develops bidirectional camera and action control, converts the backbone to block-causal generation, distills a few-step student, restores mixed-domain dynamics, and applies asymmetric DMD/DMD2 distribution matching. The causal model generates 832x480 video at 24 fps. All five training stages run on two NVIDIA L20 48 GB GPUs, and the causal model streams in real time on one. It scores 73.5 on WBench Navi and 70.0 on WBench Full. On Full, this 5B model is above the 13.6B LongCat-Video and the 14B Helios, within one point of the 22B LTX-2.3, and above YUME 1.5, which is post-trained from the same 5B prior on NVIDIA A100 GPUs. The reserved action input and output interfaces allow post-training for embodied intelligence and autonomous driving.",
+      "pdf_url": "https://arxiv.org/pdf/2609.20034v1",
+      "comment": "Technical report. 25 pages, 13 figures, 10 tables. Project page: https://world.astronex.com.cn ; Code: https://github.com/Astronex-Robotics/Astronex-World ; Weights: https://huggingface.co/Astronex-Lab/Astronex-World",
+      "technologies": [
+        "Block-Causal Attention",
+        "Cross-Block KV Caching",
+        "PRoPE",
+        "Asymmetric DMD/DMD2 Distribution Matching"
+      ],
+      "maturity": "medium",
+      "confidence": 0.85,
+      "curator_score": 5.2,
+      "product_potential": [
+        "Real-time interactive virtual environments for gaming and simulation",
+        "Autonomous driving and robotics control systems",
+        "Enhanced video generation and editing tools for creative industries"
+      ],
+      "domain_applications": [
+        "robotics",
+        "creative",
+        "enterprise",
+        "science"
+      ]
+    },
+    {
+      "id": "2609.19425",
+      "title": "Closed-World Resolution Against Tool Hallucination in LLM Agents",
+      "authors": [],
+      "categories": [
+        "cs.AI"
+      ],
+      "published": "2026-09-18",
+      "updated": "2026-09-18",
+      "summary": "arXiv:2609.19425v1 Announce Type: new Abstract: Tool-augmented large language model (LLM) agents fail in a way no tool-selection or tool-security method addresses: they call tools that do not exist and pass arguments no schema declares. Existing defenses either pick the right tool (selection) or constrain what an agent may do with real tools (gating), both of which presuppose the emitted call refers to a real tool at all. We show this is a structural blind spot: a hallucinated call is by construction not a decision any gate made, so no gate can reject it. This paper is primarily a measurement and benchmark study. We give a five-class taxonomy of tool hallucination (H1-H5) and, as a reference point, the Resolution Rung: a training-free, closed-world resolver (registry membership plus a signature check) whose interest is where it must sit, not what it computes. We prove hallucination defense must precede any causal gate, and characterize the one irreducible residue (borrowed arguments schema-indistinguishable from a valid call). Across ten hosted models under two invocation surfaces we measure 322 genuine hallucinations; fabricated-tool calls concentrate on the unconstrained raw-JSON surface (34 vs. 3), and model scale does not help (a 675B model matches a 7-8B one). We then extend to the Model Context Protocol, where merging several servers into one namespace creates hallucination surfaces a single registry cannot express (a second taxonomy, M1-M5); on the live MCP surface we measure 154 hallucinations, including from frontier models that were clean on the single-registry surface, because collisions and shadowing are structural to the merge. We release the versioned Hallucinated-Tools Benchmark (HTB) so any resolver is comparable across submissions.",
+      "pdf_url": "https://arxiv.org/abs/2609.19425",
+      "comment": "",
+      "technologies": [
+        "Tool Hallucination Taxonomy",
+        "Resolution Rung",
+        "Hallucinated-Tools Benchmark"
+      ],
+      "maturity": "early",
+      "confidence": 0.8,
+      "curator_score": 5.1,
+      "product_potential": [
+        "A tool-augmented LLM agent with built-in hallucination detection and resolution",
+        "A benchmarking platform for evaluating tool hallucination defenses in LLM agents"
+      ],
+      "domain_applications": [
+        "enterprise",
+        "other"
+      ]
+    }
+  ],
+  "technologies": [
+    {
+      "name": "Sparse Attention",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.8,
+      "trend": "rising",
+      "applications": [
+        "creative",
+        "robotics"
+      ]
+    },
+    {
+      "name": "KV Cache Optimization",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.8,
+      "trend": "rising",
+      "applications": [
+        "creative",
+        "robotics"
+      ]
+    },
+    {
+      "name": "Retrieval Augmented Generation",
+      "papers": 3,
+      "maturity": "medium",
+      "confidence": 0.7,
+      "trend": "rising",
+      "applications": [
+        "science",
+        "education",
+        "enterprise"
+      ]
+    },
+    {
+      "name": "Long-context Pattern Understanding",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.8,
+      "trend": "rising",
+      "applications": [
+        "healthcare",
+        "robotics",
+        "enterprise"
+      ]
+    },
+    {
+      "name": "Simulated Human-Agent Interaction",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.8,
+      "trend": "rising",
+      "applications": [
+        "healthcare",
+        "robotics",
+        "enterprise"
+      ]
+    },
+    {
+      "name": "Behavioral Rule Inference",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.8,
+      "trend": "rising",
+      "applications": [
+        "healthcare",
+        "robotics",
+        "enterprise"
+      ]
+    },
+    {
+      "name": "Skill Blocks",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.85,
+      "trend": "rising",
+      "applications": [
+        "robotics",
+        "education",
+        "enterprise"
+      ]
+    },
+    {
+      "name": "Experience Memory",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.85,
+      "trend": "rising",
+      "applications": [
+        "robotics",
+        "education",
+        "enterprise"
+      ]
+    },
+    {
+      "name": "Reinforcement Learning",
+      "papers": 2,
+      "maturity": "medium",
+      "confidence": 0.8,
+      "trend": "rising",
+      "applications": [
+        "enterprise",
+        "science",
+        "healthcare"
+      ]
+    },
+    {
+      "name": "Model Parallelism",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.8,
+      "trend": "rising",
+      "applications": [
+        "enterprise",
+        "science"
+      ]
+    },
+    {
+      "name": "Speculative Decoding",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.8,
+      "trend": "rising",
+      "applications": [
+        "enterprise",
+        "science"
+      ]
+    },
+    {
+      "name": "Mixture of Experts",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.8,
+      "trend": "rising",
+      "applications": [
+        "enterprise",
+        "science"
+      ]
+    },
+    {
+      "name": "Slot Attention",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.8,
+      "trend": "rising",
+      "applications": [
+        "robotics",
+        "enterprise",
+        "science"
+      ]
+    },
+    {
+      "name": "BoundaryFormer",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.8,
+      "trend": "rising",
+      "applications": [
+        "robotics",
+        "enterprise",
+        "science"
+      ]
+    },
+    {
+      "name": "WAVE",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.8,
+      "trend": "rising",
+      "applications": [
+        "robotics",
+        "enterprise",
+        "science"
+      ]
+    },
+    {
+      "name": "WorkZonePlan",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.8,
+      "trend": "rising",
+      "applications": [
+        "robotics",
+        "enterprise",
+        "science"
+      ]
+    },
+    {
+      "name": "Multimodal Learning",
+      "papers": 5,
+      "maturity": "medium",
+      "confidence": 0.7,
+      "trend": "rising",
+      "applications": [
+        "science",
+        "healthcare",
+        "creative",
+        "enterprise"
+      ]
+    },
+    {
+      "name": "Multi-Agent Systems",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.7,
+      "trend": "rising",
+      "applications": [
+        "science",
+        "healthcare"
+      ]
+    },
+    {
+      "name": "Artifact-Grounded Planning",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.7,
+      "trend": "rising",
+      "applications": [
+        "science",
+        "healthcare"
+      ]
+    },
+    {
+      "name": "Evidence-Driven Replanning",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.7,
+      "trend": "rising",
+      "applications": [
+        "science",
+        "healthcare"
+      ]
+    },
+    {
+      "name": "Persistent Memory",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.7,
+      "trend": "rising",
+      "applications": [
+        "science",
+        "healthcare"
+      ]
+    },
+    {
+      "name": "Governed Bioinformatics Skills",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.7,
+      "trend": "rising",
+      "applications": [
+        "science",
+        "healthcare"
+      ]
+    },
+    {
+      "name": "Segment Anything Model (SAM) 3",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.8,
+      "trend": "rising",
+      "applications": [
+        "healthcare"
+      ]
+    },
+    {
+      "name": "Promptable Concept Segmentation (PCS)",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.8,
+      "trend": "rising",
+      "applications": [
+        "healthcare"
+      ]
+    },
+    {
+      "name": "Agent-in-the-loop workflow",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.8,
+      "trend": "rising",
+      "applications": [
+        "healthcare"
+      ]
+    },
+    {
+      "name": "Chain-of-Thought Prompting",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.85,
+      "trend": "rising",
+      "applications": [
+        "healthcare",
+        "education"
+      ]
+    },
+    {
+      "name": "Reinforcement Learning from Human Feedback",
+      "papers": 2,
+      "maturity": "medium",
+      "confidence": 0.85,
+      "trend": "rising",
+      "applications": [
+        "healthcare",
+        "education",
+        "creative",
+        "enterprise"
+      ]
+    },
+    {
+      "name": "Diffusion Models",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.8,
+      "trend": "rising",
+      "applications": [
+        "creative",
+        "education",
+        "enterprise"
+      ]
+    },
+    {
+      "name": "Revocable Decoding",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.8,
+      "trend": "rising",
+      "applications": [
+        "creative",
+        "education",
+        "enterprise"
+      ]
+    },
+    {
+      "name": "Anchor Tokens",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.8,
+      "trend": "rising",
+      "applications": [
+        "creative",
+        "education",
+        "enterprise"
+      ]
+    },
+    {
+      "name": "Direct Preference Optimization",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.85,
+      "trend": "rising",
+      "applications": [
+        "creative",
+        "enterprise"
+      ]
+    },
+    {
+      "name": "Block-Causal Attention",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.85,
+      "trend": "rising",
+      "applications": [
+        "robotics",
+        "creative",
+        "enterprise",
+        "science"
+      ]
+    },
+    {
+      "name": "Cross-Block KV Caching",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.85,
+      "trend": "rising",
+      "applications": [
+        "robotics",
+        "creative",
+        "enterprise",
+        "science"
+      ]
+    },
+    {
+      "name": "PRoPE",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.85,
+      "trend": "rising",
+      "applications": [
+        "robotics",
+        "creative",
+        "enterprise",
+        "science"
+      ]
+    },
+    {
+      "name": "Asymmetric DMD/DMD2 Distribution Matching",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.85,
+      "trend": "rising",
+      "applications": [
+        "robotics",
+        "creative",
+        "enterprise",
+        "science"
+      ]
+    },
+    {
+      "name": "Tool Hallucination Taxonomy",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.8,
+      "trend": "rising",
+      "applications": [
+        "enterprise"
+      ]
+    },
+    {
+      "name": "Resolution Rung",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.8,
+      "trend": "rising",
+      "applications": [
+        "enterprise"
+      ]
+    },
+    {
+      "name": "Hallucinated-Tools Benchmark",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.8,
+      "trend": "rising",
+      "applications": [
+        "enterprise"
+      ]
+    }
+  ],
+  "product_opportunities": [
+    {
+      "technology": "Skill Blocks",
+      "idea": "SkillStack: marketplace of composable, pre-trained robot skill modules (pick, pour, open) that integrators drag-and-drop into new automation workflows",
+      "business_value": 8,
+      "engineering_difficulty": 6,
+      "competitive_advantage": "high",
+      "development_time": "3-5 months"
+    },
+    {
+      "technology": "Experience Memory",
+      "idea": "MemoBase: plug-in episodic memory layer that lets enterprise AI agents recall past customer interactions and learn from prior task outcomes",
+      "business_value": 8,
+      "engineering_difficulty": 5,
+      "competitive_advantage": "medium",
+      "development_time": "2-3 months"
+    },
+    {
+      "technology": "Chain-of-Thought Prompting",
+      "idea": "ReasonKit: library of domain-tuned chain-of-thought prompt templates for clinical triage and tutoring that expose auditable step-by-step reasoning",
+      "business_value": 6,
+      "engineering_difficulty": 3,
+      "competitive_advantage": "low",
+      "development_time": "2-4 weeks"
+    },
+    {
+      "technology": "Reinforcement Learning from Human Feedback",
+      "idea": "FeedbackLoop: lightweight RLHF platform where hospital staff and teachers rate model outputs in-app and models are auto-fine-tuned weekly",
+      "business_value": 7,
+      "engineering_difficulty": 7,
+      "competitive_advantage": "medium",
+      "development_time": "4-6 months"
+    },
+    {
+      "technology": "Direct Preference Optimization",
+      "idea": "PrefTune: one-click DPO fine-tuning service that turns a brand's thumbs-up/down logs into a custom-styled writing model in 48 hours",
+      "business_value": 7,
+      "engineering_difficulty": 5,
+      "competitive_advantage": "medium",
+      "development_time": "2-3 months"
+    },
+    {
+      "technology": "Block-Causal Attention",
+      "idea": "StreamGen: real-time streaming video/avatar generation engine for live agents that produces frames causally with sub-second latency",
+      "business_value": 8,
+      "engineering_difficulty": 8,
+      "competitive_advantage": "high",
+      "development_time": "4-6 months"
+    },
+    {
+      "technology": "Cross-Block KV Caching",
+      "idea": "CacheFlow: inference middleware enabling infinite-length streaming conversations and robot teleoperation without memory blowup via cross-block KV reuse",
+      "business_value": 7,
+      "engineering_difficulty": 7,
+      "competitive_advantage": "high",
+      "development_time": "3-5 months"
+    },
+    {
+      "technology": "PRoPE",
+      "idea": "PoseAlign: cross-embodiment robot policy adapter using positional encoding over robot pose so one trained policy transfers across arm models",
+      "business_value": 8,
+      "engineering_difficulty": 7,
+      "competitive_advantage": "very high",
+      "development_time": "4-6 months"
+    },
+    {
+      "technology": "Asymmetric DMD/DMD2 Distribution Matching",
+      "idea": "FlashVideo: API that distills diffusion video models into one-step generators for real-time ad creatives and game asset production",
+      "business_value": 9,
+      "engineering_difficulty": 8,
+      "competitive_advantage": "very high",
+      "development_time": "4-6 months"
+    },
+    {
+      "technology": "Sparse Attention",
+      "idea": "DocLens: long-document analysis workspace that reads 500-page contracts and filings with sparse attention at 10x lower cost than dense models",
+      "business_value": 7,
+      "engineering_difficulty": 6,
+      "competitive_advantage": "medium",
+      "development_time": "2-4 months"
+    },
+    {
+      "technology": "KV Cache Optimization",
+      "idea": "CacheSqueeze: drop-in KV cache compression layer that cuts LLM serving GPU memory 4x, letting startups serve chatbots on cheap hardware",
+      "business_value": 7,
+      "engineering_difficulty": 6,
+      "competitive_advantage": "medium",
+      "development_time": "2-3 months"
+    },
+    {
+      "technology": "Long-context Pattern Understanding",
+      "idea": "ChartScope: clinical copilot that ingests a patient's entire multi-year record and surfaces recurring symptom-treatment patterns doctors miss",
+      "business_value": 8,
+      "engineering_difficulty": 6,
+      "competitive_advantage": "medium",
+      "development_time": "3-4 months"
+    },
+    {
+      "technology": "Simulated Human-Agent Interaction",
+      "idea": "PersonaSim: synthetic customer simulator that stress-tests support and sales agents against thousands of persona-driven conversations before deployment",
+      "business_value": 8,
+      "engineering_difficulty": 6,
+      "competitive_advantage": "high",
+      "development_time": "2-4 months"
+    },
+    {
+      "technology": "Behavioral Rule Inference",
+      "idea": "RuleMine: mines implicit behavioral rules from clinician or agent interaction logs and converts them into enforceable AI guardrail policies",
+      "business_value": 7,
+      "engineering_difficulty": 6,
+      "competitive_advantage": "medium",
+      "development_time": "3-4 months"
+    },
+    {
+      "technology": "Reinforcement Learning",
+      "idea": "OptimizeRL: RL-based decision engine that tunes pricing, inventory, and workflow policies for mid-market operations from their existing ERP data",
+      "business_value": 8,
+      "engineering_difficulty": 8,
+      "competitive_advantage": "medium",
+      "development_time": "4-6 months"
+    }
+  ]
+}

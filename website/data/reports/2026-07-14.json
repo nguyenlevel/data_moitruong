@@ -1,0 +1,539 @@
+{
+  "date": "2026-07-14",
+  "generated_at": "2026-07-14T02:02:20.032695+00:00",
+  "backend": "llm7",
+  "model": "default",
+  "brief": [
+    "Breakout timing: Q3 2024 - AI coding agents are the next frontier. Graphify-Labs/graphify is the best opportunity: AI coding assistant that turns code into a queryable knowledge graph.",
+    "Firecrawl/firecrawl is a strong contender: API for web scraping, searching, and automation at scale.",
+    "Meetily is a privacy-first AI meeting assistant with local transcription and summarization.",
+    "Orca is an ADE for managing parallel coding agents.",
+    "Agent-Reach is an AI agent with internet browsing capabilities via CLI."
+  ],
+  "items": [
+    {
+      "name": "mattpocock/skills",
+      "url": "https://github.com/mattpocock/skills",
+      "stars": 168444,
+      "category": "Other",
+      "delta_7d": 9663,
+      "delta_7d_pct": 6.09,
+      "timing": "breakout",
+      "signals": [],
+      "cross_signal": false,
+      "one_liner": "AI-powered CLI tool for engineers",
+      "pain_point": "Saves engineers time by automating tasks and providing quick access to information",
+      "app_ideas": [
+        "Engineering productivity CLI tool with AI-powered features",
+        "AI-powered code review assistant",
+        "Engineering knowledge base with AI search"
+      ],
+      "monetization": "Freemium with enterprise pricing for advanced features",
+      "opportunity": 8,
+      "why_now": "Increased demand for AI tools and productivity enhancements in the engineering community"
+    },
+    {
+      "name": "addyosmani/agent-skills",
+      "url": "https://github.com/addyosmani/agent-skills",
+      "stars": 77952,
+      "category": "Agents & Automation",
+      "delta_7d": 7033,
+      "delta_7d_pct": 9.92,
+      "timing": "breakout",
+      "signals": [],
+      "cross_signal": false,
+      "one_liner": "Production-grade skills for AI coding agents",
+      "pain_point": "AI agents struggle with complex engineering tasks; enterprises pay for reliable automation",
+      "app_ideas": [
+        "AI-powered DevOps assistant for GitHub",
+        "Automated code review tool for open-source projects",
+        "AI-driven CI/CD pipeline optimizer"
+      ],
+      "monetization": "B2B API wrapper with freemium tier for open-source users",
+      "opportunity": 8,
+      "why_now": "AI agents are gaining traction, and enterprises are investing in automation"
+    },
+    {
+      "name": "obra/superpowers",
+      "url": "https://github.com/obra/superpowers",
+      "stars": 253919,
+      "category": "Agents & Automation",
+      "delta_7d": 6112,
+      "delta_7d_pct": 2.47,
+      "timing": "breakout",
+      "signals": [],
+      "cross_signal": false,
+      "one_liner": "Agentic skills framework for automation",
+      "pain_point": "Developers struggle with complex automation tasks; enterprises pay for custom solutions",
+      "app_ideas": [
+        "Automated GitHub issue triager for open-source projects",
+        "Slack bot for internal team task automation",
+        "Automated customer support chatbot for SaaS companies"
+      ],
+      "monetization": "B2B API wrapper / vertical SaaS",
+      "opportunity": 8,
+      "why_now": "Increased demand for automation tools due to remote work and AI advancements"
+    },
+    {
+      "name": "Graphify-Labs/graphify",
+      "url": "https://github.com/Graphify-Labs/graphify",
+      "stars": 84794,
+      "category": "Vision & Media",
+      "delta_7d": 6015,
+      "delta_7d_pct": 7.64,
+      "timing": "breakout",
+      "signals": [],
+      "cross_signal": false,
+      "one_liner": "AI coding assistant that turns code into a queryable knowledge graph",
+      "pain_point": "Developers spend too much time navigating and understanding codebases. They would pay for a tool that speeds up this process",
+      "app_ideas": [
+        "VS Code extension that visualizes and queries the current codebase",
+        "CLI tool for developers to quickly understand and navigate large codebases",
+        "Web app for teams to collaboratively explore and understand codebases"
+      ],
+      "monetization": "Freemium model with enterprise pricing for teams and API access for developers",
+      "opportunity": 8,
+      "why_now": "Increasing complexity of codebases and the rise of AI-assisted development tools"
+    },
+    {
+      "name": "asgeirtj/system_prompts_leaks",
+      "url": "https://github.com/asgeirtj/system_prompts_leaks",
+      "stars": 57321,
+      "category": "Agents & Automation",
+      "delta_7d": 5653,
+      "delta_7d_pct": 10.94,
+      "timing": "breakout",
+      "signals": [],
+      "cross_signal": false,
+      "one_liner": "Curated system prompts for AI agents",
+      "pain_point": "Developers struggle to find effective system prompts for AI agents, saving time and improving performance",
+      "app_ideas": [
+        "AI Prompt Marketplace: A platform to buy, sell, and share system prompts",
+        "AI Agent Builder: A tool to create and test AI agents using curated prompts",
+        "Prompt Optimization Service: A SaaS offering to optimize system prompts for clients"
+      ],
+      "monetization": "Freemium with premium prompts and advanced features",
+      "opportunity": 8,
+      "why_now": "Growing demand for AI agents and the need for efficient prompt engineering"
+    },
+    {
+      "name": "stablyai/orca",
+      "url": "https://github.com/stablyai/orca",
+      "stars": 18345,
+      "category": "Developer Tools",
+      "delta_7d": 5438,
+      "delta_7d_pct": 42.13,
+      "timing": "breakout",
+      "signals": [],
+      "cross_signal": false,
+      "one_liner": "ADE for managing parallel coding agents",
+      "pain_point": "Managing multiple AI agents for complex tasks, developers and businesses",
+      "app_ideas": [
+        "AgentHub: A marketplace for AI agents with customizable workflows",
+        "DevOps Assistant: Automate repetitive tasks in development workflows",
+        "Code Review Bot: AI-powered code review and suggestion tool"
+      ],
+      "monetization": "Freemium with enterprise plans, B2B API wrapper for custom integrations",
+      "opportunity": 8,
+      "why_now": "Rise of AI agents and demand for automation in development workflows"
+    },
+    {
+      "name": "OpenCut-app/OpenCut",
+      "url": "https://github.com/OpenCut-app/OpenCut",
+      "stars": 66549,
+      "category": "Vision & Media",
+      "delta_7d": 4888,
+      "delta_7d_pct": 7.93,
+      "timing": "breakout",
+      "signals": [],
+      "cross_signal": false,
+      "one_liner": "Open-source video editing app for creators",
+      "pain_point": "Free and open-source alternative to CapCut for creators who want to edit videos without proprietary software",
+      "app_ideas": [
+        "OpenCut Mobile: A mobile version of OpenCut for on-the-go video editing",
+        "OpenCut for YouTube: A specialized version with YouTube-specific features and integrations",
+        "OpenCut for Social Media: A version tailored for social media creators with pre-set templates and filters"
+      ],
+      "monetization": "Freemium with optional premium features and plugins",
+      "opportunity": 8,
+      "why_now": "Increased demand for open-source tools and video editing apps due to privacy concerns and the rise of remote work"
+    },
+    {
+      "name": "Zackriya-Solutions/meetily",
+      "url": "https://github.com/Zackriya-Solutions/meetily",
+      "stars": 24210,
+      "category": "Vision & Media",
+      "delta_7d": 4719,
+      "delta_7d_pct": 24.21,
+      "timing": "breakout",
+      "signals": [],
+      "cross_signal": false,
+      "one_liner": "Privacy-first AI meeting assistant with local transcription and summarization",
+      "pain_point": "Saves time for remote teams and professionals by automating meeting notes, solving for $100M+ market of remote workers",
+      "app_ideas": [
+        "Desktop app with basic transcription and summarization for individual users",
+        "Browser extension for Zoom/Google Meet with real-time transcription and summarization",
+        "Mobile app for on-the-go meeting note-taking and summarization"
+      ],
+      "monetization": "Freemium with enterprise pricing for advanced features and API access",
+      "opportunity": 8,
+      "why_now": "Increasing remote work and demand for productivity tools"
+    },
+    {
+      "name": "firecrawl/firecrawl",
+      "url": "https://github.com/firecrawl/firecrawl",
+      "stars": 150458,
+      "category": "Agents & Automation",
+      "delta_7d": 4106,
+      "delta_7d_pct": 2.81,
+      "timing": "breakout",
+      "signals": [],
+      "cross_signal": false,
+      "one_liner": "API for web scraping, searching, and automation at scale",
+      "pain_point": "Saves time and resources for businesses needing large-scale web data extraction and automation",
+      "app_ideas": [
+        "A SaaS tool for competitive analysis, allowing businesses to track and compare their competitors' online presence",
+        "A lead generation tool that scrapes and analyzes job postings, LinkedIn profiles, and other online sources to identify potential leads",
+        "A content aggregation tool that collects and curates content from various sources for blogs, newsletters, or social media"
+      ],
+      "monetization": "B2B API wrapper with freemium model",
+      "opportunity": 8,
+      "why_now": "Increasing demand for AI-driven automation and data extraction tools"
+    },
+    {
+      "name": "Leonxlnx/taste-skill",
+      "url": "https://github.com/Leonxlnx/taste-skill",
+      "stars": 62970,
+      "category": "Agents & Automation",
+      "delta_7d": 3910,
+      "delta_7d_pct": 6.62,
+      "timing": "breakout",
+      "signals": [],
+      "cross_signal": false,
+      "one_liner": "AI taste filter for better content generation",
+      "pain_point": "Boring AI-generated content for businesses and creators, paying for better quality output",
+      "app_ideas": [
+        "AI-powered content curator for social media",
+        "AI assistant for copywriters to improve content quality",
+        "API wrapper for integrating taste-skill into existing AI tools"
+      ],
+      "monetization": "B2B API wrapper / vertical SaaS",
+      "opportunity": 8,
+      "why_now": "Increasing demand for high-quality AI-generated content"
+    },
+    {
+      "name": "NousResearch/hermes-agent",
+      "url": "https://github.com/NousResearch/hermes-agent",
+      "stars": 214298,
+      "category": "Agents & Automation",
+      "delta_7d": 3891,
+      "delta_7d_pct": 1.85,
+      "timing": "breakout",
+      "signals": [],
+      "cross_signal": false,
+      "one_liner": "AI agent that adapts to user needs",
+      "pain_point": "Reduces repetitive tasks and automates workflows for professionals and businesses",
+      "app_ideas": [
+        "Personal assistant app for managing emails, calendar, and tasks",
+        "Business automation tool for scheduling meetings and managing customer inquiries",
+        "Vertical SaaS for real estate agents to automate property listings and client communications"
+      ],
+      "monetization": "Freemium with enterprise API wrapper and vertical SaaS options",
+      "opportunity": 8,
+      "why_now": "Increased demand for AI automation tools and the rise of AI agents"
+    },
+    {
+      "name": "Panniantong/Agent-Reach",
+      "url": "https://github.com/Panniantong/Agent-Reach",
+      "stars": 55797,
+      "category": "Infrastructure",
+      "delta_7d": 3707,
+      "delta_7d_pct": 7.12,
+      "timing": "breakout",
+      "signals": [],
+      "cross_signal": false,
+      "one_liner": "AI agent with internet browsing capabilities via CLI",
+      "pain_point": "Saves time for developers and researchers by providing internet data access without API fees",
+      "app_ideas": [
+        "Twitter sentiment analysis tool for marketers",
+        "GitHub repository analysis tool for developers",
+        "Reddit trend monitoring tool for content creators"
+      ],
+      "monetization": "Freemium with enterprise API wrapper for large-scale data access",
+      "opportunity": 8,
+      "why_now": "Increased demand for AI-powered internet data access tools"
+    },
+    {
+      "name": "calesthio/OpenMontage",
+      "url": "https://github.com/calesthio/OpenMontage",
+      "stars": 38047,
+      "category": "Vision & Media",
+      "delta_7d": 3641,
+      "delta_7d_pct": 10.58,
+      "timing": "breakout",
+      "signals": [],
+      "cross_signal": false,
+      "one_liner": "Open-source AI video production system with 12 pipelines and 52 tools.",
+      "pain_point": "Saves content creators and marketers time and money by automating video production, appealing to SMBs and enterprises.",
+      "app_ideas": [
+        "AI-powered video editor for social media, integrating OpenMontage's tools for automated editing and effects.",
+        "Vertical SaaS for educational content creation, leveraging OpenMontage's pipelines for automated lesson video production."
+      ],
+      "monetization": "Freemium model with premium features and vertical SaaS offerings for specific industries.",
+      "opportunity": 8,
+      "why_now": "Increased demand for automated content creation due to the rise of social media and digital marketing."
+    },
+    {
+      "name": "HKUDS/Vibe-Trading",
+      "url": "https://github.com/HKUDS/Vibe-Trading",
+      "stars": 21802,
+      "category": "Developer Tools",
+      "delta_7d": 3602,
+      "delta_7d_pct": 19.79,
+      "timing": "breakout",
+      "signals": [],
+      "cross_signal": false,
+      "one_liner": "AI-powered personal trading agent for crypto and stocks",
+      "pain_point": "Algorithmic trading complexity for retail investors; high-frequency traders",
+      "app_ideas": [
+        "Web-based dashboard for real-time trading signals and portfolio management",
+        "Mobile app for on-the-go trading decisions with AI insights",
+        "Chrome extension for seamless integration with trading platforms"
+      ],
+      "monetization": "Freemium with advanced features and API access for institutional clients",
+      "opportunity": 8,
+      "why_now": "Growing interest in algorithmic trading and AI-driven financial tools"
+    },
+    {
+      "name": "Diolinux/PhotoGIMP",
+      "url": "https://github.com/Diolinux/PhotoGIMP",
+      "stars": 16031,
+      "category": "Other",
+      "delta_7d": 3494,
+      "delta_7d_pct": 27.87,
+      "timing": "breakout",
+      "signals": [],
+      "cross_signal": false,
+      "one_liner": "GIMP patch for Photoshop users",
+      "pain_point": "Photoshop users seeking free alternatives with familiar workflows",
+      "app_ideas": [
+        "PhotoGIMP plugin marketplace",
+        "PhotoGIMP community forum",
+        "PhotoGIMP mobile companion app"
+      ],
+      "monetization": "freemium with premium plugins",
+      "opportunity": 8,
+      "why_now": "GIMP 3.0 release and Photoshop user base growth"
+    },
+    {
+      "name": "nextlevelbuilder/ui-ux-pro-max-skill",
+      "url": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill",
+      "stars": 105190,
+      "category": "Applications",
+      "delta_7d": 3449,
+      "delta_7d_pct": 3.39,
+      "timing": "breakout",
+      "signals": [],
+      "cross_signal": false,
+      "one_liner": "AI-powered UI/UX design intelligence tool",
+      "pain_point": "Saves designers time and reduces errors in UI/UX design for multiple platforms; agencies and startups would pay",
+      "app_ideas": [
+        "AI-powered Figma plugin for rapid prototyping",
+        "Mobile app for on-the-go UI/UX design feedback",
+        "Web-based dashboard for team collaboration on UI/UX projects"
+      ],
+      "monetization": "Freemium with enterprise pricing for advanced features",
+      "opportunity": 8,
+      "why_now": "Increased demand for AI tools in design workflows"
+    },
+    {
+      "name": "usestrix/strix",
+      "url": "https://github.com/usestrix/strix",
+      "stars": 41229,
+      "category": "Developer Tools",
+      "delta_7d": 3192,
+      "delta_7d_pct": 8.39,
+      "timing": "breakout",
+      "signals": [],
+      "cross_signal": false,
+      "one_liner": "AI-powered penetration testing for developers",
+      "pain_point": "Security vulnerabilities in apps cost businesses millions; developers need efficient tools",
+      "app_ideas": [
+        "Strix CLI tool for local vulnerability scanning",
+        "Strix Chrome extension for real-time website vulnerability checks",
+        "Strix API wrapper for CI/CD pipelines"
+      ],
+      "monetization": "Freemium with enterprise API access and premium features",
+      "opportunity": 8,
+      "why_now": "Increasing cyber threats and demand for AI-driven security tools"
+    },
+    {
+      "name": "Shubhamsaboo/awesome-llm-apps",
+      "url": "https://github.com/Shubhamsaboo/awesome-llm-apps",
+      "stars": 119668,
+      "category": "Agents & Automation",
+      "delta_7d": 3025,
+      "delta_7d_pct": 2.59,
+      "timing": "breakout",
+      "signals": [],
+      "cross_signal": false,
+      "one_liner": "100+ AI Agent & RAG apps for cloning, customizing, and shipping",
+      "pain_point": "Helps businesses automate tasks and improve efficiency with AI agents and RAG apps, appealing to SMBs and enterprises",
+      "app_ideas": [
+        "AI-powered customer support chatbot for a SaaS company",
+        "Automated content generation tool for marketing agencies",
+        "Personalized recommendation engine for an e-commerce platform"
+      ],
+      "monetization": "Freemium model with premium features for businesses",
+      "opportunity": 8,
+      "why_now": "Increased demand for AI automation and RAG apps due to advancements in AI technology"
+    },
+    {
+      "name": "msitarzewski/agency-agents",
+      "url": "https://github.com/msitarzewski/agency-agents",
+      "stars": 131142,
+      "category": "Agents & Automation",
+      "delta_7d": 2941,
+      "delta_7d_pct": 2.29,
+      "timing": "breakout",
+      "signals": [],
+      "cross_signal": false,
+      "one_liner": "AI-powered agency for specialized tasks and automation",
+      "pain_point": "Saves businesses time and money by automating repetitive tasks and providing specialized expertise",
+      "app_ideas": [
+        "AI-powered customer support chatbot for small businesses",
+        "Automated social media management tool for influencers",
+        "AI-powered content creation and curation platform for marketers"
+      ],
+      "monetization": "Freemium model with premium features for businesses",
+      "opportunity": 8,
+      "why_now": "Increased demand for automation and AI-powered solutions"
+    },
+    {
+      "name": "ruvnet/RuView",
+      "url": "https://github.com/ruvnet/RuView",
+      "stars": 80490,
+      "category": "Vision & Media",
+      "delta_7d": 2908,
+      "delta_7d_pct": 3.75,
+      "timing": "breakout",
+      "signals": [],
+      "cross_signal": false,
+      "one_liner": "WiFi-based real-time spatial intelligence and presence detection",
+      "pain_point": "Privacy-conscious businesses and healthcare providers need non-intrusive presence detection and vital sign monitoring",
+      "app_ideas": [
+        "Smart retail analytics: Track customer movement and dwell time in stores without video",
+        "Healthcare monitoring: Detect and alert on patient presence and vital signs in hospitals",
+        "Office space utilization: Monitor and optimize workspace usage in real-time"
+      ],
+      "monetization": "B2B SaaS with tiered pricing based on features and scale",
+      "opportunity": 8,
+      "why_now": "Growing demand for privacy-preserving solutions and advancements in WiFi-based sensing technology"
+    },
+    {
+      "name": "jamiepine/voicebox",
+      "url": "https://github.com/jamiepine/voicebox",
+      "stars": 41062,
+      "category": "Vision & Media",
+      "delta_7d": 2770,
+      "delta_7d_pct": 7.23,
+      "timing": "breakout",
+      "signals": [],
+      "cross_signal": false,
+      "one_liner": "Open-source AI voice studio for cloning and creation.",
+      "pain_point": "Content creators and marketers need unique, high-quality voiceovers without hiring actors or paying for expensive services.",
+      "app_ideas": [
+        "Voiceover AI for e-learning platforms, creating personalized voiceovers for each student.",
+        "AI-generated voiceovers for podcasts and YouTube videos, allowing creators to produce content faster.",
+        "Voice cloning app for gamers, enabling them to create custom character voices for games."
+      ],
+      "monetization": "Freemium model with premium features for advanced voice cloning and customization.",
+      "opportunity": 8,
+      "why_now": "Increased demand for AI-generated content and voiceovers due to the rise of remote work and digital content creation."
+    },
+    {
+      "name": "affaan-m/ECC",
+      "url": "https://github.com/affaan-m/ECC",
+      "stars": 229278,
+      "category": "Agents & Automation",
+      "delta_7d": 2575,
+      "delta_7d_pct": 1.14,
+      "timing": "breakout",
+      "signals": [],
+      "cross_signal": false,
+      "one_liner": "AI agent performance optimization system",
+      "pain_point": "Helps developers optimize AI agent performance, saving time and costs for businesses using AI tools",
+      "app_ideas": [
+        "AI Agent Performance Dashboard: A web app that visualizes and optimizes AI agent performance metrics",
+        "AI Agent Optimization API: A B2B API that provides performance optimization for AI agents",
+        "AI Agent Optimization Plugin: A browser extension that optimizes AI agent performance in real-time"
+      ],
+      "monetization": "Freemium model with B2B API and vertical SaaS options",
+      "opportunity": 8,
+      "why_now": "Increased demand for AI agents and the need for performance optimization tools"
+    },
+    {
+      "name": "VoltAgent/awesome-design-md",
+      "url": "https://github.com/VoltAgent/awesome-design-md",
+      "stars": 101593,
+      "category": "Agents & Automation",
+      "delta_7d": 5339,
+      "delta_7d_pct": 5.55,
+      "timing": "breakout",
+      "signals": [],
+      "cross_signal": false,
+      "one_liner": "Design.md files for consistent UI across projects",
+      "pain_point": "Inconsistent UI design slows development and harms brand identity; developers and designers",
+      "app_ideas": [
+        "Design.md generator for open-source projects",
+        "UI consistency checker for design systems",
+        "Design.md template marketplace"
+      ],
+      "monetization": "Freemium with premium templates and API for enterprise",
+      "opportunity": 7,
+      "why_now": "Growing demand for design consistency in open-source and enterprise"
+    },
+    {
+      "name": "multica-ai/andrej-karpathy-skills",
+      "url": "https://github.com/multica-ai/andrej-karpathy-skills",
+      "stars": 191657,
+      "category": "AI Engineering",
+      "delta_7d": 3055,
+      "delta_7d_pct": 1.62,
+      "timing": "breakout",
+      "signals": [],
+      "cross_signal": false,
+      "one_liner": "Improves Claude Code behavior using Andrej Karpathy's insights",
+      "pain_point": "Helps developers debug and optimize LLM code, appealing to AI engineers and startups",
+      "app_ideas": [
+        "AI-powered code review tool for startups",
+        "Debugging assistant for AI engineers",
+        "Optimization guide for LLM training"
+      ],
+      "monetization": "Freemium model with premium features for enterprises",
+      "opportunity": 7,
+      "why_now": "Increased interest in LLM development and debugging"
+    },
+    {
+      "name": "1c7/chinese-independent-developer",
+      "url": "https://github.com/1c7/chinese-independent-developer",
+      "stars": 52049,
+      "category": "Other",
+      "delta_7d": 2959,
+      "delta_7d_pct": 6.03,
+      "timing": "breakout",
+      "signals": [],
+      "cross_signal": false,
+      "one_liner": "Directory of Chinese independent developer projects",
+      "pain_point": "Connects developers with opportunities and resources, appealing to freelancers and startups",
+      "app_ideas": [
+        "Curated job board for independent developers",
+        "Resource hub for indie devs with tutorials and tools",
+        "Networking platform for Chinese developers"
+      ],
+      "monetization": "Freemium with premium features for job postings and networking",
+      "opportunity": 7,
+      "why_now": "Growing trend of independent developers in China seeking opportunities and resources"
+    }
+  ]
+}

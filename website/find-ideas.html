@@ -1,0 +1,1291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Find Ideas — AI Startup Ideas &amp; Opportunities from Show HN, Product Hunt, IndieHackers</title>
+    <meta name="description" content="Startup and app ideas aggregated from Show HN, Product Hunt, IndieHackers, Reddit, App Store, YouTube, and more. Filter by source, votes, keywords. AI-powered Idea Matrix.">
+    <meta property="og:title" content="Find Ideas — AI Startup Opportunities &amp; App Ideas">
+    <meta property="og:description" content="Daily AI startup ideas validated by real community signals. Generate million-dollar ideas with the Idea Matrix.">
+    <meta property="og:url" content="https://hankbui.github.io/my-starred-AI-repos/find-ideas.html">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Find Ideas — AI Startup Opportunities &amp; App Ideas">
+    <meta name="twitter:description" content="Daily AI startup ideas validated by real community signals. Generate million-dollar ideas with the Idea Matrix.">
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="styles.css?v=20260723-3">
+    <style>
+        .find-hero {
+            display: flex;
+            justify-content: space-between;
+            gap: 32px;
+            padding: 34px;
+            border: 1px solid var(--border);
+            border-radius: 30px;
+            background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0)), var(--bg-elevated);
+            box-shadow: var(--shadow);
+        }
+        .find-hero-copy { max-width: 760px; }
+        .find-back {
+            display: inline-flex; align-items: center; gap: 6px;
+            padding: 8px 14px; border-radius: 999px;
+            border: 1px solid var(--border); background: rgba(255,255,255,0.02);
+            color: var(--text-secondary); font-size: 0.88rem; font-weight: 600;
+            text-decoration: none; transition: 160ms ease;
+        }
+        .find-back:hover { border-color: var(--border-strong); color: var(--text-primary); }
+        .find-back svg { width: 14px; height: 14px; fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+        .find-hero h1 { margin: 16px 0 0; font-family: "Space Grotesk", sans-serif; font-size: clamp(2rem,3.5vw,3.2rem); line-height: 0.98; letter-spacing: -0.04em; }
+        .find-hero p { margin: 14px 0 0; max-width: 620px; color: var(--text-secondary); font-size: 1rem; line-height: 1.7; }
+        .find-controls {
+            display: flex; flex-wrap: wrap; gap: 12px; align-items: end; margin-top: 18px;
+        }
+        .find-controls .control { flex: 1 1 200px; min-width: 160px; }
+        .find-controls .control.search-control { flex: 2 1 300px; }
+        .find-controls .control input, .find-controls .control select {
+            width: 100%; min-height: 42px; padding: 0 14px;
+            border: 1px solid var(--border); border-radius: 10px;
+            background: var(--bg-soft); color: var(--text-primary);
+            font: inherit; font-size: 0.92rem;
+        }
+        .find-controls .control input:focus, .find-controls .control select:focus {
+            outline: none; border-color: var(--accent-strong);
+            box-shadow: 0 0 0 3px rgba(63,167,255,0.16);
+        }
+        .find-stats {
+            display: flex; flex-wrap: wrap; gap: 18px; align-items: center;
+            justify-content: space-between; margin-top: 18px;
+            padding: 14px 18px; border: 1px solid var(--border);
+            border-radius: var(--radius-md); background: #0f141b;
+        }
+        .find-stat-label { color: var(--text-secondary); font-size: 0.9rem; }
+        .find-stat-value { font-family: "Space Grotesk", sans-serif; font-weight: 700; }
+
+        .source-filters {
+            display: flex; flex-wrap: wrap; gap: 10px; margin-top: 14px;
+        }
+        .source-filter {
+            display: inline-flex; align-items: center; gap: 6px;
+            padding: 6px 14px; border-radius: 999px;
+            border: 1px solid var(--border); background: rgba(255,255,255,0.02);
+            color: var(--text-secondary); font-size: 0.84rem; font-weight: 600;
+            cursor: pointer; transition: 160ms ease; user-select: none;
+        }
+        .source-filter:hover { border-color: var(--border-strong); }
+        .source-filter.active { border-color: var(--accent); color: var(--accent); background: rgba(99,207,255,0.08); }
+        .find-results { display: grid; gap: 14px; margin-top: 18px; }
+
+        .idea-card {
+            padding: 20px; border: 1px solid var(--border);
+            border-radius: var(--radius-md); background: rgba(255,255,255,0.02);
+            transition: border-color 160ms ease, background 160ms ease;
+        }
+        .idea-card:hover { border-color: var(--border-strong); background: rgba(99,207,255,0.03); }
+        .idea-title {
+            display: flex; align-items: baseline; gap: 10px; flex-wrap: wrap;
+        }
+        .idea-title a {
+            color: var(--text-primary); font-family: "Space Grotesk", sans-serif;
+            font-size: 1.15rem; font-weight: 700; text-decoration: none; line-height: 1.3;
+        }
+        .idea-title a:hover { color: var(--accent); }
+        .idea-title .idea-domain { color: var(--text-muted); font-size: 0.78rem; font-weight: 600; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; max-width: 200px; }
+        .idea-desc { margin-top: 8px; color: var(--text-secondary); font-size: 0.92rem; line-height: 1.6; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
+        .idea-meta { display: flex; flex-wrap: wrap; gap: 14px; margin-top: 12px; align-items: center; }
+        .idea-meta-item { display: inline-flex; align-items: center; gap: 5px; color: var(--text-secondary); font-size: 0.84rem; font-weight: 600; }
+        .idea-meta-item svg { width: 14px; height: 14px; fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+        .idea-meta-item .num { font-family: "Space Grotesk", sans-serif; }
+        .idea-meta-item.high-points { color: var(--success); }
+        .idea-tags { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 10px; }
+        .idea-tag { display: inline-flex; padding: 4px 10px; border-radius: 999px; background: rgba(99,207,255,0.08); color: #a4e5ff; font-size: 0.74rem; font-weight: 700; }
+        .idea-tag.revenue { background: rgba(77,224,168,0.15); color: #a4f2d0; }
+        .idea-tag.bm { background: rgba(255,200,50,0.12); color: #ffda66; }
+        .idea-tag.ai { background: rgba(99,207,255,0.15); color: #7ed9ff; }
+        .idea-tag.ai-low { background: rgba(99,207,255,0.08); color: #5a9ab5; }
+        .idea-tag.trend-up { background: rgba(77,224,168,0.12); color: #7ed9a0; }
+        .idea-tag.trend-down { background: rgba(255,100,100,0.12); color: #ff7a7a; }
+
+        .source-badge {
+            display: inline-flex; align-items: center; gap: 4px;
+            padding: 4px 10px; border-radius: 999px;
+            font-size: 0.72rem; font-weight: 700; text-decoration: none;
+        }
+        .source-badge.hn { background: rgba(255,102,0,0.12); color: #ffb066; }
+        .source-badge.ph { background: rgba(255,86,33,0.12); color: #ff7f5e; }
+        .source-badge.reddit { background: rgba(255,86,0,0.12); color: #ff7845; }
+        .source-badge.ih { background: rgba(255,200,50,0.12); color: #ffda66; }
+        .source-badge.as { background: rgba(0,122,255,0.12); color: #66b5ff; }
+        .source-badge.gp { background: rgba(52,168,83,0.12); color: #7ed99a; }
+        .source-badge.gh { background: rgba(201,148,255,0.12); color: #d9aaff; }
+        .source-badge.v2ex { background: rgba(66,133,244,0.12); color: #7eb5ff; }
+        .source-badge.kr { background: rgba(255,77,77,0.12); color: #ff8787; }
+        .source-badge.yt { background: rgba(255,0,0,0.12); color: #ff6666; }
+
+        .find-empty { padding: 60px 20px; text-align: center; color: var(--text-secondary); font-size: 1rem; }
+        .find-loading { padding: 60px 20px; text-align: center; color: var(--text-secondary); }
+        .find-loading .spinner { display: inline-block; width: 24px; height: 24px; border: 2px solid var(--border); border-top-color: var(--accent); border-radius: 50%; animation: spin 0.8s linear infinite; }
+        @keyframes spin { to { transform: rotate(360deg); } }
+
+        .find-pagination {
+            display: flex; flex-wrap: wrap; align-items: center; justify-content: center;
+            gap: 12px; margin-top: 18px; padding: 14px;
+            border: 1px solid var(--border); border-radius: var(--radius-md); background: #0f141b;
+        }
+        .find-pagination .pager-btn {
+            min-width: 100px; min-height: 40px; padding: 0 16px;
+            border: 1px solid var(--border); border-radius: 10px; background: transparent;
+            color: var(--text-primary); font: inherit; font-size: 0.92rem; font-weight: 700;
+            cursor: pointer; transition: 160ms ease;
+        }
+        .find-pagination .pager-btn:hover:not(:disabled) { border-color: var(--border-strong); color: var(--accent); }
+        .find-pagination .pager-btn:disabled { opacity: 0.45; cursor: not-allowed; }
+        .find-pagination .pager-info { font-family: "Space Grotesk", sans-serif; font-size: 0.96rem; font-weight: 600; color: var(--text-primary); }
+
+        .find-error { padding: 40px 20px; text-align: center; color: #ff8799; font-size: 0.96rem; }
+        .find-error button { display: inline-block; margin-top: 12px; padding: 10px 22px; border-radius: 999px; border: 1px solid rgba(99,207,255,0.18); background: rgba(99,207,255,0.08); color: var(--accent); font: inherit; font-size: 0.93rem; font-weight: 700; cursor: pointer; transition: 160ms ease; }
+        .find-error button:hover { border-color: rgba(99,207,255,0.4); background: rgba(99,207,255,0.14); }
+
+        .live-toggle {
+            display: inline-flex; align-items: center; gap: 8px;
+            padding: 8px 18px; border-radius: 999px;
+            border: 1px solid var(--border); background: rgba(255,255,255,0.02);
+            color: var(--text-secondary); font-size: 0.88rem; font-weight: 700;
+            cursor: pointer; transition: 160ms ease;
+        }
+        .live-toggle:hover { border-color: var(--border-strong); color: var(--text-primary); }
+        .live-toggle.active { border-color: rgba(77,224,168,0.3); background: rgba(77,224,168,0.08); color: var(--success); }
+        .live-toggle .live-dot { display: inline-block; width: 8px; height: 8px; border-radius: 50%; background: var(--text-muted); }
+        .live-toggle.active .live-dot { background: var(--success); animation: pulse 2s infinite; }
+        @keyframes pulse { 0%,100% { opacity: 1; } 50% { opacity: 0.4; } }
+
+        .ai-ask-label-row {
+            display: flex; align-items: center; justify-content: space-between; gap: 8px;
+        }
+        .ai-ask-prompts-wrapper { position: relative; }
+        .ai-ask-prompts-btn {
+            display: inline-flex; align-items: center; gap: 5px;
+            padding: 4px 10px; border-radius: 8px;
+            border: 1px solid var(--border); background: rgba(99,207,255,0.06);
+            color: var(--accent); font: inherit; font-size: 0.78rem; font-weight: 700;
+            cursor: pointer; transition: 120ms ease; white-space: nowrap;
+        }
+        .ai-ask-prompts-btn:hover { background: rgba(99,207,255,0.14); border-color: var(--accent); }
+        .ai-ask-prompts-btn svg { width: 13px; height: 13px; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+        .ai-ask-prompts-btn .prompts-chevron { width: 11px; height: 11px; transition: transform 160ms ease; }
+        .ai-ask-prompts-btn.open .prompts-chevron { transform: rotate(180deg); }
+
+        .ai-ask-prompts-menu {
+            position: absolute; top: calc(100% + 4px); right: 0; z-index: 100;
+            min-width: 320px; max-width: min(400px, 90vw); max-height: 420px; overflow-y: auto;
+            padding: 8px; border: 1px solid var(--border); border-radius: 12px;
+            background: #1a1f26; box-shadow: 0 8px 32px rgba(0,0,0,0.5);
+        }
+        .prompts-group { margin-bottom: 6px; }
+        .prompts-group-title {
+            padding: 6px 8px 4px; font-size: 0.72rem; font-weight: 700;
+            color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.04em;
+        }
+        .prompts-item {
+            display: block; width: 100%; text-align: left;
+            padding: 7px 10px; border-radius: 8px; border: none;
+            background: transparent; color: var(--text-secondary); font: inherit;
+            font-size: 0.82rem; line-height: 1.4; cursor: pointer; transition: 100ms ease;
+        }
+        .prompts-item:hover { background: rgba(99,207,255,0.08); color: var(--text-primary); }
+        .prompts-divider { height: 1px; background: var(--border); margin: 6px 0; }
+        .prompts-add-btn {
+            display: block; width: 100%; text-align: center;
+            padding: 8px; border-radius: 8px; border: 1px dashed var(--border);
+            background: transparent; color: var(--text-secondary); font: inherit;
+            font-size: 0.82rem; font-weight: 600; cursor: pointer; transition: 120ms ease;
+        }
+        .prompts-add-btn:hover { border-color: var(--accent); color: var(--accent); background: rgba(99,207,255,0.06); }
+        .prompts-custom-item {
+            display: flex; align-items: center; gap: 4px;
+            padding: 6px 8px; border-radius: 8px; border: none;
+            background: transparent; width: 100%; text-align: left;
+            color: var(--text-secondary); font: inherit; font-size: 0.82rem; cursor: pointer; transition: 100ms ease;
+        }
+        .prompts-custom-item:hover { background: rgba(99,207,255,0.08); color: var(--text-primary); }
+        .prompts-custom-item .prompts-del {
+            margin-left: auto; flex-shrink: 0; opacity: 0.4; cursor: pointer; transition: opacity 120ms ease;
+            width: 18px; height: 18px; border-radius: 4px; border: none;
+            background: transparent; color: #ff6666; font-size: 14px; line-height: 1; display: flex; align-items: center; justify-content: center;
+        }
+        .prompts-custom-item .prompts-del:hover { opacity: 1; background: rgba(255,100,100,0.15); }
+
+        .matrix-btn {
+            display: inline-flex; align-items: center; gap: 6px;
+            padding: 6px 14px; border-radius: 999px;
+            border: 1px solid var(--border); background: rgba(192,132,252,0.08);
+            color: #c084fc; font-size: 0.84rem; font-weight: 700;
+            cursor: pointer; transition: 160ms ease; user-select: none;
+        }
+        .matrix-btn:hover { border-color: #c084fc; background: rgba(192,132,252,0.15); }
+        .matrix-btn.active { border-color: #c084fc; background: rgba(192,132,252,0.18); }
+
+        .matrix-section { margin-top: 18px; }
+        .matrix-grid { display: grid; gap: 6px; }
+        .matrix-header { display: contents; }
+        .matrix-header-cell {
+            padding: 10px 8px; font-size: 0.72rem; font-weight: 700;
+            text-transform: uppercase; letter-spacing: 0.04em;
+            color: var(--text-muted); text-align: center; border-radius: 8px;
+            background: rgba(255,255,255,0.02); display: flex; align-items: center; justify-content: center; gap: 4px;
+        }
+        .matrix-row-label {
+            padding: 8px 8px; font-size: 0.78rem; font-weight: 700;
+            color: var(--text-secondary); display: flex; align-items: center; gap: 6px;
+            white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+        }
+        .matrix-cell {
+            padding: 10px 6px; border-radius: 10px; border: 1px solid var(--border);
+            background: rgba(255,255,255,0.015); cursor: pointer;
+            transition: all 160ms ease; text-align: center;
+            font-size: 0.74rem; color: var(--text-muted); line-height: 1.3;
+            display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 3px;
+            min-height: 52px;
+        }
+        .matrix-cell:hover { border-color: #c084fc; background: rgba(192,132,252,0.08); color: var(--text-primary); }
+        .matrix-cell.selected { border-color: #c084fc; background: rgba(192,132,252,0.14); color: var(--text-primary); box-shadow: 0 0 0 2px rgba(192,132,252,0.2); }
+        .matrix-cell .cell-icon { font-size: 1.1rem; }
+        .matrix-cell .cell-label { font-weight: 600; }
+        .matrix-cell-gen {
+            display: inline-flex; align-items: center; gap: 4px;
+            padding: 3px 8px; border-radius: 999px; border: none;
+            background: rgba(99,207,255,0.12); color: var(--accent);
+            font-size: 0.65rem; font-weight: 700; cursor: pointer; transition: 100ms ease; margin-top: 4px;
+        }
+        .matrix-cell-gen:hover { background: rgba(99,207,255,0.22); }
+
+        .matrix-detail {
+            margin-top: 14px; padding: 18px; border: 1px solid var(--border);
+            border-radius: var(--radius-md); background: rgba(255,255,255,0.02);
+        }
+        .matrix-detail h3 { margin: 0 0 8px; font-family: "Space Grotesk", sans-serif; font-size: 1.1rem; }
+        .matrix-detail p { margin: 6px 0; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.6; }
+        .matrix-detail textarea {
+            width: 100%; min-height: 100px; padding: 12px; border: 1px solid var(--border);
+            border-radius: 10px; background: #0a0e13; color: var(--text-primary);
+            font: inherit; font-size: 0.84rem; resize: vertical;
+        }
+        .matrix-detail textarea:focus { outline: none; border-color: var(--accent-strong); }
+        .matrix-detail .md-actions { display: flex; gap: 10px; margin-top: 10px; flex-wrap: wrap; }
+        .matrix-detail .md-btn {
+            display: inline-flex; align-items: center; gap: 6px;
+            padding: 8px 16px; border-radius: 10px; border: 1px solid var(--border);
+            background: rgba(255,255,255,0.03); color: var(--text-primary);
+            font: inherit; font-size: 0.85rem; font-weight: 700; cursor: pointer; transition: 140ms ease;
+        }
+        .matrix-detail .md-btn:hover { border-color: var(--border-strong); background: rgba(255,255,255,0.07); }
+        .matrix-detail .md-btn.primary { border-color: #c084fc; background: rgba(192,132,252,0.12); color: #c084fc; }
+        .matrix-detail .md-btn.primary:hover { background: rgba(192,132,252,0.22); }
+        .matrix-detail .md-btn:disabled { opacity: 0.4; cursor: not-allowed; }
+
+        .matrix-result { margin-top: 12px; padding: 14px; border: 1px solid rgba(192,132,252,0.2); border-radius: var(--radius-md); background: rgba(192,132,252,0.04); }
+        .matrix-result h4 { margin: 0 0 8px; color: var(--text-primary); font-size: 1rem; }
+        .matrix-result .mr-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+        .matrix-result .mr-block { }
+        .matrix-result .mr-block b { display: block; font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.04em; color: var(--text-muted); margin-bottom: 2px; }
+        .matrix-result .mr-block div, .matrix-result .mr-block ul { font-size: 0.88rem; color: var(--text-secondary); line-height: 1.5; margin: 0; padding-left: 16px; }
+        .matrix-result .mr-opp { display: inline-flex; align-items: center; gap: 4px; padding: 4px 10px; border-radius: 999px; background: rgba(192,132,252,0.12); color: #c084fc; font-size: 0.82rem; font-weight: 700; }
+        .matrix-result .mr-note { font-size: 0.74rem; color: var(--text-muted); margin-top: 10px; }
+
+        @media (max-width: 720px) {
+            .find-stats { flex-wrap: wrap; gap: 10px; }
+            .find-stats .ai-ask-toggle { margin-left: 0; }
+            .find-hero { flex-direction: column; padding: 20px; }
+            .find-controls { flex-direction: column; }
+            .find-controls .control { min-width: 0; flex: 1 1 auto; }
+            .find-controls .control.search-control { flex: 1 1 auto; }
+            .idea-title { flex-direction: column; gap: 4px; }
+            .idea-title .idea-domain { max-width: none; }
+            .find-stats { flex-direction: column; gap: 8px; align-items: flex-start; }
+            .idea-meta { gap: 10px; }
+            .source-filters { gap: 6px; }
+            .source-filter { font-size: 0.78rem; padding: 4px 10px; }
+            .ai-ask-prompts-menu { min-width: 260px; right: -40px; }
+            .matrix-grid { font-size: 0.72rem; }
+            .matrix-cell { padding: 6px 4px; min-height: 40px; font-size: 0.68rem; }
+        }
+    </style>
+</head>
+<body>
+    <div class="site-shell">
+        <header class="find-hero">
+            <div class="find-hero-copy">
+                <div style="display:flex;align-items:center;gap:12px;flex-wrap:wrap">
+                    <a class="find-back" href="index.html">
+                        <svg viewBox="0 0 24 24"><path d="M19 12H5"/><path d="m12 5-7 7 7 7"/></svg>
+                        Back to Repos
+                    </a>
+                    <a class="find-back" href="research/index.html" style="border-color:rgba(99,207,255,0.3);color:var(--accent)">
+                        <svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 1 0 10 10"/><path d="M12 6a6 6 0 1 0 6 6"/><circle cx="12" cy="12" r="2"/></svg>
+                        Tech Radar
+                    </a>
+                </div>
+                <h1>Find Ideas</h1>
+                <p>
+                    Startup and app ideas aggregated daily from <strong>Show HN</strong>,
+                    <strong>Product Hunt</strong>, <strong>IndieHackers</strong>,
+                    <strong>GitHub Trending</strong>, <strong>YouTube</strong>,
+                    <strong>V2EX</strong>, <strong>36Kr</strong>, and app stores.
+                    Updated every 24h via automated pipeline —
+                    like <a href="https://starterstory.com" target="_blank" rel="noreferrer" style="color:var(--accent)">Starter Story</a>, but free and yours.
+                </p>
+                <p>
+                    Find ArXiv Papers<a href="https://arxiv.org/search/" target="_blank" rel="noreferrer" style="color:var(--accent)">ArXiv</a>, <a href="https://www.researchgate.net/search?q=AI+ideas" target="_blank" rel="noreferrer" style="color:var(--accent)">ResearchGate</a> and <a href="https://www.researchgate.net/search?q=AI+ideas" target="_blank" rel="noreferrer" style="color:var(--accent)">Google Scholar</a> are also great for finding AI-related ideas and research papers.
+                </p>
+                <div class="find-controls">
+                    <label class="control search-control">
+                        <span class="control-label">Search</span>
+                        <input type="search" id="idea-search" placeholder="Filter ideas by keyword (comma = AND)..." spellcheck="false">
+                    </label>
+                    <label class="control">
+                        <span class="control-label">Min votes</span>
+                        <select id="min-points">
+                            <option value="0">Any</option>
+                            <option value="10">10+</option>
+                            <option value="50">50+</option>
+                            <option value="100">100+</option>
+                            <option value="200">200+</option>
+                        </select>
+                    </label>
+                    <label class="control">
+                        <span class="control-label">Sort</span>
+                        <select id="sort-by">
+                            <option value="composite">Recommended (AI + revenue + votes)</option>
+                            <option value="score">Popularity (raw score)</option>
+                            <option value="date">Newest</option>
+                            <option value="comments">Most comments</option>
+                            <option value="ai_potential">AI potential</option>
+                        </select>
+                    </label>
+                    <button class="live-toggle" id="live-toggle" type="button">
+                        <span class="live-dot"></span>
+                        <span>HN Live</span>
+                    </button>
+                </div>
+                <div class="source-filters" id="source-filters"></div>
+                <div style="display:flex;gap:10px;align-items:center;margin-top:10px;flex-wrap:wrap">
+                    <button class="source-filter" id="filter-revenue" style="border-color:var(--success);color:var(--success)" type="button">💰 Has revenue signal</button>
+                </div>
+                <div style="display:flex;gap:8px;align-items:center;margin-top:10px">
+                    <button class="matrix-btn" id="matrix-toggle" type="button">
+                        <span>⬡</span>
+                        <span>Idea Matrix</span>
+                    </button>
+                </div>
+                <div class="find-stats" id="find-stats">
+                    <span class="find-stat-label">Loaded <strong class="find-stat-value" id="loaded-count">0</strong> ideas</span>
+                    <span class="find-stat-label">Page <strong class="find-stat-value" id="page-info">1 / 1</strong></span>
+                    <span class="find-stat-label">Updated <strong class="find-stat-value" id="updated-at">-</strong></span>
+                    <span style="flex:1"></span>
+                    <label class="ai-ask-toggle" for="find-ask-include-desc" style="font-size:0.84rem;font-weight:600">
+                        <input type="checkbox" id="find-ask-include-desc" checked>
+                        <span>Descriptions</span>
+                    </label>
+                    <button class="action-btn ask-ai-btn" id="find-ask-ai" type="button">
+                        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3a9 9 0 0 0-7.74 13.55L3 21l4.6-1.2A9 9 0 1 0 12 3Z"/><path d="M8.5 11h7"/><path d="M8.5 14h4"/></svg>
+                        <span>Ask AI</span>
+                    </button>
+                </div>
+            </div>
+        </header>
+
+        <main class="content-stack" style="margin-top:22px">
+            <div class="panel">
+                <div class="find-results" id="find-results">
+                    <div class="find-loading">
+                        <div class="spinner"></div>
+                        <p style="margin-top:12px">Loading ideas...</p>
+                    </div>
+                </div>
+                <div class="find-pagination" id="find-pagination">
+                    <button class="pager-btn" id="prev-page" disabled>« Prev</button>
+                    <span class="pager-info" id="pagination-info">1 / 1</span>
+                    <button class="pager-btn" id="next-page">Next »</button>
+                </div>
+            </div>
+        </main>
+
+        <div class="ai-ask-backdrop" id="find-ai-ask-backdrop" hidden></div>
+        <div class="ai-ask-modal" id="find-ai-ask-modal" role="dialog" aria-modal="true" aria-labelledby="find-ai-ask-title" aria-hidden="true">
+            <div class="ai-ask-header">
+                <div>
+                    <div class="ai-ask-overline">Ask Google AI Mode</div>
+                    <h3 class="ai-ask-title" id="find-ai-ask-title">Ask AI about these ideas</h3>
+                </div>
+                <button class="ai-ask-close" id="find-ai-ask-close" type="button" aria-label="Close Ask AI">
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6 18 18"/><path d="M18 6 6 18"/></svg>
+                </button>
+            </div>
+
+            <div class="ai-ask-body">
+                <p class="ai-ask-context" id="find-ai-ask-context">-</p>
+
+                <label class="ai-ask-field">
+                    <div class="ai-ask-label-row">
+                        <span class="ai-ask-label">Your question</span>
+                        <div class="ai-ask-prompts-wrapper">
+                            <button class="ai-ask-prompts-btn" id="find-ask-prompts-btn" type="button">
+                                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+                                <span>Prompts</span>
+                                <svg class="prompts-chevron" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+                            </button>
+                            <div class="ai-ask-prompts-menu" id="find-ask-prompts-menu" hidden>
+                                <div class="prompts-group">
+                                    <div class="prompts-group-title">🔥 Discovery & Validation</div>
+                                    <button class="prompts-item" data-prompt="Which ideas have the highest revenue potential and are trending up? Prioritize by combining revenue signals (subscription/SaaS models) with rising trend categories. List the top 5 with reasoning.">Revenue potential + trending up</button>
+                                    <button class="prompts-item" data-prompt="Which of these ideas solve real problems people would pay for? Look beyond feature ideas — identify pain points, urgency signals (regulatory, cost savings, compliance), and willingness-to-pay cues in descriptions.">Real problems people pay for</button>
+                                    <button class="prompts-item" data-prompt="Identify blue ocean opportunities — ideas that target growing, under-served markets with few dominant competitors. Exclude saturated categories (e.g. yet another to-do app, AI wrapper).">Blue ocean opportunities</button>
+                                    <button class="prompts-item" data-prompt="Which ideas have the strongest validation signals? Look for: existing revenue, funding raised, user traction, waitlist demand, or proven相似的 competitors making money. Rank by validation strength.">Strongest validation signals</button>
+                                </div>
+                                <div class="prompts-group">
+                                    <div class="prompts-group-title">💰 Monetization</div>
+                                    <button class="prompts-item" data-prompt="Rank these ideas by how quickly a solo founder could reach $1k MRR. Consider: low upfront cost, subscription business model, clear target audience, no hardware/physical barriers. Justify the top 3.">Fastest to $1k MRR (solo)</button>
+                                    <button class="prompts-item" data-prompt="Which of these can be turned into a profitable micro-SaaS in under 3 months? Prioritize ideas with API/software models, existing demand, and low customer acquisition cost.">Micro-SaaS in 3 months</button>
+                                    <button class="prompts-item" data-prompt="Identify which ideas already have proven competitors making money. What differentiated angle could win against them? Think: cheaper, simpler, AI-native, or niche-first.">Competitor + differentiation</button>
+                                </div>
+                                <div class="prompts-group">
+                                    <div class="prompts-group-title">📈 Market Timing</div>
+                                    <button class="prompts-item" data-prompt="Group these ideas by category. For each group, tell me: (1) is the market growing or shrinking? (2) what's the revenue model? (3) how hard is it to enter? Focus on groups with rising trends + clear monetization.">Category analysis + trends</button>
+                                    <button class="prompts-item" data-prompt="Which of these are in declining trend categories? Exclude them and explain why they're declining (tech shift, saturation, changing user behavior).">Declining markets to avoid</button>
+                                </div>
+                                <div class="prompts-group">
+                                    <div class="prompts-group-title">🤖 Tech Feasibility</div>
+                                    <button class="prompts-item" data-prompt="Which ideas can be built quickly (weeks, not months) using AI tools and minimal coding? Focus on: AI-assisted development, no-code viable, existing APIs, or GPT wrappers with unique data/UX.">Quick to build with AI</button>
+                                    <button class="prompts-item" data-prompt="For the top 3 AI-feasible ideas, outline a 4-week MVP plan: week 1 core feature, week 2 AI integration, week 3 polish + landing page, week 4 launch to one channel.">4-week MVP plan (top 3)</button>
+                                </div>
+                                <div class="prompts-divider"></div>
+                                <div class="prompts-group" id="prompts-custom-group" hidden>
+                                    <div class="prompts-group-title">📝 Your Prompts</div>
+                                    <div id="prompts-custom-list"></div>
+                                </div>
+                                <button class="prompts-add-btn" id="find-ask-prompts-add" type="button">➕ Add your own prompt</button>
+                            </div>
+                        </div>
+                    </div>
+                    <textarea id="find-ai-ask-question" class="ai-ask-question" rows="3" spellcheck="false"></textarea>
+                </label>
+
+                <div class="ai-ask-controls">
+                    <label class="ai-ask-field ai-ask-field-inline">
+                        <span class="ai-ask-label">Ideas to include</span>
+                        <select id="find-ai-ask-count" class="ai-ask-select">
+                            <option value="10">Top 10</option>
+                            <option value="25" selected>Top 25</option>
+                            <option value="50">Top 50</option>
+                            <option value="0">All filtered</option>
+                        </select>
+                    </label>
+                    <label class="ai-ask-toggle" for="find-ai-ask-include-desc-modal">
+                        <input type="checkbox" id="find-ai-ask-include-desc-modal" checked>
+                        <span>Include descriptions</span>
+                    </label>
+                </div>
+
+                <label class="ai-ask-field">
+                    <span class="ai-ask-label">Prompt preview</span>
+                    <textarea id="find-ai-ask-preview" class="ai-ask-preview" rows="9" readonly spellcheck="false"></textarea>
+                </label>
+
+                <div class="ai-ask-meta">
+                    <span class="ai-ask-meter" id="find-ai-ask-meter">-</span>
+                    <span class="ai-ask-warning" id="find-ai-ask-warning" hidden></span>
+                </div>
+            </div>
+
+            <div class="ai-ask-footer">
+                <button class="ai-ask-secondary" id="find-ai-ask-copy" type="button">Copy prompt</button>
+                <button class="ai-ask-primary" id="find-ai-ask-open" type="button">
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7"/><path d="M9 7h8v8"/></svg>
+                    <span>Open in Google AI Mode</span>
+                </button>
+            </div>
+        </div>
+
+        <div class="matrix-section" id="matrix-section" hidden>
+            <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:10px;margin-bottom:12px">
+                <h2 style="margin:0;font-family:'Space Grotesk',sans-serif;font-size:1.1rem">Idea Matrix Generator</h2>
+                <span style="font-size:0.8rem;color:var(--text-muted)">Click a cell → generate startup idea</span>
+            </div>
+            <div class="matrix-grid" id="matrix-grid"></div>
+            <div class="matrix-detail" id="matrix-detail" hidden>
+                <h3 id="md-title">Idea</h3>
+                <p id="md-desc"></p>
+                <textarea id="md-prompt" readonly spellcheck="false"></textarea>
+                <div class="md-actions">
+                    <button class="md-btn" id="md-copy" type="button">📋 Copy prompt</button>
+                    <button class="md-btn" id="md-ask-ai" type="button">🤖 Ask AI Mode</button>
+                    <button class="md-btn primary" id="md-generate" type="button">⚡ Generate with AI</button>
+                </div>
+                <div class="matrix-result" id="matrix-result" hidden></div>
+            </div>
+        </div>
+
+        <footer class="footer">
+            Powered by HN Algolia API, Product Hunt API, GitHub API, RSS feeds &amp; more —
+            <a href="https://github.com/hankbui/my-starred-AI-repos" target="_blank" rel="noreferrer">View on GitHub</a>
+        </footer>
+    </div>
+
+    <script>
+        const state = {
+            allIdeas: [],
+            filteredIdeas: [],
+            currentPage: 1,
+            perPage: 25,
+            search: '',
+            minScore: 0,
+            sortBy: 'composite',
+            liveMode: false,
+            activeTab: 'all',
+            updatedAt: '',
+            matrixMode: false,
+            filterRevenue: false,
+        };
+
+        const SOURCE_NAMES = {
+            hackernews: 'Show HN',
+            producthunt: 'Product Hunt',
+            reddit: 'Reddit',
+            indiehackers: 'IndieHackers',
+            appstore: 'App Store',
+            playstore: 'Play Store',
+            githubtrending: 'GitHub Trending',
+            v2ex: 'V2EX',
+            thirtysixkr: '36Kr',
+            youtube: 'YouTube',
+        };
+
+        const SOURCE_CLASSES = {
+            hackernews: 'hn', producthunt: 'ph', reddit: 'reddit',
+            indiehackers: 'ih', appstore: 'as', playstore: 'gp',
+            githubtrending: 'gh', v2ex: 'v2ex', thirtysixkr: 'kr',
+            youtube: 'yt',
+        };
+
+        function escapeHtml(v) { return String(v??'').replaceAll('&','&amp;').replaceAll('<','&lt;').replaceAll('>','&gt;').replaceAll('"','&quot;').replaceAll("'",'&#39;'); }
+
+        function formatNumber(v) { if(v>=1000) return (v/1000).toFixed(1)+'k'; return v.toLocaleString(); }
+
+        function timeAgo(dateStr) {
+            try {
+                const diff = Date.now() - new Date(dateStr).getTime();
+                const h = Math.floor(diff/3600000);
+                if(h<1) return 'just now';
+                if(h<24) return h+'h ago';
+                const d = Math.floor(h/24);
+                if(d<30) return d+'d ago';
+                return Math.floor(d/30)+'mo ago';
+            } catch { return dateStr; }
+        }
+
+        function extractDomain(url) {
+            if(!url) return null;
+            try { return new URL(url).hostname.replace(/^www\./,''); } catch { return null; }
+        }
+
+        function extractEnrichmentTags(idea) {
+            const tags = [];
+            const text = (idea.title||'')+' '+(idea.description||'')+' '+(idea.revenue_signal||'');
+
+            if(idea.revenue_signal) tags.push({label:idea.revenue_signal.slice(0,28),cls:'revenue'});
+
+            if(idea.business_model) {
+                idea.business_model.split(',').slice(0,2).forEach(bm => {
+                    tags.push({label:bm.trim(),cls:'bm'});
+                });
+            }
+
+            if((idea.ai_potential||0) >= 50) tags.push({label:'AI '+idea.ai_potential,cls:'ai'});
+            else if((idea.ai_potential||0) >= 25) tags.push({label:'AI '+idea.ai_potential,cls:'ai-low'});
+
+            if(idea.trend_direction === 'rising') tags.push({label:'↑ Trending',cls:'trend-up'});
+            else if(idea.trend_direction === 'declining') tags.push({label:'↓ Cooling',cls:'trend-down'});
+
+            if(/\b(education|learn|course|teach|language)\b/i.test(text) && !tags.find(t=>t.label==='Education')) tags.push({label:'Education',cls:''});
+            if(/\b(productivity|todo|note|organize)\b/i.test(text) && !tags.find(t=>t.label==='Productivity')) tags.push({label:'Productivity',cls:''});
+            if(/\b(dev.?tool|cli|api|sdk)\b/i.test(text) && !tags.find(t=>t.label==='Dev Tool')) tags.push({label:'Dev Tool',cls:''});
+            if(/\b(saas|mobile|ios|android)\b/i.test(text) && !tags.find(t=>t.label==='App')) tags.push({label:'App',cls:''});
+
+            return tags.slice(0,6);
+        }
+
+        // ── HN Live (fallback) ──
+
+        let hnLiveHits = [];
+
+        async function fetchHNLive(pages=5) {
+            const all = [];
+            for(let p=0;p<pages;p++){
+                const url = `https://hn.algolia.com/api/v1/search?tags=show_hn&hitsPerPage=50&page=${p}`;
+                const r = await fetch(url);
+                const d = await r.json();
+                const hits = d.hits||[];
+                all.push(...hits);
+                if(hits.length<50) break;
+            }
+            return all.map(h=>({
+                id: 'hn-live-'+h.objectID,
+                source: 'hackernews',
+                title: h.title||'',
+                url: h.url||'',
+                description: (h.story_text||'').replace(/<[^>]+>/g,'').slice(0,1000),
+                revenue_signal: null,
+                category: '',
+                tags: [],
+                score: h.points||0,
+                num_comments: h.num_comments||0,
+                comments_url: `https://news.ycombinator.com/item?id=${h.objectID}`,
+                date_published: h.created_at||'',
+                date_collected: new Date().toISOString(),
+                raw_snippet: '',
+                summary: '',
+            }));
+        }
+
+        // ── Data loading ──
+
+        async function loadIdeas() {
+            const container = document.getElementById('find-results');
+            container.innerHTML = '<div class="find-loading"><div class="spinner"></div><p style="margin-top:12px">Loading ideas...</p></div>';
+
+            try {
+                if(state.liveMode) {
+                    hnLiveHits = await fetchHNLive();
+                    state.allIdeas = hnLiveHits;
+                    state.updatedAt = new Date().toISOString();
+                } else {
+                    const r = await fetch('data/ideas.json?v='+Date.now());
+                    if(!r.ok) throw new Error('ideas.json not found (HTTP '+r.status+')');
+                    const data = await r.json();
+                    state.allIdeas = data.ideas||[];
+                    state.updatedAt = data.updated_at||'';
+                }
+                renderSourceFilters();
+                applyFilters();
+            } catch(e) {
+                // Fallback to HN live
+                if(!state.liveMode) {
+                    console.warn('ideas.json not available, falling back to HN Live:', e.message);
+                    state.liveMode = true;
+                    document.getElementById('live-toggle').classList.add('active');
+                    document.getElementById('live-toggle').querySelector('span:last-child').textContent = 'HN Live (ON)';
+                    return loadIdeas();
+                }
+                container.innerHTML = `
+                    <div class="find-error">
+                        <p>Failed to load ideas.</p>
+                        <p style="margin-top:6px;font-size:0.84rem;color:var(--text-muted)">${escapeHtml(e.message)}</p>
+                        <button onclick="loadIdeas()">Retry</button>
+                    </div>
+                `;
+            }
+        }
+
+        function renderSourceFilters() {
+            const container = document.getElementById('source-filters');
+            const sources = [...new Set(state.allIdeas.map(i=>i.source))].sort();
+            const tabs = ['all', ...sources];
+            container.innerHTML = tabs.map(s => `
+                <button class="source-filter${state.activeTab===s?' active':''}" data-source="${s}">
+                    ${s==='all'?'ALL':(SOURCE_NAMES[s]||s)}
+                </button>
+            `).join('');
+            container.querySelectorAll('.source-filter').forEach(el => {
+                el.addEventListener('click', () => {
+                    const src = el.dataset.source;
+                    if(src === state.activeTab) return;
+                    state.activeTab = src;
+                    container.querySelectorAll('.source-filter').forEach(b => b.classList.toggle('active', b.dataset.source===src));
+                    applyFilters();
+                });
+            });
+        }
+
+        function applyFilters() {
+            const query = state.search.trim().toLowerCase();
+            const minScore = state.minScore;
+            const sortBy = state.sortBy;
+
+            let filtered = state.activeTab === 'all'
+                ? state.allIdeas
+                : state.allIdeas.filter(i => i.source === state.activeTab);
+
+            if(query) {
+                const terms = query.split(',').map(t=>t.trim()).filter(t=>t.length>0);
+                if(terms.length>0) {
+                    filtered = filtered.filter(i => {
+                        const haystack = ((i.title||'')+' '+(i.description||'')+' '+(i.tags||[]).join(' ')).toLowerCase();
+                        return terms.every(t => haystack.includes(t));
+                    });
+                }
+            }
+            if(minScore>0) filtered = filtered.filter(i => (i.score||0) >= minScore);
+            if(state.filterRevenue) filtered = filtered.filter(i => i.revenue_signal);
+
+            if(sortBy==='composite') filtered.sort((a,b)=>(b.composite_score||0)-(a.composite_score||0));
+            else if(sortBy==='score') filtered.sort((a,b)=>(b.score||0)-(a.score||0));
+            else if(sortBy==='date') filtered.sort((a,b)=>new Date(b.date_published||b.date_collected)-new Date(a.date_published||a.date_collected));
+            else if(sortBy==='comments') filtered.sort((a,b)=>(b.num_comments||0)-(a.num_comments||0));
+            else if(sortBy==='ai_potential') filtered.sort((a,b)=>(b.ai_potential||0)-(a.ai_potential||0));
+
+            state.filteredIdeas = filtered;
+            state.currentPage = 1;
+            renderResults();
+            renderPagination();
+            renderStats();
+        }
+
+        function renderResults() {
+            const container = document.getElementById('find-results');
+            const start = (state.currentPage-1)*state.perPage;
+            const page = state.filteredIdeas.slice(start, start+state.perPage);
+
+            if(!page.length) {
+                container.innerHTML = '<div class="find-empty">No ideas match your filters. Try broader keywords or lower the vote threshold.</div>';
+                return;
+            }
+
+            container.innerHTML = page.map(i => {
+                const domain = extractDomain(i.url);
+                const tags = extractEnrichmentTags(i);
+                const srcClass = SOURCE_CLASSES[i.source]||'hn';
+                const srcName = SOURCE_NAMES[i.source]||i.source;
+                const desc = i.description||'';
+                return `
+                    <div class="idea-card">
+                        <div class="idea-title">
+                            <a href="${escapeHtml(i.url)}" target="_blank" rel="noreferrer">${escapeHtml(i.title)}</a>
+                            ${domain?`<span class="idea-domain">${escapeHtml(domain)}</span>`:''}
+                            <span class="source-badge ${srcClass}">${srcName}</span>
+                        </div>
+                        ${desc?`<div class="idea-desc">${escapeHtml(desc)}</div>`:''}
+                        ${tags.length?`<div class="idea-tags">${tags.map(t=>`<span class="idea-tag${t.cls?' '+t.cls:''}">${escapeHtml(t.label)}</span>`).join('')}</div>`:''}
+                        <div class="idea-meta">
+                            <span class="idea-meta-item ${(i.score||0)>=50?'high-points':''}">
+                                <svg viewBox="0 0 24 24"><path d="M12 3v18"/><path d="M8 9l4-4 4 4"/></svg>
+                                <span class="num">${(i.score||0).toLocaleString()}</span>
+                            </span>
+                            <span class="idea-meta-item">
+                                <svg viewBox="0 0 24 24"><path d="M12 3a9 9 0 0 0-7.74 13.55L3 21l4.6-1.2A9 9 0 1 0 12 3Z"/></svg>
+                                <span class="num">${(i.num_comments||0).toLocaleString()}</span>
+                            </span>
+                            <span class="idea-meta-item">
+                                <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"/><path d="M12 7v5l3 2"/></svg>
+                                ${timeAgo(i.date_published||i.date_collected)}
+                            </span>
+                            ${i.comments_url?`<a class="source-badge ${srcClass}" href="${escapeHtml(i.comments_url)}" target="_blank" rel="noreferrer" style="margin-left:auto">Discuss</a>`:''}
+                        </div>
+                    </div>
+                `;
+            }).join('');
+        }
+
+        function renderPagination() {
+            const total = Math.max(1, Math.ceil(state.filteredIdeas.length/state.perPage));
+            state.currentPage = Math.min(state.currentPage, total);
+            document.getElementById('pagination-info').textContent = state.currentPage+' / '+total;
+            document.getElementById('page-info').textContent = state.currentPage+' / '+total;
+            document.getElementById('prev-page').disabled = state.currentPage<=1;
+            document.getElementById('next-page').disabled = state.currentPage>=total;
+        }
+
+        function renderStats() {
+            document.getElementById('loaded-count').textContent = state.filteredIdeas.length.toLocaleString();
+            if(state.updatedAt) {
+                const d = new Date(state.updatedAt);
+                document.getElementById('updated-at').textContent = d.toLocaleDateString()+' '+d.toLocaleTimeString([],{hour:'2-digit',minute:'2-digit'});
+            }
+        }
+
+        function changePage(delta) {
+            const total = Math.max(1, Math.ceil(state.filteredIdeas.length/state.perPage));
+            state.currentPage = Math.max(1, Math.min(state.currentPage+delta, total));
+            renderResults(); renderPagination();
+            document.querySelector('.content-stack').scrollIntoView({behavior:'smooth',block:'start'});
+        }
+
+        function bindControls() {
+            let timer;
+            document.getElementById('idea-search').addEventListener('input', e => {
+                clearTimeout(timer);
+                timer = setTimeout(()=>{ state.search=e.target.value; applyFilters(); }, 300);
+            });
+            document.getElementById('min-points').addEventListener('change', e => { state.minScore=Number(e.target.value); applyFilters(); });
+            document.getElementById('sort-by').addEventListener('change', e => { state.sortBy=e.target.value; applyFilters(); });
+            document.getElementById('filter-revenue')?.addEventListener('click', e => {
+                state.filterRevenue = !state.filterRevenue;
+                e.currentTarget.classList.toggle('active', state.filterRevenue);
+                applyFilters();
+            });
+            document.getElementById('prev-page').addEventListener('click', ()=>changePage(-1));
+            document.getElementById('next-page').addEventListener('click', ()=>changePage(1));
+            document.getElementById('live-toggle').addEventListener('click', async () => {
+                const btn = document.getElementById('live-toggle');
+                state.liveMode = !state.liveMode;
+                btn.classList.toggle('active', state.liveMode);
+                btn.querySelector('span:last-child').textContent = state.liveMode ? 'HN Live (ON)' : 'HN Live';
+                if(state.liveMode) state.activeTab = 'all';
+                else state.activeTab = 'all';
+                await loadIdeas();
+            });
+        }
+
+        // ── Ask AI (Google AI Mode) ──
+        const AI_ASK_DEFAULT_QUESTION = 'I have a list of startup/app ideas below. Give me a concise overview, group them by category/type, highlight the most promising ones, and suggest which to pursue first.';
+        const AI_ASK_DESC_LIMIT = 160;
+        const AI_ASK_URL_SOFT_LIMIT = 7500;
+
+        function getFilteredIdeas() {
+            const limitRaw = Number(document.getElementById('find-ai-ask-count')?.value ?? 25);
+            const limit = Number.isFinite(limitRaw) && limitRaw > 0 ? limitRaw : state.filteredIdeas.length;
+            return state.filteredIdeas.slice(0, limit);
+        }
+
+        function buildIdeaList(ideas, includeDesc) {
+            return ideas.map((idea, index) => {
+                const line = `${index + 1}. ${idea.title}`;
+                if (!includeDesc) return line;
+                const desc = String(idea.description || '').replace(/\s+/g, ' ').trim();
+                const shortDesc = desc.length > AI_ASK_DESC_LIMIT ? desc.slice(0, AI_ASK_DESC_LIMIT - 1) + '…' : desc;
+                return shortDesc ? `${line} — ${shortDesc}` : line;
+            }).join('\n');
+        }
+
+        function buildAiAskFilterContext() {
+            const bits = [];
+            if (state.search.trim()) bits.push('Search: ' + state.search.trim());
+            if (state.minScore > 0) bits.push('Min votes: ' + state.minScore);
+            bits.push('Source: ' + (state.activeTab === 'all' ? 'ALL' : (SOURCE_NAMES[state.activeTab] || state.activeTab)));
+            return bits.join(' • ');
+        }
+
+        function buildAiAskPrompt() {
+            const questionEl = document.getElementById('find-ai-ask-question');
+            const question = (questionEl?.value || AI_ASK_DEFAULT_QUESTION).trim();
+            const includeDescModal = document.getElementById('find-ai-ask-include-desc-modal')?.checked ?? true;
+            const ideas = getFilteredIdeas();
+            const list = buildIdeaList(ideas, includeDescModal);
+            return question + '\n\nFilter context: ' + buildAiAskFilterContext() + '\nIdeas (' + ideas.length + '):\n' + list;
+        }
+
+        function buildGoogleAiModeUrl(query) {
+            return 'https://www.google.com/search?q=' + encodeURIComponent(query.trim()) + '&udm=50';
+        }
+
+        function renderAiAskPreview() {
+            const prompt = buildAiAskPrompt();
+            const ideas = getFilteredIdeas();
+            const preview = document.getElementById('find-ai-ask-preview');
+            const meter = document.getElementById('find-ai-ask-meter');
+            const warning = document.getElementById('find-ai-ask-warning');
+            const context = document.getElementById('find-ai-ask-context');
+
+            if (preview) preview.value = prompt;
+
+            const urlLength = buildGoogleAiModeUrl(prompt).length;
+            if (meter) {
+                meter.textContent = ideas.length + ' ideas • ' + prompt.length.toLocaleString() + ' chars • URL ~' + urlLength.toLocaleString();
+            }
+
+            if (context) {
+                context.textContent = state.filteredIdeas.length === ideas.length
+                    ? 'Asking about all ' + ideas.length + ' filtered idea' + (ideas.length === 1 ? '' : 's') + '.'
+                    : 'Asking about the top ' + ideas.length + ' of ' + state.filteredIdeas.length + ' filtered ideas.';
+            }
+
+            if (warning) {
+                if (urlLength > AI_ASK_URL_SOFT_LIMIT) {
+                    warning.hidden = false;
+                    warning.textContent = 'Long prompt — Google may trim it in the URL. It is copied to your clipboard as a backup so you can paste it into AI Mode.';
+                } else {
+                    warning.hidden = true;
+                    warning.textContent = '';
+                }
+            }
+        }
+
+        function openAiAskModal() {
+            if (state.filteredIdeas.length === 0) return;
+            closePromptsMenu();
+            // Sync modal checkbox with stat-bar toggle
+            const statToggle = document.getElementById('find-ask-include-desc');
+            const modalCheck = document.getElementById('find-ai-ask-include-desc-modal');
+            if (statToggle && modalCheck) modalCheck.checked = statToggle.checked;
+            const questionEl = document.getElementById('find-ai-ask-question');
+            if (questionEl && !questionEl.value.trim()) {
+                questionEl.value = AI_ASK_DEFAULT_QUESTION;
+            }
+            renderAiAskPreview();
+            document.getElementById('find-ai-ask-backdrop').hidden = false;
+            const modal = document.getElementById('find-ai-ask-modal');
+            modal.classList.add('open');
+            modal.setAttribute('aria-hidden', 'false');
+            document.body.classList.add('drawer-open');
+        }
+
+        function closeAiAskModal() {
+            closePromptsMenu();
+            document.getElementById('find-ai-ask-backdrop').hidden = true;
+            const modal = document.getElementById('find-ai-ask-modal');
+            modal.classList.remove('open');
+            modal.setAttribute('aria-hidden', 'true');
+            document.body.classList.remove('drawer-open');
+        }
+
+        async function launchAiAsk() {
+            const prompt = buildAiAskPrompt();
+            try {
+                await navigator.clipboard.writeText(prompt);
+            } catch (error) {
+                console.error(error);
+            }
+            window.open(buildGoogleAiModeUrl(prompt), '_blank', 'noopener');
+            const span = document.querySelector('#find-ai-ask-open span');
+            if (span) {
+                span.textContent = 'Opened ✓ (prompt copied)';
+                setTimeout(() => { span.textContent = 'Open in Google AI Mode'; }, 1800);
+            }
+        }
+
+        // ── Prompt Templates ──
+
+        const PROMPTS_STORAGE_KEY = 'find-ideas-custom-prompts';
+
+        function loadCustomPrompts() {
+            try { return JSON.parse(localStorage.getItem(PROMPTS_STORAGE_KEY)) || []; }
+            catch { return []; }
+        }
+
+        function saveCustomPrompts(prompts) {
+            localStorage.setItem(PROMPTS_STORAGE_KEY, JSON.stringify(prompts));
+        }
+
+        function renderCustomPrompts() {
+            const list = document.getElementById('prompts-custom-list');
+            const group = document.getElementById('prompts-custom-group');
+            const prompts = loadCustomPrompts();
+            if (!prompts.length) { group.hidden = true; return; }
+            group.hidden = false;
+            list.innerHTML = prompts.map((p, i) =>
+                `<div class="prompts-custom-item" data-index="${i}">
+                    <span class="prompts-custom-text">${escapeHtml(p)}</span>
+                    <button class="prompts-del" data-index="${i}" type="button" aria-label="Delete prompt">✕</button>
+                </div>`
+            ).join('');
+            list.querySelectorAll('.prompts-custom-item').forEach(el => {
+                el.addEventListener('click', (e) => {
+                    if (e.target.closest('.prompts-del')) return;
+                    const idx = Number(el.dataset.index);
+                    const prompts = loadCustomPrompts();
+                    if (prompts[idx]) injectPrompt(prompts[idx]);
+                });
+            });
+            list.querySelectorAll('.prompts-del').forEach(btn => {
+                btn.addEventListener('click', (e) => {
+                    e.stopPropagation();
+                    const idx = Number(btn.dataset.index);
+                    let prompts = loadCustomPrompts();
+                    prompts.splice(idx, 1);
+                    saveCustomPrompts(prompts);
+                    renderCustomPrompts();
+                });
+            });
+        }
+
+        function injectPrompt(text) {
+            const ta = document.getElementById('find-ai-ask-question');
+            if (!ta) return;
+            ta.value = text;
+            ta.dispatchEvent(new Event('input'));
+            closePromptsMenu();
+        }
+
+        function closePromptsMenu() {
+            const menu = document.getElementById('find-ask-prompts-menu');
+            const btn = document.getElementById('find-ask-prompts-btn');
+            if (menu) menu.hidden = true;
+            if (btn) btn.classList.remove('open');
+        }
+
+        function togglePromptsMenu() {
+            const menu = document.getElementById('find-ask-prompts-menu');
+            const btn = document.getElementById('find-ask-prompts-btn');
+            if (!menu) return;
+            const isOpen = !menu.hidden;
+            menu.hidden = isOpen;
+            btn.classList.toggle('open', !isOpen);
+            if (!isOpen) renderCustomPrompts();
+        }
+
+        function bindAiAsk() {
+            document.getElementById('find-ask-ai')?.addEventListener('click', openAiAskModal);
+            document.getElementById('find-ai-ask-close')?.addEventListener('click', closeAiAskModal);
+            document.getElementById('find-ai-ask-backdrop')?.addEventListener('click', closeAiAskModal);
+            document.getElementById('find-ai-ask-count')?.addEventListener('change', renderAiAskPreview);
+            document.getElementById('find-ai-ask-include-desc-modal')?.addEventListener('change', renderAiAskPreview);
+            document.getElementById('find-ai-ask-question')?.addEventListener('input', renderAiAskPreview);
+            document.getElementById('find-ai-ask-open')?.addEventListener('click', launchAiAsk);
+
+            document.getElementById('find-ai-ask-copy')?.addEventListener('click', async () => {
+                const btn = document.getElementById('find-ai-ask-copy');
+                try {
+                    await navigator.clipboard.writeText(buildAiAskPrompt());
+                    btn.textContent = 'Copied ✓';
+                } catch (error) {
+                    console.error(error);
+                    btn.textContent = 'Copy failed';
+                }
+                setTimeout(() => { btn.textContent = 'Copy prompt'; }, 1500);
+            });
+
+            document.addEventListener('keydown', (event) => {
+                if (event.key === 'Escape' && document.getElementById('find-ai-ask-modal').classList.contains('open')) {
+                    closeAiAskModal();
+                }
+            });
+
+            // Prompts
+            document.getElementById('find-ask-prompts-btn')?.addEventListener('click', (e) => {
+                e.stopPropagation();
+                togglePromptsMenu();
+            });
+            document.getElementById('find-ask-prompts-add')?.addEventListener('click', () => {
+                const text = window.prompt('Enter your custom prompt:');
+                if (text && text.trim()) {
+                    const prompts = loadCustomPrompts();
+                    prompts.push(text.trim());
+                    saveCustomPrompts(prompts);
+                    renderCustomPrompts();
+                    injectPrompt(text.trim());
+                }
+            });
+            document.querySelectorAll('.prompts-item[data-prompt]').forEach(el => {
+                el.addEventListener('click', () => injectPrompt(el.dataset.prompt));
+            });
+            document.addEventListener('click', (e) => {
+                const wrapper = document.querySelector('.ai-ask-prompts-wrapper');
+                if (wrapper && !wrapper.contains(e.target)) closePromptsMenu();
+            });
+        }
+
+        // ── LLM7 helpers (ported from report.js) ──
+        const LLM7_URL = 'https://api.llm7.io/v1/chat/completions';
+        async function llm7(messages, temperature) {
+            const res = await fetch(LLM7_URL, {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json', 'Authorization': 'Bearer unused' },
+                body: JSON.stringify({ model: 'default', messages, temperature: temperature ?? 0.5 }),
+            });
+            if (!res.ok) throw new Error('LLM7 HTTP ' + res.status);
+            const d = await res.json();
+            return d?.choices?.[0]?.message?.content || '';
+        }
+        function parseJson(text) {
+            if (!text) return null;
+            text = text.replace(/^```(?:json)?/im, '').replace(/```$/m, '').trim();
+            const start = text.indexOf('{');
+            if (start === -1) return null;
+            let depth = 0;
+            for (let i = start; i < text.length; i++) {
+                if (text[i] === '{') depth++;
+                else if (text[i] === '}') { depth--; if (depth === 0) { try { return JSON.parse(text.slice(start, i + 1)); } catch { return null; } } }
+            }
+            return null;
+        }
+
+        // ── Idea Matrix Generator ──
+        const INDUSTRIES = [
+            { id: 'real_estate', label: '🏠 Real Estate', desc: 'Property search, valuation, transactions, rental management' },
+            { id: 'healthcare', label: '🏥 Healthcare', desc: 'Patient records, diagnosis, telemedicine, admin workflows' },
+            { id: 'legal', label: '⚖️ Legal', desc: 'Contract review, compliance, case research, document drafting' },
+            { id: 'logistics', label: '🚚 Logistics', desc: 'Supply chain, fleet management, route optimization, tracking' },
+            { id: 'education', label: '📚 Education', desc: 'Learning platforms, tutoring, curriculum, assessment' },
+            { id: 'finance', label: '💰 Finance', desc: 'Accounting, banking, investment, fraud detection, budgeting' },
+            { id: 'marketing', label: '📢 Marketing', desc: 'Campaigns, content, SEO, analytics, customer insights' },
+            { id: 'ecommerce', label: '🛒 E-commerce', desc: 'Online stores, checkout, inventory, customer support' },
+            { id: 'hr_recruiting', label: '👥 HR & Recruiting', desc: 'Hiring, onboarding, performance, payroll, culture' },
+            { id: 'agriculture', label: '🌾 Agriculture', desc: 'Crop monitoring, supply chain, equipment, yield prediction' },
+        ];
+        const AI_FEATURES = [
+            { id: 'voice_agent', label: 'Voice Agent', icon: '🎤', desc: 'Voice-driven task automation & conversational AI' },
+            { id: 'vision_analysis', label: 'Vision AI', icon: '👁️', desc: 'Image/video recognition, object detection, visual search' },
+            { id: 'automated_workflow', label: 'Auto Workflow', icon: '⚙️', desc: 'Multi-step process automation with AI decision points' },
+            { id: 'document_intel', label: 'Doc Intelligence', icon: '📄', desc: 'Document parsing, summarization, data extraction' },
+            { id: 'chatbot', label: 'Chatbot', icon: '💬', desc: 'Conversational assistants, customer support, Q&A bots' },
+            { id: 'recommendation', label: 'Recommendations', icon: '🎯', desc: 'Personalized suggestions, cross-sell, content curation' },
+            { id: 'predictive', label: 'Predictive', icon: '📊', desc: 'Forecasting, trend analysis, risk scoring, demand planning' },
+            { id: 'content_gen', label: 'Content Gen', icon: '✍️', desc: 'Text/image/video generation, copywriting, creative assets' },
+            { id: 'data_extraction', label: 'Data Extraction', icon: '🔍', desc: 'Entity extraction, web scraping, database mining' },
+            { id: 'sentiment', label: 'Sentiment', icon: '📈', desc: 'Opinion mining, brand monitoring, feedback analysis' },
+        ];
+
+        let matrixSelected = null;
+
+        function renderMatrixGrid() {
+            const grid = document.getElementById('matrix-grid');
+            const cols = AI_FEATURES.length + 1; // +1 for row labels
+
+            grid.style.gridTemplateColumns = `140px repeat(${cols - 1}, 1fr)`;
+
+            // Header row
+            let html = `<div class="matrix-header-cell" style="background:transparent"></div>`;
+            AI_FEATURES.forEach(f => {
+                html += `<div class="matrix-header-cell" title="${escapeHtml(f.desc)}">${f.icon} ${f.label}</div>`;
+            });
+
+            // Industry rows
+            INDUSTRIES.forEach(ind => {
+                html += `<div class="matrix-row-label" title="${escapeHtml(ind.desc)}">${ind.label}</div>`;
+                AI_FEATURES.forEach(af => {
+                    const key = `${ind.id}__${af.id}`;
+                    const sel = matrixSelected === key ? ' selected' : '';
+                    html += `<div class="matrix-cell${sel}" data-key="${key}" data-industry="${escapeHtml(ind.label)}" data-feature="${escapeHtml(af.label)}" data-industry-id="${ind.id}" data-feature-id="${af.id}">
+                        <span class="cell-icon">${af.icon}</span>
+                        <span class="cell-label">${ind.label.split(' ').slice(1).join(' ')}</span>
+                    </div>`;
+                });
+            });
+
+            grid.innerHTML = html;
+
+            grid.querySelectorAll('.matrix-cell').forEach(cell => {
+                cell.addEventListener('click', () => {
+                    const key = cell.dataset.key;
+                    grid.querySelectorAll('.matrix-cell').forEach(c => c.classList.remove('selected'));
+                    cell.classList.add('selected');
+                    matrixSelected = key;
+                    showMatrixDetail(cell.dataset.industry, cell.dataset.feature, cell.dataset.industryId, cell.dataset.featureId);
+                });
+            });
+        }
+
+        function buildMatrixPrompt(industry, feature, industryId, featureId) {
+            const ind = INDUSTRIES.find(i => i.id === industryId);
+            const af = AI_FEATURES.find(f => f.id === featureId);
+            const indDesc = ind ? ind.desc : industry;
+            const afDesc = af ? af.desc : feature;
+            const prompt = `You are a startup analyst. Generate a concrete, actionable SaaS startup idea that applies **${feature}** (${afDesc}) to the **${industry}** industry (${indDesc}).
+
+Respond with STRICT JSON only (no markdown, no prose) in this exact format:
+{
+  "title": "Catchy startup name",
+  "one_liner": "What it does in one sentence (30 words max)",
+  "pain_point": "The specific problem it solves for this industry",
+  "target_user": "Who exactly pays for this (be specific — role, company size, budget)",
+  "how_it_works": "How AI + ${feature} solves the problem (2-3 sentences)",
+  "app_ideas": ["MVP feature 1", "MVP feature 2", "MVP feature 3", "Growth feature"],
+  "monetization": "Pricing model (SaaS tier / usage-based / hybrid + estimated price point)",
+  "competitors": ["Alternative 1", "Alternative 2", "Alternative 3"],
+  "opportunity": 0,
+  "why_now": "Why this is the right time to build this",
+  "risks": "Key risks and how to mitigate them"
+}
+
+Fill "opportunity" with a number 1-10 based on: market size + urgency + lack of good solutions + AI feasibility.`;
+            return prompt;
+        }
+
+        function showMatrixDetail(industry, feature, industryId, featureId) {
+            const detail = document.getElementById('matrix-detail');
+            document.getElementById('md-title').textContent = `${industry} × ${feature}`;
+            document.getElementById('md-desc').textContent = `Apply ${feature} to solve real problems in ${industry}. Click "Generate with AI" to create a detailed startup idea.`;
+            const prompt = buildMatrixPrompt(industry, feature, industryId, featureId);
+            document.getElementById('md-prompt').value = prompt;
+            document.getElementById('matrix-result').hidden = true;
+            detail.hidden = false;
+        }
+
+        async function generateMatrixIdea() {
+            const prompt = document.getElementById('md-prompt').value;
+            if (!prompt) return;
+            const btn = document.getElementById('md-generate');
+            const result = document.getElementById('matrix-result');
+            const label = btn.textContent;
+            btn.disabled = true; btn.textContent = 'Generating…';
+            result.hidden = false;
+            result.innerHTML = '<div class="mr-note">Generating idea via LLM7… (5-10 seconds)</div>';
+
+            try {
+                const messages = [
+                    { role: 'system', content: 'You are a startup analyst. Always respond with strict JSON only, no markdown, no prose. Follow the format requested exactly.' },
+                    { role: 'user', content: prompt },
+                ];
+                const raw = await llm7(messages, 0.6);
+                const data = parseJson(raw);
+                if (!data) throw new Error('Could not parse the model response. Raw: ' + raw.slice(0, 200));
+                renderMatrixResult(data);
+            } catch (e) {
+                result.innerHTML = `<div class="mr-note">Generation failed: ${escapeHtml(e.message)}. Try "Ask AI Mode" instead.</div>`;
+            } finally {
+                btn.disabled = false; btn.textContent = label;
+            }
+        }
+
+        function renderMatrixResult(d) {
+            const result = document.getElementById('matrix-result');
+            const ideas = (d.app_ideas || []).map(x => `<li>${escapeHtml(x)}</li>`).join('');
+            const comps = (d.competitors || []).map(x => `<li>${escapeHtml(x)}</li>`).join('');
+            const opp = Number.isFinite(+d.opportunity) ? +d.opportunity : '–';
+            result.innerHTML = `
+                <div style="display:flex;align-items:flex-start;justify-content:space-between;gap:10px">
+                    <h4>${escapeHtml(d.title || 'Startup Idea')}</h4>
+                    <span class="mr-opp">${opp}/10 opportunity</span>
+                </div>
+                ${d.one_liner ? `<p style="color:var(--text-secondary);font-size:0.9rem;margin:4px 0 10px">${escapeHtml(d.one_liner)}</p>` : ''}
+                <div class="mr-grid">
+                    ${d.pain_point ? `<div class="mr-block"><b>Pain point</b><div>${escapeHtml(d.pain_point)}</div></div>` : ''}
+                    ${d.target_user ? `<div class="mr-block"><b>Who pays</b><div>${escapeHtml(d.target_user)}</div></div>` : ''}
+                    ${d.how_it_works ? `<div class="mr-block"><b>How it works</b><div>${escapeHtml(d.how_it_works)}</div></div>` : ''}
+                    ${ideas ? `<div class="mr-block"><b>Build ideas</b><ul>${ideas}</ul></div>` : ''}
+                    ${comps ? `<div class="mr-block"><b>Competitors</b><ul>${comps}</ul></div>` : ''}
+                    ${d.monetization ? `<div class="mr-block"><b>Monetize</b><div>${escapeHtml(d.monetization)}</div></div>` : ''}
+                    ${d.why_now ? `<div class="mr-block"><b>Why now</b><div>${escapeHtml(d.why_now)}</div></div>` : ''}
+                    ${d.risks ? `<div class="mr-block"><b>Risks</b><div>${escapeHtml(d.risks)}</div></div>` : ''}
+                </div>
+                <div class="mr-note">Generated live via LLM7 — verify before acting.</div>`;
+            result.hidden = false;
+        }
+
+        async function copyMatrixPrompt() {
+            const prompt = document.getElementById('md-prompt').value;
+            try {
+                await navigator.clipboard.writeText(prompt);
+                const btn = document.getElementById('md-copy');
+                btn.textContent = '✅ Copied!';
+                setTimeout(() => { btn.textContent = '📋 Copy prompt'; }, 1500);
+            } catch {}
+        }
+
+        function askMatrixAIMode() {
+            const prompt = document.getElementById('md-prompt').value;
+            navigator.clipboard.writeText(prompt).catch(() => {});
+            window.open('https://www.google.com/search?q=' + encodeURIComponent(prompt) + '&udm=50', '_blank', 'noopener');
+        }
+
+        function toggleMatrixMode() {
+            state.matrixMode = !state.matrixMode;
+            const btn = document.getElementById('matrix-toggle');
+            const section = document.getElementById('matrix-section');
+            const results = document.querySelector('.panel');
+            btn.classList.toggle('active', state.matrixMode);
+            results.hidden = state.matrixMode;
+            section.hidden = !state.matrixMode;
+            if (state.matrixMode) renderMatrixGrid();
+        }
+
+        function bindMatrix() {
+            document.getElementById('matrix-toggle').addEventListener('click', toggleMatrixMode);
+            document.getElementById('md-copy').addEventListener('click', copyMatrixPrompt);
+            document.getElementById('md-ask-ai').addEventListener('click', askMatrixAIMode);
+            document.getElementById('md-generate').addEventListener('click', generateMatrixIdea);
+        }
+
+        document.addEventListener('DOMContentLoaded', () => { bindControls(); bindAiAsk(); bindMatrix(); loadIdeas(); });
+    </script>
+    <script src="translate.js?v=20260723-3"></script>
+</body>
+</html>

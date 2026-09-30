@@ -1,0 +1,974 @@
+{
+  "meta": {
+    "date": "2026-08-25",
+    "papers_tracked": 15,
+    "technologies_discovered": 34,
+    "opportunities_identified": 0,
+    "last_update": "2026-08-25 05:55 UTC",
+    "backend": "llm7",
+    "model": "Research Curator v1"
+  },
+  "brief": [
+    {
+      "technology": "Reinforcement Learning",
+      "why_it_matters": "Reinforcement Learning is advancing rapidly, enabling more sophisticated decision-making in complex environments. This is crucial for product builders as it allows for the creation of more intelligent, adaptive systems.",
+      "opportunity": "Developing AI-driven decision-making systems for various domains such as robotics, automotive, and enterprise applications."
+    },
+    {
+      "technology": "Multimodal Learning",
+      "why_it_matters": "Multimodal Learning integrates multiple data types (text, images, videos, etc.), leading to more comprehensive and context-aware AI systems. This is significant for product builders as it enhances the capabilities of AI systems to understand and interact with the world.",
+      "opportunity": "Creating AI systems that can process and generate content across multiple modalities, enabling applications in education, creative industries, and enterprise solutions."
+    },
+    {
+      "technology": "Retrieval Augmented Generation",
+      "why_it_matters": "Retrieval Augmented Generation combines retrieval-based methods with generative models, improving the accuracy and relevance of generated content. This is important for product builders as it enhances the quality of AI-generated outputs.",
+      "opportunity": "Developing AI systems that can generate high-quality, contextually relevant content, suitable for applications in education, creative industries, and enterprise solutions."
+    },
+    {
+      "technology": "Agentic Tool Planning",
+      "why_it_matters": "Agentic Tool Planning enables AI agents to plan and execute tasks using a variety of tools, leading to more versatile and capable AI systems. This is crucial for product builders as it allows for the creation of more flexible and powerful AI agents.",
+      "opportunity": "Developing AI agents that can plan and execute complex tasks using a variety of tools, enabling applications in education, creative industries, and enterprise solutions."
+    },
+    {
+      "technology": "Knowledge Distillation",
+      "why_it_matters": "Knowledge Distillation transfers knowledge from large, complex models to smaller, more efficient models, making AI systems more practical and deployable. This is important for product builders as it enables the creation of more efficient and scalable AI systems.",
+      "opportunity": "Developing efficient and scalable AI systems for various domains such as robotics, automotive, and enterprise applications."
+    }
+  ],
+  "top_cards": [
+    {
+      "id": "new_technologies",
+      "title": "New Technologies",
+      "value": "34",
+      "label": "discovered this scan",
+      "detail": "Video Understanding, Multimodal Learning, Reinforcement Learning, Retrieval Augmented Generation, Active Video Grounding, Agentic Tool Planning, Knowledge Distillation, Mixture of Experts",
+      "color": "accent"
+    },
+    {
+      "id": "emerging_trends",
+      "title": "Emerging Trends",
+      "value": "34",
+      "label": "active trend clusters",
+      "detail": "Knowledge Distillation, Mixture of Experts, Low-Rank Adaptation, Chain-of-Thought Prompting, Multi-Agent Systems",
+      "color": "green"
+    },
+    {
+      "id": "highest_potential",
+      "title": "Highest Potential",
+      "value": "8.0",
+      "label": "avg opportunity score",
+      "detail": "Thinking Beyond Videos: Unifying Video Reasoning and Deep Research for Open-Worl",
+      "color": "amber"
+    },
+    {
+      "id": "biggest_surprise",
+      "title": "Biggest Surprise",
+      "value": "Thinking Beyond Videos: Unifyi",
+      "label": "confidence 80%",
+      "detail": "",
+      "color": "purple"
+    },
+    {
+      "id": "most_practical",
+      "title": "Most Practical",
+      "value": "MAVEN-T: Reinforced Heterogene",
+      "label": "highest confidence paper",
+      "detail": "Real-time autonomous driving systems with improved trajectory prediction, Enhanced safety features in autonomous vehicles through collision avoidance and comfort optimization",
+      "color": "success"
+    },
+    {
+      "id": "most_innovative",
+      "title": "Most Innovative",
+      "value": "0",
+      "label": "early-stage technologies",
+      "detail": "MobilePA-Bench: Benchmarking Mobile Planner Agents on Complex Real-World Tasks",
+      "color": "blue"
+    }
+  ],
+  "papers": [
+    {
+      "id": "2608.23329",
+      "title": "Thinking Beyond Videos: Unifying Video Reasoning and Deep Research for Open-World Video Agents",
+      "authors": [
+        "Wenqi Liu",
+        "Shijie Ma",
+        "Yunxiao Wang",
+        "Meng Liu",
+        "Qile Su",
+        "Han Liu",
+        "Bohan Hou",
+        "Xuanyu Zheng",
+        "Changyi Liu",
+        "Tianke Zhang",
+        "Haonan Fan",
+        "Kaiyu Jiang",
+        "Yingxin Li",
+        "Jiankang Chen",
+        "Xu Wang",
+        "Bin Wen",
+        "Tingting Gao",
+        "Han Li",
+        "Jianhua Yin",
+        "Yinwei Wei",
+        "Xuemeng Song"
+      ],
+      "categories": [
+        "cs.CV",
+        "cs.AI"
+      ],
+      "published": "2026-08-24",
+      "updated": "2026-08-24",
+      "summary": "Open-world video understanding often requires a model to locate sparse visual evidence and acquire external knowledge that is absent from the video and its parametric memory. While Thinking-with-Videos enables active temporal perception and Deep Research supports multi-step information seeking, the two capabilities are typically developed in isolation. We introduce VideoRover, a unified Video Deep Research framework that iteratively coordinates video cropping, multimodal search, and webpage browsing. Given a video-question pair, VideoRover uses each tool result to select the next action, so localized video clips guide external retrieval and retrieved evidence triggers further video inspection and verification. To develop this capability, we construct an automated data curation pipeline, producing 26K verified SFT trajectories and 3K challenging RL instances. We also introduce VideoRover-Bench, a benchmark stratified by video duration and research difficulty. Experiments on VideoDR and VideoRover-Bench show that our VideoRover-8B-RL achieves performance comparable to proprietary models in the direct-answer setting without tool use while outperforming larger open-source models equipped with the same tool suite. Ablation studies and training dynamics further validate the complementary roles of active video grounding, external retrieval, and long-horizon reinforcement learning.",
+      "pdf_url": "https://arxiv.org/pdf/2608.23329v1",
+      "comment": "",
+      "technologies": [
+        "Video Understanding",
+        "Multimodal Learning",
+        "Reinforcement Learning",
+        "Retrieval Augmented Generation",
+        "Active Video Grounding"
+      ],
+      "maturity": "early",
+      "confidence": 0.8,
+      "curator_score": 6.0,
+      "product_potential": [
+        "AI-powered video analysis tool for content creators",
+        "Personalized video recommendation system with deep research capabilities",
+        "AI assistant for educational content creation and analysis"
+      ],
+      "domain_applications": [
+        "education",
+        "creative",
+        "other"
+      ]
+    },
+    {
+      "id": "2603.29902",
+      "title": "ATP-Bench: Towards Agentic Tool Planning for MLLM Interleaved Generation",
+      "authors": [],
+      "categories": [
+        "cs.AI"
+      ],
+      "published": "2026-08-25",
+      "updated": "2026-08-25",
+      "summary": "arXiv:2603.29902v2 Announce Type: replace Abstract: Interleaved text-and-image generation represents a significant frontier for Multimodal Large Language Models (MLLMs), offering a more intuitive way to convey complex information. Current paradigms rely on either image generation or retrieval augmentation, yet they typically treat the two as mutually exclusive paths, failing to unify factuality with creativity. We argue that the next milestone in this field is Agentic Tool Planning, where the model serves as a central controller that autonomously determines when, where, and which tools to invoke to produce interleaved responses for visual-critical queries. To systematically evaluate this paradigm, we introduce ATP-Bench, a novel benchmark comprising 7,702 QA pairs (including 1,592 VQA pairs) across eight categories and 25 visual-critical intents, featuring human-verified queries and ground truths. Furthermore, to evaluate agentic planning independent of end-to-end execution and changing tool backends, we propose a Multi-Agent MLLM-as-a-Judge (MAM) system. MAM evaluates tool-call precision, identifies missed opportunities for tool use, and assesses overall response quality without requiring ground-truth references. Our extensive experiments on 10 state-of-the-art MLLMs reveal that models struggle with coherent interleaved planning and exhibit significant variations in tool-use behavior, highlighting substantial room for improvement and providing actionable guidance for advancing interleaved generation. Dataset and code are available at https://github.com/Qwen-Applications/ATP-Bench.",
+      "pdf_url": "https://arxiv.org/abs/2603.29902",
+      "comment": "",
+      "technologies": [
+        "Agentic Tool Planning",
+        "Multimodal Learning",
+        "Retrieval Augmented Generation"
+      ],
+      "maturity": "early",
+      "confidence": 0.8,
+      "curator_score": 6.0,
+      "product_potential": [
+        "Developing an AI assistant that can autonomously determine when and how to use various tools (e.g., image generation, retrieval, etc.) to provide interleaved text-and-image responses for complex queries.",
+        "Creating a benchmarking tool for evaluating the performance of MLLMs in agentic tool planning and interleaved generation tasks."
+      ],
+      "domain_applications": [
+        "education",
+        "creative",
+        "enterprise",
+        "other"
+      ]
+    },
+    {
+      "id": "2604.10169",
+      "title": "MAVEN-T: Reinforced Heterogeneous Distillation for Real-Time Multi-Agent Trajectory Prediction",
+      "authors": [],
+      "categories": [
+        "cs.AI"
+      ],
+      "published": "2026-08-25",
+      "updated": "2026-08-25",
+      "summary": "arXiv:2604.10169v4 Announce Type: replace Abstract: Trajectory prediction is a key component of autonomous driving systems because future motions directly affect collision checking, behavior planning, and control. The task remains challenging under dense interactions, heterogeneous behaviors, multimodal futures, and limited on-board computation. Existing graph, attention, and generative predictors improve interaction reasoning or uncertainty modeling, but their high-capacity designs are often costly for real-time deployment. Lightweight predictors and conventional distillation reduce inference cost, yet usually rely on static imitation and do not explicitly correct safety-relevant teacher bias. This paper proposes \\textbf{MAVEN-T}, a reinforced heterogeneous distillation framework for real-time multi-agent trajectory prediction. A high-capacity teacher models directed local interactions with a surround-aware graph encoder, combines efficient temporal filtering with shifted-window spatial attention, and decodes maneuver-specific futures through a sparse Mixture-of-Experts head. A compact GRU--Squeeze-and-Excitation student with a Low-Rank Adapted policy head is trained by feature-, attention-, and semantic-level distillation. To align prediction with downstream behavior, the student is further refined by Proximal Policy Optimization rewards for collision avoidance, comfort, and progress, while a complexity-aware curriculum and Elastic Weight Consolidation stabilize stage-wise training. Experiments on NGSIM, HighD, MoCAD, Argoverse~2, and the Waymo Open Motion Dataset evaluate accuracy, efficiency, generalization, robustness, and closed-loop safety. The student achieves 6.2$\\times$ parameter compression, 3.7$\\times$ inference acceleration, and 14.6,ms latency on an NVIDIA Jetson AGX Orin while maintaining competitive accuracy.",
+      "pdf_url": "https://arxiv.org/abs/2604.10169",
+      "comment": "",
+      "technologies": [
+        "Knowledge Distillation",
+        "Mixture of Experts",
+        "Low-Rank Adaptation",
+        "Reinforcement Learning from Human Feedback"
+      ],
+      "maturity": "medium",
+      "confidence": 0.85,
+      "curator_score": 6.0,
+      "product_potential": [
+        "Real-time autonomous driving systems with improved trajectory prediction",
+        "Enhanced safety features in autonomous vehicles through collision avoidance and comfort optimization"
+      ],
+      "domain_applications": [
+        "robotics",
+        "automotive"
+      ]
+    },
+    {
+      "id": "2606.08405",
+      "title": "Self-Evolving Scientific Agent Discovers Generalizable Physically-Reasoned Fluid Control",
+      "authors": [],
+      "categories": [
+        "cs.AI"
+      ],
+      "published": "2026-08-25",
+      "updated": "2026-08-25",
+      "summary": "arXiv:2606.08405v2 Announce Type: replace Abstract: While data-intensive deep reinforcement learning can optimize complex control policies, scientific control design in physical systems fundamentally requires an interpretable chain of reasoning that connects physical evidence to structured control architectures. Here, we present a self-evolving scientific agent workflow, driven by large language models and iterative code generation, that automates controller construction while preserving strict interpretability and rigorous physical reasoning. Instead of adjusting weights, the agent deploys candidate whitebox controllers into physical simulations, actively diagnoses dynamic behaviors from multimodal evidence, and translates these observations into progressive source-code refinements. We demonstrate this framework on a highly non-linear fluid-structure interaction problem: an underactuated, two-joint dogfish swimmer tasked with spatial target reaching in an unsteady flow using only joint angular accelerations. Starting from a target-blind propulsive seed, the agent autonomously designs and refines a unified controller that reaches a target embedded in an unsteady four-cylinder wake. Without retraining, retuning or case-specific branching, the retained controller achieves target capture across the full generalization test matrix, spanning variations in target position, rear-row geometry, cylinder count and inflow speed. The auditable evolution log reveals an emergent control architecture built upon travelling-wave propulsion, body-frame bearing guidance, phase-selective steering, corrective burst and adaptive relief. Our results show that an autonomous scientific agent can successfully transform accumulated physical evidence into a robust, mathematically readable control policy, while maintaining a fully traceable process of scientific control design.",
+      "pdf_url": "https://arxiv.org/abs/2606.08405",
+      "comment": "",
+      "technologies": [
+        "Reinforcement Learning",
+        "Large Language Models",
+        "Code Generation",
+        "Multimodal Learning"
+      ],
+      "maturity": "early",
+      "confidence": 0.7,
+      "curator_score": 6.0,
+      "product_potential": [
+        "Automated design of fluid control systems for underwater vehicles",
+        "Interpretable AI-driven control policies for industrial fluid dynamics"
+      ],
+      "domain_applications": [
+        "science",
+        "robotics"
+      ]
+    },
+    {
+      "id": "2603.16673",
+      "title": "When Should a Robot Think? Resource-Aware Reasoning via Reinforcement Learning for Embodied Robotic Decision-Making",
+      "authors": [],
+      "categories": [
+        "cs.AI"
+      ],
+      "published": "2026-08-25",
+      "updated": "2026-08-25",
+      "summary": "arXiv:2603.16673v5 Announce Type: replace-cross Abstract: Embodied robotic systems increasingly rely on large language model (LLM)-based agents to support high-level reasoning, planning, and decision-making during interactions with the environment. However, invoking LLM reasoning introduces substantial computational latency and resource overhead, which can interrupt action execution and reduce system reliability. Excessive reasoning may delay actions, while insufficient reasoning often leads to incorrect decisions and task failures. This raises a fundamental question for embodied agents: when should the agent reason, and when should it act? In this work, we propose RARRL (Resource-Aware Reasoning via Reinforcement Learning), a hierarchical framework for resource-aware orchestration of embodied agents. Rather than learning low-level control policies, RARRL learns a high-level orchestration policy that operates at the agent's decision-making layer. This policy enables the agent to adaptively determine whether to invoke reasoning, which reasoning role to employ, and how much computational budget to allocate based on current observations, execution history, and remaining resources. Extensive experiments, including evaluations with empirical latency profiles derived from the ALFRED benchmark, show that RARRL consistently improves task success rates while reducing execution latency and enhancing robustness compared with fixed or heuristic reasoning strategies. These results demonstrate that adaptive reasoning control is essential for building reliable and efficient embodied robotic agents.",
+      "pdf_url": "https://arxiv.org/abs/2603.16673",
+      "comment": "",
+      "technologies": [
+        "Reinforcement Learning",
+        "Hierarchical Framework"
+      ],
+      "maturity": "medium",
+      "confidence": 0.8,
+      "curator_score": 6.0,
+      "product_potential": [
+        "Adaptive robotic assistants for dynamic environments",
+        "Efficient task automation systems with real-time decision-making",
+        "Resource-optimized AI-driven robotic systems"
+      ],
+      "domain_applications": [
+        "robotics",
+        "enterprise"
+      ]
+    },
+    {
+      "id": "2608.20341",
+      "title": "SDAD: Spec-Driven Agentic Development for the AI-Native SDLC",
+      "authors": [],
+      "categories": [
+        "cs.AI"
+      ],
+      "published": "2026-08-24",
+      "updated": "2026-08-24",
+      "summary": "arXiv:2608.20341v1 Announce Type: new Abstract: Frontier coding agents backed by large language models with context windows from hundreds of thousands to millions of tokens are restructuring the Software Development Life Cycle (SDLC). Rich context handling and multi-step reasoning now allow substantial Functional Requirement Documents (FRDs) and repository context to be ingested in a single workflow, making specification quality the execution fuel for autonomous delivery. This report formalises Spec-Driven Agentic Development (SDAD) as a synthesis of disciplined up-front formalisation and high-velocity implementation: intent capture, machine-readable specification, agentic synthesis, and independent multi-agent verification under human sign-off. We revisit the historical pendulum between Waterfall and Agile, introduce AI-code as a fourth production paradigm, and compare Human-Agile (circa 2020) with Agentic-SDAD (circa 2026) across artefacts, cadence, accountability, and security posture. Beyond process description, we extend the model to team role metamorphosis (engineer, QA, platform, and product functions), quantitative governance (Ambiguity Tax, Spec Fidelity, SER, and TCI_agentic with repair multiplier phi), and pragmatic adoption via hybrid estimation and a staged migration blueprint. Industrial and research evidence on AI-augmented testing and verification is integrated to motivate separation between synthesis and release authority. Overall, the paper argues that agentic speed does not eliminate engineering discipline; it relocates discipline upstream into specification precision, explicit gates, and auditable provenance.",
+      "pdf_url": "https://arxiv.org/abs/2608.20341",
+      "comment": "",
+      "technologies": [
+        "Chain-of-Thought Prompting",
+        "Multi-Agent Systems",
+        "Retrieval Augmented Generation",
+        "Automated Software Testing",
+        "Formal Verification"
+      ],
+      "maturity": "medium",
+      "confidence": 0.85,
+      "curator_score": 5.9,
+      "product_potential": [
+        "Automated specification-to-code compliance auditing platform",
+        "Agentic SDLC orchestration engine for enterprise software delivery",
+        "Automated requirement ambiguity analysis and refinement tool"
+      ],
+      "domain_applications": [
+        "enterprise"
+      ]
+    },
+    {
+      "id": "2608.20349",
+      "title": "Beyond Prompt Engineering: A Systematic Analysis of Prompt Lexical Sensitivity and Its Impacts on Quality",
+      "authors": [],
+      "categories": [
+        "cs.AI"
+      ],
+      "published": "2026-08-24",
+      "updated": "2026-08-24",
+      "summary": "arXiv:2608.20349v1 Announce Type: cross Abstract: Large Language Models (LLMs) exhibit extreme sensitivity to surface-level prompt variations, in which minor lexical changes can trigger disproportionate performance fluctuations. Moving beyond black-box optimization and coarse-grained templates, we present the first large-scale, n-gram token-level mechanistic analysis of prompt stability, leveraging a dataset of 132,000 prompt variants. Our investigation reveals a fundamental Scaling Law of Prompt Performance Stability: higher average task performance is strongly associated with lower variance and greater robustness across prompt perturbation. We identify two core linguistic drivers underlying this robustness: (1) Domain-Specific Terminology, which tightly anchors semantic boundaries, and (2) Explicit Action Directives, which formalize reasoning trajectories. Together, these elements constrain the model's interpretative space, effectively ``locking in'' more deterministic generation behavior. Building on these insights, we introduce an automated Prompt-Refining Agent that systematically restructures input queries by injecting domain anchoring and operational constraints. Empirical evaluation shows that our approach reduces performance variance by 40.7% in code generation task, while preserving or improving mean performance. These findings provide a statistically grounded and mechanistically interpretable framework for achieving robust prompt engineering.",
+      "pdf_url": "https://arxiv.org/abs/2608.20349",
+      "comment": "",
+      "technologies": [
+        "Prompt Stability Analysis",
+        "Prompt-Refining Agent"
+      ],
+      "maturity": "medium",
+      "confidence": 0.85,
+      "curator_score": 5.7,
+      "product_potential": [
+        "Automated Prompt Optimization Tool",
+        "Domain-Specific LLM Fine-Tuning Platform"
+      ],
+      "domain_applications": [
+        "education",
+        "enterprise",
+        "other"
+      ]
+    },
+    {
+      "id": "2608.20481",
+      "title": "AEGIS: Preventing Cross-Domain Resource Abuse in MCP",
+      "authors": [],
+      "categories": [
+        "cs.AI"
+      ],
+      "published": "2026-08-24",
+      "updated": "2026-08-24",
+      "summary": "arXiv:2608.20481v1 Announce Type: cross Abstract: The Model Context Protocol (MCP) is an open source JSON-RPC protocol that standardizes how large language models (LLMs) interact with external systems through programmatic functions known as tools. Attackers or malicious agents can exploit certain modalities of these MCP tools to degrade the overall quality of service of agent-based applications. For example, an agent may request an excessively large search radius or very long videos, overloading backend systems and potentially causing slowdowns or denial-of-service. Each modality including text, images, video, and location introduces distinct vectors for resource abuse, complicating the development of consistent mitigation strategies. Moreover, multimodal and crossdomain tools expose diverse request schemas and parameters, making it difficult to define policies that are both generalizable and precise enough to enforce meaningful resource constraints. In this paper, we present AEGIS, a policy enforcement component that enables administrators to define fine-grained safeguards against resource abuse across heterogeneous MCP tools and modalities. AEGIS leverages the reasoning capabilities of large language models to analyze, categorize, and normalize diverse tool invocations into a unified, policy-friendly representation accessible to security practitioners. Integrated with the Open Policy Agent and the ContextForge AI Gateway, AEGIS detects and mitigates abusive behaviors while preserving the flexibility of MCP-based agent ecosystems.",
+      "pdf_url": "https://arxiv.org/abs/2608.20481",
+      "comment": "",
+      "technologies": [
+        "Policy Enforcement",
+        "Resource Abuse Mitigation",
+        "Multimodal Learning"
+      ],
+      "maturity": "early",
+      "confidence": 0.8,
+      "curator_score": 5.7,
+      "product_potential": [
+        "A security framework for AI agents to prevent resource abuse in multimodal applications",
+        "A policy management tool for administrators to enforce resource constraints across heterogeneous tools"
+      ],
+      "domain_applications": [
+        "enterprise",
+        "other"
+      ]
+    },
+    {
+      "id": "2608.20634",
+      "title": "AgentMercury: Your Agent Can Synthesize Verifiable Environments for Business Scenarios at scale",
+      "authors": [],
+      "categories": [
+        "cs.AI"
+      ],
+      "published": "2026-08-24",
+      "updated": "2026-08-24",
+      "summary": "arXiv:2608.20634v1 Announce Type: cross Abstract: Agents learn to act through interaction with environments, yet the environments used for training are often manually constructed or synthesized around predefined tasks and benchmarks. This task-centric paradigm makes it difficult to scale environments that reflect realistic and evolving workflows where diverse tasks can naturally emerge from the underlying world. We introduce AgentMercury, a scalable framework for synthesizing executable environments from high-level business scenarios. Rather than constructing an environment for a specific task, AgentMercury first instantiates a persistent world with entities, services, tools, state, and executable cross-service invariants, from which diverse tasks and interaction trajectories can subsequently emerge. We construct 4,783 executable environments spanning 14 industries and 50 countries, and use them as training substrates for reinforcement learning. Despite being generated without targeting the evaluation benchmarks, policies trained on these business-oriented environments improve substantially on both enterprise workflows and out-of-domain benchmarks spanning reasoning, coding, scientific computing, and tool use. In our experiments, Qwen3.5-4B improves from 12.3 to 15.7 on EnterpriseOps-GYM and from 45.9 to 56.0 on AIME26 after training on AgentMercury environments. We further show that the construction process itself can be learned: fine-tuning Qwen3.5-35B-A3B on construction traces increases executable-world authoring success from 3.3% to 83.3% on held-out business scenarios. These results show that scenario-grounded environments can provide useful and generalizable learning signals beyond benchmark-specific training, while their construction can itself become a learnable capability.",
+      "pdf_url": "https://arxiv.org/abs/2608.20634",
+      "comment": "",
+      "technologies": [
+        "Reinforcement Learning from Human Feedback",
+        "Multimodal Learning"
+      ],
+      "maturity": "medium",
+      "confidence": 0.85,
+      "curator_score": 5.7,
+      "product_potential": [
+        "A scalable platform for synthesizing and managing business environments for AI training and evaluation",
+        "An AI-powered tool for automating the creation of executable environments from high-level business scenarios"
+      ],
+      "domain_applications": [
+        "enterprise",
+        "finance",
+        "other"
+      ]
+    },
+    {
+      "id": "2508.14313",
+      "title": "AIRL-S: Unifying Reinforcement Learning and Search-Based Test-Time Scaling via Adversarial Inverse Reinforcement Learning",
+      "authors": [],
+      "categories": [
+        "cs.AI"
+      ],
+      "published": "2026-08-24",
+      "updated": "2026-08-24",
+      "summary": "arXiv:2508.14313v4 Announce Type: replace-cross Abstract: Test-time scaling strategies for Large Language Models predominantly rely on either reinforcement learning with sparse outcome rewards or search-based methods guided by static Process Reward Models. However, outcome-based RL often suffers from training instability and sample inefficiency, while static PRMs require expensive step-wise supervision and are susceptible to reward hacking due to distributional shifts. In this paper, we introduce AIRL-S, a unified framework that integrates Adversarial Inverse Reinforcement Learning with Group Relative Policy Optimization. By inferring a dense, step-wise reward model directly from reference trajectories, AIRL-S eliminates the dependency on labeled process data and uses the same learned PRM as both a training signal and a verifier for search-based TTS. Extensive evaluations across eight benchmarks in mathematics, science, and code generation demonstrate that our policy model improves average performance by 9\\% over the base model, matching GPT-4o. We further analyze how the AIRL and GRPO objectives complement each other and how the learned PRM transfers across generators and search algorithms, establishing a robust and cost-effective methodology for scaling test-time computation in complex reasoning tasks.",
+      "pdf_url": "https://arxiv.org/abs/2508.14313",
+      "comment": "",
+      "technologies": [
+        "Adversarial Inverse Reinforcement Learning",
+        "Group Relative Policy Optimization",
+        "Test-Time Scaling"
+      ],
+      "maturity": "early",
+      "confidence": 0.8,
+      "curator_score": 5.7,
+      "product_potential": [
+        "Enhanced AI-driven test-time scaling for complex reasoning tasks in various domains",
+        "Cost-effective methodology for improving performance of large language models in real-time applications"
+      ],
+      "domain_applications": [
+        "science",
+        "education",
+        "enterprise",
+        "other"
+      ]
+    },
+    {
+      "id": "2608.20359",
+      "title": "Self-Speculation for Faster Reasoning Models",
+      "authors": [],
+      "categories": [
+        "cs.CL"
+      ],
+      "published": "2026-08-24",
+      "updated": "2026-08-24",
+      "summary": "arXiv:2608.20359v1 Announce Type: new Abstract: Large language models (LLMs) are deployed for increasingly complex tasks involving planning and multi-step decision making, but high-quality performance on these tasks often requires generating long reasoning traces. This is a poor fit for latency-sensitive and interactive applications like voice assistants or coding agents, where generation latency can strongly affect user experience. Existing acceleration methods typically focus on token-level generation, without utilizing the structure of reasoning workflows. We introduce SSR: Self-Speculation for Reasoning Models, a training-free self-speculative decoding method that leverages the chain-of-thought (CoT) as a source of speculation. SSR uses the partial-CoT answer distribution as the drafter and the full-CoT distribution as the verifier, deriving both from the same model at different reasoning budgets. This builds on the observation that later partial-CoT responses often exhibit greater semantic and lexical overlap with the full-budget response. Due to this overlap, SSR can accept long draft prefixes at once, leading to large speedups on structured and long-form generation tasks. To further exploit draft-response overlap beyond the contiguous prefix accepted by standard speculative decoding, SSR also incorporates suffix decoding, using the draft to seed a suffix cache and recover useful spans beyond the accepted prefix, further reducing latency on tasks with high lexical overlap between the draft and the final response. We evaluate SSR on multiple structured and long-form generation tasks where it is most useful, and demonstrate a relative improvement of up to 24.1% on total generation latency for popular open-source models such as Qwen3.5 and Gemma-4.",
+      "pdf_url": "https://arxiv.org/abs/2608.20359",
+      "comment": "",
+      "technologies": [
+        "Speculative Decoding",
+        "Chain-of-Thought Prompting"
+      ],
+      "maturity": "early",
+      "confidence": 0.8,
+      "curator_score": 5.7,
+      "product_potential": [
+        "Real-time AI-powered coding assistants with reduced latency for generating code explanations and suggestions.",
+        "Enhanced voice assistants capable of providing detailed, multi-step responses in real-time without compromising on quality."
+      ],
+      "domain_applications": [
+        "education",
+        "enterprise",
+        "other"
+      ]
+    },
+    {
+      "id": "2608.20699",
+      "title": "ArtiMo: Agent-Driven Articulated Mesh Animation",
+      "authors": [],
+      "categories": [
+        "cs.CV"
+      ],
+      "published": "2026-08-24",
+      "updated": "2026-08-24",
+      "summary": "arXiv:2608.20699v1 Announce Type: new Abstract: Animating articulated 3D meshes via text requires satisfying strict kinematic constraints, modeling causal interactions between parts, and achieving instruction fidelity. Due to the absence of task-specific training data and explicit articulation supervision, existing data-driven mesh animation methods are largely inapplicable to this setting. To address this, we propose ArtiMo, a novel agent-driven framework for text-guided articulated mesh animation. Operating in a zero-shot manner, ArtiMo develops an agentic pipeline powered by Large Language and Vision-Language Models (LLMs/VLMs) to orchestrate motion generation. By synergizing the explicit kinematic constraints of URDF with the agent's reasoning and planning capabilities, it effectively produces causally coherent part motions and interactions without requiring model fine-tuning. To ensure motion correctness, the agent additionally utilizes a visual self-improvement mechanism: generated animations are rendered into compact keyframes and motion cues, enabling the VLM to iteratively diagnose and correct errors. Furthermore, we contribute a new benchmark dataset spanning 21 articulated object categories, featuring high-quality motion annotations enriched with causal relationships. Extensive experiments demonstrate that ArtiMo significantly outperforms baselines, particularly on complex, causally driven motions. The project page is available at https://zou-2004.github.io/ArtiMo/.",
+      "pdf_url": "https://arxiv.org/abs/2608.20699",
+      "comment": "",
+      "technologies": [
+        "Vision-Language Models",
+        "Large Language Models",
+        "Zero-shot Learning",
+        "Visual Self-Improvement"
+      ],
+      "maturity": "early",
+      "confidence": 0.7,
+      "curator_score": 5.7,
+      "product_potential": [
+        "Virtual try-on for fashion and accessories",
+        "Interactive 3D product configurators for e-commerce",
+        "Training simulations for medical and surgical procedures"
+      ],
+      "domain_applications": [
+        "creative",
+        "enterprise",
+        "healthcare"
+      ]
+    },
+    {
+      "id": "2608.23179",
+      "title": "NetConfArena: An Executable Benchmark for LLM Agents in Closed-Loop Network Configuration",
+      "authors": [
+        "Chang Liu",
+        "Xiaohui Xie",
+        "Xinyi Chen",
+        "Yong Cui"
+      ],
+      "categories": [
+        "cs.NI",
+        "cs.AI"
+      ],
+      "published": "2026-08-24",
+      "updated": "2026-08-24",
+      "summary": "Large language model (LLM) agents are increasingly attractive for automating network configuration, yet their reliability and failure patterns are poorly understood. An essential prerequisite is to assess such agents in a realistic but risk-free environment. Existing benchmarks, however, fall short: they often treat configuration as static command generation or rely on overly simplified settings. Such evaluations understate the core challenges of network configuration, where correctness requires reasoning about protocol complexity and topology dependence. We present NetConfArena, an executable benchmark for evaluating LLM agents in closed-loop network configuration. NetConfArena places agents in emulated multi-device networks, provides a standardized and compact action interface for task execution, and evaluates the resulting network behavior with hidden task-specific executable test cases. The benchmark relies on an LLM-assisted, emulation-grounded pipeline, which converts human-oriented network materials into reusable parameterized task templates. We evaluate representative LLM agents on 480 task instances instantiated from 96 protocol-focused task templates, yielding 3840 execution trajectories, and show that failures are not limited to command errors. The failures also reveal gaps in task-specification adherence and robust planning and execution. These findings suggest two future directions: using validated trajectories as supervision signals to improve foundation models, and designing harness mechanisms that make agent execution more reliable and accountable.",
+      "pdf_url": "https://arxiv.org/pdf/2608.23179v1",
+      "comment": "",
+      "technologies": [
+        "Executable Benchmarking",
+        "Closed-Loop Evaluation",
+        "Network Configuration Automation"
+      ],
+      "maturity": "early",
+      "confidence": 0.7,
+      "curator_score": 5.7,
+      "product_potential": [
+        "Automated Network Configuration Assistant: An AI-driven tool that helps network administrators configure complex network setups with real-time feedback and error correction.",
+        "Network Configuration Training Platform: A platform that uses NetConfArena's benchmark to train and evaluate LLM agents, improving their reliability and reducing human error in network configuration."
+      ],
+      "domain_applications": [
+        "enterprise"
+      ]
+    },
+    {
+      "id": "2608.23035",
+      "title": "MobilePA-Bench: Benchmarking Mobile Planner Agents on Complex Real-World Tasks",
+      "authors": [
+        "Yi Zhu",
+        "Xiongwei Wu",
+        "Qiyi Wang",
+        "Tingyu Qu",
+        "Jiajun Liu",
+        "Sihan Cao",
+        "Long Chen",
+        "Weigao Sun",
+        "Feida Zhu",
+        "Yiran Zhong",
+        "Steven Hoi"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "published": "2026-08-24",
+      "updated": "2026-08-24",
+      "summary": "As on-device LLM agents evolve into personal copilots, the mobile operating system has become a key testbed for this paradigm, making rigorous capability evaluation essential. Yet existing benchmarks fall into two camps, each with a critical blind spot: GUI-centric benchmarks test surface-level screen manipulation while overlooking background tool use and long-horizon planning, whereas static function-calling benchmarks rely on offline API matching that is detached from real runtime constraints. To close this gap, we present \\textbf{MobilePA-Bench}, an interactive, stateful, and tool-centric benchmark for evaluating the tool-calling and planning abilities of mobile planning agents. MobilePA-Bench runs on an executable sandbox that maintains live application databases and returns structured feedback, spanning $13$ functional domains and $212$ realistic mobile tools. Beyond basic tool use, it evaluates a central planning agent along three advanced dimensions: \\emph{(1)~Sub-agent Collaboration}---decomposing a complex task and delegating specialized work to capable sub-agents; \\emph{(2)~Memory Usage}---recalling stored memories, user profiles, and past preferences to resolve implicit requests; and \\emph{(3)~Skill Usage}---invoking pre-packaged composite skills instead of planning every step from scratch. Extensive experiments show that current frontier LLMs remain unreliable in mobile settings: performance drops sharply under strict tool ordering, permission limits, and unexpected runtime errors. By pairing an interactive function-calling sandbox with evidence-based verification, MobilePA-Bench serves as both a practical diagnostic benchmark and an interactive foundation for agentic reinforcement learning---accelerating the development of dependable mobile agents.",
+      "pdf_url": "https://arxiv.org/pdf/2608.23035v1",
+      "comment": "",
+      "technologies": [
+        "Agentic Workflow",
+        "Tool-use",
+        "Reinforcement Learning",
+        "On-device AI",
+        "Multimodal Learning",
+        "Chain-of-Thought Prompting"
+      ],
+      "maturity": "medium",
+      "confidence": 0.85,
+      "curator_score": 5.7,
+      "product_potential": [
+        "Automated mobile OS testing and quality assurance platform for enterprise app developers",
+        "Personalized mobile agent orchestration layer for cross-app task automation",
+        "Diagnostic framework for evaluating on-device LLM reliability in constrained mobile environments"
+      ],
+      "domain_applications": [
+        "enterprise",
+        "accessibility",
+        "finance"
+      ]
+    },
+    {
+      "id": "2608.21796",
+      "title": "SAFE-G: Structure-aware Faithful Evidence-guided Generation for Knowledge-based Visual Question Answering",
+      "authors": [],
+      "categories": [
+        "cs.AI"
+      ],
+      "published": "2026-08-25",
+      "updated": "2026-08-25",
+      "summary": "arXiv:2608.21796v1 Announce Type: cross Abstract: Knowledge-based Visual Question Answering (KB-VQA) aims to answer queries that necessitate reasoning over external knowledge sources beyond the visual content. Typically, current methods fuse multimodal features to retrieve external information, subsequently leveraging Multimodal Large Language Models (MLLMs) to derive answers from the retrieved evidence. However, these methods often struggle to capture structural associations within complex contexts to effectively filter noise. Furthermore, they frequently fail to ensure that the reasoning process remains strictly faithful to the retrieved evidence. To address these challenges, we propose SAFE-G, a Structure-Aware Faithful Evidence-guided Generation framework, which enables precise evidence localization and trustworthy reasoning. Specifically, we first employ a coarse-grained hybrid search fusing visual and textual modalities to recall candidate documents, and subsequently implement a structure-aware fine-grained graph retrieval that captures structural dependencies to filter noise and pinpoint precise evidence. Moreover, we introduce a reinforcement learning (RL) strategy with an evidence-grounded reward that assigns credit to correct answers only when the selected evidence is correct. This strict alignment constraint compels the model to anchor its response in the retrieved context, effectively enhancing its capability to locate evidence via multimodal features and perform faithful reasoning. Extensive experiments on the Encyclopedic-VQA and InfoSeek benchmarks demonstrate that SAFE-G outperforms prior methods by a margin of 8.9% and 3.5%, substantially enhancing the overall reasoning accuracy. Our source code is publicly available at: https://github.com/MINE-USTC/SAFE-G.",
+      "pdf_url": "https://arxiv.org/abs/2608.21796",
+      "comment": "",
+      "technologies": [
+        "Multimodal Learning",
+        "Retrieval Augmented Generation",
+        "Reinforcement Learning from Human Feedback"
+      ],
+      "maturity": "medium",
+      "confidence": 0.8,
+      "curator_score": 5.7,
+      "product_potential": [
+        "A multimodal AI assistant for educational platforms that can answer complex questions by integrating visual and textual information with external knowledge sources.",
+        "A healthcare AI system that can provide accurate medical information by leveraging visual data and external medical knowledge sources."
+      ],
+      "domain_applications": [
+        "education",
+        "healthcare"
+      ]
+    }
+  ],
+  "technologies": [
+    {
+      "name": "Video Understanding",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.8,
+      "trend": "rising",
+      "applications": [
+        "education",
+        "creative"
+      ]
+    },
+    {
+      "name": "Multimodal Learning",
+      "papers": 7,
+      "maturity": "medium",
+      "confidence": 0.8,
+      "trend": "rising",
+      "applications": [
+        "education",
+        "creative",
+        "enterprise",
+        "healthcare"
+      ]
+    },
+    {
+      "name": "Reinforcement Learning",
+      "papers": 7,
+      "maturity": "medium",
+      "confidence": 0.8,
+      "trend": "rising",
+      "applications": [
+        "robotics",
+        "automotive",
+        "science",
+        "enterprise"
+      ]
+    },
+    {
+      "name": "Retrieval Augmented Generation",
+      "papers": 4,
+      "maturity": "medium",
+      "confidence": 0.8,
+      "trend": "rising",
+      "applications": [
+        "education",
+        "creative",
+        "enterprise"
+      ]
+    },
+    {
+      "name": "Active Video Grounding",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.8,
+      "trend": "rising",
+      "applications": [
+        "education",
+        "creative"
+      ]
+    },
+    {
+      "name": "Agentic Tool Planning",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.8,
+      "trend": "rising",
+      "applications": [
+        "education",
+        "creative",
+        "enterprise"
+      ]
+    },
+    {
+      "name": "Knowledge Distillation",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.85,
+      "trend": "rising",
+      "applications": [
+        "robotics",
+        "automotive"
+      ]
+    },
+    {
+      "name": "Mixture of Experts",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.85,
+      "trend": "rising",
+      "applications": [
+        "robotics",
+        "automotive"
+      ]
+    },
+    {
+      "name": "Low-Rank Adaptation",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.85,
+      "trend": "rising",
+      "applications": [
+        "robotics",
+        "automotive"
+      ]
+    },
+    {
+      "name": "Reinforcement Learning from Human Feedback",
+      "papers": 3,
+      "maturity": "medium",
+      "confidence": 0.8,
+      "trend": "rising",
+      "applications": [
+        "enterprise",
+        "finance",
+        "education",
+        "healthcare"
+      ]
+    },
+    {
+      "name": "Large Language Models",
+      "papers": 3,
+      "maturity": "medium",
+      "confidence": 0.7,
+      "trend": "rising",
+      "applications": [
+        "science",
+        "robotics",
+        "creative",
+        "enterprise",
+        "healthcare"
+      ]
+    },
+    {
+      "name": "Code Generation",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.7,
+      "trend": "rising",
+      "applications": [
+        "science",
+        "robotics"
+      ]
+    },
+    {
+      "name": "Hierarchical Framework",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.8,
+      "trend": "rising",
+      "applications": [
+        "robotics",
+        "enterprise"
+      ]
+    },
+    {
+      "name": "Chain-of-Thought Prompting",
+      "papers": 3,
+      "maturity": "medium",
+      "confidence": 0.85,
+      "trend": "rising",
+      "applications": [
+        "education",
+        "enterprise"
+      ]
+    },
+    {
+      "name": "Multi-Agent Systems",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.85,
+      "trend": "rising",
+      "applications": [
+        "enterprise"
+      ]
+    },
+    {
+      "name": "Automated Software Testing",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.85,
+      "trend": "rising",
+      "applications": [
+        "enterprise"
+      ]
+    },
+    {
+      "name": "Formal Verification",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.85,
+      "trend": "rising",
+      "applications": [
+        "enterprise"
+      ]
+    },
+    {
+      "name": "Prompt Stability Analysis",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.85,
+      "trend": "rising",
+      "applications": [
+        "education",
+        "enterprise"
+      ]
+    },
+    {
+      "name": "Prompt-Refining Agent",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.85,
+      "trend": "rising",
+      "applications": [
+        "education",
+        "enterprise"
+      ]
+    },
+    {
+      "name": "Policy Enforcement",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.8,
+      "trend": "rising",
+      "applications": [
+        "enterprise"
+      ]
+    },
+    {
+      "name": "Resource Abuse Mitigation",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.8,
+      "trend": "rising",
+      "applications": [
+        "enterprise"
+      ]
+    },
+    {
+      "name": "Adversarial Inverse Reinforcement Learning",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.8,
+      "trend": "rising",
+      "applications": [
+        "science",
+        "education",
+        "enterprise"
+      ]
+    },
+    {
+      "name": "Group Relative Policy Optimization",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.8,
+      "trend": "rising",
+      "applications": [
+        "science",
+        "education",
+        "enterprise"
+      ]
+    },
+    {
+      "name": "Test-Time Scaling",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.8,
+      "trend": "rising",
+      "applications": [
+        "science",
+        "education",
+        "enterprise"
+      ]
+    },
+    {
+      "name": "Speculative Decoding",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.8,
+      "trend": "rising",
+      "applications": [
+        "education",
+        "enterprise"
+      ]
+    },
+    {
+      "name": "Vision-Language Models",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.7,
+      "trend": "rising",
+      "applications": [
+        "creative",
+        "enterprise",
+        "healthcare"
+      ]
+    },
+    {
+      "name": "Zero-shot Learning",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.7,
+      "trend": "rising",
+      "applications": [
+        "creative",
+        "enterprise",
+        "healthcare"
+      ]
+    },
+    {
+      "name": "Visual Self-Improvement",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.7,
+      "trend": "rising",
+      "applications": [
+        "creative",
+        "enterprise",
+        "healthcare"
+      ]
+    },
+    {
+      "name": "Executable Benchmarking",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.7,
+      "trend": "rising",
+      "applications": [
+        "enterprise"
+      ]
+    },
+    {
+      "name": "Closed-Loop Evaluation",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.7,
+      "trend": "rising",
+      "applications": [
+        "enterprise"
+      ]
+    },
+    {
+      "name": "Network Configuration Automation",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.7,
+      "trend": "rising",
+      "applications": [
+        "enterprise"
+      ]
+    },
+    {
+      "name": "Agentic Workflow",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.85,
+      "trend": "rising",
+      "applications": [
+        "enterprise",
+        "accessibility",
+        "finance"
+      ]
+    },
+    {
+      "name": "Tool-use",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.85,
+      "trend": "rising",
+      "applications": [
+        "enterprise",
+        "accessibility",
+        "finance"
+      ]
+    },
+    {
+      "name": "On-device AI",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.85,
+      "trend": "rising",
+      "applications": [
+        "enterprise",
+        "accessibility",
+        "finance"
+      ]
+    }
+  ],
+  "product_opportunities": []
+}

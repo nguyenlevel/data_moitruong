@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Innovation Map — AI Technology Radar</title>
+    <link rel="icon" href="../favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="../styles.css?v=20260723-3">
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <style>
+        .rd-back { display:inline-flex; align-items:center; gap:6px; color:var(--text-secondary); text-decoration:none; font-weight:600; font-size:0.9rem; margin-bottom:10px; }
+        .rd-back:hover { color:var(--accent); }
+        .rd-nav { display:flex; flex-wrap:wrap; gap:8px; margin:18px 0 24px; }
+        .rd-nav a { padding:8px 16px; border-radius:999px; border:1px solid var(--border); color:var(--text-secondary); font-size:0.85rem; font-weight:600; text-decoration:none; transition:160ms ease; }
+        .rd-nav a:hover { color:var(--text-primary); border-color:var(--border-strong); background:rgba(99,207,255,0.08); }
+        .rd-nav a.active { background:rgba(167,139,250,0.15); border-color:rgba(167,139,250,0.3); color:#c4b5fd; }
+
+        .map-layout { display:grid; grid-template-columns:1fr 300px; gap:18px; min-height:500px; }
+        .map-canvas-wrap { position:relative; border:1px solid var(--border); border-radius:var(--radius-md); overflow:hidden; background:#060a0e; }
+        .map-canvas-wrap svg { display:block; width:100%; height:600px; cursor:grab; }
+        .map-canvas-wrap svg:active { cursor:grabbing; }
+
+        .map-sidebar { display:flex; flex-direction:column; gap:12px; }
+        .map-sidebar-card { padding:14px 16px; border:1px solid var(--border); border-radius:var(--radius-md); background:var(--bg-panel); }
+        .map-sidebar-card h3 { font-size:0.82rem; font-weight:700; text-transform:uppercase; letter-spacing:.04em; color:var(--text-muted); margin-bottom:6px; }
+        .map-sidebar-card .map-detail-name { font-weight:700; font-size:0.95rem; color:var(--text-primary); margin-bottom:4px; }
+        .map-sidebar-card .map-detail-meta { font-size:0.8rem; color:var(--text-secondary); }
+        .map-sidebar-card .map-detail-empty { font-size:0.82rem; color:var(--text-muted); }
+        .map-legend { display:flex; flex-direction:column; gap:6px; }
+        .map-legend-item { display:flex; align-items:center; gap:8px; font-size:0.78rem; color:var(--text-secondary); }
+        .map-legend-dot { width:10px; height:10px; border-radius:50%; flex-shrink:0; }
+
+        .map-search { width:100%; padding:8px 12px; border:1px solid var(--border); border-radius:10px; background:#0a0e13; color:var(--text-primary); font:inherit; font-size:0.85rem; box-sizing:border-box; }
+        .map-search:focus { outline:none; border-color:var(--accent-strong); }
+
+        .map-controls { display:flex; gap:8px; }
+        .map-controls button { flex:1; padding:6px 12px; border:1px solid var(--border); border-radius:999px; background:transparent; color:var(--text-secondary); font-size:0.78rem; font-weight:600; cursor:pointer; transition:120ms ease; }
+        .map-controls button:hover { border-color:var(--border-strong); color:var(--text-primary); background:rgba(156,169,184,0.06); }
+
+        .node-paper { fill:#4ac7ff; stroke:#1b374a; stroke-width:1.5; }
+        .node-paper:hover { stroke:#7fc4ff; stroke-width:2.5; }
+        .node-tech { fill:#a78bfa; stroke:#3b2f6e; stroke-width:1.5; }
+        .node-tech:hover { stroke:#c4b5fd; stroke-width:2.5; }
+        .link { stroke:rgba(156,169,184,0.12); stroke-width:1.5; }
+        .label { fill:rgba(255,255,255,0.7); font-size:9px; font-family:system-ui,sans-serif; pointer-events:none; text-anchor:middle; }
+
+        .rd-empty { padding:60px; text-align:center; color:var(--text-secondary); font-size:0.9rem; }
+
+        @media (max-width:860px) { .map-layout { grid-template-columns:1fr; } }
+    </style>
+</head>
+<body>
+    <div class="site-shell">
+        <header class="hero">
+            <div class="hero-copy">
+                <a class="rd-back" href="index.html">
+                    <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5"/><path d="m12 19-7-7 7-7"/></svg>
+                    Back to dashboard
+                </a>
+                <span class="eyebrow">AI Technology Radar</span>
+                <h1>Innovation Map</h1>
+                <p class="hero-subtitle">
+                    Interactive graph connecting papers to technologies. Drag nodes to explore.
+                    <span class="rd-report-date" id="rd-map-date"></span>
+                </p>
+            </div>
+        </header>
+
+        <main class="content-stack">
+                        <nav class="rd-nav">
+                <a href="index.html">Dashboard</a>
+                <a href="today.html">Today</a>
+                <a href="weekly.html">Weekly</a>
+                <a href="technologies.html">Technologies</a>
+                <a href="product-opportunities.html">Opportunities</a>
+                <a href="radar.html">Radar</a>
+                <a href="trends.html">Trends</a>
+                <a href="innovation-map.html" class="active">Map</a>
+                <a href="discovery-graph.html">Discovery</a>
+                <a href="timeline.html">Timeline</a>
+                <a href="archive.html">Archive</a>
+            </nav>
+
+            <div class="map-layout">
+                <div class="map-canvas-wrap" id="rd-map-canvas">
+                    <svg id="rd-map-svg"></svg>
+                </div>
+                <div class="map-sidebar">
+                    <input type="search" class="map-search" id="rd-map-search" placeholder="Search nodes..." spellcheck="false">
+                    <div class="map-controls">
+                        <button id="rd-map-reset">Reset view</button>
+                        <button id="rd-map-collapse">Collapse all</button>
+                    </div>
+                    <div class="map-sidebar-card" id="rd-map-detail">
+                        <h3>Selected</h3>
+                        <div class="map-detail-empty">Click a node to see details</div>
+                    </div>
+                    <div class="map-sidebar-card">
+                        <h3>Legend</h3>
+                        <div class="map-legend">
+                            <div class="map-legend-item"><span class="map-legend-dot" style="background:#4ac7ff"></span> Paper</div>
+                            <div class="map-legend-item"><span class="map-legend-dot" style="background:#a78bfa"></span> Technology</div>
+                        </div>
+                    </div>
+                    <button class="action-btn ask-ai-btn" id="rd-ask-ai" type="button">
+                        <svg viewBox="0 0 24 24" aria-hidden="true" width="14" height="14"><path d="M12 3a9 9 0 0 0-7.74 13.55L3 21l4.6-1.2A9 9 0 1 0 12 3Z"/><path d="M8.5 11h7"/><path d="M8.5 14h4"/></svg>
+                        <span>Ask AI</span>
+                    </button>
+                </div>
+            </div>
+        </main>
+
+                <footer class="footer">
+                        Auto-curated daily by AI &middot; <a href="index.html">Dashboard</a> &middot; <a href="today.html">Today</a> &middot; <a href="weekly.html">Weekly</a> &middot; <a href="technologies.html">Technologies</a> &middot; <a href="product-opportunities.html">Opportunities</a> &middot; <a href="radar.html">Radar</a> &middot; <a href="trends.html">Trends</a> &middot; <a href="innovation-map.html">Map</a> &middot; <a href="timeline.html">Timeline</a> &middot; <a href="archive.html">Archive</a>
+        </footer>
+    </div>
+
+    <div class="ai-ask-backdrop" id="rd-ai-backdrop" hidden></div>
+    <div class="ai-ask-modal" id="rd-ai-modal" role="dialog" aria-modal="true" aria-labelledby="rd-ai-title" aria-hidden="true">
+        <div class="ai-ask-header">
+            <div>
+                <div class="ai-ask-overline">Ask AI about this page</div>
+                <h3 class="ai-ask-title" id="rd-ai-title">Ask AI about the innovation map</h3>
+            </div>
+            <button class="ai-ask-close" id="rd-ai-close" type="button" aria-label="Close">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6 18 18"/><path d="M18 6 6 18"/></svg>
+            </button>
+        </div>
+        <div class="ai-ask-body">
+            <p class="ai-ask-context" id="rd-ai-context">-</p>
+            <label class="ai-ask-field">
+                <div class="ai-ask-label-row">
+                    <span class="ai-ask-label">Your question</span>
+                    <div class="ai-ask-prompts-wrapper">
+                        <button class="ai-ask-prompts-btn" id="rd-prompts-btn" type="button">
+                            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+                            <span>Prompts</span>
+                            <svg class="prompts-chevron" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+                        </button>
+                        <div class="ai-ask-prompts-menu" id="rd-prompts-menu" hidden>
+                            <div class="prompts-group">
+                                <button class="prompts-item" data-prompt="Which technologies in this graph are connected to the most papers? What does that tell us about research hotspots?">Most connected technologies</button>
+                                <button class="prompts-item" data-prompt="Are there any technology clusters that suggest a new research direction or paradigm shift?">Emerging clusters</button>
+                            </div>
+                            <div class="prompts-group">
+                                <button class="prompts-item" data-prompt="If we could only prototype 3 technologies from this graph, which should we pick and why?">Top 3 to prototype</button>
+                                <button class="prompts-item" data-prompt="What product opportunities emerge from the intersection of technologies in this graph?">Cross-tech opportunities</button>
+                            </div>
+                            <button class="prompts-add-btn" id="rd-prompts-add" type="button">➕ Add your own prompt</button>
+                            <div class="prompts-group" id="prompts-custom-group" hidden>
+                                <div class="prompts-group-title">📌 Custom</div>
+                                <div id="prompts-custom-list"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <textarea id="rd-ai-question" class="ai-ask-question" rows="3" spellcheck="false"></textarea>
+            </label>
+            <div class="ai-ask-controls">
+                <label class="ai-ask-field ai-ask-field-inline">
+                    <span class="ai-ask-label">Include</span>
+                    <select id="rd-ai-count" class="ai-ask-select">
+                        <option value="20" selected>Top 20</option>
+                        <option value="0">All nodes</option>
+                    </select>
+                </label>
+            </div>
+            <label class="ai-ask-field">
+                <span class="ai-ask-label">Prompt preview</span>
+                <textarea id="rd-ai-preview" class="ai-ask-preview" rows="9" readonly spellcheck="false"></textarea>
+            </label>
+            <div class="ai-ask-meta">
+                <span class="ai-ask-meter" id="rd-ai-meter">-</span>
+                <span class="ai-ask-warning" id="rd-ai-warning" hidden></span>
+            </div>
+        </div>
+        <div class="ai-ask-footer">
+            <button class="ai-ask-secondary" id="rd-ai-copy" type="button">Copy prompt</button>
+            <button class="ai-ask-primary" id="rd-ai-open" type="button">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7"/><path d="M9 7h8v8"/></svg>
+                <span>Open in Google AI Mode</span>
+            </button>
+        </div>
+    </div>
+
+    <button class="back-to-top" id="rd-back-to-top" type="button" aria-label="Back to top" hidden>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14"/><path d="m6 11 6-6 6 6"/></svg>
+        <span>Top</span>
+    </button>
+
+    <script src="research-ai.js?v=20260701-1"></script>
+    <script src="innovation-map.js?v=20260701-1"></script>
+    <script src="../translate.js?v=20260723-3"></script>
+</body>
+</html>

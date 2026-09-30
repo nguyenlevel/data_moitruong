@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>AI Repositories — 1,000+ Open Source AI &amp; LLM Projects | Curated Directory</title>
+    <meta name="description" content="Discover 1,000+ trending open-source AI and LLM repositories. Filter by category, growth signals, stack layer. Weekly top movers, startup ideas, AI market reports.">
+    <meta property="og:title" content="AI Repositories — Curated Directory of 1,000+ Open Source AI Projects">
+    <meta property="og:description" content="Discover trending AI/LLM repos with growth signals, sparkline charts, and one-click AI analysis. Updated daily.">
+    <meta property="og:url" content="https://hankbui.github.io/my-starred-AI-repos/">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="AI Repositories — Curated Directory of 1,000+ Open Source AI Projects">
+    <meta name="twitter:description" content="Discover trending AI/LLM repos with growth signals, sparkline charts, and one-click AI analysis. Updated daily.">
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="styles.css?v=20260723-3">
+</head>
+<body>
+    <div class="site-shell">
+        <header class="hero">
+            <div class="hero-copy">
+                <span class="eyebrow">
+                    Hank Bui • Starred AI repositories
+                    <span class="page-viewer" id="page-viewer" title="Total page views">
+                        <svg class="page-viewer-icon" viewBox="0 0 24 24" width="14" height="14" aria-hidden="true">
+                            <path d="M12 5c-7 0-11 7-11 7s4 7 11 7 11-7 11-7-4-7-11-7z"/>
+                            <circle cx="12" cy="12" r="3"/>
+                        </svg>
+                        <span class="page-viewer-count" id="page-viewer-count">-</span>
+                    </span>
+                </span>
+                <h1>AI Repositories</h1>
+                <p class="hero-subtitle">
+                    A curated index of open-source AI projects with category filters, star thresholds,
+                    and faster browsing. You can filter the table and copy the repo list to ask AI
+                    for analysis — find the right repos for your next idea.
+                </p>
+                <div class="hero-actions">
+                    <button class="view-toggle" id="view-toggle" type="button" title="Switch to mobile view">
+                        <span class="view-toggle-icon" id="view-toggle-icon">📱</span>
+                        <span class="view-toggle-label" id="view-toggle-label">Mobile View</span>
+                    </button>
+                    <a class="view-toggle find-ideas-btn" href="find-ideas.html" title="Browse startup & app ideas from Show HN">
+                        <svg class="view-toggle-icon" viewBox="0 0 24 24" aria-hidden="true" width="16" height="16"><path d="M12 2a7 7 0 0 0-7 7c0 2.38 1.19 4.47 3 5.74V21l4-2 4 2v-6.26c1.81-1.27 3-3.36 3-5.74a7 7 0 0 0-7-7Z"/><circle cx="12" cy="9" r="2"/></svg>
+                        <span>Find Ideas</span>
+                    </a>
+                    <a class="view-toggle ail-landscape-btn" href="ai-list.html" title="Explore the whole open-source AI landscape — repos, devs &amp; bots (auto-discovered)">
+                        <svg class="view-toggle-icon" viewBox="0 0 24 24" aria-hidden="true" width="16" height="16"><circle cx="12" cy="12" r="9"/><path d="M3 12h18"/><path d="M12 3a14 14 0 0 1 0 18a14 14 0 0 1 0-18z"/></svg>
+                        <span>AI Landscape</span>
+                    </a>
+                    <a class="view-toggle rep-report-btn" href="report.html" title="Daily AI opportunity report — distilled insights, app ideas &amp; timing">
+                        <svg class="view-toggle-icon" viewBox="0 0 24 24" aria-hidden="true" width="16" height="16"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/><path d="M8 13h8"/><path d="M8 17h5"/></svg>
+                        <span>AI Report</span>
+                    </a>
+                    <a class="view-toggle wr-rank-btn" href="weekly-rank.html" title="Weekly star growth ranking — top movers by category">
+                        <svg class="view-toggle-icon" viewBox="0 0 24 24" aria-hidden="true" width="16" height="16"><path d="M13 2 3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+                        <span>Weekly Rank</span>
+                    </a>
+                    <a class="view-toggle" href="daily-top.html" title="Daily Top Picks — #1 GitHub repo, #1 Product Hunt, AI & Productivity leaders" style="border-color:rgba(245,158,11,0.25);background:rgba(245,158,11,0.06)">
+                        <svg class="view-toggle-icon" viewBox="0 0 24 24" aria-hidden="true" width="16" height="16"><path d="M12 2l3 7 7-1-5 5 1 7-6-3-6 3 1-7-5-5 7 1z"/><path d="M8 12h8"/><path d="M12 8v8"/></svg>
+                        <span>Daily Top</span>
+                    </a>
+                    <a class="view-toggle rd-radar-btn" href="research/index.html" title="AI Technology Radar — research papers to product opportunities">
+                        <svg class="view-toggle-icon" viewBox="0 0 24 24" aria-hidden="true" width="16" height="16"><path d="M12 2a10 10 0 1 0 10 10"/><path d="M12 6a6 6 0 1 0 6 6"/><circle cx="12" cy="12" r="2"/><path d="M12 2v4"/><path d="M12 18v4"/><path d="M2 12h4"/><path d="M18 12h4"/></svg>
+                        <span>Tech Radar</span>
+                    </a>
+                    <a class="view-toggle" href="china-landscape.html" title="China AI Landscape — Chinese open-source AI ecosystem from Alibaba, Baidu, DeepSeek, ByteDance, and more" style="border-color:rgba(212,106,45,0.25);background:rgba(212,106,45,0.06)">
+                        <svg class="view-toggle-icon" viewBox="0 0 24 24" aria-hidden="true" width="16" height="16"><path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"/><path d="M4 22v-7"/></svg>
+                        <span>China AI</span>
+                    </a>
+                    <a class="view-toggle" href="agent-skills.html" title="AI Agents & Skills — find the right agent or skill for any job by use case" style="border-color:rgba(140,111,255,0.25);background:rgba(140,111,255,0.06)">
+                        <svg class="view-toggle-icon" viewBox="0 0 24 24" aria-hidden="true" width="16" height="16"><path d="M12 3a9 9 0 0 0-7.74 13.55L3 21l4.6-1.2A9 9 0 1 0 12 3Z"/><path d="M8.5 11h7"/><path d="M8.5 14h4"/></svg>
+                        <span>Agents & Skills</span>
+                    </a>
+                    <a class="view-toggle" href="design-skills.html" title="Design Skills — curated AI skills for beautiful app UI" style="border-color:rgba(255,107,107,0.25);background:rgba(255,107,107,0.06)">
+                        <svg class="view-toggle-icon" viewBox="0 0 24 24" aria-hidden="true" width="16" height="16"><path d="M12 20l-7-7 7-7 7 7-7 7z"/><path d="M12 4v16"/><path d="M4 12h16"/></svg>
+                        <span>🎨 Design Skills</span>
+                    </a>
+                    <a class="view-toggle" href="mobile-skills.html" title="Mobile Skills — React Native &amp; Swift iOS curated tools and libraries" style="border-color:rgba(77,224,168,0.25);background:rgba(77,224,168,0.06)">
+                        <svg class="view-toggle-icon" viewBox="0 0 24 24" aria-hidden="true" width="16" height="16"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg>
+                        <span>📱 Mobile Skills</span>
+                    </a>
+                    <a class="view-toggle automation-btn" href="automation.html" title="AI Automation Radar — agents, multi-agent, solo founder stack" style="border-color:rgba(99,207,255,0.25);background:rgba(99,207,255,0.05)">
+                        <svg class="view-toggle-icon" viewBox="0 0 24 24" aria-hidden="true" width="16" height="16"><path d="M4 7V4h16v3"/><path d="M9 20h6"/><path d="M12 4v16"/></svg>
+                        <span>AI Automation</span>
+                    </a>
+                    <a class="view-toggle hf-daily-btn" href="hf-daily.html" title="Hugging Face Daily — trending models, papers, spaces &amp; datasets ranked in one glance" style="border-color:rgba(255,184,87,0.3);background:rgba(255,184,87,0.07)">
+                        <svg class="view-toggle-icon" viewBox="0 0 24 24" aria-hidden="true" width="16" height="16"><circle cx="12" cy="12" r="9"/><circle cx="9" cy="10" r="1.2" fill="currentColor"/><circle cx="15" cy="10" r="1.2" fill="currentColor"/><path d="M8 14c1.2 1.5 2.5 2.2 4 2.2s2.8-.7 4-2.2"/></svg>
+                        <span>Hugging Face</span>
+                    </a>
+                    <a class="view-toggle dev-resources-btn" href="dev-resources.html" title="Dev Resources — curated directory of the best sites for developers: design, coding, AI, analytics, devops" style="border-color:rgba(140,111,255,0.3);background:rgba(140,111,255,0.07)">
+                        <svg class="view-toggle-icon" viewBox="0 0 24 24" aria-hidden="true" width="16" height="16"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+                        <span>Dev Resources</span>
+                    </a>
+                    <button class="view-toggle hero-ask-ai-btn" id="hero-ask-ai" type="button" title="Ask Google AI Mode about the filtered repos">
+                        <svg class="view-toggle-icon" viewBox="0 0 24 24" aria-hidden="true" width="16" height="16"><path d="M12 3a9 9 0 0 0-7.74 13.55L3 21l4.6-1.2A9 9 0 1 0 12 3Z"/><path d="M8.5 11h7"/><path d="M8.5 14h4"/></svg>
+                        <span>Ask AI</span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="hero-stats">
+                <div class="stat-pill">
+                    <span class="stat-icon" aria-hidden="true">
+                        <svg viewBox="0 0 24 24"><path d="M4 6.5h16M4 12h16M4 17.5h16"/><circle cx="7" cy="6.5" r="1.25"/><circle cx="7" cy="12" r="1.25"/><circle cx="7" cy="17.5" r="1.25"/></svg>
+                    </span>
+                    <span class="pill-value" id="repo-count">-</span>
+                    <span class="pill-label">repos tracked</span>
+                </div>
+                <div class="stat-pill">
+                    <span class="stat-icon" aria-hidden="true">
+                        <svg viewBox="0 0 24 24"><path d="M4 4h7v7H4zM13 4h7v5h-7zM13 11h7v9h-7zM4 13h7v7H4z"/></svg>
+                    </span>
+                    <span class="pill-value" id="category-count">-</span>
+                    <span class="pill-label">categories</span>
+                </div>
+                <div class="stat-pill">
+                    <span class="stat-icon" aria-hidden="true">
+                        <svg viewBox="0 0 24 24"><path d="m12 3 2.8 5.68 6.27.91-4.54 4.43 1.07 6.24L12 17.3l-5.6 2.94 1.07-6.24L2.93 9.6l6.27-.91z"/></svg>
+                    </span>
+                    <span class="pill-value" id="total-stars">-</span>
+                    <span class="pill-label">total stars</span>
+                </div>
+                <div class="stat-pill">
+                    <span class="stat-icon" aria-hidden="true">
+                        <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"/><path d="M12 7v5l3 2"/></svg>
+                    </span>
+                    <span class="pill-value" id="last-updated-time">-</span>
+                    <span class="pill-label">last update</span>
+                </div>
+            </div>
+        </header>
+
+        <nav class="top-nav">
+            <button class="nav-link active" data-section="repos">Repos</button>
+            <button class="nav-link" data-section="categories">Categories</button>
+            <a class="nav-link nav-link-anchor" href="cto-letter.html">CTO Letter</a>
+            <a class="nav-link nav-link-anchor" href="https://github.com/hankbui/my-starred-AI-repos" target="_blank" rel="noreferrer">GitHub</a>
+        </nav>
+
+        <main class="content-stack">
+            <section id="repos-section" class="panel">
+                <div class="section-heading">
+                    <div>
+                        <h2>Repository List</h2>
+                        <p>Search, filter by category, and narrow the list by stars or momentum.</p>
+                    </div>
+                    <div class="results-meta" id="results-meta">-</div>
+                </div>
+
+                <div class="history-note" id="history-note" hidden></div>
+
+                <div class="dataset-bar">
+                    <div class="dataset-tabs" role="tablist" aria-label="Repository datasets">
+                        <button class="dataset-tab active" id="starred-tab" data-view="starred" type="button">
+                            <span class="dataset-tab-label">All Repos</span>
+                            <span class="dataset-tab-count" id="starred-tab-count">0</span>
+                        </button>
+                        <button class="dataset-tab" id="trending-tab" data-view="trending" type="button">
+                            <span class="dataset-tab-label">Trending</span>
+                            <span class="dataset-tab-count" id="trending-tab-count">0</span>
+                        </button>
+                    </div>
+                    <div class="dataset-caption" id="dataset-caption">All starred repos</div>
+                </div>
+
+                <div class="preset-strip">
+                    <span class="preset-label">Quick filters</span>
+                    <div class="preset-chips" id="preset-chips">
+                        <button class="preset-chip active" data-preset="all" type="button">All</button>
+                        <button class="preset-chip" data-preset="hot" type="button">Hot</button>
+                        <button class="preset-chip" data-preset="fast-growing" type="button">Fast-growing</button>
+                        <button class="preset-chip" data-preset="recently-updated" type="button">Recently updated</button>
+                        <button class="preset-chip" data-preset="10k-plus" type="button">10k+ stars</button>
+                        <button class="preset-chip" data-preset="agents" type="button">Agents</button>
+                        <button class="preset-chip" data-preset="infra" type="button">Infra</button>
+                    </div>
+                </div>
+
+                <div class="control-grid" id="desktop-controls">
+                    <label class="control search-control">
+                        <span class="control-label">Search</span>
+                        <span class="control-field control-search">
+                            <span class="control-icon" aria-hidden="true">
+                                <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+                            </span>
+                            <input type="search" id="repo-search" placeholder="Search repos, descriptions, categories...">
+                        </span>
+                    </label>
+
+                    <label class="control">
+                        <span class="control-label">Category</span>
+                        <span class="control-field">
+                            <span class="control-icon" aria-hidden="true">
+                                <svg viewBox="0 0 24 24"><path d="M4 7h16M4 12h10M4 17h7"/></svg>
+                            </span>
+                            <select id="category-filter"></select>
+                        </span>
+                    </label>
+
+                    <label class="control">
+                        <span class="control-label">Topic</span>
+                        <span class="control-field">
+                            <span class="control-icon" aria-hidden="true">
+                                <svg viewBox="0 0 24 24"><path d="M4 12h16"/><path d="M7 7h10"/><path d="M9 17h6"/></svg>
+                            </span>
+                            <select id="topic-filter"></select>
+                        </span>
+                    </label>
+
+                    <label class="control">
+                        <span class="control-label">Activity</span>
+                        <span class="control-field">
+                            <span class="control-icon" aria-hidden="true">
+                                <svg viewBox="0 0 24 24"><path d="M4 14h4l2-5 4 10 2-5h4"/></svg>
+                            </span>
+                            <select id="activity-filter"></select>
+                        </span>
+                    </label>
+
+                    <label class="control">
+                        <span class="control-label">Stack Layer</span>
+                        <span class="control-field">
+                            <span class="control-icon" aria-hidden="true">
+                                <svg viewBox="0 0 24 24"><path d="M5 3h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2z"/><path d="M9 3v18"/><path d="M3 9h18"/></svg>
+                            </span>
+                            <select id="stack-filter">
+                                <option value="all">All layers</option>
+                                <option value="Infra">🔧 Infra</option>
+                                <option value="Framework">📚 Framework</option>
+                                <option value="Tool">🛠️ Tool</option>
+                                <option value="Product">🚀 Product</option>
+                                <option value="Data">📊 Data</option>
+                                <option value="Creative">🎨 Creative</option>
+                                <option value="Other">Other</option>
+                            </select>
+                        </span>
+                    </label>
+
+                    <label class="control">
+                        <span class="control-label">Min Stars</span>
+                        <span class="control-field">
+                            <span class="control-icon" aria-hidden="true">
+                                <svg viewBox="0 0 24 24"><path d="m12 3 2.8 5.68 6.27.91-4.54 4.43 1.07 6.24L12 17.3l-5.6 2.94 1.07-6.24L2.93 9.6l6.27-.91z"/></svg>
+                            </span>
+                            <select id="stars-filter">
+                                <option value="0">All stars</option>
+                                <option value="100">100+</option>
+                                <option value="500">500+</option>
+                                <option value="1000">1k+</option>
+                                <option value="5000">5k+</option>
+                                <option value="10000">10k+</option>
+                                <option value="50000">50k+</option>
+                            </select>
+                        </span>
+                    </label>
+
+                    <label class="control">
+                        <span class="control-label">Sort</span>
+                        <span class="control-field">
+                            <span class="control-icon" aria-hidden="true">
+                                <svg viewBox="0 0 24 24"><path d="M7 6h10M7 12h7M7 18h4"/></svg>
+                            </span>
+                            <select id="sort-select">
+                                <option value="stars_desc">Stars</option>
+                                <option value="trend_desc">Trend score</option>
+                                <option value="growth_1d_desc">1d Growth</option>
+                                <option value="growth_7d_desc">7d Growth</option>
+                                <option value="forks_desc">Forks</option>
+                                <option value="updated_desc">Updated</option>
+                                <option value="created_desc">Created</option>
+                                <option value="name_asc">Name</option>
+                            </select>
+                        </span>
+                    </label>
+
+                    <button class="control-reset" id="reset-filters" type="button">
+                        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 11a8 8 0 1 1-2.34-5.66"/><path d="M20 4v7h-7"/></svg>
+                        <span>Reset</span>
+                    </button>
+                </div>
+
+                <div class="pagination-bar">
+                    <div class="copy-toolbar">
+                        <label class="copy-toggle" for="top-copy-scope">
+                            <input type="checkbox" id="top-copy-scope">
+                            <span>Current page only</span>
+                        </label>
+                        <button class="copy-btn" id="top-copy-button" type="button">
+                            <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M6 15H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v1"/></svg>
+                            <span>Copy filtered</span>
+                        </button>
+                        <div class="export-toolbar">
+                            <button class="action-btn share-btn" id="top-share-button" type="button">
+                                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 12h8"/><path d="M13 7l5 5-5 5"/><path d="M6 20h12a2 2 0 0 0 2-2v-3"/><path d="M18 4H6a2 2 0 0 0-2 2v3"/></svg>
+                                <span>Share URL</span>
+                            </button>
+                            <button class="action-btn export-btn" data-format="csv" id="top-export-csv" type="button">
+                                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v11"/><path d="m7 10 5 5 5-5"/><path d="M5 20h14"/></svg>
+                                <span>CSV</span>
+                            </button>
+                            <button class="action-btn export-btn" data-format="md" id="top-export-md" type="button">
+                                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 18V6h3l3 6 3-6h3v12"/><path d="M19 18V6"/><path d="M16 18h6"/></svg>
+                                <span>MD</span>
+                            </button>
+                            <button class="action-btn ask-ai-btn" id="top-ask-ai" type="button">
+                                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3a9 9 0 0 0-7.74 13.55L3 21l4.6-1.2A9 9 0 1 0 12 3Z"/><path d="M8.5 11h7"/><path d="M8.5 14h4"/></svg>
+                                <span>Ask AI</span>
+                            </button>
+                        </div>
+                    </div>
+                    <button class="pager-btn" id="top-prev">« Prev</button>
+                    <span class="pager-info" id="top-page-info">1 / 1 (0 repos)</span>
+                    <button class="pager-btn" id="top-next">Next »</button>
+                    <label class="pager-size-wrap">
+                        <span>Rows</span>
+                        <select id="top-per-page" class="pager-size">
+                            <option value="25">25</option>
+                            <option value="50" selected>50</option>
+                            <option value="100">100</option>
+                        </select>
+                    </label>
+                </div>
+
+                <div class="table-shell">
+                    <table class="repos-table">
+                        <thead>
+                            <tr>
+                                <th class="col-num">#</th>
+                                <th class="col-repo">Repo</th>
+                                <th class="col-stars">Stars</th>
+                                <th class="col-signal"></th>
+                                <th class="col-growth">1d</th>
+                                <th class="col-growth">7d</th>
+                                <th class="col-trend">Trend</th>
+                                <th class="col-forks">Forks</th>
+                                <th class="col-desc">Description</th>
+                                <th class="col-category">Category</th>
+                                <th class="col-date">Created</th>
+                                <th class="col-date">Updated</th>
+                            </tr>
+                        </thead>
+                        <tbody id="repos-tbody"></tbody>
+                    </table>
+                </div>
+
+                <div class="mobile-repos-list" id="mobile-repos-list"></div>
+
+                <div class="pagination-bar pagination-bottom">
+                    <div class="copy-toolbar">
+                        <label class="copy-toggle" for="bottom-copy-scope">
+                            <input type="checkbox" id="bottom-copy-scope">
+                            <span>Current page only</span>
+                        </label>
+                        <button class="copy-btn" id="bottom-copy-button" type="button">
+                            <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M6 15H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v1"/></svg>
+                            <span>Copy filtered</span>
+                        </button>
+                        <div class="export-toolbar">
+                            <button class="action-btn share-btn" id="bottom-share-button" type="button">
+                                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 12h8"/><path d="M13 7l5 5-5 5"/><path d="M6 20h12a2 2 0 0 0 2-2v-3"/><path d="M18 4H6a2 2 0 0 0-2 2v3"/></svg>
+                                <span>Share URL</span>
+                            </button>
+                            <button class="action-btn export-btn" data-format="csv" id="bottom-export-csv" type="button">
+                                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v11"/><path d="m7 10 5 5 5-5"/><path d="M5 20h14"/></svg>
+                                <span>CSV</span>
+                            </button>
+                            <button class="action-btn export-btn" data-format="md" id="bottom-export-md" type="button">
+                                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 18V6h3l3 6 3-6h3v12"/><path d="M19 18V6"/><path d="M16 18h6"/></svg>
+                                <span>MD</span>
+                            </button>
+                            <button class="action-btn ask-ai-btn" id="bottom-ask-ai" type="button">
+                                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3a9 9 0 0 0-7.74 13.55L3 21l4.6-1.2A9 9 0 1 0 12 3Z"/><path d="M8.5 11h7"/><path d="M8.5 14h4"/></svg>
+                                <span>Ask AI</span>
+                            </button>
+                        </div>
+                    </div>
+                    <button class="pager-btn" id="bottom-prev">« Prev</button>
+                    <span class="pager-info" id="bottom-page-info">1 / 1 (0 repos)</span>
+                    <button class="pager-btn" id="bottom-next">Next »</button>
+                    <label class="pager-size-wrap">
+                        <span>Rows</span>
+                        <select id="bottom-per-page" class="pager-size">
+                            <option value="25">25</option>
+                            <option value="50" selected>50</option>
+                            <option value="100">100</option>
+                        </select>
+                    </label>
+                </div>
+            </section>
+
+            <section id="categories-section" class="panel">
+                <div class="section-heading">
+                    <div>
+                        <h2>Categories</h2>
+                        <p>Click a category card to filter the repository table.</p>
+                    </div>
+                </div>
+                <div class="category-grid" id="category-grid"></div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            Auto-updated daily • Made with ❤️ by <a href="https://github.com/hankbui" target="_blank" rel="noreferrer">@hankbui</a>
+        </footer>
+    </div>
+
+    <div class="drawer-backdrop" id="drawer-backdrop" hidden></div>
+    <aside class="repo-drawer" id="repo-drawer" aria-hidden="true">
+        <div class="drawer-header">
+            <div>
+                <div class="drawer-overline">Repository Details</div>
+                <h3 class="drawer-title">Overview</h3>
+            </div>
+            <button class="drawer-close" id="drawer-close" type="button" aria-label="Close details">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6 18 18"/><path d="M18 6 6 18"/></svg>
+            </button>
+        </div>
+        <div class="drawer-body" id="drawer-body"></div>
+    </aside>
+
+    <div class="ai-ask-modal" id="ai-ask-modal" role="dialog" aria-hidden="true">
+        <div class="ai-ask-header">
+            <div>
+                <div class="ai-ask-overline">Ask Google AI Mode</div>
+                <h3 class="ai-ask-title" id="ai-ask-title">Ask AI about these repos</h3>
+            </div>
+            <button class="ai-ask-close" id="ai-ask-close" type="button" aria-label="Close Ask AI">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6 18 18"/><path d="M18 6 6 18"/></svg>
+            </button>
+        </div>
+
+        <div class="ai-ask-body">
+            <p class="ai-ask-context" id="ai-ask-context">-</p>
+
+            <label class="ai-ask-field">
+                <div class="ai-ask-label-row">
+                    <span class="ai-ask-label">Your question</span>
+                    <div class="ai-ask-prompts-wrapper">
+                        <button class="ai-ask-prompts-btn" id="ask-prompts-btn" type="button">
+                            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+                            <span>Prompts</span>
+                            <svg class="prompts-chevron" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+                        </button>
+                        <div class="ai-ask-prompts-menu" id="ask-prompts-menu" hidden>
+                            <div class="prompts-group">
+                                <div class="prompts-group-title">🔥 Discovery & Validation</div>
+                                <button class="prompts-item" data-prompt="Which of these AI tools solve real problems developers face? Look beyond hype — identify pain points, practical utility, and signs of real adoption (stars, forks, recent commits).">Real problems solved</button>
+                                <button class="prompts-item" data-prompt="Which repositories are in the fastest-growing AI categories? Identify: (1) category trend direction, (2) whether adoption is accelerating, (3) which specific repos benefit from market timing.">Trending categories + timing</button>
+                                <button class="prompts-item" data-prompt="Which repos have strongest community validation? Compare: star growth rate, contributor count, fork activity, recent releases. Highlight the top 3 with proven traction.">Strongest validation</button>
+                            </div>
+                            <div class="prompts-group">
+                                <div class="prompts-group-title">💰 Build & Ship</div>
+                                <button class="prompts-item" data-prompt="Which of these could be combined to build a practical AI application? Suggest 3 specific combinations of repos (e.g. LLM + vector DB + UI framework) with a use case for each.">Combine to build an app</button>
+                                <button class="prompts-item" data-prompt="Rank these repos by how quickly a solo developer could integrate them into a working MVP. Prioritize: good docs, active maintenance, simple APIs, minimal dependencies.">Fastest to MVP</button>
+                                <button class="prompts-item" data-prompt="Which repos are essential for building an AI coding assistant? Consider: LLM access, code analysis, RAG, agent framework, and IDE integration pieces.">Build an AI coding assistant</button>
+                            </div>
+                            <div class="prompts-group">
+                                <div class="prompts-group-title">📊 Market Intelligence</div>
+                                <button class="prompts-item" data-prompt="Group these repos by category. For each group, analyze: (1) is the space growing or saturating? (2) who are the key players? (3) what's missing? Identify gaps worth building in.">Category gaps analysis</button>
+                                <button class="prompts-item" data-prompt="Which repos are in declining or over-saturated categories? Highlight repos to deprioritize and explain why (e.g. better alternatives exist, tech shift, stalled development).">Declining/saturated to skip</button>
+                                <button class="prompts-item" data-prompt="For each major category here, tell me which repo is the de-facto standard and which is the promising challenger. When would I pick the challenger over the incumbent?">Standard vs challenger</button>
+                            </div>
+                            <div class="prompts-group">
+                                <div class="prompts-group-title">🤖 Tech Stack</div>
+                                <button class="prompts-item" data-prompt="From this list, recommend a complete AI stack for: (A) a RAG chatbot, (B) an agent automation tool, (C) a code generation app. For each, pick embedding model, vector DB, LLM framework, and orchestration layer.">Pick a stack (RAG/Agent/Code)</button>
+                                <button class="prompts-item" data-prompt="Which repos pair well together? Suggest 3 complementary pairs where two repos cover adjacent parts of the same problem (e.g. LangChain + Chroma, Whisper + pyannote).">Complementary pairs</button>
+                                <button class="prompts-item" data-prompt="Build me a fully open-source, self-hostable AI stack from this list (no paid APIs). Pick the LLM runtime, framework, vector store, and UI, and flag any gaps I'd still need to fill.">Open-source self-hosted stack</button>
+                            </div>
+                            <div class="prompts-divider"></div>
+                            <div class="prompts-group" id="prompts-custom-group" hidden>
+                                <div class="prompts-group-title">📝 Your Prompts</div>
+                                <div id="prompts-custom-list"></div>
+                            </div>
+                            <button class="prompts-add-btn" id="ask-prompts-add" type="button">➕ Add your own prompt</button>
+                        </div>
+                    </div>
+                </div>
+                <textarea id="ai-ask-question" class="ai-ask-question" rows="3" spellcheck="false"></textarea>
+            </label>
+
+            <div class="ai-ask-controls">
+                <label class="ai-ask-field ai-ask-field-inline">
+                    <span class="ai-ask-label">Repos to include</span>
+                    <select id="ai-ask-count" class="ai-ask-select">
+                        <option value="10">Top 10</option>
+                        <option value="25" selected>Top 25</option>
+                        <option value="50">Top 50</option>
+                        <option value="0">All filtered</option>
+                    </select>
+                </label>
+                <label class="ai-ask-toggle" for="ai-ask-include-desc">
+                    <input type="checkbox" id="ai-ask-include-desc" checked>
+                    <span>Include descriptions</span>
+                </label>
+            </div>
+
+            <label class="ai-ask-field">
+                <span class="ai-ask-label">Prompt preview</span>
+                <textarea id="ai-ask-preview" class="ai-ask-preview" rows="9" readonly spellcheck="false"></textarea>
+            </label>
+
+            <div class="ai-ask-meta">
+                <span class="ai-ask-meter" id="ai-ask-meter">-</span>
+                <span class="ai-ask-warning" id="ai-ask-warning" hidden></span>
+            </div>
+        </div>
+
+        <div class="ai-ask-footer">
+            <button class="ai-ask-secondary" id="ai-ask-copy" type="button">Copy prompt</button>
+            <button class="ai-ask-primary" id="ai-ask-open" type="button">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7"/><path d="M9 7h8v8"/></svg>
+                <span>Open in Google AI Mode</span>
+            </button>
+        </div>
+    </div>
+
+    <button class="back-to-top" id="back-to-top" type="button" aria-label="Back to top" hidden>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14"/><path d="m6 11 6-6 6 6"/></svg>
+        <span>Top</span>
+    </button>
+
+    <script src="app.js?v=20260701-10"></script>
+    <script src="translate.js?v=20260723-3"></script>
+</body>
+</html>
