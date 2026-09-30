@@ -14,8 +14,8 @@
   </a>
   <img src="https://img.shields.io/badge/Repos_tracked-1%2C000%2B-63cfff?style=for-the-badge" alt="1,000+ repos">
   <img src="https://img.shields.io/badge/Updated-Daily-4de0a8?style=for-the-badge" alt="Updated daily">
-  <img src="https://img.shields.io/github/stars/nguyenlevel/my-starred-AI-repos?style=for-the-badge&color=ffb857" alt="GitHub Stars">
-  <img src="https://img.shields.io/github/deployments/nguyenlevel/my-starred-AI-repos/github-pages?style=for-the-badge&label=Deploy&color=8c6fff" alt="Deploy status">
+  <img src="https://img.shields.io/github/stars/nguyenlevel/data_moitruong?style=for-the-badge&color=ffb857" alt="GitHub Stars">
+  <img src="https://img.shields.io/github/deployments/nguyenlevel/data_moitruong/github-pages?style=for-the-badge&label=Deploy&color=8c6fff" alt="Deploy status">
   <a href="https://nguyenlevel.github.io/data_moitruong/weekly-rank.html">
     <img src="https://img.shields.io/badge/📈_Weekly_Top_Movers-Visit-ff8a5e?style=for-the-badge" alt="Weekly Top Movers">
   </a>

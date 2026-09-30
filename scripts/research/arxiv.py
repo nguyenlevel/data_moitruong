@@ -118,7 +118,7 @@ def _clean_html(text: str) -> str:
 def fetch_new_papers(categories: list[str] = None, max_results: int = 200,
                      days_back: int = 3, existing_ids: set[str] = None) -> list[Paper]:
     url = build_query(categories, max_results, days_back)
-    headers = {'User-Agent': 'my-starred-ai-repos/1.0 (research-pipeline)'}
+    headers = {'User-Agent': 'data_moitruong/1.0 (research-pipeline)'}
 
     try:
         resp = requests.get(url, headers=headers, timeout=60)
@@ -141,7 +141,7 @@ def fetch_new_papers(categories: list[str] = None, max_results: int = 200,
 def fetch_rss_daily(category: str = 'cs.AI', existing_ids: set[str] = None) -> list[Paper]:
     url = f'{ARXIV_RSS}{category}'
     try:
-        resp = requests.get(url, headers={'User-Agent': 'my-starred-ai-repos/1.0'}, timeout=30)
+        resp = requests.get(url, headers={'User-Agent': 'data_moitruong/1.0'}, timeout=30)
         resp.raise_for_status()
         root = ET.fromstring(resp.text)
     except Exception as e:

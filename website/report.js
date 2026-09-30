@@ -608,7 +608,7 @@ function renderLiveReport(r, a, saved) {
 
 // ── Download / Copy / Publish live report ─────────────────────────────────────
 const GH_OWNER = 'nguyenlevel';
-const GH_REPO = 'my-starred-AI-repos';
+const GH_REPO = 'data_moitruong';
 
 function downloadLiveReport() {
     const r = window.__lastLiveReport;

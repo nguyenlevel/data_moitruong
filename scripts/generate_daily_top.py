@@ -42,7 +42,7 @@ PRODUCTIVITY_KEYWORDS = ["productivity", "task", "organize", "workflow", "projec
                          "automation", "no-code", "low-code", "spreadsheet"]
 
 HEADERS = {
-    "User-Agent": "my-starred-ai-repos/1.0 (daily-top-pipeline)",
+    "User-Agent": "data_moitruong/1.0 (daily-top-pipeline)",
     "Accept": "application/json",
 }
 

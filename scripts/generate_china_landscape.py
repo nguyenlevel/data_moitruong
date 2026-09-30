@@ -30,7 +30,7 @@ GITHUB_TOKEN = os.getenv("SITE_DEPLOY_TOKEN") or os.getenv("GITHUB_TOKEN") or ""
 HEADERS = {
     "Accept": "application/vnd.github+json",
     "Authorization": f"Bearer {GITHUB_TOKEN}",
-    "User-Agent": "my-starred-ai-repos",
+    "User-Agent": "data_moitruong",
     "X-GitHub-Api-Version": "2022-11-28",
 }
 
@@ -179,7 +179,7 @@ def fetch_gitee_trending():
         return []
 
     repos = []
-    headers = {"User-Agent": "my-starred-ai-repos"}
+    headers = {"User-Agent": "data_moitruong"}
     for page in range(1, 4):
         try:
             resp = requests.get(

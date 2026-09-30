@@ -43,7 +43,7 @@ if not GITHUB_TOKEN:
 HEADERS = {
     "Accept": "application/vnd.github+json",
     "Authorization": f"Bearer {GITHUB_TOKEN}",
-    "User-Agent": "my-starred-ai-repos",
+    "User-Agent": "data_moitruong",
     "X-GitHub-Api-Version": "2022-11-28",
 }
 

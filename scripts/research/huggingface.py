@@ -15,7 +15,7 @@ def fetch_daily_papers(existing_ids: set[str] = None, max_papers: int = 30) -> l
     try:
         resp = requests.get(
             f'{HF_DAILY_API}?limit={max_papers}',
-            headers={'User-Agent': 'my-starred-ai-repos/1.0 (research-pipeline)'},
+            headers={'User-Agent': 'data_moitruong/1.0 (research-pipeline)'},
             timeout=30,
         )
         resp.raise_for_status()

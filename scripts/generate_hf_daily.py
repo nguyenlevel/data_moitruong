@@ -29,7 +29,7 @@ OUTPUT = ROOT / "website" / "data" / "hf-daily.json"
 
 HF_BASE = "https://huggingface.co/api"
 HEADERS = {
-    "User-Agent": "my-starred-ai-repos/1.0 (hf-daily-pipeline)",
+    "User-Agent": "data_moitruong/1.0 (hf-daily-pipeline)",
     "Accept": "application/json",
 }
 
