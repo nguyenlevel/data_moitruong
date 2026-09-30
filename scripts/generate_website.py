@@ -308,7 +308,7 @@ def generate_html(data, stats):
 
         <footer class="footer">
             <p>🤖 Auto-updated daily via GitHub Actions</p>
-            <p>Made with ❤️ by <a href="https://github.com/hankbui" target="_blank">@hankbui</a></p>
+            <p>Made with ❤️ by <a href="https://github.com/nguyenlevel" target="_blank">@nguyenlevel</a></p>
         </footer>
     </div>
 

@@ -1223,7 +1223,7 @@ function buildExportFilename(extension, repoCount) {
     const scope = state.copyCurrentPageOnly ? `page-${state.currentPage}` : 'filtered';
     const timestamp = (state.updatedAt || new Date().toISOString().slice(0, 10)).replaceAll('/', '-');
     const count = Number(repoCount || 0).toLocaleString('en-US').replaceAll(',', '');
-    return ensureFilenameExtension(`hankbui-${getActiveViewSlug()}-export-${scope}-${count}-rows-${timestamp}`, normalized);
+    return ensureFilenameExtension(`nguyenlevel-${getActiveViewSlug()}-export-${scope}-${count}-rows-${timestamp}`, normalized);
 }
 
 function downloadTextFile(filename, extension, content, mimeType) {
@@ -1967,7 +1967,7 @@ async function initPageViewer() {
     // 4. Try to get repo stars for social proof
     let stars = null;
     try {
-        const r = await fetch('https://api.github.com/repos/hankbui/my-starred-AI-repos');
+        const r = await fetch('https://api.github.com/repos/nguyenlevel/data_moitruong');
         if (r.ok) stars = (await r.json()).stargazers_count;
     } catch {}
 

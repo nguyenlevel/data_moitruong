@@ -5,21 +5,21 @@
 ### The #1 open‑source directory of AI &amp; LLM projects on GitHub — trending, filterable, AI‑powered.
 
 <h3>
-  <a href="https://hankbui.github.io/my-starred-AI-repos/">→ Browse the directory live</a>
+  <a href="https://nguyenlevel.github.io/data_moitruong/">→ Browse the directory live</a>
 </h3>
 
 <p>
-  <a href="https://hankbui.github.io/my-starred-AI-repos/">
+  <a href="https://nguyenlevel.github.io/data_moitruong/">
     <img src="https://img.shields.io/badge/🌐_Live_Demo-Open-3fa7ff?style=for-the-badge&logo=github" alt="Live Demo">
   </a>
   <img src="https://img.shields.io/badge/Repos_tracked-1%2C000%2B-63cfff?style=for-the-badge" alt="1,000+ repos">
   <img src="https://img.shields.io/badge/Updated-Daily-4de0a8?style=for-the-badge" alt="Updated daily">
-  <img src="https://img.shields.io/github/stars/hankbui/my-starred-AI-repos?style=for-the-badge&color=ffb857" alt="GitHub Stars">
-  <img src="https://img.shields.io/github/deployments/hankbui/my-starred-AI-repos/github-pages?style=for-the-badge&label=Deploy&color=8c6fff" alt="Deploy status">
-  <a href="https://hankbui.github.io/my-starred-AI-repos/weekly-rank.html">
+  <img src="https://img.shields.io/github/stars/nguyenlevel/my-starred-AI-repos?style=for-the-badge&color=ffb857" alt="GitHub Stars">
+  <img src="https://img.shields.io/github/deployments/nguyenlevel/my-starred-AI-repos/github-pages?style=for-the-badge&label=Deploy&color=8c6fff" alt="Deploy status">
+  <a href="https://nguyenlevel.github.io/data_moitruong/weekly-rank.html">
     <img src="https://img.shields.io/badge/📈_Weekly_Top_Movers-Visit-ff8a5e?style=for-the-badge" alt="Weekly Top Movers">
   </a>
-  <a href="https://hankbui.github.io/my-starred-AI-repos/find-ideas.html">
+  <a href="https://nguyenlevel.github.io/data_moitruong/find-ideas.html">
     <img src="https://img.shields.io/badge/💡_Find_Startup_Ideas-Explore-c084fc?style=for-the-badge" alt="Find Ideas">
   </a>
   <a href="https://t.me/ai_repos_daily">
@@ -29,7 +29,7 @@
 
 ---
 
-[**Browse**](https://hankbui.github.io/my-starred-AI-repos/) · [Weekly Top Movers](https://hankbui.github.io/my-starred-AI-repos/weekly-rank.html) · [Find Ideas](https://hankbui.github.io/my-starred-AI-repos/find-ideas.html) · [Market Report](https://hankbui.github.io/my-starred-AI-repos/report.html) · [Tech Radar](https://hankbui.github.io/my-starred-AI-repos/research/index.html) · [Telegram](https://t.me/ai_repos_daily)
+[**Browse**](https://nguyenlevel.github.io/data_moitruong/) · [Weekly Top Movers](https://nguyenlevel.github.io/data_moitruong/weekly-rank.html) · [Find Ideas](https://nguyenlevel.github.io/data_moitruong/find-ideas.html) · [Market Report](https://nguyenlevel.github.io/data_moitruong/report.html) · [Tech Radar](https://nguyenlevel.github.io/data_moitruong/research/index.html) · [Telegram](https://t.me/ai_repos_daily)
 
 </div>
 
@@ -152,7 +152,7 @@ Want to help this project grow? Here's how (and why):
 
 1. ⭐ **Star the repo** — it's the single biggest signal for GitHub discovery
 2. 🔗 **Link to it** from your blog, newsletter, or "awesome‑AI" list
-3. 🐦 **Share on X/Twitter** — tag [@hankbui](https://x.com/hankbui) and I'll reshare
+3. 🐦 **Share on X/Twitter** — tag [@nguyenlevel](https://x.com/nguyenlevel) and I'll reshare
 4. 🎯 **Post on HN/Reddit** — *"I got tired of losing AI repos in my starred list, so I built this"* resonates
 5. 📝 **Add a missing repo** — open an issue with `repo: owner/name` and it'll be included in the next daily update
 6. 🤖 **Use the Ask AI feature** — every share or mention drives organic discovery
@@ -163,7 +163,7 @@ Want to help this project grow? Here's how (and why):
 
 ## 🤝 Contributing
 
-**No code needed.** To add a repo, [open an issue](https://github.com/hankbui/my-starred-AI-repos/issues/new) with:
+**No code needed.** To add a repo, [open an issue](https://github.com/nguyenlevel/data_moitruong/issues/new) with:
 ```
 repo: owner/repo-name
 category: (optional — we'll classify it)
@@ -183,10 +183,10 @@ MIT — use the code, fork the site, build your own directory.
 
 ### ⭐ One star = one more person who finds the right AI tool
 
-<a href="https://hankbui.github.io/my-starred-AI-repos/">
+<a href="https://nguyenlevel.github.io/data_moitruong/">
   <img src="https://img.shields.io/badge/🌐_Open_the_directory-3fa7ff?style=for-the-badge" alt="Open the directory">
 </a>
 
-<sub>Built with ❤️ by <a href="https://github.com/hankbui">@hankbui</a> · Auto-updated daily · Free forever</sub>
+<sub>Built with ❤️ by <a href="https://github.com/nguyenlevel">@nguyenlevel</a> · Auto-updated daily · Free forever</sub>
 
 </div>

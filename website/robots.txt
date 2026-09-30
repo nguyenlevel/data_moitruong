@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://hankbui.github.io/my-starred-AI-repos/sitemap.xml
+Sitemap: https://nguyenlevel.github.io/data_moitruong/sitemap.xml

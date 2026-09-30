@@ -28,7 +28,7 @@ import requests
 REPO_ROOT = Path(__file__).resolve().parents[1]
 DATA_DIR = REPO_ROOT / "website" / "data"
 WEBSITE_DIR = REPO_ROOT / "website"
-SITE_URL = "https://hankbui.github.io/my-starred-AI-repos/"
+SITE_URL = "https://nguyenlevel.github.io/data_moitruong/"
 TOP_N = 5
 
 TOKEN = os.getenv("TELEGRAM_BOT_TOKEN", "").strip()
