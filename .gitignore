@@ -1,0 +1,103 @@
+# ---- Files sensibles (secrets, credentials) ----
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+*.jks
+*.keystore
+*.cer
+*.crt
+*.p8
+secrets.*
+config/secrets.*
+credentials.json
+service-account*.json
+client_secret*.json
+token*.json
+oauth*.json
+*.token
+*.refresh_token
+id_rsa
+id_rsa.pub
+.ssh/*
+!id_ed25519
+
+# ---- Fichiers de configuration locaux ----
+*.local
+*.local.*
+config.local.*
+.env.local
+.env.*.local
+
+# ---- Journaux / exports de données ----
+*.log
+logs/
+*.sql.dump
+*.dump
+db_backup*/
+backup*/
+*.bak
+*.tmp
+
+# ---- Python ----
+__pycache__/
+*.py[cod]
+*$py.class
+.ipynb_checkpoints/
+venv/
+.venv/
+env/
+ENV/
+*.egg-info/
+dist/
+build/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# ---- Node / JS ----
+node_modules/
+frontend/node_modules/
+dist/
+.next/
+out/
+build/
+
+# ---- PHP / Composer ----
+vendor/
+composer.lock
+
+# ---- Java / JVM ----
+target/
+*.class
+*.jar
+!*.source.jar
+.gradle/
+.idea/
+*.iml
+
+# ---- C# / .NET ----
+.vscode/
+.idea/
+*.suo
+*.user
+
+# ---- IDE & éditeurs ----
+.idea/
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# ---- Divers ----
+*.zip
+*.tar.gz
+*.rar
+.htaccess
