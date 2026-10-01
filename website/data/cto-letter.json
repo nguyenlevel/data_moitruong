@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-09-30T03:40:02.042233+00:00",
+  "generated_at": "2026-10-01T03:46:43.129197+00:00",
   "week_of": "2026-39",
   "meta": {
     "papers_tracked": 15,
     "technologies_tracked": 31,
-    "ideas_tracked": 586,
-    "repos_tracked": 1654,
+    "ideas_tracked": 533,
+    "repos_tracked": 1,
     "last_research_update": ""
   },
   "accelerating_technologies": [
@@ -59,13 +59,13 @@
       "score": 1943
     },
     {
-      "title": "Build a free chrome extension, added an optional subscription. Here's how I'm thinking about the free/paid split.",
-      "url": "https://reddit.com/r/SaaS/comments/1wtsich/",
-      "revenue_signal": "$4",
+      "title": "Need suggestions for personal AI",
+      "url": "https://reddit.com/r/SaaS/comments/1wufr36/",
+      "revenue_signal": "$4/mo",
       "source": "reddit",
       "category": "",
-      "business_model": "subscription,freemium",
-      "ai_potential": 40,
+      "business_model": null,
+      "ai_potential": 30,
       "score": 0
     }
   ],
@@ -97,79 +97,18 @@
   ],
   "notable_repos": [
     {
-      "name": "codecrafters-io/build-your-own-x",
-      "url": "https://github.com/codecrafters-io/build-your-own-x",
-      "description": "Master programming by recreating your favorite technologies from scratch.",
-      "stars": 550702,
-      "language": "Markdown",
-      "topics": [
-        "awesome-list",
-        "free",
-        "programming",
-        "tutorial-code",
-        "tutorial-exercises"
-      ],
-      "category": "Applications"
-    },
-    {
-      "name": "sindresorhus/awesome",
-      "url": "https://github.com/sindresorhus/awesome",
-      "description": "😎 Awesome lists about all kinds of interesting topics [NOTE: Pull requests are temporarily disabled until I have a chance to catch up with the existing ones]",
-      "stars": 512508,
-      "language": "",
-      "topics": [
-        "awesome",
-        "awesome-list",
-        "lists",
-        "resources",
-        "unicorns"
-      ],
-      "category": "Research & Knowledge"
-    },
-    {
-      "name": "public-apis/public-apis",
-      "url": "https://github.com/public-apis/public-apis",
-      "description": "A collective list of free APIs",
-      "stars": 484436,
+      "name": "Shubhamsaboo/awesome-llm-apps",
+      "url": "https://github.com/Shubhamsaboo/awesome-llm-apps",
+      "description": "100+ AI Agents, Agent Skills and RAG Apps - Free and Open Source.",
+      "stars": 140412,
       "language": "Python",
       "topics": [
-        "api",
-        "apis",
-        "dataset",
-        "development",
-        "free"
+        "agents",
+        "llms",
+        "python",
+        "rag"
       ],
-      "category": "Data & Evaluation"
-    },
-    {
-      "name": "EbookFoundation/free-programming-books",
-      "url": "https://github.com/EbookFoundation/free-programming-books",
-      "description": ":books: Freely available programming books",
-      "stars": 398174,
-      "language": "Python",
-      "topics": [
-        "books",
-        "education",
-        "hacktoberfest",
-        "list",
-        "resource"
-      ],
-      "category": "Other"
-    },
-    {
-      "name": "openclaw/openclaw",
-      "url": "https://github.com/openclaw/openclaw",
-      "description": "The AI that really does things. Any OS. Any Platform. The lobster way. 🦞 ",
-      "stars": 390803,
-      "language": "TypeScript",
-      "topics": [
-        "ai",
-        "assistant",
-        "crustacean",
-        "molty",
-        "openclaw"
-      ],
-      "category": "Applications"
+      "category": "Agents & Automation"
     }
   ]
 }
