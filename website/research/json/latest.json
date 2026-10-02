@@ -1,10 +1,10 @@
 {
   "meta": {
-    "date": "2026-10-01",
+    "date": "2026-10-02",
     "papers_tracked": 15,
-    "technologies_discovered": 16,
+    "technologies_discovered": 35,
     "opportunities_identified": 0,
-    "last_update": "2026-10-01 11:45 UTC",
+    "last_update": "2026-10-02 11:15 UTC",
     "backend": "llm7",
     "model": "Research Curator v1"
   },
@@ -13,7 +13,7 @@
     {
       "id": "new_technologies",
       "title": "New Technologies",
-      "value": "16",
+      "value": "35",
       "label": "discovered this scan",
       "detail": "Long-Horizon Sequential Decision Making, Streaming Benchmark, Agent Environment, Signal-Grounded Measurement, Online Learning, Reinforcement Learning, World Rehearsal, Agentic Reinforcement Learning",
       "color": "accent"
@@ -21,15 +21,15 @@
     {
       "id": "emerging_trends",
       "title": "Emerging Trends",
-      "value": "16",
+      "value": "35",
       "label": "active trend clusters",
-      "detail": "Reinforcement Learning, World Rehearsal, Agentic Reinforcement Learning, KV Cache Optimization, Sparse Attention",
+      "detail": "Multi-Agent Systems, Multi-modal Learning, Integrated Sensing and Communication (ISAC), Sim-to-Real Transfer, Mixture of Experts",
       "color": "green"
     },
     {
       "id": "highest_potential",
       "title": "Highest Potential",
-      "value": "7.7",
+      "value": "7.8",
       "label": "avg opportunity score",
       "detail": "ECG-Scroll: A Long-Horizon, Streaming Benchmark and Agent Environment for Interp",
       "color": "amber"
@@ -45,21 +45,40 @@
     {
       "id": "most_practical",
       "title": "Most Practical",
-      "value": "ECG-Scroll: A Long-Horizon, St",
+      "value": "E2E-SWE: Benchmarking LLMs on ",
       "label": "highest confidence paper",
-      "detail": "Real-time ambulatory ECG monitoring and analysis for healthcare professionals, Wearable health devices with advanced ECG interpretation capabilities",
+      "detail": "AI-powered full-stack application scaffolding platform that generates complete, deployable software projects from natural language specifications, Automated code review and quality assurance system that evaluates LLM-generated repositories against comprehensive test suites",
       "color": "success"
     },
     {
       "id": "most_innovative",
       "title": "Most Innovative",
-      "value": "9",
+      "value": "23",
       "label": "early-stage technologies",
-      "detail": "ECG-Scroll: A Long-Horizon, Streaming Benchmark and Agent Environment for Interp",
+      "detail": "AIMS: An Agentic AI Framework for Sim-to-Real Multi-Modal ISAC",
       "color": "blue"
     }
   ],
   "papers": [
+    {
+      "id": "2610.01058",
+      "title": "MOMAT: Mixture of Multiple Atlases for Low-Power Jailbreak Defense of Quantized LLMs",
+      "authors": [],
+      "categories": [
+        "cs.AI"
+      ],
+      "published": "2026-10-02",
+      "updated": "2026-10-02",
+      "summary": "arXiv:2610.01058v1 Announce Type: cross Abstract: Quantized large language models are increasingly deployed on edge devices for their low latency and energy efficiency. However, model quantization weakens alignment safeguards, leaving qLLMs (quantized large language models) highly vulnerable to jailbreak attacks. To address this challenge, we present MOMAT (Mixture of Multiple Atlases), a hardware-enhanced safety framework that combines structured knowledge retrieval with low-power defense acceleration. Each atlas represents a semantic cluster of harmful or benign sample sets and policy templates, enabling domain-localized Retrieval-Augmented Generation guarding that mitigates the curse of dimensionality and the resulting semantic sparsity problem in large, heterogeneous safety databases. MOMAT retrieves top-$k$ similarity features from all atlases for each prompt and evaluates them using a lightweight MoE (Mixture of Experts) detector, while a CiM (Compute-in-Memory)-accelerated similarity engine performs fast, low-power atlas-local retrieval. MOMAT's CiM-based retrieval accelerates a 100-query batch from 15,052.44 ms to 3,207.21 ns (a $4.69 \\times 10^6\\times$ speedup) and reduces energy from $8.1 \\times 10^7$ $\\mu$J to 3.32 $\\mu$J, yielding an approximately $2.5 \\times 10^5\\times$ energy reduction over DRAM-based (Raspberry Pi) baselines. Red-team evaluations across standard benchmarks show that MOMAT matches the defense performance of state-of-the-art methods while avoiding benign overkill and providing substantial efficiency gains, demonstrating that CiM-based modular defenses can make edge-deployed qLLMs both safer and more energy-efficient. We will release the full 223.2k-sample dataset to foster future research.",
+      "pdf_url": "https://arxiv.org/abs/2610.01058",
+      "comment": "",
+      "technologies": [],
+      "maturity": "early",
+      "confidence": 0.0,
+      "curator_score": 6.2,
+      "product_potential": [],
+      "domain_applications": []
+    },
     {
       "id": "2609.33117",
       "title": "ECG-Scroll: A Long-Horizon, Streaming Benchmark and Agent Environment for Interpretation of Ambulatory Electrocardiograms",
@@ -237,36 +256,6 @@
       "domain_applications": []
     },
     {
-      "id": "2609.30761",
-      "title": "Timo: $\\textbf{T}$aming Mult$\\textbf{i}$modal Diffusion Transformer for Human $\\textbf{Mo}$tion Generation",
-      "authors": [],
-      "categories": [
-        "cs.CV"
-      ],
-      "published": "2026-09-28",
-      "updated": "2026-09-28",
-      "summary": "arXiv:2609.30761v1 Announce Type: new Abstract: Most existing human motion generation (HMG) methods use cross-attention modules to inject text semantics, but ignore the importance of bidirectional modeling between motion and text tokens, which limits text comprehension. A straightforward idea is introducing multimodal diffusion transformers (MMDiT), which have shown effective joint text--visual modeling in vision generation, into HMG. However, we find that articulated motion is temporally coherent but weakly correlated across joints, in which directly applying an MMDiT with flow matching produces poorly coordinated and jerky motion. In this work, we propose Timo, a novel kinematics-aware MMDiT framework tailored for HMG. Timo combines fully shared multimodal attention for bidirectional text--motion modeling with flow matching, geometric and rotational-kinematics supervision that compares actual rotations and their changes over time, and a two-stage curriculum progressing from broad motion learning to detailed caption alignment. Further, we construct a benchmark of $40{,}025$ held-out clips from six public datasets spanning diverse actions, assessing six complementary dimensions under a common evaluator and scoring protocol. Our model substantially outperforms state-of-the-art methods in both quantitative and qualitative evaluations. Remarkably, Timo surpasses Kimodo on five of six dimensions, achieving a $40.8$% relative improvement in the average benchmark score. Project page: https://kyfafyd.wang/projects/timo. Demo page: https://timo.kyfafyd.wang.",
-      "pdf_url": "https://arxiv.org/abs/2609.30761",
-      "comment": "",
-      "technologies": [
-        "Diffusion Models",
-        "Multimodal Learning"
-      ],
-      "maturity": "medium",
-      "confidence": 0.8,
-      "curator_score": 5.7,
-      "product_potential": [
-        "Virtual fitness trainers that generate personalized motion sequences based on user input",
-        "Augmented reality applications for sports coaching and analysis",
-        "Interactive virtual avatars for gaming and social media"
-      ],
-      "domain_applications": [
-        "creative",
-        "education",
-        "healthcare"
-      ]
-    },
-    {
       "id": "2609.34195",
       "title": "PainterBench: A Figural Divergent-Thinking Benchmark for Tool-Using Language Models",
       "authors": [],
@@ -347,12 +336,33 @@
       "summary": "arXiv:2609.39964v1 Announce Type: new Abstract: Multi-modal integrated sensing and communication (ISAC) enables environmental perception and reliable connectivity for intelligent wireless networks. Data-driven multi-modal ISAC models depend heavily on annotated real-world data to learn relationships across sensing and wireless observations, thereby constraining scalable deployment. Although synthetic data generation reduces the burden, adapting existing simulation pipelines to a target deployment requires consistent scene, sensing, wireless, and learning configurations, while mismatches among these coupled components impair sim-to-real transferability. To address the challenge, we propose an agentic artificial intelligence (AI) framework for sim-to-real multi-modal ISAC, named AIMS. Given a natural-language deployment request specifying the target task, deployment conditions, and real-data budget, AIMS derives a deployment-specific sim-to-real configuration and coordinates its execution to produce a deployment-specific task model. A two-agent architecture coordinates scene construction with task learning. A scene construction agent generates geographically grounded, synchronized sensing and wireless records from shared physical states, while a scene understanding agent configures task-relevant modalities and mixture-of-experts (MoE) learning for zero-shot inference or few-shot adaptation. Structured domain knowledge guides dependency-aware planning, while validation evidence supports feedback-driven revision of affected decisions. Experiments on the real-world DeepSense~6G dataset demonstrate improved vehicle detection and beam prediction over the considered simulation and fusion baselines. A separate orchestration benchmark evaluates task interpretation, dependency reasoning, and feedback-driven replanning across diverse deployment requests, showing improved plan correctness with structured domain knowledge and validation feedback.",
       "pdf_url": "https://arxiv.org/abs/2609.39964",
       "comment": "",
-      "technologies": [],
-      "maturity": "early",
-      "confidence": 0.0,
+      "technologies": [
+        "Multi-modal Learning",
+        "Integrated Sensing and Communication (ISAC)",
+        "Sim-to-Real Transfer",
+        "Mixture of Experts",
+        "Agentic AI",
+        "Multi-Agent Systems",
+        "Zero-shot Learning",
+        "Few-shot Learning",
+        "Domain Adaptation",
+        "Object Detection",
+        "Beam Prediction",
+        "Synthetic Data Generation"
+      ],
+      "maturity": "medium",
+      "confidence": 0.75,
       "curator_score": 5.7,
-      "product_potential": [],
-      "domain_applications": []
+      "product_potential": [
+        "Autonomous telecom network deployment optimizer that configures sensing and communication parameters for specific geographic environments using natural language specifications",
+        "Intelligent wireless infrastructure monitoring system combining radar-like sensing with communication for smart cities and autonomous vehicle corridors",
+        "Adaptive beamforming and vehicle detection system for next-generation 6G networks with reduced real-world data requirements"
+      ],
+      "domain_applications": [
+        "robotics",
+        "science",
+        "enterprise"
+      ]
     },
     {
       "id": "2609.38335",
@@ -366,12 +376,30 @@
       "summary": "arXiv:2609.38335v1 Announce Type: cross Abstract: Coding agents powered by large language models (LLMs) are evolving from making localized code changes to developing complete software repositories. However, evaluating repository-scale generation remains challenging: tasks must demand system-level reasoning while ensuring that all evaluated behaviors are precisely specified and independent of any particular implementation. We introduce E2E-SWE, a benchmark for evaluating whether coding agents can build complete, functional software repositories end to end. E2E-SWE contains 186 whole-repository generation tasks spanning 11 programming languages. Given only a natural-language specification and an empty workspace, an agent must implement a complete, installable project that satisfies a comprehensive suite of hidden tests. Each task is constructed by a software engineer in collaboration with an LLM; together, they develop the test suite and a corresponding implementation-independent specification. To ensure that tasks are well specified and practically solvable, we further subject them to an iterative verification process in which autonomous agents audit and repair task defects using static inspection and failures observed from real model rollouts. Evaluating 13 frontier models, we find substantial variation in end-to-end repository generation ability, with pass@1 ranging from 11.7% to 67.7%, providing strong model differentiation while leaving considerable headroom for future progress. Analysis of agent trajectories further reveals long, front-loaded reasoning patterns, highlighting the planning and system-level reasoning required to construct working codebases from scratch.",
       "pdf_url": "https://arxiv.org/abs/2609.38335",
       "comment": "",
-      "technologies": [],
-      "maturity": "early",
-      "confidence": 0.0,
+      "technologies": [
+        "LLM-based Coding Agents",
+        "End-to-End Code Generation",
+        "Repository-Scale Generation",
+        "Automated Software Engineering",
+        "Benchmark Evaluation",
+        "Test-Driven Development",
+        "Autonomous Agent Verification",
+        "System-Level Reasoning",
+        "Multi-Language Code Generation"
+      ],
+      "maturity": "medium",
+      "confidence": 0.88,
       "curator_score": 5.7,
-      "product_potential": [],
-      "domain_applications": []
+      "product_potential": [
+        "AI-powered full-stack application scaffolding platform that generates complete, deployable software projects from natural language specifications",
+        "Automated code review and quality assurance system that evaluates LLM-generated repositories against comprehensive test suites",
+        "Enterprise software development assistant that can architect and implement complete backend systems, APIs, and databases from high-level requirements"
+      ],
+      "domain_applications": [
+        "enterprise",
+        "science",
+        "other"
+      ]
     },
     {
       "id": "2609.39363",
@@ -417,7 +445,7 @@
       "name": "Long-Horizon Sequential Decision Making",
       "papers": 1,
       "maturity": "early",
-      "confidence": 0.65,
+      "confidence": 0.6,
       "trend": "rising",
       "applications": [
         "healthcare"
@@ -427,7 +455,7 @@
       "name": "Streaming Benchmark",
       "papers": 1,
       "maturity": "early",
-      "confidence": 0.65,
+      "confidence": 0.6,
       "trend": "rising",
       "applications": [
         "healthcare"
@@ -437,7 +465,7 @@
       "name": "Agent Environment",
       "papers": 1,
       "maturity": "early",
-      "confidence": 0.65,
+      "confidence": 0.6,
       "trend": "rising",
       "applications": [
         "healthcare"
@@ -447,7 +475,7 @@
       "name": "Signal-Grounded Measurement",
       "papers": 1,
       "maturity": "early",
-      "confidence": 0.65,
+      "confidence": 0.6,
       "trend": "rising",
       "applications": [
         "healthcare"
@@ -457,7 +485,7 @@
       "name": "Online Learning",
       "papers": 1,
       "maturity": "early",
-      "confidence": 0.65,
+      "confidence": 0.6,
       "trend": "rising",
       "applications": [
         "healthcare"
@@ -466,73 +494,73 @@
     {
       "name": "Reinforcement Learning",
       "papers": 1,
-      "maturity": "medium",
-      "confidence": 0.7,
+      "maturity": "early",
+      "confidence": 0.6,
       "trend": "rising",
       "applications": [
         "enterprise",
-        "robotics",
         "other",
+        "robotics",
         "education"
       ]
     },
     {
       "name": "World Rehearsal",
       "papers": 1,
-      "maturity": "medium",
-      "confidence": 0.7,
+      "maturity": "early",
+      "confidence": 0.6,
       "trend": "rising",
       "applications": [
         "enterprise",
-        "robotics",
         "other",
+        "robotics",
         "education"
       ]
     },
     {
       "name": "Agentic Reinforcement Learning",
       "papers": 1,
-      "maturity": "medium",
-      "confidence": 0.7,
+      "maturity": "early",
+      "confidence": 0.6,
       "trend": "rising",
       "applications": [
         "enterprise",
-        "robotics",
         "other",
+        "robotics",
         "education"
       ]
     },
     {
       "name": "KV Cache Optimization",
       "papers": 1,
-      "maturity": "medium",
-      "confidence": 0.7,
+      "maturity": "early",
+      "confidence": 0.6,
       "trend": "rising",
       "applications": [
         "enterprise",
         "other",
-        "creative",
-        "education"
+        "education",
+        "creative"
       ]
     },
     {
       "name": "Sparse Attention",
       "papers": 1,
-      "maturity": "medium",
-      "confidence": 0.7,
+      "maturity": "early",
+      "confidence": 0.6,
       "trend": "rising",
       "applications": [
         "enterprise",
         "other",
-        "creative",
-        "education"
+        "education",
+        "creative"
       ]
     },
     {
       "name": "In-Context Learning",
       "papers": 1,
-      "maturity": "medium",
-      "confidence": 0.7,
+      "maturity": "early",
+      "confidence": 0.6,
       "trend": "rising",
       "applications": [
         "enterprise",
@@ -547,56 +575,284 @@
       "trend": "rising",
       "applications": [
         "enterprise",
-        "robotics"
-      ]
-    },
-    {
-      "name": "Diffusion Models",
-      "papers": 1,
-      "maturity": "early",
-      "confidence": 0.62,
-      "trend": "rising",
-      "applications": [
-        "healthcare",
-        "creative",
-        "education"
-      ]
-    },
-    {
-      "name": "Multimodal Learning",
-      "papers": 1,
-      "maturity": "early",
-      "confidence": 0.62,
-      "trend": "rising",
-      "applications": [
-        "healthcare",
-        "enterprise",
-        "creative",
-        "education"
+        "robotics",
+        "science"
       ]
     },
     {
       "name": "Tool-Using Language Models",
       "papers": 1,
       "maturity": "early",
-      "confidence": 0.62,
-      "trend": "rising",
+      "confidence": 0.5700000000000001,
+      "trend": "emerging",
       "applications": [
         "enterprise",
-        "creative",
-        "education"
+        "education",
+        "creative"
+      ]
+    },
+    {
+      "name": "Multimodal Learning",
+      "papers": 1,
+      "maturity": "early",
+      "confidence": 0.5700000000000001,
+      "trend": "emerging",
+      "applications": [
+        "enterprise",
+        "education",
+        "creative"
       ]
     },
     {
       "name": "Automated Scoring",
       "papers": 1,
       "maturity": "early",
-      "confidence": 0.62,
+      "confidence": 0.5700000000000001,
+      "trend": "emerging",
+      "applications": [
+        "enterprise",
+        "education",
+        "creative"
+      ]
+    },
+    {
+      "name": "Multi-modal Learning",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.7,
       "trend": "rising",
       "applications": [
         "enterprise",
-        "creative",
-        "education"
+        "robotics",
+        "science"
+      ]
+    },
+    {
+      "name": "Integrated Sensing and Communication (ISAC)",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.7,
+      "trend": "rising",
+      "applications": [
+        "enterprise",
+        "robotics",
+        "science"
+      ]
+    },
+    {
+      "name": "Sim-to-Real Transfer",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.7,
+      "trend": "rising",
+      "applications": [
+        "enterprise",
+        "robotics",
+        "science"
+      ]
+    },
+    {
+      "name": "Mixture of Experts",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.7,
+      "trend": "rising",
+      "applications": [
+        "enterprise",
+        "robotics",
+        "science"
+      ]
+    },
+    {
+      "name": "Agentic AI",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.7,
+      "trend": "rising",
+      "applications": [
+        "enterprise",
+        "robotics",
+        "science"
+      ]
+    },
+    {
+      "name": "Zero-shot Learning",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.7,
+      "trend": "rising",
+      "applications": [
+        "enterprise",
+        "robotics",
+        "science"
+      ]
+    },
+    {
+      "name": "Few-shot Learning",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.7,
+      "trend": "rising",
+      "applications": [
+        "enterprise",
+        "robotics",
+        "science"
+      ]
+    },
+    {
+      "name": "Domain Adaptation",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.7,
+      "trend": "rising",
+      "applications": [
+        "enterprise",
+        "robotics",
+        "science"
+      ]
+    },
+    {
+      "name": "Object Detection",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.7,
+      "trend": "rising",
+      "applications": [
+        "enterprise",
+        "robotics",
+        "science"
+      ]
+    },
+    {
+      "name": "Beam Prediction",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.7,
+      "trend": "rising",
+      "applications": [
+        "enterprise",
+        "robotics",
+        "science"
+      ]
+    },
+    {
+      "name": "Synthetic Data Generation",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.7,
+      "trend": "rising",
+      "applications": [
+        "enterprise",
+        "robotics",
+        "science"
+      ]
+    },
+    {
+      "name": "LLM-based Coding Agents",
+      "papers": 1,
+      "maturity": "early",
+      "confidence": 0.6,
+      "trend": "rising",
+      "applications": [
+        "enterprise",
+        "other",
+        "science"
+      ]
+    },
+    {
+      "name": "End-to-End Code Generation",
+      "papers": 1,
+      "maturity": "early",
+      "confidence": 0.6,
+      "trend": "rising",
+      "applications": [
+        "enterprise",
+        "other",
+        "science"
+      ]
+    },
+    {
+      "name": "Repository-Scale Generation",
+      "papers": 1,
+      "maturity": "early",
+      "confidence": 0.6,
+      "trend": "rising",
+      "applications": [
+        "enterprise",
+        "other",
+        "science"
+      ]
+    },
+    {
+      "name": "Automated Software Engineering",
+      "papers": 1,
+      "maturity": "early",
+      "confidence": 0.6,
+      "trend": "rising",
+      "applications": [
+        "enterprise",
+        "other",
+        "science"
+      ]
+    },
+    {
+      "name": "Benchmark Evaluation",
+      "papers": 1,
+      "maturity": "early",
+      "confidence": 0.6,
+      "trend": "rising",
+      "applications": [
+        "enterprise",
+        "other",
+        "science"
+      ]
+    },
+    {
+      "name": "Test-Driven Development",
+      "papers": 1,
+      "maturity": "early",
+      "confidence": 0.6,
+      "trend": "rising",
+      "applications": [
+        "enterprise",
+        "other",
+        "science"
+      ]
+    },
+    {
+      "name": "Autonomous Agent Verification",
+      "papers": 1,
+      "maturity": "early",
+      "confidence": 0.6,
+      "trend": "rising",
+      "applications": [
+        "enterprise",
+        "other",
+        "science"
+      ]
+    },
+    {
+      "name": "System-Level Reasoning",
+      "papers": 1,
+      "maturity": "early",
+      "confidence": 0.6,
+      "trend": "rising",
+      "applications": [
+        "enterprise",
+        "other",
+        "science"
+      ]
+    },
+    {
+      "name": "Multi-Language Code Generation",
+      "papers": 1,
+      "maturity": "early",
+      "confidence": 0.6,
+      "trend": "rising",
+      "applications": [
+        "enterprise",
+        "other",
+        "science"
       ]
     }
   ],
