@@ -1,37 +1,37 @@
 {
-  "generated_at": "2026-10-01T03:46:43.129197+00:00",
+  "generated_at": "2026-10-02T03:46:49.419012+00:00",
   "week_of": "2026-39",
   "meta": {
     "papers_tracked": 15,
-    "technologies_tracked": 31,
-    "ideas_tracked": 533,
+    "technologies_tracked": 16,
+    "ideas_tracked": 543,
     "repos_tracked": 1,
     "last_research_update": ""
   },
   "accelerating_technologies": [
     {
-      "name": "Multimodal Learning",
-      "description": "Multimodal Learning",
+      "name": "Reinforcement Learning",
+      "description": "Reinforcement Learning",
       "trend": "rising",
-      "confidence": 0.8,
+      "confidence": 0.7,
       "maturity": "medium",
       "paper_count": 1,
       "signal": "rising"
     },
     {
-      "name": "Reinforcement Learning from Human Feedback",
-      "description": "Reinforcement Learning from Human Feedback",
+      "name": "World Rehearsal",
+      "description": "World Rehearsal",
       "trend": "rising",
-      "confidence": 0.8,
+      "confidence": 0.7,
       "maturity": "medium",
       "paper_count": 1,
       "signal": "rising"
     },
     {
-      "name": "Self-Adaptive Latent Reasoning",
-      "description": "Self-Adaptive Latent Reasoning",
+      "name": "Agentic Reinforcement Learning",
+      "description": "Agentic Reinforcement Learning",
       "trend": "rising",
-      "confidence": 0.8,
+      "confidence": 0.7,
       "maturity": "medium",
       "paper_count": 1,
       "signal": "rising"
@@ -59,13 +59,13 @@
       "score": 1943
     },
     {
-      "title": "Need suggestions for personal AI",
-      "url": "https://reddit.com/r/SaaS/comments/1wufr36/",
-      "revenue_signal": "$4/mo",
+      "title": "We hit $363,000 CAD ARR in 8 months, here's everything we learned so far about using outbound.",
+      "url": "https://reddit.com/r/SaaS/comments/1wv2p3o/",
+      "revenue_signal": "$363,000",
       "source": "reddit",
       "category": "",
-      "business_model": null,
-      "ai_potential": 30,
+      "business_model": "api",
+      "ai_potential": 40,
       "score": 0
     }
   ],
@@ -73,7 +73,7 @@
     {
       "technology": "Long-Horizon Sequential Decision Making",
       "description": "Long-Horizon Sequential Decision Making",
-      "confidence": 0.7,
+      "confidence": 0.65,
       "paper_count": 1,
       "related_papers": [
         {
@@ -85,7 +85,7 @@
     {
       "technology": "Streaming Benchmark",
       "description": "Streaming Benchmark",
-      "confidence": 0.7,
+      "confidence": 0.65,
       "paper_count": 1,
       "related_papers": [
         {
@@ -100,7 +100,7 @@
       "name": "Shubhamsaboo/awesome-llm-apps",
       "url": "https://github.com/Shubhamsaboo/awesome-llm-apps",
       "description": "100+ AI Agents, Agent Skills and RAG Apps - Free and Open Source.",
-      "stars": 140412,
+      "stars": 140521,
       "language": "Python",
       "topics": [
         "agents",
