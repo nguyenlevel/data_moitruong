@@ -1,17 +1,17 @@
 {
-  "generated_at": "2026-10-02T03:46:49.419012+00:00",
+  "generated_at": "2026-10-03T03:30:48.325754+00:00",
   "week_of": "2026-39",
   "meta": {
     "papers_tracked": 15,
-    "technologies_tracked": 16,
-    "ideas_tracked": 543,
+    "technologies_tracked": 35,
+    "ideas_tracked": 541,
     "repos_tracked": 1,
     "last_research_update": ""
   },
   "accelerating_technologies": [
     {
-      "name": "Reinforcement Learning",
-      "description": "Reinforcement Learning",
+      "name": "Multi-Agent Systems",
+      "description": "Multi-Agent Systems",
       "trend": "rising",
       "confidence": 0.7,
       "maturity": "medium",
@@ -19,8 +19,8 @@
       "signal": "rising"
     },
     {
-      "name": "World Rehearsal",
-      "description": "World Rehearsal",
+      "name": "Multi-modal Learning",
+      "description": "Multi-modal Learning",
       "trend": "rising",
       "confidence": 0.7,
       "maturity": "medium",
@@ -28,8 +28,8 @@
       "signal": "rising"
     },
     {
-      "name": "Agentic Reinforcement Learning",
-      "description": "Agentic Reinforcement Learning",
+      "name": "Integrated Sensing and Communication (ISAC)",
+      "description": "Integrated Sensing and Communication (ISAC)",
       "trend": "rising",
       "confidence": 0.7,
       "maturity": "medium",
@@ -59,12 +59,12 @@
       "score": 1943
     },
     {
-      "title": "We hit $363,000 CAD ARR in 8 months, here's everything we learned so far about using outbound.",
-      "url": "https://reddit.com/r/SaaS/comments/1wv2p3o/",
-      "revenue_signal": "$363,000",
+      "title": "If AI can rebuild your SaaS in a weekend, what exactly is your moat?",
+      "url": "https://reddit.com/r/SaaS/comments/1wvk8cl/",
+      "revenue_signal": "$1M ARR",
       "source": "reddit",
       "category": "",
-      "business_model": "api",
+      "business_model": "subscription,marketplace",
       "ai_potential": 40,
       "score": 0
     }
@@ -73,7 +73,7 @@
     {
       "technology": "Long-Horizon Sequential Decision Making",
       "description": "Long-Horizon Sequential Decision Making",
-      "confidence": 0.65,
+      "confidence": 0.6,
       "paper_count": 1,
       "related_papers": [
         {
@@ -85,7 +85,7 @@
     {
       "technology": "Streaming Benchmark",
       "description": "Streaming Benchmark",
-      "confidence": 0.65,
+      "confidence": 0.6,
       "paper_count": 1,
       "related_papers": [
         {
@@ -100,7 +100,7 @@
       "name": "Shubhamsaboo/awesome-llm-apps",
       "url": "https://github.com/Shubhamsaboo/awesome-llm-apps",
       "description": "100+ AI Agents, Agent Skills and RAG Apps - Free and Open Source.",
-      "stars": 140521,
+      "stars": 140564,
       "language": "Python",
       "topics": [
         "agents",
