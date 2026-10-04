@@ -1,17 +1,17 @@
 {
-  "generated_at": "2026-10-03T03:30:48.325754+00:00",
-  "week_of": "2026-39",
+  "generated_at": "2026-10-04T03:58:06.245624+00:00",
+  "week_of": "2026-40",
   "meta": {
     "papers_tracked": 15,
-    "technologies_tracked": 35,
-    "ideas_tracked": 541,
+    "technologies_tracked": 38,
+    "ideas_tracked": 535,
     "repos_tracked": 1,
     "last_research_update": ""
   },
   "accelerating_technologies": [
     {
-      "name": "Multi-Agent Systems",
-      "description": "Multi-Agent Systems",
+      "name": "Mixture of Experts",
+      "description": "Mixture of Experts",
       "trend": "rising",
       "confidence": 0.7,
       "maturity": "medium",
@@ -19,8 +19,8 @@
       "signal": "rising"
     },
     {
-      "name": "Multi-modal Learning",
-      "description": "Multi-modal Learning",
+      "name": "Retrieval Augmented Generation",
+      "description": "Retrieval Augmented Generation",
       "trend": "rising",
       "confidence": 0.7,
       "maturity": "medium",
@@ -28,8 +28,8 @@
       "signal": "rising"
     },
     {
-      "name": "Integrated Sensing and Communication (ISAC)",
-      "description": "Integrated Sensing and Communication (ISAC)",
+      "name": "On-device AI",
+      "description": "On-device AI",
       "trend": "rising",
       "confidence": 0.7,
       "maturity": "medium",
@@ -59,37 +59,41 @@
       "score": 1943
     },
     {
-      "title": "If AI can rebuild your SaaS in a weekend, what exactly is your moat?",
-      "url": "https://reddit.com/r/SaaS/comments/1wvk8cl/",
-      "revenue_signal": "$1M ARR",
+      "title": "Thinking about building a tool that shows which Reddit threads AI cites in your niche. Is this a real problem?",
+      "url": "https://reddit.com/r/SaaS/comments/1wwnzo6/",
+      "revenue_signal": "$19",
       "source": "reddit",
       "category": "",
-      "business_model": "subscription,marketplace",
-      "ai_potential": 40,
+      "business_model": null,
+      "ai_potential": 30,
       "score": 0
     }
   ],
   "hidden_gems": [
     {
-      "technology": "Long-Horizon Sequential Decision Making",
-      "description": "Long-Horizon Sequential Decision Making",
-      "confidence": 0.6,
+      "technology": "Mixture of Experts",
+      "description": "Mixture of Experts",
+      "confidence": 0.7,
       "paper_count": 1,
       "related_papers": [
         {
-          "title": "ECG-Scroll: A Long-Horizon, Streaming Benchmark and Agent Environment for Interpretation of Ambulatory Electrocardiograms",
+          "title": "MOMAT: Mixture of Multiple Atlases for Low-Power Jailbreak Defense of Quantized LLMs",
+          "url": ""
+        },
+        {
+          "title": "AIMS: An Agentic AI Framework for Sim-to-Real Multi-Modal ISAC",
           "url": ""
         }
       ]
     },
     {
-      "technology": "Streaming Benchmark",
-      "description": "Streaming Benchmark",
-      "confidence": 0.6,
+      "technology": "Retrieval Augmented Generation",
+      "description": "Retrieval Augmented Generation",
+      "confidence": 0.7,
       "paper_count": 1,
       "related_papers": [
         {
-          "title": "ECG-Scroll: A Long-Horizon, Streaming Benchmark and Agent Environment for Interpretation of Ambulatory Electrocardiograms",
+          "title": "MOMAT: Mixture of Multiple Atlases for Low-Power Jailbreak Defense of Quantized LLMs",
           "url": ""
         }
       ]
@@ -100,7 +104,7 @@
       "name": "Shubhamsaboo/awesome-llm-apps",
       "url": "https://github.com/Shubhamsaboo/awesome-llm-apps",
       "description": "100+ AI Agents, Agent Skills and RAG Apps - Free and Open Source.",
-      "stars": 140564,
+      "stars": 140643,
       "language": "Python",
       "topics": [
         "agents",
