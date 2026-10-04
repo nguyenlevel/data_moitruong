@@ -1,10 +1,10 @@
 {
   "meta": {
-    "date": "2026-10-03",
+    "date": "2026-10-04",
     "papers_tracked": 15,
-    "technologies_discovered": 38,
+    "technologies_discovered": 45,
     "opportunities_identified": 0,
-    "last_update": "2026-10-03 10:31 UTC",
+    "last_update": "2026-10-04 11:12 UTC",
     "backend": "llm7",
     "model": "Research Curator v1"
   },
@@ -13,7 +13,7 @@
     {
       "id": "new_technologies",
       "title": "New Technologies",
-      "value": "38",
+      "value": "45",
       "label": "discovered this scan",
       "detail": "Mixture of Experts, Retrieval Augmented Generation, On-device AI, Long-Horizon Sequential Decision Making, Streaming Benchmark, Agent Environment, Signal-Grounded Measurement, Online Learning",
       "color": "accent"
@@ -21,15 +21,15 @@
     {
       "id": "emerging_trends",
       "title": "Emerging Trends",
-      "value": "38",
+      "value": "45",
       "label": "active trend clusters",
-      "detail": "Mixture of Experts, Retrieval Augmented Generation, On-device AI, KV Cache Optimization, Multimodal Learning",
+      "detail": "On-device AI, Structured Defeasible Reasoning, Symbolic Argumentation Engine, Reinforcement Learning from Verifiable Rewards (RLVR), Latent Flow Matching",
       "color": "green"
     },
     {
       "id": "highest_potential",
       "title": "Highest Potential",
-      "value": "7.7",
+      "value": "7.6",
       "label": "avg opportunity score",
       "detail": "MOMAT: Mixture of Multiple Atlases for Low-Power Jailbreak Defense of Quantized ",
       "color": "amber"
@@ -53,7 +53,7 @@
     {
       "id": "most_innovative",
       "title": "Most Innovative",
-      "value": "32",
+      "value": "37",
       "label": "early-stage technologies",
       "detail": "AIMS: An Agentic AI Framework for Sim-to-Real Multi-Modal ISAC",
       "color": "blue"
@@ -79,7 +79,7 @@
       ],
       "maturity": "early",
       "confidence": 0.8,
-      "curator_score": 6.2,
+      "curator_score": 5.7,
       "product_potential": [
         "Low-power AI assistant for edge devices with enhanced jailbreak defense",
         "Secure on-device AI applications for healthcare and finance"
@@ -277,12 +277,24 @@
       "summary": "arXiv:2609.38409v1 Announce Type: new Abstract: Recent progress in large language model reasoning has been driven by benchmarks and reinforcement learning environments with automatically verifiable rewards, particularly in mathematics, code, and formal logic. These settings make model accuracy easier to evaluate and optimize, but it remains unclear how far success under fixed problem specifications and stable evaluation criteria transfers to reasoning outside such domains. Real-world reasoning often proceeds under incomplete and revisable information: conclusions may be supported provisionally, defeated by counter-evidence, reinstated by further arguments, or revised when stronger reasons become available. Reasoning of this kind is generally referred to as defeasible reasoning. We introduce ArgGYM, a procedural benchmark and RLVR-compatible training environment for structured defeasible reasoning. ArgGYM decomposes this reasoning into twelve tasks and grounds task-specific scoring in a symbolic argumentation engine that computes the formal states used to evaluate model outputs. It includes a frozen benchmark of 1,440 verified instances across fifteen curriculum configurations, two argument preference orderings (weakest-link and last-link), and two set orderings (elitist and democratic), while the same generators and verifiers can produce fresh instances for evaluation that reduces dependence on static test sets and for verifiable-reward training. On the frozen benchmark, frontier and open-weight models show sharply different reasoning profiles: they can recover substantial parts of structured answers without solving the complete task, and performance declines in later curriculum configurations with longer dependencies and more interacting structures. We release the benchmark, generators, and verifiers for reproducible evaluation and RLVR training.",
       "pdf_url": "https://arxiv.org/abs/2609.38409",
       "comment": "",
-      "technologies": [],
+      "technologies": [
+        "Structured Defeasible Reasoning",
+        "Symbolic Argumentation Engine",
+        "Reinforcement Learning from Verifiable Rewards (RLVR)"
+      ],
       "maturity": "early",
-      "confidence": 0.0,
+      "confidence": 0.7,
       "curator_score": 5.4,
-      "product_potential": [],
-      "domain_applications": []
+      "product_potential": [
+        "AI-powered legal reasoning assistant",
+        "Dynamic decision-making support system for healthcare",
+        "Automated negotiation and dispute resolution platform"
+      ],
+      "domain_applications": [
+        "legal",
+        "healthcare",
+        "enterprise"
+      ]
     },
     {
       "id": "2609.34195",
@@ -327,12 +339,19 @@
       "summary": "arXiv:2609.38652v1 Announce Type: new Abstract: Agentic AI systems increasingly rely on cloud-hosted large language models for planning, tool use, and iterative execution, raising concerns about API cost and data exposure. Advances in personal AI devices enable agents to execute locally, but limited resources on device may affect task success and performance. Existing benchmarks are inadequate for systematically characterizing these trade-offs across devices, workloads, and deployment architectures. We present AgBench, a benchmark suite and open artifacts for reproducible evaluation of agentic AI on personal devices. Using AgBench, we evaluate local, hybrid, and cloud execution across agentic workloads, examining task success, latency, cloud API cost, and data exposure. Our results, drawn from over 162.07 million data points, show that personal AI devices can complete many agent tasks locally, but local-only execution generally has lower task success and longer completion times than cloud-only execution, especially as concurrency increases. Local-only execution eliminates cloud model API costs and sensitive-information exposure to cloud agents. Hybrid execution can improve task success, but its cloud cost and data exposure depend on how agents divide work and share information. No single architecture performs best across task success, goodput, cloud cost, and data exposure; deployment choices should reflect the intended workload and device capabilities. AgBench is available at https://anonymous.4open.science/r/AgBench-2777.",
       "pdf_url": "https://arxiv.org/abs/2609.38652",
       "comment": "",
-      "technologies": [],
+      "technologies": [
+        "On-device AI"
+      ],
       "maturity": "early",
-      "confidence": 0.0,
+      "confidence": 0.7,
       "curator_score": 5.2,
-      "product_potential": [],
-      "domain_applications": []
+      "product_potential": [
+        "Developing AI agents that can operate efficiently on personal devices, reducing reliance on cloud services and enhancing privacy.",
+        "Creating hybrid AI systems that leverage both local and cloud resources to optimize task success, performance, and cost."
+      ],
+      "domain_applications": [
+        "other"
+      ]
     },
     {
       "id": "2609.39382",
@@ -346,12 +365,26 @@
       "summary": "arXiv:2609.39382v1 Announce Type: new Abstract: Textual skills provide reusable guidance for large language model agents, but existing approaches often rely on manually curated skill banks or reinforcement learning with indirect and delayed feedback. We introduce SkillFM (Skill Flow Matching), a generative framework that synthesizes task-conditioned textual skills directly without test-time skill retrieval. Our framework combines a codec for encoding and reconstructing textual skills in a continuous latent space with a conditional flow model trained using improved MeanFlow. At inference time, the learned velocity field enables single-step latent sampling, and an LLM-based decoder converts the sampled representation into textual guidance for a frozen downstream agent. We evaluate the framework on embodied tasks, question answering, and web shopping. On ALFWorld and Search-QA, our method achieves the best overall performance among the compared vector-based skill approaches. Our analyses further demonstrate that latent skill generation is an effective alternative to retrieval-based skill augmentation. Our code and training skill libraries are available at https://github.com/lulushang999/SkillFM.",
       "pdf_url": "https://arxiv.org/abs/2609.39382",
       "comment": "",
-      "technologies": [],
+      "technologies": [
+        "Latent Flow Matching",
+        "Conditional Flow Model",
+        "MeanFlow",
+        "Textual Skill Generation"
+      ],
       "maturity": "early",
-      "confidence": 0.0,
+      "confidence": 0.7,
       "curator_score": 5.2,
-      "product_potential": [],
-      "domain_applications": []
+      "product_potential": [
+        "AI-powered personal assistants with dynamic skill generation",
+        "Automated task automation systems with adaptive skill learning",
+        "Customizable AI agents for specific domains with on-the-fly skill adaptation"
+      ],
+      "domain_applications": [
+        "education",
+        "enterprise",
+        "robotics",
+        "other"
+      ]
     },
     {
       "id": "2609.39964",
@@ -473,28 +506,28 @@
     {
       "name": "Mixture of Experts",
       "papers": 1,
-      "maturity": "medium",
-      "confidence": 0.7,
+      "maturity": "early",
+      "confidence": 0.62,
       "trend": "rising",
       "applications": [
+        "robotics",
         "enterprise",
-        "other",
         "finance",
         "science",
         "healthcare",
-        "robotics"
+        "other"
       ]
     },
     {
       "name": "Retrieval Augmented Generation",
       "papers": 1,
-      "maturity": "medium",
-      "confidence": 0.7,
+      "maturity": "early",
+      "confidence": 0.62,
       "trend": "rising",
       "applications": [
-        "healthcare",
         "other",
-        "finance"
+        "finance",
+        "healthcare"
       ]
     },
     {
@@ -504,17 +537,17 @@
       "confidence": 0.7,
       "trend": "rising",
       "applications": [
-        "healthcare",
         "other",
-        "finance"
+        "finance",
+        "healthcare"
       ]
     },
     {
       "name": "Long-Horizon Sequential Decision Making",
       "papers": 1,
       "maturity": "early",
-      "confidence": 0.6,
-      "trend": "rising",
+      "confidence": 0.55,
+      "trend": "emerging",
       "applications": [
         "healthcare"
       ]
@@ -523,8 +556,8 @@
       "name": "Streaming Benchmark",
       "papers": 1,
       "maturity": "early",
-      "confidence": 0.6,
-      "trend": "rising",
+      "confidence": 0.55,
+      "trend": "emerging",
       "applications": [
         "healthcare"
       ]
@@ -533,8 +566,8 @@
       "name": "Agent Environment",
       "papers": 1,
       "maturity": "early",
-      "confidence": 0.6,
-      "trend": "rising",
+      "confidence": 0.55,
+      "trend": "emerging",
       "applications": [
         "healthcare"
       ]
@@ -543,8 +576,8 @@
       "name": "Signal-Grounded Measurement",
       "papers": 1,
       "maturity": "early",
-      "confidence": 0.6,
-      "trend": "rising",
+      "confidence": 0.55,
+      "trend": "emerging",
       "applications": [
         "healthcare"
       ]
@@ -553,8 +586,8 @@
       "name": "Online Learning",
       "papers": 1,
       "maturity": "early",
-      "confidence": 0.6,
-      "trend": "rising",
+      "confidence": 0.55,
+      "trend": "emerging",
       "applications": [
         "healthcare"
       ]
@@ -563,12 +596,12 @@
       "name": "Reinforcement Learning",
       "papers": 1,
       "maturity": "early",
-      "confidence": 0.6,
-      "trend": "rising",
+      "confidence": 0.55,
+      "trend": "emerging",
       "applications": [
         "enterprise",
-        "robotics",
         "other",
+        "robotics",
         "education"
       ]
     },
@@ -576,12 +609,12 @@
       "name": "World Rehearsal",
       "papers": 1,
       "maturity": "early",
-      "confidence": 0.6,
-      "trend": "rising",
+      "confidence": 0.55,
+      "trend": "emerging",
       "applications": [
         "enterprise",
-        "robotics",
         "other",
+        "robotics",
         "education"
       ]
     },
@@ -589,26 +622,26 @@
       "name": "Agentic Reinforcement Learning",
       "papers": 1,
       "maturity": "early",
-      "confidence": 0.6,
-      "trend": "rising",
+      "confidence": 0.55,
+      "trend": "emerging",
       "applications": [
         "enterprise",
-        "robotics",
         "other",
+        "robotics",
         "education"
       ]
     },
     {
       "name": "KV Cache Optimization",
       "papers": 1,
-      "maturity": "medium",
-      "confidence": 0.7,
-      "trend": "rising",
+      "maturity": "early",
+      "confidence": 0.55,
+      "trend": "emerging",
       "applications": [
-        "enterprise",
-        "other",
         "creative",
+        "enterprise",
         "education",
+        "other",
         "accessibility"
       ]
     },
@@ -616,12 +649,12 @@
       "name": "Sparse Attention",
       "papers": 1,
       "maturity": "early",
-      "confidence": 0.6,
-      "trend": "rising",
+      "confidence": 0.55,
+      "trend": "emerging",
       "applications": [
         "enterprise",
-        "creative",
         "other",
+        "creative",
         "education"
       ]
     },
@@ -629,8 +662,8 @@
       "name": "In-Context Learning",
       "papers": 1,
       "maturity": "early",
-      "confidence": 0.6,
-      "trend": "rising",
+      "confidence": 0.55,
+      "trend": "emerging",
       "applications": [
         "enterprise",
         "robotics"
@@ -640,44 +673,80 @@
       "name": "Multi-Agent Systems",
       "papers": 1,
       "maturity": "early",
-      "confidence": 0.6,
-      "trend": "rising",
+      "confidence": 0.55,
+      "trend": "emerging",
       "applications": [
-        "enterprise",
         "science",
+        "enterprise",
         "robotics"
       ]
     },
     {
       "name": "Multimodal Learning",
       "papers": 1,
-      "maturity": "medium",
-      "confidence": 0.7,
-      "trend": "rising",
+      "maturity": "early",
+      "confidence": 0.55,
+      "trend": "emerging",
       "applications": [
-        "enterprise",
-        "other",
         "creative",
+        "enterprise",
         "education",
+        "other",
         "accessibility"
       ]
     },
     {
       "name": "First Things First Reinforcement Learning (FTF-rl)",
       "papers": 1,
-      "maturity": "medium",
-      "confidence": 0.7,
-      "trend": "rising",
+      "maturity": "early",
+      "confidence": 0.55,
+      "trend": "emerging",
       "applications": [
         "enterprise",
         "other"
       ]
     },
     {
+      "name": "Structured Defeasible Reasoning",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.7,
+      "trend": "rising",
+      "applications": [
+        "legal",
+        "enterprise",
+        "healthcare"
+      ]
+    },
+    {
+      "name": "Symbolic Argumentation Engine",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.7,
+      "trend": "rising",
+      "applications": [
+        "legal",
+        "enterprise",
+        "healthcare"
+      ]
+    },
+    {
+      "name": "Reinforcement Learning from Verifiable Rewards (RLVR)",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.7,
+      "trend": "rising",
+      "applications": [
+        "legal",
+        "enterprise",
+        "healthcare"
+      ]
+    },
+    {
       "name": "Tool-Using Language Models",
       "papers": 1,
       "maturity": "early",
-      "confidence": 0.5700000000000001,
+      "confidence": 0.52,
       "trend": "emerging",
       "applications": [
         "enterprise",
@@ -689,7 +758,7 @@
       "name": "Automated Scoring",
       "papers": 1,
       "maturity": "early",
-      "confidence": 0.5700000000000001,
+      "confidence": 0.52,
       "trend": "emerging",
       "applications": [
         "enterprise",
@@ -698,14 +767,66 @@
       ]
     },
     {
+      "name": "Latent Flow Matching",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.7,
+      "trend": "rising",
+      "applications": [
+        "enterprise",
+        "other",
+        "robotics",
+        "education"
+      ]
+    },
+    {
+      "name": "Conditional Flow Model",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.7,
+      "trend": "rising",
+      "applications": [
+        "enterprise",
+        "other",
+        "robotics",
+        "education"
+      ]
+    },
+    {
+      "name": "MeanFlow",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.7,
+      "trend": "rising",
+      "applications": [
+        "enterprise",
+        "other",
+        "robotics",
+        "education"
+      ]
+    },
+    {
+      "name": "Textual Skill Generation",
+      "papers": 1,
+      "maturity": "medium",
+      "confidence": 0.7,
+      "trend": "rising",
+      "applications": [
+        "enterprise",
+        "other",
+        "robotics",
+        "education"
+      ]
+    },
+    {
       "name": "Multi-modal Learning",
       "papers": 1,
       "maturity": "early",
-      "confidence": 0.5700000000000001,
+      "confidence": 0.52,
       "trend": "emerging",
       "applications": [
-        "enterprise",
         "science",
+        "enterprise",
         "robotics"
       ]
     },
@@ -713,11 +834,11 @@
       "name": "Integrated Sensing and Communication (ISAC)",
       "papers": 1,
       "maturity": "early",
-      "confidence": 0.5700000000000001,
+      "confidence": 0.52,
       "trend": "emerging",
       "applications": [
-        "enterprise",
         "science",
+        "enterprise",
         "robotics"
       ]
     },
@@ -725,11 +846,11 @@
       "name": "Sim-to-Real Transfer",
       "papers": 1,
       "maturity": "early",
-      "confidence": 0.5700000000000001,
+      "confidence": 0.52,
       "trend": "emerging",
       "applications": [
-        "enterprise",
         "science",
+        "enterprise",
         "robotics"
       ]
     },
@@ -737,11 +858,11 @@
       "name": "Agentic AI",
       "papers": 1,
       "maturity": "early",
-      "confidence": 0.5700000000000001,
+      "confidence": 0.52,
       "trend": "emerging",
       "applications": [
-        "enterprise",
         "science",
+        "enterprise",
         "robotics"
       ]
     },
@@ -749,11 +870,11 @@
       "name": "Zero-shot Learning",
       "papers": 1,
       "maturity": "early",
-      "confidence": 0.5700000000000001,
+      "confidence": 0.52,
       "trend": "emerging",
       "applications": [
-        "enterprise",
         "science",
+        "enterprise",
         "robotics"
       ]
     },
@@ -761,11 +882,11 @@
       "name": "Few-shot Learning",
       "papers": 1,
       "maturity": "early",
-      "confidence": 0.5700000000000001,
+      "confidence": 0.52,
       "trend": "emerging",
       "applications": [
-        "enterprise",
         "science",
+        "enterprise",
         "robotics"
       ]
     },
@@ -773,11 +894,11 @@
       "name": "Domain Adaptation",
       "papers": 1,
       "maturity": "early",
-      "confidence": 0.5700000000000001,
+      "confidence": 0.52,
       "trend": "emerging",
       "applications": [
-        "enterprise",
         "science",
+        "enterprise",
         "robotics"
       ]
     },
@@ -785,11 +906,11 @@
       "name": "Object Detection",
       "papers": 1,
       "maturity": "early",
-      "confidence": 0.5700000000000001,
+      "confidence": 0.52,
       "trend": "emerging",
       "applications": [
-        "enterprise",
         "science",
+        "enterprise",
         "robotics"
       ]
     },
@@ -797,11 +918,11 @@
       "name": "Beam Prediction",
       "papers": 1,
       "maturity": "early",
-      "confidence": 0.5700000000000001,
+      "confidence": 0.52,
       "trend": "emerging",
       "applications": [
-        "enterprise",
         "science",
+        "enterprise",
         "robotics"
       ]
     },
@@ -809,11 +930,11 @@
       "name": "Synthetic Data Generation",
       "papers": 1,
       "maturity": "early",
-      "confidence": 0.5700000000000001,
+      "confidence": 0.52,
       "trend": "emerging",
       "applications": [
-        "enterprise",
         "science",
+        "enterprise",
         "robotics"
       ]
     },
@@ -821,108 +942,108 @@
       "name": "LLM-based Coding Agents",
       "papers": 1,
       "maturity": "early",
-      "confidence": 0.5700000000000001,
+      "confidence": 0.52,
       "trend": "emerging",
       "applications": [
         "enterprise",
-        "science",
-        "other"
+        "other",
+        "science"
       ]
     },
     {
       "name": "End-to-End Code Generation",
       "papers": 1,
       "maturity": "early",
-      "confidence": 0.5700000000000001,
+      "confidence": 0.52,
       "trend": "emerging",
       "applications": [
         "enterprise",
-        "science",
-        "other"
+        "other",
+        "science"
       ]
     },
     {
       "name": "Repository-Scale Generation",
       "papers": 1,
       "maturity": "early",
-      "confidence": 0.5700000000000001,
+      "confidence": 0.52,
       "trend": "emerging",
       "applications": [
         "enterprise",
-        "science",
-        "other"
+        "other",
+        "science"
       ]
     },
     {
       "name": "Automated Software Engineering",
       "papers": 1,
       "maturity": "early",
-      "confidence": 0.5700000000000001,
+      "confidence": 0.52,
       "trend": "emerging",
       "applications": [
         "enterprise",
-        "science",
-        "other"
+        "other",
+        "science"
       ]
     },
     {
       "name": "Benchmark Evaluation",
       "papers": 1,
       "maturity": "early",
-      "confidence": 0.5700000000000001,
+      "confidence": 0.52,
       "trend": "emerging",
       "applications": [
         "enterprise",
-        "science",
-        "other"
+        "other",
+        "science"
       ]
     },
     {
       "name": "Test-Driven Development",
       "papers": 1,
       "maturity": "early",
-      "confidence": 0.5700000000000001,
+      "confidence": 0.52,
       "trend": "emerging",
       "applications": [
         "enterprise",
-        "science",
-        "other"
+        "other",
+        "science"
       ]
     },
     {
       "name": "Autonomous Agent Verification",
       "papers": 1,
       "maturity": "early",
-      "confidence": 0.5700000000000001,
+      "confidence": 0.52,
       "trend": "emerging",
       "applications": [
         "enterprise",
-        "science",
-        "other"
+        "other",
+        "science"
       ]
     },
     {
       "name": "System-Level Reasoning",
       "papers": 1,
       "maturity": "early",
-      "confidence": 0.5700000000000001,
+      "confidence": 0.52,
       "trend": "emerging",
       "applications": [
         "enterprise",
-        "science",
-        "other"
+        "other",
+        "science"
       ]
     },
     {
       "name": "Multi-Language Code Generation",
       "papers": 1,
       "maturity": "early",
-      "confidence": 0.5700000000000001,
+      "confidence": 0.52,
       "trend": "emerging",
       "applications": [
         "enterprise",
-        "science",
-        "other"
+        "other",
+        "science"
       ]
     }
   ],
