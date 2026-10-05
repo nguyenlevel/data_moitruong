@@ -1,35 +1,35 @@
 {
-  "generated_at": "2026-10-04T03:58:06.245624+00:00",
+  "generated_at": "2026-10-05T03:42:56.559857+00:00",
   "week_of": "2026-40",
   "meta": {
     "papers_tracked": 15,
-    "technologies_tracked": 38,
-    "ideas_tracked": 535,
+    "technologies_tracked": 45,
+    "ideas_tracked": 531,
     "repos_tracked": 1,
     "last_research_update": ""
   },
   "accelerating_technologies": [
     {
-      "name": "Mixture of Experts",
-      "description": "Mixture of Experts",
-      "trend": "rising",
-      "confidence": 0.7,
-      "maturity": "medium",
-      "paper_count": 1,
-      "signal": "rising"
-    },
-    {
-      "name": "Retrieval Augmented Generation",
-      "description": "Retrieval Augmented Generation",
-      "trend": "rising",
-      "confidence": 0.7,
-      "maturity": "medium",
-      "paper_count": 1,
-      "signal": "rising"
-    },
-    {
       "name": "On-device AI",
       "description": "On-device AI",
+      "trend": "rising",
+      "confidence": 0.7,
+      "maturity": "medium",
+      "paper_count": 1,
+      "signal": "rising"
+    },
+    {
+      "name": "Structured Defeasible Reasoning",
+      "description": "Structured Defeasible Reasoning",
+      "trend": "rising",
+      "confidence": 0.7,
+      "maturity": "medium",
+      "paper_count": 1,
+      "signal": "rising"
+    },
+    {
+      "name": "Symbolic Argumentation Engine",
+      "description": "Symbolic Argumentation Engine",
       "trend": "rising",
       "confidence": 0.7,
       "maturity": "medium",
@@ -59,9 +59,9 @@
       "score": 1943
     },
     {
-      "title": "Thinking about building a tool that shows which Reddit threads AI cites in your niche. Is this a real problem?",
-      "url": "https://reddit.com/r/SaaS/comments/1wwnzo6/",
-      "revenue_signal": "$19",
+      "title": "I built 36 AI video \"master prompts\". Paste into ChatGPT, get topics, then full video prompts. Zero sales, what am I missing?",
+      "url": "https://reddit.com/r/SideProject/comments/1wxw36d/",
+      "revenue_signal": "$3",
       "source": "reddit",
       "category": "",
       "business_model": null,
@@ -73,7 +73,7 @@
     {
       "technology": "Mixture of Experts",
       "description": "Mixture of Experts",
-      "confidence": 0.7,
+      "confidence": 0.62,
       "paper_count": 1,
       "related_papers": [
         {
@@ -89,7 +89,7 @@
     {
       "technology": "Retrieval Augmented Generation",
       "description": "Retrieval Augmented Generation",
-      "confidence": 0.7,
+      "confidence": 0.62,
       "paper_count": 1,
       "related_papers": [
         {
@@ -104,7 +104,7 @@
       "name": "Shubhamsaboo/awesome-llm-apps",
       "url": "https://github.com/Shubhamsaboo/awesome-llm-apps",
       "description": "100+ AI Agents, Agent Skills and RAG Apps - Free and Open Source.",
-      "stars": 140643,
+      "stars": 140725,
       "language": "Python",
       "topics": [
         "agents",
