@@ -1,17 +1,17 @@
 {
-  "generated_at": "2026-10-05T03:42:56.559857+00:00",
+  "generated_at": "2026-10-06T04:30:35.316216+00:00",
   "week_of": "2026-40",
   "meta": {
     "papers_tracked": 15,
-    "technologies_tracked": 45,
-    "ideas_tracked": 531,
+    "technologies_tracked": 16,
+    "ideas_tracked": 536,
     "repos_tracked": 1,
     "last_research_update": ""
   },
   "accelerating_technologies": [
     {
-      "name": "On-device AI",
-      "description": "On-device AI",
+      "name": "Symbolic Planning",
+      "description": "Symbolic Planning",
       "trend": "rising",
       "confidence": 0.7,
       "maturity": "medium",
@@ -19,8 +19,8 @@
       "signal": "rising"
     },
     {
-      "name": "Structured Defeasible Reasoning",
-      "description": "Structured Defeasible Reasoning",
+      "name": "Reinforcement Learning",
+      "description": "Reinforcement Learning",
       "trend": "rising",
       "confidence": 0.7,
       "maturity": "medium",
@@ -28,8 +28,8 @@
       "signal": "rising"
     },
     {
-      "name": "Symbolic Argumentation Engine",
-      "description": "Symbolic Argumentation Engine",
+      "name": "Multimodal Learning",
+      "description": "Multimodal Learning",
       "trend": "rising",
       "confidence": 0.7,
       "maturity": "medium",
@@ -59,11 +59,11 @@
       "score": 1943
     },
     {
-      "title": "I built 36 AI video \"master prompts\". Paste into ChatGPT, get topics, then full video prompts. Zero sales, what am I missing?",
-      "url": "https://reddit.com/r/SideProject/comments/1wxw36d/",
-      "revenue_signal": "$3",
-      "source": "reddit",
-      "category": "",
+      "title": "怎么赚被裁码农的钱",
+      "url": "https://www.v2ex.com/t/1246043",
+      "revenue_signal": "40 岁以下，集中在 30～40 岁中间，在以往属于高收入群体，但其实没有资本，也就是基本上没有资产性收入，一旦被辞退，基本上就失去了收入",
+      "source": "v2ex",
+      "category": "share",
       "business_model": null,
       "ai_potential": 30,
       "score": 0
@@ -71,29 +71,25 @@
   ],
   "hidden_gems": [
     {
-      "technology": "Mixture of Experts",
-      "description": "Mixture of Experts",
-      "confidence": 0.62,
+      "technology": "Symbolic Planning",
+      "description": "Symbolic Planning",
+      "confidence": 0.7,
       "paper_count": 1,
       "related_papers": [
         {
-          "title": "MOMAT: Mixture of Multiple Atlases for Low-Power Jailbreak Defense of Quantized LLMs",
-          "url": ""
-        },
-        {
-          "title": "AIMS: An Agentic AI Framework for Sim-to-Real Multi-Modal ISAC",
+          "title": "Novelty Adaptation Through Hybrid Large Language Model (LLM)-Symbolic Planning and LLM-guided Reinforcement Learning",
           "url": ""
         }
       ]
     },
     {
-      "technology": "Retrieval Augmented Generation",
-      "description": "Retrieval Augmented Generation",
-      "confidence": 0.62,
+      "technology": "Reinforcement Learning",
+      "description": "Reinforcement Learning",
+      "confidence": 0.7,
       "paper_count": 1,
       "related_papers": [
         {
-          "title": "MOMAT: Mixture of Multiple Atlases for Low-Power Jailbreak Defense of Quantized LLMs",
+          "title": "Novelty Adaptation Through Hybrid Large Language Model (LLM)-Symbolic Planning and LLM-guided Reinforcement Learning",
           "url": ""
         }
       ]
@@ -104,7 +100,7 @@
       "name": "Shubhamsaboo/awesome-llm-apps",
       "url": "https://github.com/Shubhamsaboo/awesome-llm-apps",
       "description": "100+ AI Agents, Agent Skills and RAG Apps - Free and Open Source.",
-      "stars": 140725,
+      "stars": 140805,
       "language": "Python",
       "topics": [
         "agents",
