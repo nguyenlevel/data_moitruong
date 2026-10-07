@@ -1,17 +1,17 @@
 {
-  "generated_at": "2026-10-06T04:30:35.316216+00:00",
+  "generated_at": "2026-10-07T03:57:38.491994+00:00",
   "week_of": "2026-40",
   "meta": {
     "papers_tracked": 15,
-    "technologies_tracked": 16,
-    "ideas_tracked": 536,
+    "technologies_tracked": 17,
+    "ideas_tracked": 547,
     "repos_tracked": 1,
     "last_research_update": ""
   },
   "accelerating_technologies": [
     {
-      "name": "Symbolic Planning",
-      "description": "Symbolic Planning",
+      "name": "Graph Neural Networks",
+      "description": "Graph Neural Networks",
       "trend": "rising",
       "confidence": 0.7,
       "maturity": "medium",
@@ -19,8 +19,8 @@
       "signal": "rising"
     },
     {
-      "name": "Reinforcement Learning",
-      "description": "Reinforcement Learning",
+      "name": "Benchmarking",
+      "description": "Benchmarking",
       "trend": "rising",
       "confidence": 0.7,
       "maturity": "medium",
@@ -28,8 +28,8 @@
       "signal": "rising"
     },
     {
-      "name": "Multimodal Learning",
-      "description": "Multimodal Learning",
+      "name": "Evaluation Protocols",
+      "description": "Evaluation Protocols",
       "trend": "rising",
       "confidence": 0.7,
       "maturity": "medium",
@@ -38,6 +38,16 @@
     }
   ],
   "startup_ideas_with_revenue": [
+    {
+      "title": "How we minimized cloud infrastructure overhead to offer an always-on AI agent layer for $10/mo instead of the standard $200/mo corporate stack.",
+      "url": "https://reddit.com/r/SaaS/comments/1wzc8s3/",
+      "revenue_signal": "$10/mo",
+      "source": "reddit",
+      "category": "",
+      "business_model": "subscription,api",
+      "ai_potential": 55,
+      "score": 0
+    },
     {
       "title": "Show HN: San Francisco Compute – 512 H100s at <$2/hr for research and startups",
       "url": "https://sfcompute.org/",
@@ -57,39 +67,29 @@
       "business_model": "subscription,marketplace,ads,freemium",
       "ai_potential": 40,
       "score": 1943
-    },
-    {
-      "title": "怎么赚被裁码农的钱",
-      "url": "https://www.v2ex.com/t/1246043",
-      "revenue_signal": "40 岁以下，集中在 30～40 岁中间，在以往属于高收入群体，但其实没有资本，也就是基本上没有资产性收入，一旦被辞退，基本上就失去了收入",
-      "source": "v2ex",
-      "category": "share",
-      "business_model": null,
-      "ai_potential": 30,
-      "score": 0
     }
   ],
   "hidden_gems": [
     {
-      "technology": "Symbolic Planning",
-      "description": "Symbolic Planning",
+      "technology": "Graph Neural Networks",
+      "description": "Graph Neural Networks",
       "confidence": 0.7,
       "paper_count": 1,
       "related_papers": [
         {
-          "title": "Novelty Adaptation Through Hybrid Large Language Model (LLM)-Symbolic Planning and LLM-guided Reinforcement Learning",
+          "title": "GNN-CB: A Graph Neural Network Competition Benchmark for Human and LLM Evaluation",
           "url": ""
         }
       ]
     },
     {
-      "technology": "Reinforcement Learning",
-      "description": "Reinforcement Learning",
+      "technology": "Benchmarking",
+      "description": "Benchmarking",
       "confidence": 0.7,
       "paper_count": 1,
       "related_papers": [
         {
-          "title": "Novelty Adaptation Through Hybrid Large Language Model (LLM)-Symbolic Planning and LLM-guided Reinforcement Learning",
+          "title": "GNN-CB: A Graph Neural Network Competition Benchmark for Human and LLM Evaluation",
           "url": ""
         }
       ]
@@ -100,7 +100,7 @@
       "name": "Shubhamsaboo/awesome-llm-apps",
       "url": "https://github.com/Shubhamsaboo/awesome-llm-apps",
       "description": "100+ AI Agents, Agent Skills and RAG Apps - Free and Open Source.",
-      "stars": 140805,
+      "stars": 140881,
       "language": "Python",
       "topics": [
         "agents",

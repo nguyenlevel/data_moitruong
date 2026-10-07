@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-10-06T04:30:40.809119+00:00",
+  "generated_at": "2026-10-07T03:57:45.734508+00:00",
   "stats": {
     "total_repos": 21,
-    "total_stars": 1726956,
-    "total_stars_7d": 704,
+    "total_stars": 1727549,
+    "total_stars_7d": 628,
     "by_section": {
       "ai-coding": 1,
       "solo-founder": 2,
@@ -60,7 +60,7 @@
     {
       "name": "anomalyco/opencode",
       "url": "https://github.com/anomalyco/opencode",
-      "stars": 211910,
+      "stars": 212067,
       "description": "The open source coding agent.",
       "topics": [],
       "language": "TypeScript",
@@ -77,7 +77,7 @@
     {
       "name": "n8n-io/n8n",
       "url": "https://github.com/n8n-io/n8n",
-      "stars": 206738,
+      "stars": 206786,
       "description": "Fair-code workflow automation platform with native AI capabilities. Combine visual building with custom code, self-host or cloud, 400+ integrations.",
       "topics": [
         "ai",
@@ -103,7 +103,7 @@
     {
       "name": "Significant-Gravitas/AutoGPT",
       "url": "https://github.com/Significant-Gravitas/AutoGPT",
-      "stars": 187664,
+      "stars": 187677,
       "description": "AutoGPT is the vision of accessible AI for everyone, to use and to build on. Our mission is to provide the tools, so that you can focus on what matters.",
       "topics": [
         "agentic-ai",
@@ -129,7 +129,7 @@
     {
       "name": "langgenius/dify",
       "url": "https://github.com/langgenius/dify",
-      "stars": 157920,
+      "stars": 157975,
       "description": "Build Agentic workflows, RAG pipelines, with rich AI model and tool support on one collaborative workspace. Deploy on cloud, VPC, or self-hosted, so teams move from prototype to production without reb",
       "topics": [
         "agent",
@@ -155,7 +155,7 @@
     {
       "name": "langchain-ai/langchain",
       "url": "https://github.com/langchain-ai/langchain",
-      "stars": 147480,
+      "stars": 147508,
       "description": "The agent engineering platform.",
       "topics": [
         "agents",
@@ -181,7 +181,7 @@
     {
       "name": "Shubhamsaboo/awesome-llm-apps",
       "url": "https://github.com/Shubhamsaboo/awesome-llm-apps",
-      "stars": 140805,
+      "stars": 140881,
       "description": "100+ AI Agents, Agent Skills and RAG Apps - Free and Open Source.",
       "topics": [
         "agents",
@@ -195,14 +195,14 @@
         "agent-framework"
       ],
       "primary": "agent-framework",
-      "star_delta_7d": 704,
-      "star_delta_1d": 80,
-      "trend_score": 1290.46
+      "star_delta_7d": 628,
+      "star_delta_1d": 76,
+      "trend_score": 1167.37
     },
     {
       "name": "browser-use/browser-use",
       "url": "https://github.com/browser-use/browser-use",
-      "stars": 117217,
+      "stars": 117300,
       "description": "Agents that use the browser.",
       "topics": [
         "ai-agents",
@@ -227,7 +227,7 @@
     {
       "name": "infiniflow/ragflow",
       "url": "https://github.com/infiniflow/ragflow",
-      "stars": 91707,
+      "stars": 91745,
       "description": "RAGFlow is a leading open-source Retrieval-Augmented Generation (RAG) engine that fuses cutting-edge RAG with Agent capabilities to create a superior context layer for LLMs",
       "topics": [
         "agent-harness",
@@ -253,7 +253,7 @@
     {
       "name": "binary-husky/gpt_academic",
       "url": "https://github.com/binary-husky/gpt_academic",
-      "stars": 71411,
+      "stars": 71413,
       "description": "为GPT/GLM等LLM大语言模型提供实用化交互接口，特别优化论文阅读/润色/写作体验，模块化设计，支持自定义快捷按钮&函数插件，支持Python和C++等项目剖析&自译解功能，PDF/LaTex论文翻译&总结功能，支持并行问询多种LLM模型，支持chatglm3等本地模型。接入通义千问, deepseekcoder, 讯飞星火, 文心一言, llama2, rwkv, claude2, moss",
       "topics": [
         "academic",
@@ -276,7 +276,7 @@
     {
       "name": "geekan/MetaGPT",
       "url": "https://github.com/FoundationAgents/MetaGPT",
-      "stars": 70757,
+      "stars": 70761,
       "description": "🌟 The Multi-Agent Framework: First AI Software Company, Towards Natural Language Programming",
       "topics": [
         "agent",
@@ -299,7 +299,7 @@
     {
       "name": "microsoft/autogen",
       "url": "https://github.com/microsoft/autogen",
-      "stars": 61269,
+      "stars": 61272,
       "description": "A programming framework for agentic AI",
       "topics": [
         "agentic",
@@ -325,7 +325,7 @@
     {
       "name": "crewAIInc/crewAI",
       "url": "https://github.com/crewAIInc/crewAI",
-      "stars": 59378,
+      "stars": 59402,
       "description": "Framework for orchestrating role-playing, autonomous AI agents. By fostering collaborative intelligence, CrewAI empowers agents to work together seamlessly, tackling complex tasks.",
       "topics": [
         "agents",
@@ -348,7 +348,7 @@
     {
       "name": "langchain-ai/langgraph",
       "url": "https://github.com/langchain-ai/langgraph",
-      "stars": 42754,
+      "stars": 42798,
       "description": "Build resilient agents.",
       "topics": [
         "agents",
@@ -374,7 +374,7 @@
     {
       "name": "chatchat-space/Langchain-Chatchat",
       "url": "https://github.com/chatchat-space/Langchain-Chatchat",
-      "stars": 38672,
+      "stars": 38673,
       "description": "Langchain-Chatchat（原Langchain-ChatGLM）基于 Langchain 与 ChatGLM, Qwen 与 Llama 等语言模型的 RAG 与 Agent 应用 | Langchain-Chatchat (formerly langchain-ChatGLM), local knowledge based LLM (like ChatGLM, Qwen and Ll",
       "topics": [
         "chatbot",
@@ -400,7 +400,7 @@
     {
       "name": "OpenBMB/ChatDev",
       "url": "https://github.com/OpenBMB/ChatDev",
-      "stars": 34449,
+      "stars": 34455,
       "description": "ChatDev 2.0: Dev All through LLM-powered Multi-Agent Collaboration",
       "topics": [],
       "language": "Python",
@@ -417,7 +417,7 @@
     {
       "name": "assafelovic/gpt-researcher",
       "url": "https://github.com/assafelovic/gpt-researcher",
-      "stars": 29924,
+      "stars": 29930,
       "description": "An autonomous agent that conducts deep research on any data using any LLM providers",
       "topics": [
         "agent",
@@ -443,7 +443,7 @@
     {
       "name": "labring/FastGPT",
       "url": "https://github.com/labring/FastGPT",
-      "stars": 29781,
+      "stars": 29785,
       "description": "FastGPT is a knowledge-based platform built on the LLMs, offers a comprehensive suite of out-of-the-box capabilities such as data processing, RAG retrieval, and visual AI workflow orchestration, letti",
       "topics": [
         "agent",
@@ -495,7 +495,7 @@
     {
       "name": "OpenBMB/AgentVerse",
       "url": "https://github.com/OpenBMB/AgentVerse",
-      "stars": 5154,
+      "stars": 5155,
       "description": "🤖 AgentVerse 🪐 is designed to facilitate the deployment of multiple LLM-based agents in various applications, which primarily provides two frameworks: task-solving and simulation",
       "topics": [
         "agent",
