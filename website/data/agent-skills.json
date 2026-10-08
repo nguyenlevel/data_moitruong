@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-07T03:57:46.622330+00:00",
+  "updated_at": "2026-10-08T04:11:23.168073+00:00",
   "stats": {
     "agents": 1,
     "skills": 1,
@@ -15,7 +15,7 @@
       "name": "Shubhamsaboo/awesome-llm-apps",
       "url": "https://github.com/Shubhamsaboo/awesome-llm-apps",
       "description": "100+ AI Agents, Agent Skills and RAG Apps - Free and Open Source.",
-      "stars": 140881,
+      "stars": 140952,
       "category": "Agents & Automation",
       "language": "Python",
       "topics": [
@@ -24,13 +24,13 @@
         "python",
         "rag"
       ],
-      "trend_score": 1167.4,
-      "delta_7d": 628,
+      "trend_score": 1024.2,
+      "delta_7d": 540,
       "is_agent": true,
       "is_skill": true,
       "use_cases": [
-        "ai",
-        "productivity"
+        "productivity",
+        "ai"
       ]
     }
   ],
@@ -40,7 +40,7 @@
       "name": "Shubhamsaboo/awesome-llm-apps",
       "url": "https://github.com/Shubhamsaboo/awesome-llm-apps",
       "description": "100+ AI Agents, Agent Skills and RAG Apps - Free and Open Source.",
-      "stars": 140881,
+      "stars": 140952,
       "category": "Agents & Automation",
       "language": "Python",
       "topics": [
@@ -49,13 +49,13 @@
         "python",
         "rag"
       ],
-      "trend_score": 1167.4,
-      "delta_7d": 628,
+      "trend_score": 1024.2,
+      "delta_7d": 540,
       "is_agent": true,
       "is_skill": true,
       "use_cases": [
-        "ai",
-        "productivity"
+        "productivity",
+        "ai"
       ]
     }
   ]

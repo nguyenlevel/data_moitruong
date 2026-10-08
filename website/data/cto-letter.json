@@ -1,17 +1,17 @@
 {
-  "generated_at": "2026-10-07T03:57:38.491994+00:00",
+  "generated_at": "2026-10-08T04:11:15.006978+00:00",
   "week_of": "2026-40",
   "meta": {
     "papers_tracked": 15,
-    "technologies_tracked": 17,
-    "ideas_tracked": 547,
+    "technologies_tracked": 21,
+    "ideas_tracked": 532,
     "repos_tracked": 1,
     "last_research_update": ""
   },
   "accelerating_technologies": [
     {
-      "name": "Graph Neural Networks",
-      "description": "Graph Neural Networks",
+      "name": "Multimodal Learning",
+      "description": "Multimodal Learning",
       "trend": "rising",
       "confidence": 0.7,
       "maturity": "medium",
@@ -19,8 +19,8 @@
       "signal": "rising"
     },
     {
-      "name": "Benchmarking",
-      "description": "Benchmarking",
+      "name": "Vision Transformer",
+      "description": "Vision Transformer",
       "trend": "rising",
       "confidence": 0.7,
       "maturity": "medium",
@@ -28,8 +28,8 @@
       "signal": "rising"
     },
     {
-      "name": "Evaluation Protocols",
-      "description": "Evaluation Protocols",
+      "name": "Diffusion Models",
+      "description": "Diffusion Models",
       "trend": "rising",
       "confidence": 0.7,
       "maturity": "medium",
@@ -39,13 +39,13 @@
   ],
   "startup_ideas_with_revenue": [
     {
-      "title": "How we minimized cloud infrastructure overhead to offer an always-on AI agent layer for $10/mo instead of the standard $200/mo corporate stack.",
-      "url": "https://reddit.com/r/SaaS/comments/1wzc8s3/",
-      "revenue_signal": "$10/mo",
+      "title": "I'm 40, I've been a developer for years, and I still haven't figured out how to make money from my own software. What am I missing?",
+      "url": "https://reddit.com/r/SaaS/comments/1wzpmj5/",
+      "revenue_signal": "$10K MRR",
       "source": "reddit",
       "category": "",
-      "business_model": "subscription,api",
-      "ai_potential": 55,
+      "business_model": "subscription",
+      "ai_potential": 70,
       "score": 0
     },
     {
@@ -73,7 +73,7 @@
     {
       "technology": "Graph Neural Networks",
       "description": "Graph Neural Networks",
-      "confidence": 0.7,
+      "confidence": 0.62,
       "paper_count": 1,
       "related_papers": [
         {
@@ -85,7 +85,7 @@
     {
       "technology": "Benchmarking",
       "description": "Benchmarking",
-      "confidence": 0.7,
+      "confidence": 0.62,
       "paper_count": 1,
       "related_papers": [
         {
@@ -100,7 +100,7 @@
       "name": "Shubhamsaboo/awesome-llm-apps",
       "url": "https://github.com/Shubhamsaboo/awesome-llm-apps",
       "description": "100+ AI Agents, Agent Skills and RAG Apps - Free and Open Source.",
-      "stars": 140881,
+      "stars": 140952,
       "language": "Python",
       "topics": [
         "agents",
