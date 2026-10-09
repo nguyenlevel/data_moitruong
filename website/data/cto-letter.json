@@ -1,17 +1,17 @@
 {
-  "generated_at": "2026-10-08T04:11:15.006978+00:00",
+  "generated_at": "2026-10-09T04:16:16.253217+00:00",
   "week_of": "2026-40",
   "meta": {
     "papers_tracked": 15,
-    "technologies_tracked": 21,
-    "ideas_tracked": 532,
+    "technologies_tracked": 29,
+    "ideas_tracked": 538,
     "repos_tracked": 1,
     "last_research_update": ""
   },
   "accelerating_technologies": [
     {
-      "name": "Multimodal Learning",
-      "description": "Multimodal Learning",
+      "name": "On-Policy Distillation",
+      "description": "On-Policy Distillation",
       "trend": "rising",
       "confidence": 0.7,
       "maturity": "medium",
@@ -19,8 +19,8 @@
       "signal": "rising"
     },
     {
-      "name": "Vision Transformer",
-      "description": "Vision Transformer",
+      "name": "Knowledge Distillation",
+      "description": "Knowledge Distillation",
       "trend": "rising",
       "confidence": 0.7,
       "maturity": "medium",
@@ -28,8 +28,8 @@
       "signal": "rising"
     },
     {
-      "name": "Diffusion Models",
-      "description": "Diffusion Models",
+      "name": "LLM Agents",
+      "description": "LLM Agents",
       "trend": "rising",
       "confidence": 0.7,
       "maturity": "medium",
@@ -39,13 +39,13 @@
   ],
   "startup_ideas_with_revenue": [
     {
-      "title": "I'm 40, I've been a developer for years, and I still haven't figured out how to make money from my own software. What am I missing?",
-      "url": "https://reddit.com/r/SaaS/comments/1wzpmj5/",
-      "revenue_signal": "$10K MRR",
+      "title": "Didn’t want to pay $70–100/mo for mobile app market data, so I built my own. Now 150 people use it free and I’m not sure that’s sustainable.",
+      "url": "https://reddit.com/r/SaaS/comments/1x11neq/",
+      "revenue_signal": "$70",
       "source": "reddit",
       "category": "",
-      "business_model": "subscription",
-      "ai_potential": 70,
+      "business_model": "app-store,api",
+      "ai_potential": 55,
       "score": 0
     },
     {
@@ -71,25 +71,25 @@
   ],
   "hidden_gems": [
     {
-      "technology": "Graph Neural Networks",
-      "description": "Graph Neural Networks",
-      "confidence": 0.62,
+      "technology": "Long Video Understanding",
+      "description": "Long Video Understanding",
+      "confidence": 0.6,
       "paper_count": 1,
       "related_papers": [
         {
-          "title": "GNN-CB: A Graph Neural Network Competition Benchmark for Human and LLM Evaluation",
+          "title": "MedHorizon: Towards Long-context Medical Video Understanding in the Wild",
           "url": ""
         }
       ]
     },
     {
-      "technology": "Benchmarking",
-      "description": "Benchmarking",
-      "confidence": 0.62,
+      "technology": "Multimodal Large Language Models",
+      "description": "Multimodal Large Language Models",
+      "confidence": 0.6,
       "paper_count": 1,
       "related_papers": [
         {
-          "title": "GNN-CB: A Graph Neural Network Competition Benchmark for Human and LLM Evaluation",
+          "title": "MedHorizon: Towards Long-context Medical Video Understanding in the Wild",
           "url": ""
         }
       ]
@@ -100,7 +100,7 @@
       "name": "Shubhamsaboo/awesome-llm-apps",
       "url": "https://github.com/Shubhamsaboo/awesome-llm-apps",
       "description": "100+ AI Agents, Agent Skills and RAG Apps - Free and Open Source.",
-      "stars": 140952,
+      "stars": 140838,
       "language": "Python",
       "topics": [
         "agents",

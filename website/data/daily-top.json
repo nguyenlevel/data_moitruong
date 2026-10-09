@@ -1,285 +1,503 @@
 {
-  "updated_at": "2026-10-08T04:11:23.130464+00:00",
+  "updated_at": "2026-10-09T04:16:23.628021+00:00",
   "github": {
     "today": {
       "name": "Shubhamsaboo/awesome-llm-apps",
       "url": "https://github.com/Shubhamsaboo/awesome-llm-apps",
-      "stars": 140952,
-      "delta_1d": 71,
-      "delta_7d": 540,
+      "stars": 140838,
+      "delta_1d": -114,
+      "delta_7d": 317,
       "description": "100+ AI Agents, Agent Skills and RAG Apps - Free and Open Source.",
       "language": "Python",
       "category": "Agents & Automation",
-      "trend_score": 1024.2
+      "trend_score": 545.5
     },
     "week": {
       "name": "Shubhamsaboo/awesome-llm-apps",
       "url": "https://github.com/Shubhamsaboo/awesome-llm-apps",
-      "stars": 140952,
-      "delta_1d": 71,
-      "delta_7d": 540,
+      "stars": 140838,
+      "delta_1d": -114,
+      "delta_7d": 317,
       "description": "100+ AI Agents, Agent Skills and RAG Apps - Free and Open Source.",
       "language": "Python",
       "category": "Agents & Automation",
-      "trend_score": 1024.2
+      "trend_score": 545.5
     },
     "top_today": [
       {
         "name": "Shubhamsaboo/awesome-llm-apps",
         "url": "https://github.com/Shubhamsaboo/awesome-llm-apps",
-        "stars": 140952,
-        "delta_1d": 71,
-        "delta_7d": 540,
+        "stars": 140838,
+        "delta_1d": -114,
+        "delta_7d": 317,
         "description": "100+ AI Agents, Agent Skills and RAG Apps - Free and Open Source.",
         "language": "Python",
         "category": "Agents & Automation",
-        "trend_score": 1024.2
+        "trend_score": 545.5
       }
     ],
     "top_week": [
       {
         "name": "Shubhamsaboo/awesome-llm-apps",
         "url": "https://github.com/Shubhamsaboo/awesome-llm-apps",
-        "stars": 140952,
-        "delta_1d": 71,
-        "delta_7d": 540,
+        "stars": 140838,
+        "delta_1d": -114,
+        "delta_7d": 317,
         "description": "100+ AI Agents, Agent Skills and RAG Apps - Free and Open Source.",
         "language": "Python",
         "category": "Agents & Automation",
-        "trend_score": 1024.2
+        "trend_score": 545.5
       }
     ]
   },
   "producthunt": {
     "products": [
       {
-        "title": "IrisGo for Solopreneurs",
-        "description": "AI workflow automation: show it once, let it run\n          \n          \n            Discussion\n            |\n            Link",
-        "url": "https://www.producthunt.com/products/irisgo-public-beta",
-        "published": "2026-10-05",
-        "updated": "2026-10-07",
-        "tags": [
-          "AI",
-          "Productivity"
-        ],
-        "source": "feed"
-      },
-      {
-        "title": "SunSed",
-        "description": "The first AI app builder with a language made for AI\n          \n          \n            Discussion\n            |\n            Link",
-        "url": "https://www.producthunt.com/products/sunsed",
-        "published": "2026-10-06",
-        "updated": "2026-10-07",
+        "title": "Polylane for Vercel",
+        "description": "An AI on-call engineer for your Vercel apps\n          \n          \n            Discussion\n            |\n            Link",
+        "url": "https://www.producthunt.com/products/polylane",
+        "published": "2026-10-07",
+        "updated": "2026-10-08",
         "tags": [
           "AI"
         ],
         "source": "feed"
       },
       {
-        "title": "Velozity",
-        "description": "The Multiplayer AI Office where your team and agents work.\n          \n          \n            Discussion\n            |\n            Link",
-        "url": "https://www.producthunt.com/products/velozity-2",
-        "published": "2026-09-18",
-        "updated": "2026-10-07",
+        "title": "Side",
+        "description": "A little AI chat panel that lives beside your Mac's Dock\n          \n          \n            Discussion\n            |\n            Link",
+        "url": "https://www.producthunt.com/products/side",
+        "published": "2026-10-06",
+        "updated": "2026-10-08",
         "tags": [
           "AI"
         ],
         "source": "feed"
       },
       {
-        "title": "Flowo",
-        "description": "ADHD day planner that re-plans when your day slips\n          \n          \n            Discussion\n            |\n            Link",
-        "url": "https://www.producthunt.com/products/flowo-2",
-        "published": "2026-09-29",
-        "updated": "2026-10-07",
-        "tags": [
-          "Productivity"
-        ],
-        "source": "feed"
-      },
-      {
-        "title": "ParakeetAI 2.0",
-        "description": "The ultimate way to prepare for your job interview\n          \n          \n            Discussion\n            |\n            Link",
-        "url": "https://www.producthunt.com/products/parakeetai",
-        "published": "2026-10-01",
-        "updated": "2026-10-07",
+        "title": "Claude Haiku 5.5",
+        "description": "Anthropic's fastest and most capable Haiku yet\n          \n          \n            Discussion\n            |\n            Link",
+        "url": "https://www.producthunt.com/products/claude-haiku-5-5",
+        "published": "2026-10-07",
+        "updated": "2026-10-08",
         "tags": [
           "AI"
         ],
         "source": "feed"
       },
       {
-        "title": "Vresk",
-        "description": "One AI workspace that offers the best open source models\n          \n          \n            Discussion\n            |\n            Link",
-        "url": "https://www.producthunt.com/products/vresk",
-        "published": "2026-10-05",
-        "updated": "2026-10-07",
+        "title": "SineFrame M3",
+        "description": "Test MCP servers and the agents that call them in pytest\n          \n          \n            Discussion\n            |\n            Link",
+        "url": "https://www.producthunt.com/products/sineframe-m3",
+        "published": "2026-10-07",
+        "updated": "2026-10-08",
         "tags": [
           "AI"
         ],
         "source": "feed"
       },
       {
-        "title": "Figma Agent",
-        "description": "Prompt, edit and prototype without leaving the canvas\n          \n          \n            Discussion\n            |\n            Link",
-        "url": "https://www.producthunt.com/products/figma",
-        "published": "2026-10-06",
-        "updated": "2026-10-07",
-        "tags": [
-          "AI"
-        ],
-        "source": "feed"
-      },
-      {
-        "title": "Introducing Video Editor in Manus 2.0",
-        "description": "Anyone Can Now Make A Video Worth Posting\n          \n          \n            Discussion\n            |\n            Link",
-        "url": "https://www.producthunt.com/products/manus",
-        "published": "2026-10-06",
-        "updated": "2026-10-07",
-        "tags": [
-          "General"
-        ],
-        "source": "feed"
-      },
-      {
-        "title": "Featherweight Dictation",
-        "description": "Dictation that weighs nothing, for Mac and Windows\n          \n          \n            Discussion\n            |\n            Link",
-        "url": "https://www.producthunt.com/products/featherweight-dictation",
-        "published": "2026-10-06",
-        "updated": "2026-10-07",
-        "tags": [
-          "General"
-        ],
-        "source": "feed"
-      },
-      {
-        "title": "Ownfeed",
-        "description": "A social feed of people who need your product\n          \n          \n            Discussion\n            |\n            Link",
-        "url": "https://www.producthunt.com/products/ownfeed",
-        "published": "2026-10-06",
-        "updated": "2026-10-07",
-        "tags": [
-          "General"
-        ],
-        "source": "feed"
-      },
-      {
-        "title": "Proofsource",
-        "description": "AI search visibility, with agents that fix the gaps \n          \n          \n            Discussion\n            |\n            Link",
-        "url": "https://www.producthunt.com/products/proofsource",
-        "published": "2026-10-05",
-        "updated": "2026-10-07",
-        "tags": [
-          "AI"
-        ],
-        "source": "feed"
-      },
-      {
-        "title": "Mistral Large 4",
-        "description": "Mistral's 1T parameter open weight frontier model\n          \n          \n            Discussion\n            |\n            Link",
-        "url": "https://www.producthunt.com/products/mistral-7b",
-        "published": "2026-10-06",
-        "updated": "2026-10-07",
-        "tags": [
-          "General"
-        ],
-        "source": "feed"
-      },
-      {
-        "title": "Rool",
-        "description": "Your private AI machine. Files, ideas, AI in one workspace.\n          \n          \n            Discussion\n            |\n            Link",
-        "url": "https://www.producthunt.com/products/rool",
-        "published": "2026-09-26",
-        "updated": "2026-10-07",
-        "tags": [
-          "AI"
-        ],
-        "source": "feed"
-      },
-      {
-        "title": "Nano Banana 2.1",
-        "description": "Google's image model with sharper design and mask editing\n          \n          \n            Discussion\n            |\n            Link",
-        "url": "https://www.producthunt.com/products/google",
-        "published": "2026-10-06",
-        "updated": "2026-10-07",
-        "tags": [
-          "General"
-        ],
-        "source": "feed"
-      },
-      {
-        "title": "DailyHub",
-        "description": "A personal command center for projects, tasks, and habits.\n          \n          \n            Discussion\n            |\n            Link",
-        "url": "https://www.producthunt.com/products/dailyhub-a-quiet-workspace-for-your-day",
-        "published": "2026-10-06",
-        "updated": "2026-10-07",
-        "tags": [
-          "AI",
-          "Productivity"
-        ],
-        "source": "feed"
-      },
-      {
-        "title": "Rhem Labs",
-        "description": "Health assistant robots for your parents’\n          \n          \n            Discussion\n            |\n            Link",
-        "url": "https://www.producthunt.com/products/rhem-labs",
-        "published": "2026-10-06",
-        "updated": "2026-10-07",
-        "tags": [
-          "General"
-        ],
-        "source": "feed"
-      },
-      {
-        "title": "Basedash Mobile",
-        "description": "Ask your data out loud, right from your Home Screen.\n          \n          \n            Discussion\n            |\n            Link",
-        "url": "https://www.producthunt.com/products/basedash",
-        "published": "2026-10-06",
-        "updated": "2026-10-07",
-        "tags": [
-          "General"
-        ],
-        "source": "feed"
-      },
-      {
-        "title": "Reika",
-        "description": "A coding agent CLI designed around small local models first\n          \n          \n            Discussion\n            |\n            Link",
-        "url": "https://www.producthunt.com/products/reika",
-        "published": "2026-10-06",
-        "updated": "2026-10-07",
-        "tags": [
-          "AI"
-        ],
-        "source": "feed"
-      },
-      {
-        "title": "Lofi Desk 2.0",
-        "description": "A pixel-art focus companion and a room you decorate\n          \n          \n            Discussion\n            |\n            Link",
-        "url": "https://www.producthunt.com/products/lofi-desk-focus-relax-beats",
-        "published": "2026-10-06",
-        "updated": "2026-10-07",
-        "tags": [
-          "Productivity"
-        ],
-        "source": "feed"
-      },
-      {
-        "title": "DevAlly AI Agent",
-        "description": "User journeys captured with natural language\n          \n          \n            Discussion\n            |\n            Link",
-        "url": "https://www.producthunt.com/products/devally",
-        "published": "2026-10-05",
-        "updated": "2026-10-07",
-        "tags": [
-          "AI"
-        ],
-        "source": "feed"
-      },
-      {
-        "title": "Takweem AI",
-        "description": "The AI calendar that makes room for your most important work\n          \n          \n            Discussion\n            |\n            Link",
-        "url": "https://www.producthunt.com/products/takweem-ai",
+        "title": "ProcBoss",
+        "description": "Run, deploy, monitor, and manage your apps across servers\n          \n          \n            Discussion\n            |\n            Link",
+        "url": "https://www.producthunt.com/products/procboss",
         "published": "2026-10-02",
-        "updated": "2026-10-07",
+        "updated": "2026-10-08",
+        "tags": [
+          "General"
+        ],
+        "source": "feed"
+      },
+      {
+        "title": "tunnl.gg",
+        "description": "Stable localhost URLs over SSH with no installs\n          \n          \n            Discussion\n            |\n            Link",
+        "url": "https://www.producthunt.com/products/tunnl-gg",
+        "published": "2026-10-05",
+        "updated": "2026-10-08",
+        "tags": [
+          "General"
+        ],
+        "source": "feed"
+      },
+      {
+        "title": "Revela",
+        "description": "A film camera for iPhone that makes you wait for the lab\n          \n          \n            Discussion\n            |\n            Link",
+        "url": "https://www.producthunt.com/products/revela",
+        "published": "2026-09-22",
+        "updated": "2026-10-08",
+        "tags": [
+          "AI"
+        ],
+        "source": "feed"
+      },
+      {
+        "title": "Simple Workout Log",
+        "description": "The best minimalist workout tracker available\n          \n          \n            Discussion\n            |\n            Link",
+        "url": "https://www.producthunt.com/products/simple-workout-log",
+        "published": "2026-10-07",
+        "updated": "2026-10-08",
+        "tags": [
+          "AI"
+        ],
+        "source": "feed"
+      },
+      {
+        "title": "Simo",
+        "description": "The judgment layer for software that acts\n          \n          \n            Discussion\n            |\n            Link",
+        "url": "https://www.producthunt.com/products/simo-3",
+        "published": "2026-10-07",
+        "updated": "2026-10-08",
+        "tags": [
+          "General"
+        ],
+        "source": "feed"
+      },
+      {
+        "title": "Chime",
+        "description": "Private SMS categorization that never leaves your device\n          \n          \n            Discussion\n            |\n            Link",
+        "url": "https://www.producthunt.com/products/chime-sms-categorized-on-device",
+        "published": "2026-10-07",
+        "updated": "2026-10-08",
+        "tags": [
+          "General"
+        ],
+        "source": "feed"
+      },
+      {
+        "title": "Strac Comply",
+        "description": "Get SOC 2 without the sales call\n          \n          \n            Discussion\n            |\n            Link",
+        "url": "https://www.producthunt.com/products/strac-comply",
+        "published": "2026-10-07",
+        "updated": "2026-10-08",
+        "tags": [
+          "General"
+        ],
+        "source": "feed"
+      },
+      {
+        "title": "Drunken Penguins",
+        "description": "Party card games on everyone's phone. No app.\n          \n          \n            Discussion\n            |\n            Link",
+        "url": "https://www.producthunt.com/products/drunken-penguins",
+        "published": "2026-09-30",
+        "updated": "2026-10-08",
+        "tags": [
+          "General"
+        ],
+        "source": "feed"
+      },
+      {
+        "title": "Udon",
+        "description": "Control deck for your Mac home server with AI sysadmin.\n          \n          \n            Discussion\n            |\n            Link",
+        "url": "https://www.producthunt.com/products/udon",
+        "published": "2026-10-05",
+        "updated": "2026-10-08",
+        "tags": [
+          "AI"
+        ],
+        "source": "feed"
+      },
+      {
+        "title": "offstage",
+        "description": "Your computer-use agent gets a Mac account, not your screen\n          \n          \n            Discussion\n            |\n            Link",
+        "url": "https://www.producthunt.com/products/offstage",
+        "published": "2026-10-06",
+        "updated": "2026-10-08",
+        "tags": [
+          "AI"
+        ],
+        "source": "feed"
+      },
+      {
+        "title": "Liquid Inference",
+        "description": "LLM router where providers compete for every prompt\n          \n          \n            Discussion\n            |\n            Link",
+        "url": "https://www.producthunt.com/products/liquid-inference",
+        "published": "2026-10-07",
+        "updated": "2026-10-08",
+        "tags": [
+          "AI"
+        ],
+        "source": "feed"
+      },
+      {
+        "title": "KloudMate 2.0",
+        "description": "AI-powered Full-Stack Observability & Agentic SRE-Ops\n          \n          \n            Discussion\n            |\n            Link",
+        "url": "https://www.producthunt.com/products/kloudmate",
+        "published": "2026-08-31",
+        "updated": "2026-10-08",
+        "tags": [
+          "AI"
+        ],
+        "source": "feed"
+      },
+      {
+        "title": "Cekura Bench",
+        "description": "Speech-to-speech model benchmarks on live phone calls\n          \n          \n            Discussion\n            |\n            Link",
+        "url": "https://www.producthunt.com/products/vocera",
+        "published": "2026-10-06",
+        "updated": "2026-10-08",
+        "tags": [
+          "General"
+        ],
+        "source": "feed"
+      },
+      {
+        "title": "Markdoc",
+        "description": "A shared Markdown editor for people and their agents\n          \n          \n            Discussion\n            |\n            Link",
+        "url": "https://www.producthunt.com/products/markdoc-3",
+        "published": "2026-10-07",
+        "updated": "2026-10-08",
+        "tags": [
+          "AI"
+        ],
+        "source": "feed"
+      },
+      {
+        "title": "judged.systems",
+        "description": "The judgment API platform for support systems.\n          \n          \n            Discussion\n            |\n            Link",
+        "url": "https://www.producthunt.com/products/judged-systems",
+        "published": "2026-10-07",
+        "updated": "2026-10-08",
+        "tags": [
+          "General"
+        ],
+        "source": "feed"
+      },
+      {
+        "title": "ChickyTutor",
+        "description": "A private language tutor that knows you better every day.\n          \n          \n            Discussion\n            |\n            Link",
+        "url": "https://www.producthunt.com/products/chickytutor",
+        "published": "2026-09-17",
+        "updated": "2026-10-08",
+        "tags": [
+          "General"
+        ],
+        "source": "feed"
+      },
+      {
+        "title": "Isle Notch",
+        "description": "Lowweight minimal dynamic island for Windows\n          \n          \n            Discussion\n            |\n            Link",
+        "url": "https://www.producthunt.com/products/isle-notch",
+        "published": "2026-10-05",
+        "updated": "2026-10-08",
+        "tags": [
+          "General"
+        ],
+        "source": "feed"
+      },
+      {
+        "title": "Termaxa",
+        "description": "See what an AI agent's command would destroy before it runs\n          \n          \n            Discussion\n            |\n            Link",
+        "url": "https://www.producthunt.com/products/termaxa",
+        "published": "2026-10-07",
+        "updated": "2026-10-08",
+        "tags": [
+          "AI"
+        ],
+        "source": "feed"
+      },
+      {
+        "title": "OpenSEO",
+        "description": "The open source Semrush alternative\n          \n          \n            Discussion\n            |\n            Link",
+        "url": "https://www.producthunt.com/products/openseo",
+        "published": "2026-10-06",
+        "updated": "2026-10-08",
+        "tags": [
+          "General"
+        ],
+        "source": "feed"
+      },
+      {
+        "title": "Semwright",
+        "description": "Give AI agents structured access to real software\n          \n          \n            Discussion\n            |\n            Link",
+        "url": "https://www.producthunt.com/products/semwright",
+        "published": "2026-10-07",
+        "updated": "2026-10-08",
+        "tags": [
+          "AI"
+        ],
+        "source": "feed"
+      },
+      {
+        "title": "ClawCall",
+        "description": "Your AI agent's phone to dial, hold, and reports back\n          \n          \n            Discussion\n            |\n            Link",
+        "url": "https://www.producthunt.com/products/clawcall",
+        "published": "2026-10-07",
+        "updated": "2026-10-08",
+        "tags": [
+          "AI"
+        ],
+        "source": "feed"
+      },
+      {
+        "title": "tide",
+        "description": "A Jitsi alternative that does a few things really well\n          \n          \n            Discussion\n            |\n            Link",
+        "url": "https://www.producthunt.com/products/tide-simple-self-hostable-video-calls",
+        "published": "2026-10-07",
+        "updated": "2026-10-08",
+        "tags": [
+          "General"
+        ],
+        "source": "feed"
+      },
+      {
+        "title": "OpenSwarm",
+        "description": "A swarm of agents, in the same place you work\n          \n          \n            Discussion\n            |\n            Link",
+        "url": "https://www.producthunt.com/products/openswarm-3",
+        "published": "2026-10-05",
+        "updated": "2026-10-08",
+        "tags": [
+          "AI"
+        ],
+        "source": "feed"
+      },
+      {
+        "title": "Hallmonitor",
+        "description": "See and answer every coding agent from your notch\n          \n          \n            Discussion\n            |\n            Link",
+        "url": "https://www.producthunt.com/products/hallmonitor",
+        "published": "2026-10-07",
+        "updated": "2026-10-08",
+        "tags": [
+          "AI"
+        ],
+        "source": "feed"
+      },
+      {
+        "title": "Mailwell",
+        "description": "Native Mac mail for IMAP, JMAP and Microsoft 365\n          \n          \n            Discussion\n            |\n            Link",
+        "url": "https://www.producthunt.com/products/mailwell-2",
+        "published": "2026-10-06",
+        "updated": "2026-10-08",
+        "tags": [
+          "AI"
+        ],
+        "source": "feed"
+      },
+      {
+        "title": "Hark",
+        "description": "The personal AI that handles life before you have to\n          \n          \n            Discussion\n            |\n            Link",
+        "url": "https://www.producthunt.com/products/hark-3",
+        "published": "2026-10-06",
+        "updated": "2026-10-08",
+        "tags": [
+          "AI"
+        ],
+        "source": "feed"
+      },
+      {
+        "title": "Tractionwave",
+        "description": "AI attention heatmaps for ads to check before you spend\n          \n          \n            Discussion\n            |\n            Link",
+        "url": "https://www.producthunt.com/products/tractionwave",
+        "published": "2026-10-07",
+        "updated": "2026-10-08",
+        "tags": [
+          "AI"
+        ],
+        "source": "feed"
+      },
+      {
+        "title": "Clippo",
+        "description": "Orchestrate AI agent teams on a visual canvas\n          \n          \n            Discussion\n            |\n            Link",
+        "url": "https://www.producthunt.com/products/clippo-2",
+        "published": "2026-10-07",
+        "updated": "2026-10-08",
+        "tags": [
+          "AI"
+        ],
+        "source": "feed"
+      },
+      {
+        "title": "Claude for Google Workspace",
+        "description": "Bring Claude directly into Google Docs, Sheets & Slides\n          \n          \n            Discussion\n            |\n            Link",
+        "url": "https://www.producthunt.com/products/claude-for-google-workspace",
+        "published": "2026-10-07",
+        "updated": "2026-10-08",
+        "tags": [
+          "General"
+        ],
+        "source": "feed"
+      },
+      {
+        "title": "BotBus",
+        "description": "Manage your local coding agents from your phone\n          \n          \n            Discussion\n            |\n            Link",
+        "url": "https://www.producthunt.com/products/botbus",
+        "published": "2026-10-07",
+        "updated": "2026-10-08",
+        "tags": [
+          "AI"
+        ],
+        "source": "feed"
+      },
+      {
+        "title": "Off the Record",
+        "description": "Block AI from transcribing your meetings.\n          \n          \n            Discussion\n            |\n            Link",
+        "url": "https://www.producthunt.com/products/off-the-record-2",
+        "published": "2026-10-07",
+        "updated": "2026-10-08",
+        "tags": [
+          "AI"
+        ],
+        "source": "feed"
+      },
+      {
+        "title": "Typeling",
+        "description": "Translate in your iPhone keyboard. Keep your tone.\n          \n          \n            Discussion\n            |\n            Link",
+        "url": "https://www.producthunt.com/products/typeling",
+        "published": "2026-10-07",
+        "updated": "2026-10-08",
+        "tags": [
+          "General"
+        ],
+        "source": "feed"
+      },
+      {
+        "title": "aegis",
+        "description": "Smart personal safety app connected to 24/7 dispatch\n          \n          \n            Discussion\n            |\n            Link",
+        "url": "https://www.producthunt.com/products/aegis-14",
+        "published": "2026-10-07",
+        "updated": "2026-10-08",
+        "tags": [
+          "General"
+        ],
+        "source": "feed"
+      },
+      {
+        "title": "pmtui",
+        "description": "Autopilot for long-running AI sessions in terminal\n          \n          \n            Discussion\n            |\n            Link",
+        "url": "https://www.producthunt.com/products/pmtui",
+        "published": "2026-10-07",
+        "updated": "2026-10-08",
+        "tags": [
+          "AI"
+        ],
+        "source": "feed"
+      },
+      {
+        "title": "Paw-Paw",
+        "description": "A tiny desktop pet for your Mac that types along with you\n          \n          \n            Discussion\n            |\n            Link",
+        "url": "https://www.producthunt.com/products/paw-paw",
+        "published": "2026-10-05",
+        "updated": "2026-10-08",
+        "tags": [
+          "General"
+        ],
+        "source": "feed"
+      },
+      {
+        "title": "NOVA CLI v1.0",
+        "description": "AI developer in your terminal\n          \n          \n            Discussion\n            |\n            Link",
+        "url": "https://www.producthunt.com/products/nova-18",
+        "published": "2026-10-07",
+        "updated": "2026-10-08",
+        "tags": [
+          "AI"
+        ],
+        "source": "feed"
+      },
+      {
+        "title": "Ahem! Unmissable Meeting Reminders",
+        "description": "Full screen reminders for ADHD, time-blind & focused brains\n          \n          \n            Discussion\n            |\n            Link",
+        "url": "https://www.producthunt.com/products/ahem-calendar-overlay",
+        "published": "2026-10-05",
+        "updated": "2026-10-08",
         "tags": [
           "AI",
           "Productivity"
@@ -287,46 +505,68 @@
         "source": "feed"
       },
       {
-        "title": "Viibeo",
-        "description": "One prompt to a publish-ready faceless short\n          \n          \n            Discussion\n            |\n            Link",
-        "url": "https://www.producthunt.com/products/viibeo",
-        "published": "2026-09-29",
-        "updated": "2026-10-07",
+        "title": "Leanback",
+        "description": "Personal AI assistant for managing engineering teams\n          \n          \n            Discussion\n            |\n            Link",
+        "url": "https://www.producthunt.com/products/leanback",
+        "published": "2026-10-07",
+        "updated": "2026-10-08",
+        "tags": [
+          "AI"
+        ],
+        "source": "feed"
+      },
+      {
+        "title": "Tonefold",
+        "description": "Describe a song, get every part as editable MIDI\n          \n          \n            Discussion\n            |\n            Link",
+        "url": "https://www.producthunt.com/products/tonefold",
+        "published": "2026-10-07",
+        "updated": "2026-10-08",
         "tags": [
           "General"
         ],
         "source": "feed"
       },
       {
-        "title": "Databench by Alkera",
-        "description": "Open-source collaborative agentic workspace for data teams\n          \n          \n            Discussion\n            |\n            Link",
-        "url": "https://www.producthunt.com/products/alkera",
-        "published": "2026-09-17",
-        "updated": "2026-10-07",
+        "title": "Epilude Narrator",
+        "description": "Listen to any article, doc or text on your Mac\n          \n          \n            Discussion\n            |\n            Link",
+        "url": "https://www.producthunt.com/products/epilude",
+        "published": "2026-10-07",
+        "updated": "2026-10-08",
+        "tags": [
+          "General"
+        ],
+        "source": "feed"
+      },
+      {
+        "title": "AgentGuard",
+        "description": "Scan AI agent Skills for risks before you install them\n          \n          \n            Discussion\n            |\n            Link",
+        "url": "https://www.producthunt.com/products/agentguard-5",
+        "published": "2026-10-06",
+        "updated": "2026-10-08",
         "tags": [
           "AI"
         ],
         "source": "feed"
       },
       {
-        "title": "Plugins Radar",
-        "description": "Search rankings and competitor alerts for ChatGPT plugins\n          \n          \n            Discussion\n            |\n            Link",
-        "url": "https://www.producthunt.com/products/plugins-radar",
-        "published": "2026-10-05",
-        "updated": "2026-10-07",
+        "title": "Moonwalkers Dusk",
+        "description": "Strap-on motorized wheels that let you walk twice as fast\n          \n          \n            Discussion\n            |\n            Link",
+        "url": "https://www.producthunt.com/products/moonwalkers-dusk",
+        "published": "2026-10-03",
+        "updated": "2026-10-08",
         "tags": [
-          "AI"
+          "General"
         ],
         "source": "feed"
       },
       {
-        "title": "Temp Mail",
-        "description": "Disposable email + private forwarding to your real inbox\n          \n          \n            Discussion\n            |\n            Link",
-        "url": "https://www.producthunt.com/products/temp-mail-370",
-        "published": "2026-06-23",
-        "updated": "2026-10-07",
+        "title": "StudyQuest",
+        "description": "Turn your notes into games\n          \n          \n            Discussion\n            |\n            Link",
+        "url": "https://www.producthunt.com/products/studyquest",
+        "published": "2026-10-06",
+        "updated": "2026-10-08",
         "tags": [
-          "AI"
+          "Productivity"
         ],
         "source": "feed"
       },
@@ -335,75 +575,9 @@
         "description": "Your AI usage in dollars and liters of water\n          \n          \n            Discussion\n            |\n            Link",
         "url": "https://www.producthunt.com/products/unprompt-2",
         "published": "2026-10-01",
-        "updated": "2026-10-07",
+        "updated": "2026-10-08",
         "tags": [
           "AI"
-        ],
-        "source": "feed"
-      },
-      {
-        "title": "Cinch – Reminders & Tasks",
-        "description": "Clean, privacy-first task manager for Apple Reminders\n          \n          \n            Discussion\n            |\n            Link",
-        "url": "https://www.producthunt.com/products/cinch-reminders-tasks",
-        "published": "2026-09-25",
-        "updated": "2026-10-07",
-        "tags": [
-          "Productivity"
-        ],
-        "source": "feed"
-      },
-      {
-        "title": "Ana by Vertice",
-        "description": "The AI negotiation agent for software purchases\n          \n          \n            Discussion\n            |\n            Link",
-        "url": "https://www.producthunt.com/products/ana-by-vertice",
-        "published": "2026-10-01",
-        "updated": "2026-10-07",
-        "tags": [
-          "AI"
-        ],
-        "source": "feed"
-      },
-      {
-        "title": "Pegasus 1.6 by TwelveLabs",
-        "description": "Transforms egocentric video into robot training data\n          \n          \n            Discussion\n            |\n            Link",
-        "url": "https://www.producthunt.com/products/twelvelabs",
-        "published": "2026-09-29",
-        "updated": "2026-10-07",
-        "tags": [
-          "AI"
-        ],
-        "source": "feed"
-      },
-      {
-        "title": "Supademo AI Demo Agent",
-        "description": "Agentic demos like your best salesperson, without the salary\n          \n          \n            Discussion\n            |\n            Link",
-        "url": "https://www.producthunt.com/products/supademo",
-        "published": "2025-09-03",
-        "updated": "2026-10-07",
-        "tags": [
-          "AI"
-        ],
-        "source": "feed"
-      },
-      {
-        "title": "Linda",
-        "description": "Your local AI coworker for the Mac, like Dots but free!\n          \n          \n            Discussion\n            |\n            Link",
-        "url": "https://www.producthunt.com/products/linda",
-        "published": "2026-10-03",
-        "updated": "2026-10-07",
-        "tags": [
-          "AI"
-        ],
-        "source": "feed"
-      },
-      {
-        "title": "Zavi",
-        "description": "Lovable for growth\n          \n          \n            Discussion\n            |\n            Link",
-        "url": "https://www.producthunt.com/products/zavi",
-        "published": "2026-10-01",
-        "updated": "2026-10-07",
-        "tags": [
-          "General"
         ],
         "source": "feed"
       },
@@ -412,29 +586,7 @@
         "description": "Native, open-source RAW Lightroom alternative editor for Mac\n          \n          \n            Discussion\n            |\n            Link",
         "url": "https://www.producthunt.com/products/redlamp",
         "published": "2026-10-04",
-        "updated": "2026-10-07",
-        "tags": [
-          "General"
-        ],
-        "source": "feed"
-      },
-      {
-        "title": "GenPage 3.0",
-        "description": "Build, personalize, and optimize landing pages with AI\n          \n          \n            Discussion\n            |\n            Link",
-        "url": "https://www.producthunt.com/products/genpage",
-        "published": "2026-09-30",
-        "updated": "2026-10-07",
-        "tags": [
-          "AI"
-        ],
-        "source": "feed"
-      },
-      {
-        "title": "Vanoor",
-        "description": "Turn your Apple Watch into a serious running watch\n          \n          \n            Discussion\n            |\n            Link",
-        "url": "https://www.producthunt.com/products/vanoor-running-pacer-map",
-        "published": "2026-10-05",
-        "updated": "2026-10-07",
+        "updated": "2026-10-08",
         "tags": [
           "General"
         ],
@@ -445,162 +597,7 @@
         "description": "Free native Postgres app for Mac with your own AI agents\n          \n          \n            Discussion\n            |\n            Link",
         "url": "https://www.producthunt.com/products/postquel",
         "published": "2026-10-05",
-        "updated": "2026-10-07",
-        "tags": [
-          "AI"
-        ],
-        "source": "feed"
-      },
-      {
-        "title": "StudyQuest",
-        "description": "Turn your notes into games\n          \n          \n            Discussion\n            |\n            Link",
-        "url": "https://www.producthunt.com/products/studyquest",
-        "published": "2026-10-06",
-        "updated": "2026-10-07",
-        "tags": [
-          "Productivity"
-        ],
-        "source": "feed"
-      },
-      {
-        "title": "Walrus Console",
-        "description": "Store, Protect and Connect Your Data\n          \n          \n            Discussion\n            |\n            Link",
-        "url": "https://www.producthunt.com/products/walrus-console",
-        "published": "2026-10-06",
-        "updated": "2026-10-07",
-        "tags": [
-          "General"
-        ],
-        "source": "feed"
-      },
-      {
-        "title": "Knuff App",
-        "description": "Family check-in app to know your people are okay\n          \n          \n            Discussion\n            |\n            Link",
-        "url": "https://www.producthunt.com/products/knuff-app",
-        "published": "2026-10-06",
-        "updated": "2026-10-07",
-        "tags": [
-          "General"
-        ],
-        "source": "feed"
-      },
-      {
-        "title": "Thalia",
-        "description": "Plan, approve and review your Muse Code agent on Mac\n          \n          \n            Discussion\n            |\n            Link",
-        "url": "https://www.producthunt.com/products/thalia",
-        "published": "2026-10-03",
-        "updated": "2026-10-07",
-        "tags": [
-          "AI"
-        ],
-        "source": "feed"
-      },
-      {
-        "title": "Albie",
-        "description": "An AI tutor that teaches at a whiteboard, not a chat box\n          \n          \n            Discussion\n            |\n            Link",
-        "url": "https://www.producthunt.com/products/albie",
-        "published": "2026-10-05",
-        "updated": "2026-10-07",
-        "tags": [
-          "AI"
-        ],
-        "source": "feed"
-      },
-      {
-        "title": "Aura by Neural",
-        "description": "Turn requests into interactive interfaces on your screen\n          \n          \n            Discussion\n            |\n            Link",
-        "url": "https://www.producthunt.com/products/aura-by-neural",
-        "published": "2026-10-06",
-        "updated": "2026-10-07",
-        "tags": [
-          "AI"
-        ],
-        "source": "feed"
-      },
-      {
-        "title": "ImageFlow",
-        "description": "Free Photoshop-grade image editor with AI features\n          \n          \n            Discussion\n            |\n            Link",
-        "url": "https://www.producthunt.com/products/imageflow-6",
-        "published": "2026-09-29",
-        "updated": "2026-10-07",
-        "tags": [
-          "AI"
-        ],
-        "source": "feed"
-      },
-      {
-        "title": "Wabi",
-        "description": "A new kind of messenger that gets things done\n          \n          \n            Discussion\n            |\n            Link",
-        "url": "https://www.producthunt.com/products/wabi-2",
-        "published": "2026-09-29",
-        "updated": "2026-10-07",
-        "tags": [
-          "General"
-        ],
-        "source": "feed"
-      },
-      {
-        "title": "Pheebs",
-        "description": "Measure how engineers and teams actually work with AI\n          \n          \n            Discussion\n            |\n            Link",
-        "url": "https://www.producthunt.com/products/pheebs",
-        "published": "2026-09-29",
-        "updated": "2026-10-07",
-        "tags": [
-          "AI"
-        ],
-        "source": "feed"
-      },
-      {
-        "title": "NoteWorthy",
-        "description": "Notes supercharged with AI, all on-device\n          \n          \n            Discussion\n            |\n            Link",
-        "url": "https://www.producthunt.com/products/noteworthy",
-        "published": "2026-09-28",
-        "updated": "2026-10-07",
-        "tags": [
-          "AI",
-          "Productivity"
-        ],
-        "source": "feed"
-      },
-      {
-        "title": "Ranktune",
-        "description": "Track AI visibility, citations, and referral traffic\n          \n          \n            Discussion\n            |\n            Link",
-        "url": "https://www.producthunt.com/products/ranktune",
-        "published": "2026-10-03",
-        "updated": "2026-10-07",
-        "tags": [
-          "AI"
-        ],
-        "source": "feed"
-      },
-      {
-        "title": "Kishi Notch",
-        "description": "Your MacBook notch, brought to life\n          \n          \n            Discussion\n            |\n            Link",
-        "url": "https://www.producthunt.com/products/kishi-notch",
-        "published": "2026-10-05",
-        "updated": "2026-10-07",
-        "tags": [
-          "General"
-        ],
-        "source": "feed"
-      },
-      {
-        "title": "Coddy",
-        "description": "Learn to code 20+ languages in a fun way with short lessons\n          \n          \n            Discussion\n            |\n            Link",
-        "url": "https://www.producthunt.com/products/coddy",
-        "published": "2026-09-09",
-        "updated": "2026-10-07",
-        "tags": [
-          "General"
-        ],
-        "source": "feed"
-      },
-      {
-        "title": "The Sentient World",
-        "description": "A living world of AI characters. You can only watch.\n          \n          \n            Discussion\n            |\n            Link",
-        "url": "https://www.producthunt.com/products/the-sentient-world",
-        "published": "2026-10-04",
-        "updated": "2026-10-07",
+        "updated": "2026-10-08",
         "tags": [
           "AI"
         ],
@@ -609,55 +606,54 @@
     ],
     "winners": {
       "top_today": {
-        "title": "SunSed",
-        "description": "The first AI app builder with a language made for AI\n          \n          \n            Discussion\n            |\n            Link",
-        "url": "https://www.producthunt.com/products/sunsed",
-        "published": "2026-10-06",
-        "updated": "2026-10-07",
+        "title": "Polylane for Vercel",
+        "description": "An AI on-call engineer for your Vercel apps\n          \n          \n            Discussion\n            |\n            Link",
+        "url": "https://www.producthunt.com/products/polylane",
+        "published": "2026-10-07",
+        "updated": "2026-10-08",
         "tags": [
           "AI"
         ],
         "source": "feed"
       },
       "top_week": {
-        "title": "SunSed",
-        "description": "The first AI app builder with a language made for AI\n          \n          \n            Discussion\n            |\n            Link",
-        "url": "https://www.producthunt.com/products/sunsed",
-        "published": "2026-10-06",
-        "updated": "2026-10-07",
+        "title": "Polylane for Vercel",
+        "description": "An AI on-call engineer for your Vercel apps\n          \n          \n            Discussion\n            |\n            Link",
+        "url": "https://www.producthunt.com/products/polylane",
+        "published": "2026-10-07",
+        "updated": "2026-10-08",
         "tags": [
           "AI"
         ],
         "source": "feed"
       },
       "top_ai_week": {
-        "title": "SunSed",
-        "description": "The first AI app builder with a language made for AI\n          \n          \n            Discussion\n            |\n            Link",
-        "url": "https://www.producthunt.com/products/sunsed",
-        "published": "2026-10-06",
-        "updated": "2026-10-07",
+        "title": "Polylane for Vercel",
+        "description": "An AI on-call engineer for your Vercel apps\n          \n          \n            Discussion\n            |\n            Link",
+        "url": "https://www.producthunt.com/products/polylane",
+        "published": "2026-10-07",
+        "updated": "2026-10-08",
         "tags": [
           "AI"
         ],
         "source": "feed"
       },
       "top_prod_week": {
-        "title": "DailyHub",
-        "description": "A personal command center for projects, tasks, and habits.\n          \n          \n            Discussion\n            |\n            Link",
-        "url": "https://www.producthunt.com/products/dailyhub-a-quiet-workspace-for-your-day",
+        "title": "StudyQuest",
+        "description": "Turn your notes into games\n          \n          \n            Discussion\n            |\n            Link",
+        "url": "https://www.producthunt.com/products/studyquest",
         "published": "2026-10-06",
-        "updated": "2026-10-07",
+        "updated": "2026-10-08",
         "tags": [
-          "AI",
           "Productivity"
         ],
         "source": "feed"
       },
       "count": 50,
       "count_today": 0,
-      "count_week": 35,
-      "count_ai": 20,
-      "count_prod": 5
+      "count_week": 45,
+      "count_ai": 26,
+      "count_prod": 2
     }
   }
 }
