@@ -1,53 +1,43 @@
 {
-  "generated_at": "2026-10-09T04:16:16.253217+00:00",
+  "generated_at": "2026-10-10T04:01:25.340214+00:00",
   "week_of": "2026-40",
   "meta": {
     "papers_tracked": 15,
-    "technologies_tracked": 29,
+    "technologies_tracked": 30,
     "ideas_tracked": 538,
     "repos_tracked": 1,
     "last_research_update": ""
   },
   "accelerating_technologies": [
     {
-      "name": "On-Policy Distillation",
-      "description": "On-Policy Distillation",
+      "name": "Hierarchical Navigation Runtime",
+      "description": "Hierarchical Navigation Runtime",
       "trend": "rising",
-      "confidence": 0.7,
+      "confidence": 0.8,
       "maturity": "medium",
       "paper_count": 1,
       "signal": "rising"
     },
     {
-      "name": "Knowledge Distillation",
-      "description": "Knowledge Distillation",
+      "name": "Action Policy",
+      "description": "Action Policy",
       "trend": "rising",
-      "confidence": 0.7,
+      "confidence": 0.8,
       "maturity": "medium",
       "paper_count": 1,
       "signal": "rising"
     },
     {
-      "name": "LLM Agents",
-      "description": "LLM Agents",
+      "name": "Codec Allocation",
+      "description": "Codec Allocation",
       "trend": "rising",
-      "confidence": 0.7,
+      "confidence": 0.8,
       "maturity": "medium",
       "paper_count": 1,
       "signal": "rising"
     }
   ],
   "startup_ideas_with_revenue": [
-    {
-      "title": "Didn’t want to pay $70–100/mo for mobile app market data, so I built my own. Now 150 people use it free and I’m not sure that’s sustainable.",
-      "url": "https://reddit.com/r/SaaS/comments/1x11neq/",
-      "revenue_signal": "$70",
-      "source": "reddit",
-      "category": "",
-      "business_model": "app-store,api",
-      "ai_potential": 55,
-      "score": 0
-    },
     {
       "title": "Show HN: San Francisco Compute – 512 H100s at <$2/hr for research and startups",
       "url": "https://sfcompute.org/",
@@ -67,29 +57,43 @@
       "business_model": "subscription,marketplace,ads,freemium",
       "ai_potential": 40,
       "score": 1943
+    },
+    {
+      "title": "$1k revenue in 40 days",
+      "url": "https://reddit.com/r/SaaS/comments/1x1rx9z/",
+      "revenue_signal": "$1k revenue",
+      "source": "reddit",
+      "category": "",
+      "business_model": "marketplace",
+      "ai_potential": 30,
+      "score": 0
     }
   ],
   "hidden_gems": [
     {
-      "technology": "Long Video Understanding",
-      "description": "Long Video Understanding",
-      "confidence": 0.6,
+      "technology": "Reinforcement Learning",
+      "description": "Reinforcement Learning",
+      "confidence": 0.7,
       "paper_count": 1,
       "related_papers": [
         {
-          "title": "MedHorizon: Towards Long-context Medical Video Understanding in the Wild",
+          "title": "StoreBench: A Live-Commerce Environment for Evaluating and Training Autonomous Operator Agents",
+          "url": ""
+        },
+        {
+          "title": "GraphOPD: Graph-Augmented On-Policy Distillation for LLM Agents",
           "url": ""
         }
       ]
     },
     {
-      "technology": "Multimodal Large Language Models",
-      "description": "Multimodal Large Language Models",
-      "confidence": 0.6,
+      "technology": "Long-Horizon Planning",
+      "description": "Long-Horizon Planning",
+      "confidence": 0.7,
       "paper_count": 1,
       "related_papers": [
         {
-          "title": "MedHorizon: Towards Long-context Medical Video Understanding in the Wild",
+          "title": "StoreBench: A Live-Commerce Environment for Evaluating and Training Autonomous Operator Agents",
           "url": ""
         }
       ]
@@ -100,7 +104,7 @@
       "name": "Shubhamsaboo/awesome-llm-apps",
       "url": "https://github.com/Shubhamsaboo/awesome-llm-apps",
       "description": "100+ AI Agents, Agent Skills and RAG Apps - Free and Open Source.",
-      "stars": 140838,
+      "stars": 140991,
       "language": "Python",
       "topics": [
         "agents",
