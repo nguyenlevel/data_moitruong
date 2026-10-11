@@ -1,37 +1,37 @@
 {
-  "generated_at": "2026-10-10T04:01:25.340214+00:00",
-  "week_of": "2026-40",
+  "generated_at": "2026-10-11T03:34:39.266694+00:00",
+  "week_of": "2026-41",
   "meta": {
     "papers_tracked": 15,
-    "technologies_tracked": 30,
-    "ideas_tracked": 538,
+    "technologies_tracked": 20,
+    "ideas_tracked": 532,
     "repos_tracked": 1,
     "last_research_update": ""
   },
   "accelerating_technologies": [
     {
-      "name": "Hierarchical Navigation Runtime",
-      "description": "Hierarchical Navigation Runtime",
+      "name": "Multimodal Learning",
+      "description": "Multimodal Learning",
       "trend": "rising",
-      "confidence": 0.8,
+      "confidence": 0.7,
       "maturity": "medium",
       "paper_count": 1,
       "signal": "rising"
     },
     {
-      "name": "Action Policy",
-      "description": "Action Policy",
+      "name": "Mixture of Experts",
+      "description": "Mixture of Experts",
       "trend": "rising",
-      "confidence": 0.8,
+      "confidence": 0.7,
       "maturity": "medium",
       "paper_count": 1,
       "signal": "rising"
     },
     {
-      "name": "Codec Allocation",
-      "description": "Codec Allocation",
+      "name": "Cognitive Appraisal Reasoning",
+      "description": "Cognitive Appraisal Reasoning",
       "trend": "rising",
-      "confidence": 0.8,
+      "confidence": 0.7,
       "maturity": "medium",
       "paper_count": 1,
       "signal": "rising"
@@ -59,12 +59,12 @@
       "score": 1943
     },
     {
-      "title": "$1k revenue in 40 days",
-      "url": "https://reddit.com/r/SaaS/comments/1x1rx9z/",
-      "revenue_signal": "$1k revenue",
-      "source": "reddit",
-      "category": "",
-      "business_model": "marketplace",
+      "title": "安装汽水音乐，然后电脑中毒了。",
+      "url": "https://www.v2ex.com/t/1247054",
+      "revenue_signal": "32\\waitfor.exe 问了一下 GPT ，他也很疑惑为什么 waitfor.exe 要反复访问多个 DoH/DNS 服务。 然后一顿排查，发现是 9.17 上午就安装上了，已经运行了三周了。 然后 9.17 上午我只是更新了一下汽水音乐啊，为什么会染毒？汽水音乐是正常登录的啊。继续排查。 原来是我使用 brave 浏览器的搜索引擎搜到的汽水音乐网站是个仿冒的站点。真是防不胜防啊。。。 09:29:31 Brave 开始从 31tejeeeaeheythftyrfh-...aliyuncs.com （随机命名的阿里云 OSS 存储桶）下载 qishui_yingyue_X64821.exe ，来源页面是 qishui-pc.com/soda-music-pv-version——你当时应该是百度搜“汽水音乐”点进了这个仿冒官网（真正的官方域名是 qishui.douyin.com ） 09:30:45–49 你运行了安装包。它是个 NSIS 捆绑壳，往 C:\\Drivers\\ 释放三个随机名目录（恶意载荷 + 正版安装器 + 俄语命名的诱饵文件） 09:30:50 捆绑壳启动了正版字节跳动签名的汽水音乐安装",
+      "source": "v2ex",
+      "category": "share",
+      "business_model": null,
       "ai_potential": 30,
       "score": 0
     }
@@ -73,15 +73,11 @@
     {
       "technology": "Reinforcement Learning",
       "description": "Reinforcement Learning",
-      "confidence": 0.7,
+      "confidence": 0.65,
       "paper_count": 1,
       "related_papers": [
         {
           "title": "StoreBench: A Live-Commerce Environment for Evaluating and Training Autonomous Operator Agents",
-          "url": ""
-        },
-        {
-          "title": "GraphOPD: Graph-Augmented On-Policy Distillation for LLM Agents",
           "url": ""
         }
       ]
@@ -89,7 +85,7 @@
     {
       "technology": "Long-Horizon Planning",
       "description": "Long-Horizon Planning",
-      "confidence": 0.7,
+      "confidence": 0.65,
       "paper_count": 1,
       "related_papers": [
         {
@@ -104,7 +100,7 @@
       "name": "Shubhamsaboo/awesome-llm-apps",
       "url": "https://github.com/Shubhamsaboo/awesome-llm-apps",
       "description": "100+ AI Agents, Agent Skills and RAG Apps - Free and Open Source.",
-      "stars": 140991,
+      "stars": 141170,
       "language": "Python",
       "topics": [
         "agents",
