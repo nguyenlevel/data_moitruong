@@ -1,0 +1,36 @@
+{
+  "date": "2026-10-12",
+  "generated_at": "2026-10-12T03:58:47.571008+00:00",
+  "backend": "llm7",
+  "model": "default",
+  "brief": [
+    "Breakout timing: Now - AI agents and RAG apps are exploding in popularity.",
+    "Single best opportunity: Shubhamsaboo/awesome-llm-apps - 100+ open-source AI agents and RAG apps for automation.",
+    "Leverage the trend: Build a curated, high-quality list of AI agents and RAG apps to capitalize on the emerging market.",
+    "Focus on automation: Target businesses looking to automate tasks with AI agents and RAG apps.",
+    "Potential for rapid growth: The AI agent and RAG app market is expected to grow significantly in the coming years."
+  ],
+  "items": [
+    {
+      "name": "Shubhamsaboo/awesome-llm-apps",
+      "url": "https://github.com/Shubhamsaboo/awesome-llm-apps",
+      "stars": 141308,
+      "category": "Agents & Automation",
+      "delta_7d": 583,
+      "delta_7d_pct": 0.41,
+      "timing": "emerging",
+      "signals": [],
+      "cross_signal": false,
+      "one_liner": "100+ open-source AI agents and RAG apps for automation",
+      "pain_point": "Saves businesses time by automating tasks with AI agents, appealing to SMBs and enterprises",
+      "app_ideas": [
+        "AI-powered customer support chatbot for e-commerce sites",
+        "Automated content moderation tool for social media platforms",
+        "AI-driven data extraction and analysis tool for financial services"
+      ],
+      "monetization": "Freemium with enterprise API wrapper and vertical SaaS options",
+      "opportunity": 8,
+      "why_now": "Growing demand for AI automation and RAG apps in post-pandemic recovery"
+    }
+  ]
+}
