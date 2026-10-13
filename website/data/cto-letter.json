@@ -1,37 +1,37 @@
 {
-  "generated_at": "2026-10-12T03:58:47.640903+00:00",
+  "generated_at": "2026-10-13T05:10:20.918823+00:00",
   "week_of": "2026-41",
   "meta": {
     "papers_tracked": 15,
-    "technologies_tracked": 30,
-    "ideas_tracked": 527,
+    "technologies_tracked": 26,
+    "ideas_tracked": 535,
     "repos_tracked": 1,
     "last_research_update": ""
   },
   "accelerating_technologies": [
     {
-      "name": "Multi-agent Systems",
-      "description": "Multi-agent Systems",
+      "name": "Diffusion Models",
+      "description": "Diffusion Models",
       "trend": "rising",
-      "confidence": 0.8,
+      "confidence": 0.7,
       "maturity": "medium",
       "paper_count": 1,
       "signal": "rising"
     },
     {
-      "name": "Adversarial Investigation",
-      "description": "Adversarial Investigation",
+      "name": "Masked Language Modeling",
+      "description": "Masked Language Modeling",
       "trend": "rising",
-      "confidence": 0.8,
+      "confidence": 0.7,
       "maturity": "medium",
       "paper_count": 1,
       "signal": "rising"
     },
     {
-      "name": "Dialectical Analysis",
-      "description": "Dialectical Analysis",
+      "name": "Iterative Denoising",
+      "description": "Iterative Denoising",
       "trend": "rising",
-      "confidence": 0.8,
+      "confidence": 0.7,
       "maturity": "medium",
       "paper_count": 1,
       "signal": "rising"
@@ -59,13 +59,13 @@
       "score": 1943
     },
     {
-      "title": "Day-1 of growing my SaaS from $0 to $100 MRR (No promotion)",
-      "url": "https://reddit.com/r/SaaS/comments/1x31j6a/",
-      "revenue_signal": "$100 MRR",
+      "title": "My Product Hunt launch sold me more products than I sold my product 🤪",
+      "url": "https://reddit.com/r/SideProject/comments/1x4hyuk/",
+      "revenue_signal": "$1",
       "source": "reddit",
       "category": "",
-      "business_model": "subscription,one-time,physical",
-      "ai_potential": 40,
+      "business_model": "open-source",
+      "ai_potential": 30,
       "score": 0
     }
   ],
@@ -73,15 +73,11 @@
     {
       "technology": "Reinforcement Learning",
       "description": "Reinforcement Learning",
-      "confidence": 0.7,
+      "confidence": 0.6,
       "paper_count": 1,
       "related_papers": [
         {
           "title": "StoreBench: A Live-Commerce Environment for Evaluating and Training Autonomous Operator Agents",
-          "url": ""
-        },
-        {
-          "title": "A 3D Characterization Framework for Intelligent Sequential Decision Making",
           "url": ""
         }
       ]
@@ -89,7 +85,7 @@
     {
       "technology": "Long-Horizon Planning",
       "description": "Long-Horizon Planning",
-      "confidence": 0.65,
+      "confidence": 0.6,
       "paper_count": 1,
       "related_papers": [
         {
@@ -104,7 +100,7 @@
       "name": "Shubhamsaboo/awesome-llm-apps",
       "url": "https://github.com/Shubhamsaboo/awesome-llm-apps",
       "description": "100+ AI Agents, Agent Skills and RAG Apps - Free and Open Source.",
-      "stars": 141308,
+      "stars": 141447,
       "language": "Python",
       "topics": [
         "agents",
