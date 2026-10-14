@@ -1,0 +1,36 @@
+{
+  "date": "2026-10-14",
+  "generated_at": "2026-10-14T03:16:27.338083+00:00",
+  "backend": "llm7",
+  "model": "default",
+  "brief": [
+    "Shubhamsaboo/awesome-llm-apps: 100+ open-source AI agents and RAG apps (opp 8, emerging)",
+    "Breakout timing: Q3 2024, as AI agents and RAG apps gain mainstream adoption",
+    "Single best opportunity: Build a curated, high-quality directory of AI agents and RAG apps",
+    "Potential monetization: Premium subscriptions, sponsorships, or affiliate marketing",
+    "Key challenge: Maintaining relevance and quality as the AI landscape evolves"
+  ],
+  "items": [
+    {
+      "name": "Shubhamsaboo/awesome-llm-apps",
+      "url": "https://github.com/Shubhamsaboo/awesome-llm-apps",
+      "stars": 141617,
+      "category": "Agents & Automation",
+      "delta_7d": 736,
+      "delta_7d_pct": 0.52,
+      "timing": "emerging",
+      "signals": [],
+      "cross_signal": false,
+      "one_liner": "100+ open-source AI agents and RAG apps",
+      "pain_point": "Saves time for developers by providing pre-built AI agents and RAG apps for various use cases, appealing to startups and enterprises",
+      "app_ideas": [
+        "AI-powered customer support chatbot for small businesses",
+        "Automated content generation tool for marketers",
+        "AI-driven personal assistant for productivity"
+      ],
+      "monetization": "Freemium model with premium features for enterprises",
+      "opportunity": 8,
+      "why_now": "Increasing demand for AI agents and RAG apps due to advancements in NLP and LLMs"
+    }
+  ]
+}

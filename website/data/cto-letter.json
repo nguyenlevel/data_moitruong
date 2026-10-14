@@ -1,43 +1,53 @@
 {
-  "generated_at": "2026-10-13T05:10:20.918823+00:00",
+  "generated_at": "2026-10-14T03:16:27.417435+00:00",
   "week_of": "2026-41",
   "meta": {
     "papers_tracked": 15,
-    "technologies_tracked": 26,
+    "technologies_tracked": 35,
     "ideas_tracked": 535,
     "repos_tracked": 1,
     "last_research_update": ""
   },
   "accelerating_technologies": [
     {
-      "name": "Diffusion Models",
-      "description": "Diffusion Models",
+      "name": "Reinforcement Learning",
+      "description": "Reinforcement Learning",
       "trend": "rising",
-      "confidence": 0.7,
+      "confidence": 0.8,
       "maturity": "medium",
       "paper_count": 1,
       "signal": "rising"
     },
     {
-      "name": "Masked Language Modeling",
-      "description": "Masked Language Modeling",
+      "name": "LLM Simulators",
+      "description": "LLM Simulators",
       "trend": "rising",
-      "confidence": 0.7,
+      "confidence": 0.8,
       "maturity": "medium",
       "paper_count": 1,
       "signal": "rising"
     },
     {
-      "name": "Iterative Denoising",
-      "description": "Iterative Denoising",
+      "name": "Multi-turn Clinical Encounters",
+      "description": "Multi-turn Clinical Encounters",
       "trend": "rising",
-      "confidence": 0.7,
+      "confidence": 0.8,
       "maturity": "medium",
       "paper_count": 1,
       "signal": "rising"
     }
   ],
   "startup_ideas_with_revenue": [
+    {
+      "title": "I compared 10 AI assistants and I'm starting to question why we're still paying $20/month for AI",
+      "url": "https://reddit.com/r/SaaS/comments/1x5edg9/",
+      "revenue_signal": "$20/mo",
+      "source": "reddit",
+      "category": "",
+      "business_model": "subscription",
+      "ai_potential": 55,
+      "score": 0
+    },
     {
       "title": "Show HN: San Francisco Compute – 512 H100s at <$2/hr for research and startups",
       "url": "https://sfcompute.org/",
@@ -57,39 +67,29 @@
       "business_model": "subscription,marketplace,ads,freemium",
       "ai_potential": 40,
       "score": 1943
-    },
-    {
-      "title": "My Product Hunt launch sold me more products than I sold my product 🤪",
-      "url": "https://reddit.com/r/SideProject/comments/1x4hyuk/",
-      "revenue_signal": "$1",
-      "source": "reddit",
-      "category": "",
-      "business_model": "open-source",
-      "ai_potential": 30,
-      "score": 0
     }
   ],
   "hidden_gems": [
     {
-      "technology": "Reinforcement Learning",
-      "description": "Reinforcement Learning",
+      "technology": "Diffusion Models",
+      "description": "Diffusion Models",
       "confidence": 0.6,
       "paper_count": 1,
       "related_papers": [
         {
-          "title": "StoreBench: A Live-Commerce Environment for Evaluating and Training Autonomous Operator Agents",
+          "title": "Masked Diffusion Language Agents for Tool-Integrated Chemical Reasoning",
           "url": ""
         }
       ]
     },
     {
-      "technology": "Long-Horizon Planning",
-      "description": "Long-Horizon Planning",
+      "technology": "Masked Language Modeling",
+      "description": "Masked Language Modeling",
       "confidence": 0.6,
       "paper_count": 1,
       "related_papers": [
         {
-          "title": "StoreBench: A Live-Commerce Environment for Evaluating and Training Autonomous Operator Agents",
+          "title": "Masked Diffusion Language Agents for Tool-Integrated Chemical Reasoning",
           "url": ""
         }
       ]
@@ -100,7 +100,7 @@
       "name": "Shubhamsaboo/awesome-llm-apps",
       "url": "https://github.com/Shubhamsaboo/awesome-llm-apps",
       "description": "100+ AI Agents, Agent Skills and RAG Apps - Free and Open Source.",
-      "stars": 141447,
+      "stars": 141617,
       "language": "Python",
       "topics": [
         "agents",
