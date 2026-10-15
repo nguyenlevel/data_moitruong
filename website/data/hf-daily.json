@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-14T03:16:33.617438+00:00",
+  "updated_at": "2026-10-15T02:56:35.766272+00:00",
   "sources": {
     "papers": 30,
     "models": 40,
@@ -9,34 +9,34 @@
   "digest": {
     "highlights": {
       "top_paper": {
-        "id": "2609.39601",
-        "title": "GroundingPI: A Grounding Foundation Model towards Physical Intelligence with Visual Primitives",
+        "id": "2610.19975",
+        "title": "LatentLoop: Scaling Looped MoE Models with Asymmetric Compute Allocation",
         "authors": [
-          "Qize Yu",
-          "Lianrui Fan",
-          "Boyu Chen",
-          "Jiaqi Liang",
-          "Xini Ding",
-          "Yue Chen",
-          "Zetian Song",
-          "Yuran Wang"
+          "Zefeng He",
+          "Yunkai Chai",
+          "Xiaoyang Chen",
+          "Tong Zhu",
+          "Zongliang Wu",
+          "Yun Luo",
+          "Yafu Li",
+          "Yu Cheng"
         ],
-        "published": "2026-09-30",
+        "published": "2026-10-14",
         "submitted_on": "",
-        "summary": "Precise grounding matters. It specifies which object is the target and where that object is, even in clutter and for tiny objects, and it has to be fast enough for closed-loop control. Yet vision-language-action (VLA) and world-action models (WAMs) take perception from general-purpose vision-language and video-generation backbones, which still fail in these settings. We introduce GroundingPI, a 4B grounding foundation model that generates points and boxes as quantized coordinates in a shared vocabulary. Training combines multimodal and spatial pretraining, supervised fine-tuning, and reinforce",
-        "github": "https://github.com/groundingpi/GroundingPI",
-        "upvotes": 250,
-        "url": "https://huggingface.co/papers/2609.39601",
-        "pdf_url": "https://arxiv.org/pdf/2609.39601"
+        "summary": "Looped Mixture-of-Experts (MoE) models combine parameter reuse with sparse computation to improve performance under matched budgets. Prior work demonstrates that different loop visits can play different roles even when they share parameters. To probe the contributions of different loop visits, we learn separate residual coefficients in a model that applies a shared block twice, observing a smaller scale in the first visit. Fixed coefficient experiments show that reducing the first visit's scale preserves or improves performance, whereas the same reductions to the second hurt it. This asymmetry",
+        "github": "https://github.com/lcqysl/LatentLoop",
+        "upvotes": 24,
+        "url": "https://huggingface.co/papers/2610.19975",
+        "pdf_url": "https://arxiv.org/pdf/2610.19975"
       },
       "top_models": [
         {
           "id": "google/embeddinggemma-2",
           "author": "google",
           "name": "embeddinggemma-2",
-          "likes": 2113,
-          "trending_score": 1411,
-          "downloads": 124930,
+          "likes": 2273,
+          "trending_score": 1126,
+          "downloads": 135175,
           "pipeline_tag": "feature-extraction",
           "tags": [
             "transformers",
@@ -61,9 +61,9 @@
           "id": "jialinyyzz/humanizer",
           "author": "jialinyyzz",
           "name": "humanizer",
-          "likes": 1531,
-          "trending_score": 1053,
-          "downloads": 54039,
+          "likes": 1642,
+          "trending_score": 1093,
+          "downloads": 65616,
           "pipeline_tag": "text-generation",
           "tags": [
             "gguf",
@@ -81,7 +81,7 @@
             "transformers"
           ],
           "license": "apache-2.0",
-          "last_modified": "2026-10-08",
+          "last_modified": "2026-10-15",
           "created_at": "2026-09-11",
           "url": "https://huggingface.co/jialinyyzz/humanizer"
         },
@@ -89,9 +89,9 @@
           "id": "Qwen/Qwen-Image-2.1-Turbo",
           "author": "Qwen",
           "name": "Qwen-Image-2.1-Turbo",
-          "likes": 713,
-          "trending_score": 668,
-          "downloads": 9665,
+          "likes": 778,
+          "trending_score": 723,
+          "downloads": 12704,
           "pipeline_tag": "text-to-image",
           "tags": [
             "diffusers",
@@ -110,12 +110,39 @@
           "url": "https://huggingface.co/Qwen/Qwen-Image-2.1-Turbo"
         },
         {
+          "id": "openbmb/MiniCPM-V-4.7-35B-A3B",
+          "author": "openbmb",
+          "name": "MiniCPM-V-4.7-35B-A3B",
+          "likes": 639,
+          "trending_score": 571,
+          "downloads": 4157,
+          "pipeline_tag": "image-text-to-text",
+          "tags": [
+            "transformers",
+            "safetensors",
+            "minicpmv4_7",
+            "image-text-to-text",
+            "minicpm-v",
+            "multimodal",
+            "On-Device Model",
+            "lightweight"
+          ],
+          "library": [
+            "transformers",
+            "safetensors"
+          ],
+          "license": "apache-2.0",
+          "last_modified": "2026-10-14",
+          "created_at": "2026-10-07",
+          "url": "https://huggingface.co/openbmb/MiniCPM-V-4.7-35B-A3B"
+        },
+        {
           "id": "abenzerps/Qwen-Image-2.1-Uncensored-Quantized",
           "author": "abenzerps",
           "name": "Qwen-Image-2.1-Uncensored-Quantized",
-          "likes": 4213,
-          "trending_score": 551,
-          "downloads": 2247929,
+          "likes": 4313,
+          "trending_score": 532,
+          "downloads": 2315771,
           "pipeline_tag": "text-to-image",
           "tags": [
             "gguf",
@@ -134,65 +161,42 @@
           "last_modified": "2026-10-12",
           "created_at": "2026-09-20",
           "url": "https://huggingface.co/abenzerps/Qwen-Image-2.1-Uncensored-Quantized"
-        },
-        {
-          "id": "openbmb/MiniCPM-V-4.7-35B-A3B",
-          "author": "openbmb",
-          "name": "MiniCPM-V-4.7-35B-A3B",
-          "likes": 475,
-          "trending_score": 430,
-          "downloads": 630,
-          "pipeline_tag": "image-text-to-text",
-          "tags": [
-            "transformers",
-            "safetensors",
-            "minicpmv4_7",
-            "image-text-to-text",
-            "minicpm-v",
-            "multimodal",
-            "On-Device Model",
-            "lightweight"
-          ],
-          "library": [
-            "transformers",
-            "safetensors"
-          ],
-          "license": "apache-2.0",
-          "last_modified": "2026-10-13",
-          "created_at": "2026-10-07",
-          "url": "https://huggingface.co/openbmb/MiniCPM-V-4.7-35B-A3B"
         }
       ],
       "hot_themes": [
         [
-          "Language",
-          63
+          "Vision",
+          60
         ],
         [
-          "Vision",
-          62
+          "Language",
+          59
         ],
         [
           "Agents",
-          37
-        ],
-        [
-          "Other",
-          27
+          35
         ],
         [
           "Multimodal",
-          26
+          29
+        ],
+        [
+          "Other",
+          28
         ],
         [
           "Infra/Quant",
-          15
+          12
         ]
       ],
       "trending_orgs": [
         {
           "name": "Qwen",
           "count": 4
+        },
+        {
+          "name": "autotrust",
+          "count": 3
         },
         {
           "name": "openbmb",
@@ -207,19 +211,15 @@
           "count": 2
         },
         {
-          "name": "autotrust",
-          "count": 2
-        },
-        {
-          "name": "unsloth",
-          "count": 2
-        },
-        {
           "name": "ISTA-DASLab",
           "count": 2
         },
         {
           "name": "google",
+          "count": 1
+        },
+        {
+          "name": "jialinyyzz",
           "count": 1
         }
       ]
@@ -227,15 +227,15 @@
     "keyword_cloud": [
       {
         "word": "image-text-to-text",
-        "count": 26
+        "count": 28
       },
       {
         "word": "safetensors",
-        "count": 24
+        "count": 25
       },
       {
         "word": "gradio",
-        "count": 23
+        "count": 24
       },
       {
         "word": "transformers",
@@ -243,640 +243,642 @@
       },
       {
         "word": "agents",
-        "count": 17
-      },
-      {
-        "word": "can",
-        "count": 16
-      },
-      {
-        "word": "agent",
-        "count": 15
-      },
-      {
-        "word": "reasoning",
-        "count": 15
-      },
-      {
-        "word": "multimodal",
         "count": 14
       },
       {
-        "word": "gguf",
-        "count": 14
-      },
-      {
-        "word": "introduce",
+        "word": "information",
         "count": 13
       },
       {
-        "word": "tasks",
+        "word": "can",
+        "count": 13
+      },
+      {
+        "word": "gguf",
+        "count": 13
+      },
+      {
+        "word": "qwen3",
+        "count": 13
+      },
+      {
+        "word": "multimodal",
         "count": 12
       },
       {
-        "word": "grounding",
+        "word": "introduce",
         "count": 12
       },
       {
-        "word": "text-generation",
+        "word": "text-to-image",
         "count": 12
-      },
-      {
-        "word": "across",
-        "count": 11
       },
       {
         "word": "training",
         "count": 11
       },
       {
-        "word": "qwen3",
-        "count": 11
-      },
-      {
-        "word": "mcp-server",
-        "count": 11
-      },
-      {
-        "word": "generation",
+        "word": "memory",
         "count": 10
       },
       {
-        "word": "supervision",
+        "word": "environments",
+        "count": 10
+      },
+      {
+        "word": "when",
+        "count": 10
+      },
+      {
+        "word": "which",
+        "count": 10
+      },
+      {
+        "word": "not",
+        "count": 10
+      },
+      {
+        "word": "text-generation",
+        "count": 10
+      },
+      {
+        "word": "mcp-server",
         "count": 10
       }
     ]
   },
   "papers": [
     {
-      "id": "2610.15028",
-      "title": "UltraBERT: Beyond the Limit of BERT Pre-Training",
+      "id": "2610.20256",
+      "title": "Long-Horizon RL Needs Muon",
       "authors": [
-        "Jungwoo Park",
-        "Taewhoo Lee",
-        "Jaewoo Kang"
+        "Kai Ruan",
+        "Jinghao Lin",
+        "Tao Chen",
+        "Ziqi Zhou",
+        "Qianshan Wei",
+        "Zihe Huang"
       ],
-      "published": "2026-10-10",
+      "published": "2026-10-14",
       "submitted_on": "",
-      "summary": "Recent bidirectional encoders have been modernized with innovations from causal large language models (LLMs). However, the pretraining recipe itself remains inherited from small-scale conventions, leaving encoders underoptimized, with no single model performing competitively across both classification and retrieval tasks. In this work, we investigate how far encoder performance can be pushed by revisiting core design choices in training, revealing three key findings: (1) Encoders saturate on downstream tasks beyond a few trillion tokens, indicating that additional compute past this point does ",
+      "summary": "Long-horizon agents must coordinate reasoning, tool use, and environment feedback over extended interactions. Learning from sparse outcome rewards requires weighting trajectories of different lengths and updating the policy while rollouts are still being collected. We examine a single-rollout asynchronous recipe combining Muon, token-averaged loss, truncated importance sampling, and auxiliary length and tool-error penalties. Single-rollout sampling allows asynchronous learning without waiting for multiple trajectories for the same issue. We study optimizer choices and recipe components for rep",
       "github": "",
-      "upvotes": 3,
-      "url": "https://huggingface.co/papers/2610.15028",
-      "pdf_url": "https://arxiv.org/pdf/2610.15028"
-    },
-    {
-      "id": "2610.15357",
-      "title": "UniForge3D: Joint 3D Reconstruction and Generation in a Shared Anchor-Guided Space",
-      "authors": [
-        "Wenjue Chen",
-        "Wenyue Chen",
-        "Heliang Zheng",
-        "Rongfei Jia",
-        "Yuan Liu",
-        "Meng Li"
-      ],
-      "published": "2026-10-11",
-      "submitted_on": "",
-      "summary": "Generating complete 3D assets from sparse, unposed images requires preserving observed geometry while completing unseen regions. Joint reconstruction and generation offers a way to address both goals: reconstruction recovers the geometry observed in the input images, while generation contributes learned shape priors. However, combining camera-relative reconstruction with canonical-space generation introduces a coordinate mismatch that makes direct geometric interaction more difficult. Moreover, conditioning each 3D location on all views without accounting for their relevance may mix useful geo",
-      "github": "https://github.com/xibushu/UniForge3D",
-      "upvotes": 2,
-      "url": "https://huggingface.co/papers/2610.15357",
-      "pdf_url": "https://arxiv.org/pdf/2610.15357"
-    },
-    {
-      "id": "2610.15788",
-      "title": "Agent Sociodrama: Social-Dynamics-Guided Persona Recasting for LLM Agent Teams",
-      "authors": [
-        "Yirui Qi",
-        "Xiaoming Zhang",
-        "Jaehong Yoon"
-      ],
-      "published": "2026-10-11",
-      "submitted_on": "",
-      "summary": "Large language model (LLM) agents are increasingly deployed as teams, yet they fail in characteristically social ways: information holders stay silent, dominant speakers anchor groups on wrong answers, and norm violations go unsanctioned. We present Agent Sociodrama, a framework for modeling and validating evolving social dynamics in LLM agent teams. Under fixed personas, agents' emotional states and directed, asymmetric relationships are updated every round by a unified external LLM judge and shape their subsequent interactions. Across six LLM backbones and five social scenarios, we assess so",
-      "github": "https://github.com/lululu896/Agent-Sociodrama",
       "upvotes": 1,
-      "url": "https://huggingface.co/papers/2610.15788",
-      "pdf_url": "https://arxiv.org/pdf/2610.15788"
+      "url": "https://huggingface.co/papers/2610.20256",
+      "pdf_url": "https://arxiv.org/pdf/2610.20256"
     },
     {
-      "id": "2610.15772",
-      "title": "RSIPO: Recursive Self-Improving Policy Optimization for Agentic Reinforcement Learning via Skill-Policy Co-Evolution",
+      "id": "2610.19366",
+      "title": "Seeing, Maintaining, and Learning: The Evolution of Multimodal Agent Memory",
       "authors": [
-        "Fan Zhang",
-        "Hao Wu",
-        "Jinyang Wu",
-        "Hongyu Qu",
-        "Zheng Lian",
-        "Xiao Luo",
-        "Yefeng Zheng",
-        "Bo Zhang"
+        "Minghao Guo",
+        "Qingyue Jiao",
+        "Xiujin Liu",
+        "Jianhong Pang",
+        "Ruimeng Yang",
+        "Naihao Xu",
+        "Liwei Che",
+        "Haochen Xue"
       ],
-      "published": "2026-10-11",
+      "published": "2026-10-14",
       "submitted_on": "",
-      "summary": "Recent focus in agentic reinforcement learning (RL) seeks to improve credit assignment in long-horizon tasks. One promising direction combines reinforcement learning with verifiable rewards (RLVR) and on-policy self-distillation (OPSD), integrating trajectory-level advantages with dense token-level supervision. This line of work often conditions a teacher model on privileged context, such as agentic skills, to score tokens generated by the student policy. Despite their progress, they largely overlook the on-policy evolution of agentic skills and the reliability of teacher supervision. Towards ",
-      "github": "https://github.com/zfkarl/RSIPO",
-      "upvotes": 1,
-      "url": "https://huggingface.co/papers/2610.15772",
-      "pdf_url": "https://arxiv.org/pdf/2610.15772"
+      "summary": "Multimodal models and agents have emerged to enable AI systems to learn from and interact with the real world more like humans by integrating information across multiple modalities. However, enabling multimodal agents to continually acquire useful information from complex, heterogeneous multimodal data remains a significant challenge as they move toward long-horizon tasks and lifelong settings. Addressing this challenge requires effective memory mechanisms that can maintain continuity across sessions, adapt to changing users and environments, and refine memory-management policies through accum",
+      "github": "https://github.com/Seeing-Maintaining-Learning/multimodal-agent-memory-evolution",
+      "upvotes": 5,
+      "url": "https://huggingface.co/papers/2610.19366",
+      "pdf_url": "https://arxiv.org/pdf/2610.19366"
     },
     {
-      "id": "2610.14224",
-      "title": "Harness^2: Recursive Agent Harnessing for an Open World",
+      "id": "2610.19138",
+      "title": "MA-Bench: Measuring Operational Planning in Language Models",
       "authors": [
-        "Ruiyao Xu",
-        "Yanfei Chen",
-        "Zhongying CuiZhu",
-        "Bhavana Dalvi Mishra",
-        "Yifei Ming",
-        "Han Yu",
-        "Rujun Han",
-        "Chen-Yu Lee"
+        "Rodney Lafuente-Mercado",
+        "Robert Sincero",
+        "Phil Sage",
+        "Yuan Xue"
       ],
-      "published": "2026-10-09",
+      "published": "2026-10-13",
       "submitted_on": "",
-      "summary": "LLM agents' capabilities depend not only on their underlying models but also on their execution harnesses. Recursive self-improvement (RSI) offers a promising approach to automatically evolve these harnesses. However, deploying RSI in open-world settings still faces two critical challenges. First, open-world tasks are typically unseen during the harness design phase and novel at test time, leaving no ground-truth verifiers to reliably guide online harness edits. Second, the RSI process remains highly task-specific and fails to generalize to novel scenarios. We introduce Harness^2, a plug-and-p",
-      "github": "https://github.com/google-research/harness2",
-      "upvotes": 12,
-      "url": "https://huggingface.co/papers/2610.14224",
-      "pdf_url": "https://arxiv.org/pdf/2610.14224"
-    },
-    {
-      "id": "2610.14709",
-      "title": "Vela: User Behavior as Supervision Sparks LLM Intelligence",
-      "authors": [
-        "Yang Xiao",
-        "Yusong Sun",
-        "Haoyi Wu",
-        "Wenyang Hui",
-        "Weiqiang Hang",
-        "Luqing Wang",
-        "Zejian Wang",
-        "Zirui Tu"
-      ],
-      "published": "2026-10-10",
-      "submitted_on": "",
-      "summary": "Large language models are increasingly deployed in applications that act on users' long-term behavior histories, from personal assistants to recommendation and advertising systems. These applications demand the user dimension of LLM intelligence: inferring a person's preferences, intent, and likely future actions from weeks to years of behavior data. Yet current models are trained on static text or synthetic data, neither of which captures how user behavior evolves over time. Real-world behavior records, already available at scale on content platforms and in personal-assistant agents, offer a ",
-      "github": "https://github.com/AllSpark-Research/Vela",
-      "upvotes": 2,
-      "url": "https://huggingface.co/papers/2610.14709",
-      "pdf_url": "https://arxiv.org/pdf/2610.14709"
-    },
-    {
-      "id": "2610.13990",
-      "title": "DoSA: Dots Sparse Attention",
-      "authors": [
-        "Fanxu Meng",
-        "Taosong Fang"
-      ],
-      "published": "2026-09-26",
-      "submitted_on": "",
-      "summary": "Sparse attention visits few keys, yet finding them can still require scoring every key with every indexer head. We introduce DoSA (Dots Sparse Attention), a lossless method for making this computation conditional while preserving exact token selection. Its central observation is that Top-K selection requires sufficient evidence to reject a candidate, not necessarily its full score. A seed set supplies a lower bound on the winning threshold. Nonnegative head projections and joint residual bounds upper-bound positive contributions, while activation-informed aggregation bounds the magnitude subtr",
-      "github": "https://github.com/llm-sys/flash-indexer",
-      "upvotes": 16,
-      "url": "https://huggingface.co/papers/2610.13990",
-      "pdf_url": "https://arxiv.org/pdf/2610.13990"
-    },
-    {
-      "id": "2610.12818",
-      "title": "LeWAM: End-to-End World and Action Modeling with JEPAs",
-      "authors": [
-        "Minghao Fu",
-        "Tavis Siebert",
-        "Eryk Halicki",
-        "Randall Balestriero"
-      ],
-      "published": "2026-10-08",
-      "submitted_on": "",
-      "summary": "Joint-embedding predictive architectures (JEPAs) learn compact latent world models without pixel reconstruction. Existing JEPA pipelines typically train visual representations and action-conditioned dynamics before adding a control policy or solver. We introduce LeWAM, an end-to-end JEPA for control with: (1) a joint training objective over next latent state prediction and action flow matching, and (2) an isotropic Gaussian constraint on the latent state, enabling a single model to support direct policy execution and efficient planning by evaluating sampled actions with its learned latent dyna",
-      "github": "https://github.com/MinghaoFu/lewam",
-      "upvotes": 23,
-      "url": "https://huggingface.co/papers/2610.12818",
-      "pdf_url": "https://arxiv.org/pdf/2610.12818"
-    },
-    {
-      "id": "2610.15124",
-      "title": "ShellElastic: Scalable Elastic Pretraining with Simultaneous Maximal Updates and Hyperparameter Transfer",
-      "authors": [
-        "Can Jin",
-        "Yan Kang",
-        "Yifan Gong",
-        "Chongjian Ge",
-        "Mingze Xu",
-        "Yuanjun Xiong",
-        "Dimitris N. Metaxas",
-        "Hongwu Peng"
-      ],
-      "published": "2026-10-10",
-      "submitted_on": "",
-      "summary": "Foundation models need to support diverse inference budgets, yet training a separate model for each budget duplicates pretraining effort. Elastic models train several nested sub-networks inside one weight-shared supernet, but existing recipes face three obstacles: variable per-step workloads that hinder distributed scaling, limited hyperparameter (HP) transfer across model sizes, and no guarantee that all sub-networks are maximally updated at once. We present \\Ours, an elastic transformer that organizes hidden dimensions into a dense core and successive shells, so that every hidden matrix is b",
-      "github": "https://github.com/jincan333/ShellElastic",
-      "upvotes": 1,
-      "url": "https://huggingface.co/papers/2610.15124",
-      "pdf_url": "https://arxiv.org/pdf/2610.15124"
-    },
-    {
-      "id": "2610.15208",
-      "title": "PANINI-DR: Controlled Deep Research through Generative Semantic Workspaces",
-      "authors": [
-        "M. Yigit Turali",
-        "Shreyas Rajesh",
-        "M. Efe Lorasdagi",
-        "Chenda Duan",
-        "Kartik Sharma",
-        "Vwani Roychowdhury"
-      ],
-      "published": "2026-10-10",
-      "submitted_on": "",
-      "summary": "Deep research requires connecting multiple steps of search, reasoning, and computation, with intermediate findings guiding what to investigate next. As investigations grow, agents must maintain research state across model calls and check findings before errors propagate into subsequent work. We introduce PANINI-DR, a multi-agent harness that separates coordination of the overall investigation from the research and verification of individual subquestions. A shared workspace, built on the Generative Semantic Workspace representation, records subquestions, their dependencies, findings, and suppor",
-      "github": "",
-      "upvotes": 6,
-      "url": "https://huggingface.co/papers/2610.15208",
-      "pdf_url": "https://arxiv.org/pdf/2610.15208"
-    },
-    {
-      "id": "2609.38377",
-      "title": "PhyProbe: Rethinking Physical Consistency Evaluation in Generated Videos",
-      "authors": [
-        "Max Ku",
-        "Jiaojiao Fan",
-        "Zekun Hao",
-        "Francesco Ferroni",
-        "Heng Wang",
-        "Wenhu Chen",
-        "Ming-Yu Liu",
-        "Prithvijit Chattopadhyay"
-      ],
-      "published": "2026-09-29",
-      "submitted_on": "",
-      "summary": "Evaluating the physical consistency of generated videos remains a fundamental challenge. Existing approaches rely on off-the-shelf vision-language models, which can often be myopic to physical dynamics, or fine-tuned evaluators trained on human annotations, which overfit to dataset-specific cues and fail to generalize. A key challenge is that existing supervision sources provide either relative ordering or absolute scores, but not both reliably and consistently across varied settings. To this end, we introduce PhyProbe, an evaluator that extracts features from a frozen pretrained spatio-tempor",
-      "github": "https://github.com/vinesmsuic/PhyProbe",
-      "upvotes": 6,
-      "url": "https://huggingface.co/papers/2609.38377",
-      "pdf_url": "https://arxiv.org/pdf/2609.38377"
-    },
-    {
-      "id": "2609.35291",
-      "title": "Narrow Multimodal Fine-Tuning Can Induce Emergent Misalignment",
-      "authors": [
-        "Shunchang Liu",
-        "Lukas Fluri",
-        "Xin Chen",
-        "Francesco Croce"
-      ],
-      "published": "2026-09-28",
-      "submitted_on": "",
-      "summary": "Modern AI models are aligned through post-training to adapt them to downstream tasks. Recent work shows that fine-tuning language models on narrow tasks can induce emergent misalignment (EM), causing broadly harmful behaviors beyond the training task. However, EM has been studied almost entirely in text-only tasks, leaving its manifestation in multimodal models unclear. In this paper, we define and analyze EM in the context of vision-language models. We first induce EM via fine-tuning on narrow multimodal tasks targeting vulnerable code, careless household-object use, and conspiratorial interp",
-      "github": "https://github.com/shunchang-liu/vlm-em",
-      "upvotes": 2,
-      "url": "https://huggingface.co/papers/2609.35291",
-      "pdf_url": "https://arxiv.org/pdf/2609.35291"
-    },
-    {
-      "id": "2610.12417",
-      "title": "WOVEN: Weaving Visual World Modeling into Multimodal LLMs",
-      "authors": [
-        "Zheyu Fan",
-        "Yue Zhang",
-        "Mingkai Deng",
-        "Kangrui Wang",
-        "Qineng Wang",
-        "Canyu Chen",
-        "Jie Hao",
-        "Xing Fan"
-      ],
-      "published": "2026-10-08",
-      "submitted_on": "",
-      "summary": "Multimodal large language models (MLLMs) struggle with spatial, embodied, physical, and temporal reasoning. We hypothesize that these failures reflect a shared deficit in visual transition reasoning, and test whether this capability can serve as a shared training primitive, one that different models can learn from different supervision sources and reuse across different tasks, with a systematic training recipe. Existing benchmarks document these deficits separately but do not support controlled comparisons across scenes, actions, and reasoning operations. We therefore introduce WOVEN, a traini",
-      "github": "https://github.com/mll-lab-nu/WOVEN",
-      "upvotes": 3,
-      "url": "https://huggingface.co/papers/2610.12417",
-      "pdf_url": "https://arxiv.org/pdf/2610.12417"
-    },
-    {
-      "id": "2610.03039",
-      "title": "HyperThink: Text-to-Parameter Hypernetworks for Efficient Reasoning",
-      "authors": [
-        "Donggyun Kim",
-        "Jack Lu",
-        "Chanwoo Kim",
-        "Mengye Ren",
-        "Seunghoon Hong"
-      ],
-      "published": "2026-10-02",
-      "submitted_on": "",
-      "summary": "Long-form thinking traces can substantially improve the multi-step reasoning performance of large language models (LLMs), but they introduce high inference-time overhead, with latency dominated by sequential decoding. We propose HyperThink, a text-to-parameter approach that amortizes this reasoning computation into a single query-conditioned parameter update: a lightweight hypernetwork reads the question and predicts updates to a small subset of the base LLM's parameters, while a vector-quantized decoder constrains them to a finite set of reusable patterns to improve robustness and transfer. T",
+      "summary": "How well can a language model turn a large, incomplete and partly contradictory body of documents into a plan when no single correct answer exists? We introduce Mission Analysis (MA)-Bench, built on mission analysis, the first step of military operational planning, in which a staff reads the full situation and states the problem before anyone proposes a solution. Its 10 expert-built scenarios pair synthetic packets of ten to twelve documents with 1,257 expert-written pass/fail requirements, each containing information on their source, question type, and importance level. A reasoning-model judg",
       "github": "",
       "upvotes": 0,
-      "url": "https://huggingface.co/papers/2610.03039",
-      "pdf_url": "https://arxiv.org/pdf/2610.03039"
+      "url": "https://huggingface.co/papers/2610.19138",
+      "pdf_url": "https://arxiv.org/pdf/2610.19138"
     },
     {
-      "id": "2609.36642",
-      "title": "PR-OPD: Privileged Representation On-policy Self-Distillation for Agentic Reinforcement Learning",
+      "id": "2610.13521",
+      "title": "Beyond Domain-Routed Supervision: Cross-Teacher Guarding for Multi-Teacher On-Policy Distillation",
       "authors": [
-        "Muyang Li",
-        "Jie Yang",
-        "Zhengyu Fang",
-        "Junchao Zhu",
-        "Zhengkun Xiao",
-        "Ruining Deng",
-        "Zhe Jiang",
-        "Shigang Chen"
+        "Shi-Yu Tian",
+        "Yong Liu",
+        "Ximan Liu",
+        "Tianrui Zhu",
+        "Sule Bai",
+        "Xinwei Yang",
+        "Ruiqi Liu",
+        "Kun-Yang Yu"
       ],
-      "published": "2026-09-29",
+      "published": "2026-10-09",
       "submitted_on": "",
-      "summary": "Language-model agents are usually trained by reinforcement learning from one reward per episode, and privileged self-distillation enriches it by letting the same policy, given a skill, teach its skill-free self through token probabilities. However, we identify two phenomena that question this channel. Invisible Advantage: a skill in context lifts WebShop success from 42.2% to 56.2%, yet changes the probabilities of fewer than a quarter of the sampled tokens. Much to Align: a skill changes the hidden states of over 80% of response tokens, in a way that linear probes can trace back to the specif",
-      "github": "https://github.com/balibata/PR-OPD",
-      "upvotes": 27,
-      "url": "https://huggingface.co/papers/2609.36642",
-      "pdf_url": "https://arxiv.org/pdf/2609.36642"
+      "summary": "Multi-teacher on-policy distillation (MOPD) extends on-policy distillation (OPD) by routing domain-specific data to specialized teachers, integrating their capabilities through dense token-level supervision on student-generated trajectories. However, domain routing only distinguishes the supervision sources for different domains; updates from all domains still act on shared parameters. When teachers differ substantially in response style and domain expertise, supervision that is effective in isolation may still lead to persistent gradient conflicts and capability degradation during joint optim",
+      "github": "",
+      "upvotes": 11,
+      "url": "https://huggingface.co/papers/2610.13521",
+      "pdf_url": "https://arxiv.org/pdf/2610.13521"
     },
     {
-      "id": "2610.12099",
-      "title": "UNITAS: A 3D-Native World Action Model for Embodied Manipulation",
+      "id": "2610.20572",
+      "title": "Recovering Reliable Supervision via Critique-Guided On-Policy Distillation",
       "authors": [
-        "Ruixiang Wang",
-        "Yongyi Su",
-        "Wenlve Zhou",
-        "Bo Yue",
-        "Hengyan Liu",
-        "Dekun Lu",
-        "Yuxin Tian",
-        "Yihan Fang"
+        "Kaixiang Zhao",
+        "Tianrun Yu",
+        "Shangzhe Li",
+        "Yuxiao Yang",
+        "Amanda Hughes",
+        "Weitong Zhang",
+        "Taylor W. Killian"
+      ],
+      "published": "2026-10-14",
+      "submitted_on": "",
+      "summary": "On-policy distillation (OPD) trains a student model on its own rollouts with token-level supervision from a teacher, assuming that the teacher can reach a correct answer from any prefix the student writes. We call this property the recoverability of the teacher and show it fails on incorrect rollouts: the teacher follows student errors, although it recognizes them. We propose CriticOPD, using error recognition to restore recoverability. The teacher critiques an incorrect rollout, allowing the student to rewrite its solution following the error. The resulting output, including the critique as p",
+      "github": "https://github.com/kzhao5/CriticOPD",
+      "upvotes": 1,
+      "url": "https://huggingface.co/papers/2610.20572",
+      "pdf_url": "https://arxiv.org/pdf/2610.20572"
+    },
+    {
+      "id": "2610.02089",
+      "title": "HumanoidToolBench: Benchmarking Humanoid Tool Use from Selection to Mobile Execution",
+      "authors": [
+        "Kyochul Jang",
+        "Seohyeon Park",
+        "Ohchul Kwon",
+        "Sangjun Park",
+        "Junhyeok Choi",
+        "Seungyeop Yi",
+        "Chaeyun Kim",
+        "Sangkyu Lee"
+      ],
+      "published": "2026-10-01",
+      "submitted_on": "",
+      "summary": "As robotic hardware and learning methods advance, humanoids need tools to perform tasks beyond their inherent physical limits. Successful tool use requires selecting a suitable tool and coordinating manipulation and, when needed, locomotion to complete the task. Existing benchmarks do not jointly evaluate these capabilities on a humanoid. We introduce HumanoidToolBench, an 18-task benchmark spanning three scenarios, three execution levels, and two tool-set modes, together with ToolBook, a dataset of 3.1k demonstrations collected in simulation and on a real Unitree G1. Evaluation of seven polic",
+      "github": "https://github.com/SNU-PI/HumanoidToolBench",
+      "upvotes": 8,
+      "url": "https://huggingface.co/papers/2610.02089",
+      "pdf_url": "https://arxiv.org/pdf/2610.02089"
+    },
+    {
+      "id": "2610.17638",
+      "title": "Acting Through Registers",
+      "authors": [
+        "Yiwei Zhang",
+        "Yantai Yang",
+        "Jin Gao",
+        "Jin Lou",
+        "Andong Chen",
+        "Yufei Liu",
+        "Boyang Xing",
+        "Yuchen Zhu"
+      ],
+      "published": "2026-10-13",
+      "submitted_on": "",
+      "summary": "World Action Models (WAMs) use generative visual representations to condition robot actions, yet how these representations organize action-relevant information remains poorly understood. We identify persistent high-norm spatial outliers in WAM representations and find that their action relevance persists even after normalization and K/V projection attenuate their extreme magnitude. Motivated by this observation, we introduce RegisterWAM, which adds learnable non-spatial registers to the world model and uses them directly for action conditioning. Registers alone do not fully eliminate spatial o",
+      "github": "https://github.com/Z1zyw/RegisterWAM",
+      "upvotes": 1,
+      "url": "https://huggingface.co/papers/2610.17638",
+      "pdf_url": "https://arxiv.org/pdf/2610.17638"
+    },
+    {
+      "id": "2610.20456",
+      "title": "The COUNT: Counting N-grams Unlocks Scaling on Host Memory and Training-Free Adaptation",
+      "authors": [
+        "Ian Magnusson",
+        "Noah A. Smith",
+        "Pang Wei Koh"
+      ],
+      "published": "2026-10-14",
+      "submitted_on": "",
+      "summary": "The scaling relationship of compute and performance for language models (LMs) has been extensively studied; more recently, models are being designed to scale memory use, as well. In particular, adding embeddings for n-grams scales memory separately from compute use, because each pass only processes individual embedding rows, which are much smaller than the storage used for the whole embedding table. However, existing methods train embeddings from scratch, which needs expensive GPU memory for fast reading and writing. Meanwhile, the ordinary memory of the host system is cheap and underutilized ",
+      "github": "https://github.com/IanMagnusson/COUNT",
+      "upvotes": 1,
+      "url": "https://huggingface.co/papers/2610.20456",
+      "pdf_url": "https://arxiv.org/pdf/2610.20456"
+    },
+    {
+      "id": "2610.20571",
+      "title": "Any Time, Any Space: A World-State-Centric Framework for Agentic Video Generation",
+      "authors": [
+        "Weijie Wang",
+        "Haomin Zhang",
+        "Ye Li",
+        "Akide Liu",
+        "Zeyu Zhang",
+        "Haoyu Zhao",
+        "Yefei He",
+        "Donny Y. Chen"
+      ],
+      "published": "2026-10-14",
+      "submitted_on": "",
+      "summary": "Long-form agentic video generation must turn a screenplay into shots that remain spatially and temporally consistent across nonconsecutive requests. Passing prompts or recent frames between shots does not provide a shared spatial frame for revisiting a scene or a time-indexed record for replaying an earlier event. We present Any Time, Any Space (ATAS), which compiles a screenplay into shot requests with explicit location, camera, and event-time references. Before generation, it retrieves relevant evidence from a scene memory of registered static geometry and an event memory of dynamic observat",
+      "github": "https://github.com/ziplab/ATAS",
+      "upvotes": 21,
+      "url": "https://huggingface.co/papers/2610.20571",
+      "pdf_url": "https://arxiv.org/pdf/2610.20571"
+    },
+    {
+      "id": "2610.15425",
+      "title": "Exploring the Limits of Combinatorial Generalization in Embodied Manipulation",
+      "authors": [
+        "Xupeng Zhang",
+        "Yantai Yang",
+        "Chang Guo",
+        "Zhaokai Yin",
+        "Zhipeng Zhang"
+      ],
+      "published": "2026-10-11",
+      "submitted_on": "",
+      "summary": "In embodied manipulation, Vision Language Action (VLA) models can execute atomic skills, but long-horizon manipulation requires recombining these skills without demonstrations for every skill combination. The full instruction route treats skill chaining as long-horizon imitation. In a controlled study, full instruction training on limited skill combination sequences reaches 40.0% ordered success on covered combinations but only 7.7% on recombination, suggesting memorization of sequence templates rather than robust skill recombination. We introduce Hierarchical Subtask Execution (HSE), a diagno",
+      "github": "https://github.com/AutoLab-SAI-SJTU/RoboCombine",
+      "upvotes": 2,
+      "url": "https://huggingface.co/papers/2610.15425",
+      "pdf_url": "https://arxiv.org/pdf/2610.15425"
+    },
+    {
+      "id": "2610.19118",
+      "title": "DecisionRobust: Benchmarking Robustness for JEV Style Decision Models Across Text and Vision",
+      "authors": [
+        "Yifan Lan",
+        "Zhongye Liu",
+        "Yurui Chang",
+        "Hanyu Wang",
+        "Yongkang Du",
+        "Lu Lin",
+        "Jinghui Chen"
+      ],
+      "published": "2026-10-13",
+      "submitted_on": "",
+      "summary": "Emerging decision models such as JEV provide typed interfaces that map task instructions and observations directly to choices, judgments, and scores. As these models are increasingly used for automated decision-making, understanding their reliability under adversarial manipulation becomes critical. We introduce DecisionRobust, a benchmark for systematically evaluating the robustness of decision models across textual and visual inputs. Our benchmark covers practical decision-making scenarios and a diverse suite of attacks, including semantics-preserving text perturbations, image perturbations, ",
+      "github": "",
+      "upvotes": 1,
+      "url": "https://huggingface.co/papers/2610.19118",
+      "pdf_url": "https://arxiv.org/pdf/2610.19118"
+    },
+    {
+      "id": "2610.19975",
+      "title": "LatentLoop: Scaling Looped MoE Models with Asymmetric Compute Allocation",
+      "authors": [
+        "Zefeng He",
+        "Yunkai Chai",
+        "Xiaoyang Chen",
+        "Tong Zhu",
+        "Zongliang Wu",
+        "Yun Luo",
+        "Yafu Li",
+        "Yu Cheng"
+      ],
+      "published": "2026-10-14",
+      "submitted_on": "",
+      "summary": "Looped Mixture-of-Experts (MoE) models combine parameter reuse with sparse computation to improve performance under matched budgets. Prior work demonstrates that different loop visits can play different roles even when they share parameters. To probe the contributions of different loop visits, we learn separate residual coefficients in a model that applies a shared block twice, observing a smaller scale in the first visit. Fixed coefficient experiments show that reducing the first visit's scale preserves or improves performance, whereas the same reductions to the second hurt it. This asymmetry",
+      "github": "https://github.com/lcqysl/LatentLoop",
+      "upvotes": 24,
+      "url": "https://huggingface.co/papers/2610.19975",
+      "pdf_url": "https://arxiv.org/pdf/2610.19975"
+    },
+    {
+      "id": "2610.18097",
+      "title": "APT: Feedback-Driven Agentic Post-Training for Text-to-Image Generation",
+      "authors": [
+        "Sirui Zhang",
+        "Fangyun Wei",
+        "Dong Chen",
+        "Jinjing Zhao",
+        "Yitong Wang",
+        "Yunuo Chen",
+        "Baining Guo",
+        "Zheng-Jun Zha"
+      ],
+      "published": "2026-10-13",
+      "submitted_on": "",
+      "summary": "Post-training is crucial for improving text-to-image models, yet existing pipelines typically rely on manually curated training data and fixed training distributions. We introduce APT (Agentic Post-Training), a fully automated framework that adaptively post-trains a base model according to its evolving capability profile. APT coordinates three agents to construct evaluation sets from user requirements, diagnose model-specific strengths and failure modes, and generate reinforcement learning data with an adaptive prompt distribution that emphasizes underperforming capabilities. By repeatedly eva",
+      "github": "https://github.com/siruizhang30/APT",
+      "upvotes": 10,
+      "url": "https://huggingface.co/papers/2610.18097",
+      "pdf_url": "https://arxiv.org/pdf/2610.18097"
+    },
+    {
+      "id": "2610.19100",
+      "title": "GroundGUI: GUI Grounding by High-Quality Data and Distillation-to-Reinforcement Learning",
+      "authors": [
+        "Qingsong Xie",
+        "Jiahao Tian",
+        "Jiacheng Tang",
+        "Zhifeng Li",
+        "Madalina Ciobanu",
+        "Navan Preet Singh",
+        "Qingqing Mao",
+        "Ritankar Das"
+      ],
+      "published": "2026-10-13",
+      "submitted_on": "",
+      "summary": "Constructing robust GUI agents relies on multimodal visual grounding: the ability to precisely map natural language intents to actionable on-screen components. Despite abundant desktop, web, and mobile benchmarks, high-fidelity resources tailored for diverse environments are surprisingly scarce. To bridge this gap, we introduce the Screen Referring Grounding Dataset (ScreenRef), a comprehensive GUI grounding dataset consisting of GUI screenshots paired with natural language referring expressions and box or point annotations. Spanning desktop, web, and mobile domains, ScreenRef comprises 586K s",
+      "github": "https://github.com/PrentisAI/GroundGUI",
+      "upvotes": 5,
+      "url": "https://huggingface.co/papers/2610.19100",
+      "pdf_url": "https://arxiv.org/pdf/2610.19100"
+    },
+    {
+      "id": "2610.20586",
+      "title": "Continuum Attention",
+      "authors": [
+        "Afshin Khadangi"
+      ],
+      "published": "2026-10-14",
+      "submitted_on": "",
+      "summary": "We introduce Continuum Attention (CA), a causal Transformer attention operator that replaces discrete key and value lookup with integration over a continuous, piecewise linear memory curve. Each query induces an exponential relevance density along the curve. Integrating the density and interpolated values yields exact normalized attention from closed form exponential moments, including half token boundary contributions. The gradients follow analytically from moments of order at most two, enabling parallel GPU implementations while retaining quadratic sequence complexity and the standard Transf",
+      "github": "https://github.com/akhadangi/continuum-attention",
+      "upvotes": 0,
+      "url": "https://huggingface.co/papers/2610.20586",
+      "pdf_url": "https://arxiv.org/pdf/2610.20586"
+    },
+    {
+      "id": "2610.18072",
+      "title": "LensErase: A Foundation Model for Erase Anything",
+      "authors": [
+        "Yunuo Chen",
+        "Xiuyu Wu",
+        "Qinhong Yang",
+        "Jinjing Zhao",
+        "Yanchen Dong",
+        "Sirui Zhang",
+        "Dong Chen",
+        "Fangyun Wei"
+      ],
+      "published": "2026-10-13",
+      "submitted_on": "",
+      "summary": "We introduce LensErase, a general-purpose mask-based Erase Anything foundation model designed to cover a broad spectrum of real-world erase scenarios. LensErase supports diverse objects, visual text, watermarks, associated visual effects, multiple-object removal, and a wide range of object scales, aspect ratios, and image resolutions. First, to enable such broad coverage, we construct LensErase-100M, a large-scale dataset containing 101.07 million paired source-mask-target examples spanning diverse erase scenarios. Second, we pretrain LensErase from the text-to-image model Lens, adapting its s",
+      "github": "https://github.com/LensFamily/LensErase",
+      "upvotes": 22,
+      "url": "https://huggingface.co/papers/2610.18072",
+      "pdf_url": "https://arxiv.org/pdf/2610.18072"
+    },
+    {
+      "id": "2610.16302",
+      "title": "RAR: Rate-Adaptive Rollout for Time-Consistent Interactive World Models",
+      "authors": [
+        "Yaoyang Liu",
+        "Dongyu Yan",
+        "Yihua Du",
+        "Shengju Qian",
+        "Zeke Xie",
+        "Xin Wang",
+        "Ying-Cong Chen",
+        "Long Chen"
+      ],
+      "published": "2026-10-12",
+      "submitted_on": "",
+      "summary": "Video-based interactive world models aim to enable real-time, user-controllable environments. Yet most existing systems are trained and rolled out at a fixed temporal rate, limiting both runtime-rate adaptation and physical-horizon coverage -- a limitation we term temporal-rate coupling. Specifically, when runtime generation throughput differs from the learned temporal rate, the generated world evolves unintentionally more slowly or quickly. Moreover, using a single temporal rate imposes an inherent trade-off between temporal granularity and physical horizon: higher rates capture finer motion ",
+      "github": "https://github.com/HKUST-LongGroup/RAR",
+      "upvotes": 5,
+      "url": "https://huggingface.co/papers/2610.16302",
+      "pdf_url": "https://arxiv.org/pdf/2610.16302"
+    },
+    {
+      "id": "2610.17893",
+      "title": "Training LLMs for Multi-Agent Collaboration with Verifiable Information Rewards",
+      "authors": [
+        "Keru Chen",
+        "Sen Lin",
+        "Yingbin Liang",
+        "Nathaniel D. Bastian",
+        "Shaofeng Zou"
+      ],
+      "published": "2026-10-13",
+      "submitted_on": "",
+      "summary": "Effective collaboration among large language model (LLM) agents in multi-agent systems requires sharing relevant evidence, requesting missing information, and incorporating teammates' contributions into decisions. Training these behaviors is challenging because final task outcomes provide limited feedback on the value of individual messages. We introduce CoSIR (Collaboration via Surprisal-based Information Rewards), a post-training approach that uses a simple, verifiable environment to teach collaboration behaviors that generalize to more complex, unseen tasks. We propose a Bayesian evaluator ",
+      "github": "",
+      "upvotes": 1,
+      "url": "https://huggingface.co/papers/2610.17893",
+      "pdf_url": "https://arxiv.org/pdf/2610.17893"
+    },
+    {
+      "id": "2610.16117",
+      "title": "Beyond Perfect Teammates: Multi-Agent Collaboration with Unreliable Colleagues",
+      "authors": [
+        "Chen Huang",
+        "Yiyang Zhang",
+        "Yuhao Wu",
+        "Yang Deng",
+        "Wenxuan Zhang"
+      ],
+      "published": "2026-10-12",
+      "submitted_on": "",
+      "summary": "LLM-based multi-agent collaboration is increasingly used to solve complex tasks by dividing work among specialized agents and integrating complementary expertise. Yet existing systems and evaluations largely rest on an implicit perfect-colleague assumption: collaborators provide correct and complete information and respond promptly to requests. In realistic teamwork, however, collaborators may return information that does not answer the intended question, provide insufficient detail to support a decision, or fail to respond to a request. To separate task-solving competence from the ability to ",
+      "github": "https://github.com/iNLP-Lab/UnCoBench",
+      "upvotes": 1,
+      "url": "https://huggingface.co/papers/2610.16117",
+      "pdf_url": "https://arxiv.org/pdf/2610.16117"
+    },
+    {
+      "id": "2610.18472",
+      "title": "Simplifying and Improving On-Policy Distillation for Few-Step Diffusion",
+      "authors": [
+        "Jiawei Zhang",
+        "Ziyu Wan",
+        "Nanye Ma",
+        "Long Zhao",
+        "Dong Chen",
+        "Hongyu Liu",
+        "Qifeng Chen",
+        "Dongdong Chen"
+      ],
+      "published": "2026-10-13",
+      "submitted_on": "",
+      "summary": "Few-step distillation reduces the sampling cost of diffusion and flow models, but existing approaches often require auxiliary score models or specialized architectures. We show that simple on-policy velocity regression already provides a strong foundation for 4-NFE generation. To represent teacher velocity variation within each coarse transition, we introduce Pivot, a training-only residual proxy that separates local corrections from the student's interval-mean prediction. We further repel the student from weaker teacher predictions, providing a lightweight mechanism for avoiding undesirable m",
+      "github": "",
+      "upvotes": 10,
+      "url": "https://huggingface.co/papers/2610.18472",
+      "pdf_url": "https://arxiv.org/pdf/2610.18472"
+    },
+    {
+      "id": "2610.18677",
+      "title": "Model-Based Online Decision Making via Generative Trajectory Planning",
+      "authors": [
+        "Haldun Balim",
+        "Yilun Du",
+        "Na Li"
+      ],
+      "published": "2026-10-13",
+      "submitted_on": "",
+      "summary": "Online decision-making faces a tension between efficient inference and long-horizon reasoning. Value-based methods rely on short-horizon bootstrapping that limits the propagation of long-term information, while trajectory optimization methods plan explicitly but must solve a high-dimensional optimization problem at every decision step. We propose Generative Trajectory Planning (GTP), a model-based framework that addresses this tension by learning a generative model as a proposal distribution over action sequences. Instead of optimizing sequences from scratch, GTP samples candidate sequences fr",
+      "github": "https://github.com/haldunbalim/GTPlanning",
+      "upvotes": 2,
+      "url": "https://huggingface.co/papers/2610.18677",
+      "pdf_url": "https://arxiv.org/pdf/2610.18677"
+    },
+    {
+      "id": "2610.02638",
+      "title": "Batched Speech Decisions Without Decoding: Single-Token Supervision Lets a Frozen LLM Hear Beyond the Transcript",
+      "authors": [
+        "Jie Jin",
+        "Ziyin Ma",
+        "Min Yin",
+        "Jinyu Chen",
+        "Haigang Song",
+        "Zhikun Pang",
+        "Xiaowen Zhang"
+      ],
+      "published": "2026-10-02",
+      "submitted_on": "",
+      "summary": "Full-duplex voice agents make many small, closed decisions, which current systems answer by slow autoregressive decoding. We propose DuplexJev, which feeds ASR-encoder hidden states through a small connector into a frozen LLM and reads each question as a single-token distribution over its options. Nothing is decoded, and an 8-GPU node answers 80 decisions about eight utterances in about 0.1 s. With a last-layer connector, spoken QA stays close to reading the transcript (90% vs. 91%). DuplexJev also hears the speaker: gender and emotion accuracy both reach 90% (from 55% and 28%) with a cross-at",
+      "github": "",
+      "upvotes": 0,
+      "url": "https://huggingface.co/papers/2610.02638",
+      "pdf_url": "https://arxiv.org/pdf/2610.02638"
+    },
+    {
+      "id": "2610.18497",
+      "title": "Judges Follow the Reference: The Derivation Gap in Verifying Tool-Call Arguments",
+      "authors": [
+        "Linhai Ma",
+        "Yan Wang",
+        "Lingfei Qian",
+        "Yupeng Cao",
+        "Victor Gutierrez Basulto"
+      ],
+      "published": "2026-10-13",
+      "submitted_on": "",
+      "summary": "Tool-call judges evaluate argument values proposed by LLM agents. We find that they accept a correct value less often when their input holds no reference for it, that is, no text that says what the value should be. This happens when the value is a default value from the function schema that the user did not mention, when it has to be inferred, or when the text it comes from was cut from the judge input. We call this drop in acceptance the derivation gap. It appears across all seven judges we evaluate, including System One models CLM and Jev. The gap is not only a truncation artifact: correct d",
+      "github": "https://github.com/SarielMa/DeRef_release",
+      "upvotes": 0,
+      "url": "https://huggingface.co/papers/2610.18497",
+      "pdf_url": "https://arxiv.org/pdf/2610.18497"
+    },
+    {
+      "id": "2610.14530",
+      "title": "Who to Trust in Multi-Robot Systems: Joint Robot and Object Hypothesis Trust Inference via Neural-Symbolic Cross-Validation",
+      "authors": [
+        "Ruiyang Wang",
+        "Hao-Lun Hsu",
+        "Haocheng Meng",
+        "Songqiao Xie",
+        "Miroslav Pajic"
+      ],
+      "published": "2026-10-10",
+      "submitted_on": "",
+      "summary": "Multi-robot systems (MRS) offer significant advantages over single-robot platforms by enabling information sharing and coordination for different tasks in complex environments. However, reliable cooperation critically depends on inferring trust over both information sources and their reported hypotheses, particularly under partial observability and potential adversarial interference. Existing approaches frequently depend on pre-established trust relationships or side-channel information, which may not be available or reliable in realistic MRS deployments. This work introduces NeST-Bayes, a neu",
+      "github": "",
+      "upvotes": 1,
+      "url": "https://huggingface.co/papers/2610.14530",
+      "pdf_url": "https://arxiv.org/pdf/2610.14530"
+    },
+    {
+      "id": "2610.04906",
+      "title": "Scaling Verifiable Environments for Long-horizon Work Agents",
+      "authors": [
+        "Jiazheng Zhang",
+        "Long Ma",
+        "Yunxian Yang",
+        "Zhiheng Xi",
+        "Zhikai Lei",
+        "Yajie Yang",
+        "Chenyang Liao",
+        "Enyu Zhou"
       ],
       "published": "2026-10-08",
       "submitted_on": "",
-      "summary": "World action models (WAMs) aim to answer a coupled physical question: given a task instruction, what motion should the robot execute, and how will that motion change the surrounding world? Most existing WAMs build on pretrained video generators and represent world evolution through images or visual latents. Robotic interaction, however, takes place in metric three-dimensional space, while images are view-dependent projections whose pixel distances do not directly encode physical distances. We introduce UNITAS, to our knowledge the first 3D-native world action model that unifies observations, a",
-      "github": "https://github.com/DexForce/UNITAS",
+      "summary": "Work agents operate over digital artifacts to execute professional knowledge-intensive work, requiring training environments that support long-horizon interaction and trustworthy verification. However, hand-crafted environments incur prohibitive engineering overhead that prevents environment scaling, whereas synthesis methods sacrifice workspace complexity, realism, or grounded verifiability. To bridge this gap, we introduce WorkForge, a scalable synthesis framework for constructing verifiable work-agent environments from real-world resources. Starting from expert workflows, WorkForge first id",
+      "github": "",
       "upvotes": 1,
-      "url": "https://huggingface.co/papers/2610.12099",
-      "pdf_url": "https://arxiv.org/pdf/2610.12099"
+      "url": "https://huggingface.co/papers/2610.04906",
+      "pdf_url": "https://arxiv.org/pdf/2610.04906"
     },
     {
-      "id": "2610.05637",
-      "title": "Visual Grounding Safety in Vision-Language Models",
+      "id": "2610.14091",
+      "title": "Pristine Models",
       "authors": [
-        "Erfan Shayegani",
-        "Kundan Krishna",
-        "Yue Dong",
-        "Nael Abu-Ghazaleh",
-        "Leon Gatys",
-        "Shruti Palaskar"
+        "Anirudh Sundara Rajan",
+        "Krishna Kumar Singh",
+        "Richard Zhang",
+        "Yong Jae Lee"
       ],
-      "published": "2026-10-05",
+      "published": "2026-10-08",
       "submitted_on": "",
-      "summary": "Vision-language models (VLMs) are increasingly trained to generate structured outputs like points and bounding boxes that downstream interfaces, agents, and robots can act on, yet safety alignment of this output channel has not been systematically analyzed. We study visual grounding safety by repurposing three safety benchmarks spanning direct harm (VLSU), social bias (BBQ-V), and situational safety (Asimov-2.0) into 15,401 matched pairs of harmful requests that differ only in the requested output: a free-text answer (VQA) or a grounding (point or bounding box). Across five VLMs, models that r",
+      "summary": "Training on broad, unfiltered data enables high-quality image generation, but can also teach models concepts that should not be generated; restricting the training data ensures safety, but reduces quality because examples containing unsafe concepts also provide useful knowledge that is not itself unsafe. Existing approaches largely address this trade-off post hoc through concept unlearning, which can lead to catastrophic forgetting as the number of concepts to remove grows. We instead ask whether unsafe concept knowledge can be compartmentalized during pretraining so that access to it can be d",
       "github": "",
-      "upvotes": 3,
-      "url": "https://huggingface.co/papers/2610.05637",
-      "pdf_url": "https://arxiv.org/pdf/2610.05637"
+      "upvotes": 13,
+      "url": "https://huggingface.co/papers/2610.14091",
+      "pdf_url": "https://arxiv.org/pdf/2610.14091"
     },
     {
-      "id": "2610.02740",
-      "title": "Prospective Hindsight: Self-Calibrating Reinforcement Learning via Prediction-Reality Gaps",
+      "id": "2607.08809",
+      "title": "Privacy-Preserving Intent Fulfilment and Assurance for 6G RAN",
       "authors": [
-        "Jiaxin Zhang",
-        "Xiangyu Peng",
-        "Qinglin Chen",
-        "Yu Li",
-        "Hiroaki Hayashi",
-        "Chien-Sheng Wu"
-      ],
-      "published": "2026-10-02",
-      "submitted_on": "",
-      "summary": "Reinforcement learning for long-horizon agents relies on purely retrospective training signals: credit is assigned only after observing environmental consequences, leaving the agent's belief at action time invisible to the gradient. We introduce Prospective Hindsight (PH), a self-calibrating training principle that augments any retrospective base method with a signal derived from the gap between the agent's prospective prediction (before feedback) and the retrospective evaluation (after feedback). This per-rollout surprise identifies samples where the agent's self-model is most inaccurate and ",
-      "github": "",
-      "upvotes": 3,
-      "url": "https://huggingface.co/papers/2610.02740",
-      "pdf_url": "https://arxiv.org/pdf/2610.02740"
-    },
-    {
-      "id": "2610.12998",
-      "title": "Evaluating LLM Creativity through Long-Tail Performance",
-      "authors": [
-        "Yichen Wang",
-        "Tenghao Huang",
-        "Vishakh Padmakumar",
-        "Mina Lee"
+        "Joss Armstrong"
       ],
       "published": "2026-10-09",
       "submitted_on": "",
-      "summary": "Creativity benchmarks for large language models (LLMs) vary widely in task and metric design. This raises the question of whether they capture a common notion of creativity. We propose that this shared target can be formalized as task-specific performance in the long tail of a reference input-output distribution, which describes how common input-output pairs are relative to a chosen source of text. We ground this proposition in the novelty-quality product formulation and evaluate it empirically across 15 benchmarks and 26 open-weight models, using n-gram absence from the pretraining data as a ",
-      "github": "https://github.com/YichenZW/longtail-creativity",
+      "summary": "Intent-based network management automates 6G service lifecycles, but existing fulfilment and assurance approaches require traffic inspection, per-flow tracking, or vendor-internal telemetry. These requirements conflict with privacy constraints in multi-tenant networks and vendor opacity in O-RAN deployments. We present an architecture that provisions resources from declared intent categories without traffic inspection and verifies fulfilment using only cell-level standardised PM counters at the O1 interface. A data-processing inequality bounds resource-allocation leakage about traffic content ",
+      "github": "",
+      "upvotes": 0,
+      "url": "https://huggingface.co/papers/2607.08809",
+      "pdf_url": "https://arxiv.org/pdf/2607.08809"
+    },
+    {
+      "id": "2610.16759",
+      "title": "Image Tokenizers Should Be Trained Between Images",
+      "authors": [
+        "Ole Beißwenger",
+        "Jan-Niklas Dihlmann",
+        "Hendrik Lensch"
+      ],
+      "published": "2026-10-12",
+      "submitted_on": "",
+      "summary": "Latent diffusion models generate images as codes of an image tokenizer, whose decoder turns them into the pixel image. Recent tokenizers improve how well these codes reconstruct an image and how easily a generator learns them. Yet a generator does not reproduce the codes of training images, and when a generated code lands outside what the decoder expects, the decoded image contains imperfections. Current methods make the decoder more robust to generated codes by adding noise during training. However, generated codes lie between the training codes and resemble their mixture more than one of the",
+      "github": "https://github.com/cgtuebingen/InterpTok",
+      "upvotes": 0,
+      "url": "https://huggingface.co/papers/2610.16759",
+      "pdf_url": "https://arxiv.org/pdf/2610.16759"
+    },
+    {
+      "id": "2610.18760",
+      "title": "Beyond the Verdict: Agentic Code Judging with Verifiable Feedback",
+      "authors": [
+        "Zheye Deng",
+        "Sha Li",
+        "Changlong Yu",
+        "Xin Liu",
+        "Qin Lu",
+        "Priyanka Nigam",
+        "Yangqiu Song"
+      ],
+      "published": "2026-10-13",
+      "submitted_on": "",
+      "summary": "Test-time scaling for large language models (LLMs) can involve generating multiple candidate solutions for selection or revising an earlier attempt. To guide selection and revision, we need a verifier that can estimate candidate correctness and provide evidence of failure. In competitive programming, however, official judging systems provide authoritative verdicts under finite submission budgets, without revealing failure explanations or failing inputs. To provide informative feedback without consuming official submissions, we formulate a task in which a model judges and diagnoses a candidate ",
+      "github": "https://github.com/horizon-llm/IOI2026",
       "upvotes": 4,
-      "url": "https://huggingface.co/papers/2610.12998",
-      "pdf_url": "https://arxiv.org/pdf/2610.12998"
+      "url": "https://huggingface.co/papers/2610.18760",
+      "pdf_url": "https://arxiv.org/pdf/2610.18760"
     },
     {
-      "id": "2610.03825",
-      "title": "Same Output, Different Gold: Measuring How Reference Choice Moves a Multilingual Benchmark Score",
+      "id": "2610.15228",
+      "title": "Words to World: Benchmarking LLMs in Interactive Physical Environments",
       "authors": [
-        "Parth Kulshreshtha",
-        "Shivali Dalmia",
-        "Abhishek Mukherji"
+        "Xinnan Dai",
+        "Kaiqi Yang",
+        "Yaxin Li",
+        "Cheng Luo",
+        "Wanli Li",
+        "Mingqing Xiao",
+        "Xinyang Jiang",
+        "Daoan Zhang"
       ],
-      "published": "2026-10-02",
+      "published": "2026-10-10",
       "submitted_on": "",
-      "summary": "A benchmark score compares a system output against a reference, and methodological attention falls almost entirely on the first term. We measure the second. The retained annotation record of a six-language benchmark for personally identifiable information contains two independent annotator labellings, the aggregate shipped as gold, and a reviewer gold from independent expert re-annotation of a sample. Using it, we hold the scored output fixed and exchange the reference. The score moves by 4.95 F1 points for one output and 2.00 for the other (95% CIs [3.23, 6.27] and [0.26, 3.37]), and by 7.55 ",
+      "summary": "Words are increasingly becoming an interface for action: large language models (LLMs) can now invoke tools, operate devices, and make decisions that affect the physical world. However, current benchmarks largely evaluate LLMs through static text responses, offline tool calls, or simulated tasks, leaving open the question of how well they can act in real physical environments. We present a benchmark for measuring LLMs in closed-loop physical interaction, where models control a harness system connected to real-world components including robotic arms, cameras, and sensors. In each task, the model",
       "github": "",
-      "upvotes": 2,
-      "url": "https://huggingface.co/papers/2610.03825",
-      "pdf_url": "https://arxiv.org/pdf/2610.03825"
-    },
-    {
-      "id": "2610.00707",
-      "title": "Initialization Improves LLM-Driven Discovery",
-      "authors": [
-        "Mansi Sakarvadia",
-        "Marco Ciccone",
-        "Colin Raffel"
-      ],
-      "published": "2026-09-30",
-      "submitted_on": "",
-      "summary": "Large Language Models (LLMs) have been used for novel discovery of algorithms, theorems, drugs, and other tasks through the use of harnesses that prompt an LLM to iteratively optimize an objective. In this work, we study the relationship between the population of previous iterates and eventual discovery success. We generalize past work on harness design to develop a suite of 12 harnesses called 'Modular' and characterize their performance across 5 diverse discovery tasks, finding that discovery success is brittle and sensitive to harness design. We uncover mode collapse, characterized by a dra",
-      "github": "https://github.com/msakarvadia/llm_optimizer",
-      "upvotes": 4,
-      "url": "https://huggingface.co/papers/2610.00707",
-      "pdf_url": "https://arxiv.org/pdf/2610.00707"
-    },
-    {
-      "id": "2610.13481",
-      "title": "Branching On-Policy Distillation",
-      "authors": [
-        "Dongyang Chen",
-        "Shudong Liu",
-        "Shubo Li",
-        "Duoxun Tang",
-        "Jinwei Liang",
-        "Zehuan Wu",
-        "Lewei Lu"
-      ],
-      "published": "2026-10-09",
-      "submitted_on": "",
-      "summary": "On-policy distillation (OPD) provides teacher supervision on student-generated trajectories, but a single trajectory realizes only one continuation at each decision, limiting supervision coverage under a finite sampling budget. We propose BranchOPD (Branching On-Policy Distillation), which selects informative decision points using student uncertainty and teacher-student disagreement, resamples student-policy continuations from shared prefixes, and applies token-level teacher supervision to both main trajectories and branches. BranchOPD operates at token-level decisions in mathematics and withi",
-      "github": "",
-      "upvotes": 5,
-      "url": "https://huggingface.co/papers/2610.13481",
-      "pdf_url": "https://arxiv.org/pdf/2610.13481"
-    },
-    {
-      "id": "2609.36616",
-      "title": "CrossTimeEdit: A Decade-Spanning Cross-View Dataset and Reward-Guided Editing for Historical Street-View Generation",
-      "authors": [
-        "Hanwen Lu",
-        "Jun He",
-        "Mingjia Yang",
-        "Hao Wei",
-        "Jinhao Huang",
-        "Yi Lin",
-        "Xiang Zhang"
-      ],
-      "published": "2026-09-29",
-      "submitted_on": "",
-      "summary": "Historical street-view imagery records urban evolution, but uneven coverage leaves substantial gaps in historical records. Generating plausible past appearances requires restoring changed structures while preserving persistent scene content. We construct VIGOR-his, a decade-spanning cross-view dataset containing 43,653 location-level quadruplets across 11 cities on three continents. Its automated pipeline performs spatial pairing, consistency screening, change classification, and the generation and validation of satellite-based change descriptions and local editing instructions. Based on VIGOR",
-      "github": "https://github.com/LuHanwen67/CrossTimeEdit-release",
-      "upvotes": 21,
-      "url": "https://huggingface.co/papers/2609.36616",
-      "pdf_url": "https://arxiv.org/pdf/2609.36616"
-    },
-    {
-      "id": "2610.09326",
-      "title": "VIS-Ground: Video Interactive Storytelling with Contextual Grounding",
-      "authors": [
-        "Bingxuan Li",
-        "Yiwen Song",
-        "Xueqing Wu",
-        "Yanzhou Pan",
-        "Yang Li",
-        "Kuang Su",
-        "Jingyun Liu",
-        "Sebastian Ko"
-      ],
-      "published": "2026-10-07",
-      "submitted_on": "",
-      "summary": "Video interactive storytelling enables viewers to actively steer how a video unfolds. However, once we allow viewers to intervene during generation, a new challenge arises: The viewer's request can have latent dependencies on both the grounding source and the current rendered video state. These dependencies may not be explicitly stated in any individual input, but emerge only when the source, rendered history, and new viewer intent are considered jointly. Existing interactive video generation systems primarily emphasize following viewer instructions, while source-grounded video generation meth",
-      "github": "https://github.com/vis-ground/code",
-      "upvotes": 79,
-      "url": "https://huggingface.co/papers/2610.09326",
-      "pdf_url": "https://arxiv.org/pdf/2610.09326"
-    },
-    {
-      "id": "2610.09116",
-      "title": "SPLATIFY: Reproduce, Discover, Innovate! From Papers and Ideas to Trainable 3DGS Code",
-      "authors": [
-        "Seemandhar Jain",
-        "Keshav Gupta",
-        "Manmohan Chandraker"
-      ],
-      "published": "2026-10-06",
-      "submitted_on": "",
-      "summary": "The rapid growth of 3D Gaussian Splatting (3DGS) research demands significant effort to reimplement papers before building on them. We introduce SPLATIFY, a multi-agent framework that converts 3DGS papers into trainable gsplat-based implementations, where generic paper-to-code methods and frontier models fail. SPLATIFY achieves this through five innovations: (1) A context-free grammar for gsplat over a modular method template with extension points for losses, densification, rendering, and optimization, constraining synthesis so generated code satisfies gsplat's architectural invariants by cons",
-      "github": "https://github.com/seemandhar/splatify",
-      "upvotes": 1,
-      "url": "https://huggingface.co/papers/2610.09116",
-      "pdf_url": "https://arxiv.org/pdf/2610.09116"
-    },
-    {
-      "id": "2610.12933",
-      "title": "Learning More by Training Less: Uncertainty-Guided Progressive Contraction for Efficient Reasoning Post-Training",
-      "authors": [
-        "Suorong Yang",
-        "Jiaxin Wang",
-        "Jiaming Su",
-        "Chentao Yue",
-        "Furao Shen",
-        "Peng Ye",
-        "Soujanya Poria"
-      ],
-      "published": "2026-10-09",
-      "submitted_on": "",
-      "summary": "Large language models have achieved remarkable advances in complex reasoning. However, scaling reasoning post-training with ever-larger corpora can substantially increase training cost without proportional performance gains. In this study, we therefore ask: how far can reasoning supervision be compressed without sacrificing capability? To this end, we propose an uncertainty-guided progressive contraction framework that concentrates supervision and optimization on the reasoning trajectories most valuable for learning. Specifically, rather than treating a teacher-generated chain-of-thought (CoT)",
-      "github": "https://github.com/Jackbrocp/Learning-More-by-Training-Less",
-      "upvotes": 7,
-      "url": "https://huggingface.co/papers/2610.12933",
-      "pdf_url": "https://arxiv.org/pdf/2610.12933"
-    },
-    {
-      "id": "2610.13361",
-      "title": "AgentSWE: Can Coding Agents Build the Agent You Actually Want?",
-      "authors": [
-        "Jiahao Wang",
-        "Hongjin Qian",
-        "Yuyang Hu",
-        "Jiajun Zhang",
-        "Zheng Liu"
-      ],
-      "published": "2026-10-09",
-      "submitted_on": "",
-      "summary": "As the production of software passes into the hands of software itself, coding agents are increasingly commissioned to build agents fitted to their users' own workflows. This delegation carries a quiet assumption, that the delivered agent will faithfully serve the requirement it was built for, rather than merely appear to. No existing benchmark tests that assumption. We introduce AgentSWE, a benchmark for agent software engineering spanning three stages of the agent development lifecycle: Creation of a complete agent from a natural-language requirement, Editing of production agent codebases, a",
-      "github": "",
-      "upvotes": 202,
-      "url": "https://huggingface.co/papers/2610.13361",
-      "pdf_url": "https://arxiv.org/pdf/2610.13361"
-    },
-    {
-      "id": "2609.39600",
-      "title": "GroundAnything: Reconciling Parallel Decoding with Precise Visual Grounding at Flash Speed",
-      "authors": [
-        "Qize Yu",
-        "Lianrui Fan",
-        "Bowen Ping",
-        "Xini Ding",
-        "Zetian Song",
-        "Junbo Niu",
-        "Kaixuan Wang",
-        "Tianxing Chen"
-      ],
-      "published": "2026-09-30",
-      "submitted_on": "",
-      "summary": "Autoregressive (AR) grounding models serialize spatial predictions, introducing sequential latency and imposing a causal order on output tokens. We view grounding as visual evidence extraction: objects, locations, and spatial relations are jointly constrained by the image and query, yet their dependencies do not imply an intrinsic left-to-right generation order. This distinction makes bidirectional diffusion a natural fit, allowing spatial hypotheses to emerge in parallel and be jointly refined through iterative denoising. We introduce GroundAnything, a 4B-parameter grounding foundation model ",
-      "github": "https://github.com/groundingpi/GroundAnything",
-      "upvotes": 73,
-      "url": "https://huggingface.co/papers/2609.39600",
-      "pdf_url": "https://arxiv.org/pdf/2609.39600"
-    },
-    {
-      "id": "2609.39601",
-      "title": "GroundingPI: A Grounding Foundation Model towards Physical Intelligence with Visual Primitives",
-      "authors": [
-        "Qize Yu",
-        "Lianrui Fan",
-        "Boyu Chen",
-        "Jiaqi Liang",
-        "Xini Ding",
-        "Yue Chen",
-        "Zetian Song",
-        "Yuran Wang"
-      ],
-      "published": "2026-09-30",
-      "submitted_on": "",
-      "summary": "Precise grounding matters. It specifies which object is the target and where that object is, even in clutter and for tiny objects, and it has to be fast enough for closed-loop control. Yet vision-language-action (VLA) and world-action models (WAMs) take perception from general-purpose vision-language and video-generation backbones, which still fail in these settings. We introduce GroundingPI, a 4B grounding foundation model that generates points and boxes as quantized coordinates in a shared vocabulary. Training combines multimodal and spatial pretraining, supervised fine-tuning, and reinforce",
-      "github": "https://github.com/groundingpi/GroundingPI",
-      "upvotes": 250,
-      "url": "https://huggingface.co/papers/2609.39601",
-      "pdf_url": "https://arxiv.org/pdf/2609.39601"
-    },
-    {
-      "id": "2610.13166",
-      "title": "Scaling Agentic Data for Long-Horizon Terminal Intelligence",
-      "authors": [
-        "Shun Zou",
-        "Ziyu Ma",
-        "Yi Zou",
-        "Yong Wang",
-        "Lin Chen",
-        "Zehui Chen",
-        "Guanhua Chen",
-        "Xiangxiang Chu"
-      ],
-      "published": "2026-10-09",
-      "submitted_on": "",
-      "summary": "Terminal agents are moving beyond local operations toward completing real-world professional tasks. Short trajectories can demonstrate commands and tool calls, but they do not fully show how agents accumulate evidence through exploration, use it to inform judgments, continually adjust strategies based on feedback, and turn intermediate results into final deliverables. High-quality long-horizon trajectories capture these agentic behavioral patterns and their connections within a single problem-solving process, providing richer experience for sustained autonomous work. However, environment synth",
-      "github": "",
-      "upvotes": 135,
-      "url": "https://huggingface.co/papers/2610.13166",
-      "pdf_url": "https://arxiv.org/pdf/2610.13166"
+      "upvotes": 0,
+      "url": "https://huggingface.co/papers/2610.15228",
+      "pdf_url": "https://arxiv.org/pdf/2610.15228"
     }
   ],
   "models": [
@@ -884,9 +886,9 @@
       "id": "google/embeddinggemma-2",
       "author": "google",
       "name": "embeddinggemma-2",
-      "likes": 2113,
-      "trending_score": 1411,
-      "downloads": 124930,
+      "likes": 2273,
+      "trending_score": 1126,
+      "downloads": 135175,
       "pipeline_tag": "feature-extraction",
       "tags": [
         "transformers",
@@ -911,9 +913,9 @@
       "id": "jialinyyzz/humanizer",
       "author": "jialinyyzz",
       "name": "humanizer",
-      "likes": 1531,
-      "trending_score": 1053,
-      "downloads": 54039,
+      "likes": 1642,
+      "trending_score": 1093,
+      "downloads": 65616,
       "pipeline_tag": "text-generation",
       "tags": [
         "gguf",
@@ -931,7 +933,7 @@
         "transformers"
       ],
       "license": "apache-2.0",
-      "last_modified": "2026-10-08",
+      "last_modified": "2026-10-15",
       "created_at": "2026-09-11",
       "url": "https://huggingface.co/jialinyyzz/humanizer"
     },
@@ -939,9 +941,9 @@
       "id": "Qwen/Qwen-Image-2.1-Turbo",
       "author": "Qwen",
       "name": "Qwen-Image-2.1-Turbo",
-      "likes": 713,
-      "trending_score": 668,
-      "downloads": 9665,
+      "likes": 778,
+      "trending_score": 723,
+      "downloads": 12704,
       "pipeline_tag": "text-to-image",
       "tags": [
         "diffusers",
@@ -960,12 +962,39 @@
       "url": "https://huggingface.co/Qwen/Qwen-Image-2.1-Turbo"
     },
     {
+      "id": "openbmb/MiniCPM-V-4.7-35B-A3B",
+      "author": "openbmb",
+      "name": "MiniCPM-V-4.7-35B-A3B",
+      "likes": 639,
+      "trending_score": 571,
+      "downloads": 4157,
+      "pipeline_tag": "image-text-to-text",
+      "tags": [
+        "transformers",
+        "safetensors",
+        "minicpmv4_7",
+        "image-text-to-text",
+        "minicpm-v",
+        "multimodal",
+        "On-Device Model",
+        "lightweight"
+      ],
+      "library": [
+        "transformers",
+        "safetensors"
+      ],
+      "license": "apache-2.0",
+      "last_modified": "2026-10-14",
+      "created_at": "2026-10-07",
+      "url": "https://huggingface.co/openbmb/MiniCPM-V-4.7-35B-A3B"
+    },
+    {
       "id": "abenzerps/Qwen-Image-2.1-Uncensored-Quantized",
       "author": "abenzerps",
       "name": "Qwen-Image-2.1-Uncensored-Quantized",
-      "likes": 4213,
-      "trending_score": 551,
-      "downloads": 2247929,
+      "likes": 4313,
+      "trending_score": 532,
+      "downloads": 2315771,
       "pipeline_tag": "text-to-image",
       "tags": [
         "gguf",
@@ -986,63 +1015,39 @@
       "url": "https://huggingface.co/abenzerps/Qwen-Image-2.1-Uncensored-Quantized"
     },
     {
-      "id": "openbmb/MiniCPM-V-4.7-35B-A3B",
-      "author": "openbmb",
-      "name": "MiniCPM-V-4.7-35B-A3B",
-      "likes": 475,
-      "trending_score": 430,
-      "downloads": 630,
-      "pipeline_tag": "image-text-to-text",
+      "id": "autotrust/JEV-35B",
+      "author": "autotrust",
+      "name": "JEV-35B",
+      "likes": 746,
+      "trending_score": 469,
+      "downloads": 27970,
+      "pipeline_tag": "text-classification",
       "tags": [
         "transformers",
         "safetensors",
-        "minicpmv4_7",
+        "qwen3_5_moe",
         "image-text-to-text",
-        "minicpm-v",
-        "multimodal",
-        "On-Device Model",
-        "lightweight"
+        "system-one",
+        "typed-decisions",
+        "decision-model",
+        "calibrated-probabilities"
       ],
       "library": [
         "transformers",
         "safetensors"
       ],
       "license": "apache-2.0",
-      "last_modified": "2026-10-13",
-      "created_at": "2026-10-07",
-      "url": "https://huggingface.co/openbmb/MiniCPM-V-4.7-35B-A3B"
-    },
-    {
-      "id": "Lightricks/LTX-2.5",
-      "author": "Lightricks",
-      "name": "LTX-2.5",
-      "likes": 7659,
-      "trending_score": 427,
-      "downloads": 1724548,
-      "pipeline_tag": "image-to-video",
-      "tags": [
-        "diffusion-single-file",
-        "image-to-video",
-        "text-to-video",
-        "video-to-video",
-        "image-text-to-video",
-        "audio-to-video",
-        "text-to-audio",
-        "video-to-audio"
-      ],
-      "library": [],
-      "license": "other",
-      "last_modified": "2026-10-11",
-      "created_at": "2026-07-23",
-      "url": "https://huggingface.co/Lightricks/LTX-2.5"
+      "last_modified": "2026-10-14",
+      "created_at": "2026-10-11",
+      "url": "https://huggingface.co/autotrust/JEV-35B"
     },
     {
       "id": "ConwayResearch/Underdog-Saluki-27B-1.0",
       "author": "ConwayResearch",
       "name": "Underdog-Saluki-27B-1.0",
-      "likes": 428,
-      "trending_score": 417,
-      "downloads": 269829,
+      "likes": 458,
+      "trending_score": 443,
+      "downloads": 311969,
       "pipeline_tag": "text-generation",
       "tags": [
         "gguf",
@@ -1063,12 +1068,168 @@
       "url": "https://huggingface.co/ConwayResearch/Underdog-Saluki-27B-1.0"
     },
     {
+      "id": "Lightricks/LTX-2.5",
+      "author": "Lightricks",
+      "name": "LTX-2.5",
+      "likes": 7800,
+      "trending_score": 432,
+      "downloads": 1823507,
+      "pipeline_tag": "image-to-video",
+      "tags": [
+        "diffusion-single-file",
+        "image-to-video",
+        "text-to-video",
+        "video-to-video",
+        "image-text-to-video",
+        "audio-to-video",
+        "text-to-audio",
+        "video-to-audio"
+      ],
+      "library": [],
+      "license": "other",
+      "last_modified": "2026-10-11",
+      "created_at": "2026-07-23",
+      "url": "https://huggingface.co/Lightricks/LTX-2.5"
+    },
+    {
+      "id": "AtomicChat/Qwen-Image-2.1-Turbo-Uncensored-GGUF",
+      "author": "AtomicChat",
+      "name": "Qwen-Image-2.1-Turbo-Uncensored-GGUF",
+      "likes": 453,
+      "trending_score": 394,
+      "downloads": 258320,
+      "pipeline_tag": "text-to-image",
+      "tags": [
+        "gguf",
+        "atomic-chat",
+        "qwen",
+        "qwen-image",
+        "qwen3-vl",
+        "text-encoder",
+        "stable-diffusion.cpp",
+        "abliteration"
+      ],
+      "library": [
+        "gguf"
+      ],
+      "license": "apache-2.0",
+      "last_modified": "2026-10-13",
+      "created_at": "2026-10-09",
+      "url": "https://huggingface.co/AtomicChat/Qwen-Image-2.1-Turbo-Uncensored-GGUF"
+    },
+    {
+      "id": "Qwen/Qwen3.8-27B",
+      "author": "Qwen",
+      "name": "Qwen3.8-27B",
+      "likes": 17710,
+      "trending_score": 325,
+      "downloads": 7221327,
+      "pipeline_tag": "image-text-to-text",
+      "tags": [
+        "transformers",
+        "safetensors",
+        "qwen3_5",
+        "image-text-to-text",
+        "conversational",
+        "eval-results",
+        "endpoints_compatible"
+      ],
+      "library": [
+        "transformers",
+        "safetensors"
+      ],
+      "license": "apache-2.0",
+      "last_modified": "2026-08-14",
+      "created_at": "2026-08-05",
+      "url": "https://huggingface.co/Qwen/Qwen3.8-27B"
+    },
+    {
+      "id": "fishaudio/drama-3",
+      "author": "fishaudio",
+      "name": "drama-3",
+      "likes": 323,
+      "trending_score": 319,
+      "downloads": 839,
+      "pipeline_tag": "text-to-speech",
+      "tags": [
+        "safetensors",
+        "fish_omni",
+        "fish-audio",
+        "text-to-speech",
+        "multi-speaker",
+        "audio-editing",
+        "emotional-speech-generation",
+        "zh"
+      ],
+      "library": [
+        "safetensors"
+      ],
+      "license": "other",
+      "last_modified": "2026-10-14",
+      "created_at": "2026-10-01",
+      "url": "https://huggingface.co/fishaudio/drama-3"
+    },
+    {
+      "id": "nerkyor/Qwen3.8-27B-Coder390-EfficientThink-Opus5.5-GPT6Astra-Grok4.7-DSV4Pro-K3-SFT-RLOO-MTP-DFlash2",
+      "author": "nerkyor",
+      "name": "Qwen3.8-27B-Coder390-EfficientThink-Opus5.5-GPT6Astra-Grok4.7-DSV4Pro-K3-SFT-RLOO-MTP-DFlash2",
+      "likes": 334,
+      "trending_score": 309,
+      "downloads": 114351,
+      "pipeline_tag": "image-text-to-text",
+      "tags": [
+        "safetensors",
+        "gguf",
+        "qwen3.8",
+        "efficient-thinking",
+        "reasoning",
+        "coding",
+        "uncensored",
+        "sft"
+      ],
+      "library": [
+        "safetensors",
+        "gguf"
+      ],
+      "license": "apache-2.0",
+      "last_modified": "2026-10-14",
+      "created_at": "2026-10-04",
+      "url": "https://huggingface.co/nerkyor/Qwen3.8-27B-Coder390-EfficientThink-Opus5.5-GPT6Astra-Grok4.7-DSV4Pro-K3-SFT-RLOO-MTP-DFlash2"
+    },
+    {
+      "id": "LiquidAI/LFM2.5-24B-A2B",
+      "author": "LiquidAI",
+      "name": "LFM2.5-24B-A2B",
+      "likes": 311,
+      "trending_score": 309,
+      "downloads": 4067,
+      "pipeline_tag": "text-generation",
+      "tags": [
+        "transformers",
+        "safetensors",
+        "lfm2_moe",
+        "text-generation",
+        "liquid",
+        "lfm2.5",
+        "edge",
+        "moe"
+      ],
+      "library": [
+        "transformers",
+        "safetensors"
+      ],
+      "license": "other",
+      "last_modified": "2026-10-13",
+      "created_at": "2026-10-12",
+      "url": "https://huggingface.co/LiquidAI/LFM2.5-24B-A2B"
+    },
+    {
       "id": "LiquidAI/d1-3B",
       "author": "LiquidAI",
       "name": "d1-3B",
-      "likes": 381,
-      "trending_score": 370,
-      "downloads": 13190,
+      "likes": 396,
+      "trending_score": 289,
+      "downloads": 14854,
       "pipeline_tag": "image-text-to-text",
       "tags": [
         "transformers",
@@ -1093,9 +1254,9 @@
       "id": "Cloudflare/clef",
       "author": "Cloudflare",
       "name": "clef",
-      "likes": 2144,
-      "trending_score": 365,
-      "downloads": 17173,
+      "likes": 2160,
+      "trending_score": 284,
+      "downloads": 18304,
       "pipeline_tag": "image-text-to-text",
       "tags": [
         "transformers",
@@ -1117,123 +1278,17 @@
       "url": "https://huggingface.co/Cloudflare/clef"
     },
     {
-      "id": "AtomicChat/Qwen-Image-2.1-Turbo-Uncensored-GGUF",
-      "author": "AtomicChat",
-      "name": "Qwen-Image-2.1-Turbo-Uncensored-GGUF",
-      "likes": 412,
-      "trending_score": 361,
-      "downloads": 208575,
-      "pipeline_tag": "text-to-image",
-      "tags": [
-        "gguf",
-        "atomic-chat",
-        "qwen",
-        "qwen-image",
-        "qwen3-vl",
-        "text-encoder",
-        "stable-diffusion.cpp",
-        "abliteration"
-      ],
-      "library": [
-        "gguf"
-      ],
-      "license": "apache-2.0",
-      "last_modified": "2026-10-13",
-      "created_at": "2026-10-09",
-      "url": "https://huggingface.co/AtomicChat/Qwen-Image-2.1-Turbo-Uncensored-GGUF"
-    },
-    {
-      "id": "autotrust/JEV-35B",
-      "author": "autotrust",
-      "name": "JEV-35B",
-      "likes": 537,
-      "trending_score": 352,
-      "downloads": 17426,
-      "pipeline_tag": "text-classification",
-      "tags": [
-        "transformers",
-        "safetensors",
-        "qwen3_5_moe",
-        "image-text-to-text",
-        "system-one",
-        "typed-decisions",
-        "decision-model",
-        "calibrated-probabilities"
-      ],
-      "library": [
-        "transformers",
-        "safetensors"
-      ],
-      "license": "apache-2.0",
-      "last_modified": "2026-10-14",
-      "created_at": "2026-10-11",
-      "url": "https://huggingface.co/autotrust/JEV-35B"
-    },
-    {
-      "id": "Qwen/Qwen3.8-27B",
-      "author": "Qwen",
-      "name": "Qwen3.8-27B",
-      "likes": 17647,
-      "trending_score": 347,
-      "downloads": 7119569,
-      "pipeline_tag": "image-text-to-text",
-      "tags": [
-        "transformers",
-        "safetensors",
-        "qwen3_5",
-        "image-text-to-text",
-        "conversational",
-        "eval-results",
-        "endpoints_compatible"
-      ],
-      "library": [
-        "transformers",
-        "safetensors"
-      ],
-      "license": "apache-2.0",
-      "last_modified": "2026-08-14",
-      "created_at": "2026-08-05",
-      "url": "https://huggingface.co/Qwen/Qwen3.8-27B"
-    },
-    {
-      "id": "nerkyor/Qwen3.8-27B-Coder390-EfficientThink-Opus5.5-GPT6Astra-Grok4.7-DSV4Pro-K3-SFT-RLOO-MTP-DFlash2",
-      "author": "nerkyor",
-      "name": "Qwen3.8-27B-Coder390-EfficientThink-Opus5.5-GPT6Astra-Grok4.7-DSV4Pro-K3-SFT-RLOO-MTP-DFlash2",
-      "likes": 309,
-      "trending_score": 286,
-      "downloads": 83887,
-      "pipeline_tag": "image-text-to-text",
-      "tags": [
-        "safetensors",
-        "gguf",
-        "qwen3.8",
-        "efficient-thinking",
-        "reasoning",
-        "coding",
-        "uncensored",
-        "sft"
-      ],
-      "library": [
-        "safetensors",
-        "gguf"
-      ],
-      "license": "apache-2.0",
-      "last_modified": "2026-10-11",
-      "created_at": "2026-10-04",
-      "url": "https://huggingface.co/nerkyor/Qwen3.8-27B-Coder390-EfficientThink-Opus5.5-GPT6Astra-Grok4.7-DSV4Pro-K3-SFT-RLOO-MTP-DFlash2"
-    },
-    {
       "id": "baidu/Unlimited-OCR",
       "author": "baidu",
       "name": "Unlimited-OCR",
-      "likes": 4617,
-      "trending_score": 261,
-      "downloads": 1175446,
+      "likes": 4640,
+      "trending_score": 281,
+      "downloads": 1154213,
       "pipeline_tag": "image-text-to-text",
       "tags": [
         "transformers",
         "safetensors",
-        "unlimited-ocr",
+        "unlimited_ocr",
         "feature-extraction",
         "baidu",
         "vision-language",
@@ -1245,44 +1300,17 @@
         "safetensors"
       ],
       "license": "mit",
-      "last_modified": "2026-07-29",
+      "last_modified": "2026-10-14",
       "created_at": "2026-06-19",
       "url": "https://huggingface.co/baidu/Unlimited-OCR"
-    },
-    {
-      "id": "convaiinnovations/laya",
-      "author": "convaiinnovations",
-      "name": "laya",
-      "likes": 5574,
-      "trending_score": 241,
-      "downloads": 46160,
-      "pipeline_tag": "text-classification",
-      "tags": [
-        "transformers",
-        "safetensors",
-        "laya",
-        "system-one",
-        "calibrated-decisions",
-        "rlcd",
-        "classification",
-        "routing"
-      ],
-      "library": [
-        "transformers",
-        "safetensors"
-      ],
-      "license": "apache-2.0",
-      "last_modified": "2026-10-03",
-      "created_at": "2026-09-18",
-      "url": "https://huggingface.co/convaiinnovations/laya"
     },
     {
       "id": "speridlabs/iris-3b",
       "author": "speridlabs",
       "name": "iris-3b",
-      "likes": 234,
-      "trending_score": 232,
-      "downloads": 889,
+      "likes": 260,
+      "trending_score": 256,
+      "downloads": 1132,
       "pipeline_tag": "text-to-image",
       "tags": [
         "pytorch",
@@ -1304,35 +1332,12 @@
       "url": "https://huggingface.co/speridlabs/iris-3b"
     },
     {
-      "id": "canberkkkkkk/ema-lightning",
-      "author": "canberkkkkkk",
-      "name": "ema-lightning",
-      "likes": 403,
-      "trending_score": 230,
-      "downloads": 22641,
-      "pipeline_tag": "text-to-speech",
-      "tags": [
-        "ema-lightning",
-        "text-to-speech",
-        "tts",
-        "turkish",
-        "speech-synthesis",
-        "flow-matching",
-        "tr"
-      ],
-      "library": [],
-      "license": "apache-2.0",
-      "last_modified": "2026-10-06",
-      "created_at": "2026-10-01",
-      "url": "https://huggingface.co/canberkkkkkk/ema-lightning"
-    },
-    {
       "id": "openbmb/MiniCPM-V-4.7-1B",
       "author": "openbmb",
       "name": "MiniCPM-V-4.7-1B",
-      "likes": 288,
-      "trending_score": 223,
-      "downloads": 263,
+      "likes": 335,
+      "trending_score": 243,
+      "downloads": 2543,
       "pipeline_tag": "image-text-to-text",
       "tags": [
         "transformers",
@@ -1349,17 +1354,44 @@
         "safetensors"
       ],
       "license": "apache-2.0",
-      "last_modified": "2026-10-13",
+      "last_modified": "2026-10-14",
       "created_at": "2026-10-06",
       "url": "https://huggingface.co/openbmb/MiniCPM-V-4.7-1B"
+    },
+    {
+      "id": "convaiinnovations/laya",
+      "author": "convaiinnovations",
+      "name": "laya",
+      "likes": 5603,
+      "trending_score": 223,
+      "downloads": 47754,
+      "pipeline_tag": "text-classification",
+      "tags": [
+        "transformers",
+        "safetensors",
+        "laya",
+        "system-one",
+        "calibrated-decisions",
+        "rlcd",
+        "classification",
+        "routing"
+      ],
+      "library": [
+        "transformers",
+        "safetensors"
+      ],
+      "license": "apache-2.0",
+      "last_modified": "2026-10-03",
+      "created_at": "2026-09-18",
+      "url": "https://huggingface.co/convaiinnovations/laya"
     },
     {
       "id": "Cactus-Compute/whistle",
       "author": "Cactus-Compute",
       "name": "whistle",
-      "likes": 383,
+      "likes": 396,
       "trending_score": 219,
-      "downloads": 21005,
+      "downloads": 23589,
       "pipeline_tag": "automatic-speech-recognition",
       "tags": [
         "cactus-needle",
@@ -1381,9 +1413,9 @@
       "id": "autotrust/JEV-35B-NVFP4",
       "author": "autotrust",
       "name": "JEV-35B-NVFP4",
-      "likes": 301,
-      "trending_score": 199,
-      "downloads": 20494,
+      "likes": 306,
+      "trending_score": 204,
+      "downloads": 33343,
       "pipeline_tag": "text-classification",
       "tags": [
         "transformers",
@@ -1405,39 +1437,12 @@
       "url": "https://huggingface.co/autotrust/JEV-35B-NVFP4"
     },
     {
-      "id": "LiquidAI/LFM2.5-24B-A2B",
-      "author": "LiquidAI",
-      "name": "LFM2.5-24B-A2B",
-      "likes": 182,
-      "trending_score": 181,
-      "downloads": 2565,
-      "pipeline_tag": "text-generation",
-      "tags": [
-        "transformers",
-        "safetensors",
-        "lfm2_moe",
-        "text-generation",
-        "liquid",
-        "lfm2.5",
-        "edge",
-        "moe"
-      ],
-      "library": [
-        "transformers",
-        "safetensors"
-      ],
-      "license": "other",
-      "last_modified": "2026-10-13",
-      "created_at": "2026-10-12",
-      "url": "https://huggingface.co/LiquidAI/LFM2.5-24B-A2B"
-    },
-    {
       "id": "facebook/sam3",
       "author": "facebook",
       "name": "sam3",
-      "likes": 4256,
-      "trending_score": 177,
-      "downloads": 2037775,
+      "likes": 4344,
+      "trending_score": 189,
+      "downloads": 2019842,
       "pipeline_tag": "mask-generation",
       "tags": [
         "transformers",
@@ -1459,118 +1464,12 @@
       "url": "https://huggingface.co/facebook/sam3"
     },
     {
-      "id": "unsloth/embeddinggemma-2-GGUF",
-      "author": "unsloth",
-      "name": "embeddinggemma-2-GGUF",
-      "likes": 301,
-      "trending_score": 176,
-      "downloads": 81504,
-      "pipeline_tag": "feature-extraction",
-      "tags": [
-        "gguf",
-        "embedding",
-        "feature-extraction",
-        "multimodal-embedding",
-        "multimodal",
-        "vision",
-        "audio",
-        "video"
-      ],
-      "library": [
-        "gguf"
-      ],
-      "license": "apache-2.0",
-      "last_modified": "2026-10-07",
-      "created_at": "2026-10-06",
-      "url": "https://huggingface.co/unsloth/embeddinggemma-2-GGUF"
-    },
-    {
-      "id": "DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NEO-CODER-MAX-MTP-GGUF",
-      "author": "DavidAU",
-      "name": "Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NEO-CODER-MAX-MTP-GGUF",
-      "likes": 1744,
-      "trending_score": 173,
-      "downloads": 1940062,
-      "pipeline_tag": "image-text-to-text",
-      "tags": [
-        "gguf",
-        "unsloth",
-        "fine tune",
-        "heretic",
-        "uncensored",
-        "abliterated",
-        "ara",
-        "MTP GGUF Quants"
-      ],
-      "library": [
-        "gguf"
-      ],
-      "license": "apache-2.0",
-      "last_modified": "2026-09-25",
-      "created_at": "2026-09-01",
-      "url": "https://huggingface.co/DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NEO-CODER-MAX-MTP-GGUF"
-    },
-    {
-      "id": "Venastine-Research/Xing4.0-29B-A4B-GGUF",
-      "author": "Venastine-Research",
-      "name": "Xing4.0-29B-A4B-GGUF",
-      "likes": 710,
-      "trending_score": 169,
-      "downloads": 58000,
-      "pipeline_tag": "text-generation",
-      "tags": [
-        "transformers",
-        "safetensors",
-        "gguf",
-        "xing4_0",
-        "text-generation",
-        "conversational",
-        "custom_code",
-        "endpoints_compatible"
-      ],
-      "library": [
-        "transformers",
-        "safetensors",
-        "gguf"
-      ],
-      "license": "apache-2.0",
-      "last_modified": "2026-10-11",
-      "created_at": "2026-09-17",
-      "url": "https://huggingface.co/Venastine-Research/Xing4.0-29B-A4B-GGUF"
-    },
-    {
-      "id": "Aleph-Alpha/Kolibri-1",
-      "author": "Aleph-Alpha",
-      "name": "Kolibri-1",
-      "likes": 928,
-      "trending_score": 167,
-      "downloads": 15335,
-      "pipeline_tag": "text-generation",
-      "tags": [
-        "vllm",
-        "safetensors",
-        "kolibri1",
-        "reasoning",
-        "moe",
-        "text-generation",
-        "conversational",
-        "de"
-      ],
-      "library": [
-        "safetensors"
-      ],
-      "license": "apache-2.0",
-      "last_modified": "2026-10-13",
-      "created_at": "2026-10-02",
-      "url": "https://huggingface.co/Aleph-Alpha/Kolibri-1"
-    },
-    {
       "id": "pablodawson/MiniMax-H3-360-Orbit-LoRA",
       "author": "pablodawson",
       "name": "MiniMax-H3-360-Orbit-LoRA",
-      "likes": 419,
-      "trending_score": 166,
-      "downloads": 15540,
+      "likes": 450,
+      "trending_score": 177,
+      "downloads": 16890,
       "pipeline_tag": "image-text-to-video",
       "tags": [
         "minimax-h3",
@@ -1589,12 +1488,171 @@
       "url": "https://huggingface.co/pablodawson/MiniMax-H3-360-Orbit-LoRA"
     },
     {
+      "id": "DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NEO-CODER-MAX-MTP-GGUF",
+      "author": "DavidAU",
+      "name": "Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NEO-CODER-MAX-MTP-GGUF",
+      "likes": 1771,
+      "trending_score": 167,
+      "downloads": 1900731,
+      "pipeline_tag": "image-text-to-text",
+      "tags": [
+        "gguf",
+        "unsloth",
+        "fine tune",
+        "heretic",
+        "uncensored",
+        "abliterated",
+        "ara",
+        "MTP GGUF Quants"
+      ],
+      "library": [
+        "gguf"
+      ],
+      "license": "apache-2.0",
+      "last_modified": "2026-10-14",
+      "created_at": "2026-09-01",
+      "url": "https://huggingface.co/DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NEO-CODER-MAX-MTP-GGUF"
+    },
+    {
+      "id": "vllm-sr/d3",
+      "author": "vllm-sr",
+      "name": "d3",
+      "likes": 166,
+      "trending_score": 161,
+      "downloads": 1805,
+      "pipeline_tag": "zero-shot-classification",
+      "tags": [
+        "transformers",
+        "safetensors",
+        "qwen3_5",
+        "feature-extraction",
+        "zero-shot-classification",
+        "decision-model",
+        "classification",
+        "system-one"
+      ],
+      "library": [
+        "transformers",
+        "safetensors"
+      ],
+      "license": "apache-2.0",
+      "last_modified": "2026-10-14",
+      "created_at": "2026-10-10",
+      "url": "https://huggingface.co/vllm-sr/d3"
+    },
+    {
+      "id": "Qwen/Qwen3.8-Flash-Next",
+      "author": "Qwen",
+      "name": "Qwen3.8-Flash-Next",
+      "likes": 6212,
+      "trending_score": 156,
+      "downloads": 2185644,
+      "pipeline_tag": "image-text-to-text",
+      "tags": [
+        "transformers",
+        "safetensors",
+        "qwen4_exp",
+        "image-text-to-text",
+        "conversational",
+        "eval-results",
+        "endpoints_compatible"
+      ],
+      "library": [
+        "transformers",
+        "safetensors"
+      ],
+      "license": "other",
+      "last_modified": "2026-08-27",
+      "created_at": "2026-08-24",
+      "url": "https://huggingface.co/Qwen/Qwen3.8-Flash-Next"
+    },
+    {
+      "id": "deepseek-ai/DeepSeek-V4.1-Flash",
+      "author": "deepseek-ai",
+      "name": "DeepSeek-V4.1-Flash",
+      "likes": 4505,
+      "trending_score": 155,
+      "downloads": 1262357,
+      "pipeline_tag": "image-text-to-text",
+      "tags": [
+        "transformers",
+        "safetensors",
+        "deepseek_v41",
+        "text-generation",
+        "image-text-to-text",
+        "conversational",
+        "eval-results",
+        "endpoints_compatible"
+      ],
+      "library": [
+        "transformers",
+        "safetensors"
+      ],
+      "license": "mit",
+      "last_modified": "2026-10-12",
+      "created_at": "2026-09-10",
+      "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash"
+    },
+    {
+      "id": "dealignai/DeepSeek-V4.1-Flash-UNCENSORED-FP8",
+      "author": "dealignai",
+      "name": "DeepSeek-V4.1-Flash-UNCENSORED-FP8",
+      "likes": 642,
+      "trending_score": 155,
+      "downloads": 78156,
+      "pipeline_tag": "image-text-to-text",
+      "tags": [
+        "transformers",
+        "safetensors",
+        "deepseek_v41",
+        "text-generation",
+        "deepseek",
+        "deepseek-v4.1",
+        "abliterated",
+        "uncensored"
+      ],
+      "library": [
+        "transformers",
+        "safetensors"
+      ],
+      "license": "mit",
+      "last_modified": "2026-09-11",
+      "created_at": "2026-09-10",
+      "url": "https://huggingface.co/dealignai/DeepSeek-V4.1-Flash-UNCENSORED-FP8"
+    },
+    {
+      "id": "orcarouter/Qwen3.8-Flash-Next-Uncensored-GGUF",
+      "author": "orcarouter",
+      "name": "Qwen3.8-Flash-Next-Uncensored-GGUF",
+      "likes": 867,
+      "trending_score": 151,
+      "downloads": 692812,
+      "pipeline_tag": "image-text-to-text",
+      "tags": [
+        "gguf",
+        "abliterated",
+        "uncensored",
+        "qwen",
+        "qwen3.8",
+        "qwen4",
+        "flash-next",
+        "moe"
+      ],
+      "library": [
+        "gguf"
+      ],
+      "license": "apache-2.0",
+      "last_modified": "2026-10-12",
+      "created_at": "2026-08-26",
+      "url": "https://huggingface.co/orcarouter/Qwen3.8-Flash-Next-Uncensored-GGUF"
+    },
+    {
       "id": "ISTA-DASLab/Qwen3.8-Flash-Next-GSQ-RCO-GGUF",
       "author": "ISTA-DASLab",
       "name": "Qwen3.8-Flash-Next-GSQ-RCO-GGUF",
-      "likes": 854,
-      "trending_score": 160,
-      "downloads": 4675423,
+      "likes": 876,
+      "trending_score": 151,
+      "downloads": 4894108,
       "pipeline_tag": "image-text-to-text",
       "tags": [
         "gguf",
@@ -1618,9 +1676,9 @@
       "id": "Qwen/Qwen-Image-2.1",
       "author": "Qwen",
       "name": "Qwen-Image-2.1",
-      "likes": 3283,
-      "trending_score": 158,
-      "downloads": 147995,
+      "likes": 3305,
+      "trending_score": 141,
+      "downloads": 153537,
       "pipeline_tag": "text-to-image",
       "tags": [
         "diffusers",
@@ -1640,12 +1698,87 @@
       "url": "https://huggingface.co/Qwen/Qwen-Image-2.1"
     },
     {
+      "id": "unsloth/Qwen3.8-27B-GGUF",
+      "author": "unsloth",
+      "name": "Qwen3.8-27B-GGUF",
+      "likes": 5096,
+      "trending_score": 137,
+      "downloads": 6634241,
+      "pipeline_tag": "",
+      "tags": [
+        "gguf",
+        "qwen3_5",
+        "unsloth",
+        "endpoints_compatible",
+        "imatrix",
+        "conversational"
+      ],
+      "library": [
+        "gguf"
+      ],
+      "license": "apache-2.0",
+      "last_modified": "2026-08-20",
+      "created_at": "2026-08-13",
+      "url": "https://huggingface.co/unsloth/Qwen3.8-27B-GGUF"
+    },
+    {
+      "id": "pyannote/speaker-diarization-community-1",
+      "author": "pyannote",
+      "name": "speaker-diarization-community-1",
+      "likes": 2914,
+      "trending_score": 134,
+      "downloads": 5457659,
+      "pipeline_tag": "automatic-speech-recognition",
+      "tags": [
+        "pyannote-audio",
+        "pyannote",
+        "pyannote-audio-pipeline",
+        "audio",
+        "voice",
+        "speech",
+        "speaker",
+        "speaker-diarization"
+      ],
+      "library": [],
+      "license": "cc-by-4.0",
+      "last_modified": "2025-09-29",
+      "created_at": "2025-04-15",
+      "url": "https://huggingface.co/pyannote/speaker-diarization-community-1"
+    },
+    {
+      "id": "JetBrains/Mellum2.1-12B-A2.5B-Thinking",
+      "author": "JetBrains",
+      "name": "Mellum2.1-12B-A2.5B-Thinking",
+      "likes": 133,
+      "trending_score": 132,
+      "downloads": 1783,
+      "pipeline_tag": "text-generation",
+      "tags": [
+        "transformers",
+        "safetensors",
+        "mellum",
+        "text-generation",
+        "conversational",
+        "en",
+        "model-index",
+        "endpoints_compatible"
+      ],
+      "library": [
+        "transformers",
+        "safetensors"
+      ],
+      "license": "apache-2.0",
+      "last_modified": "2026-10-07",
+      "created_at": "2026-09-20",
+      "url": "https://huggingface.co/JetBrains/Mellum2.1-12B-A2.5B-Thinking"
+    },
+    {
       "id": "Cloudflare/clef-flash",
       "author": "Cloudflare",
       "name": "clef-flash",
-      "likes": 806,
-      "trending_score": 158,
-      "downloads": 24809,
+      "likes": 821,
+      "trending_score": 132,
+      "downloads": 26636,
       "pipeline_tag": "image-text-to-text",
       "tags": [
         "transformers",
@@ -1667,141 +1800,30 @@
       "url": "https://huggingface.co/Cloudflare/clef-flash"
     },
     {
-      "id": "deepseek-ai/DeepSeek-V4.1-Flash",
-      "author": "deepseek-ai",
-      "name": "DeepSeek-V4.1-Flash",
-      "likes": 4475,
-      "trending_score": 154,
-      "downloads": 1272612,
-      "pipeline_tag": "image-text-to-text",
-      "tags": [
-        "transformers",
-        "safetensors",
-        "deepseek_v41",
-        "text-generation",
-        "image-text-to-text",
-        "conversational",
-        "eval-results",
-        "endpoints_compatible"
-      ],
-      "library": [
-        "transformers",
-        "safetensors"
-      ],
-      "license": "mit",
-      "last_modified": "2026-10-12",
-      "created_at": "2026-09-10",
-      "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash"
-    },
-    {
-      "id": "orcarouter/Qwen3.8-Flash-Next-Uncensored-GGUF",
-      "author": "orcarouter",
-      "name": "Qwen3.8-Flash-Next-Uncensored-GGUF",
-      "likes": 844,
-      "trending_score": 153,
-      "downloads": 653893,
-      "pipeline_tag": "image-text-to-text",
-      "tags": [
-        "gguf",
-        "abliterated",
-        "uncensored",
-        "qwen",
-        "qwen3.8",
-        "qwen4",
-        "flash-next",
-        "moe"
-      ],
-      "library": [
-        "gguf"
-      ],
-      "license": "apache-2.0",
-      "last_modified": "2026-10-12",
-      "created_at": "2026-08-26",
-      "url": "https://huggingface.co/orcarouter/Qwen3.8-Flash-Next-Uncensored-GGUF"
-    },
-    {
-      "id": "Qwen/Qwen3.8-Flash-Next",
-      "author": "Qwen",
-      "name": "Qwen3.8-Flash-Next",
-      "likes": 6179,
-      "trending_score": 148,
-      "downloads": 2065917,
-      "pipeline_tag": "image-text-to-text",
-      "tags": [
-        "transformers",
-        "safetensors",
-        "qwen4_exp",
-        "image-text-to-text",
-        "conversational",
-        "eval-results",
-        "endpoints_compatible"
-      ],
-      "library": [
-        "transformers",
-        "safetensors"
-      ],
-      "license": "other",
-      "last_modified": "2026-08-27",
-      "created_at": "2026-08-24",
-      "url": "https://huggingface.co/Qwen/Qwen3.8-Flash-Next"
-    },
-    {
-      "id": "unsloth/Qwen3.8-27B-GGUF",
-      "author": "unsloth",
-      "name": "Qwen3.8-27B-GGUF",
-      "likes": 5078,
-      "trending_score": 141,
-      "downloads": 6650349,
+      "id": "Comfy-Org/Qwen-Image-2.1",
+      "author": "Comfy-Org",
+      "name": "Qwen-Image-2.1",
+      "likes": 1116,
+      "trending_score": 131,
+      "downloads": 9798941,
       "pipeline_tag": "",
       "tags": [
-        "gguf",
-        "qwen3_5",
-        "unsloth",
-        "endpoints_compatible",
-        "imatrix",
-        "conversational"
+        "diffusion-single-file",
+        "comfyui"
       ],
-      "library": [
-        "gguf"
-      ],
-      "license": "apache-2.0",
-      "last_modified": "2026-08-20",
-      "created_at": "2026-08-13",
-      "url": "https://huggingface.co/unsloth/Qwen3.8-27B-GGUF"
-    },
-    {
-      "id": "ISTA-DASLab/Qwen3.8-27B-GSQ-RCO-GGUF",
-      "author": "ISTA-DASLab",
-      "name": "Qwen3.8-27B-GSQ-RCO-GGUF",
-      "likes": 2192,
-      "trending_score": 140,
-      "downloads": 1472139,
-      "pipeline_tag": "image-text-to-text",
-      "tags": [
-        "gguf",
-        "gsq",
-        "rco",
-        "quantization",
-        "mixed-precision",
-        "ist-daslab",
-        "multimodal",
-        "vision"
-      ],
-      "library": [
-        "gguf"
-      ],
-      "license": "apache-2.0",
-      "last_modified": "2026-09-02",
-      "created_at": "2026-08-28",
-      "url": "https://huggingface.co/ISTA-DASLab/Qwen3.8-27B-GSQ-RCO-GGUF"
+      "library": [],
+      "license": "other",
+      "last_modified": "2026-10-13",
+      "created_at": "2026-09-15",
+      "url": "https://huggingface.co/Comfy-Org/Qwen-Image-2.1"
     },
     {
       "id": "prism-ml/Ternary-Bonsai-2-27B-gguf",
       "author": "prism-ml",
       "name": "Ternary-Bonsai-2-27B-gguf",
-      "likes": 2679,
-      "trending_score": 140,
-      "downloads": 4686252,
+      "likes": 2694,
+      "trending_score": 129,
+      "downloads": 4786442,
       "pipeline_tag": "text-generation",
       "tags": [
         "llama.cpp",
@@ -1822,100 +1844,82 @@
       "url": "https://huggingface.co/prism-ml/Ternary-Bonsai-2-27B-gguf"
     },
     {
-      "id": "dealignai/DeepSeek-V4.1-Flash-UNCENSORED-FP8",
-      "author": "dealignai",
-      "name": "DeepSeek-V4.1-Flash-UNCENSORED-FP8",
-      "likes": 612,
-      "trending_score": 139,
-      "downloads": 78622,
+      "id": "HauhauCS/Qwen3.8-27B-Uncensored-HauhauCS-Aggressive-MTP-GGUF",
+      "author": "HauhauCS",
+      "name": "Qwen3.8-27B-Uncensored-HauhauCS-Aggressive-MTP-GGUF",
+      "likes": 1829,
+      "trending_score": 128,
+      "downloads": 2349014,
       "pipeline_tag": "image-text-to-text",
       "tags": [
-        "transformers",
-        "safetensors",
-        "deepseek_v41",
-        "text-generation",
-        "deepseek",
-        "deepseek-v4.1",
-        "abliterated",
-        "uncensored"
+        "gguf",
+        "uncensored",
+        "qwen3.8",
+        "multimodal",
+        "vision",
+        "mtp",
+        "speculative-decoding",
+        "fastmtp"
       ],
       "library": [
-        "transformers",
+        "gguf"
+      ],
+      "license": "apache-2.0",
+      "last_modified": "2026-08-17",
+      "created_at": "2026-08-17",
+      "url": "https://huggingface.co/HauhauCS/Qwen3.8-27B-Uncensored-HauhauCS-Aggressive-MTP-GGUF"
+    },
+    {
+      "id": "ISTA-DASLab/Qwen3.8-27B-GSQ-RCO-GGUF",
+      "author": "ISTA-DASLab",
+      "name": "Qwen3.8-27B-GSQ-RCO-GGUF",
+      "likes": 2203,
+      "trending_score": 127,
+      "downloads": 1453035,
+      "pipeline_tag": "image-text-to-text",
+      "tags": [
+        "gguf",
+        "gsq",
+        "rco",
+        "quantization",
+        "mixed-precision",
+        "ist-daslab",
+        "multimodal",
+        "vision"
+      ],
+      "library": [
+        "gguf"
+      ],
+      "license": "apache-2.0",
+      "last_modified": "2026-09-02",
+      "created_at": "2026-08-28",
+      "url": "https://huggingface.co/ISTA-DASLab/Qwen3.8-27B-GSQ-RCO-GGUF"
+    },
+    {
+      "id": "autotrust/GLM5.3-Flash-E192-DGX-Spark",
+      "author": "autotrust",
+      "name": "GLM5.3-Flash-E192-DGX-Spark",
+      "likes": 177,
+      "trending_score": 123,
+      "downloads": 6016,
+      "pipeline_tag": "image-text-to-text",
+      "tags": [
+        "vllm",
+        "safetensors",
+        "glm5_next",
+        "autotrust",
+        "moe",
+        "nvfp4",
+        "modelopt",
+        "dgx-spark"
+      ],
+      "library": [
         "safetensors"
       ],
       "license": "mit",
-      "last_modified": "2026-09-11",
-      "created_at": "2026-09-10",
-      "url": "https://huggingface.co/dealignai/DeepSeek-V4.1-Flash-UNCENSORED-FP8"
-    },
-    {
-      "id": "vllm-sr/d3",
-      "author": "vllm-sr",
-      "name": "d3",
-      "likes": 143,
-      "trending_score": 138,
-      "downloads": 1156,
-      "pipeline_tag": "zero-shot-classification",
-      "tags": [
-        "transformers",
-        "safetensors",
-        "qwen3_5",
-        "feature-extraction",
-        "zero-shot-classification",
-        "decision-model",
-        "classification",
-        "system-one"
-      ],
-      "library": [
-        "transformers",
-        "safetensors"
-      ],
-      "license": "apache-2.0",
-      "last_modified": "2026-10-13",
-      "created_at": "2026-10-10",
-      "url": "https://huggingface.co/vllm-sr/d3"
-    },
-    {
-      "id": "Comfy-Org/Qwen-Image-2.1",
-      "author": "Comfy-Org",
-      "name": "Qwen-Image-2.1",
-      "likes": 1104,
-      "trending_score": 130,
-      "downloads": 9400716,
-      "pipeline_tag": "",
-      "tags": [
-        "diffusion-single-file",
-        "comfyui"
-      ],
-      "library": [],
-      "license": "other",
-      "last_modified": "2026-10-13",
-      "created_at": "2026-09-15",
-      "url": "https://huggingface.co/Comfy-Org/Qwen-Image-2.1"
-    },
-    {
-      "id": "pyannote/speaker-diarization-community-1",
-      "author": "pyannote",
-      "name": "speaker-diarization-community-1",
-      "likes": 2859,
-      "trending_score": 128,
-      "downloads": 5444861,
-      "pipeline_tag": "automatic-speech-recognition",
-      "tags": [
-        "pyannote-audio",
-        "pyannote",
-        "pyannote-audio-pipeline",
-        "audio",
-        "voice",
-        "speech",
-        "speaker",
-        "speaker-diarization"
-      ],
-      "library": [],
-      "license": "cc-by-4.0",
-      "last_modified": "2025-09-29",
-      "created_at": "2025-04-15",
-      "url": "https://huggingface.co/pyannote/speaker-diarization-community-1"
+      "last_modified": "2026-10-11",
+      "created_at": "2026-10-09",
+      "url": "https://huggingface.co/autotrust/GLM5.3-Flash-E192-DGX-Spark"
     }
   ],
   "spaces": [
@@ -1923,8 +1927,8 @@
       "id": "Pepe104/MiniMax-H3-Turbo-Lora-UNCENSORED",
       "author": "Pepe104",
       "name": "MiniMax-H3-Turbo-Lora-UNCENSORED",
-      "likes": 1514,
-      "trending_score": 245,
+      "likes": 1562,
+      "trending_score": 243,
       "downloads": 0,
       "pipeline_tag": "",
       "tags": [
@@ -1940,8 +1944,8 @@
       "id": "multimodalart/jev-decision-index",
       "author": "multimodalart",
       "name": "jev-decision-index",
-      "likes": 633,
-      "trending_score": 145,
+      "likes": 658,
+      "trending_score": 136,
       "downloads": 0,
       "pipeline_tag": "",
       "tags": [
@@ -1949,7 +1953,7 @@
       ],
       "library": [],
       "license": "",
-      "last_modified": "2026-10-13",
+      "last_modified": "2026-10-14",
       "created_at": "2026-09-17",
       "url": "https://huggingface.co/spaces/multimodalart/jev-decision-index"
     },
@@ -1957,8 +1961,8 @@
       "id": "kulkas2pintu/wan777",
       "author": "kulkas2pintu",
       "name": "wan777",
-      "likes": 504,
-      "trending_score": 119,
+      "likes": 535,
+      "trending_score": 120,
       "downloads": 0,
       "pipeline_tag": "",
       "tags": [
@@ -1975,8 +1979,8 @@
       "id": "hugging-apps/bfs-best-face-swap",
       "author": "hugging-apps",
       "name": "bfs-best-face-swap",
-      "likes": 217,
-      "trending_score": 100,
+      "likes": 249,
+      "trending_score": 101,
       "downloads": 0,
       "pipeline_tag": "",
       "tags": [
@@ -1990,53 +1994,11 @@
       "url": "https://huggingface.co/spaces/hugging-apps/bfs-best-face-swap"
     },
     {
-      "id": "tardellirs/model-pulse",
-      "author": "tardellirs",
-      "name": "model-pulse",
-      "likes": 205,
-      "trending_score": 88,
-      "downloads": 0,
-      "pipeline_tag": "",
-      "tags": [
-        "static",
-        "downloads",
-        "statistics",
-        "trends",
-        "leaderboard",
-        "analytics",
-        "hub-stats",
-        "model-downloads"
-      ],
-      "library": [],
-      "license": "",
-      "last_modified": "2026-10-14",
-      "created_at": "2026-10-03",
-      "url": "https://huggingface.co/spaces/tardellirs/model-pulse"
-    },
-    {
-      "id": "arudradey/qwen-image-2.1-uncensored-aio-loras",
-      "author": "arudradey",
-      "name": "qwen-image-2.1-uncensored-aio-loras",
-      "likes": 284,
-      "trending_score": 82,
-      "downloads": 0,
-      "pipeline_tag": "",
-      "tags": [
-        "gradio",
-        "mcp-server"
-      ],
-      "library": [],
-      "license": "",
-      "last_modified": "2026-09-26",
-      "created_at": "2026-09-26",
-      "url": "https://huggingface.co/spaces/arudradey/qwen-image-2.1-uncensored-aio-loras"
-    },
-    {
       "id": "Viggle/Qwen-Image-2.1-viggle-turbo",
       "author": "Viggle",
       "name": "Qwen-Image-2.1-viggle-turbo",
-      "likes": 294,
-      "trending_score": 81,
+      "likes": 310,
+      "trending_score": 87,
       "downloads": 0,
       "pipeline_tag": "",
       "tags": [
@@ -2052,11 +2014,123 @@
       "url": "https://huggingface.co/spaces/Viggle/Qwen-Image-2.1-viggle-turbo"
     },
     {
+      "id": "tardellirs/model-pulse",
+      "author": "tardellirs",
+      "name": "model-pulse",
+      "likes": 213,
+      "trending_score": 76,
+      "downloads": 0,
+      "pipeline_tag": "",
+      "tags": [
+        "static",
+        "downloads",
+        "statistics",
+        "trends",
+        "leaderboard",
+        "analytics",
+        "hub-stats",
+        "model-downloads"
+      ],
+      "library": [],
+      "license": "",
+      "last_modified": "2026-10-15",
+      "created_at": "2026-10-03",
+      "url": "https://huggingface.co/spaces/tardellirs/model-pulse"
+    },
+    {
+      "id": "arudradey/qwen-image-2.1-uncensored-aio-loras",
+      "author": "arudradey",
+      "name": "qwen-image-2.1-uncensored-aio-loras",
+      "likes": 287,
+      "trending_score": 64,
+      "downloads": 0,
+      "pipeline_tag": "",
+      "tags": [
+        "gradio",
+        "mcp-server"
+      ],
+      "library": [],
+      "license": "",
+      "last_modified": "2026-09-26",
+      "created_at": "2026-09-26",
+      "url": "https://huggingface.co/spaces/arudradey/qwen-image-2.1-uncensored-aio-loras"
+    },
+    {
+      "id": "00000tt/LTX-2.3-10Eros",
+      "author": "00000tt",
+      "name": "LTX-2.3-10Eros",
+      "likes": 233,
+      "trending_score": 56,
+      "downloads": 0,
+      "pipeline_tag": "",
+      "tags": [
+        "gradio"
+      ],
+      "library": [],
+      "license": "",
+      "last_modified": "2026-08-17",
+      "created_at": "2026-07-31",
+      "url": "https://huggingface.co/spaces/00000tt/LTX-2.3-10Eros"
+    },
+    {
+      "id": "vclnhihihi/qwen-image-21-uncensored",
+      "author": "vclnhihihi",
+      "name": "qwen-image-21-uncensored",
+      "likes": 71,
+      "trending_score": 55,
+      "downloads": 0,
+      "pipeline_tag": "",
+      "tags": [
+        "gradio",
+        "mcp-server"
+      ],
+      "library": [],
+      "license": "",
+      "last_modified": "2026-09-29",
+      "created_at": "2026-09-29",
+      "url": "https://huggingface.co/spaces/vclnhihihi/qwen-image-21-uncensored"
+    },
+    {
+      "id": "arudradey/qwen-image-2.1-uncensored-gguf",
+      "author": "arudradey",
+      "name": "qwen-image-2.1-uncensored-gguf",
+      "likes": 418,
+      "trending_score": 54,
+      "downloads": 0,
+      "pipeline_tag": "",
+      "tags": [
+        "gradio",
+        "mcp-server"
+      ],
+      "library": [],
+      "license": "",
+      "last_modified": "2026-09-26",
+      "created_at": "2026-09-22",
+      "url": "https://huggingface.co/spaces/arudradey/qwen-image-2.1-uncensored-gguf"
+    },
+    {
+      "id": "Aura1in/Krea-2-Turbo_v2",
+      "author": "Aura1in",
+      "name": "Krea-2-Turbo_v2",
+      "likes": 102,
+      "trending_score": 54,
+      "downloads": 0,
+      "pipeline_tag": "",
+      "tags": [
+        "gradio"
+      ],
+      "library": [],
+      "license": "",
+      "last_modified": "2026-09-14",
+      "created_at": "2026-10-05",
+      "url": "https://huggingface.co/spaces/Aura1in/Krea-2-Turbo_v2"
+    },
+    {
       "id": "FineEnvs/multi-harness-rl",
       "author": "FineEnvs",
       "name": "multi-harness-rl",
-      "likes": 247,
-      "trending_score": 66,
+      "likes": 252,
+      "trending_score": 53,
       "downloads": 0,
       "pipeline_tag": "",
       "tags": [
@@ -2076,29 +2150,11 @@
       "url": "https://huggingface.co/spaces/FineEnvs/multi-harness-rl"
     },
     {
-      "id": "arudradey/qwen-image-2.1-uncensored-gguf",
-      "author": "arudradey",
-      "name": "qwen-image-2.1-uncensored-gguf",
-      "likes": 416,
-      "trending_score": 66,
-      "downloads": 0,
-      "pipeline_tag": "",
-      "tags": [
-        "gradio",
-        "mcp-server"
-      ],
-      "library": [],
-      "license": "",
-      "last_modified": "2026-09-26",
-      "created_at": "2026-09-22",
-      "url": "https://huggingface.co/spaces/arudradey/qwen-image-2.1-uncensored-gguf"
-    },
-    {
-      "id": "00000tt/LTX-2.3-10Eros",
-      "author": "00000tt",
-      "name": "LTX-2.3-10Eros",
-      "likes": 223,
-      "trending_score": 61,
+      "id": "AST-1320/Qwen-2511-Plus-Flux.2-klein-9B",
+      "author": "AST-1320",
+      "name": "Qwen-2511-Plus-Flux.2-klein-9B",
+      "likes": 92,
+      "trending_score": 51,
       "downloads": 0,
       "pipeline_tag": "",
       "tags": [
@@ -2106,16 +2162,33 @@
       ],
       "library": [],
       "license": "",
-      "last_modified": "2026-08-17",
-      "created_at": "2026-07-31",
-      "url": "https://huggingface.co/spaces/00000tt/LTX-2.3-10Eros"
+      "last_modified": "2026-10-12",
+      "created_at": "2026-09-19",
+      "url": "https://huggingface.co/spaces/AST-1320/Qwen-2511-Plus-Flux.2-klein-9B"
+    },
+    {
+      "id": "lightonai/LightOnOCR-3-Demo",
+      "author": "lightonai",
+      "name": "LightOnOCR-3-Demo",
+      "likes": 50,
+      "trending_score": 48,
+      "downloads": 0,
+      "pipeline_tag": "",
+      "tags": [
+        "gradio"
+      ],
+      "library": [],
+      "license": "",
+      "last_modified": "2026-10-08",
+      "created_at": "2026-10-08",
+      "url": "https://huggingface.co/spaces/lightonai/LightOnOCR-3-Demo"
     },
     {
       "id": "aet256/Qwen-Image-Edit-Rapid-AIO-Loras-Experimental",
       "author": "aet256",
       "name": "Qwen-Image-Edit-Rapid-AIO-Loras-Experimental",
-      "likes": 449,
-      "trending_score": 56,
+      "likes": 456,
+      "trending_score": 47,
       "downloads": 0,
       "pipeline_tag": "",
       "tags": [
@@ -2129,218 +2202,11 @@
       "url": "https://huggingface.co/spaces/aet256/Qwen-Image-Edit-Rapid-AIO-Loras-Experimental"
     },
     {
-      "id": "Aura1in/Krea-2-Turbo_v2",
-      "author": "Aura1in",
-      "name": "Krea-2-Turbo_v2",
-      "likes": 91,
-      "trending_score": 50,
-      "downloads": 0,
-      "pipeline_tag": "",
-      "tags": [
-        "gradio"
-      ],
-      "library": [],
-      "license": "",
-      "last_modified": "2026-09-14",
-      "created_at": "2026-10-05",
-      "url": "https://huggingface.co/spaces/Aura1in/Krea-2-Turbo_v2"
-    },
-    {
-      "id": "AST-1320/Qwen-2511-Plus-Flux.2-klein-9B",
-      "author": "AST-1320",
-      "name": "Qwen-2511-Plus-Flux.2-klein-9B",
-      "likes": 83,
-      "trending_score": 47,
-      "downloads": 0,
-      "pipeline_tag": "",
-      "tags": [
-        "gradio"
-      ],
-      "library": [],
-      "license": "",
-      "last_modified": "2026-10-12",
-      "created_at": "2026-09-19",
-      "url": "https://huggingface.co/spaces/AST-1320/Qwen-2511-Plus-Flux.2-klein-9B"
-    },
-    {
-      "id": "hugging-apps/minimax-h3-character-swap-lora",
-      "author": "hugging-apps",
-      "name": "minimax-h3-character-swap-lora",
-      "likes": 113,
-      "trending_score": 43,
-      "downloads": 0,
-      "pipeline_tag": "",
-      "tags": [
-        "gradio"
-      ],
-      "library": [],
-      "license": "",
-      "last_modified": "2026-09-29",
-      "created_at": "2026-09-25",
-      "url": "https://huggingface.co/spaces/hugging-apps/minimax-h3-character-swap-lora"
-    },
-    {
-      "id": "lightonai/LightOnOCR-3-Demo",
-      "author": "lightonai",
-      "name": "LightOnOCR-3-Demo",
-      "likes": 45,
-      "trending_score": 43,
-      "downloads": 0,
-      "pipeline_tag": "",
-      "tags": [
-        "gradio"
-      ],
-      "library": [],
-      "license": "",
-      "last_modified": "2026-10-08",
-      "created_at": "2026-10-08",
-      "url": "https://huggingface.co/spaces/lightonai/LightOnOCR-3-Demo"
-    },
-    {
-      "id": "vamo455/Omni-videos-custom-auto_prompt_high-quality",
-      "author": "vamo455",
-      "name": "Omni-videos-custom-auto_prompt_high-quality",
-      "likes": 237,
-      "trending_score": 40,
-      "downloads": 0,
-      "pipeline_tag": "",
-      "tags": [
-        "gradio"
-      ],
-      "library": [],
-      "license": "",
-      "last_modified": "2026-08-30",
-      "created_at": "2026-09-08",
-      "url": "https://huggingface.co/spaces/vamo455/Omni-videos-custom-auto_prompt_high-quality"
-    },
-    {
-      "id": "vclnhihihi/qwen-image-21-uncensored",
-      "author": "vclnhihihi",
-      "name": "qwen-image-21-uncensored",
-      "likes": 50,
-      "trending_score": 39,
-      "downloads": 0,
-      "pipeline_tag": "",
-      "tags": [
-        "gradio",
-        "mcp-server"
-      ],
-      "library": [],
-      "license": "",
-      "last_modified": "2026-09-29",
-      "created_at": "2026-09-29",
-      "url": "https://huggingface.co/spaces/vclnhihihi/qwen-image-21-uncensored"
-    },
-    {
-      "id": "kulkas2pintu/QWEN_EDIT_IMAGE",
-      "author": "kulkas2pintu",
-      "name": "QWEN_EDIT_IMAGE",
-      "likes": 692,
-      "trending_score": 36,
-      "downloads": 0,
-      "pipeline_tag": "",
-      "tags": [
-        "gradio",
-        "mcp-server"
-      ],
-      "library": [],
-      "license": "",
-      "last_modified": "2026-09-25",
-      "created_at": "2026-07-29",
-      "url": "https://huggingface.co/spaces/kulkas2pintu/QWEN_EDIT_IMAGE"
-    },
-    {
-      "id": "webml-community/embeddinggemma-2-webgpu",
-      "author": "webml-community",
-      "name": "embeddinggemma-2-webgpu",
-      "likes": 54,
-      "trending_score": 36,
-      "downloads": 0,
-      "pipeline_tag": "",
-      "tags": [
-        "static"
-      ],
-      "library": [],
-      "license": "",
-      "last_modified": "2026-10-06",
-      "created_at": "2026-10-06",
-      "url": "https://huggingface.co/spaces/webml-community/embeddinggemma-2-webgpu"
-    },
-    {
-      "id": "sahilmahendrakar/paradee",
-      "author": "sahilmahendrakar",
-      "name": "paradee",
-      "likes": 37,
-      "trending_score": 36,
-      "downloads": 0,
-      "pipeline_tag": "",
-      "tags": [
-        "gradio",
-        "mcp-server"
-      ],
-      "library": [],
-      "license": "",
-      "last_modified": "2026-10-07",
-      "created_at": "2026-10-07",
-      "url": "https://huggingface.co/spaces/sahilmahendrakar/paradee"
-    },
-    {
-      "id": "wank3r/minimax-h3",
-      "author": "wank3r",
-      "name": "minimax-h3",
-      "likes": 42,
-      "trending_score": 35,
-      "downloads": 0,
-      "pipeline_tag": "",
-      "tags": [
-        "gradio"
-      ],
-      "library": [],
-      "license": "",
-      "last_modified": "2026-09-12",
-      "created_at": "2026-09-13",
-      "url": "https://huggingface.co/spaces/wank3r/minimax-h3"
-    },
-    {
-      "id": "LiquidAI/system-one-arcade",
-      "author": "LiquidAI",
-      "name": "system-one-arcade",
-      "likes": 34,
-      "trending_score": 34,
-      "downloads": 0,
-      "pipeline_tag": "",
-      "tags": [
-        "docker"
-      ],
-      "library": [],
-      "license": "",
-      "last_modified": "2026-10-09",
-      "created_at": "2026-10-07",
-      "url": "https://huggingface.co/spaces/LiquidAI/system-one-arcade"
-    },
-    {
-      "id": "Qwen/Qwen-Image-2.1",
-      "author": "Qwen",
-      "name": "Qwen-Image-2.1",
-      "likes": 424,
-      "trending_score": 33,
-      "downloads": 0,
-      "pipeline_tag": "",
-      "tags": [
-        "gradio"
-      ],
-      "library": [],
-      "license": "",
-      "last_modified": "2026-09-27",
-      "created_at": "2026-09-20",
-      "url": "https://huggingface.co/spaces/Qwen/Qwen-Image-2.1"
-    },
-    {
       "id": "hugging-apps/qwen-qwen-image-2-1-turbo",
       "author": "hugging-apps",
       "name": "qwen-qwen-image-2-1-turbo",
-      "likes": 40,
-      "trending_score": 33,
+      "likes": 59,
+      "trending_score": 47,
       "downloads": 0,
       "pipeline_tag": "",
       "tags": [
@@ -2354,11 +2220,96 @@
       "url": "https://huggingface.co/spaces/hugging-apps/qwen-qwen-image-2-1-turbo"
     },
     {
+      "id": "wank3r/minimax-h3",
+      "author": "wank3r",
+      "name": "minimax-h3",
+      "likes": 53,
+      "trending_score": 43,
+      "downloads": 0,
+      "pipeline_tag": "",
+      "tags": [
+        "gradio"
+      ],
+      "library": [],
+      "license": "",
+      "last_modified": "2026-09-12",
+      "created_at": "2026-09-13",
+      "url": "https://huggingface.co/spaces/wank3r/minimax-h3"
+    },
+    {
+      "id": "vamo455/Omni-videos-custom-auto_prompt_high-quality",
+      "author": "vamo455",
+      "name": "Omni-videos-custom-auto_prompt_high-quality",
+      "likes": 246,
+      "trending_score": 40,
+      "downloads": 0,
+      "pipeline_tag": "",
+      "tags": [
+        "gradio"
+      ],
+      "library": [],
+      "license": "",
+      "last_modified": "2026-08-30",
+      "created_at": "2026-09-08",
+      "url": "https://huggingface.co/spaces/vamo455/Omni-videos-custom-auto_prompt_high-quality"
+    },
+    {
+      "id": "Qwen/Qwen-Image-2.1",
+      "author": "Qwen",
+      "name": "Qwen-Image-2.1",
+      "likes": 433,
+      "trending_score": 38,
+      "downloads": 0,
+      "pipeline_tag": "",
+      "tags": [
+        "gradio"
+      ],
+      "library": [],
+      "license": "",
+      "last_modified": "2026-09-27",
+      "created_at": "2026-09-20",
+      "url": "https://huggingface.co/spaces/Qwen/Qwen-Image-2.1"
+    },
+    {
+      "id": "pablodawson/minimax-h3-360-orbit",
+      "author": "pablodawson",
+      "name": "minimax-h3-360-orbit",
+      "likes": 65,
+      "trending_score": 35,
+      "downloads": 0,
+      "pipeline_tag": "",
+      "tags": [
+        "gradio"
+      ],
+      "library": [],
+      "license": "",
+      "last_modified": "2026-09-28",
+      "created_at": "2026-09-28",
+      "url": "https://huggingface.co/spaces/pablodawson/minimax-h3-360-orbit"
+    },
+    {
+      "id": "hugging-apps/minimax-h3-character-swap-lora",
+      "author": "hugging-apps",
+      "name": "minimax-h3-character-swap-lora",
+      "likes": 116,
+      "trending_score": 34,
+      "downloads": 0,
+      "pipeline_tag": "",
+      "tags": [
+        "gradio"
+      ],
+      "library": [],
+      "license": "",
+      "last_modified": "2026-09-29",
+      "created_at": "2026-09-25",
+      "url": "https://huggingface.co/spaces/hugging-apps/minimax-h3-character-swap-lora"
+    },
+    {
       "id": "speridlabs/iris-3b",
       "author": "speridlabs",
       "name": "iris-3b",
-      "likes": 32,
-      "trending_score": 31,
+      "likes": 36,
+      "trending_score": 34,
       "downloads": 0,
       "pipeline_tag": "",
       "tags": [
@@ -2371,11 +2322,69 @@
       "url": "https://huggingface.co/spaces/speridlabs/iris-3b"
     },
     {
+      "id": "LiquidAI/system-one-arcade",
+      "author": "LiquidAI",
+      "name": "system-one-arcade",
+      "likes": 40,
+      "trending_score": 33,
+      "downloads": 0,
+      "pipeline_tag": "",
+      "tags": [
+        "docker"
+      ],
+      "library": [],
+      "license": "",
+      "last_modified": "2026-10-09",
+      "created_at": "2026-10-07",
+      "url": "https://huggingface.co/spaces/LiquidAI/system-one-arcade"
+    },
+    {
+      "id": "fishaudio/Drama-3",
+      "author": "fishaudio",
+      "name": "Drama-3",
+      "likes": 33,
+      "trending_score": 33,
+      "downloads": 0,
+      "pipeline_tag": "",
+      "tags": [
+        "gradio",
+        "text-to-speech",
+        "fish-audio",
+        "sglang-omni",
+        "voice-cloning",
+        "voice-design",
+        "streaming"
+      ],
+      "library": [],
+      "license": "",
+      "last_modified": "2026-10-14",
+      "created_at": "2026-10-13",
+      "url": "https://huggingface.co/spaces/fishaudio/Drama-3"
+    },
+    {
+      "id": "kulkas2pintu/QWEN_EDIT_IMAGE",
+      "author": "kulkas2pintu",
+      "name": "QWEN_EDIT_IMAGE",
+      "likes": 696,
+      "trending_score": 32,
+      "downloads": 0,
+      "pipeline_tag": "",
+      "tags": [
+        "gradio",
+        "mcp-server"
+      ],
+      "library": [],
+      "license": "",
+      "last_modified": "2026-09-25",
+      "created_at": "2026-07-29",
+      "url": "https://huggingface.co/spaces/kulkas2pintu/QWEN_EDIT_IMAGE"
+    },
+    {
       "id": "selfit-camera/Omni-Image-Editor",
       "author": "selfit-camera",
       "name": "Omni-Image-Editor",
-      "likes": 2801,
-      "trending_score": 29,
+      "likes": 2804,
+      "trending_score": 28,
       "downloads": 0,
       "pipeline_tag": "",
       "tags": [
@@ -2388,29 +2397,11 @@
       "url": "https://huggingface.co/spaces/selfit-camera/Omni-Image-Editor"
     },
     {
-      "id": "zerogpu-aoti/wan2-2-fp8da-aoti-faster",
-      "author": "zerogpu-aoti",
-      "name": "wan2-2-fp8da-aoti-faster",
-      "likes": 3738,
-      "trending_score": 26,
-      "downloads": 0,
-      "pipeline_tag": "",
-      "tags": [
-        "gradio",
-        "mcp-server"
-      ],
-      "library": [],
-      "license": "",
-      "last_modified": "2026-08-25",
-      "created_at": "2025-07-30",
-      "url": "https://huggingface.co/spaces/zerogpu-aoti/wan2-2-fp8da-aoti-faster"
-    },
-    {
       "id": "pollen-robotics/microduck-arena",
       "author": "pollen-robotics",
       "name": "microduck-arena",
-      "likes": 26,
-      "trending_score": 25,
+      "likes": 28,
+      "trending_score": 27,
       "downloads": 0,
       "pipeline_tag": "",
       "tags": [
@@ -2423,11 +2414,11 @@
       "url": "https://huggingface.co/spaces/pollen-robotics/microduck-arena"
     },
     {
-      "id": "kulkas2pintu/kv-i2v",
-      "author": "kulkas2pintu",
-      "name": "kv-i2v",
-      "likes": 149,
-      "trending_score": 25,
+      "id": "sahilmahendrakar/paradee",
+      "author": "sahilmahendrakar",
+      "name": "paradee",
+      "likes": 42,
+      "trending_score": 27,
       "downloads": 0,
       "pipeline_tag": "",
       "tags": [
@@ -2436,26 +2427,44 @@
       ],
       "library": [],
       "license": "",
-      "last_modified": "2026-10-05",
-      "created_at": "2026-09-18",
-      "url": "https://huggingface.co/spaces/kulkas2pintu/kv-i2v"
+      "last_modified": "2026-10-07",
+      "created_at": "2026-10-07",
+      "url": "https://huggingface.co/spaces/sahilmahendrakar/paradee"
     },
     {
-      "id": "Logolabs/agate-webgpu",
-      "author": "Logolabs",
-      "name": "agate-webgpu",
-      "likes": 51,
-      "trending_score": 25,
+      "id": "Saravutw/WAN2.2_I2V_LIGHTNING_4-8step_custom",
+      "author": "Saravutw",
+      "name": "WAN2.2_I2V_LIGHTNING_4-8step_custom",
+      "likes": 383,
+      "trending_score": 23,
       "downloads": 0,
       "pipeline_tag": "",
       "tags": [
-        "static"
+        "gradio",
+        "mcp-server"
       ],
       "library": [],
       "license": "",
-      "last_modified": "2026-09-29",
-      "created_at": "2026-09-25",
-      "url": "https://huggingface.co/spaces/Logolabs/agate-webgpu"
+      "last_modified": "2026-08-13",
+      "created_at": "2025-12-09",
+      "url": "https://huggingface.co/spaces/Saravutw/WAN2.2_I2V_LIGHTNING_4-8step_custom"
+    },
+    {
+      "id": "hotchpotch/S1MB-leaderboard",
+      "author": "hotchpotch",
+      "name": "S1MB-leaderboard",
+      "likes": 71,
+      "trending_score": 22,
+      "downloads": 0,
+      "pipeline_tag": "",
+      "tags": [
+        "docker"
+      ],
+      "library": [],
+      "license": "",
+      "last_modified": "2026-10-15",
+      "created_at": "2026-09-29",
+      "url": "https://huggingface.co/spaces/hotchpotch/S1MB-leaderboard"
     }
   ],
   "datasets": [
@@ -2463,9 +2472,9 @@
       "id": "datasocial/tiktok-5.6B-videos",
       "author": "datasocial",
       "name": "tiktok-5.6B-videos",
-      "likes": 284,
-      "trending_score": 185,
-      "downloads": 15960,
+      "likes": 299,
+      "trending_score": 159,
+      "downloads": 17164,
       "pipeline_tag": "",
       "tags": [
         "tiktok",
@@ -2480,27 +2489,12 @@
       "url": "https://huggingface.co/datasets/datasocial/tiktok-5.6B-videos"
     },
     {
-      "id": "XiaomiMiMo/MiMo-V2.6-RL-oss",
-      "author": "XiaomiMiMo",
-      "name": "MiMo-V2.6-RL-oss",
-      "likes": 941,
-      "trending_score": 83,
-      "downloads": 132097,
-      "pipeline_tag": "",
-      "tags": [],
-      "library": [],
-      "license": "apache-2.0",
-      "last_modified": "2026-09-26",
-      "created_at": "2026-09-25",
-      "url": "https://huggingface.co/datasets/XiaomiMiMo/MiMo-V2.6-RL-oss"
-    },
-    {
       "id": "FineEnvs/openai-math",
       "author": "FineEnvs",
       "name": "openai-math",
-      "likes": 81,
-      "trending_score": 79,
-      "downloads": 4129,
+      "likes": 86,
+      "trending_score": 83,
+      "downloads": 4873,
       "pipeline_tag": "",
       "tags": [
         "harbor",
@@ -2519,12 +2513,27 @@
       "url": "https://huggingface.co/datasets/FineEnvs/openai-math"
     },
     {
+      "id": "XiaomiMiMo/MiMo-V2.6-RL-oss",
+      "author": "XiaomiMiMo",
+      "name": "MiMo-V2.6-RL-oss",
+      "likes": 948,
+      "trending_score": 75,
+      "downloads": 139303,
+      "pipeline_tag": "",
+      "tags": [],
+      "library": [],
+      "license": "apache-2.0",
+      "last_modified": "2026-09-26",
+      "created_at": "2026-09-25",
+      "url": "https://huggingface.co/datasets/XiaomiMiMo/MiMo-V2.6-RL-oss"
+    },
+    {
       "id": "LightwheelAI/EgoDemo",
       "author": "LightwheelAI",
       "name": "EgoDemo",
-      "likes": 203,
-      "trending_score": 64,
-      "downloads": 61947,
+      "likes": 209,
+      "trending_score": 69,
+      "downloads": 59544,
       "pipeline_tag": "",
       "tags": [
         "video",
@@ -2546,9 +2555,9 @@
       "id": "LightwheelAI/EgoPro",
       "author": "LightwheelAI",
       "name": "EgoPro",
-      "likes": 189,
-      "trending_score": 52,
-      "downloads": 34442,
+      "likes": 193,
+      "trending_score": 53,
+      "downloads": 34466,
       "pipeline_tag": "",
       "tags": [
         "video",
@@ -2570,9 +2579,9 @@
       "id": "MoreThought/Fable-5.1-Max-Reasoning-Filtered-10000x",
       "author": "MoreThought",
       "name": "Fable-5.1-Max-Reasoning-Filtered-10000x",
-      "likes": 326,
-      "trending_score": 44,
-      "downloads": 5515,
+      "likes": 333,
+      "trending_score": 46,
+      "downloads": 5565,
       "pipeline_tag": "",
       "tags": [
         "fable 5.1",
@@ -2591,12 +2600,34 @@
       "url": "https://huggingface.co/datasets/MoreThought/Fable-5.1-Max-Reasoning-Filtered-10000x"
     },
     {
+      "id": "LocalLLaMA/typed-decisions",
+      "author": "LocalLLaMA",
+      "name": "typed-decisions",
+      "likes": 190,
+      "trending_score": 45,
+      "downloads": 45304,
+      "pipeline_tag": "",
+      "tags": [
+        "structured-decisions",
+        "calibration",
+        "probabilistic-classification",
+        "system-one",
+        "workflow-evaluation",
+        "synthetic"
+      ],
+      "library": [],
+      "license": "apache-2.0",
+      "last_modified": "2026-10-14",
+      "created_at": "2026-09-16",
+      "url": "https://huggingface.co/datasets/LocalLLaMA/typed-decisions"
+    },
+    {
       "id": "secemp9/arxiv-complete",
       "author": "secemp9",
       "name": "arxiv-complete",
-      "likes": 681,
-      "trending_score": 44,
-      "downloads": 187249,
+      "likes": 686,
+      "trending_score": 41,
+      "downloads": 196299,
       "pipeline_tag": "",
       "tags": [
         "arxiv",
@@ -2612,34 +2643,34 @@
       "url": "https://huggingface.co/datasets/secemp9/arxiv-complete"
     },
     {
-      "id": "LocalLLaMA/typed-decisions",
-      "author": "LocalLLaMA",
-      "name": "typed-decisions",
-      "likes": 183,
-      "trending_score": 40,
-      "downloads": 43207,
+      "id": "bakrianoo/jabarti-llm-dataset",
+      "author": "bakrianoo",
+      "name": "jabarti-llm-dataset",
+      "likes": 86,
+      "trending_score": 38,
+      "downloads": 2095,
       "pipeline_tag": "",
       "tags": [
-        "structured-decisions",
-        "calibration",
-        "probabilistic-classification",
-        "system-one",
-        "workflow-evaluation",
-        "synthetic"
+        "arabic",
+        "egyptian-history",
+        "bilingual",
+        "llm-training",
+        "from-scratch",
+        "wikipedia"
       ],
       "library": [],
-      "license": "apache-2.0",
-      "last_modified": "2026-10-13",
-      "created_at": "2026-09-16",
-      "url": "https://huggingface.co/datasets/LocalLLaMA/typed-decisions"
+      "license": "cc-by-sa-4.0",
+      "last_modified": "2026-09-23",
+      "created_at": "2026-08-04",
+      "url": "https://huggingface.co/datasets/bakrianoo/jabarti-llm-dataset"
     },
     {
       "id": "nisten/opus5-5-doctor-patient-conversations-all-human-diseases",
       "author": "nisten",
       "name": "opus5-5-doctor-patient-conversations-all-human-diseases",
-      "likes": 316,
-      "trending_score": 40,
-      "downloads": 3717,
+      "likes": 318,
+      "trending_score": 36,
+      "downloads": 3843,
       "pipeline_tag": "",
       "tags": [
         "medical",
@@ -2658,49 +2689,29 @@
       "url": "https://huggingface.co/datasets/nisten/opus5-5-doctor-patient-conversations-all-human-diseases"
     },
     {
-      "id": "espnet/yodas3",
-      "author": "espnet",
-      "name": "yodas3",
-      "likes": 248,
-      "trending_score": 35,
-      "downloads": 280708,
-      "pipeline_tag": "",
-      "tags": [],
-      "library": [],
-      "license": "cc-by-3.0",
-      "last_modified": "2026-10-07",
-      "created_at": "2026-06-19",
-      "url": "https://huggingface.co/datasets/espnet/yodas3"
-    },
-    {
-      "id": "bakrianoo/jabarti-llm-dataset",
-      "author": "bakrianoo",
-      "name": "jabarti-llm-dataset",
-      "likes": 80,
-      "trending_score": 35,
-      "downloads": 1945,
+      "id": "openai/gsm8k",
+      "author": "openai",
+      "name": "gsm8k",
+      "likes": 2000,
+      "trending_score": 32,
+      "downloads": 1015981,
       "pipeline_tag": "",
       "tags": [
-        "arabic",
-        "egyptian-history",
-        "bilingual",
-        "llm-training",
-        "from-scratch",
-        "wikipedia"
+        "math-word-problems"
       ],
       "library": [],
-      "license": "cc-by-sa-4.0",
-      "last_modified": "2026-09-23",
-      "created_at": "2026-08-04",
-      "url": "https://huggingface.co/datasets/bakrianoo/jabarti-llm-dataset"
+      "license": "mit",
+      "last_modified": "2026-03-23",
+      "created_at": "2022-04-12",
+      "url": "https://huggingface.co/datasets/openai/gsm8k"
     },
     {
       "id": "harvardMadsys/freeinference_agentic_trace",
       "author": "harvardMadsys",
       "name": "freeinference_agentic_trace",
-      "likes": 37,
-      "trending_score": 35,
-      "downloads": 1450,
+      "likes": 42,
+      "trending_score": 32,
+      "downloads": 1734,
       "pipeline_tag": "",
       "tags": [
         "agents",
@@ -2716,36 +2727,12 @@
       "url": "https://huggingface.co/datasets/harvardMadsys/freeinference_agentic_trace"
     },
     {
-      "id": "venvoo/china-a-share-l2-level2-limit-order-book-tick-data",
-      "author": "venvoo",
-      "name": "china-a-share-l2-level2-limit-order-book-tick-data",
-      "likes": 260,
-      "trending_score": 33,
-      "downloads": 104325,
-      "pipeline_tag": "",
-      "tags": [
-        "finance",
-        "trading",
-        "stock-market",
-        "china",
-        "a-share",
-        "level-2",
-        "limit-order-book",
-        "tick-data"
-      ],
-      "library": [],
-      "license": "other",
-      "last_modified": "2026-09-30",
-      "created_at": "2026-09-01",
-      "url": "https://huggingface.co/datasets/venvoo/china-a-share-l2-level2-limit-order-book-tick-data"
-    },
-    {
       "id": "Anthropic/hh-rlhf",
       "author": "Anthropic",
       "name": "hh-rlhf",
-      "likes": 2435,
-      "trending_score": 32,
-      "downloads": 30644,
+      "likes": 2440,
+      "trending_score": 30,
+      "downloads": 31366,
       "pipeline_tag": "",
       "tags": [
         "human-feedback"
@@ -2757,68 +2744,12 @@
       "url": "https://huggingface.co/datasets/Anthropic/hh-rlhf"
     },
     {
-      "id": "openai/gsm8k",
-      "author": "openai",
-      "name": "gsm8k",
-      "likes": 1996,
-      "trending_score": 31,
-      "downloads": 1014647,
-      "pipeline_tag": "",
-      "tags": [
-        "math-word-problems"
-      ],
-      "library": [],
-      "license": "mit",
-      "last_modified": "2026-03-23",
-      "created_at": "2022-04-12",
-      "url": "https://huggingface.co/datasets/openai/gsm8k"
-    },
-    {
-      "id": "HuggingFaceFW/fineweb-edu",
-      "author": "HuggingFaceFW",
-      "name": "fineweb-edu",
-      "likes": 1347,
-      "trending_score": 29,
-      "downloads": 381128,
-      "pipeline_tag": "",
-      "tags": [],
-      "library": [],
-      "license": "odc-by",
-      "last_modified": "2025-07-11",
-      "created_at": "2024-05-28",
-      "url": "https://huggingface.co/datasets/HuggingFaceFW/fineweb-edu"
-    },
-    {
-      "id": "HoneyDataV2/Honey-Data-V2",
-      "author": "HoneyDataV2",
-      "name": "Honey-Data-V2",
-      "likes": 28,
-      "trending_score": 28,
-      "downloads": 70671,
-      "pipeline_tag": "",
-      "tags": [
-        "multimodal",
-        "vision-language",
-        "instruction-tuning",
-        "chain-of-thought",
-        "sft",
-        "ocr",
-        "chart",
-        "document"
-      ],
-      "library": [],
-      "license": "other",
-      "last_modified": "2026-10-11",
-      "created_at": "2026-09-21",
-      "url": "https://huggingface.co/datasets/HoneyDataV2/Honey-Data-V2"
-    },
-    {
       "id": "TIGER-Lab/MMLU-Pro",
       "author": "TIGER-Lab",
       "name": "MMLU-Pro",
-      "likes": 565,
-      "trending_score": 27,
-      "downloads": 223940,
+      "likes": 570,
+      "trending_score": 30,
+      "downloads": 226194,
       "pipeline_tag": "",
       "tags": [
         "evaluation"
@@ -2830,12 +2761,27 @@
       "url": "https://huggingface.co/datasets/TIGER-Lab/MMLU-Pro"
     },
     {
+      "id": "HuggingFaceFW/fineweb-edu",
+      "author": "HuggingFaceFW",
+      "name": "fineweb-edu",
+      "likes": 1350,
+      "trending_score": 30,
+      "downloads": 393142,
+      "pipeline_tag": "",
+      "tags": [],
+      "library": [],
+      "license": "odc-by",
+      "last_modified": "2025-07-11",
+      "created_at": "2024-05-28",
+      "url": "https://huggingface.co/datasets/HuggingFaceFW/fineweb-edu"
+    },
+    {
       "id": "moonworks/lunara-art-eval",
       "author": "moonworks",
       "name": "lunara-art-eval",
-      "likes": 37,
-      "trending_score": 26,
-      "downloads": 1040,
+      "likes": 42,
+      "trending_score": 30,
+      "downloads": 1319,
       "pipeline_tag": "",
       "tags": [
         "image",
@@ -2854,96 +2800,51 @@
       "url": "https://huggingface.co/datasets/moonworks/lunara-art-eval"
     },
     {
-      "id": "Lichess/standard-chess-games",
-      "author": "Lichess",
-      "name": "standard-chess-games",
-      "likes": 103,
-      "trending_score": 25,
-      "downloads": 1465298,
-      "pipeline_tag": "",
-      "tags": [
-        "chess",
-        "games",
-        "game",
-        "lichess",
-        "tabular"
-      ],
-      "library": [],
-      "license": "cc0-1.0",
-      "last_modified": "2025-10-16",
-      "created_at": "2024-09-24",
-      "url": "https://huggingface.co/datasets/Lichess/standard-chess-games"
-    },
-    {
-      "id": "openbmb/UltraData-SFT-Agent-2609",
-      "author": "openbmb",
-      "name": "UltraData-SFT-Agent-2609",
-      "likes": 309,
-      "trending_score": 25,
-      "downloads": 25234,
-      "pipeline_tag": "",
-      "tags": [
-        "llm",
-        "sft",
-        "supervised-fine-tuning",
-        "post-training",
-        "agent",
-        "tool-use",
-        "function-calling",
-        "code-agent"
-      ],
-      "library": [],
-      "license": "apache-2.0",
-      "last_modified": "2026-09-06",
-      "created_at": "2026-08-31",
-      "url": "https://huggingface.co/datasets/openbmb/UltraData-SFT-Agent-2609"
-    },
-    {
-      "id": "LightwheelAI/EgoStandard",
-      "author": "LightwheelAI",
-      "name": "EgoStandard",
-      "likes": 252,
-      "trending_score": 24,
-      "downloads": 4659,
-      "pipeline_tag": "",
-      "tags": [
-        "video",
-        "egocentric-video",
-        "embodied-ai",
-        "human-demonstration",
-        "human-pose",
-        "hand-pose",
-        "body-pose",
-        "multimodal"
-      ],
-      "library": [],
-      "license": "other",
-      "last_modified": "2026-10-10",
-      "created_at": "2026-08-07",
-      "url": "https://huggingface.co/datasets/LightwheelAI/EgoStandard"
-    },
-    {
-      "id": "wikimedia/wikipedia",
-      "author": "wikimedia",
-      "name": "wikipedia",
-      "likes": 1677,
-      "trending_score": 23,
-      "downloads": 280417,
+      "id": "espnet/yodas3",
+      "author": "espnet",
+      "name": "yodas3",
+      "likes": 249,
+      "trending_score": 29,
+      "downloads": 297419,
       "pipeline_tag": "",
       "tags": [],
       "library": [],
-      "license": "cc-by-sa-3.0",
-      "last_modified": "2024-01-09",
-      "created_at": "2022-03-02",
-      "url": "https://huggingface.co/datasets/wikimedia/wikipedia"
+      "license": "cc-by-3.0",
+      "last_modified": "2026-10-07",
+      "created_at": "2026-06-19",
+      "url": "https://huggingface.co/datasets/espnet/yodas3"
+    },
+    {
+      "id": "venvoo/china-a-share-l2-level2-limit-order-book-tick-data",
+      "author": "venvoo",
+      "name": "china-a-share-l2-level2-limit-order-book-tick-data",
+      "likes": 266,
+      "trending_score": 28,
+      "downloads": 113487,
+      "pipeline_tag": "",
+      "tags": [
+        "finance",
+        "trading",
+        "stock-market",
+        "china",
+        "a-share",
+        "level-2",
+        "limit-order-book",
+        "tick-data"
+      ],
+      "library": [],
+      "license": "other",
+      "last_modified": "2026-09-30",
+      "created_at": "2026-09-01",
+      "url": "https://huggingface.co/datasets/venvoo/china-a-share-l2-level2-limit-order-book-tick-data"
     },
     {
       "id": "Vyber07/cyber-security",
       "author": "Vyber07",
       "name": "cyber-security",
-      "likes": 150,
-      "trending_score": 23,
-      "downloads": 2727,
+      "likes": 155,
+      "trending_score": 27,
+      "downloads": 2516,
       "pipeline_tag": "",
       "tags": [
         "cybersecurity",
@@ -2962,12 +2863,72 @@
       "url": "https://huggingface.co/datasets/Vyber07/cyber-security"
     },
     {
+      "id": "wikimedia/wikipedia",
+      "author": "wikimedia",
+      "name": "wikipedia",
+      "likes": 1682,
+      "trending_score": 25,
+      "downloads": 285580,
+      "pipeline_tag": "",
+      "tags": [],
+      "library": [],
+      "license": "cc-by-sa-3.0",
+      "last_modified": "2024-01-09",
+      "created_at": "2022-03-02",
+      "url": "https://huggingface.co/datasets/wikimedia/wikipedia"
+    },
+    {
+      "id": "LightwheelAI/EgoStandard",
+      "author": "LightwheelAI",
+      "name": "EgoStandard",
+      "likes": 255,
+      "trending_score": 25,
+      "downloads": 5675,
+      "pipeline_tag": "",
+      "tags": [
+        "video",
+        "egocentric-video",
+        "embodied-ai",
+        "human-demonstration",
+        "human-pose",
+        "hand-pose",
+        "body-pose",
+        "multimodal"
+      ],
+      "library": [],
+      "license": "other",
+      "last_modified": "2026-10-14",
+      "created_at": "2026-08-07",
+      "url": "https://huggingface.co/datasets/LightwheelAI/EgoStandard"
+    },
+    {
+      "id": "Lichess/standard-chess-games",
+      "author": "Lichess",
+      "name": "standard-chess-games",
+      "likes": 108,
+      "trending_score": 24,
+      "downloads": 1463065,
+      "pipeline_tag": "",
+      "tags": [
+        "chess",
+        "games",
+        "game",
+        "lichess",
+        "tabular"
+      ],
+      "library": [],
+      "license": "cc0-1.0",
+      "last_modified": "2025-10-16",
+      "created_at": "2024-09-24",
+      "url": "https://huggingface.co/datasets/Lichess/standard-chess-games"
+    },
+    {
       "id": "docling-project/DeskForge-1M",
       "author": "docling-project",
       "name": "DeskForge-1M",
-      "likes": 42,
+      "likes": 44,
       "trending_score": 23,
-      "downloads": 5905,
+      "downloads": 6131,
       "pipeline_tag": "",
       "tags": [
         "gui",
@@ -2985,12 +2946,36 @@
       "url": "https://huggingface.co/datasets/docling-project/DeskForge-1M"
     },
     {
+      "id": "openbmb/UltraData-SFT-Agent-2609",
+      "author": "openbmb",
+      "name": "UltraData-SFT-Agent-2609",
+      "likes": 312,
+      "trending_score": 23,
+      "downloads": 24569,
+      "pipeline_tag": "",
+      "tags": [
+        "llm",
+        "sft",
+        "supervised-fine-tuning",
+        "post-training",
+        "agent",
+        "tool-use",
+        "function-calling",
+        "code-agent"
+      ],
+      "library": [],
+      "license": "apache-2.0",
+      "last_modified": "2026-09-06",
+      "created_at": "2026-08-31",
+      "url": "https://huggingface.co/datasets/openbmb/UltraData-SFT-Agent-2609"
+    },
+    {
       "id": "witfoo/precinct6-cybersecurity",
       "author": "witfoo",
       "name": "precinct6-cybersecurity",
-      "likes": 64,
+      "likes": 66,
       "trending_score": 22,
-      "downloads": 3511,
+      "downloads": 3594,
       "pipeline_tag": "",
       "tags": [
         "cybersecurity",
@@ -3009,33 +2994,63 @@
       "url": "https://huggingface.co/datasets/witfoo/precinct6-cybersecurity"
     },
     {
-      "id": "aidigestorg/ai-village",
-      "author": "aidigestorg",
-      "name": "ai-village",
-      "likes": 137,
+      "id": "HuggingFaceFW/fineweb",
+      "author": "HuggingFaceFW",
+      "name": "fineweb",
+      "likes": 3665,
       "trending_score": 21,
-      "downloads": 2110,
+      "downloads": 341230,
+      "pipeline_tag": "",
+      "tags": [],
+      "library": [],
+      "license": "odc-by",
+      "last_modified": "2025-07-11",
+      "created_at": "2024-04-18",
+      "url": "https://huggingface.co/datasets/HuggingFaceFW/fineweb"
+    },
+    {
+      "id": "openbmb/UltraData-Stack-v3-L2",
+      "author": "openbmb",
+      "name": "UltraData-Stack-v3-L2",
+      "likes": 26,
+      "trending_score": 21,
+      "downloads": 403,
       "pipeline_tag": "",
       "tags": [
-        "agents",
-        "llm-agents",
-        "computer-use",
-        "ai-safety",
-        "agentic-behavior"
+        "llm",
+        "code",
+        "code-pretraining",
+        "data-selection",
+        "algorithmic-code"
       ],
       "library": [],
-      "license": "other",
-      "last_modified": "2026-10-07",
-      "created_at": "2026-06-05",
-      "url": "https://huggingface.co/datasets/aidigestorg/ai-village"
+      "license": "odc-by",
+      "last_modified": "2026-10-13",
+      "created_at": "2026-09-08",
+      "url": "https://huggingface.co/datasets/openbmb/UltraData-Stack-v3-L2"
+    },
+    {
+      "id": "huggingface/documentation-images",
+      "author": "huggingface",
+      "name": "documentation-images",
+      "likes": 229,
+      "trending_score": 20,
+      "downloads": 3792911,
+      "pipeline_tag": "",
+      "tags": [],
+      "library": [],
+      "license": "cc-by-nc-sa-4.0",
+      "last_modified": "2026-10-14",
+      "created_at": "2022-03-02",
+      "url": "https://huggingface.co/datasets/huggingface/documentation-images"
     },
     {
       "id": "ZefanCai/Open-Jev",
       "author": "ZefanCai",
       "name": "Open-Jev",
-      "likes": 101,
-      "trending_score": 21,
-      "downloads": 6391,
+      "likes": 105,
+      "trending_score": 19,
+      "downloads": 6644,
       "pipeline_tag": "",
       "tags": [
         "open-jev",
@@ -3051,34 +3066,19 @@
       "url": "https://huggingface.co/datasets/ZefanCai/Open-Jev"
     },
     {
-      "id": "HuggingFaceFW/fineweb",
-      "author": "HuggingFaceFW",
-      "name": "fineweb",
-      "likes": 3661,
-      "trending_score": 19,
-      "downloads": 338310,
-      "pipeline_tag": "",
-      "tags": [],
-      "library": [],
-      "license": "odc-by",
-      "last_modified": "2025-07-11",
-      "created_at": "2024-04-18",
-      "url": "https://huggingface.co/datasets/HuggingFaceFW/fineweb"
-    },
-    {
-      "id": "huggingface/documentation-images",
-      "author": "huggingface",
-      "name": "documentation-images",
-      "likes": 226,
+      "id": "roneneldan/TinyStories",
+      "author": "roneneldan",
+      "name": "TinyStories",
+      "likes": 1208,
       "trending_score": 18,
-      "downloads": 2664852,
+      "downloads": 124534,
       "pipeline_tag": "",
       "tags": [],
       "library": [],
-      "license": "cc-by-nc-sa-4.0",
-      "last_modified": "2026-10-12",
-      "created_at": "2022-03-02",
-      "url": "https://huggingface.co/datasets/huggingface/documentation-images"
+      "license": "cdla-sharing-1.0",
+      "last_modified": "2024-08-12",
+      "created_at": "2023-05-12",
+      "url": "https://huggingface.co/datasets/roneneldan/TinyStories"
     }
   ]
 }
