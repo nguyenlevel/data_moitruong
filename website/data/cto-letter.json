@@ -1,37 +1,37 @@
 {
-  "generated_at": "2026-10-15T02:56:29.810427+00:00",
+  "generated_at": "2026-10-16T02:53:08.894145+00:00",
   "week_of": "2026-41",
   "meta": {
     "papers_tracked": 15,
-    "technologies_tracked": 19,
-    "ideas_tracked": 529,
+    "technologies_tracked": 23,
+    "ideas_tracked": 542,
     "repos_tracked": 1,
     "last_research_update": ""
   },
   "accelerating_technologies": [
     {
-      "name": "Vision-Language-Action Models",
-      "description": "Vision-Language-Action Models",
+      "name": "Hierarchical Navigation Runtime",
+      "description": "Hierarchical Navigation Runtime",
       "trend": "rising",
-      "confidence": 0.7,
+      "confidence": 0.8,
       "maturity": "medium",
       "paper_count": 1,
       "signal": "rising"
     },
     {
-      "name": "Code-as-Policy",
-      "description": "Code-as-Policy",
+      "name": "Action Policy",
+      "description": "Action Policy",
       "trend": "rising",
-      "confidence": 0.7,
+      "confidence": 0.8,
       "maturity": "medium",
       "paper_count": 1,
       "signal": "rising"
     },
     {
-      "name": "Agent-as-Policy",
-      "description": "Agent-as-Policy",
+      "name": "Codec Allocation",
+      "description": "Codec Allocation",
       "trend": "rising",
-      "confidence": 0.7,
+      "confidence": 0.8,
       "maturity": "medium",
       "paper_count": 1,
       "signal": "rising"
@@ -59,37 +59,37 @@
       "score": 1943
     },
     {
-      "title": "I launched my first paid Chrome extension: copy text from any image, privately, for a one-time price",
-      "url": "https://reddit.com/r/SideProject/comments/1x62me6/",
-      "revenue_signal": "$4",
+      "title": "I built a LinkedIn auto-apply script. Would you use a web version?",
+      "url": "https://reddit.com/r/SideProject/comments/1x711tq/",
+      "revenue_signal": "$10/mo",
       "source": "reddit",
       "category": "",
-      "business_model": "subscription,one-time",
-      "ai_potential": 40,
+      "business_model": null,
+      "ai_potential": 30,
       "score": 0
     }
   ],
   "hidden_gems": [
     {
-      "technology": "Vision-Language-Action Models",
-      "description": "Vision-Language-Action Models",
-      "confidence": 0.7,
+      "technology": "AI Agents",
+      "description": "AI Agents",
+      "confidence": 0.62,
       "paper_count": 1,
       "related_papers": [
         {
-          "title": "SEAR: Self-Evolving Agentic Robotics",
+          "title": "Long-Horizon-Terminal-Bench: Testing the Limits of Agents on Long-Horizon Terminal Tasks with Dense Reward-Based Grading",
           "url": ""
         }
       ]
     },
     {
-      "technology": "Code-as-Policy",
-      "description": "Code-as-Policy",
-      "confidence": 0.7,
+      "technology": "Long-Horizon Planning",
+      "description": "Long-Horizon Planning",
+      "confidence": 0.62,
       "paper_count": 1,
       "related_papers": [
         {
-          "title": "SEAR: Self-Evolving Agentic Robotics",
+          "title": "Long-Horizon-Terminal-Bench: Testing the Limits of Agents on Long-Horizon Terminal Tasks with Dense Reward-Based Grading",
           "url": ""
         }
       ]
@@ -100,7 +100,7 @@
       "name": "Shubhamsaboo/awesome-llm-apps",
       "url": "https://github.com/Shubhamsaboo/awesome-llm-apps",
       "description": "100+ AI Agents, Agent Skills and RAG Apps - Free and Open Source.",
-      "stars": 141759,
+      "stars": 141897,
       "language": "Python",
       "topics": [
         "agents",
