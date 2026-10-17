@@ -1,37 +1,37 @@
 {
-  "generated_at": "2026-10-16T02:53:08.894145+00:00",
+  "generated_at": "2026-10-17T02:44:47.629207+00:00",
   "week_of": "2026-41",
   "meta": {
     "papers_tracked": 15,
-    "technologies_tracked": 23,
-    "ideas_tracked": 542,
+    "technologies_tracked": 36,
+    "ideas_tracked": 533,
     "repos_tracked": 1,
     "last_research_update": ""
   },
   "accelerating_technologies": [
     {
-      "name": "Hierarchical Navigation Runtime",
-      "description": "Hierarchical Navigation Runtime",
+      "name": "Reinforcement Learning",
+      "description": "Reinforcement Learning",
       "trend": "rising",
-      "confidence": 0.8,
+      "confidence": 0.7,
       "maturity": "medium",
       "paper_count": 1,
       "signal": "rising"
     },
     {
-      "name": "Action Policy",
-      "description": "Action Policy",
+      "name": "Agentic AI",
+      "description": "Agentic AI",
       "trend": "rising",
-      "confidence": 0.8,
+      "confidence": 0.7,
       "maturity": "medium",
       "paper_count": 1,
       "signal": "rising"
     },
     {
-      "name": "Codec Allocation",
-      "description": "Codec Allocation",
+      "name": "Off-Policy Learning",
+      "description": "Off-Policy Learning",
       "trend": "rising",
-      "confidence": 0.8,
+      "confidence": 0.7,
       "maturity": "medium",
       "paper_count": 1,
       "signal": "rising"
@@ -49,6 +49,16 @@
       "score": 727
     },
     {
+      "title": "Why are VCs paying 30–90x ARR for AEO startups when there are already 300+ competitors?",
+      "url": "https://reddit.com/r/SaaS/comments/1x7hfjs/",
+      "revenue_signal": "$2M ARR",
+      "source": "reddit",
+      "category": "",
+      "business_model": null,
+      "ai_potential": 45,
+      "score": 0
+    },
+    {
       "title": "Show HN: Non.io, a Reddit-like platform Ive been working on for the last 4 years",
       "url": "https://non.io",
       "revenue_signal": "$2",
@@ -57,39 +67,29 @@
       "business_model": "subscription,marketplace,ads,freemium",
       "ai_potential": 40,
       "score": 1943
-    },
-    {
-      "title": "I built a LinkedIn auto-apply script. Would you use a web version?",
-      "url": "https://reddit.com/r/SideProject/comments/1x711tq/",
-      "revenue_signal": "$10/mo",
-      "source": "reddit",
-      "category": "",
-      "business_model": null,
-      "ai_potential": 30,
-      "score": 0
     }
   ],
   "hidden_gems": [
     {
-      "technology": "AI Agents",
-      "description": "AI Agents",
+      "technology": "Hierarchical Navigation Runtime",
+      "description": "Hierarchical Navigation Runtime",
       "confidence": 0.62,
       "paper_count": 1,
       "related_papers": [
         {
-          "title": "Long-Horizon-Terminal-Bench: Testing the Limits of Agents on Long-Horizon Terminal Tasks with Dense Reward-Based Grading",
+          "title": "NavGPT-3: Harnessing Context in a Hierarchical Navigation Runtime",
           "url": ""
         }
       ]
     },
     {
-      "technology": "Long-Horizon Planning",
-      "description": "Long-Horizon Planning",
+      "technology": "Action Policy",
+      "description": "Action Policy",
       "confidence": 0.62,
       "paper_count": 1,
       "related_papers": [
         {
-          "title": "Long-Horizon-Terminal-Bench: Testing the Limits of Agents on Long-Horizon Terminal Tasks with Dense Reward-Based Grading",
+          "title": "NavGPT-3: Harnessing Context in a Hierarchical Navigation Runtime",
           "url": ""
         }
       ]
@@ -100,7 +100,7 @@
       "name": "Shubhamsaboo/awesome-llm-apps",
       "url": "https://github.com/Shubhamsaboo/awesome-llm-apps",
       "description": "100+ AI Agents, Agent Skills and RAG Apps - Free and Open Source.",
-      "stars": 141897,
+      "stars": 142033,
       "language": "Python",
       "topics": [
         "agents",
