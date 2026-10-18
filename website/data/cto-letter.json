@@ -1,37 +1,37 @@
 {
-  "generated_at": "2026-10-17T02:44:47.629207+00:00",
-  "week_of": "2026-41",
+  "generated_at": "2026-10-18T02:47:23.915711+00:00",
+  "week_of": "2026-42",
   "meta": {
     "papers_tracked": 15,
-    "technologies_tracked": 36,
+    "technologies_tracked": 35,
     "ideas_tracked": 533,
     "repos_tracked": 1,
     "last_research_update": ""
   },
   "accelerating_technologies": [
     {
-      "name": "Reinforcement Learning",
-      "description": "Reinforcement Learning",
+      "name": "Diffusion Models",
+      "description": "Diffusion Models",
       "trend": "rising",
-      "confidence": 0.7,
+      "confidence": 0.8,
       "maturity": "medium",
       "paper_count": 1,
       "signal": "rising"
     },
     {
-      "name": "Agentic AI",
-      "description": "Agentic AI",
+      "name": "Reinforcement Learning from Human Feedback",
+      "description": "Reinforcement Learning from Human Feedback",
       "trend": "rising",
-      "confidence": 0.7,
+      "confidence": 0.8,
       "maturity": "medium",
       "paper_count": 1,
       "signal": "rising"
     },
     {
-      "name": "Off-Policy Learning",
-      "description": "Off-Policy Learning",
+      "name": "Reward Engineering",
+      "description": "Reward Engineering",
       "trend": "rising",
-      "confidence": 0.7,
+      "confidence": 0.8,
       "maturity": "medium",
       "paper_count": 1,
       "signal": "rising"
@@ -49,16 +49,6 @@
       "score": 727
     },
     {
-      "title": "Why are VCs paying 30–90x ARR for AEO startups when there are already 300+ competitors?",
-      "url": "https://reddit.com/r/SaaS/comments/1x7hfjs/",
-      "revenue_signal": "$2M ARR",
-      "source": "reddit",
-      "category": "",
-      "business_model": null,
-      "ai_potential": 45,
-      "score": 0
-    },
-    {
       "title": "Show HN: Non.io, a Reddit-like platform Ive been working on for the last 4 years",
       "url": "https://non.io",
       "revenue_signal": "$2",
@@ -67,6 +57,16 @@
       "business_model": "subscription,marketplace,ads,freemium",
       "ai_potential": 40,
       "score": 1943
+    },
+    {
+      "title": "Anonymous Slop SaaS",
+      "url": "https://reddit.com/r/SaaS/comments/1x82fhb/",
+      "revenue_signal": "$300",
+      "source": "reddit",
+      "category": "",
+      "business_model": "subscription",
+      "ai_potential": 40,
+      "score": 0
     }
   ],
   "hidden_gems": [
@@ -100,7 +100,7 @@
       "name": "Shubhamsaboo/awesome-llm-apps",
       "url": "https://github.com/Shubhamsaboo/awesome-llm-apps",
       "description": "100+ AI Agents, Agent Skills and RAG Apps - Free and Open Source.",
-      "stars": 142033,
+      "stars": 142143,
       "language": "Python",
       "topics": [
         "agents",

@@ -1,0 +1,36 @@
+{
+  "date": "2026-10-18",
+  "generated_at": "2026-10-18T02:47:23.853176+00:00",
+  "backend": "llm7",
+  "model": "default",
+  "brief": [
+    "BEST BET: productize the template wave — one-click deploy of vetted agent/RAG starters with evals + observability baked in; 100+ templates prove demand, but nobody owns the deploy layer.",
+    "Why now: agents are moving from demos to production and teams want proven patterns over framework lock-in — templates are the neutral wedge before platforms consolidate.",
+    "Revenue path: free templates → hosted playground → paid pro templates + enterprise packs (on-prem RAG, compliance).",
+    "Timing: repo star velocity shows demand peaking; framework vendors could bundle this — ship a 10-template deploy-button MVP in 2 weeks.",
+    "Distribution hack: launch back into the repo's existing audience and recruit contributors as template authors for compounding supply."
+  ],
+  "items": [
+    {
+      "name": "Shubhamsaboo/awesome-llm-apps",
+      "url": "https://github.com/Shubhamsaboo/awesome-llm-apps",
+      "stars": 142143,
+      "category": "Agents & Automation",
+      "delta_7d": 973,
+      "delta_7d_pct": 0.69,
+      "timing": "emerging",
+      "signals": [],
+      "cross_signal": false,
+      "one_liner": "Curated library of 100+ open-source AI agent and RAG templates",
+      "pain_point": "Developers and SMBs copy agent boilerplate but can't productionize it (auth, evals, hosting, monitoring); agencies and indie devs would pay for deployable, maintained versions instead of raw code snippets",
+      "app_ideas": [
+        "One-click hosted agent marketplace: deploy popular templates (email triage, research agent, support bot) with BYO API keys, usage billing, and logs",
+        "Vertical RAG support-bot SaaS: point at Notion/PDF/website docs, get a branded embeddable chat widget with analytics in 10 minutes",
+        "Agent eval dashboard: wrap these templates with tracing, regression tests, and cost tracking so teams can safely ship them to production"
+      ],
+      "monetization": "Freemium hosted templates with usage-based pricing, upselling vertical SaaS for non-technical SMBs; B2B API tier for agencies white-labeling agents",
+      "opportunity": 7,
+      "why_now": "142k stars and steady weekly growth show massive template demand, but the repo is just code lists — production-ready, hosted, monetized versions remain wide open"
+    }
+  ]
+}
