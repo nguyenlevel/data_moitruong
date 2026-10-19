@@ -1,17 +1,17 @@
 {
-  "generated_at": "2026-10-18T02:47:23.915711+00:00",
+  "generated_at": "2026-10-19T03:00:30.609128+00:00",
   "week_of": "2026-42",
   "meta": {
     "papers_tracked": 15,
-    "technologies_tracked": 35,
-    "ideas_tracked": 533,
+    "technologies_tracked": 53,
+    "ideas_tracked": 527,
     "repos_tracked": 1,
     "last_research_update": ""
   },
   "accelerating_technologies": [
     {
-      "name": "Diffusion Models",
-      "description": "Diffusion Models",
+      "name": "Instruction-Conditioned Multimodal Embeddings",
+      "description": "Instruction-Conditioned Multimodal Embeddings",
       "trend": "rising",
       "confidence": 0.8,
       "maturity": "medium",
@@ -19,8 +19,8 @@
       "signal": "rising"
     },
     {
-      "name": "Reinforcement Learning from Human Feedback",
-      "description": "Reinforcement Learning from Human Feedback",
+      "name": "Supervised Contrastive Learning",
+      "description": "Supervised Contrastive Learning",
       "trend": "rising",
       "confidence": 0.8,
       "maturity": "medium",
@@ -28,8 +28,8 @@
       "signal": "rising"
     },
     {
-      "name": "Reward Engineering",
-      "description": "Reward Engineering",
+      "name": "HDBSCAN Clustering",
+      "description": "HDBSCAN Clustering",
       "trend": "rising",
       "confidence": 0.8,
       "maturity": "medium",
@@ -49,6 +49,16 @@
       "score": 727
     },
     {
+      "title": "用 rea skill 去除 x、虎扑、酷安 apk 的广告",
+      "url": "https://www.v2ex.com/t/1249768",
+      "revenue_signal": "6.1-sol 。 先逆向的是 x ，就给 agent 说：看下 apk ，分析消息流中的广告，尝试去掉。 x 最简单，apk 没有加壳 基本上一步到位。 接着下载了 hupu 的 apk ，让 ai 分析，分析后说使用了网易加固，我就又让它分析网易的加固逻辑，它分析了一通破解了 dex 的压缩算法，成功抽取原始 dex 。 后面就是一样的广告分析、去除。最后生成的 apk 安装运行后直接闪退，提示请在官方渠道下载正版 app 。 手机连上电脑后继续让 AI 动态调试，“进一步定位到文件清单回调会读取 assets/nedig.properties 并写入共享拒绝标志” （具体是啥我也不懂），修改之后就正常了。 今天让 AI 分析酷安的 apk ，也是网易加固的。我就让它参考 hupu 文件夹下生成的脚本和文档，迅速就把 dex 抽取出来了。 去除后安装",
+      "source": "v2ex",
+      "category": "share",
+      "business_model": null,
+      "ai_potential": 45,
+      "score": 0
+    },
+    {
       "title": "Show HN: Non.io, a Reddit-like platform Ive been working on for the last 4 years",
       "url": "https://non.io",
       "revenue_signal": "$2",
@@ -57,23 +67,13 @@
       "business_model": "subscription,marketplace,ads,freemium",
       "ai_potential": 40,
       "score": 1943
-    },
-    {
-      "title": "Anonymous Slop SaaS",
-      "url": "https://reddit.com/r/SaaS/comments/1x82fhb/",
-      "revenue_signal": "$300",
-      "source": "reddit",
-      "category": "",
-      "business_model": "subscription",
-      "ai_potential": 40,
-      "score": 0
     }
   ],
   "hidden_gems": [
     {
       "technology": "Hierarchical Navigation Runtime",
       "description": "Hierarchical Navigation Runtime",
-      "confidence": 0.62,
+      "confidence": 0.5700000000000001,
       "paper_count": 1,
       "related_papers": [
         {
@@ -85,7 +85,7 @@
     {
       "technology": "Action Policy",
       "description": "Action Policy",
-      "confidence": 0.62,
+      "confidence": 0.5700000000000001,
       "paper_count": 1,
       "related_papers": [
         {
@@ -100,7 +100,7 @@
       "name": "Shubhamsaboo/awesome-llm-apps",
       "url": "https://github.com/Shubhamsaboo/awesome-llm-apps",
       "description": "100+ AI Agents, Agent Skills and RAG Apps - Free and Open Source.",
-      "stars": 142143,
+      "stars": 142234,
       "language": "Python",
       "topics": [
         "agents",
