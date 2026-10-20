@@ -1,0 +1,36 @@
+{
+  "date": "2026-10-20",
+  "generated_at": "2026-10-20T03:10:23.535748+00:00",
+  "backend": "llm7",
+  "model": "default",
+  "brief": [
+    "Shubhamsaboo/awesome-llm-apps: 100+ open-source AI agents and RAG apps for automation (opp 8, emerging)",
+    "Breakout timing: Q3 2024 as AI agents and RAG apps gain mainstream adoption",
+    "Opportunity: Build a curated, high-quality marketplace for AI agents and RAG apps",
+    "Potential: Monetize through premium listings, partnerships, and enterprise solutions",
+    "Action: Validate demand with a niche audience (e.g., developers, businesses) and iterate"
+  ],
+  "items": [
+    {
+      "name": "Shubhamsaboo/awesome-llm-apps",
+      "url": "https://github.com/Shubhamsaboo/awesome-llm-apps",
+      "stars": 142338,
+      "category": "Agents & Automation",
+      "delta_7d": 891,
+      "delta_7d_pct": 0.63,
+      "timing": "emerging",
+      "signals": [],
+      "cross_signal": false,
+      "one_liner": "100+ open-source AI agents and RAG apps for automation",
+      "pain_point": "Businesses and developers need cost-effective AI automation tools to streamline workflows and reduce manual tasks",
+      "app_ideas": [
+        "AI-powered customer support chatbot using a pre-built agent from the repo",
+        "Automated content moderation tool for social media platforms using RAG apps",
+        "AI-driven sales lead qualification system for small businesses"
+      ],
+      "monetization": "Freemium model with enterprise-grade features available via subscription",
+      "opportunity": 8,
+      "why_now": "Increased demand for AI automation tools due to remote work and digital transformation"
+    }
+  ]
+}

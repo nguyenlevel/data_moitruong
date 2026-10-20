@@ -1,17 +1,17 @@
 {
-  "generated_at": "2026-10-19T03:00:30.609128+00:00",
+  "generated_at": "2026-10-20T03:10:23.591870+00:00",
   "week_of": "2026-42",
   "meta": {
     "papers_tracked": 15,
-    "technologies_tracked": 53,
-    "ideas_tracked": 527,
+    "technologies_tracked": 31,
+    "ideas_tracked": 533,
     "repos_tracked": 1,
     "last_research_update": ""
   },
   "accelerating_technologies": [
     {
-      "name": "Instruction-Conditioned Multimodal Embeddings",
-      "description": "Instruction-Conditioned Multimodal Embeddings",
+      "name": "Vision Transformer",
+      "description": "Vision Transformer",
       "trend": "rising",
       "confidence": 0.8,
       "maturity": "medium",
@@ -19,8 +19,8 @@
       "signal": "rising"
     },
     {
-      "name": "Supervised Contrastive Learning",
-      "description": "Supervised Contrastive Learning",
+      "name": "Self-supervised Learning",
+      "description": "Self-supervised Learning",
       "trend": "rising",
       "confidence": 0.8,
       "maturity": "medium",
@@ -28,8 +28,8 @@
       "signal": "rising"
     },
     {
-      "name": "HDBSCAN Clustering",
-      "description": "HDBSCAN Clustering",
+      "name": "DINO Self-distillation",
+      "description": "DINO Self-distillation",
       "trend": "rising",
       "confidence": 0.8,
       "maturity": "medium",
@@ -38,6 +38,16 @@
     }
   ],
   "startup_ideas_with_revenue": [
+    {
+      "title": "X charges $500 to read 100K posts about your launch. I built a way to do it for $18",
+      "url": "https://reddit.com/r/SaaS/comments/1xa9iu9/",
+      "revenue_signal": "$500",
+      "source": "reddit",
+      "category": "",
+      "business_model": "freemium,physical,api",
+      "ai_potential": 55,
+      "score": 0
+    },
     {
       "title": "Show HN: San Francisco Compute – 512 H100s at <$2/hr for research and startups",
       "url": "https://sfcompute.org/",
@@ -57,39 +67,37 @@
       "business_model": null,
       "ai_potential": 45,
       "score": 0
-    },
-    {
-      "title": "Show HN: Non.io, a Reddit-like platform Ive been working on for the last 4 years",
-      "url": "https://non.io",
-      "revenue_signal": "$2",
-      "source": "hackernews",
-      "category": "",
-      "business_model": "subscription,marketplace,ads,freemium",
-      "ai_potential": 40,
-      "score": 1943
     }
   ],
   "hidden_gems": [
     {
-      "technology": "Hierarchical Navigation Runtime",
-      "description": "Hierarchical Navigation Runtime",
-      "confidence": 0.5700000000000001,
+      "technology": "Multimodal Learning",
+      "description": "Multimodal Learning",
+      "confidence": 0.55,
       "paper_count": 1,
       "related_papers": [
         {
-          "title": "NavGPT-3: Harnessing Context in a Hierarchical Navigation Runtime",
+          "title": "MobileInject: Evaluating Reasoning-to-Action Security of MLLM-Based Mobile Agents under Cross-Modal Consistency Injection",
+          "url": ""
+        },
+        {
+          "title": "Reinforcement Learning-driven Diffusion Models: Language, Vision, and Beyond",
+          "url": ""
+        },
+        {
+          "title": "ME-VLM: A Unified VLM for Embodied Cognition and Agent Coordination",
           "url": ""
         }
       ]
     },
     {
-      "technology": "Action Policy",
-      "description": "Action Policy",
-      "confidence": 0.5700000000000001,
+      "technology": "Cross-Modal Consistency Injection",
+      "description": "Cross-Modal Consistency Injection",
+      "confidence": 0.5,
       "paper_count": 1,
       "related_papers": [
         {
-          "title": "NavGPT-3: Harnessing Context in a Hierarchical Navigation Runtime",
+          "title": "MobileInject: Evaluating Reasoning-to-Action Security of MLLM-Based Mobile Agents under Cross-Modal Consistency Injection",
           "url": ""
         }
       ]
@@ -100,7 +108,7 @@
       "name": "Shubhamsaboo/awesome-llm-apps",
       "url": "https://github.com/Shubhamsaboo/awesome-llm-apps",
       "description": "100+ AI Agents, Agent Skills and RAG Apps - Free and Open Source.",
-      "stars": 142234,
+      "stars": 142338,
       "language": "Python",
       "topics": [
         "agents",
