@@ -1,17 +1,17 @@
 {
-  "generated_at": "2026-10-20T03:10:23.591870+00:00",
+  "generated_at": "2026-10-21T03:05:13.121565+00:00",
   "week_of": "2026-42",
   "meta": {
     "papers_tracked": 15,
-    "technologies_tracked": 31,
-    "ideas_tracked": 533,
+    "technologies_tracked": 29,
+    "ideas_tracked": 528,
     "repos_tracked": 1,
     "last_research_update": ""
   },
   "accelerating_technologies": [
     {
-      "name": "Vision Transformer",
-      "description": "Vision Transformer",
+      "name": "Embodied AI",
+      "description": "Embodied AI",
       "trend": "rising",
       "confidence": 0.8,
       "maturity": "medium",
@@ -19,8 +19,8 @@
       "signal": "rising"
     },
     {
-      "name": "Self-supervised Learning",
-      "description": "Self-supervised Learning",
+      "name": "World Models",
+      "description": "World Models",
       "trend": "rising",
       "confidence": 0.8,
       "maturity": "medium",
@@ -28,8 +28,8 @@
       "signal": "rising"
     },
     {
-      "name": "DINO Self-distillation",
-      "description": "DINO Self-distillation",
+      "name": "Reinforcement Learning",
+      "description": "Reinforcement Learning",
       "trend": "rising",
       "confidence": 0.8,
       "maturity": "medium",
@@ -39,16 +39,6 @@
   ],
   "startup_ideas_with_revenue": [
     {
-      "title": "X charges $500 to read 100K posts about your launch. I built a way to do it for $18",
-      "url": "https://reddit.com/r/SaaS/comments/1xa9iu9/",
-      "revenue_signal": "$500",
-      "source": "reddit",
-      "category": "",
-      "business_model": "freemium,physical,api",
-      "ai_potential": 55,
-      "score": 0
-    },
-    {
       "title": "Show HN: San Francisco Compute – 512 H100s at <$2/hr for research and startups",
       "url": "https://sfcompute.org/",
       "revenue_signal": "$2",
@@ -57,6 +47,16 @@
       "business_model": null,
       "ai_potential": 45,
       "score": 727
+    },
+    {
+      "title": "I Built an OnlyFans Search Engine That Got 50K Users in 30 Days",
+      "url": "https://reddit.com/r/SideProject/comments/1xb8er2/",
+      "revenue_signal": "$7",
+      "source": "reddit",
+      "category": "",
+      "business_model": null,
+      "ai_potential": 45,
+      "score": 0
     },
     {
       "title": "用 rea skill 去除 x、虎扑、酷安 apk 的广告",
@@ -71,33 +71,25 @@
   ],
   "hidden_gems": [
     {
-      "technology": "Multimodal Learning",
-      "description": "Multimodal Learning",
-      "confidence": 0.55,
+      "technology": "Cross-Modal Retrieval",
+      "description": "Cross-Modal Retrieval",
+      "confidence": 0.6,
       "paper_count": 1,
       "related_papers": [
         {
-          "title": "MobileInject: Evaluating Reasoning-to-Action Security of MLLM-Based Mobile Agents under Cross-Modal Consistency Injection",
-          "url": ""
-        },
-        {
-          "title": "Reinforcement Learning-driven Diffusion Models: Language, Vision, and Beyond",
-          "url": ""
-        },
-        {
-          "title": "ME-VLM: A Unified VLM for Embodied Cognition and Agent Coordination",
+          "title": "Text2Loc++: Generalizing 3D Point Cloud Localization from Natural Language",
           "url": ""
         }
       ]
     },
     {
-      "technology": "Cross-Modal Consistency Injection",
-      "description": "Cross-Modal Consistency Injection",
-      "confidence": 0.5,
+      "technology": "Contrastive Learning",
+      "description": "Contrastive Learning",
+      "confidence": 0.6,
       "paper_count": 1,
       "related_papers": [
         {
-          "title": "MobileInject: Evaluating Reasoning-to-Action Security of MLLM-Based Mobile Agents under Cross-Modal Consistency Injection",
+          "title": "Text2Loc++: Generalizing 3D Point Cloud Localization from Natural Language",
           "url": ""
         }
       ]
@@ -108,7 +100,7 @@
       "name": "Shubhamsaboo/awesome-llm-apps",
       "url": "https://github.com/Shubhamsaboo/awesome-llm-apps",
       "description": "100+ AI Agents, Agent Skills and RAG Apps - Free and Open Source.",
-      "stars": 142338,
+      "stars": 142443,
       "language": "Python",
       "topics": [
         "agents",
