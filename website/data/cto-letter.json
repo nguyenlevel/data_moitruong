@@ -1,37 +1,37 @@
 {
-  "generated_at": "2026-10-21T03:05:13.121565+00:00",
+  "generated_at": "2026-10-22T03:03:20.910859+00:00",
   "week_of": "2026-42",
   "meta": {
     "papers_tracked": 15,
-    "technologies_tracked": 29,
+    "technologies_tracked": 24,
     "ideas_tracked": 528,
     "repos_tracked": 1,
     "last_research_update": ""
   },
   "accelerating_technologies": [
     {
-      "name": "Embodied AI",
-      "description": "Embodied AI",
+      "name": "Contrastive Learning",
+      "description": "Contrastive Learning",
       "trend": "rising",
-      "confidence": 0.8,
+      "confidence": 0.7,
       "maturity": "medium",
       "paper_count": 1,
       "signal": "rising"
     },
     {
-      "name": "World Models",
-      "description": "World Models",
+      "name": "Multimodal Learning",
+      "description": "Multimodal Learning",
       "trend": "rising",
-      "confidence": 0.8,
+      "confidence": 0.7,
       "maturity": "medium",
       "paper_count": 1,
       "signal": "rising"
     },
     {
-      "name": "Reinforcement Learning",
-      "description": "Reinforcement Learning",
+      "name": "Adversarial Training",
+      "description": "Adversarial Training",
       "trend": "rising",
-      "confidence": 0.8,
+      "confidence": 0.7,
       "maturity": "medium",
       "paper_count": 1,
       "signal": "rising"
@@ -71,25 +71,25 @@
   ],
   "hidden_gems": [
     {
-      "technology": "Cross-Modal Retrieval",
-      "description": "Cross-Modal Retrieval",
-      "confidence": 0.6,
+      "technology": "Embodied AI",
+      "description": "Embodied AI",
+      "confidence": 0.62,
       "paper_count": 1,
       "related_papers": [
         {
-          "title": "Text2Loc++: Generalizing 3D Point Cloud Localization from Natural Language",
+          "title": "EmbodiedWorld-200K: Toward Embodied World Agents via Embodied-Planning Dataset and Interactive World Models",
           "url": ""
         }
       ]
     },
     {
-      "technology": "Contrastive Learning",
-      "description": "Contrastive Learning",
-      "confidence": 0.6,
+      "technology": "World Models",
+      "description": "World Models",
+      "confidence": 0.62,
       "paper_count": 1,
       "related_papers": [
         {
-          "title": "Text2Loc++: Generalizing 3D Point Cloud Localization from Natural Language",
+          "title": "EmbodiedWorld-200K: Toward Embodied World Agents via Embodied-Planning Dataset and Interactive World Models",
           "url": ""
         }
       ]
@@ -100,7 +100,7 @@
       "name": "Shubhamsaboo/awesome-llm-apps",
       "url": "https://github.com/Shubhamsaboo/awesome-llm-apps",
       "description": "100+ AI Agents, Agent Skills and RAG Apps - Free and Open Source.",
-      "stars": 142443,
+      "stars": 142538,
       "language": "Python",
       "topics": [
         "agents",
