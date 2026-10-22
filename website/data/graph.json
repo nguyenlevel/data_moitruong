@@ -1,6 +1,335 @@
 {
-  "updated_at": "2026-10-21T10:31:28.031681+00:00",
+  "updated_at": "2026-10-22T10:25:01.883056+00:00",
   "nodes": [
+    {
+      "id": "paper:2610.26887",
+      "type": "paper",
+      "label": "Navalia: Advancing Cowork Agents through Verifiable Task Synthesis and Long-Hori",
+      "href": "",
+      "confidence": 0.78
+    },
+    {
+      "id": "tech:LLM Agents",
+      "type": "tech",
+      "label": "LLM Agents",
+      "href": "technologies.html?q=LLM Agents",
+      "confidence": 0.7,
+      "maturity": "medium",
+      "trend": "rising"
+    },
+    {
+      "id": "tech:Cowork Agents",
+      "type": "tech",
+      "label": "Cowork Agents",
+      "href": "technologies.html?q=Cowork Agents",
+      "confidence": 0.7,
+      "maturity": "medium",
+      "trend": "rising"
+    },
+    {
+      "id": "tech:Verifiable Task Synthesis",
+      "type": "tech",
+      "label": "Verifiable Task Synthesis",
+      "href": "technologies.html?q=Verifiable Task Synthesis",
+      "confidence": 0.7,
+      "maturity": "medium",
+      "trend": "rising"
+    },
+    {
+      "id": "tech:Long-Horizon Post-Training",
+      "type": "tech",
+      "label": "Long-Horizon Post-Training",
+      "href": "technologies.html?q=Long-Horizon Post-Training",
+      "confidence": 0.7,
+      "maturity": "medium",
+      "trend": "rising"
+    },
+    {
+      "id": "tech:Supervised Fine-Tuning",
+      "type": "tech",
+      "label": "Supervised Fine-Tuning",
+      "href": "technologies.html?q=Supervised Fine-Tuning",
+      "confidence": 0.7,
+      "maturity": "medium",
+      "trend": "rising"
+    },
+    {
+      "id": "tech:Reinforcement Learning",
+      "type": "tech",
+      "label": "Reinforcement Learning",
+      "href": "technologies.html?q=Reinforcement Learning",
+      "confidence": 0.7,
+      "maturity": "medium",
+      "trend": "rising"
+    },
+    {
+      "id": "tech:Trajectory Collection",
+      "type": "tech",
+      "label": "Trajectory Collection",
+      "href": "technologies.html?q=Trajectory Collection",
+      "confidence": 0.7,
+      "maturity": "medium",
+      "trend": "rising"
+    },
+    {
+      "id": "tech:Cold-Start Training",
+      "type": "tech",
+      "label": "Cold-Start Training",
+      "href": "technologies.html?q=Cold-Start Training",
+      "confidence": 0.7,
+      "maturity": "medium",
+      "trend": "rising"
+    },
+    {
+      "id": "tech:Semantic Evidence Selection",
+      "type": "tech",
+      "label": "Semantic Evidence Selection",
+      "href": "technologies.html?q=Semantic Evidence Selection",
+      "confidence": 0.7,
+      "maturity": "medium",
+      "trend": "rising"
+    },
+    {
+      "id": "tech:Executable Computation Chains",
+      "type": "tech",
+      "label": "Executable Computation Chains",
+      "href": "technologies.html?q=Executable Computation Chains",
+      "confidence": 0.7,
+      "maturity": "medium",
+      "trend": "rising"
+    },
+    {
+      "id": "tech:Independent LLM Review",
+      "type": "tech",
+      "label": "Independent LLM Review",
+      "href": "technologies.html?q=Independent LLM Review",
+      "confidence": 0.7,
+      "maturity": "medium",
+      "trend": "rising"
+    },
+    {
+      "id": "tech:Programmatic Verification",
+      "type": "tech",
+      "label": "Programmatic Verification",
+      "href": "technologies.html?q=Programmatic Verification",
+      "confidence": 0.7,
+      "maturity": "medium",
+      "trend": "rising"
+    },
+    {
+      "id": "tech:Cross-Document Evidence Integration",
+      "type": "tech",
+      "label": "Cross-Document Evidence Integration",
+      "href": "technologies.html?q=Cross-Document Evidence Integration",
+      "confidence": 0.7,
+      "maturity": "medium",
+      "trend": "rising"
+    },
+    {
+      "id": "tech:Multi-Step Numerical Reasoning",
+      "type": "tech",
+      "label": "Multi-Step Numerical Reasoning",
+      "href": "technologies.html?q=Multi-Step Numerical Reasoning",
+      "confidence": 0.7,
+      "maturity": "medium",
+      "trend": "rising"
+    },
+    {
+      "id": "tech:Tool Use",
+      "type": "tech",
+      "label": "Tool Use",
+      "href": "technologies.html?q=Tool Use",
+      "confidence": 0.7,
+      "maturity": "medium",
+      "trend": "rising"
+    },
+    {
+      "id": "paper:2606.25034",
+      "type": "paper",
+      "label": "Yuvion VL: A Multimodal Foundation Model for Adversarial Content and AI Safety",
+      "href": "",
+      "confidence": 0.85
+    },
+    {
+      "id": "tech:Multimodal Learning",
+      "type": "tech",
+      "label": "Multimodal Learning",
+      "href": "technologies.html?q=Multimodal Learning",
+      "confidence": 0.6,
+      "maturity": "early",
+      "trend": "rising"
+    },
+    {
+      "id": "tech:Adversarial Training",
+      "type": "tech",
+      "label": "Adversarial Training",
+      "href": "technologies.html?q=Adversarial Training",
+      "confidence": 0.6,
+      "maturity": "early",
+      "trend": "rising"
+    },
+    {
+      "id": "tech:Contrastive Learning",
+      "type": "tech",
+      "label": "Contrastive Learning",
+      "href": "technologies.html?q=Contrastive Learning",
+      "confidence": 0.62,
+      "maturity": "early",
+      "trend": "rising"
+    },
+    {
+      "id": "tech:Confuse-then-Contrast Fine-Tuning",
+      "type": "tech",
+      "label": "Confuse-then-Contrast Fine-Tuning",
+      "href": "technologies.html?q=Confuse-then-Contrast Fine-Tuning",
+      "confidence": 0.6,
+      "maturity": "early",
+      "trend": "rising"
+    },
+    {
+      "id": "paper:2610.27782",
+      "type": "paper",
+      "label": "RoboJudge: Multimodal Language Models as Judges for Embodied Video Generation",
+      "href": "",
+      "confidence": 0.85
+    },
+    {
+      "id": "tech:Reinforcement Learning from Human Feedback",
+      "type": "tech",
+      "label": "Reinforcement Learning from Human Feedback",
+      "href": "technologies.html?q=Reinforcement Learning from Human Feedback",
+      "confidence": 0.6,
+      "maturity": "early",
+      "trend": "rising"
+    },
+    {
+      "id": "tech:Supervised Learning",
+      "type": "tech",
+      "label": "Supervised Learning",
+      "href": "technologies.html?q=Supervised Learning",
+      "confidence": 0.6,
+      "maturity": "early",
+      "trend": "rising"
+    },
+    {
+      "id": "paper:2610.27234",
+      "type": "paper",
+      "label": "EGI-BENCH: An Enterprise General Intelligence Benchmark Suite",
+      "href": "",
+      "confidence": 0.8
+    },
+    {
+      "id": "tech:Benchmarking",
+      "type": "tech",
+      "label": "Benchmarking",
+      "href": "technologies.html?q=Benchmarking",
+      "confidence": 0.7,
+      "maturity": "medium",
+      "trend": "rising"
+    },
+    {
+      "id": "tech:Evaluation Metrics",
+      "type": "tech",
+      "label": "Evaluation Metrics",
+      "href": "technologies.html?q=Evaluation Metrics",
+      "confidence": 0.7,
+      "maturity": "medium",
+      "trend": "rising"
+    },
+    {
+      "id": "tech:Enterprise AI",
+      "type": "tech",
+      "label": "Enterprise AI",
+      "href": "technologies.html?q=Enterprise AI",
+      "confidence": 0.7,
+      "maturity": "medium",
+      "trend": "rising"
+    },
+    {
+      "id": "tech:LLM Agent Evaluation",
+      "type": "tech",
+      "label": "LLM Agent Evaluation",
+      "href": "technologies.html?q=LLM Agent Evaluation",
+      "confidence": 0.7,
+      "maturity": "medium",
+      "trend": "rising"
+    },
+    {
+      "id": "paper:2610.27847",
+      "type": "paper",
+      "label": "SAPD: Learning from Agent Experience without Environment Interaction",
+      "href": "",
+      "confidence": 0.8
+    },
+    {
+      "id": "tech:Step-Advantage Policy Distillation",
+      "type": "tech",
+      "label": "Step-Advantage Policy Distillation",
+      "href": "technologies.html?q=Step-Advantage Policy Distillation",
+      "confidence": 0.7,
+      "maturity": "medium",
+      "trend": "rising"
+    },
+    {
+      "id": "tech:Offline Reinforcement Learning",
+      "type": "tech",
+      "label": "Offline Reinforcement Learning",
+      "href": "technologies.html?q=Offline Reinforcement Learning",
+      "confidence": 0.7,
+      "maturity": "medium",
+      "trend": "rising"
+    },
+    {
+      "id": "tech:Policy Distillation",
+      "type": "tech",
+      "label": "Policy Distillation",
+      "href": "technologies.html?q=Policy Distillation",
+      "confidence": 0.7,
+      "maturity": "medium",
+      "trend": "rising"
+    },
+    {
+      "id": "paper:2605.10765",
+      "type": "paper",
+      "label": "Dynamic Cross-Modal Prompt Generation for Multimodal Continual Instruction Tunin",
+      "href": "",
+      "confidence": 0.0
+    },
+    {
+      "id": "paper:2610.21561",
+      "type": "paper",
+      "label": "DialFork: Going Beyond Factuality to Evaluate Procedural Hallucination in Conver",
+      "href": "",
+      "confidence": 0.0
+    },
+    {
+      "id": "paper:2610.30051",
+      "type": "paper",
+      "label": "From Reasoning to Action: Benchmarking Frontier AI Models on LIBERO-10 Robot Man",
+      "href": "",
+      "confidence": 0.0
+    },
+    {
+      "id": "paper:2610.28909",
+      "type": "paper",
+      "label": "DiffResearch: Accelerating Deep Research with Diffusion Language Models",
+      "href": "",
+      "confidence": 0.0
+    },
+    {
+      "id": "paper:2511.14130",
+      "type": "paper",
+      "label": "PRISM: Prompt-Refined In-Context System Modelling for Financial Retrieval",
+      "href": "",
+      "confidence": 0.0
+    },
+    {
+      "id": "paper:2604.18936",
+      "type": "paper",
+      "label": "Fine-Tuning Small Reasoning Models for Quantum Field Theory",
+      "href": "",
+      "confidence": 0.0
+    },
     {
       "id": "paper:2610.25959",
       "type": "paper",
@@ -22,15 +351,6 @@
       "type": "tech",
       "label": "World Models",
       "href": "technologies.html?q=World Models",
-      "confidence": 0.62,
-      "maturity": "early",
-      "trend": "rising"
-    },
-    {
-      "id": "tech:Reinforcement Learning",
-      "type": "tech",
-      "label": "Reinforcement Learning",
-      "href": "technologies.html?q=Reinforcement Learning",
       "confidence": 0.62,
       "maturity": "early",
       "trend": "rising"
@@ -99,74 +419,11 @@
       "trend": "rising"
     },
     {
-      "id": "tech:Semantic Instruction Following",
-      "type": "tech",
-      "label": "Semantic Instruction Following",
-      "href": "technologies.html?q=Semantic Instruction Following",
-      "confidence": 0.62,
-      "maturity": "early",
-      "trend": "rising"
-    },
-    {
-      "id": "tech:Camera-Motion Trajectories",
-      "type": "tech",
-      "label": "Camera-Motion Trajectories",
-      "href": "technologies.html?q=Camera-Motion Trajectories",
-      "confidence": 0.62,
-      "maturity": "early",
-      "trend": "rising"
-    },
-    {
       "id": "paper:2511.15308",
       "type": "paper",
       "label": "Text2Loc++: Generalizing 3D Point Cloud Localization from Natural Language",
       "href": "",
       "confidence": 0.75
-    },
-    {
-      "id": "tech:Cross-Modal Retrieval",
-      "type": "tech",
-      "label": "Cross-Modal Retrieval",
-      "href": "technologies.html?q=Cross-Modal Retrieval",
-      "confidence": 0.62,
-      "maturity": "early",
-      "trend": "rising"
-    },
-    {
-      "id": "tech:Contrastive Learning",
-      "type": "tech",
-      "label": "Contrastive Learning",
-      "href": "technologies.html?q=Contrastive Learning",
-      "confidence": 0.7,
-      "maturity": "medium",
-      "trend": "rising"
-    },
-    {
-      "id": "tech:Vision-Language Models",
-      "type": "tech",
-      "label": "Vision-Language Models",
-      "href": "technologies.html?q=Vision-Language Models",
-      "confidence": 0.62,
-      "maturity": "early",
-      "trend": "rising"
-    },
-    {
-      "id": "tech:3D Point Cloud Understanding",
-      "type": "tech",
-      "label": "3D Point Cloud Understanding",
-      "href": "technologies.html?q=3D Point Cloud Understanding",
-      "confidence": 0.62,
-      "maturity": "early",
-      "trend": "rising"
-    },
-    {
-      "id": "tech:Visual Place Recognition",
-      "type": "tech",
-      "label": "Visual Place Recognition",
-      "href": "technologies.html?q=Visual Place Recognition",
-      "confidence": 0.62,
-      "maturity": "early",
-      "trend": "rising"
     },
     {
       "id": "tech:Cross-Attention",
@@ -178,147 +435,16 @@
       "trend": "rising"
     },
     {
-      "id": "tech:Language Grounding",
-      "type": "tech",
-      "label": "Language Grounding",
-      "href": "technologies.html?q=Language Grounding",
-      "confidence": 0.62,
-      "maturity": "early",
-      "trend": "rising"
-    },
-    {
-      "id": "paper:2610.25254",
+      "id": "paper:2610.30108",
       "type": "paper",
-      "label": "BatchParScale: Sparse Batch-Mixing for Sequence Models",
+      "label": "Multimodal Embodied Agents: A Unified Capability-centric Perspective from Comput",
       "href": "",
       "confidence": 0.0
     },
     {
-      "id": "paper:2512.15933",
+      "id": "paper:2610.29552",
       "type": "paper",
-      "label": "Can MLLMs Find Their Way in a City? Exploring Emergent Navigation from Web-Scale",
-      "href": "",
-      "confidence": 0.0
-    },
-    {
-      "id": "paper:2610.26887",
-      "type": "paper",
-      "label": "Navalia: Advancing Cowork Agents through Verifiable Task Synthesis and Long-Hori",
-      "href": "",
-      "confidence": 0.0
-    },
-    {
-      "id": "paper:2606.25034",
-      "type": "paper",
-      "label": "Yuvion VL: A Multimodal Foundation Model for Adversarial Content and AI Safety",
-      "href": "",
-      "confidence": 0.85
-    },
-    {
-      "id": "tech:Multimodal Learning",
-      "type": "tech",
-      "label": "Multimodal Learning",
-      "href": "technologies.html?q=Multimodal Learning",
-      "confidence": 0.7,
-      "maturity": "medium",
-      "trend": "rising"
-    },
-    {
-      "id": "tech:Adversarial Training",
-      "type": "tech",
-      "label": "Adversarial Training",
-      "href": "technologies.html?q=Adversarial Training",
-      "confidence": 0.7,
-      "maturity": "medium",
-      "trend": "rising"
-    },
-    {
-      "id": "tech:Confuse-then-Contrast Fine-Tuning",
-      "type": "tech",
-      "label": "Confuse-then-Contrast Fine-Tuning",
-      "href": "technologies.html?q=Confuse-then-Contrast Fine-Tuning",
-      "confidence": 0.7,
-      "maturity": "medium",
-      "trend": "rising"
-    },
-    {
-      "id": "paper:2610.27782",
-      "type": "paper",
-      "label": "RoboJudge: Multimodal Language Models as Judges for Embodied Video Generation",
-      "href": "",
-      "confidence": 0.85
-    },
-    {
-      "id": "tech:Reinforcement Learning from Human Feedback",
-      "type": "tech",
-      "label": "Reinforcement Learning from Human Feedback",
-      "href": "technologies.html?q=Reinforcement Learning from Human Feedback",
-      "confidence": 0.7,
-      "maturity": "medium",
-      "trend": "rising"
-    },
-    {
-      "id": "tech:Supervised Learning",
-      "type": "tech",
-      "label": "Supervised Learning",
-      "href": "technologies.html?q=Supervised Learning",
-      "confidence": 0.7,
-      "maturity": "medium",
-      "trend": "rising"
-    },
-    {
-      "id": "paper:2610.25111",
-      "type": "paper",
-      "label": "Explore or Confirm? LLM Agents Misallocate Measurements Under Noise",
-      "href": "",
-      "confidence": 0.0
-    },
-    {
-      "id": "paper:2610.24628",
-      "type": "paper",
-      "label": "Muse Glimmer 30B: An On-Device Agentic Model",
-      "href": "",
-      "confidence": 0.0
-    },
-    {
-      "id": "paper:2610.10118",
-      "type": "paper",
-      "label": "EdgeRock: Strong Reasoning at Constant Memory",
-      "href": "",
-      "confidence": 0.0
-    },
-    {
-      "id": "paper:2604.27620",
-      "type": "paper",
-      "label": "SpaAct: Spatially-Activated Transition Learning with Curriculum Adaptation for V",
-      "href": "",
-      "confidence": 0.0
-    },
-    {
-      "id": "paper:2610.27234",
-      "type": "paper",
-      "label": "EGI-BENCH: An Enterprise General Intelligence Benchmark Suite",
-      "href": "",
-      "confidence": 0.0
-    },
-    {
-      "id": "paper:2610.27847",
-      "type": "paper",
-      "label": "SAPD: Learning from Agent Experience without Environment Interaction",
-      "href": "",
-      "confidence": 0.0
-    },
-    {
-      "id": "paper:2605.10765",
-      "type": "paper",
-      "label": "Dynamic Cross-Modal Prompt Generation for Multimodal Continual Instruction Tunin",
-      "href": "",
-      "confidence": 0.0
-    },
-    {
-      "id": "paper:2610.21561",
-      "type": "paper",
-      "label": "DialFork: Going Beyond Factuality to Evaluate Procedural Hallucination in Conver",
+      "label": "Generalized CycleGRPO for Fine-Grained Multimodal Understanding and Grounding",
       "href": "",
       "confidence": 0.0
     },
@@ -327,14 +453,8 @@
       "type": "repo",
       "label": "Shubhamsaboo/awesome-llm-apps",
       "href": "https://github.com/Shubhamsaboo/awesome-llm-apps",
-      "stars": 142443,
+      "stars": 142538,
       "language": "Python"
-    },
-    {
-      "id": "tech:rag",
-      "type": "tech",
-      "label": "rag",
-      "href": ""
     },
     {
       "id": "tech:llm",
@@ -343,14 +463,10 @@
       "href": ""
     },
     {
-      "id": "idea:d137138802426f95",
-      "type": "idea",
-      "label": "Spelling & Phonics: Kids Games",
-      "href": "https://play.google.com/store/apps/details?id=com.rvappstudios.abc.spelling.toddler.spell.phonics",
-      "source": "playstore",
-      "score": 92,
-      "revenue": false,
-      "composite_score": 51
+      "id": "tech:rag",
+      "type": "tech",
+      "label": "rag",
+      "href": ""
     },
     {
       "id": "idea:49debc99fed21ff5",
@@ -379,16 +495,6 @@
       "composite_score": 50
     },
     {
-      "id": "idea:f09745c7a1f3d573",
-      "type": "idea",
-      "label": "Prodigy Math: Kids Game",
-      "href": "https://play.google.com/store/apps/details?id=com.prodigygame.prodigy",
-      "source": "playstore",
-      "score": 94,
-      "revenue": false,
-      "composite_score": 49
-    },
-    {
       "id": "idea:102729d39305209b",
       "type": "idea",
       "label": "Show HN: Non.io, a Reddit-like platform Ive been working on for the last 4 years",
@@ -399,20 +505,26 @@
       "composite_score": 48
     },
     {
+      "id": "idea:10379a3fcf8d363f",
+      "type": "idea",
+      "label": "Airlearn - Language Learning",
+      "href": "https://play.google.com/store/apps/details?id=com.unacademy.antonio",
+      "source": "playstore",
+      "score": 92,
+      "revenue": false,
+      "composite_score": 48
+    },
+    {
+      "id": "tech:sam",
+      "type": "tech",
+      "label": "sam",
+      "href": ""
+    },
+    {
       "id": "idea:a9860fff3e5683a9",
       "type": "idea",
       "label": "Udemy - Online Courses",
       "href": "https://play.google.com/store/apps/details?id=com.udemy.android",
-      "source": "playstore",
-      "score": 87,
-      "revenue": false,
-      "composite_score": 46
-    },
-    {
-      "id": "idea:847973b1285db165",
-      "type": "idea",
-      "label": "Kids Games: For Toddlers 3-5",
-      "href": "https://play.google.com/store/apps/details?id=com.rvappstudios.baby.toddler.kids.games.learning.activity",
       "source": "playstore",
       "score": 87,
       "revenue": false,
@@ -429,20 +541,14 @@
       "composite_score": 46
     },
     {
-      "id": "idea:301e28d2f230c883",
+      "id": "idea:e86e3a3309a0b4ce",
       "type": "idea",
-      "label": "AdaptedMind Math: Learning App",
-      "href": "https://play.google.com/store/apps/details?id=com.adaptedmind.mobile",
+      "label": "Busuu: Learn & Speak Languages",
+      "href": "https://play.google.com/store/apps/details?id=com.busuu.android.enc",
       "source": "playstore",
-      "score": 92,
+      "score": 93,
       "revenue": false,
       "composite_score": 45
-    },
-    {
-      "id": "tech:bark",
-      "type": "tech",
-      "label": "bark",
-      "href": ""
     },
     {
       "id": "idea:00ecf05719f90695",
@@ -462,7 +568,7 @@
       "source": "v2ex",
       "score": 0,
       "revenue": true,
-      "composite_score": 45
+      "composite_score": 44
     },
     {
       "id": "tech:gpt",
@@ -471,14 +577,44 @@
       "href": ""
     },
     {
-      "id": "idea:bab3f18ca7e5a65e",
+      "id": "idea:ea8708832c11f955",
       "type": "idea",
-      "label": "Baby Panda's School Bus",
-      "href": "https://play.google.com/store/apps/details?id=com.sinyee.babybus.taxi",
+      "label": "Learn to Read - Duolingo ABC",
+      "href": "https://play.google.com/store/apps/details?id=com.duolingo.literacy",
       "source": "playstore",
-      "score": 90,
+      "score": 77,
       "revenue": false,
       "composite_score": 42
+    },
+    {
+      "id": "idea:b1cb2096f6ab4d7d",
+      "type": "idea",
+      "label": "The US healthcare system is designed to hide prices from you. I built a tool to expose them and got 10k users in 15 days",
+      "href": "https://reddit.com/r/SideProject/comments/1xc59jz/",
+      "source": "reddit",
+      "score": 0,
+      "revenue": true,
+      "composite_score": 42
+    },
+    {
+      "id": "idea:c67206972bde56dc",
+      "type": "idea",
+      "label": "[分享发现] 图片转可编辑 PPT 的三条路线，以及一次实际使用",
+      "href": "https://www.v2ex.com/t/1250748",
+      "source": "v2ex",
+      "score": 0,
+      "revenue": true,
+      "composite_score": 42
+    },
+    {
+      "id": "idea:5fab4ecb500f5673",
+      "type": "idea",
+      "label": "Am I doing something wrong marketing my B2B SaaS?",
+      "href": "https://reddit.com/r/SaaS/comments/1xbz2zo/",
+      "source": "reddit",
+      "score": 0,
+      "revenue": true,
+      "composite_score": 41
     },
     {
       "id": "tech:phi",
@@ -487,40 +623,26 @@
       "href": ""
     },
     {
-      "id": "idea:626db2a614b1f283",
+      "id": "idea:7d41766fc892da67",
       "type": "idea",
-      "label": "写了个 macOS 菜单栏工具，用来监控 Google Antigravity 的 Token 占用和缓存命中率",
-      "href": "https://www.v2ex.com/t/1250061",
-      "source": "v2ex",
+      "label": "From 0 to €1k MRR: How fixing my SEO funnel turned my free D&D tool into a paying SaaS",
+      "href": "https://reddit.com/r/SaaS/comments/1xblvsx/",
+      "source": "reddit",
       "score": 0,
       "revenue": true,
       "composite_score": 41
     },
     {
-      "id": "idea:56a8f3b0441a24a0",
-      "type": "idea",
-      "label": "how to see if you are losing customers through AI search",
-      "href": "https://reddit.com/r/SaaS/comments/1xb91fe/",
-      "source": "reddit",
-      "score": 0,
-      "revenue": true,
-      "composite_score": 40
+      "id": "tech:gan",
+      "type": "tech",
+      "label": "gan",
+      "href": ""
     },
     {
-      "id": "idea:b7065b81b1156f38",
+      "id": "idea:626db2a614b1f283",
       "type": "idea",
-      "label": "美区 id 使用礼品卡开通 gpt plus 一直付款失败 + Android Visa 开通和封号踩坑实录",
-      "href": "https://www.v2ex.com/t/1249492",
-      "source": "v2ex",
-      "score": 0,
-      "revenue": true,
-      "composite_score": 40
-    },
-    {
-      "id": "idea:55b8f37fd4cb771d",
-      "type": "idea",
-      "label": "关于中转站这件事，我有自己的看法...",
-      "href": "https://www.v2ex.com/t/1249430",
+      "label": "写了个 macOS 菜单栏工具，用来监控 Google Antigravity 的 Token 占用和缓存命中率",
+      "href": "https://www.v2ex.com/t/1250061",
       "source": "v2ex",
       "score": 0,
       "revenue": true,
@@ -534,7 +656,27 @@
       "source": "reddit",
       "score": 0,
       "revenue": true,
-      "composite_score": 38
+      "composite_score": 37
+    },
+    {
+      "id": "idea:e82f124a25e5d9ec",
+      "type": "idea",
+      "label": "I built an AI voice-powered app to help my artisan uncle stop spending hours at night writing quotes",
+      "href": "https://reddit.com/r/SideProject/comments/1xc6h3n/",
+      "source": "reddit",
+      "score": 0,
+      "revenue": true,
+      "composite_score": 36
+    },
+    {
+      "id": "idea:9a85bf6511114f57",
+      "type": "idea",
+      "label": "Saved $3,100 today by not gettin frozen",
+      "href": "https://reddit.com/r/SaaS/comments/1xbuxtq/",
+      "source": "reddit",
+      "score": 0,
+      "revenue": true,
+      "composite_score": 35
     },
     {
       "id": "idea:ff74063d710d9956",
@@ -544,28 +686,12 @@
       "source": "v2ex",
       "score": 0,
       "revenue": true,
-      "composite_score": 35
+      "composite_score": 34
     },
     {
       "id": "tech:deepseek",
       "type": "tech",
       "label": "deepseek",
-      "href": ""
-    },
-    {
-      "id": "idea:06903784f9061cee",
-      "type": "idea",
-      "label": "9 months in, 107 Mac downloads, 12 Windows installs, DealFuel live. Here's what changed.",
-      "href": "https://reddit.com/r/IndieHackers/comments/1x85cxm/",
-      "source": "reddit",
-      "score": 0,
-      "revenue": true,
-      "composite_score": 33
-    },
-    {
-      "id": "tech:sam",
-      "type": "tech",
-      "label": "sam",
       "href": ""
     },
     {
@@ -579,16 +705,20 @@
       "composite_score": 32
     },
     {
-      "id": "tech:stable diffusion",
-      "type": "tech",
-      "label": "stable diffusion",
-      "href": ""
-    },
-    {
       "id": "tech:diffusion",
       "type": "tech",
       "label": "diffusion",
       "href": ""
+    },
+    {
+      "id": "idea:06903784f9061cee",
+      "type": "idea",
+      "label": "9 months in, 107 Mac downloads, 12 Windows installs, DealFuel live. Here's what changed.",
+      "href": "https://reddit.com/r/IndieHackers/comments/1x85cxm/",
+      "source": "reddit",
+      "score": 0,
+      "revenue": true,
+      "composite_score": 32
     },
     {
       "id": "idea:f1432e27f4b897bd",
@@ -611,76 +741,76 @@
       "composite_score": 30
     },
     {
-      "id": "tech:gan",
-      "type": "tech",
-      "label": "gan",
-      "href": ""
-    },
-    {
-      "id": "idea:303ef6f4427d8b22",
+      "id": "idea:2a6994ea93599982",
       "type": "idea",
-      "label": "Drop your SaaS and I'll find customers for you on Reddit",
-      "href": "https://reddit.com/r/SaaS/comments/1xat7dy/",
+      "label": "stripe's \"your payment failed\" email could quietly downgrade our users",
+      "href": "https://reddit.com/r/SaaS/comments/1xbxxxg/",
       "source": "reddit",
       "score": 0,
       "revenue": false,
       "composite_score": 25
     },
     {
-      "id": "idea:9eb3fd7053e7c045",
+      "id": "idea:57bb4686aa893b18",
       "type": "idea",
-      "label": "Repolve Is Coming for Android. Get Early Access!",
-      "href": "https://reddit.com/r/SideProject/comments/1xb99k0/",
+      "label": "Anyone testing ChatGPT Ads for SaaS acquisition yet?",
+      "href": "https://reddit.com/r/SaaS/comments/1xbitrb/",
+      "source": "reddit",
+      "score": 0,
+      "revenue": false,
+      "composite_score": 25
+    },
+    {
+      "id": "idea:c9503fa59be54907",
+      "type": "idea",
+      "label": "I built a free ADHD focus timer that measures how long your focus lasts, not how many hours you sit at a desk",
+      "href": "https://reddit.com/r/SideProject/comments/1xc5vig/",
       "source": "reddit",
       "score": 0,
       "revenue": false,
       "composite_score": 22
     },
     {
-      "id": "idea:de0c9ad2a78a15d9",
+      "id": "idea:6c06fc1c6e34e1b6",
       "type": "idea",
-      "label": "I built an AI Shopify advisor. Where would an actual store owner tell it to shut up?",
-      "href": "https://reddit.com/r/SideProject/comments/1xb6nvr/",
+      "label": "I built an end-to-end AI video workflow that creates and posts videos through the CLI",
+      "href": "https://reddit.com/r/SideProject/comments/1xc5q1h/",
       "source": "reddit",
       "score": 0,
       "revenue": false,
       "composite_score": 22
     },
     {
-      "id": "idea:fc4bb559479eca91",
+      "id": "tech:clip",
+      "type": "tech",
+      "label": "clip",
+      "href": ""
+    },
+    {
+      "id": "idea:384ccd2274f9fddb",
       "type": "idea",
-      "label": "AirFliq - I built a Mac app to save a couple of clicks. Reddit had opinions.",
-      "href": "https://reddit.com/r/SideProject/comments/1xbamva/",
+      "label": "I got tired of opening 10 tabs every morning for cycling news, so I built an AI that reads 25+ outlets and emails me one short digest",
+      "href": "https://reddit.com/r/SideProject/comments/1xc0e6i/",
       "source": "reddit",
       "score": 0,
       "revenue": false,
       "composite_score": 22
     },
     {
-      "id": "idea:d1c6c4d8157b0c03",
+      "id": "idea:82e439348a3f4a87",
       "type": "idea",
-      "label": "Am I wrongly discouraged of distribution bottleneck?",
-      "href": "https://reddit.com/r/SaaS/comments/1xb0mqf/",
+      "label": "First paying user after 4 months",
+      "href": "https://reddit.com/r/SaaS/comments/1xc1f4q/",
       "source": "reddit",
       "score": 0,
       "revenue": false,
       "composite_score": 22
     },
     {
-      "id": "idea:ad955f45e330008c",
+      "id": "idea:9f9cf1fee52eb0ac",
       "type": "idea",
-      "label": "Solo founder, field service software, almost no marketing so far. Do I have a real shot against Jobber and Housecall Pro?",
-      "href": "https://reddit.com/r/SaaS/comments/1xb3tf1/",
-      "source": "reddit",
-      "score": 0,
-      "revenue": false,
-      "composite_score": 22
-    },
-    {
-      "id": "idea:e783738875085861",
-      "type": "idea",
-      "label": "Chatgpt is sending me traffic! reuily.com crossed 3 users.",
-      "href": "https://reddit.com/r/SaaS/comments/1xao8y6/",
+      "label": "Most \"idea validation\" just tells you what you want to hear. Then you spend months building something nobody wants.",
+      "href": "https://reddit.com/r/IndieHackers/comments/1xbi5lb/",
       "source": "reddit",
       "score": 0,
       "revenue": false,
@@ -697,32 +827,30 @@
       "composite_score": 21
     },
     {
-      "id": "tech:rlhf",
-      "type": "tech",
-      "label": "rlhf",
-      "href": ""
-    },
-    {
-      "id": "tech:llama",
-      "type": "tech",
-      "label": "llama",
-      "href": ""
-    },
-    {
-      "id": "idea:aa42ec42d40f7102",
+      "id": "idea:b6ebc52210f5b682",
       "type": "idea",
-      "label": "Show HN: BBC “In Our Time”, categorised by Dewey Decimal, heavy lifting by GPT",
-      "href": "https://genmon.github.io/braggoscope/",
-      "source": "hackernews",
-      "score": 688,
+      "label": "found out mac comes w a built in llm, so i made it play tic-tac-toe!",
+      "href": "https://reddit.com/r/SideProject/comments/1xc5fj8/",
+      "source": "reddit",
+      "score": 0,
       "revenue": false,
       "composite_score": 21
     },
     {
-      "id": "idea:591c675f309608dc",
+      "id": "idea:0f6ea168f7528e62",
       "type": "idea",
-      "label": "Why is payment recovery so hard and what other Saas companies do about failed charges?",
-      "href": "https://reddit.com/r/SaaS/comments/1xb4gj8/",
+      "label": "Has anyone scaled a vibe-coded SaaS past the first 100 paying users?",
+      "href": "https://reddit.com/r/SaaS/comments/1xbw451/",
+      "source": "reddit",
+      "score": 0,
+      "revenue": false,
+      "composite_score": 21
+    },
+    {
+      "id": "idea:bdc4cc8ddc193a3a",
+      "type": "idea",
+      "label": "Our early users are recommending our SaaS to colleagues. But we haven't figured out how to reach new users consistently.",
+      "href": "https://reddit.com/r/SaaS/comments/1xbiec0/",
       "source": "reddit",
       "score": 0,
       "revenue": false,
@@ -755,6 +883,66 @@
       "href": ""
     },
     {
+      "id": "idea:b6a42ac2d196e1f4",
+      "type": "idea",
+      "label": "We built a whale and dolphin orchestra using real underwater recordings combined with music generative models",
+      "href": "https://reddit.com/r/SideProject/comments/1xbn5il/",
+      "source": "reddit",
+      "score": 0,
+      "revenue": false,
+      "composite_score": 19
+    },
+    {
+      "id": "idea:0813ad0ebfc409e8",
+      "type": "idea",
+      "label": "I tested popular AI PDF tools on scanned exam papers. One refused every file, the other couldn't read any handwriting.",
+      "href": "https://reddit.com/r/SideProject/comments/1xc6qpd/",
+      "source": "reddit",
+      "score": 0,
+      "revenue": false,
+      "composite_score": 19
+    },
+    {
+      "id": "idea:867d080aa34d0658",
+      "type": "idea",
+      "label": "Why do companies change when they start making big money?",
+      "href": "https://reddit.com/r/Entrepreneur/comments/1xbleck/",
+      "source": "reddit",
+      "score": 0,
+      "revenue": false,
+      "composite_score": 19
+    },
+    {
+      "id": "idea:916c7bb3106edc8f",
+      "type": "idea",
+      "label": "Does renewal tracking such as domains, hosting, SSL, and licenses actually matter to other freelancers, or is this a non-issue I’m overthinking?",
+      "href": "https://reddit.com/r/SaaS/comments/1xc54vs/",
+      "source": "reddit",
+      "score": 0,
+      "revenue": false,
+      "composite_score": 19
+    },
+    {
+      "id": "idea:d3f0f41b90d04632",
+      "type": "idea",
+      "label": "Build Onboarding That Earns the Paywall: Lessons From a 23-Screen Flow",
+      "href": "https://reddit.com/r/SaaS/comments/1xbvq90/",
+      "source": "reddit",
+      "score": 0,
+      "revenue": false,
+      "composite_score": 19
+    },
+    {
+      "id": "idea:1d91a83a8857c992",
+      "type": "idea",
+      "label": "平常几乎不看 AI 视频,直到看到了这个系列",
+      "href": "https://www.v2ex.com/t/1250613",
+      "source": "v2ex",
+      "score": 0,
+      "revenue": false,
+      "composite_score": 19
+    },
+    {
       "id": "idea:05c4486b603f763d",
       "type": "idea",
       "label": "Show HN: Getting GLM 5.2 running on my slow computer",
@@ -762,75 +950,13 @@
       "source": "hackernews",
       "score": 937,
       "revenue": false,
-      "composite_score": 19
+      "composite_score": 18
     },
     {
-      "id": "idea:f83defee07dfb169",
+      "id": "idea:6e652d67a548d147",
       "type": "idea",
-      "label": "I’m a 30-year SQL Server DBA. I built a calm daily refresher for experienced IT pros (no streaks, no scores). Feedback welcome.",
-      "href": "https://reddit.com/r/SideProject/comments/1xb8ejt/",
-      "source": "reddit",
-      "score": 0,
-      "revenue": false,
-      "composite_score": 19
-    },
-    {
-      "id": "idea:9adb2e6f670bea96",
-      "type": "idea",
-      "label": "I built a browser app that turns sheet music into a 2.5D/3D piano performance (MusicXML, MIDI, PDF, MP3)",
-      "href": "https://reddit.com/r/SideProject/comments/1xaxuzy/",
-      "source": "reddit",
-      "score": 0,
-      "revenue": false,
-      "composite_score": 19
-    },
-    {
-      "id": "idea:710f905bf11fb09a",
-      "type": "idea",
-      "label": "My Locket: something kind of like time-travel",
-      "href": "https://reddit.com/r/SideProject/comments/1xbbc4t/",
-      "source": "reddit",
-      "score": 0,
-      "revenue": false,
-      "composite_score": 19
-    },
-    {
-      "id": "idea:debdc8ee8cfb99a4",
-      "type": "idea",
-      "label": "spent a week chasing a subtitle sync bug in my side project, turned out whisper was the problem",
-      "href": "https://reddit.com/r/SaaS/comments/1xbbnwm/",
-      "source": "reddit",
-      "score": 0,
-      "revenue": false,
-      "composite_score": 19
-    },
-    {
-      "id": "tech:clip",
-      "type": "tech",
-      "label": "clip",
-      "href": ""
-    },
-    {
-      "id": "tech:whisper",
-      "type": "tech",
-      "label": "whisper",
-      "href": ""
-    },
-    {
-      "id": "idea:51331b9ee086c680",
-      "type": "idea",
-      "label": "You know these \"100K downloads thanks to Reddit\" posts? This is the opposite of that one.",
-      "href": "https://reddit.com/r/SaaS/comments/1xb6s51/",
-      "source": "reddit",
-      "score": 0,
-      "revenue": false,
-      "composite_score": 19
-    },
-    {
-      "id": "idea:16c6cb1de4ad39d4",
-      "type": "idea",
-      "label": "I merged my macOS utilities into one open-source menu bar app: window switcher, audio switcher, tiling and screenshots",
-      "href": "https://reddit.com/r/SideProject/comments/1xb77f8/",
+      "label": "Looked back at every deal we closed. Almost none came from the usual “sales process”",
+      "href": "https://reddit.com/r/SaaS/comments/1xbydaj/",
       "source": "reddit",
       "score": 0,
       "revenue": false,
@@ -864,7 +990,7 @@
       "source": "v2ex",
       "score": 0,
       "revenue": false,
-      "composite_score": 18
+      "composite_score": 17
     },
     {
       "id": "idea:48a59edcf2ab93e2",
@@ -897,50 +1023,10 @@
       "composite_score": 15
     },
     {
-      "id": "idea:fefdf98dd70a1acd",
+      "id": "idea:301eb14121bb5ae9",
       "type": "idea",
-      "label": "Hice un editor de video gratis para hacer anuncios de mi negocio y busco gente que lo pruebe",
-      "href": "https://reddit.com/r/SideProject/comments/1xbb2av/",
-      "source": "reddit",
-      "score": 0,
-      "revenue": false,
-      "composite_score": 15
-    },
-    {
-      "id": "idea:44d19c90f140aa69",
-      "type": "idea",
-      "label": "I built a simple command-line browser from scratch!",
-      "href": "https://reddit.com/r/SideProject/comments/1xbbl9h/",
-      "source": "reddit",
-      "score": 0,
-      "revenue": false,
-      "composite_score": 15
-    },
-    {
-      "id": "idea:fc3a6c5589aba769",
-      "type": "idea",
-      "label": "canibehired: Built a free job discovery platform, would love some feedback",
-      "href": "https://reddit.com/r/SideProject/comments/1xbbiq7/",
-      "source": "reddit",
-      "score": 0,
-      "revenue": false,
-      "composite_score": 15
-    },
-    {
-      "id": "idea:67009567d935a502",
-      "type": "idea",
-      "label": "I posted a demo of a new software feature. 27 hours later, another developer posted a near-identical demo.And I found the instructions to reproduce my feature in their own source code.",
-      "href": "https://reddit.com/r/SaaS/comments/1xaofm2/",
-      "source": "reddit",
-      "score": 0,
-      "revenue": false,
-      "composite_score": 15
-    },
-    {
-      "id": "idea:7821880be704433e",
-      "type": "idea",
-      "label": "Built a tool that clicks through your site like a first-time visitor and tells you how hard things are to find",
-      "href": "https://reddit.com/r/SaaS/comments/1xbbrxl/",
+      "label": "I built dating app with problem I cannot code my way out of",
+      "href": "https://reddit.com/r/SideProject/comments/1xc3li0/",
       "source": "reddit",
       "score": 0,
       "revenue": false,
@@ -967,12 +1053,6 @@
       "composite_score": 14
     },
     {
-      "id": "tech:transformer",
-      "type": "tech",
-      "label": "transformer",
-      "href": ""
-    },
-    {
       "id": "idea:f1b070b7d1be246d",
       "type": "idea",
       "label": "Show HN: LLMs can generate valid JSON 100% of the time",
@@ -991,12 +1071,6 @@
       "score": 0,
       "revenue": false,
       "composite_score": 14
-    },
-    {
-      "id": "tech:qwen",
-      "type": "tech",
-      "label": "qwen",
-      "href": ""
     },
     {
       "id": "idea:dea7ab8418b008a9",
@@ -1049,12 +1123,6 @@
       "composite_score": 10
     },
     {
-      "id": "tech:dpo",
-      "type": "tech",
-      "label": "dpo",
-      "href": ""
-    },
-    {
       "id": "idea:3b639f9018730a3b",
       "type": "idea",
       "label": "Show HN: Clippy – 90s UI for local LLMs",
@@ -1073,12 +1141,6 @@
       "score": 0,
       "revenue": false,
       "composite_score": 10
-    },
-    {
-      "id": "tech:flux",
-      "type": "tech",
-      "label": "flux",
-      "href": ""
     },
     {
       "id": "idea:4a8306c47e1749ba",
@@ -1105,6 +1167,16 @@
       "type": "tech",
       "label": "lora",
       "href": ""
+    },
+    {
+      "id": "idea:5ebc622752f32c0e",
+      "type": "idea",
+      "label": "Astra AI: Study & Exam Prep",
+      "href": "https://apps.apple.com/vn/app/astra-ai-study-exam-prep/id6751030141?uo=2",
+      "source": "appstore",
+      "score": 0,
+      "revenue": false,
+      "composite_score": 10
     },
     {
       "id": "idea:7a15193234cc2011",
@@ -1137,14 +1209,14 @@
       "composite_score": 10
     },
     {
-      "id": "idea:8811c52ab62cf2b5",
+      "id": "idea:3bbb484a3c28e931",
       "type": "idea",
-      "label": "PingID",
-      "href": "https://apps.apple.com/us/app/pingid/id891247102?uo=2",
-      "source": "appstore",
-      "score": 0,
+      "label": "Show HN: Needle: We Distilled Gemini Tool Calling into a 26M Model",
+      "href": "https://github.com/cactus-compute/needle",
+      "source": "hackernews",
+      "score": 776,
       "revenue": false,
-      "composite_score": 10
+      "composite_score": 9
     },
     {
       "id": "idea:091dc042ed11944a",
@@ -1157,18 +1229,6 @@
       "composite_score": 8
     },
     {
-      "id": "tech:onnx",
-      "type": "tech",
-      "label": "onnx",
-      "href": ""
-    },
-    {
-      "id": "tech:mediapipe",
-      "type": "tech",
-      "label": "mediapipe",
-      "href": ""
-    },
-    {
       "id": "idea:213b5c19804f1abc",
       "type": "idea",
       "label": "Show HN: Open-source engine running Gemma 4 26B in 2 GB RAM on any M-series Mac",
@@ -1179,32 +1239,20 @@
       "composite_score": 7
     },
     {
-      "id": "tech:gemma",
-      "type": "tech",
-      "label": "gemma",
-      "href": ""
-    },
-    {
-      "id": "tech:kv cache",
-      "type": "tech",
-      "label": "kv cache",
-      "href": ""
+      "id": "idea:7d374a9da2b07a0c",
+      "type": "idea",
+      "label": "Community Reorganisation & New Posting Guidelines.",
+      "href": "https://reddit.com/r/IndieHackers/comments/1uzsfzy/",
+      "source": "reddit",
+      "score": 0,
+      "revenue": false,
+      "composite_score": 6
     },
     {
       "id": "idea:1974f9e15621edcd",
       "type": "idea",
       "label": "7 months in, 101 downloads, 2 paying customers. Here's what the Windows launch taught me.",
       "href": "https://reddit.com/r/IndieHackers/comments/1wp36bw/",
-      "source": "reddit",
-      "score": 0,
-      "revenue": false,
-      "composite_score": 7
-    },
-    {
-      "id": "idea:7d374a9da2b07a0c",
-      "type": "idea",
-      "label": "Community Reorganisation & New Posting Guidelines.",
-      "href": "https://reddit.com/r/IndieHackers/comments/1uzsfzy/",
       "source": "reddit",
       "score": 0,
       "revenue": false,
@@ -1271,12 +1319,6 @@
       "composite_score": 2
     },
     {
-      "id": "tech:tesseract",
-      "type": "tech",
-      "label": "tesseract",
-      "href": ""
-    },
-    {
       "id": "idea:d2aeae007fcead35",
       "type": "idea",
       "label": "Show HN: Quake 1 ported to the Apple Watch",
@@ -1288,6 +1330,238 @@
     }
   ],
   "edges": [
+    {
+      "source": "paper:2610.26887",
+      "target": "tech:LLM Agents",
+      "weight": 5,
+      "keywords": [
+        "LLM Agents"
+      ]
+    },
+    {
+      "source": "paper:2610.26887",
+      "target": "tech:Cowork Agents",
+      "weight": 5,
+      "keywords": [
+        "Cowork Agents"
+      ]
+    },
+    {
+      "source": "paper:2610.26887",
+      "target": "tech:Verifiable Task Synthesis",
+      "weight": 5,
+      "keywords": [
+        "Verifiable Task Synthesis"
+      ]
+    },
+    {
+      "source": "paper:2610.26887",
+      "target": "tech:Long-Horizon Post-Training",
+      "weight": 5,
+      "keywords": [
+        "Long-Horizon Post-Training"
+      ]
+    },
+    {
+      "source": "paper:2610.26887",
+      "target": "tech:Supervised Fine-Tuning",
+      "weight": 5,
+      "keywords": [
+        "Supervised Fine-Tuning"
+      ]
+    },
+    {
+      "source": "paper:2610.26887",
+      "target": "tech:Reinforcement Learning",
+      "weight": 5,
+      "keywords": [
+        "Reinforcement Learning"
+      ]
+    },
+    {
+      "source": "paper:2610.26887",
+      "target": "tech:Trajectory Collection",
+      "weight": 5,
+      "keywords": [
+        "Trajectory Collection"
+      ]
+    },
+    {
+      "source": "paper:2610.26887",
+      "target": "tech:Cold-Start Training",
+      "weight": 5,
+      "keywords": [
+        "Cold-Start Training"
+      ]
+    },
+    {
+      "source": "paper:2610.26887",
+      "target": "tech:Semantic Evidence Selection",
+      "weight": 5,
+      "keywords": [
+        "Semantic Evidence Selection"
+      ]
+    },
+    {
+      "source": "paper:2610.26887",
+      "target": "tech:Executable Computation Chains",
+      "weight": 5,
+      "keywords": [
+        "Executable Computation Chains"
+      ]
+    },
+    {
+      "source": "paper:2610.26887",
+      "target": "tech:Independent LLM Review",
+      "weight": 5,
+      "keywords": [
+        "Independent LLM Review"
+      ]
+    },
+    {
+      "source": "paper:2610.26887",
+      "target": "tech:Programmatic Verification",
+      "weight": 5,
+      "keywords": [
+        "Programmatic Verification"
+      ]
+    },
+    {
+      "source": "paper:2610.26887",
+      "target": "tech:Cross-Document Evidence Integration",
+      "weight": 5,
+      "keywords": [
+        "Cross-Document Evidence Integration"
+      ]
+    },
+    {
+      "source": "paper:2610.26887",
+      "target": "tech:Multi-Step Numerical Reasoning",
+      "weight": 5,
+      "keywords": [
+        "Multi-Step Numerical Reasoning"
+      ]
+    },
+    {
+      "source": "paper:2610.26887",
+      "target": "tech:Tool Use",
+      "weight": 5,
+      "keywords": [
+        "Tool Use"
+      ]
+    },
+    {
+      "source": "paper:2606.25034",
+      "target": "tech:Multimodal Learning",
+      "weight": 5,
+      "keywords": [
+        "Multimodal Learning"
+      ]
+    },
+    {
+      "source": "paper:2606.25034",
+      "target": "tech:Adversarial Training",
+      "weight": 5,
+      "keywords": [
+        "Adversarial Training"
+      ]
+    },
+    {
+      "source": "paper:2606.25034",
+      "target": "tech:Contrastive Learning",
+      "weight": 5,
+      "keywords": [
+        "Contrastive Learning"
+      ]
+    },
+    {
+      "source": "paper:2606.25034",
+      "target": "tech:Confuse-then-Contrast Fine-Tuning",
+      "weight": 5,
+      "keywords": [
+        "Confuse-then-Contrast Fine-Tuning"
+      ]
+    },
+    {
+      "source": "paper:2610.27782",
+      "target": "tech:Multimodal Learning",
+      "weight": 5,
+      "keywords": [
+        "Multimodal Learning"
+      ]
+    },
+    {
+      "source": "paper:2610.27782",
+      "target": "tech:Reinforcement Learning from Human Feedback",
+      "weight": 5,
+      "keywords": [
+        "Reinforcement Learning from Human Feedback"
+      ]
+    },
+    {
+      "source": "paper:2610.27782",
+      "target": "tech:Supervised Learning",
+      "weight": 5,
+      "keywords": [
+        "Supervised Learning"
+      ]
+    },
+    {
+      "source": "paper:2610.27234",
+      "target": "tech:Benchmarking",
+      "weight": 5,
+      "keywords": [
+        "Benchmarking"
+      ]
+    },
+    {
+      "source": "paper:2610.27234",
+      "target": "tech:Evaluation Metrics",
+      "weight": 5,
+      "keywords": [
+        "Evaluation Metrics"
+      ]
+    },
+    {
+      "source": "paper:2610.27234",
+      "target": "tech:Enterprise AI",
+      "weight": 5,
+      "keywords": [
+        "Enterprise AI"
+      ]
+    },
+    {
+      "source": "paper:2610.27234",
+      "target": "tech:LLM Agent Evaluation",
+      "weight": 5,
+      "keywords": [
+        "LLM Agent Evaluation"
+      ]
+    },
+    {
+      "source": "paper:2610.27847",
+      "target": "tech:Step-Advantage Policy Distillation",
+      "weight": 5,
+      "keywords": [
+        "Step-Advantage Policy Distillation"
+      ]
+    },
+    {
+      "source": "paper:2610.27847",
+      "target": "tech:Offline Reinforcement Learning",
+      "weight": 5,
+      "keywords": [
+        "Offline Reinforcement Learning"
+      ]
+    },
+    {
+      "source": "paper:2610.27847",
+      "target": "tech:Policy Distillation",
+      "weight": 5,
+      "keywords": [
+        "Policy Distillation"
+      ]
+    },
     {
       "source": "paper:2610.25959",
       "target": "tech:Embodied AI",
@@ -1369,59 +1643,11 @@
       ]
     },
     {
-      "source": "paper:2610.25959",
-      "target": "tech:Semantic Instruction Following",
-      "weight": 5,
-      "keywords": [
-        "Semantic Instruction Following"
-      ]
-    },
-    {
-      "source": "paper:2610.25959",
-      "target": "tech:Camera-Motion Trajectories",
-      "weight": 5,
-      "keywords": [
-        "Camera-Motion Trajectories"
-      ]
-    },
-    {
-      "source": "paper:2511.15308",
-      "target": "tech:Cross-Modal Retrieval",
-      "weight": 5,
-      "keywords": [
-        "Cross-Modal Retrieval"
-      ]
-    },
-    {
       "source": "paper:2511.15308",
       "target": "tech:Contrastive Learning",
       "weight": 5,
       "keywords": [
         "Contrastive Learning"
-      ]
-    },
-    {
-      "source": "paper:2511.15308",
-      "target": "tech:Vision-Language Models",
-      "weight": 5,
-      "keywords": [
-        "Vision-Language Models"
-      ]
-    },
-    {
-      "source": "paper:2511.15308",
-      "target": "tech:3D Point Cloud Understanding",
-      "weight": 5,
-      "keywords": [
-        "3D Point Cloud Understanding"
-      ]
-    },
-    {
-      "source": "paper:2511.15308",
-      "target": "tech:Visual Place Recognition",
-      "weight": 5,
-      "keywords": [
-        "Visual Place Recognition"
       ]
     },
     {
@@ -1434,82 +1660,10 @@
     },
     {
       "source": "paper:2511.15308",
-      "target": "tech:Language Grounding",
-      "weight": 5,
-      "keywords": [
-        "Language Grounding"
-      ]
-    },
-    {
-      "source": "paper:2511.15308",
       "target": "tech:3D Scene Understanding",
       "weight": 5,
       "keywords": [
         "3D Scene Understanding"
-      ]
-    },
-    {
-      "source": "paper:2606.25034",
-      "target": "tech:Multimodal Learning",
-      "weight": 5,
-      "keywords": [
-        "Multimodal Learning"
-      ]
-    },
-    {
-      "source": "paper:2606.25034",
-      "target": "tech:Adversarial Training",
-      "weight": 5,
-      "keywords": [
-        "Adversarial Training"
-      ]
-    },
-    {
-      "source": "paper:2606.25034",
-      "target": "tech:Contrastive Learning",
-      "weight": 5,
-      "keywords": [
-        "Contrastive Learning"
-      ]
-    },
-    {
-      "source": "paper:2606.25034",
-      "target": "tech:Confuse-then-Contrast Fine-Tuning",
-      "weight": 5,
-      "keywords": [
-        "Confuse-then-Contrast Fine-Tuning"
-      ]
-    },
-    {
-      "source": "paper:2610.27782",
-      "target": "tech:Multimodal Learning",
-      "weight": 5,
-      "keywords": [
-        "Multimodal Learning"
-      ]
-    },
-    {
-      "source": "paper:2610.27782",
-      "target": "tech:Reinforcement Learning from Human Feedback",
-      "weight": 5,
-      "keywords": [
-        "Reinforcement Learning from Human Feedback"
-      ]
-    },
-    {
-      "source": "paper:2610.27782",
-      "target": "tech:Supervised Learning",
-      "weight": 5,
-      "keywords": [
-        "Supervised Learning"
-      ]
-    },
-    {
-      "source": "repo:Shubhamsaboo/awesome-llm-apps",
-      "target": "tech:rag",
-      "weight": 3,
-      "keywords": [
-        "rag"
       ]
     },
     {
@@ -1521,7 +1675,7 @@
       ]
     },
     {
-      "source": "idea:d137138802426f95",
+      "source": "repo:Shubhamsaboo/awesome-llm-apps",
       "target": "tech:rag",
       "weight": 3,
       "keywords": [
@@ -1545,14 +1699,6 @@
       ]
     },
     {
-      "source": "idea:f09745c7a1f3d573",
-      "target": "tech:ppo",
-      "weight": 3,
-      "keywords": [
-        "ppo"
-      ]
-    },
-    {
       "source": "idea:102729d39305209b",
       "target": "tech:ppo",
       "weight": 3,
@@ -1569,15 +1715,15 @@
       ]
     },
     {
-      "source": "idea:a9860fff3e5683a9",
-      "target": "tech:ppo",
+      "source": "idea:10379a3fcf8d363f",
+      "target": "tech:sam",
       "weight": 3,
       "keywords": [
-        "ppo"
+        "sam"
       ]
     },
     {
-      "source": "idea:847973b1285db165",
+      "source": "idea:a9860fff3e5683a9",
       "target": "tech:ppo",
       "weight": 3,
       "keywords": [
@@ -1593,15 +1739,7 @@
       ]
     },
     {
-      "source": "idea:301e28d2f230c883",
-      "target": "tech:bark",
-      "weight": 3,
-      "keywords": [
-        "bark"
-      ]
-    },
-    {
-      "source": "idea:301e28d2f230c883",
+      "source": "idea:e86e3a3309a0b4ce",
       "target": "tech:ppo",
       "weight": 3,
       "keywords": [
@@ -1625,19 +1763,67 @@
       ]
     },
     {
-      "source": "idea:bab3f18ca7e5a65e",
-      "target": "tech:bark",
+      "source": "idea:ea8708832c11f955",
+      "target": "tech:ppo",
       "weight": 3,
       "keywords": [
-        "bark"
+        "ppo"
       ]
     },
     {
-      "source": "idea:bab3f18ca7e5a65e",
+      "source": "idea:ea8708832c11f955",
+      "target": "tech:rag",
+      "weight": 3,
+      "keywords": [
+        "rag"
+      ]
+    },
+    {
+      "source": "idea:b1cb2096f6ab4d7d",
+      "target": "tech:sam",
+      "weight": 3,
+      "keywords": [
+        "sam"
+      ]
+    },
+    {
+      "source": "idea:b1cb2096f6ab4d7d",
+      "target": "tech:rag",
+      "weight": 3,
+      "keywords": [
+        "rag"
+      ]
+    },
+    {
+      "source": "idea:c67206972bde56dc",
+      "target": "tech:rag",
+      "weight": 3,
+      "keywords": [
+        "rag"
+      ]
+    },
+    {
+      "source": "idea:5fab4ecb500f5673",
+      "target": "tech:ppo",
+      "weight": 3,
+      "keywords": [
+        "ppo"
+      ]
+    },
+    {
+      "source": "idea:5fab4ecb500f5673",
       "target": "tech:phi",
       "weight": 3,
       "keywords": [
         "phi"
+      ]
+    },
+    {
+      "source": "idea:7d41766fc892da67",
+      "target": "tech:gan",
+      "weight": 3,
+      "keywords": [
+        "gan"
       ]
     },
     {
@@ -1649,43 +1835,27 @@
       ]
     },
     {
-      "source": "idea:56a8f3b0441a24a0",
-      "target": "tech:gpt",
-      "weight": 3,
-      "keywords": [
-        "gpt"
-      ]
-    },
-    {
-      "source": "idea:b7065b81b1156f38",
-      "target": "tech:gpt",
-      "weight": 3,
-      "keywords": [
-        "gpt"
-      ]
-    },
-    {
-      "source": "idea:b7065b81b1156f38",
-      "target": "tech:ppo",
-      "weight": 3,
-      "keywords": [
-        "ppo"
-      ]
-    },
-    {
-      "source": "idea:55b8f37fd4cb771d",
-      "target": "tech:gpt",
-      "weight": 3,
-      "keywords": [
-        "gpt"
-      ]
-    },
-    {
       "source": "idea:553b64e9394e665b",
       "target": "tech:rag",
       "weight": 3,
       "keywords": [
         "rag"
+      ]
+    },
+    {
+      "source": "idea:e82f124a25e5d9ec",
+      "target": "tech:sam",
+      "weight": 3,
+      "keywords": [
+        "sam"
+      ]
+    },
+    {
+      "source": "idea:9a85bf6511114f57",
+      "target": "tech:ppo",
+      "weight": 3,
+      "keywords": [
+        "ppo"
       ]
     },
     {
@@ -1697,27 +1867,11 @@
       ]
     },
     {
-      "source": "idea:06903784f9061cee",
+      "source": "idea:cdcfd3af4a13f2f9",
       "target": "tech:ppo",
       "weight": 3,
       "keywords": [
         "ppo"
-      ]
-    },
-    {
-      "source": "idea:06903784f9061cee",
-      "target": "tech:sam",
-      "weight": 3,
-      "keywords": [
-        "sam"
-      ]
-    },
-    {
-      "source": "idea:cdcfd3af4a13f2f9",
-      "target": "tech:stable diffusion",
-      "weight": 3,
-      "keywords": [
-        "stable diffusion"
       ]
     },
     {
@@ -1729,7 +1883,15 @@
       ]
     },
     {
-      "source": "idea:cdcfd3af4a13f2f9",
+      "source": "idea:06903784f9061cee",
+      "target": "tech:sam",
+      "weight": 3,
+      "keywords": [
+        "sam"
+      ]
+    },
+    {
+      "source": "idea:06903784f9061cee",
       "target": "tech:ppo",
       "weight": 3,
       "keywords": [
@@ -1753,39 +1915,7 @@
       ]
     },
     {
-      "source": "idea:303ef6f4427d8b22",
-      "target": "tech:rag",
-      "weight": 3,
-      "keywords": [
-        "rag"
-      ]
-    },
-    {
-      "source": "idea:9eb3fd7053e7c045",
-      "target": "tech:rag",
-      "weight": 3,
-      "keywords": [
-        "rag"
-      ]
-    },
-    {
-      "source": "idea:de0c9ad2a78a15d9",
-      "target": "tech:gpt",
-      "weight": 3,
-      "keywords": [
-        "gpt"
-      ]
-    },
-    {
-      "source": "idea:fc4bb559479eca91",
-      "target": "tech:rag",
-      "weight": 3,
-      "keywords": [
-        "rag"
-      ]
-    },
-    {
-      "source": "idea:fc4bb559479eca91",
+      "source": "idea:2a6994ea93599982",
       "target": "tech:sam",
       "weight": 3,
       "keywords": [
@@ -1793,7 +1923,7 @@
       ]
     },
     {
-      "source": "idea:d1c6c4d8157b0c03",
+      "source": "idea:2a6994ea93599982",
       "target": "tech:rag",
       "weight": 3,
       "keywords": [
@@ -1801,31 +1931,7 @@
       ]
     },
     {
-      "source": "idea:ad955f45e330008c",
-      "target": "tech:gan",
-      "weight": 3,
-      "keywords": [
-        "gan"
-      ]
-    },
-    {
-      "source": "idea:ad955f45e330008c",
-      "target": "tech:ppo",
-      "weight": 3,
-      "keywords": [
-        "ppo"
-      ]
-    },
-    {
-      "source": "idea:ad955f45e330008c",
-      "target": "tech:rag",
-      "weight": 3,
-      "keywords": [
-        "rag"
-      ]
-    },
-    {
-      "source": "idea:e783738875085861",
+      "source": "idea:57bb4686aa893b18",
       "target": "tech:gpt",
       "weight": 3,
       "keywords": [
@@ -1833,19 +1939,51 @@
       ]
     },
     {
-      "source": "idea:f46758829c8aa261",
-      "target": "tech:rlhf",
+      "source": "idea:c9503fa59be54907",
+      "target": "tech:rag",
       "weight": 3,
       "keywords": [
-        "rlhf"
+        "rag"
       ]
     },
     {
-      "source": "idea:f46758829c8aa261",
-      "target": "tech:llama",
+      "source": "idea:6c06fc1c6e34e1b6",
+      "target": "tech:llm",
       "weight": 3,
       "keywords": [
-        "llama"
+        "llm"
+      ]
+    },
+    {
+      "source": "idea:6c06fc1c6e34e1b6",
+      "target": "tech:clip",
+      "weight": 3,
+      "keywords": [
+        "clip"
+      ]
+    },
+    {
+      "source": "idea:384ccd2274f9fddb",
+      "target": "tech:sam",
+      "weight": 3,
+      "keywords": [
+        "sam"
+      ]
+    },
+    {
+      "source": "idea:82e439348a3f4a87",
+      "target": "tech:gan",
+      "weight": 3,
+      "keywords": [
+        "gan"
+      ]
+    },
+    {
+      "source": "idea:9f9cf1fee52eb0ac",
+      "target": "tech:rag",
+      "weight": 3,
+      "keywords": [
+        "rag"
       ]
     },
     {
@@ -1865,23 +2003,7 @@
       ]
     },
     {
-      "source": "idea:aa42ec42d40f7102",
-      "target": "tech:gpt",
-      "weight": 3,
-      "keywords": [
-        "gpt"
-      ]
-    },
-    {
-      "source": "idea:aa42ec42d40f7102",
-      "target": "tech:gan",
-      "weight": 3,
-      "keywords": [
-        "gan"
-      ]
-    },
-    {
-      "source": "idea:aa42ec42d40f7102",
+      "source": "idea:b6ebc52210f5b682",
       "target": "tech:llm",
       "weight": 3,
       "keywords": [
@@ -1889,7 +2011,7 @@
       ]
     },
     {
-      "source": "idea:aa42ec42d40f7102",
+      "source": "idea:0f6ea168f7528e62",
       "target": "tech:sam",
       "weight": 3,
       "keywords": [
@@ -1897,11 +2019,19 @@
       ]
     },
     {
-      "source": "idea:591c675f309608dc",
-      "target": "tech:phi",
+      "source": "idea:bdc4cc8ddc193a3a",
+      "target": "tech:sam",
       "weight": 3,
       "keywords": [
-        "phi"
+        "sam"
+      ]
+    },
+    {
+      "source": "idea:b4d2b1de1cef9b93",
+      "target": "tech:llm",
+      "weight": 3,
+      "keywords": [
+        "llm"
       ]
     },
     {
@@ -1918,22 +2048,6 @@
       "weight": 3,
       "keywords": [
         "rag"
-      ]
-    },
-    {
-      "source": "idea:b4d2b1de1cef9b93",
-      "target": "tech:llm",
-      "weight": 3,
-      "keywords": [
-        "llm"
-      ]
-    },
-    {
-      "source": "idea:59b10f74747e1c43",
-      "target": "tech:gpt",
-      "weight": 3,
-      "keywords": [
-        "gpt"
       ]
     },
     {
@@ -1945,11 +2059,51 @@
       ]
     },
     {
-      "source": "idea:05c4486b603f763d",
+      "source": "idea:59b10f74747e1c43",
       "target": "tech:gpt",
       "weight": 3,
       "keywords": [
         "gpt"
+      ]
+    },
+    {
+      "source": "idea:b6a42ac2d196e1f4",
+      "target": "tech:phi",
+      "weight": 3,
+      "keywords": [
+        "phi"
+      ]
+    },
+    {
+      "source": "idea:0813ad0ebfc409e8",
+      "target": "tech:ppo",
+      "weight": 3,
+      "keywords": [
+        "ppo"
+      ]
+    },
+    {
+      "source": "idea:867d080aa34d0658",
+      "target": "tech:sam",
+      "weight": 3,
+      "keywords": [
+        "sam"
+      ]
+    },
+    {
+      "source": "idea:d3f0f41b90d04632",
+      "target": "tech:sam",
+      "weight": 3,
+      "keywords": [
+        "sam"
+      ]
+    },
+    {
+      "source": "idea:1d91a83a8857c992",
+      "target": "tech:ppo",
+      "weight": 3,
+      "keywords": [
+        "ppo"
       ]
     },
     {
@@ -1961,71 +2115,15 @@
       ]
     },
     {
-      "source": "idea:f83defee07dfb169",
-      "target": "tech:gan",
+      "source": "idea:05c4486b603f763d",
+      "target": "tech:gpt",
       "weight": 3,
       "keywords": [
-        "gan"
+        "gpt"
       ]
     },
     {
-      "source": "idea:f83defee07dfb169",
-      "target": "tech:sam",
-      "weight": 3,
-      "keywords": [
-        "sam"
-      ]
-    },
-    {
-      "source": "idea:9adb2e6f670bea96",
-      "target": "tech:sam",
-      "weight": 3,
-      "keywords": [
-        "sam"
-      ]
-    },
-    {
-      "source": "idea:710f905bf11fb09a",
-      "target": "tech:ppo",
-      "weight": 3,
-      "keywords": [
-        "ppo"
-      ]
-    },
-    {
-      "source": "idea:debdc8ee8cfb99a4",
-      "target": "tech:sam",
-      "weight": 3,
-      "keywords": [
-        "sam"
-      ]
-    },
-    {
-      "source": "idea:debdc8ee8cfb99a4",
-      "target": "tech:clip",
-      "weight": 3,
-      "keywords": [
-        "clip"
-      ]
-    },
-    {
-      "source": "idea:debdc8ee8cfb99a4",
-      "target": "tech:whisper",
-      "weight": 3,
-      "keywords": [
-        "whisper"
-      ]
-    },
-    {
-      "source": "idea:51331b9ee086c680",
-      "target": "tech:ppo",
-      "weight": 3,
-      "keywords": [
-        "ppo"
-      ]
-    },
-    {
-      "source": "idea:16c6cb1de4ad39d4",
+      "source": "idea:6e652d67a548d147",
       "target": "tech:sam",
       "weight": 3,
       "keywords": [
@@ -2066,6 +2164,14 @@
     },
     {
       "source": "idea:61122fcd57d8a64c",
+      "target": "tech:LLM Agents",
+      "weight": 3,
+      "keywords": [
+        "LLM Agents"
+      ]
+    },
+    {
+      "source": "idea:61122fcd57d8a64c",
       "target": "tech:gan",
       "weight": 3,
       "keywords": [
@@ -2082,14 +2188,6 @@
     },
     {
       "source": "idea:18f2072ff9790d05",
-      "target": "tech:gan",
-      "weight": 3,
-      "keywords": [
-        "gan"
-      ]
-    },
-    {
-      "source": "idea:18f2072ff9790d05",
       "target": "tech:llm",
       "weight": 3,
       "keywords": [
@@ -2097,7 +2195,7 @@
       ]
     },
     {
-      "source": "idea:fefdf98dd70a1acd",
+      "source": "idea:18f2072ff9790d05",
       "target": "tech:gan",
       "weight": 3,
       "keywords": [
@@ -2105,31 +2203,7 @@
       ]
     },
     {
-      "source": "idea:44d19c90f140aa69",
-      "target": "tech:clip",
-      "weight": 3,
-      "keywords": [
-        "clip"
-      ]
-    },
-    {
-      "source": "idea:fc3a6c5589aba769",
-      "target": "tech:ppo",
-      "weight": 3,
-      "keywords": [
-        "ppo"
-      ]
-    },
-    {
-      "source": "idea:67009567d935a502",
-      "target": "tech:sam",
-      "weight": 3,
-      "keywords": [
-        "sam"
-      ]
-    },
-    {
-      "source": "idea:7821880be704433e",
+      "source": "idea:301eb14121bb5ae9",
       "target": "tech:sam",
       "weight": 3,
       "keywords": [
@@ -2150,14 +2224,6 @@
       "weight": 3,
       "keywords": [
         "phi"
-      ]
-    },
-    {
-      "source": "idea:a477e1e4a1fbe394",
-      "target": "tech:transformer",
-      "weight": 3,
-      "keywords": [
-        "transformer"
       ]
     },
     {
@@ -2242,14 +2308,6 @@
     },
     {
       "source": "idea:85410ed6b5081321",
-      "target": "tech:dpo",
-      "weight": 3,
-      "keywords": [
-        "dpo"
-      ]
-    },
-    {
-      "source": "idea:85410ed6b5081321",
       "target": "tech:ppo",
       "weight": 3,
       "keywords": [
@@ -2274,14 +2332,6 @@
     },
     {
       "source": "idea:5224a0c7e8628b49",
-      "target": "tech:flux",
-      "weight": 3,
-      "keywords": [
-        "flux"
-      ]
-    },
-    {
-      "source": "idea:5224a0c7e8628b49",
       "target": "tech:gan",
       "weight": 3,
       "keywords": [
@@ -2290,18 +2340,18 @@
     },
     {
       "source": "idea:4a8306c47e1749ba",
-      "target": "tech:ppo",
-      "weight": 3,
-      "keywords": [
-        "ppo"
-      ]
-    },
-    {
-      "source": "idea:4a8306c47e1749ba",
       "target": "tech:sam",
       "weight": 3,
       "keywords": [
         "sam"
+      ]
+    },
+    {
+      "source": "idea:4a8306c47e1749ba",
+      "target": "tech:ppo",
+      "weight": 3,
+      "keywords": [
+        "ppo"
       ]
     },
     {
@@ -2321,11 +2371,19 @@
       ]
     },
     {
-      "source": "idea:7a15193234cc2011",
-      "target": "tech:gan",
+      "source": "idea:5ebc622752f32c0e",
+      "target": "tech:lora",
       "weight": 3,
       "keywords": [
-        "gan"
+        "lora"
+      ]
+    },
+    {
+      "source": "idea:5ebc622752f32c0e",
+      "target": "tech:ppo",
+      "weight": 3,
+      "keywords": [
+        "ppo"
       ]
     },
     {
@@ -2334,6 +2392,14 @@
       "weight": 3,
       "keywords": [
         "sam"
+      ]
+    },
+    {
+      "source": "idea:7a15193234cc2011",
+      "target": "tech:gan",
+      "weight": 3,
+      "keywords": [
+        "gan"
       ]
     },
     {
@@ -2361,27 +2427,19 @@
       ]
     },
     {
-      "source": "idea:8811c52ab62cf2b5",
-      "target": "tech:gan",
+      "source": "idea:3bbb484a3c28e931",
+      "target": "tech:Tool Use",
       "weight": 3,
       "keywords": [
-        "gan"
+        "Tool Use"
       ]
     },
     {
-      "source": "idea:8811c52ab62cf2b5",
-      "target": "tech:ppo",
+      "source": "idea:3bbb484a3c28e931",
+      "target": "tech:Cross-Attention",
       "weight": 3,
       "keywords": [
-        "ppo"
-      ]
-    },
-    {
-      "source": "idea:8811c52ab62cf2b5",
-      "target": "tech:rag",
-      "weight": 3,
-      "keywords": [
-        "rag"
+        "Cross-Attention"
       ]
     },
     {
@@ -2393,39 +2451,7 @@
       ]
     },
     {
-      "source": "idea:091dc042ed11944a",
-      "target": "tech:onnx",
-      "weight": 3,
-      "keywords": [
-        "onnx"
-      ]
-    },
-    {
-      "source": "idea:213b5c19804f1abc",
-      "target": "tech:gemma",
-      "weight": 3,
-      "keywords": [
-        "gemma"
-      ]
-    },
-    {
-      "source": "idea:213b5c19804f1abc",
-      "target": "tech:kv cache",
-      "weight": 3,
-      "keywords": [
-        "kv cache"
-      ]
-    },
-    {
-      "source": "idea:1974f9e15621edcd",
-      "target": "tech:gan",
-      "weight": 3,
-      "keywords": [
-        "gan"
-      ]
-    },
-    {
-      "source": "idea:1974f9e15621edcd",
+      "source": "idea:7d374a9da2b07a0c",
       "target": "tech:sam",
       "weight": 3,
       "keywords": [
@@ -2441,7 +2467,7 @@
       ]
     },
     {
-      "source": "idea:7d374a9da2b07a0c",
+      "source": "idea:1974f9e15621edcd",
       "target": "tech:sam",
       "weight": 3,
       "keywords": [
@@ -2449,7 +2475,7 @@
       ]
     },
     {
-      "source": "idea:1c6457a9f263854d",
+      "source": "idea:1974f9e15621edcd",
       "target": "tech:gan",
       "weight": 3,
       "keywords": [
@@ -2462,6 +2488,14 @@
       "weight": 3,
       "keywords": [
         "ppo"
+      ]
+    },
+    {
+      "source": "idea:1c6457a9f263854d",
+      "target": "tech:gan",
+      "weight": 3,
+      "keywords": [
+        "gan"
       ]
     },
     {
@@ -2538,22 +2572,14 @@
     },
     {
       "source": "idea:7faabca066561da7",
-      "target": "tech:ppo",
+      "target": "tech:sam",
       "weight": 3,
       "keywords": [
-        "ppo"
+        "sam"
       ]
     },
     {
       "source": "idea:7faabca066561da7",
-      "target": "tech:sam",
-      "weight": 3,
-      "keywords": [
-        "sam"
-      ]
-    },
-    {
-      "source": "idea:d2aeae007fcead35",
       "target": "tech:ppo",
       "weight": 3,
       "keywords": [
@@ -2569,11 +2595,11 @@
       ]
     },
     {
-      "source": "repo:Shubhamsaboo/awesome-llm-apps",
-      "target": "idea:d137138802426f95",
-      "weight": 2,
+      "source": "idea:d2aeae007fcead35",
+      "target": "tech:ppo",
+      "weight": 3,
       "keywords": [
-        "rag"
+        "ppo"
       ]
     },
     {
@@ -2594,6 +2620,30 @@
     },
     {
       "source": "repo:Shubhamsaboo/awesome-llm-apps",
+      "target": "idea:ea8708832c11f955",
+      "weight": 2,
+      "keywords": [
+        "rag"
+      ]
+    },
+    {
+      "source": "repo:Shubhamsaboo/awesome-llm-apps",
+      "target": "idea:b1cb2096f6ab4d7d",
+      "weight": 2,
+      "keywords": [
+        "rag"
+      ]
+    },
+    {
+      "source": "repo:Shubhamsaboo/awesome-llm-apps",
+      "target": "idea:c67206972bde56dc",
+      "weight": 2,
+      "keywords": [
+        "rag"
+      ]
+    },
+    {
+      "source": "repo:Shubhamsaboo/awesome-llm-apps",
       "target": "idea:553b64e9394e665b",
       "weight": 2,
       "keywords": [
@@ -2602,7 +2652,7 @@
     },
     {
       "source": "repo:Shubhamsaboo/awesome-llm-apps",
-      "target": "idea:303ef6f4427d8b22",
+      "target": "idea:2a6994ea93599982",
       "weight": 2,
       "keywords": [
         "rag"
@@ -2610,7 +2660,7 @@
     },
     {
       "source": "repo:Shubhamsaboo/awesome-llm-apps",
-      "target": "idea:9eb3fd7053e7c045",
+      "target": "idea:c9503fa59be54907",
       "weight": 2,
       "keywords": [
         "rag"
@@ -2618,7 +2668,15 @@
     },
     {
       "source": "repo:Shubhamsaboo/awesome-llm-apps",
-      "target": "idea:fc4bb559479eca91",
+      "target": "idea:6c06fc1c6e34e1b6",
+      "weight": 2,
+      "keywords": [
+        "llm"
+      ]
+    },
+    {
+      "source": "repo:Shubhamsaboo/awesome-llm-apps",
+      "target": "idea:9f9cf1fee52eb0ac",
       "weight": 2,
       "keywords": [
         "rag"
@@ -2626,23 +2684,7 @@
     },
     {
       "source": "repo:Shubhamsaboo/awesome-llm-apps",
-      "target": "idea:d1c6c4d8157b0c03",
-      "weight": 2,
-      "keywords": [
-        "rag"
-      ]
-    },
-    {
-      "source": "repo:Shubhamsaboo/awesome-llm-apps",
-      "target": "idea:ad955f45e330008c",
-      "weight": 2,
-      "keywords": [
-        "rag"
-      ]
-    },
-    {
-      "source": "repo:Shubhamsaboo/awesome-llm-apps",
-      "target": "idea:aa42ec42d40f7102",
+      "target": "idea:b6ebc52210f5b682",
       "weight": 2,
       "keywords": [
         "llm"
@@ -2653,8 +2695,8 @@
       "target": "idea:b4d2b1de1cef9b93",
       "weight": 2,
       "keywords": [
-        "llm",
-        "rag"
+        "rag",
+        "llm"
       ]
     },
     {
@@ -2747,14 +2789,6 @@
     },
     {
       "source": "repo:Shubhamsaboo/awesome-llm-apps",
-      "target": "idea:8811c52ab62cf2b5",
-      "weight": 2,
-      "keywords": [
-        "rag"
-      ]
-    },
-    {
-      "source": "repo:Shubhamsaboo/awesome-llm-apps",
       "target": "idea:5a4468953dbca3cf",
       "weight": 2,
       "keywords": [
@@ -2772,7 +2806,7 @@
   ],
   "stats": {
     "nodes": 146,
-    "edges": 185,
+    "edges": 184,
     "by_type": {
       "paper": 15,
       "tech": 50,
