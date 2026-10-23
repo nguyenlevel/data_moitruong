@@ -1,17 +1,17 @@
 {
-  "generated_at": "2026-10-22T03:03:20.910859+00:00",
+  "generated_at": "2026-10-23T03:07:47.224524+00:00",
   "week_of": "2026-42",
   "meta": {
     "papers_tracked": 15,
-    "technologies_tracked": 24,
-    "ideas_tracked": 528,
-    "repos_tracked": 1,
+    "technologies_tracked": 45,
+    "ideas_tracked": 529,
+    "repos_tracked": 2,
     "last_research_update": ""
   },
   "accelerating_technologies": [
     {
-      "name": "Contrastive Learning",
-      "description": "Contrastive Learning",
+      "name": "LLM Agents",
+      "description": "LLM Agents",
       "trend": "rising",
       "confidence": 0.7,
       "maturity": "medium",
@@ -19,8 +19,8 @@
       "signal": "rising"
     },
     {
-      "name": "Multimodal Learning",
-      "description": "Multimodal Learning",
+      "name": "Cowork Agents",
+      "description": "Cowork Agents",
       "trend": "rising",
       "confidence": 0.7,
       "maturity": "medium",
@@ -28,8 +28,8 @@
       "signal": "rising"
     },
     {
-      "name": "Adversarial Training",
-      "description": "Adversarial Training",
+      "name": "Verifiable Task Synthesis",
+      "description": "Verifiable Task Synthesis",
       "trend": "rising",
       "confidence": 0.7,
       "maturity": "medium",
@@ -49,47 +49,47 @@
       "score": 727
     },
     {
-      "title": "I Built an OnlyFans Search Engine That Got 50K Users in 30 Days",
-      "url": "https://reddit.com/r/SideProject/comments/1xb8er2/",
-      "revenue_signal": "$7",
-      "source": "reddit",
+      "title": "Show HN: Non.io, a Reddit-like platform Ive been working on for the last 4 years",
+      "url": "https://non.io",
+      "revenue_signal": "$2",
+      "source": "hackernews",
       "category": "",
-      "business_model": null,
-      "ai_potential": 45,
-      "score": 0
+      "business_model": "subscription,marketplace,ads,freemium",
+      "ai_potential": 40,
+      "score": 1943
     },
     {
-      "title": "用 rea skill 去除 x、虎扑、酷安 apk 的广告",
-      "url": "https://www.v2ex.com/t/1249768",
-      "revenue_signal": "6.1-sol 。 先逆向的是 x ，就给 agent 说：看下 apk ，分析消息流中的广告，尝试去掉。 x 最简单，apk 没有加壳 基本上一步到位。 接着下载了 hupu 的 apk ，让 ai 分析，分析后说使用了网易加固，我就又让它分析网易的加固逻辑，它分析了一通破解了 dex 的压缩算法，成功抽取原始 dex 。 后面就是一样的广告分析、去除。最后生成的 apk 安装运行后直接闪退，提示请在官方渠道下载正版 app 。 手机连上电脑后继续让 AI 动态调试，“进一步定位到文件清单回调会读取 assets/nedig.properties 并写入共享拒绝标志” （具体是啥我也不懂），修改之后就正常了。 今天让 AI 分析酷安的 apk ，也是网易加固的。我就让它参考 hupu 文件夹下生成的脚本和文档，迅速就把 dex 抽取出来了。 去除后安装",
-      "source": "v2ex",
-      "category": "share",
-      "business_model": null,
-      "ai_potential": 45,
+      "title": "credits or a flat monthly price for an ai tool?",
+      "url": "https://reddit.com/r/SaaS/comments/1xcpfij/",
+      "revenue_signal": "$12",
+      "source": "reddit",
+      "category": "",
+      "business_model": "subscription,freemium,api",
+      "ai_potential": 40,
       "score": 0
     }
   ],
   "hidden_gems": [
     {
-      "technology": "Embodied AI",
-      "description": "Embodied AI",
-      "confidence": 0.62,
+      "technology": "LLM Agents",
+      "description": "LLM Agents",
+      "confidence": 0.7,
       "paper_count": 1,
       "related_papers": [
         {
-          "title": "EmbodiedWorld-200K: Toward Embodied World Agents via Embodied-Planning Dataset and Interactive World Models",
+          "title": "Navalia: Advancing Cowork Agents through Verifiable Task Synthesis and Long-Horizon Post-Training",
           "url": ""
         }
       ]
     },
     {
-      "technology": "World Models",
-      "description": "World Models",
-      "confidence": 0.62,
+      "technology": "Cowork Agents",
+      "description": "Cowork Agents",
+      "confidence": 0.7,
       "paper_count": 1,
       "related_papers": [
         {
-          "title": "EmbodiedWorld-200K: Toward Embodied World Agents via Embodied-Planning Dataset and Interactive World Models",
+          "title": "Navalia: Advancing Cowork Agents through Verifiable Task Synthesis and Long-Horizon Post-Training",
           "url": ""
         }
       ]
@@ -100,7 +100,7 @@
       "name": "Shubhamsaboo/awesome-llm-apps",
       "url": "https://github.com/Shubhamsaboo/awesome-llm-apps",
       "description": "100+ AI Agents, Agent Skills and RAG Apps - Free and Open Source.",
-      "stars": 142538,
+      "stars": 142744,
       "language": "Python",
       "topics": [
         "agents",
@@ -109,6 +109,21 @@
         "rag"
       ],
       "category": "Agents & Automation"
+    },
+    {
+      "name": "ai-job-search-dev/ai-job-search",
+      "url": "https://github.com/ai-job-search-dev/ai-job-search",
+      "description": "The job search that runs on your machine. AI job application framework built on Claude Code: evaluate postings, tailor CVs, write cover letters, prep interviews. Fork it and own it.",
+      "stars": 63602,
+      "language": "Python",
+      "topics": [
+        "ai",
+        "ai-agents",
+        "career",
+        "claude-code",
+        "cover-letter"
+      ],
+      "category": "Data & Evaluation"
     }
   ]
 }

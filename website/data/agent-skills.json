@@ -1,12 +1,15 @@
 {
-  "updated_at": "2026-10-22T03:03:28.570100+00:00",
+  "updated_at": "2026-10-23T03:07:56.770545+00:00",
   "stats": {
-    "agents": 1,
-    "skills": 1,
-    "use_cases": 2
+    "agents": 2,
+    "skills": 2,
+    "use_cases": 5
   },
   "use_cases": [
     "ai",
+    "coding",
+    "data",
+    "design",
     "productivity"
   ],
   "agents": [
@@ -15,7 +18,7 @@
       "name": "Shubhamsaboo/awesome-llm-apps",
       "url": "https://github.com/Shubhamsaboo/awesome-llm-apps",
       "description": "100+ AI Agents, Agent Skills and RAG Apps - Free and Open Source.",
-      "stars": 142538,
+      "stars": 142744,
       "category": "Agents & Automation",
       "language": "Python",
       "topics": [
@@ -24,13 +27,39 @@
         "python",
         "rag"
       ],
-      "trend_score": 1440.5,
-      "delta_7d": 779,
+      "trend_score": 1765.4,
+      "delta_7d": 847,
       "is_agent": true,
       "is_skill": true,
       "use_cases": [
+        "productivity",
+        "ai"
+      ]
+    },
+    {
+      "id": "ai-job-search-dev/ai-job-search",
+      "name": "ai-job-search-dev/ai-job-search",
+      "url": "https://github.com/ai-job-search-dev/ai-job-search",
+      "description": "The job search that runs on your machine. AI job application framework built on Claude Code: evaluate postings, tailor CVs, write cover letters, prep interviews. Fork it and own it.",
+      "stars": 63602,
+      "category": "Data & Evaluation",
+      "language": "Python",
+      "topics": [
         "ai",
-        "productivity"
+        "ai-agents",
+        "career",
+        "claude-code",
+        "cover-letter"
+      ],
+      "trend_score": 100.2,
+      "delta_7d": 0,
+      "is_agent": true,
+      "is_skill": true,
+      "use_cases": [
+        "design",
+        "ai",
+        "data",
+        "coding"
       ]
     }
   ],
@@ -40,7 +69,7 @@
       "name": "Shubhamsaboo/awesome-llm-apps",
       "url": "https://github.com/Shubhamsaboo/awesome-llm-apps",
       "description": "100+ AI Agents, Agent Skills and RAG Apps - Free and Open Source.",
-      "stars": 142538,
+      "stars": 142744,
       "category": "Agents & Automation",
       "language": "Python",
       "topics": [
@@ -49,13 +78,39 @@
         "python",
         "rag"
       ],
-      "trend_score": 1440.5,
-      "delta_7d": 779,
+      "trend_score": 1765.4,
+      "delta_7d": 847,
       "is_agent": true,
       "is_skill": true,
       "use_cases": [
+        "productivity",
+        "ai"
+      ]
+    },
+    {
+      "id": "ai-job-search-dev/ai-job-search",
+      "name": "ai-job-search-dev/ai-job-search",
+      "url": "https://github.com/ai-job-search-dev/ai-job-search",
+      "description": "The job search that runs on your machine. AI job application framework built on Claude Code: evaluate postings, tailor CVs, write cover letters, prep interviews. Fork it and own it.",
+      "stars": 63602,
+      "category": "Data & Evaluation",
+      "language": "Python",
+      "topics": [
         "ai",
-        "productivity"
+        "ai-agents",
+        "career",
+        "claude-code",
+        "cover-letter"
+      ],
+      "trend_score": 100.2,
+      "delta_7d": 0,
+      "is_agent": true,
+      "is_skill": true,
+      "use_cases": [
+        "design",
+        "ai",
+        "data",
+        "coding"
       ]
     }
   ]
