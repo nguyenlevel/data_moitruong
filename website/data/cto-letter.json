@@ -1,17 +1,17 @@
 {
-  "generated_at": "2026-10-23T03:07:47.224524+00:00",
+  "generated_at": "2026-10-24T03:03:56.670635+00:00",
   "week_of": "2026-42",
   "meta": {
     "papers_tracked": 15,
-    "technologies_tracked": 45,
-    "ideas_tracked": 529,
+    "technologies_tracked": 43,
+    "ideas_tracked": 539,
     "repos_tracked": 2,
     "last_research_update": ""
   },
   "accelerating_technologies": [
     {
-      "name": "LLM Agents",
-      "description": "LLM Agents",
+      "name": "Mutually Reinforcing Embedding and Language Modeling",
+      "description": "Mutually Reinforcing Embedding and Language Modeling",
       "trend": "rising",
       "confidence": 0.7,
       "maturity": "medium",
@@ -19,8 +19,8 @@
       "signal": "rising"
     },
     {
-      "name": "Cowork Agents",
-      "description": "Cowork Agents",
+      "name": "Predictive Coupling",
+      "description": "Predictive Coupling",
       "trend": "rising",
       "confidence": 0.7,
       "maturity": "medium",
@@ -28,8 +28,8 @@
       "signal": "rising"
     },
     {
-      "name": "Verifiable Task Synthesis",
-      "description": "Verifiable Task Synthesis",
+      "name": "Contrastive Loss",
+      "description": "Contrastive Loss",
       "trend": "rising",
       "confidence": 0.7,
       "maturity": "medium",
@@ -38,6 +38,16 @@
     }
   ],
   "startup_ideas_with_revenue": [
+    {
+      "title": "Hey SaaS developers, I made a Bug Bounty Program for $100 for each crack... Looking forward to crack it...",
+      "url": "https://reddit.com/r/SaaS/comments/1xdfon5/",
+      "revenue_signal": "$100",
+      "source": "reddit",
+      "category": "",
+      "business_model": "subscription",
+      "ai_potential": 55,
+      "score": 0
+    },
     {
       "title": "Show HN: San Francisco Compute – 512 H100s at <$2/hr for research and startups",
       "url": "https://sfcompute.org/",
@@ -57,39 +67,29 @@
       "business_model": "subscription,marketplace,ads,freemium",
       "ai_potential": 40,
       "score": 1943
-    },
-    {
-      "title": "credits or a flat monthly price for an ai tool?",
-      "url": "https://reddit.com/r/SaaS/comments/1xcpfij/",
-      "revenue_signal": "$12",
-      "source": "reddit",
-      "category": "",
-      "business_model": "subscription,freemium,api",
-      "ai_potential": 40,
-      "score": 0
     }
   ],
   "hidden_gems": [
     {
-      "technology": "LLM Agents",
-      "description": "LLM Agents",
+      "technology": "Mutually Reinforcing Embedding and Language Modeling",
+      "description": "Mutually Reinforcing Embedding and Language Modeling",
       "confidence": 0.7,
       "paper_count": 1,
       "related_papers": [
         {
-          "title": "Navalia: Advancing Cowork Agents through Verifiable Task Synthesis and Long-Horizon Post-Training",
+          "title": "ULME: Predictive Coupling for Mutually Reinforcing Embedding and Language Modeling",
           "url": ""
         }
       ]
     },
     {
-      "technology": "Cowork Agents",
-      "description": "Cowork Agents",
+      "technology": "Predictive Coupling",
+      "description": "Predictive Coupling",
       "confidence": 0.7,
       "paper_count": 1,
       "related_papers": [
         {
-          "title": "Navalia: Advancing Cowork Agents through Verifiable Task Synthesis and Long-Horizon Post-Training",
+          "title": "ULME: Predictive Coupling for Mutually Reinforcing Embedding and Language Modeling",
           "url": ""
         }
       ]
@@ -100,7 +100,7 @@
       "name": "Shubhamsaboo/awesome-llm-apps",
       "url": "https://github.com/Shubhamsaboo/awesome-llm-apps",
       "description": "100+ AI Agents, Agent Skills and RAG Apps - Free and Open Source.",
-      "stars": 142744,
+      "stars": 142831,
       "language": "Python",
       "topics": [
         "agents",
@@ -114,7 +114,7 @@
       "name": "ai-job-search-dev/ai-job-search",
       "url": "https://github.com/ai-job-search-dev/ai-job-search",
       "description": "The job search that runs on your machine. AI job application framework built on Claude Code: evaluate postings, tailor CVs, write cover letters, prep interviews. Fork it and own it.",
-      "stars": 63602,
+      "stars": 64133,
       "language": "Python",
       "topics": [
         "ai",

@@ -1,0 +1,55 @@
+{
+  "date": "2026-10-24",
+  "generated_at": "2026-10-24T03:03:56.608672+00:00",
+  "backend": "llm7",
+  "model": "default",
+  "brief": [
+    "Top opportunity: Shubhamsaboo/awesome-llm-apps (opp 8, emerging)",
+    "100+ open-source LLM app templates, accelerating AI app development",
+    "Breakout timing: Q2 2023, as LLM adoption surges",
+    "Also consider: ai-job-search-dev/ai-job-search for AI-driven recruitment"
+  ],
+  "items": [
+    {
+      "name": "Shubhamsaboo/awesome-llm-apps",
+      "url": "https://github.com/Shubhamsaboo/awesome-llm-apps",
+      "stars": 142831,
+      "category": "Agents & Automation",
+      "delta_7d": 798,
+      "delta_7d_pct": 0.56,
+      "timing": "emerging",
+      "signals": [],
+      "cross_signal": false,
+      "one_liner": "Curated collection of 100+ open-source LLM app templates",
+      "pain_point": "Developers waste weeks rebuilding common LLM patterns; solo devs and startups need fast deploy paths",
+      "app_ideas": [
+        "One-click deploy marketplace for these templates with built-in auth, billing, and hosting",
+        "No-code agent builder letting non-devs visually chain these skills into workflows",
+        "Vertical agent套装 for specific niches (legal research, sales outreach) with opinionated defaults"
+      ],
+      "monetization": "Freemium with paid hosting + B2B enterprise add-ons (sso, analytics, rate limits)",
+      "opportunity": 8,
+      "why_now": "LLM app dev is exploding but most devs still build from scratch; this repo shows massive demand for reusable patterns"
+    },
+    {
+      "name": "ai-job-search-dev/ai-job-search",
+      "url": "https://github.com/ai-job-search-dev/ai-job-search",
+      "stars": 64133,
+      "category": "Data & Evaluation",
+      "delta_7d": null,
+      "delta_7d_pct": null,
+      "timing": "steady",
+      "signals": [],
+      "cross_signal": false,
+      "one_liner": "AI-powered job search automation",
+      "pain_point": "Time-consuming job applications, manual tailoring of CVs and cover letters",
+      "app_ideas": [
+        "AI Job Application Assistant (Web)",
+        "AI Resume Tailor (Chrome Extension)"
+      ],
+      "monetization": "Freemium with premium features for job seekers",
+      "opportunity": 8,
+      "why_now": "Increasing demand for AI in job search and strong open-source community"
+    }
+  ]
+}
