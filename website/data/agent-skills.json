@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-24T03:04:02.989542+00:00",
+  "updated_at": "2026-10-25T02:55:24.812520+00:00",
   "stats": {
     "agents": 2,
     "skills": 2,
@@ -18,7 +18,7 @@
       "name": "Shubhamsaboo/awesome-llm-apps",
       "url": "https://github.com/Shubhamsaboo/awesome-llm-apps",
       "description": "100+ AI Agents, Agent Skills and RAG Apps - Free and Open Source.",
-      "stars": 142831,
+      "stars": 142960,
       "category": "Agents & Automation",
       "language": "Python",
       "topics": [
@@ -27,13 +27,13 @@
         "python",
         "rag"
       ],
-      "trend_score": 1452.4,
-      "delta_7d": 798,
+      "trend_score": 1564.6,
+      "delta_7d": 817,
       "is_agent": true,
       "is_skill": true,
       "use_cases": [
-        "productivity",
-        "ai"
+        "ai",
+        "productivity"
       ]
     },
     {
@@ -41,7 +41,7 @@
       "name": "ai-job-search-dev/ai-job-search",
       "url": "https://github.com/ai-job-search-dev/ai-job-search",
       "description": "The job search that runs on your machine. AI job application framework built on Claude Code: evaluate postings, tailor CVs, write cover letters, prep interviews. Fork it and own it.",
-      "stars": 64133,
+      "stars": 64897,
       "category": "Data & Evaluation",
       "language": "Python",
       "topics": [
@@ -51,14 +51,14 @@
         "claude-code",
         "cover-letter"
       ],
-      "trend_score": 1139.9,
+      "trend_score": 1603.7,
       "delta_7d": 0,
       "is_agent": true,
       "is_skill": true,
       "use_cases": [
-        "ai",
         "coding",
         "design",
+        "ai",
         "data"
       ]
     }
@@ -69,7 +69,7 @@
       "name": "Shubhamsaboo/awesome-llm-apps",
       "url": "https://github.com/Shubhamsaboo/awesome-llm-apps",
       "description": "100+ AI Agents, Agent Skills and RAG Apps - Free and Open Source.",
-      "stars": 142831,
+      "stars": 142960,
       "category": "Agents & Automation",
       "language": "Python",
       "topics": [
@@ -78,13 +78,13 @@
         "python",
         "rag"
       ],
-      "trend_score": 1452.4,
-      "delta_7d": 798,
+      "trend_score": 1564.6,
+      "delta_7d": 817,
       "is_agent": true,
       "is_skill": true,
       "use_cases": [
-        "productivity",
-        "ai"
+        "ai",
+        "productivity"
       ]
     },
     {
@@ -92,7 +92,7 @@
       "name": "ai-job-search-dev/ai-job-search",
       "url": "https://github.com/ai-job-search-dev/ai-job-search",
       "description": "The job search that runs on your machine. AI job application framework built on Claude Code: evaluate postings, tailor CVs, write cover letters, prep interviews. Fork it and own it.",
-      "stars": 64133,
+      "stars": 64897,
       "category": "Data & Evaluation",
       "language": "Python",
       "topics": [
@@ -102,14 +102,14 @@
         "claude-code",
         "cover-letter"
       ],
-      "trend_score": 1139.9,
+      "trend_score": 1603.7,
       "delta_7d": 0,
       "is_agent": true,
       "is_skill": true,
       "use_cases": [
-        "ai",
         "coding",
         "design",
+        "ai",
         "data"
       ]
     }

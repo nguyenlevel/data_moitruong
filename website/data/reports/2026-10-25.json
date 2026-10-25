@@ -1,0 +1,56 @@
+{
+  "date": "2026-10-25",
+  "generated_at": "2026-10-25T02:55:16.164133+00:00",
+  "backend": "llm7",
+  "model": "default",
+  "brief": [
+    "Breakout timing: Now - AI job search assistant is a high-demand, immediate opportunity",
+    "Best opportunity: ai-job-search-dev/ai-job-search - AI-powered job search for developers",
+    "AI job search is a high-demand, immediate opportunity with a clear product-market fit",
+    "Leverage curated list of open-source AI agents & RAG apps for inspiration and components",
+    "AI job search assistant can be built quickly with existing open-source tools and libraries"
+  ],
+  "items": [
+    {
+      "name": "Shubhamsaboo/awesome-llm-apps",
+      "url": "https://github.com/Shubhamsaboo/awesome-llm-apps",
+      "stars": 142960,
+      "category": "Agents & Automation",
+      "delta_7d": 817,
+      "delta_7d_pct": 0.57,
+      "timing": "emerging",
+      "signals": [],
+      "cross_signal": false,
+      "one_liner": "Curated list of open-source AI agents & RAG apps",
+      "pain_point": "Teams struggle to find & implement useful AI agents; Devs need ready-to-use tools for rapid automation",
+      "app_ideas": [
+        "AI Agent Marketplace: Curated, searchable directory with user reviews",
+        "AI Agent Starter Kit: Quickly create & customize agents for specific use-cases"
+      ],
+      "monetization": "Freemium with premium features like advanced customization & priority support",
+      "opportunity": 8,
+      "why_now": "Growing interest in AI agents & RAG, increasing demand for automation tools"
+    },
+    {
+      "name": "ai-job-search-dev/ai-job-search",
+      "url": "https://github.com/ai-job-search-dev/ai-job-search",
+      "stars": 64897,
+      "category": "Data & Evaluation",
+      "delta_7d": null,
+      "delta_7d_pct": null,
+      "timing": "steady",
+      "signals": [],
+      "cross_signal": false,
+      "one_liner": "AI-powered job search assistant for developers",
+      "pain_point": "Developers struggle with job applications, this automates CV tailoring, cover letters, and interview prep",
+      "app_ideas": [
+        "Freemium AI job search assistant with basic features free, advanced features paid",
+        "B2B API wrapper for companies to integrate AI job search into their platforms",
+        "Vertical SaaS for tech recruiters to automate candidate evaluation and outreach"
+      ],
+      "monetization": "Freemium with B2B API wrapper and vertical SaaS options",
+      "opportunity": 8,
+      "why_now": "Increased demand for AI tools and remote work post-pandemic"
+    }
+  ]
+}

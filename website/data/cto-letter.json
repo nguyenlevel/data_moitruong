@@ -1,17 +1,17 @@
 {
-  "generated_at": "2026-10-24T03:03:56.670635+00:00",
-  "week_of": "2026-42",
+  "generated_at": "2026-10-25T02:55:16.221005+00:00",
+  "week_of": "2026-43",
   "meta": {
     "papers_tracked": 15,
-    "technologies_tracked": 43,
-    "ideas_tracked": 539,
+    "technologies_tracked": 41,
+    "ideas_tracked": 544,
     "repos_tracked": 2,
     "last_research_update": ""
   },
   "accelerating_technologies": [
     {
-      "name": "Mutually Reinforcing Embedding and Language Modeling",
-      "description": "Mutually Reinforcing Embedding and Language Modeling",
+      "name": "Multi-modal Large Language Models",
+      "description": "Multi-modal Large Language Models",
       "trend": "rising",
       "confidence": 0.7,
       "maturity": "medium",
@@ -19,8 +19,8 @@
       "signal": "rising"
     },
     {
-      "name": "Predictive Coupling",
-      "description": "Predictive Coupling",
+      "name": "Prompt Injection Detection",
+      "description": "Prompt Injection Detection",
       "trend": "rising",
       "confidence": 0.7,
       "maturity": "medium",
@@ -28,8 +28,8 @@
       "signal": "rising"
     },
     {
-      "name": "Contrastive Loss",
-      "description": "Contrastive Loss",
+      "name": "In-Context Learning",
+      "description": "In-Context Learning",
       "trend": "rising",
       "confidence": 0.7,
       "maturity": "medium",
@@ -38,16 +38,6 @@
     }
   ],
   "startup_ideas_with_revenue": [
-    {
-      "title": "Hey SaaS developers, I made a Bug Bounty Program for $100 for each crack... Looking forward to crack it...",
-      "url": "https://reddit.com/r/SaaS/comments/1xdfon5/",
-      "revenue_signal": "$100",
-      "source": "reddit",
-      "category": "",
-      "business_model": "subscription",
-      "ai_potential": 55,
-      "score": 0
-    },
     {
       "title": "Show HN: San Francisco Compute – 512 H100s at <$2/hr for research and startups",
       "url": "https://sfcompute.org/",
@@ -67,13 +57,23 @@
       "business_model": "subscription,marketplace,ads,freemium",
       "ai_potential": 40,
       "score": 1943
+    },
+    {
+      "title": "RTWS - The Media Angles That Got My Clients on TV",
+      "url": "https://reddit.com/r/Entrepreneur/comments/1xckuqk/",
+      "revenue_signal": "made 20",
+      "source": "reddit",
+      "category": "",
+      "business_model": null,
+      "ai_potential": 30,
+      "score": 0
     }
   ],
   "hidden_gems": [
     {
       "technology": "Mutually Reinforcing Embedding and Language Modeling",
       "description": "Mutually Reinforcing Embedding and Language Modeling",
-      "confidence": 0.7,
+      "confidence": 0.6,
       "paper_count": 1,
       "related_papers": [
         {
@@ -85,7 +85,7 @@
     {
       "technology": "Predictive Coupling",
       "description": "Predictive Coupling",
-      "confidence": 0.7,
+      "confidence": 0.6,
       "paper_count": 1,
       "related_papers": [
         {
@@ -100,7 +100,7 @@
       "name": "Shubhamsaboo/awesome-llm-apps",
       "url": "https://github.com/Shubhamsaboo/awesome-llm-apps",
       "description": "100+ AI Agents, Agent Skills and RAG Apps - Free and Open Source.",
-      "stars": 142831,
+      "stars": 142960,
       "language": "Python",
       "topics": [
         "agents",
@@ -114,7 +114,7 @@
       "name": "ai-job-search-dev/ai-job-search",
       "url": "https://github.com/ai-job-search-dev/ai-job-search",
       "description": "The job search that runs on your machine. AI job application framework built on Claude Code: evaluate postings, tailor CVs, write cover letters, prep interviews. Fork it and own it.",
-      "stars": 64133,
+      "stars": 64897,
       "language": "Python",
       "topics": [
         "ai",
