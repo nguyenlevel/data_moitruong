@@ -1,26 +1,17 @@
 {
-  "generated_at": "2026-10-25T02:55:16.221005+00:00",
+  "generated_at": "2026-10-26T02:54:06.729829+00:00",
   "week_of": "2026-43",
   "meta": {
     "papers_tracked": 15,
-    "technologies_tracked": 41,
-    "ideas_tracked": 544,
+    "technologies_tracked": 52,
+    "ideas_tracked": 529,
     "repos_tracked": 2,
     "last_research_update": ""
   },
   "accelerating_technologies": [
     {
-      "name": "Multi-modal Large Language Models",
-      "description": "Multi-modal Large Language Models",
-      "trend": "rising",
-      "confidence": 0.7,
-      "maturity": "medium",
-      "paper_count": 1,
-      "signal": "rising"
-    },
-    {
-      "name": "Prompt Injection Detection",
-      "description": "Prompt Injection Detection",
+      "name": "Retrieval Augmented Generation",
+      "description": "Retrieval Augmented Generation",
       "trend": "rising",
       "confidence": 0.7,
       "maturity": "medium",
@@ -30,6 +21,15 @@
     {
       "name": "In-Context Learning",
       "description": "In-Context Learning",
+      "trend": "rising",
+      "confidence": 0.7,
+      "maturity": "medium",
+      "paper_count": 1,
+      "signal": "rising"
+    },
+    {
+      "name": "Prompt Engineering",
+      "description": "Prompt Engineering",
       "trend": "rising",
       "confidence": 0.7,
       "maturity": "medium",
@@ -59,13 +59,13 @@
       "score": 1943
     },
     {
-      "title": "RTWS - The Media Angles That Got My Clients on TV",
-      "url": "https://reddit.com/r/Entrepreneur/comments/1xckuqk/",
-      "revenue_signal": "made 20",
+      "title": "I built Storage Cleaner: PhotoFloor for iPhone because cleaner apps wanted a weekly subscription just to delete my own videos",
+      "url": "https://reddit.com/r/SideProject/comments/1xfhovr/",
+      "revenue_signal": "$7",
       "source": "reddit",
       "category": "",
-      "business_model": null,
-      "ai_potential": 30,
+      "business_model": "subscription,one-time,app-store",
+      "ai_potential": 40,
       "score": 0
     }
   ],
@@ -100,7 +100,7 @@
       "name": "Shubhamsaboo/awesome-llm-apps",
       "url": "https://github.com/Shubhamsaboo/awesome-llm-apps",
       "description": "100+ AI Agents, Agent Skills and RAG Apps - Free and Open Source.",
-      "stars": 142960,
+      "stars": 143057,
       "language": "Python",
       "topics": [
         "agents",
@@ -114,7 +114,7 @@
       "name": "ai-job-search-dev/ai-job-search",
       "url": "https://github.com/ai-job-search-dev/ai-job-search",
       "description": "The job search that runs on your machine. AI job application framework built on Claude Code: evaluate postings, tailor CVs, write cover letters, prep interviews. Fork it and own it.",
-      "stars": 64897,
+      "stars": 65753,
       "language": "Python",
       "topics": [
         "ai",
