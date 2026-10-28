@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-10-27T03:29:02.058591+00:00",
+  "generated_at": "2026-10-28T03:45:13.925540+00:00",
   "week_of": "2026-43",
   "meta": {
     "papers_tracked": 15,
-    "technologies_tracked": 12,
-    "ideas_tracked": 539,
+    "technologies_tracked": 13,
+    "ideas_tracked": 536,
     "repos_tracked": 2,
     "last_research_update": ""
   },
@@ -13,25 +13,25 @@
       "name": "Multimodal Learning",
       "description": "Multimodal Learning",
       "trend": "rising",
-      "confidence": 0.8,
+      "confidence": 0.7,
       "maturity": "medium",
       "paper_count": 1,
       "signal": "rising"
     },
     {
-      "name": "Retrieval Augmented Generation",
-      "description": "Retrieval Augmented Generation",
+      "name": "Reinforcement Learning",
+      "description": "Reinforcement Learning",
       "trend": "rising",
-      "confidence": 0.8,
+      "confidence": 0.7,
       "maturity": "medium",
       "paper_count": 1,
       "signal": "rising"
     },
     {
-      "name": "Chain-of-Thought Prompting",
-      "description": "Chain-of-Thought Prompting",
+      "name": "Knowledge Distillation",
+      "description": "Knowledge Distillation",
       "trend": "rising",
-      "confidence": 0.8,
+      "confidence": 0.7,
       "maturity": "medium",
       "paper_count": 1,
       "signal": "rising"
@@ -59,37 +59,45 @@
       "score": 727
     },
     {
-      "title": "Ezn: Smart parental controls for your AI agent's credit card & spending",
-      "url": "https://reddit.com/r/SideProject/comments/1xgggpf/",
-      "revenue_signal": "$299",
+      "title": "Each equation costs me USD 0.0005 to convert. Mathpix gives students 20 free a month. I give 200.",
+      "url": "https://reddit.com/r/SideProject/comments/1xhcy20/",
+      "revenue_signal": "$19/year",
       "source": "reddit",
       "category": "",
-      "business_model": null,
+      "business_model": "freemium",
       "ai_potential": 45,
       "score": 0
     }
   ],
   "hidden_gems": [
     {
-      "technology": "Mutually Reinforcing Embedding and Language Modeling",
-      "description": "Mutually Reinforcing Embedding and Language Modeling",
-      "confidence": 0.55,
+      "technology": "Multimodal Learning",
+      "description": "Multimodal Learning",
+      "confidence": 0.7,
       "paper_count": 1,
       "related_papers": [
         {
-          "title": "ULME: Predictive Coupling for Mutually Reinforcing Embedding and Language Modeling",
+          "title": "MedCaseAgent: From Multimodal Clinical Evidence to Rare Disease Case Reports",
+          "url": ""
+        },
+        {
+          "title": "Reinforcement Learning-driven Diffusion Models: Language, Vision, and Beyond",
+          "url": ""
+        },
+        {
+          "title": "RxnExBench: Benchmarking Vision-Language Models for Structured Chemical Reaction Extraction from Scientific Literature",
           "url": ""
         }
       ]
     },
     {
-      "technology": "Predictive Coupling",
-      "description": "Predictive Coupling",
-      "confidence": 0.55,
+      "technology": "Retrieval Augmented Generation",
+      "description": "Retrieval Augmented Generation",
+      "confidence": 0.62,
       "paper_count": 1,
       "related_papers": [
         {
-          "title": "ULME: Predictive Coupling for Mutually Reinforcing Embedding and Language Modeling",
+          "title": "MedCaseAgent: From Multimodal Clinical Evidence to Rare Disease Case Reports",
           "url": ""
         }
       ]
@@ -100,7 +108,7 @@
       "name": "Shubhamsaboo/awesome-llm-apps",
       "url": "https://github.com/Shubhamsaboo/awesome-llm-apps",
       "description": "100+ AI Agents, Agent Skills and RAG Apps - Free and Open Source.",
-      "stars": 143176,
+      "stars": 143260,
       "language": "Python",
       "topics": [
         "agents",
@@ -114,7 +122,7 @@
       "name": "ai-job-search-dev/ai-job-search",
       "url": "https://github.com/ai-job-search-dev/ai-job-search",
       "description": "The job search that runs on your machine. AI job application framework built on Claude Code: evaluate postings, tailor CVs, write cover letters, prep interviews. Fork it and own it.",
-      "stars": 66378,
+      "stars": 66848,
       "language": "Python",
       "topics": [
         "ai",
