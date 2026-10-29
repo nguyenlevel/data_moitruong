@@ -1,0 +1,55 @@
+{
+  "date": "2026-10-29",
+  "generated_at": "2026-10-29T04:05:53.136154+00:00",
+  "backend": "llm7",
+  "model": "default",
+  "brief": [
+    "Breakout timing: AI job search tools are exploding with AI hiring surges.",
+    "Single best opportunity: ai-job-search-dev/ai-job-search - AI-powered job search & application tool.",
+    "Leverage Shubhamsaboo/awesome-llm-apps for AI agent & RAG app inspiration.",
+    "AI job search tools are steady, with high demand and scalability.",
+    "Build a niche AI job search tool with unique features to stand out."
+  ],
+  "items": [
+    {
+      "name": "Shubhamsaboo/awesome-llm-apps",
+      "url": "https://github.com/Shubhamsaboo/awesome-llm-apps",
+      "stars": 143359,
+      "category": "Agents & Automation",
+      "delta_7d": 821,
+      "delta_7d_pct": 0.58,
+      "timing": "emerging",
+      "signals": [],
+      "cross_signal": false,
+      "one_liner": "Open-source collection of AI agents, skills, and RAG apps",
+      "pain_point": "Businesses struggle to implement and integrate AI agents due to lack of ready-to-use, open-source solutions. They would pay for ease of use and customization.",
+      "app_ideas": [
+        "AI Agent Marketplace: A platform to discover, customize, and deploy open-source AI agents tailored to specific business needs.",
+        "AI Agent Automation Tool: A no-code/low-code tool to automate business processes using the agents in the collection."
+      ],
+      "monetization": "Freemium with enterprise-grade features and support available for a subscription fee.",
+      "opportunity": 8,
+      "why_now": "Growing interest in AI agents and RAG systems, as seen by the repo's rapid growth in stars."
+    },
+    {
+      "name": "ai-job-search-dev/ai-job-search",
+      "url": "https://github.com/ai-job-search-dev/ai-job-search",
+      "stars": 67224,
+      "category": "Data & Evaluation",
+      "delta_7d": null,
+      "delta_7d_pct": null,
+      "timing": "steady",
+      "signals": [],
+      "cross_signal": false,
+      "one_liner": "AI-powered job search & application tool",
+      "pain_point": "Job seekers struggling with manual application process, recruiters overwhelmed with applications",
+      "app_ideas": [
+        "AI Job Search Assistant: Chrome extension for automated job application",
+        "AI Resume Builder & Cover Letter Generator: Standalone web app"
+      ],
+      "monetization": "Freemium with premium features for job seekers, and B2B API for recruiters",
+      "opportunity": 8,
+      "why_now": "Growing interest in AI for job search, increasing demand for remote work"
+    }
+  ]
+}

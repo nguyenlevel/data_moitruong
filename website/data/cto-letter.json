@@ -1,17 +1,17 @@
 {
-  "generated_at": "2026-10-28T03:45:13.925540+00:00",
+  "generated_at": "2026-10-29T04:05:53.206249+00:00",
   "week_of": "2026-43",
   "meta": {
     "papers_tracked": 15,
-    "technologies_tracked": 13,
-    "ideas_tracked": 536,
+    "technologies_tracked": 15,
+    "ideas_tracked": 541,
     "repos_tracked": 2,
     "last_research_update": ""
   },
   "accelerating_technologies": [
     {
-      "name": "Multimodal Learning",
-      "description": "Multimodal Learning",
+      "name": "Diffusion Models",
+      "description": "Diffusion Models",
       "trend": "rising",
       "confidence": 0.7,
       "maturity": "medium",
@@ -19,8 +19,8 @@
       "signal": "rising"
     },
     {
-      "name": "Reinforcement Learning",
-      "description": "Reinforcement Learning",
+      "name": "Causal Attention",
+      "description": "Causal Attention",
       "trend": "rising",
       "confidence": 0.7,
       "maturity": "medium",
@@ -28,8 +28,8 @@
       "signal": "rising"
     },
     {
-      "name": "Knowledge Distillation",
-      "description": "Knowledge Distillation",
+      "name": "Vision-Language Models",
+      "description": "Vision-Language Models",
       "trend": "rising",
       "confidence": 0.7,
       "maturity": "medium",
@@ -38,6 +38,16 @@
     }
   ],
   "startup_ideas_with_revenue": [
+    {
+      "title": "Replacing your SaaS stack with AI agents is the dumbest “cost saving” of the decade",
+      "url": "https://reddit.com/r/SaaS/comments/1xhgyhm/",
+      "revenue_signal": "$2k/mo",
+      "source": "reddit",
+      "category": "",
+      "business_model": "subscription",
+      "ai_potential": 70,
+      "score": 0
+    },
     {
       "title": "GPT-6.1 Terra 单价腰斩，日常电脑操作/填表/视觉任务能换吗？复杂编码还得留 Sol？",
       "url": "https://www.v2ex.com/t/1252126",
@@ -57,47 +67,37 @@
       "business_model": null,
       "ai_potential": 45,
       "score": 727
-    },
-    {
-      "title": "Each equation costs me USD 0.0005 to convert. Mathpix gives students 20 free a month. I give 200.",
-      "url": "https://reddit.com/r/SideProject/comments/1xhcy20/",
-      "revenue_signal": "$19/year",
-      "source": "reddit",
-      "category": "",
-      "business_model": "freemium",
-      "ai_potential": 45,
-      "score": 0
     }
   ],
   "hidden_gems": [
     {
-      "technology": "Multimodal Learning",
-      "description": "Multimodal Learning",
+      "technology": "Diffusion Models",
+      "description": "Diffusion Models",
       "confidence": 0.7,
       "paper_count": 1,
       "related_papers": [
         {
-          "title": "MedCaseAgent: From Multimodal Clinical Evidence to Rare Disease Case Reports",
+          "title": "Hy-Nomas: Towards Free-form Interactive World Generation",
           "url": ""
         },
         {
-          "title": "Reinforcement Learning-driven Diffusion Models: Language, Vision, and Beyond",
+          "title": "TS-DP: Reinforcement Speculative Decoding For Temporal Adaptive Diffusion Policy Acceleration",
           "url": ""
         },
         {
-          "title": "RxnExBench: Benchmarking Vision-Language Models for Structured Chemical Reaction Extraction from Scientific Literature",
+          "title": "Efficient Token-Level Policy Optimization for Masked Diffusion Models via Velocity Alignment",
           "url": ""
         }
       ]
     },
     {
-      "technology": "Retrieval Augmented Generation",
-      "description": "Retrieval Augmented Generation",
-      "confidence": 0.62,
+      "technology": "Causal Attention",
+      "description": "Causal Attention",
+      "confidence": 0.7,
       "paper_count": 1,
       "related_papers": [
         {
-          "title": "MedCaseAgent: From Multimodal Clinical Evidence to Rare Disease Case Reports",
+          "title": "Hy-Nomas: Towards Free-form Interactive World Generation",
           "url": ""
         }
       ]
@@ -108,7 +108,7 @@
       "name": "Shubhamsaboo/awesome-llm-apps",
       "url": "https://github.com/Shubhamsaboo/awesome-llm-apps",
       "description": "100+ AI Agents, Agent Skills and RAG Apps - Free and Open Source.",
-      "stars": 143260,
+      "stars": 143359,
       "language": "Python",
       "topics": [
         "agents",
@@ -122,7 +122,7 @@
       "name": "ai-job-search-dev/ai-job-search",
       "url": "https://github.com/ai-job-search-dev/ai-job-search",
       "description": "The job search that runs on your machine. AI job application framework built on Claude Code: evaluate postings, tailor CVs, write cover letters, prep interviews. Fork it and own it.",
-      "stars": 66848,
+      "stars": 67224,
       "language": "Python",
       "topics": [
         "ai",
