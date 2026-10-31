@@ -1,17 +1,17 @@
 {
-  "generated_at": "2026-10-30T04:07:09.127504+00:00",
+  "generated_at": "2026-10-31T03:50:48.017542+00:00",
   "week_of": "2026-43",
   "meta": {
     "papers_tracked": 15,
-    "technologies_tracked": 32,
-    "ideas_tracked": 548,
+    "technologies_tracked": 15,
+    "ideas_tracked": 538,
     "repos_tracked": 2,
     "last_research_update": ""
   },
   "accelerating_technologies": [
     {
-      "name": "Vision-Language Models",
-      "description": "Vision-Language Models",
+      "name": "Contrastive Learning",
+      "description": "Contrastive Learning",
       "trend": "rising",
       "confidence": 0.7,
       "maturity": "medium",
@@ -19,8 +19,8 @@
       "signal": "rising"
     },
     {
-      "name": "Multimodal Transformer Models",
-      "description": "Multimodal Transformer Models",
+      "name": "Reinforcement Learning",
+      "description": "Reinforcement Learning",
       "trend": "rising",
       "confidence": 0.7,
       "maturity": "medium",
@@ -28,8 +28,8 @@
       "signal": "rising"
     },
     {
-      "name": "Explainable AI",
-      "description": "Explainable AI",
+      "name": "Multimodal Learning",
+      "description": "Multimodal Learning",
       "trend": "rising",
       "confidence": 0.7,
       "maturity": "medium",
@@ -39,13 +39,13 @@
   ],
   "startup_ideas_with_revenue": [
     {
-      "title": "I built an infinite canvas for Mac where every card is a Markdown file and Your AI Agent can use it",
-      "url": "https://reddit.com/r/SideProject/comments/1xie752/",
-      "revenue_signal": "$9",
+      "title": "What would it take to make LLM routing not suck?",
+      "url": "https://reddit.com/r/SaaS/comments/1xji0eg/",
+      "revenue_signal": "$0",
       "source": "reddit",
       "category": "",
-      "business_model": "subscription,one-time",
-      "ai_potential": 55,
+      "business_model": "api",
+      "ai_potential": 70,
       "score": 0
     },
     {
@@ -71,33 +71,25 @@
   ],
   "hidden_gems": [
     {
-      "technology": "Diffusion Models",
-      "description": "Diffusion Models",
-      "confidence": 0.62,
+      "technology": "Contrastive Learning",
+      "description": "Contrastive Learning",
+      "confidence": 0.7,
       "paper_count": 1,
       "related_papers": [
         {
-          "title": "Hy-Nomas: Towards Free-form Interactive World Generation",
-          "url": ""
-        },
-        {
-          "title": "TS-DP: Reinforcement Speculative Decoding For Temporal Adaptive Diffusion Policy Acceleration",
-          "url": ""
-        },
-        {
-          "title": "Efficient Token-Level Policy Optimization for Masked Diffusion Models via Velocity Alignment",
+          "title": "Robust Scene Transfer for PointGoal Navigation via Privileged Sensor Guided Contrastive Learning",
           "url": ""
         }
       ]
     },
     {
-      "technology": "Causal Attention",
-      "description": "Causal Attention",
-      "confidence": 0.62,
+      "technology": "Reinforcement Learning",
+      "description": "Reinforcement Learning",
+      "confidence": 0.7,
       "paper_count": 1,
       "related_papers": [
         {
-          "title": "Hy-Nomas: Towards Free-form Interactive World Generation",
+          "title": "Robust Scene Transfer for PointGoal Navigation via Privileged Sensor Guided Contrastive Learning",
           "url": ""
         }
       ]
@@ -108,7 +100,7 @@
       "name": "Shubhamsaboo/awesome-llm-apps",
       "url": "https://github.com/Shubhamsaboo/awesome-llm-apps",
       "description": "100+ AI Agents, Agent Skills and RAG Apps - Free and Open Source.",
-      "stars": 143448,
+      "stars": 143525,
       "language": "Python",
       "topics": [
         "agents",
@@ -122,7 +114,7 @@
       "name": "ai-job-search-dev/ai-job-search",
       "url": "https://github.com/ai-job-search-dev/ai-job-search",
       "description": "The job search that runs on your machine. AI job application framework built on Claude Code: evaluate postings, tailor CVs, write cover letters, prep interviews. Fork it and own it.",
-      "stars": 67557,
+      "stars": 68020,
       "language": "Python",
       "topics": [
         "ai",

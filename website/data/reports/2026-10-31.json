@@ -1,0 +1,57 @@
+{
+  "date": "2026-10-31",
+  "generated_at": "2026-10-31T03:50:47.942674+00:00",
+  "backend": "llm7",
+  "model": "default",
+  "brief": [
+    "Breakout opportunity: AI-powered job search & application tool (ai-job-search-dev/ai-job-search).",
+    "Emerging trend: 100+ open-source AI agents & RAG apps for automation (Shubhamsaboo/awesome-llm-apps).",
+    "Act fast: AI job search tool has breakout potential, while LLM apps trend is emerging.",
+    "Target: Job seekers & recruiters for the AI-powered tool; businesses for automation apps.",
+    "Validation: High demand in job search & automation sectors; open-source community adoption."
+  ],
+  "items": [
+    {
+      "name": "ai-job-search-dev/ai-job-search",
+      "url": "https://github.com/ai-job-search-dev/ai-job-search",
+      "stars": 68020,
+      "category": "Data & Evaluation",
+      "delta_7d": 3887,
+      "delta_7d_pct": 6.06,
+      "timing": "breakout",
+      "signals": [],
+      "cross_signal": false,
+      "one_liner": "AI-powered job search and application tool",
+      "pain_point": "Job seekers struggle with tailoring applications and standing out in a competitive market. Employers pay for efficient hiring processes.",
+      "app_ideas": [
+        "AI-powered resume builder with industry-specific templates",
+        "AI job application tracker with automated follow-ups",
+        "AI interview preparation tool with common question database"
+      ],
+      "monetization": "Freemium with premium features for job seekers; B2B API for employers to integrate job application processing",
+      "opportunity": 8,
+      "why_now": "Increased demand for AI tools in job search due to high unemployment rates and remote work trends"
+    },
+    {
+      "name": "Shubhamsaboo/awesome-llm-apps",
+      "url": "https://github.com/Shubhamsaboo/awesome-llm-apps",
+      "stars": 143525,
+      "category": "Agents & Automation",
+      "delta_7d": 694,
+      "delta_7d_pct": 0.49,
+      "timing": "emerging",
+      "signals": [],
+      "cross_signal": false,
+      "one_liner": "100+ open-source AI agents and RAG apps for automation",
+      "pain_point": "Saves businesses time by automating tasks with AI agents, appealing to SMBs and enterprises",
+      "app_ideas": [
+        "AI-powered customer support chatbot for e-commerce",
+        "Automated content moderation tool for social media platforms",
+        "AI-driven personal assistant for productivity and scheduling"
+      ],
+      "monetization": "Freemium with enterprise API wrapper and vertical SaaS",
+      "opportunity": 8,
+      "why_now": "Increased demand for AI automation tools due to remote work and digital transformation"
+    }
+  ]
+}
