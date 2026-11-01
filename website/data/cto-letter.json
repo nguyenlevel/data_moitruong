@@ -1,53 +1,43 @@
 {
-  "generated_at": "2026-10-31T03:50:48.017542+00:00",
-  "week_of": "2026-43",
+  "generated_at": "2026-11-01T03:59:10.776497+00:00",
+  "week_of": "2026-44",
   "meta": {
     "papers_tracked": 15,
-    "technologies_tracked": 15,
-    "ideas_tracked": 538,
+    "technologies_tracked": 25,
+    "ideas_tracked": 535,
     "repos_tracked": 2,
     "last_research_update": ""
   },
   "accelerating_technologies": [
     {
-      "name": "Contrastive Learning",
-      "description": "Contrastive Learning",
-      "trend": "rising",
-      "confidence": 0.7,
-      "maturity": "medium",
-      "paper_count": 1,
-      "signal": "rising"
-    },
-    {
-      "name": "Reinforcement Learning",
-      "description": "Reinforcement Learning",
-      "trend": "rising",
-      "confidence": 0.7,
-      "maturity": "medium",
-      "paper_count": 1,
-      "signal": "rising"
-    },
-    {
       "name": "Multimodal Learning",
       "description": "Multimodal Learning",
       "trend": "rising",
-      "confidence": 0.7,
+      "confidence": 0.8,
+      "maturity": "medium",
+      "paper_count": 1,
+      "signal": "rising"
+    },
+    {
+      "name": "Preflight Checks",
+      "description": "Preflight Checks",
+      "trend": "rising",
+      "confidence": 0.8,
+      "maturity": "medium",
+      "paper_count": 1,
+      "signal": "rising"
+    },
+    {
+      "name": "Pixel Comparison Verification",
+      "description": "Pixel Comparison Verification",
+      "trend": "rising",
+      "confidence": 0.8,
       "maturity": "medium",
       "paper_count": 1,
       "signal": "rising"
     }
   ],
   "startup_ideas_with_revenue": [
-    {
-      "title": "What would it take to make LLM routing not suck?",
-      "url": "https://reddit.com/r/SaaS/comments/1xji0eg/",
-      "revenue_signal": "$0",
-      "source": "reddit",
-      "category": "",
-      "business_model": "api",
-      "ai_potential": 70,
-      "score": 0
-    },
     {
       "title": "GPT-6.1 Terra 单价腰斩，日常电脑操作/填表/视觉任务能换吗？复杂编码还得留 Sol？",
       "url": "https://www.v2ex.com/t/1252126",
@@ -67,13 +57,23 @@
       "business_model": null,
       "ai_potential": 45,
       "score": 727
+    },
+    {
+      "title": "Show HN: Non.io, a Reddit-like platform Ive been working on for the last 4 years",
+      "url": "https://non.io",
+      "revenue_signal": "$2",
+      "source": "hackernews",
+      "category": "",
+      "business_model": "subscription,marketplace,ads,freemium",
+      "ai_potential": 40,
+      "score": 1943
     }
   ],
   "hidden_gems": [
     {
       "technology": "Contrastive Learning",
       "description": "Contrastive Learning",
-      "confidence": 0.7,
+      "confidence": 0.62,
       "paper_count": 1,
       "related_papers": [
         {
@@ -85,7 +85,7 @@
     {
       "technology": "Reinforcement Learning",
       "description": "Reinforcement Learning",
-      "confidence": 0.7,
+      "confidence": 0.62,
       "paper_count": 1,
       "related_papers": [
         {
@@ -100,7 +100,7 @@
       "name": "Shubhamsaboo/awesome-llm-apps",
       "url": "https://github.com/Shubhamsaboo/awesome-llm-apps",
       "description": "100+ AI Agents, Agent Skills and RAG Apps - Free and Open Source.",
-      "stars": 143525,
+      "stars": 143605,
       "language": "Python",
       "topics": [
         "agents",
@@ -114,7 +114,7 @@
       "name": "ai-job-search-dev/ai-job-search",
       "url": "https://github.com/ai-job-search-dev/ai-job-search",
       "description": "The job search that runs on your machine. AI job application framework built on Claude Code: evaluate postings, tailor CVs, write cover letters, prep interviews. Fork it and own it.",
-      "stars": 68020,
+      "stars": 68482,
       "language": "Python",
       "topics": [
         "ai",
