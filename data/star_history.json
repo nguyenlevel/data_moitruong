@@ -1,7 +1,4 @@
 {
-  "2026-10-03": {
-    "Shubhamsaboo/awesome-llm-apps": 140564
-  },
   "2026-10-04": {
     "Shubhamsaboo/awesome-llm-apps": 140643
   },
@@ -98,5 +95,9 @@
   "2026-11-01": {
     "ai-job-search-dev/ai-job-search": 68482,
     "Shubhamsaboo/awesome-llm-apps": 143605
+  },
+  "2026-11-02": {
+    "ai-job-search-dev/ai-job-search": 68770,
+    "Shubhamsaboo/awesome-llm-apps": 143683
   }
 }

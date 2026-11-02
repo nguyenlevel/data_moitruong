@@ -1,0 +1,56 @@
+{
+  "date": "2026-11-02",
+  "generated_at": "2026-11-02T04:03:42.351820+00:00",
+  "backend": "llm7",
+  "model": "default",
+  "brief": [
+    "Breakout timing: AI job search and application tool (ai-job-search-dev/ai-job-search) is the single best opportunity. It's poised for rapid growth as AI adoption in recruitment accelerates.",
+    "Emerging trend: Open-source AI agents and RAG apps (Shubhamsaboo/awesome-llm-apps) offer automation potential, but may take longer to gain traction.",
+    "Focus on the breakout opportunity to maximize impact and market share.",
+    "Monitor the emerging trend for potential future opportunities, but prioritize the breakout opportunity for immediate results."
+  ],
+  "items": [
+    {
+      "name": "ai-job-search-dev/ai-job-search",
+      "url": "https://github.com/ai-job-search-dev/ai-job-search",
+      "stars": 68770,
+      "category": "Data & Evaluation",
+      "delta_7d": 3017,
+      "delta_7d_pct": 4.59,
+      "timing": "breakout",
+      "signals": [],
+      "cross_signal": false,
+      "one_liner": "AI-powered job search and application tool",
+      "pain_point": "Job seekers struggle with tailoring applications and preparing for interviews; employers seek efficient ways to evaluate candidates",
+      "app_ideas": [
+        "Freemium web app for job seekers with AI-generated CVs and cover letters",
+        "B2B API wrapper for HR departments to automate candidate evaluation",
+        "Vertical SaaS for tech job seekers with AI interview prep"
+      ],
+      "monetization": "Freemium with premium features for job seekers; B2B API pricing for HR departments",
+      "opportunity": 8,
+      "why_now": "Increased demand for AI tools in job search and hiring processes"
+    },
+    {
+      "name": "Shubhamsaboo/awesome-llm-apps",
+      "url": "https://github.com/Shubhamsaboo/awesome-llm-apps",
+      "stars": 143683,
+      "category": "Agents & Automation",
+      "delta_7d": 626,
+      "delta_7d_pct": 0.44,
+      "timing": "emerging",
+      "signals": [],
+      "cross_signal": false,
+      "one_liner": "Open-source AI agents and RAG apps for automation",
+      "pain_point": "Businesses and developers need cost-effective AI automation tools to streamline operations and reduce manual work",
+      "app_ideas": [
+        "AI-powered customer support chatbot for small businesses using RAG for context-aware responses",
+        "Automated content moderation tool for social media platforms leveraging AI agents",
+        "Personalized AI assistant for e-commerce websites to enhance user experience and drive sales"
+      ],
+      "monetization": "Freemium model with enterprise API wrapper for advanced features",
+      "opportunity": 8,
+      "why_now": "Rise in demand for AI automation tools and the increasing adoption of open-source solutions"
+    }
+  ]
+}
