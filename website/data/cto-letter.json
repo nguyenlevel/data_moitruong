@@ -1,37 +1,37 @@
 {
-  "generated_at": "2026-11-02T04:03:42.413559+00:00",
+  "generated_at": "2026-11-03T05:05:47.120081+00:00",
   "week_of": "2026-44",
   "meta": {
     "papers_tracked": 15,
-    "technologies_tracked": 35,
-    "ideas_tracked": 535,
+    "technologies_tracked": 16,
+    "ideas_tracked": 545,
     "repos_tracked": 2,
     "last_research_update": ""
   },
   "accelerating_technologies": [
     {
-      "name": "Exploration-Exploitation Error Metric",
-      "description": "Exploration-Exploitation Error Metric",
+      "name": "Dialog-Flow-Aware Metrics",
+      "description": "Dialog-Flow-Aware Metrics",
       "trend": "rising",
-      "confidence": 0.7,
+      "confidence": 0.8,
       "maturity": "medium",
       "paper_count": 1,
       "signal": "rising"
     },
     {
-      "name": "Memory Augmentation",
-      "description": "Memory Augmentation",
+      "name": "Procedural Hallucination Benchmark",
+      "description": "Procedural Hallucination Benchmark",
       "trend": "rising",
-      "confidence": 0.7,
+      "confidence": 0.8,
       "maturity": "medium",
       "paper_count": 1,
       "signal": "rising"
     },
     {
-      "name": "Synthetic Grid Map Environment",
-      "description": "Synthetic Grid Map Environment",
+      "name": "Reinforcement Learning with Verifiable Rewards (RLVR)",
+      "description": "Reinforcement Learning with Verifiable Rewards (RLVR)",
       "trend": "rising",
-      "confidence": 0.7,
+      "confidence": 0.8,
       "maturity": "medium",
       "paper_count": 1,
       "signal": "rising"
@@ -59,13 +59,13 @@
       "score": 1943
     },
     {
-      "title": "RTWS - The Media Angles That Got My Clients on TV",
-      "url": "https://reddit.com/r/Entrepreneur/comments/1xckuqk/",
-      "revenue_signal": "made 20",
+      "title": "One thing to be careful of these days when offering free-trial",
+      "url": "https://reddit.com/r/SaaS/comments/1xmbhek/",
+      "revenue_signal": "$0",
       "source": "reddit",
       "category": "",
-      "business_model": null,
-      "ai_potential": 30,
+      "business_model": "subscription,api",
+      "ai_potential": 40,
       "score": 0
     }
   ],
@@ -73,7 +73,7 @@
     {
       "technology": "Contrastive Learning",
       "description": "Contrastive Learning",
-      "confidence": 0.62,
+      "confidence": 0.5700000000000001,
       "paper_count": 1,
       "related_papers": [
         {
@@ -85,7 +85,7 @@
     {
       "technology": "Reinforcement Learning",
       "description": "Reinforcement Learning",
-      "confidence": 0.62,
+      "confidence": 0.5700000000000001,
       "paper_count": 1,
       "related_papers": [
         {
@@ -100,7 +100,7 @@
       "name": "Shubhamsaboo/awesome-llm-apps",
       "url": "https://github.com/Shubhamsaboo/awesome-llm-apps",
       "description": "100+ AI Agents, Agent Skills and RAG Apps - Free and Open Source.",
-      "stars": 143683,
+      "stars": 143771,
       "language": "Python",
       "topics": [
         "agents",
@@ -114,7 +114,7 @@
       "name": "ai-job-search-dev/ai-job-search",
       "url": "https://github.com/ai-job-search-dev/ai-job-search",
       "description": "The job search that runs on your machine. AI job application framework built on Claude Code: evaluate postings, tailor CVs, write cover letters, prep interviews. Fork it and own it.",
-      "stars": 68770,
+      "stars": 69135,
       "language": "Python",
       "topics": [
         "ai",
