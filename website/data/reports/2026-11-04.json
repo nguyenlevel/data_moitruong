@@ -1,0 +1,53 @@
+{
+  "date": "2026-11-04",
+  "generated_at": "2026-11-04T04:35:56.442579+00:00",
+  "backend": "llm7",
+  "model": "default",
+  "brief": [
+    "🚀 **Best Opportunity**: ai-job-search-dev/ai-job-search - AI-powered job application assistant",
+    "📈 **Breakout Timing**: Now, as job market is dynamic and competitive",
+    "🌟 **Emerging**: Shubhamsaboo/awesome-llm-apps - Curated list of open-source AI agents & RAG apps"
+  ],
+  "items": [
+    {
+      "name": "ai-job-search-dev/ai-job-search",
+      "url": "https://github.com/ai-job-search-dev/ai-job-search",
+      "stars": 69412,
+      "category": "Data & Evaluation",
+      "delta_7d": 2564,
+      "delta_7d_pct": 3.84,
+      "timing": "breakout",
+      "signals": [],
+      "cross_signal": false,
+      "one_liner": "AI-powered job application assistant",
+      "pain_point": "Job applicants struggling with repetitive tasks and tailoring applications",
+      "app_ideas": [
+        "AI Job Application Assistant: Chrome extension for automatic CV tailoring and cover letter generation",
+        "AI Interview Prep: Web app for personalized interview coaching based on job postings"
+      ],
+      "monetization": "Freemium with premium features for in-depth application analysis and interview prep",
+      "opportunity": 8,
+      "why_now": "Growing interest in AI-driven productivity tools and job market recovery"
+    },
+    {
+      "name": "Shubhamsaboo/awesome-llm-apps",
+      "url": "https://github.com/Shubhamsaboo/awesome-llm-apps",
+      "stars": 143854,
+      "category": "Agents & Automation",
+      "delta_7d": 594,
+      "delta_7d_pct": 0.41,
+      "timing": "emerging",
+      "signals": [],
+      "cross_signal": false,
+      "one_liner": "Curated list of open-source AI agents & RAG apps",
+      "pain_point": "Teams struggle to find, integrate, and manage AI agents for automating tasks, leading to inefficiency and high costs.",
+      "app_ideas": [
+        "AI Agent Marketplace: A platform to discover, compare, and deploy AI agents tailored to specific business needs.",
+        "AI Agent Automation Hub: A tool that simplifies the integration and management of AI agents, reducing manual effort and errors."
+      ],
+      "monetization": "B2B SaaS with tiered pricing based on features, usage, and support.",
+      "opportunity": 8,
+      "why_now": "Growing interest in AI agents and RAG, with increasing demand for automation tools."
+    }
+  ]
+}

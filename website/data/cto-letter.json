@@ -1,17 +1,17 @@
 {
-  "generated_at": "2026-11-03T05:05:47.120081+00:00",
+  "generated_at": "2026-11-04T04:35:56.510546+00:00",
   "week_of": "2026-44",
   "meta": {
     "papers_tracked": 15,
-    "technologies_tracked": 16,
-    "ideas_tracked": 545,
+    "technologies_tracked": 14,
+    "ideas_tracked": 533,
     "repos_tracked": 2,
     "last_research_update": ""
   },
   "accelerating_technologies": [
     {
-      "name": "Dialog-Flow-Aware Metrics",
-      "description": "Dialog-Flow-Aware Metrics",
+      "name": "Sparse Attention",
+      "description": "Sparse Attention",
       "trend": "rising",
       "confidence": 0.8,
       "maturity": "medium",
@@ -19,8 +19,8 @@
       "signal": "rising"
     },
     {
-      "name": "Procedural Hallucination Benchmark",
-      "description": "Procedural Hallucination Benchmark",
+      "name": "Mixture of Transformers",
+      "description": "Mixture of Transformers",
       "trend": "rising",
       "confidence": 0.8,
       "maturity": "medium",
@@ -28,8 +28,8 @@
       "signal": "rising"
     },
     {
-      "name": "Reinforcement Learning with Verifiable Rewards (RLVR)",
-      "description": "Reinforcement Learning with Verifiable Rewards (RLVR)",
+      "name": "Frozen Feature Extraction (DINOv2)",
+      "description": "Frozen Feature Extraction (DINOv2)",
       "trend": "rising",
       "confidence": 0.8,
       "maturity": "medium",
@@ -38,6 +38,16 @@
     }
   ],
   "startup_ideas_with_revenue": [
+    {
+      "title": "If I'd start a new project, this is a $7 stack I'd launch a SaaS on",
+      "url": "https://reddit.com/r/SaaS/comments/1xmrkua/",
+      "revenue_signal": "$7/mo",
+      "source": "reddit",
+      "category": "",
+      "business_model": "subscription,freemium",
+      "ai_potential": 55,
+      "score": 0
+    },
     {
       "title": "Show HN: San Francisco Compute – 512 H100s at <$2/hr for research and startups",
       "url": "https://sfcompute.org/",
@@ -57,39 +67,29 @@
       "business_model": "subscription,marketplace,ads,freemium",
       "ai_potential": 40,
       "score": 1943
-    },
-    {
-      "title": "One thing to be careful of these days when offering free-trial",
-      "url": "https://reddit.com/r/SaaS/comments/1xmbhek/",
-      "revenue_signal": "$0",
-      "source": "reddit",
-      "category": "",
-      "business_model": "subscription,api",
-      "ai_potential": 40,
-      "score": 0
     }
   ],
   "hidden_gems": [
     {
-      "technology": "Contrastive Learning",
-      "description": "Contrastive Learning",
-      "confidence": 0.5700000000000001,
+      "technology": "Set-Contrastive Learning",
+      "description": "Set-Contrastive Learning",
+      "confidence": 0.7,
       "paper_count": 1,
       "related_papers": [
         {
-          "title": "Robust Scene Transfer for PointGoal Navigation via Privileged Sensor Guided Contrastive Learning",
+          "title": "SQLoom: Set-Contrastive Learning of Syntactic, Semantic, and Logical Dependencies for Text-to-SQL",
           "url": ""
         }
       ]
     },
     {
-      "technology": "Reinforcement Learning",
-      "description": "Reinforcement Learning",
-      "confidence": 0.5700000000000001,
+      "technology": "Supervised Fine-Tuning",
+      "description": "Supervised Fine-Tuning",
+      "confidence": 0.7,
       "paper_count": 1,
       "related_papers": [
         {
-          "title": "Robust Scene Transfer for PointGoal Navigation via Privileged Sensor Guided Contrastive Learning",
+          "title": "SQLoom: Set-Contrastive Learning of Syntactic, Semantic, and Logical Dependencies for Text-to-SQL",
           "url": ""
         }
       ]
@@ -100,7 +100,7 @@
       "name": "Shubhamsaboo/awesome-llm-apps",
       "url": "https://github.com/Shubhamsaboo/awesome-llm-apps",
       "description": "100+ AI Agents, Agent Skills and RAG Apps - Free and Open Source.",
-      "stars": 143771,
+      "stars": 143854,
       "language": "Python",
       "topics": [
         "agents",
@@ -114,7 +114,7 @@
       "name": "ai-job-search-dev/ai-job-search",
       "url": "https://github.com/ai-job-search-dev/ai-job-search",
       "description": "The job search that runs on your machine. AI job application framework built on Claude Code: evaluate postings, tailor CVs, write cover letters, prep interviews. Fork it and own it.",
-      "stars": 69135,
+      "stars": 69412,
       "language": "Python",
       "topics": [
         "ai",
