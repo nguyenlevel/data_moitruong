@@ -1,0 +1,55 @@
+{
+  "date": "2026-11-05",
+  "generated_at": "2026-11-05T04:53:23.330934+00:00",
+  "backend": "llm7",
+  "model": "default",
+  "brief": [
+    "Top Opportunity: ai-job-search-dev/ai-job-search (Opp 8, Breakout)",
+    "AI-powered job application assistant for tailored CVs & interview prep",
+    "Emerging: Shubhamsaboo/awesome-llm-apps (Opp 8)",
+    "Open-source AI agents for automation & RAG apps"
+  ],
+  "items": [
+    {
+      "name": "ai-job-search-dev/ai-job-search",
+      "url": "https://github.com/ai-job-search-dev/ai-job-search",
+      "stars": 69646,
+      "category": "Data & Evaluation",
+      "delta_7d": 2422,
+      "delta_7d_pct": 3.6,
+      "timing": "breakout",
+      "signals": [],
+      "cross_signal": false,
+      "one_liner": "AI-powered job application assistant for tailored CVs and interview prep",
+      "pain_point": "Job seekers waste hours tailoring CVs, cover letters, and interview prep; recruiters need efficient screening",
+      "app_ideas": [
+        "Standalone desktop app generating tailored CVs and cover letters via CLI",
+        "Chrome extension auto-filling job application forms and tracking submissions",
+        "Slack bot delivering interview prep questions and job alerts"
+      ],
+      "monetization": "Freemium with premium AI features and subscription for unlimited usage",
+      "opportunity": 8,
+      "why_now": "AI-driven job search tools are in high demand amid remote work and competitive hiring"
+    },
+    {
+      "name": "Shubhamsaboo/awesome-llm-apps",
+      "url": "https://github.com/Shubhamsaboo/awesome-llm-apps",
+      "stars": 143909,
+      "category": "Agents & Automation",
+      "delta_7d": 550,
+      "delta_7d_pct": 0.38,
+      "timing": "emerging",
+      "signals": [],
+      "cross_signal": false,
+      "one_liner": "Open-source AI agents for automation & RAG apps",
+      "pain_point": "Businesses struggle with manual tasks & data organization. They need efficient, customizable AI agents to automate workflows and manage information.",
+      "app_ideas": [
+        "AI Virtual Assistant for Customer Support",
+        "AI Content Generator & Curator for Marketing Teams"
+      ],
+      "monetization": "B2B API wrapper with customization options",
+      "opportunity": 8,
+      "why_now": "Growing demand for AI automation & RAG apps"
+    }
+  ]
+}
