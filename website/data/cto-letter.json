@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-05T04:53:23.389151+00:00",
+  "generated_at": "2026-11-06T04:53:08.145130+00:00",
   "week_of": "2026-44",
   "meta": {
     "papers_tracked": 15,
@@ -19,8 +19,8 @@
       "signal": "rising"
     },
     {
-      "name": "Embodied Planning",
-      "description": "Embodied Planning",
+      "name": "Bird's-Eye View (BEV) Context",
+      "description": "Bird's-Eye View (BEV) Context",
       "trend": "rising",
       "confidence": 0.7,
       "maturity": "medium",
@@ -28,8 +28,8 @@
       "signal": "rising"
     },
     {
-      "name": "Benchmarking for AI Agents",
-      "description": "Benchmarking for AI Agents",
+      "name": "Deformable Attention",
+      "description": "Deformable Attention",
       "trend": "rising",
       "confidence": 0.7,
       "maturity": "medium",
@@ -38,6 +38,16 @@
     }
   ],
   "startup_ideas_with_revenue": [
+    {
+      "title": "Going from SaaS to SaS now -> My initial experience and sales numbers",
+      "url": "https://reddit.com/r/SaaS/comments/1xoeq0q/",
+      "revenue_signal": "$1",
+      "source": "reddit",
+      "category": "",
+      "business_model": "subscription",
+      "ai_potential": 55,
+      "score": 0
+    },
     {
       "title": "Show HN: San Francisco Compute – 512 H100s at <$2/hr for research and startups",
       "url": "https://sfcompute.org/",
@@ -57,16 +67,6 @@
       "business_model": "subscription,marketplace,ads,freemium",
       "ai_potential": 40,
       "score": 1943
-    },
-    {
-      "title": "我用 Rust 重写 Pi 编码助手，性能飙升 10 倍",
-      "url": "https://www.v2ex.com/t/1253973",
-      "revenue_signal": "10 倍 最近做了一个 Rust 项目： pi-rust 。把 TypeScript 版的 Pi 编码助手用 Rust 重写，命令叫 rpi ，性能和内容占用相对于原版都提升了很多。 为什么要用 Rust 重写？ 学习 Rust 首先就是想学 Rust 。我想找一个能持续写下去的项目。Agent 涉及异步请求、流式输出、文件操作和状态管理，后面还有终端界面和插件。这些需求会逼着我把 Rust 用起来：共享状态怎么处理，错误怎么往上传，异步任务怎么取消，接口怎么拆。选 Pi 来重写，也有一个好处：有现成的项目可以参考。遇到一个功能，可以先看原版怎么做，再考虑在 Rust 里怎么实现。写完以后还有东西可以对照，不至于只凭自己的想象判断是否合理。 想弄明白一个 Agent 是怎么工作的 平时用 AI 编码工具，看到的是输入需求、等它改代码。自己实现一次，就得处理那些界面上看不见的细节。 模型返回一个工具调用以后，谁去执行？工具出错了，要把什么结果交给模型？流式消息还没结束，用户",
-      "source": "v2ex",
-      "category": "share",
-      "business_model": "api",
-      "ai_potential": 40,
-      "score": 0
     }
   ],
   "hidden_gems": [
@@ -79,13 +79,21 @@
         {
           "title": "DualWorldBench: Can Agents Plan Deliveries across Symbolic and Grounded Worlds?",
           "url": ""
+        },
+        {
+          "title": "BEAKER: An Expert-Curated Benchmark for Embodied Brains in Self-Driving Chemical Laboratories",
+          "url": ""
+        },
+        {
+          "title": "ImagineAgent: What if Agents Could Imagine? Reinforcing Open-Vocabulary HOI Comprehension through Generation",
+          "url": ""
         }
       ]
     },
     {
       "technology": "Embodied Planning",
       "description": "Embodied Planning",
-      "confidence": 0.7,
+      "confidence": 0.65,
       "paper_count": 1,
       "related_papers": [
         {
@@ -100,7 +108,7 @@
       "name": "Shubhamsaboo/awesome-llm-apps",
       "url": "https://github.com/Shubhamsaboo/awesome-llm-apps",
       "description": "100+ AI Agents, Agent Skills and RAG Apps - Free and Open Source.",
-      "stars": 143909,
+      "stars": 143984,
       "language": "Python",
       "topics": [
         "agents",
@@ -114,7 +122,7 @@
       "name": "ai-job-search-dev/ai-job-search",
       "url": "https://github.com/ai-job-search-dev/ai-job-search",
       "description": "The job search that runs on your machine. AI job application framework built on Claude Code: evaluate postings, tailor CVs, write cover letters, prep interviews. Fork it and own it.",
-      "stars": 69646,
+      "stars": 69916,
       "language": "Python",
       "topics": [
         "ai",
