@@ -1,0 +1,43 @@
+{
+  "date": "2026-11-07",
+  "generated_at": "2026-11-07T04:23:16.729155+00:00",
+  "backend": "llm7",
+  "model": "default",
+  "brief": [],
+  "items": [
+    {
+      "name": "ai-job-search-dev/ai-job-search",
+      "url": "https://github.com/ai-job-search-dev/ai-job-search",
+      "stars": 70108,
+      "category": "Data & Evaluation",
+      "delta_7d": 2088,
+      "delta_7d_pct": 3.07,
+      "timing": "breakout",
+      "signals": [],
+      "cross_signal": false,
+      "one_liner": "",
+      "pain_point": "",
+      "app_ideas": [],
+      "monetization": "",
+      "opportunity": 5,
+      "why_now": ""
+    },
+    {
+      "name": "Shubhamsaboo/awesome-llm-apps",
+      "url": "https://github.com/Shubhamsaboo/awesome-llm-apps",
+      "stars": 144056,
+      "category": "Agents & Automation",
+      "delta_7d": 531,
+      "delta_7d_pct": 0.37,
+      "timing": "emerging",
+      "signals": [],
+      "cross_signal": false,
+      "one_liner": "",
+      "pain_point": "",
+      "app_ideas": [],
+      "monetization": "",
+      "opportunity": 5,
+      "why_now": ""
+    }
+  ]
+}

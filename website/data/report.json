@@ -1,55 +1,43 @@
 {
-  "date": "2026-11-06",
-  "generated_at": "2026-11-06T04:53:08.084606+00:00",
+  "date": "2026-11-07",
+  "generated_at": "2026-11-07T04:23:16.729155+00:00",
   "backend": "llm7",
   "model": "default",
-  "brief": [
-    "🚀 BREAKOUT: AI Job Search Assistant — job market chaos = demand surge, build now before market saturates",
-    "📚 Curated LLM App Library — capture developer mindshare early, become the go-to hub before incumbents copy",
-    "Job search UX is broken; AI can automate cover letters, resume optimization, and interview prep end-to-end",
-    "LLM app curation is a land grab — whoever owns the \"awesome list\" owns the ecosystem reference point",
-    "Timing: Both are hot NOW — job market volatility and LLM app explosion create 60-day window"
-  ],
+  "brief": [],
   "items": [
     {
       "name": "ai-job-search-dev/ai-job-search",
       "url": "https://github.com/ai-job-search-dev/ai-job-search",
-      "stars": 69916,
+      "stars": 70108,
       "category": "Data & Evaluation",
-      "delta_7d": 2359,
-      "delta_7d_pct": 3.49,
+      "delta_7d": 2088,
+      "delta_7d_pct": 3.07,
       "timing": "breakout",
       "signals": [],
       "cross_signal": false,
-      "one_liner": "AI-powered job search assistant",
-      "pain_point": "Job seekers struggling with repetitive tasks and tailoring applications",
-      "app_ideas": [
-        "AI Job Search Chrome Extension",
-        "AI Resume Builder & Cover Letter Generator"
-      ],
-      "monetization": "Freemium with premium features for job seekers",
-      "opportunity": 8,
-      "why_now": "AI integration in job search gaining traction"
+      "one_liner": "",
+      "pain_point": "",
+      "app_ideas": [],
+      "monetization": "",
+      "opportunity": 5,
+      "why_now": ""
     },
     {
       "name": "Shubhamsaboo/awesome-llm-apps",
       "url": "https://github.com/Shubhamsaboo/awesome-llm-apps",
-      "stars": 143984,
+      "stars": 144056,
       "category": "Agents & Automation",
-      "delta_7d": 536,
+      "delta_7d": 531,
       "delta_7d_pct": 0.37,
       "timing": "emerging",
       "signals": [],
       "cross_signal": false,
-      "one_liner": "Curated list of open-source AI agents and RAG apps",
-      "pain_point": "Development teams struggle to integrate and manage AI agents, limiting productivity and innovation. Companies would pay for easy-to-use, customizable AI automation solutions.",
-      "app_ideas": [
-        "AI Agent Marketplace: A platform to browse, try, and deploy AI agents tailored to specific use cases.",
-        "AI Agent Studio: A no-code/low-code tool for non-technical users to create and customize AI agents."
-      ],
-      "monetization": "Freemium with premium features for enterprise use, such as advanced customization, priority support, and team management.",
-      "opportunity": 8,
-      "why_now": "Growing demand for AI automation and increasing awareness of open-source AI agent capabilities."
+      "one_liner": "",
+      "pain_point": "",
+      "app_ideas": [],
+      "monetization": "",
+      "opportunity": 5,
+      "why_now": ""
     }
   ]
 }
