@@ -1,17 +1,26 @@
 {
-  "generated_at": "2026-11-08T04:02:27.618521+00:00",
+  "generated_at": "2026-11-09T04:16:29.419966+00:00",
   "week_of": "2026-45",
   "meta": {
     "papers_tracked": 15,
-    "technologies_tracked": 29,
-    "ideas_tracked": 546,
+    "technologies_tracked": 34,
+    "ideas_tracked": 544,
     "repos_tracked": 2,
     "last_research_update": ""
   },
   "accelerating_technologies": [
     {
-      "name": "KV Cache Optimization",
-      "description": "KV Cache Optimization",
+      "name": "Multimodal Learning",
+      "description": "Multimodal Learning",
+      "trend": "rising",
+      "confidence": 0.7,
+      "maturity": "medium",
+      "paper_count": 1,
+      "signal": "rising"
+    },
+    {
+      "name": "Retrieval Augmented Generation",
+      "description": "Retrieval Augmented Generation",
       "trend": "rising",
       "confidence": 0.7,
       "maturity": "medium",
@@ -21,15 +30,6 @@
     {
       "name": "Speculative Decoding",
       "description": "Speculative Decoding",
-      "trend": "rising",
-      "confidence": 0.7,
-      "maturity": "medium",
-      "paper_count": 1,
-      "signal": "rising"
-    },
-    {
-      "name": "Candidate-Output Ranking from Errors (CORE)",
-      "description": "Candidate-Output Ranking from Errors (CORE)",
       "trend": "rising",
       "confidence": 0.7,
       "maturity": "medium",
@@ -59,12 +59,12 @@
       "score": 1943
     },
     {
-      "title": "probe0 - a local proxy that prices your own Claude Code logs before asking you to trust it",
-      "url": "https://reddit.com/r/SideProject/comments/1xqmido/",
-      "revenue_signal": "$0",
+      "title": "How would you charge per-use for a web app that normally sells seats?",
+      "url": "https://reddit.com/r/SaaS/comments/1xqx7gx/",
+      "revenue_signal": "$15/mo",
       "source": "reddit",
       "category": "",
-      "business_model": "api",
+      "business_model": "subscription,marketplace,api",
       "ai_potential": 40,
       "score": 0
     }
@@ -73,7 +73,7 @@
     {
       "technology": "Multimodal Learning",
       "description": "Multimodal Learning",
-      "confidence": 0.6,
+      "confidence": 0.7,
       "paper_count": 1,
       "related_papers": [
         {
@@ -85,7 +85,7 @@
           "url": ""
         },
         {
-          "title": "Modality-Aware Expert Pruning for MoE-Based Multimodal Large Language Models",
+          "title": "Unified Hallucination Fuzzing for Multimodal Large Language Models",
           "url": ""
         }
       ]
@@ -108,7 +108,7 @@
       "name": "Shubhamsaboo/awesome-llm-apps",
       "url": "https://github.com/Shubhamsaboo/awesome-llm-apps",
       "description": "100+ AI Agents, Agent Skills and RAG Apps - Free and Open Source.",
-      "stars": 144130,
+      "stars": 144227,
       "language": "Python",
       "topics": [
         "agents",
@@ -122,7 +122,7 @@
       "name": "ai-job-search-dev/ai-job-search",
       "url": "https://github.com/ai-job-search-dev/ai-job-search",
       "description": "The job search that runs on your machine. AI job application framework built on Claude Code: evaluate postings, tailor CVs, write cover letters, prep interviews. Fork it and own it.",
-      "stars": 70300,
+      "stars": 70627,
       "language": "Python",
       "topics": [
         "ai",
