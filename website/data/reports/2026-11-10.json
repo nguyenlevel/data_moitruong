@@ -1,0 +1,53 @@
+{
+  "date": "2026-11-10",
+  "generated_at": "2026-11-10T05:48:22.492093+00:00",
+  "backend": "llm7",
+  "model": "default",
+  "brief": [
+    "ai-job-search-dev/ai-job-search: AI-powered job search & application tool, breakout timing now",
+    "Shubhamsaboo/awesome-llm-apps: Open-source AI agents & automation apps, emerging opportunity",
+    "ai-job-search-dev/ai-job-search is the single best opportunity with immediate breakout potential"
+  ],
+  "items": [
+    {
+      "name": "ai-job-search-dev/ai-job-search",
+      "url": "https://github.com/ai-job-search-dev/ai-job-search",
+      "stars": 70920,
+      "category": "Data & Evaluation",
+      "delta_7d": 1785,
+      "delta_7d_pct": 2.58,
+      "timing": "breakout",
+      "signals": [],
+      "cross_signal": false,
+      "one_liner": "AI-powered job search & application tool",
+      "pain_point": "Job seekers struggling with repetitive tasks and tailoring applications",
+      "app_ideas": [
+        "AI Job Application Assistant (Web)",
+        "AI Resume Builder & Cover Letter Generator (Mobile)"
+      ],
+      "monetization": "Freemium with premium features for job seekers",
+      "opportunity": 8,
+      "why_now": "Increasing remote work and AI adoption in job search"
+    },
+    {
+      "name": "Shubhamsaboo/awesome-llm-apps",
+      "url": "https://github.com/Shubhamsaboo/awesome-llm-apps",
+      "stars": 144319,
+      "category": "Agents & Automation",
+      "delta_7d": 548,
+      "delta_7d_pct": 0.38,
+      "timing": "emerging",
+      "signals": [],
+      "cross_signal": false,
+      "one_liner": "Open-source AI agents & automation apps",
+      "pain_point": "Businesses struggle with automating tasks & lack easy-to-use AI agents",
+      "app_ideas": [
+        "AI-driven customer service bot for small businesses",
+        "Automated content generation & curation tool for marketers"
+      ],
+      "monetization": "Freemium with premium features & API access",
+      "opportunity": 8,
+      "why_now": "Growing interest in AI automation & open-source projects"
+    }
+  ]
+}

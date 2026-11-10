@@ -1,17 +1,17 @@
 {
-  "generated_at": "2026-11-09T04:16:29.419966+00:00",
+  "generated_at": "2026-11-10T05:48:22.552039+00:00",
   "week_of": "2026-45",
   "meta": {
     "papers_tracked": 15,
-    "technologies_tracked": 34,
-    "ideas_tracked": 544,
+    "technologies_tracked": 23,
+    "ideas_tracked": 546,
     "repos_tracked": 2,
     "last_research_update": ""
   },
   "accelerating_technologies": [
     {
-      "name": "Multimodal Learning",
-      "description": "Multimodal Learning",
+      "name": "Mixture of Experts",
+      "description": "Mixture of Experts",
       "trend": "rising",
       "confidence": 0.7,
       "maturity": "medium",
@@ -19,8 +19,8 @@
       "signal": "rising"
     },
     {
-      "name": "Retrieval Augmented Generation",
-      "description": "Retrieval Augmented Generation",
+      "name": "Reinforcement Learning",
+      "description": "Reinforcement Learning",
       "trend": "rising",
       "confidence": 0.7,
       "maturity": "medium",
@@ -28,8 +28,8 @@
       "signal": "rising"
     },
     {
-      "name": "Speculative Decoding",
-      "description": "Speculative Decoding",
+      "name": "Expert Parallelism",
+      "description": "Expert Parallelism",
       "trend": "rising",
       "confidence": 0.7,
       "maturity": "medium",
@@ -59,45 +59,41 @@
       "score": 1943
     },
     {
-      "title": "How would you charge per-use for a web app that normally sells seats?",
-      "url": "https://reddit.com/r/SaaS/comments/1xqx7gx/",
-      "revenue_signal": "$15/mo",
+      "title": "Got my first paying SaaS customer at $49/month. Still feels surreal!",
+      "url": "https://reddit.com/r/SaaS/comments/1xs0e7f/",
+      "revenue_signal": "$49/mo",
       "source": "reddit",
       "category": "",
-      "business_model": "subscription,marketplace,api",
+      "business_model": "subscription,marketplace",
       "ai_potential": 40,
       "score": 0
     }
   ],
   "hidden_gems": [
     {
-      "technology": "Multimodal Learning",
-      "description": "Multimodal Learning",
+      "technology": "Mixture of Experts",
+      "description": "Mixture of Experts",
       "confidence": 0.7,
       "paper_count": 1,
       "related_papers": [
         {
-          "title": "DualWorldBench: Can Agents Plan Deliveries across Symbolic and Grounded Worlds?",
-          "url": ""
-        },
-        {
-          "title": "ImagineAgent: What if Agents Could Imagine? Reinforcing Open-Vocabulary HOI Comprehension through Generation",
-          "url": ""
-        },
-        {
-          "title": "Unified Hallucination Fuzzing for Multimodal Large Language Models",
+          "title": "AdaFloor: Adaptive Floor Planning and Rank-Time Reuse for Long-Tail MoE RL Rollouts",
           "url": ""
         }
       ]
     },
     {
-      "technology": "Embodied Planning",
-      "description": "Embodied Planning",
-      "confidence": 0.6,
+      "technology": "Reinforcement Learning",
+      "description": "Reinforcement Learning",
+      "confidence": 0.7,
       "paper_count": 1,
       "related_papers": [
         {
-          "title": "DualWorldBench: Can Agents Plan Deliveries across Symbolic and Grounded Worlds?",
+          "title": "AdaFloor: Adaptive Floor Planning and Rank-Time Reuse for Long-Tail MoE RL Rollouts",
+          "url": ""
+        },
+        {
+          "title": "StoreBench: A Live-Commerce Environment for Evaluating and Training Autonomous Operator Agents",
           "url": ""
         }
       ]
@@ -108,7 +104,7 @@
       "name": "Shubhamsaboo/awesome-llm-apps",
       "url": "https://github.com/Shubhamsaboo/awesome-llm-apps",
       "description": "100+ AI Agents, Agent Skills and RAG Apps - Free and Open Source.",
-      "stars": 144227,
+      "stars": 144319,
       "language": "Python",
       "topics": [
         "agents",
@@ -122,7 +118,7 @@
       "name": "ai-job-search-dev/ai-job-search",
       "url": "https://github.com/ai-job-search-dev/ai-job-search",
       "description": "The job search that runs on your machine. AI job application framework built on Claude Code: evaluate postings, tailor CVs, write cover letters, prep interviews. Fork it and own it.",
-      "stars": 70627,
+      "stars": 70920,
       "language": "Python",
       "topics": [
         "ai",
