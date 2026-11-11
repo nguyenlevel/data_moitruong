@@ -1,43 +1,53 @@
 {
-  "generated_at": "2026-11-10T05:48:22.552039+00:00",
+  "generated_at": "2026-11-11T04:20:22.344066+00:00",
   "week_of": "2026-45",
   "meta": {
     "papers_tracked": 15,
-    "technologies_tracked": 23,
-    "ideas_tracked": 546,
+    "technologies_tracked": 20,
+    "ideas_tracked": 552,
     "repos_tracked": 2,
     "last_research_update": ""
   },
   "accelerating_technologies": [
     {
-      "name": "Mixture of Experts",
-      "description": "Mixture of Experts",
+      "name": "Multi-Teacher On-Policy Distillation (MOPD)",
+      "description": "Multi-Teacher On-Policy Distillation (MOPD)",
       "trend": "rising",
-      "confidence": 0.7,
+      "confidence": 0.8,
       "maturity": "medium",
       "paper_count": 1,
       "signal": "rising"
     },
     {
-      "name": "Reinforcement Learning",
-      "description": "Reinforcement Learning",
+      "name": "Knowledge-Tree-Driven Data Flywheel",
+      "description": "Knowledge-Tree-Driven Data Flywheel",
       "trend": "rising",
-      "confidence": 0.7,
+      "confidence": 0.8,
       "maturity": "medium",
       "paper_count": 1,
       "signal": "rising"
     },
     {
-      "name": "Expert Parallelism",
-      "description": "Expert Parallelism",
+      "name": "Hard-Example Augmentation",
+      "description": "Hard-Example Augmentation",
       "trend": "rising",
-      "confidence": 0.7,
+      "confidence": 0.8,
       "maturity": "medium",
       "paper_count": 1,
       "signal": "rising"
     }
   ],
   "startup_ideas_with_revenue": [
+    {
+      "title": "My new SaaS reached $1200 MRR!!",
+      "url": "https://reddit.com/r/SaaS/comments/1xsrh2b/",
+      "revenue_signal": "$1200 MRR",
+      "source": "reddit",
+      "category": "",
+      "business_model": "subscription",
+      "ai_potential": 55,
+      "score": 0
+    },
     {
       "title": "Show HN: San Francisco Compute – 512 H100s at <$2/hr for research and startups",
       "url": "https://sfcompute.org/",
@@ -57,23 +67,13 @@
       "business_model": "subscription,marketplace,ads,freemium",
       "ai_potential": 40,
       "score": 1943
-    },
-    {
-      "title": "Got my first paying SaaS customer at $49/month. Still feels surreal!",
-      "url": "https://reddit.com/r/SaaS/comments/1xs0e7f/",
-      "revenue_signal": "$49/mo",
-      "source": "reddit",
-      "category": "",
-      "business_model": "subscription,marketplace",
-      "ai_potential": 40,
-      "score": 0
     }
   ],
   "hidden_gems": [
     {
       "technology": "Mixture of Experts",
       "description": "Mixture of Experts",
-      "confidence": 0.7,
+      "confidence": 0.62,
       "paper_count": 1,
       "related_papers": [
         {
@@ -85,15 +85,11 @@
     {
       "technology": "Reinforcement Learning",
       "description": "Reinforcement Learning",
-      "confidence": 0.7,
+      "confidence": 0.62,
       "paper_count": 1,
       "related_papers": [
         {
           "title": "AdaFloor: Adaptive Floor Planning and Rank-Time Reuse for Long-Tail MoE RL Rollouts",
-          "url": ""
-        },
-        {
-          "title": "StoreBench: A Live-Commerce Environment for Evaluating and Training Autonomous Operator Agents",
           "url": ""
         }
       ]
@@ -104,7 +100,7 @@
       "name": "Shubhamsaboo/awesome-llm-apps",
       "url": "https://github.com/Shubhamsaboo/awesome-llm-apps",
       "description": "100+ AI Agents, Agent Skills and RAG Apps - Free and Open Source.",
-      "stars": 144319,
+      "stars": 144385,
       "language": "Python",
       "topics": [
         "agents",
@@ -118,7 +114,7 @@
       "name": "ai-job-search-dev/ai-job-search",
       "url": "https://github.com/ai-job-search-dev/ai-job-search",
       "description": "The job search that runs on your machine. AI job application framework built on Claude Code: evaluate postings, tailor CVs, write cover letters, prep interviews. Fork it and own it.",
-      "stars": 70920,
+      "stars": 71128,
       "language": "Python",
       "topics": [
         "ai",
