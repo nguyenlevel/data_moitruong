@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-11-11T04:20:29.126941+00:00",
+  "updated_at": "2026-11-12T05:32:52.566461+00:00",
   "stats": {
-    "agents": 2,
-    "skills": 2,
+    "agents": 4,
+    "skills": 4,
     "use_cases": 5
   },
   "use_cases": [
@@ -18,7 +18,7 @@
       "name": "Shubhamsaboo/awesome-llm-apps",
       "url": "https://github.com/Shubhamsaboo/awesome-llm-apps",
       "description": "100+ AI Agents, Agent Skills and RAG Apps - Free and Open Source.",
-      "stars": 144385,
+      "stars": 144450,
       "category": "Agents & Automation",
       "language": "Python",
       "topics": [
@@ -27,13 +27,13 @@
         "python",
         "rag"
       ],
-      "trend_score": 1008.9,
-      "delta_7d": 531,
+      "trend_score": 1022.0,
+      "delta_7d": 541,
       "is_agent": true,
       "is_skill": true,
       "use_cases": [
-        "productivity",
-        "ai"
+        "ai",
+        "productivity"
       ]
     },
     {
@@ -41,7 +41,7 @@
       "name": "ai-job-search-dev/ai-job-search",
       "url": "https://github.com/ai-job-search-dev/ai-job-search",
       "description": "The job search that runs on your machine. AI job application framework built on Claude Code: evaluate postings, tailor CVs, write cover letters, prep interviews. Fork it and own it.",
-      "stars": 71128,
+      "stars": 71297,
       "category": "Data & Evaluation",
       "language": "Python",
       "topics": [
@@ -51,14 +51,60 @@
         "claude-code",
         "cover-letter"
       ],
-      "trend_score": 3087.0,
-      "delta_7d": 1716,
+      "trend_score": 2910.3,
+      "delta_7d": 1651,
       "is_agent": true,
       "is_skill": true,
       "use_cases": [
-        "coding",
-        "ai",
         "data",
+        "ai",
+        "coding",
+        "design"
+      ]
+    },
+    {
+      "id": "deanpeters/Product-Manager-Skills",
+      "name": "deanpeters/Product-Manager-Skills",
+      "url": "https://github.com/deanpeters/Product-Manager-Skills",
+      "description": "Product Management skills framework built on battle-tested methods for Claude Code, Cowork, Codex, and AI agents.",
+      "stars": 7985,
+      "category": "Agents & Automation",
+      "language": "Shell",
+      "topics": [
+        "ai-agents",
+        "ai-product-management",
+        "claude-skills",
+        "pm-frameworks",
+        "product-management"
+      ],
+      "trend_score": 55.1,
+      "delta_7d": 0,
+      "is_agent": true,
+      "is_skill": true,
+      "use_cases": [
+        "ai",
+        "coding",
+        "productivity",
+        "design"
+      ]
+    },
+    {
+      "id": "nguyenlevel/product-manager-skills",
+      "name": "nguyenlevel/product-manager-skills",
+      "url": "https://github.com/nguyenlevel/product-manager-skills",
+      "description": "Product Management skills framework built on battle-tested methods for Claude Code, Cowork, Codex, and AI agents.",
+      "stars": 1,
+      "category": "Agents & Automation",
+      "language": "",
+      "topics": [],
+      "trend_score": -2.4,
+      "delta_7d": 0,
+      "is_agent": true,
+      "is_skill": true,
+      "use_cases": [
+        "ai",
+        "coding",
+        "productivity",
         "design"
       ]
     }
@@ -69,7 +115,7 @@
       "name": "Shubhamsaboo/awesome-llm-apps",
       "url": "https://github.com/Shubhamsaboo/awesome-llm-apps",
       "description": "100+ AI Agents, Agent Skills and RAG Apps - Free and Open Source.",
-      "stars": 144385,
+      "stars": 144450,
       "category": "Agents & Automation",
       "language": "Python",
       "topics": [
@@ -78,13 +124,13 @@
         "python",
         "rag"
       ],
-      "trend_score": 1008.9,
-      "delta_7d": 531,
+      "trend_score": 1022.0,
+      "delta_7d": 541,
       "is_agent": true,
       "is_skill": true,
       "use_cases": [
-        "productivity",
-        "ai"
+        "ai",
+        "productivity"
       ]
     },
     {
@@ -92,7 +138,7 @@
       "name": "ai-job-search-dev/ai-job-search",
       "url": "https://github.com/ai-job-search-dev/ai-job-search",
       "description": "The job search that runs on your machine. AI job application framework built on Claude Code: evaluate postings, tailor CVs, write cover letters, prep interviews. Fork it and own it.",
-      "stars": 71128,
+      "stars": 71297,
       "category": "Data & Evaluation",
       "language": "Python",
       "topics": [
@@ -102,14 +148,60 @@
         "claude-code",
         "cover-letter"
       ],
-      "trend_score": 3087.0,
-      "delta_7d": 1716,
+      "trend_score": 2910.3,
+      "delta_7d": 1651,
       "is_agent": true,
       "is_skill": true,
       "use_cases": [
-        "coding",
-        "ai",
         "data",
+        "ai",
+        "coding",
+        "design"
+      ]
+    },
+    {
+      "id": "deanpeters/Product-Manager-Skills",
+      "name": "deanpeters/Product-Manager-Skills",
+      "url": "https://github.com/deanpeters/Product-Manager-Skills",
+      "description": "Product Management skills framework built on battle-tested methods for Claude Code, Cowork, Codex, and AI agents.",
+      "stars": 7985,
+      "category": "Agents & Automation",
+      "language": "Shell",
+      "topics": [
+        "ai-agents",
+        "ai-product-management",
+        "claude-skills",
+        "pm-frameworks",
+        "product-management"
+      ],
+      "trend_score": 55.1,
+      "delta_7d": 0,
+      "is_agent": true,
+      "is_skill": true,
+      "use_cases": [
+        "ai",
+        "coding",
+        "productivity",
+        "design"
+      ]
+    },
+    {
+      "id": "nguyenlevel/product-manager-skills",
+      "name": "nguyenlevel/product-manager-skills",
+      "url": "https://github.com/nguyenlevel/product-manager-skills",
+      "description": "Product Management skills framework built on battle-tested methods for Claude Code, Cowork, Codex, and AI agents.",
+      "stars": 1,
+      "category": "Agents & Automation",
+      "language": "",
+      "topics": [],
+      "trend_score": -2.4,
+      "delta_7d": 0,
+      "is_agent": true,
+      "is_skill": true,
+      "use_cases": [
+        "ai",
+        "coding",
+        "productivity",
         "design"
       ]
     }

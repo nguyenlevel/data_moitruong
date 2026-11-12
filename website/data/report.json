@@ -1,57 +1,97 @@
 {
-  "date": "2026-11-11",
-  "generated_at": "2026-11-11T04:20:22.281664+00:00",
+  "date": "2026-11-12",
+  "generated_at": "2026-11-12T05:32:44.104801+00:00",
   "backend": "llm7",
   "model": "default",
   "brief": [
-    "Breakout opportunity: AI-powered job search and application framework (ai-job-search-dev/ai-job-search).",
+    "Breakout opportunity: AI-driven job application assistant (ai-job-search-dev/ai-job-search).",
     "Emerging trend: 100+ open-source AI agents and RAG apps for automation (Shubhamsaboo/awesome-llm-apps).",
-    "Leverage AI to streamline job search and application processes.",
-    "Explore automation opportunities with AI agents and RAG apps.",
-    "Breakout timing: Now, with increasing demand for AI-powered job search solutions."
+    "Steady opportunities: AI-powered product management frameworks for AI agents and automation.",
+    "Breakout timing: Q3 2024 for AI-driven job application assistant."
   ],
   "items": [
     {
       "name": "ai-job-search-dev/ai-job-search",
       "url": "https://github.com/ai-job-search-dev/ai-job-search",
-      "stars": 71128,
+      "stars": 71297,
       "category": "Data & Evaluation",
-      "delta_7d": 1716,
-      "delta_7d_pct": 2.47,
+      "delta_7d": 1651,
+      "delta_7d_pct": 2.37,
       "timing": "breakout",
       "signals": [],
       "cross_signal": false,
-      "one_liner": "AI-powered job search and application framework",
-      "pain_point": "Job seekers struggle with tailoring applications and interview prep; recruiters need efficient candidate evaluation",
+      "one_liner": "AI-driven job application assistant",
+      "pain_point": "Time-consuming job applications, lack of personalization",
       "app_ideas": [
-        "Freemium AI job search assistant with CV tailoring and cover letter generation",
-        "B2B API for recruiters to automate candidate evaluation and interview prep",
-        "Vertical SaaS for tech job seekers with AI-driven application tracking"
+        "AI Job Application Assistant: Chrome extension that automates job applications",
+        "AI Resume Builder: Web app that generates tailored resumes and cover letters"
       ],
-      "monetization": "Freemium with premium features, B2B API, and vertical SaaS subscriptions",
+      "monetization": "Freemium with premium features for personalized job searches",
       "opportunity": 8,
-      "why_now": "Increased demand for AI tools in job search and recruitment due to remote work trends"
+      "why_now": "Growing interest in AI for job search, increasing remote work"
     },
     {
       "name": "Shubhamsaboo/awesome-llm-apps",
       "url": "https://github.com/Shubhamsaboo/awesome-llm-apps",
-      "stars": 144385,
+      "stars": 144450,
       "category": "Agents & Automation",
-      "delta_7d": 531,
-      "delta_7d_pct": 0.37,
+      "delta_7d": 541,
+      "delta_7d_pct": 0.38,
       "timing": "emerging",
       "signals": [],
       "cross_signal": false,
       "one_liner": "100+ open-source AI agents and RAG apps for automation",
-      "pain_point": "Saves businesses time by automating tasks and integrating AI into workflows, appealing to SMBs and enterprises",
+      "pain_point": "Businesses and developers need scalable AI solutions for automation and data retrieval, paying for efficiency and customization",
       "app_ideas": [
-        "AI-powered customer support chatbot for small businesses using RAG for context-aware responses",
-        "Automated content moderation tool for social media platforms leveraging agent skills",
-        "Vertical SaaS for real estate agents using AI agents to automate property listings and client interactions"
+        "AI-powered customer support chatbot with RAG for handling FAQs and integrating with Slack",
+        "Automated content moderation agent for social media platforms, using pre-trained models",
+        "AI-driven data analysis agent for small businesses, extracting insights from spreadsheets and databases"
       ],
-      "monetization": "Freemium with enterprise API wrapper and vertical SaaS options",
+      "monetization": "Freemium with enterprise API wrapper for custom integrations",
       "opportunity": 8,
-      "why_now": "Increased demand for AI automation and RAG applications in post-pandemic digital transformation"
+      "why_now": "Increasing demand for AI automation and RAG solutions due to the rise of AI tools and data privacy concerns"
+    },
+    {
+      "name": "deanpeters/Product-Manager-Skills",
+      "url": "https://github.com/deanpeters/Product-Manager-Skills",
+      "stars": 7985,
+      "category": "Agents & Automation",
+      "delta_7d": null,
+      "delta_7d_pct": null,
+      "timing": "steady",
+      "signals": [],
+      "cross_signal": false,
+      "one_liner": "AI-powered product management framework for AI agents",
+      "pain_point": "Helps product managers and teams build AI agents efficiently and effectively, saving time and resources",
+      "app_ideas": [
+        "AI-powered product roadmap generator for AI agents",
+        "AI agent performance tracker and optimizer",
+        "AI agent training and onboarding platform"
+      ],
+      "monetization": "B2B SaaS with tiered pricing based on team size and features",
+      "opportunity": 8,
+      "why_now": "Increasing demand for AI agents and automation tools"
+    },
+    {
+      "name": "nguyenlevel/product-manager-skills",
+      "url": "https://github.com/nguyenlevel/product-manager-skills",
+      "stars": 1,
+      "category": "Agents & Automation",
+      "delta_7d": null,
+      "delta_7d_pct": null,
+      "timing": "steady",
+      "signals": [],
+      "cross_signal": false,
+      "one_liner": "AI-powered product management framework for agents and automation",
+      "pain_point": "Helps product managers and teams streamline processes and improve efficiency in AI-driven projects, appealing to tech companies and startups",
+      "app_ideas": [
+        "A web-based tool for product managers to create and manage AI agent workflows",
+        "A mobile app for on-the-go product management of AI projects",
+        "A browser extension to integrate the framework into existing project management tools"
+      ],
+      "monetization": "Freemium with enterprise pricing for advanced features and support",
+      "opportunity": 7,
+      "why_now": "Increased adoption of AI agents and automation tools in product development"
     }
   ]
 }

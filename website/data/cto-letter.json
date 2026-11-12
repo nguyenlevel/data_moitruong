@@ -1,53 +1,43 @@
 {
-  "generated_at": "2026-11-11T04:20:22.344066+00:00",
+  "generated_at": "2026-11-12T05:32:44.164870+00:00",
   "week_of": "2026-45",
   "meta": {
     "papers_tracked": 15,
-    "technologies_tracked": 20,
-    "ideas_tracked": 552,
-    "repos_tracked": 2,
+    "technologies_tracked": 21,
+    "ideas_tracked": 549,
+    "repos_tracked": 4,
     "last_research_update": ""
   },
   "accelerating_technologies": [
     {
-      "name": "Multi-Teacher On-Policy Distillation (MOPD)",
-      "description": "Multi-Teacher On-Policy Distillation (MOPD)",
+      "name": "Multimodal Learning",
+      "description": "Multimodal Learning",
       "trend": "rising",
-      "confidence": 0.8,
+      "confidence": 0.7,
       "maturity": "medium",
       "paper_count": 1,
       "signal": "rising"
     },
     {
-      "name": "Knowledge-Tree-Driven Data Flywheel",
-      "description": "Knowledge-Tree-Driven Data Flywheel",
+      "name": "Multi-Agent Systems",
+      "description": "Multi-Agent Systems",
       "trend": "rising",
-      "confidence": 0.8,
+      "confidence": 0.7,
       "maturity": "medium",
       "paper_count": 1,
       "signal": "rising"
     },
     {
-      "name": "Hard-Example Augmentation",
-      "description": "Hard-Example Augmentation",
+      "name": "Role-Based Cooperation",
+      "description": "Role-Based Cooperation",
       "trend": "rising",
-      "confidence": 0.8,
+      "confidence": 0.7,
       "maturity": "medium",
       "paper_count": 1,
       "signal": "rising"
     }
   ],
   "startup_ideas_with_revenue": [
-    {
-      "title": "My new SaaS reached $1200 MRR!!",
-      "url": "https://reddit.com/r/SaaS/comments/1xsrh2b/",
-      "revenue_signal": "$1200 MRR",
-      "source": "reddit",
-      "category": "",
-      "business_model": "subscription",
-      "ai_potential": 55,
-      "score": 0
-    },
     {
       "title": "Show HN: San Francisco Compute – 512 H100s at <$2/hr for research and startups",
       "url": "https://sfcompute.org/",
@@ -57,6 +47,16 @@
       "business_model": null,
       "ai_potential": 45,
       "score": 727
+    },
+    {
+      "title": "I built a way to prove what a buyer actually asked their AI shopping agent for, and an agent that uses it to answer PayPal disputes",
+      "url": "https://reddit.com/r/SideProject/comments/1xu2sbh/",
+      "revenue_signal": "$15",
+      "source": "reddit",
+      "category": "",
+      "business_model": "marketplace",
+      "ai_potential": 45,
+      "score": 0
     },
     {
       "title": "Show HN: Non.io, a Reddit-like platform Ive been working on for the last 4 years",
@@ -71,25 +71,25 @@
   ],
   "hidden_gems": [
     {
-      "technology": "Mixture of Experts",
-      "description": "Mixture of Experts",
+      "technology": "Multi-Teacher On-Policy Distillation (MOPD)",
+      "description": "Multi-Teacher On-Policy Distillation (MOPD)",
       "confidence": 0.62,
       "paper_count": 1,
       "related_papers": [
         {
-          "title": "AdaFloor: Adaptive Floor Planning and Rank-Time Reuse for Long-Tail MoE RL Rollouts",
+          "title": "Micius-Flash: Lightweight Agentic Intelligence for Engineering",
           "url": ""
         }
       ]
     },
     {
-      "technology": "Reinforcement Learning",
-      "description": "Reinforcement Learning",
+      "technology": "Knowledge-Tree-Driven Data Flywheel",
+      "description": "Knowledge-Tree-Driven Data Flywheel",
       "confidence": 0.62,
       "paper_count": 1,
       "related_papers": [
         {
-          "title": "AdaFloor: Adaptive Floor Planning and Rank-Time Reuse for Long-Tail MoE RL Rollouts",
+          "title": "Micius-Flash: Lightweight Agentic Intelligence for Engineering",
           "url": ""
         }
       ]
@@ -100,7 +100,7 @@
       "name": "Shubhamsaboo/awesome-llm-apps",
       "url": "https://github.com/Shubhamsaboo/awesome-llm-apps",
       "description": "100+ AI Agents, Agent Skills and RAG Apps - Free and Open Source.",
-      "stars": 144385,
+      "stars": 144450,
       "language": "Python",
       "topics": [
         "agents",
@@ -114,7 +114,7 @@
       "name": "ai-job-search-dev/ai-job-search",
       "url": "https://github.com/ai-job-search-dev/ai-job-search",
       "description": "The job search that runs on your machine. AI job application framework built on Claude Code: evaluate postings, tailor CVs, write cover letters, prep interviews. Fork it and own it.",
-      "stars": 71128,
+      "stars": 71297,
       "language": "Python",
       "topics": [
         "ai",
@@ -124,6 +124,21 @@
         "cover-letter"
       ],
       "category": "Data & Evaluation"
+    },
+    {
+      "name": "deanpeters/Product-Manager-Skills",
+      "url": "https://github.com/deanpeters/Product-Manager-Skills",
+      "description": "Product Management skills framework built on battle-tested methods for Claude Code, Cowork, Codex, and AI agents.",
+      "stars": 7985,
+      "language": "Shell",
+      "topics": [
+        "ai-agents",
+        "ai-product-management",
+        "claude-skills",
+        "pm-frameworks",
+        "product-management"
+      ],
+      "category": "Agents & Automation"
     }
   ]
 }
