@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-12T05:32:52.566461+00:00",
+  "updated_at": "2026-11-13T04:48:46.132544+00:00",
   "stats": {
     "agents": 4,
     "skills": 4,
@@ -18,7 +18,7 @@
       "name": "Shubhamsaboo/awesome-llm-apps",
       "url": "https://github.com/Shubhamsaboo/awesome-llm-apps",
       "description": "100+ AI Agents, Agent Skills and RAG Apps - Free and Open Source.",
-      "stars": 144450,
+      "stars": 144523,
       "category": "Agents & Automation",
       "language": "Python",
       "topics": [
@@ -27,8 +27,8 @@
         "python",
         "rag"
       ],
-      "trend_score": 1022.0,
-      "delta_7d": 541,
+      "trend_score": 1034.3,
+      "delta_7d": 539,
       "is_agent": true,
       "is_skill": true,
       "use_cases": [
@@ -41,7 +41,7 @@
       "name": "ai-job-search-dev/ai-job-search",
       "url": "https://github.com/ai-job-search-dev/ai-job-search",
       "description": "The job search that runs on your machine. AI job application framework built on Claude Code: evaluate postings, tailor CVs, write cover letters, prep interviews. Fork it and own it.",
-      "stars": 71297,
+      "stars": 71483,
       "category": "Data & Evaluation",
       "language": "Python",
       "topics": [
@@ -51,15 +51,15 @@
         "claude-code",
         "cover-letter"
       ],
-      "trend_score": 2910.3,
-      "delta_7d": 1651,
+      "trend_score": 2817.3,
+      "delta_7d": 1567,
       "is_agent": true,
       "is_skill": true,
       "use_cases": [
-        "data",
-        "ai",
         "coding",
-        "design"
+        "data",
+        "design",
+        "ai"
       ]
     },
     {
@@ -67,7 +67,7 @@
       "name": "deanpeters/Product-Manager-Skills",
       "url": "https://github.com/deanpeters/Product-Manager-Skills",
       "description": "Product Management skills framework built on battle-tested methods for Claude Code, Cowork, Codex, and AI agents.",
-      "stars": 7985,
+      "stars": 8001,
       "category": "Agents & Automation",
       "language": "Shell",
       "topics": [
@@ -77,15 +77,15 @@
         "pm-frameworks",
         "product-management"
       ],
-      "trend_score": 55.1,
+      "trend_score": 98.7,
       "delta_7d": 0,
       "is_agent": true,
       "is_skill": true,
       "use_cases": [
-        "ai",
         "coding",
-        "productivity",
-        "design"
+        "design",
+        "ai",
+        "productivity"
       ]
     },
     {
@@ -97,15 +97,15 @@
       "category": "Agents & Automation",
       "language": "",
       "topics": [],
-      "trend_score": -2.4,
+      "trend_score": -4.0,
       "delta_7d": 0,
       "is_agent": true,
       "is_skill": true,
       "use_cases": [
-        "ai",
         "coding",
-        "productivity",
-        "design"
+        "design",
+        "ai",
+        "productivity"
       ]
     }
   ],
@@ -115,7 +115,7 @@
       "name": "Shubhamsaboo/awesome-llm-apps",
       "url": "https://github.com/Shubhamsaboo/awesome-llm-apps",
       "description": "100+ AI Agents, Agent Skills and RAG Apps - Free and Open Source.",
-      "stars": 144450,
+      "stars": 144523,
       "category": "Agents & Automation",
       "language": "Python",
       "topics": [
@@ -124,8 +124,8 @@
         "python",
         "rag"
       ],
-      "trend_score": 1022.0,
-      "delta_7d": 541,
+      "trend_score": 1034.3,
+      "delta_7d": 539,
       "is_agent": true,
       "is_skill": true,
       "use_cases": [
@@ -138,7 +138,7 @@
       "name": "ai-job-search-dev/ai-job-search",
       "url": "https://github.com/ai-job-search-dev/ai-job-search",
       "description": "The job search that runs on your machine. AI job application framework built on Claude Code: evaluate postings, tailor CVs, write cover letters, prep interviews. Fork it and own it.",
-      "stars": 71297,
+      "stars": 71483,
       "category": "Data & Evaluation",
       "language": "Python",
       "topics": [
@@ -148,15 +148,15 @@
         "claude-code",
         "cover-letter"
       ],
-      "trend_score": 2910.3,
-      "delta_7d": 1651,
+      "trend_score": 2817.3,
+      "delta_7d": 1567,
       "is_agent": true,
       "is_skill": true,
       "use_cases": [
-        "data",
-        "ai",
         "coding",
-        "design"
+        "data",
+        "design",
+        "ai"
       ]
     },
     {
@@ -164,7 +164,7 @@
       "name": "deanpeters/Product-Manager-Skills",
       "url": "https://github.com/deanpeters/Product-Manager-Skills",
       "description": "Product Management skills framework built on battle-tested methods for Claude Code, Cowork, Codex, and AI agents.",
-      "stars": 7985,
+      "stars": 8001,
       "category": "Agents & Automation",
       "language": "Shell",
       "topics": [
@@ -174,15 +174,15 @@
         "pm-frameworks",
         "product-management"
       ],
-      "trend_score": 55.1,
+      "trend_score": 98.7,
       "delta_7d": 0,
       "is_agent": true,
       "is_skill": true,
       "use_cases": [
-        "ai",
         "coding",
-        "productivity",
-        "design"
+        "design",
+        "ai",
+        "productivity"
       ]
     },
     {
@@ -194,15 +194,15 @@
       "category": "Agents & Automation",
       "language": "",
       "topics": [],
-      "trend_score": -2.4,
+      "trend_score": -4.0,
       "delta_7d": 0,
       "is_agent": true,
       "is_skill": true,
       "use_cases": [
-        "ai",
         "coding",
-        "productivity",
-        "design"
+        "design",
+        "ai",
+        "productivity"
       ]
     }
   ]

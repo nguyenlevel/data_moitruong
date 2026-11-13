@@ -1,17 +1,17 @@
 {
-  "generated_at": "2026-11-12T05:32:44.164870+00:00",
+  "generated_at": "2026-11-13T04:48:37.755632+00:00",
   "week_of": "2026-45",
   "meta": {
     "papers_tracked": 15,
-    "technologies_tracked": 21,
+    "technologies_tracked": 29,
     "ideas_tracked": 549,
     "repos_tracked": 4,
     "last_research_update": ""
   },
   "accelerating_technologies": [
     {
-      "name": "Multimodal Learning",
-      "description": "Multimodal Learning",
+      "name": "Multi-Agent Collaboration",
+      "description": "Multi-Agent Collaboration",
       "trend": "rising",
       "confidence": 0.7,
       "maturity": "medium",
@@ -19,8 +19,8 @@
       "signal": "rising"
     },
     {
-      "name": "Multi-Agent Systems",
-      "description": "Multi-Agent Systems",
+      "name": "Verification-Driven Tool Interaction",
+      "description": "Verification-Driven Tool Interaction",
       "trend": "rising",
       "confidence": 0.7,
       "maturity": "medium",
@@ -28,8 +28,8 @@
       "signal": "rising"
     },
     {
-      "name": "Role-Based Cooperation",
-      "description": "Role-Based Cooperation",
+      "name": "Context-Evolving AI Agent Framework",
+      "description": "Context-Evolving AI Agent Framework",
       "trend": "rising",
       "confidence": 0.7,
       "maturity": "medium",
@@ -49,16 +49,6 @@
       "score": 727
     },
     {
-      "title": "I built a way to prove what a buyer actually asked their AI shopping agent for, and an agent that uses it to answer PayPal disputes",
-      "url": "https://reddit.com/r/SideProject/comments/1xu2sbh/",
-      "revenue_signal": "$15",
-      "source": "reddit",
-      "category": "",
-      "business_model": "marketplace",
-      "ai_potential": 45,
-      "score": 0
-    },
-    {
       "title": "Show HN: Non.io, a Reddit-like platform Ive been working on for the last 4 years",
       "url": "https://non.io",
       "revenue_signal": "$2",
@@ -67,29 +57,39 @@
       "business_model": "subscription,marketplace,ads,freemium",
       "ai_potential": 40,
       "score": 1943
+    },
+    {
+      "title": "Four days and 23 emails made the sale, but consistent SEO got them to the door ($117 on Stripe)",
+      "url": "https://reddit.com/r/SaaS/comments/1xur2ht/",
+      "revenue_signal": "$117",
+      "source": "reddit",
+      "category": "",
+      "business_model": "api",
+      "ai_potential": 40,
+      "score": 0
     }
   ],
   "hidden_gems": [
     {
-      "technology": "Multi-Teacher On-Policy Distillation (MOPD)",
-      "description": "Multi-Teacher On-Policy Distillation (MOPD)",
-      "confidence": 0.62,
+      "technology": "Multi-Agent Collaboration",
+      "description": "Multi-Agent Collaboration",
+      "confidence": 0.7,
       "paper_count": 1,
       "related_papers": [
         {
-          "title": "Micius-Flash: Lightweight Agentic Intelligence for Engineering",
+          "title": "ChipOmni: A General-Purpose AI Agent for Electronic Design Automation",
           "url": ""
         }
       ]
     },
     {
-      "technology": "Knowledge-Tree-Driven Data Flywheel",
-      "description": "Knowledge-Tree-Driven Data Flywheel",
-      "confidence": 0.62,
+      "technology": "Verification-Driven Tool Interaction",
+      "description": "Verification-Driven Tool Interaction",
+      "confidence": 0.7,
       "paper_count": 1,
       "related_papers": [
         {
-          "title": "Micius-Flash: Lightweight Agentic Intelligence for Engineering",
+          "title": "ChipOmni: A General-Purpose AI Agent for Electronic Design Automation",
           "url": ""
         }
       ]
@@ -100,7 +100,7 @@
       "name": "Shubhamsaboo/awesome-llm-apps",
       "url": "https://github.com/Shubhamsaboo/awesome-llm-apps",
       "description": "100+ AI Agents, Agent Skills and RAG Apps - Free and Open Source.",
-      "stars": 144450,
+      "stars": 144523,
       "language": "Python",
       "topics": [
         "agents",
@@ -114,7 +114,7 @@
       "name": "ai-job-search-dev/ai-job-search",
       "url": "https://github.com/ai-job-search-dev/ai-job-search",
       "description": "The job search that runs on your machine. AI job application framework built on Claude Code: evaluate postings, tailor CVs, write cover letters, prep interviews. Fork it and own it.",
-      "stars": 71297,
+      "stars": 71483,
       "language": "Python",
       "topics": [
         "ai",
@@ -129,7 +129,7 @@
       "name": "deanpeters/Product-Manager-Skills",
       "url": "https://github.com/deanpeters/Product-Manager-Skills",
       "description": "Product Management skills framework built on battle-tested methods for Claude Code, Cowork, Codex, and AI agents.",
-      "stars": 7985,
+      "stars": 8001,
       "language": "Shell",
       "topics": [
         "ai-agents",

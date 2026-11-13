@@ -1,0 +1,97 @@
+{
+  "date": "2026-11-13",
+  "generated_at": "2026-11-13T04:48:37.704989+00:00",
+  "backend": "llm7",
+  "model": "default",
+  "brief": [
+    "Breakout opportunity: AI-powered job application automation (ai-job-search-dev/ai-job-search).",
+    "Emerging trend: 100+ open-source AI agents and RAG apps for automation (Shubhamsaboo/awesome-llm-apps).",
+    "Steady opportunities: AI-powered product management frameworks for agents and startups.",
+    "Best opportunity: AI job search automation (ai-job-search-dev/ai-job-search) with breakout potential."
+  ],
+  "items": [
+    {
+      "name": "ai-job-search-dev/ai-job-search",
+      "url": "https://github.com/ai-job-search-dev/ai-job-search",
+      "stars": 71483,
+      "category": "Data & Evaluation",
+      "delta_7d": 1567,
+      "delta_7d_pct": 2.24,
+      "timing": "breakout",
+      "signals": [],
+      "cross_signal": false,
+      "one_liner": "AI-powered job application automation",
+      "pain_point": "Job seekers struggling with repetitive tasks, recruiters overwhelmed with applications",
+      "app_ideas": [
+        "AI Job Applicant: Chrome extension for automatic job application tailoring",
+        "RecruitAI: AI-powered resume screening tool for recruiters"
+      ],
+      "monetization": "Freemium with premium features for job seekers, B2B API for recruiters",
+      "opportunity": 8,
+      "why_now": "Increasing demand for AI in job search and recruitment"
+    },
+    {
+      "name": "Shubhamsaboo/awesome-llm-apps",
+      "url": "https://github.com/Shubhamsaboo/awesome-llm-apps",
+      "stars": 144523,
+      "category": "Agents & Automation",
+      "delta_7d": 539,
+      "delta_7d_pct": 0.37,
+      "timing": "emerging",
+      "signals": [],
+      "cross_signal": false,
+      "one_liner": "100+ open-source AI agents and RAG apps for automation.",
+      "pain_point": "Saves businesses time by automating tasks with AI agents, appealing to SMBs and enterprises.",
+      "app_ideas": [
+        "AI-powered customer support chatbot for small businesses using RAG for FAQs.",
+        "Automated content moderation tool for social media platforms using AI agents.",
+        "AI assistant for HR to automate resume screening and scheduling interviews."
+      ],
+      "monetization": "Freemium with enterprise API wrapper for custom integrations.",
+      "opportunity": 8,
+      "why_now": "Growing demand for AI automation tools post-pandemic."
+    },
+    {
+      "name": "deanpeters/Product-Manager-Skills",
+      "url": "https://github.com/deanpeters/Product-Manager-Skills",
+      "stars": 8001,
+      "category": "Agents & Automation",
+      "delta_7d": null,
+      "delta_7d_pct": null,
+      "timing": "steady",
+      "signals": [],
+      "cross_signal": false,
+      "one_liner": "AI-powered product management framework for agents and automation",
+      "pain_point": "Helps product managers and developers build AI agents and automation tools efficiently, attracting startups and enterprises",
+      "app_ideas": [
+        "AI-powered product roadmap generator for startups",
+        "Automated feature prioritization tool for product managers",
+        "AI-driven product analytics dashboard for SaaS companies"
+      ],
+      "monetization": "Freemium with enterprise pricing for advanced features",
+      "opportunity": 7,
+      "why_now": "Increased demand for AI agents and automation tools in the market"
+    },
+    {
+      "name": "nguyenlevel/product-manager-skills",
+      "url": "https://github.com/nguyenlevel/product-manager-skills",
+      "stars": 1,
+      "category": "Agents & Automation",
+      "delta_7d": null,
+      "delta_7d_pct": null,
+      "timing": "steady",
+      "signals": [],
+      "cross_signal": false,
+      "one_liner": "AI-powered product management framework for startups",
+      "pain_point": "Startups struggle with product management, especially with AI tools. They'd pay for a battle-tested framework",
+      "app_ideas": [
+        "AI-powered product roadmap generator for startups",
+        "AI assistant for product managers to automate routine tasks",
+        "AI-powered product analytics dashboard for startups"
+      ],
+      "monetization": "Freemium with premium features for startups",
+      "opportunity": 7,
+      "why_now": "Increased adoption of AI tools in startups"
+    }
+  ]
+}
