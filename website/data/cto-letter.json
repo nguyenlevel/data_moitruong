@@ -1,17 +1,17 @@
 {
-  "generated_at": "2026-11-13T04:48:37.755632+00:00",
+  "generated_at": "2026-11-14T04:42:45.626401+00:00",
   "week_of": "2026-45",
   "meta": {
     "papers_tracked": 15,
-    "technologies_tracked": 29,
-    "ideas_tracked": 549,
-    "repos_tracked": 4,
+    "technologies_tracked": 22,
+    "ideas_tracked": 554,
+    "repos_tracked": 5,
     "last_research_update": ""
   },
   "accelerating_technologies": [
     {
-      "name": "Multi-Agent Collaboration",
-      "description": "Multi-Agent Collaboration",
+      "name": "Multimodal Learning",
+      "description": "Multimodal Learning",
       "trend": "rising",
       "confidence": 0.7,
       "maturity": "medium",
@@ -19,8 +19,8 @@
       "signal": "rising"
     },
     {
-      "name": "Verification-Driven Tool Interaction",
-      "description": "Verification-Driven Tool Interaction",
+      "name": "Self-Grounded Verification",
+      "description": "Self-Grounded Verification",
       "trend": "rising",
       "confidence": 0.7,
       "maturity": "medium",
@@ -28,8 +28,8 @@
       "signal": "rising"
     },
     {
-      "name": "Context-Evolving AI Agent Framework",
-      "description": "Context-Evolving AI Agent Framework",
+      "name": "Agreement Bias Mitigation",
+      "description": "Agreement Bias Mitigation",
       "trend": "rising",
       "confidence": 0.7,
       "maturity": "medium",
@@ -59,37 +59,45 @@
       "score": 1943
     },
     {
-      "title": "Four days and 23 emails made the sale, but consistent SEO got them to the door ($117 on Stripe)",
-      "url": "https://reddit.com/r/SaaS/comments/1xur2ht/",
-      "revenue_signal": "$117",
+      "title": "What do you pay for monthly to maintain your saas?",
+      "url": "https://reddit.com/r/SaaS/comments/1xva19e/",
+      "revenue_signal": "$2",
       "source": "reddit",
       "category": "",
-      "business_model": "api",
+      "business_model": "subscription",
       "ai_potential": 40,
       "score": 0
     }
   ],
   "hidden_gems": [
     {
-      "technology": "Multi-Agent Collaboration",
-      "description": "Multi-Agent Collaboration",
+      "technology": "Multimodal Learning",
+      "description": "Multimodal Learning",
       "confidence": 0.7,
       "paper_count": 1,
       "related_papers": [
         {
-          "title": "ChipOmni: A General-Purpose AI Agent for Electronic Design Automation",
+          "title": "Let's Think in Two Steps: Mitigating Agreement Bias in MLLMs with Self-Grounded Verification",
+          "url": ""
+        },
+        {
+          "title": "Micius-Flash: Lightweight Agentic Intelligence for Engineering",
+          "url": ""
+        },
+        {
+          "title": "Science Edge Evaluation: SEE the Missing Step Toward Real Scientific Discovery",
           "url": ""
         }
       ]
     },
     {
-      "technology": "Verification-Driven Tool Interaction",
-      "description": "Verification-Driven Tool Interaction",
+      "technology": "Self-Grounded Verification",
+      "description": "Self-Grounded Verification",
       "confidence": 0.7,
       "paper_count": 1,
       "related_papers": [
         {
-          "title": "ChipOmni: A General-Purpose AI Agent for Electronic Design Automation",
+          "title": "Let's Think in Two Steps: Mitigating Agreement Bias in MLLMs with Self-Grounded Verification",
           "url": ""
         }
       ]
@@ -97,10 +105,25 @@
   ],
   "notable_repos": [
     {
+      "name": "github/spec-kit",
+      "url": "https://github.com/github/spec-kit",
+      "description": "💫 Toolkit to help you get started with SDD or any other process!",
+      "stars": 149709,
+      "language": "Python",
+      "topics": [
+        "ai",
+        "copilot",
+        "development",
+        "engineering",
+        "prd"
+      ],
+      "category": "Applications"
+    },
+    {
       "name": "Shubhamsaboo/awesome-llm-apps",
       "url": "https://github.com/Shubhamsaboo/awesome-llm-apps",
       "description": "100+ AI Agents, Agent Skills and RAG Apps - Free and Open Source.",
-      "stars": 144523,
+      "stars": 144593,
       "language": "Python",
       "topics": [
         "agents",
@@ -114,7 +137,7 @@
       "name": "ai-job-search-dev/ai-job-search",
       "url": "https://github.com/ai-job-search-dev/ai-job-search",
       "description": "The job search that runs on your machine. AI job application framework built on Claude Code: evaluate postings, tailor CVs, write cover letters, prep interviews. Fork it and own it.",
-      "stars": 71483,
+      "stars": 71623,
       "language": "Python",
       "topics": [
         "ai",
@@ -129,8 +152,8 @@
       "name": "deanpeters/Product-Manager-Skills",
       "url": "https://github.com/deanpeters/Product-Manager-Skills",
       "description": "Product Management skills framework built on battle-tested methods for Claude Code, Cowork, Codex, and AI agents.",
-      "stars": 8001,
-      "language": "Shell",
+      "stars": 8014,
+      "language": "Python",
       "topics": [
         "ai-agents",
         "ai-product-management",

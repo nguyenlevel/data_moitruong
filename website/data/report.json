@@ -1,76 +1,93 @@
 {
-  "date": "2026-11-13",
-  "generated_at": "2026-11-13T04:48:37.704989+00:00",
+  "date": "2026-11-14",
+  "generated_at": "2026-11-14T04:42:45.554102+00:00",
   "backend": "llm7",
   "model": "default",
-  "brief": [
-    "Breakout opportunity: AI-powered job application automation (ai-job-search-dev/ai-job-search).",
-    "Emerging trend: 100+ open-source AI agents and RAG apps for automation (Shubhamsaboo/awesome-llm-apps).",
-    "Steady opportunities: AI-powered product management frameworks for agents and startups.",
-    "Best opportunity: AI job search automation (ai-job-search-dev/ai-job-search) with breakout potential."
-  ],
+  "brief": [],
   "items": [
     {
       "name": "ai-job-search-dev/ai-job-search",
       "url": "https://github.com/ai-job-search-dev/ai-job-search",
-      "stars": 71483,
+      "stars": 71623,
       "category": "Data & Evaluation",
-      "delta_7d": 1567,
-      "delta_7d_pct": 2.24,
+      "delta_7d": 1515,
+      "delta_7d_pct": 2.16,
       "timing": "breakout",
       "signals": [],
       "cross_signal": false,
-      "one_liner": "AI-powered job application automation",
-      "pain_point": "Job seekers struggling with repetitive tasks, recruiters overwhelmed with applications",
+      "one_liner": "AI-powered job search and application tool",
+      "pain_point": "Job seekers struggle with tailoring applications and preparing for interviews; recruiters need efficient tools to evaluate candidates",
       "app_ideas": [
-        "AI Job Applicant: Chrome extension for automatic job application tailoring",
-        "RecruitAI: AI-powered resume screening tool for recruiters"
+        "Freemium web app for job seekers with AI-powered CV tailoring and cover letter generation",
+        "B2B API wrapper for recruiters to integrate AI-powered candidate evaluation into their ATS",
+        "Vertical SaaS for tech job seekers with AI-powered interview preparation and mock interviews"
       ],
-      "monetization": "Freemium with premium features for job seekers, B2B API for recruiters",
+      "monetization": "Freemium model with premium features for job seekers; B2B API and SaaS subscriptions for recruiters",
       "opportunity": 8,
-      "why_now": "Increasing demand for AI in job search and recruitment"
+      "why_now": "Increased demand for AI-powered tools in the job market due to the rise of remote work and the need for efficient recruitment processes"
     },
     {
       "name": "Shubhamsaboo/awesome-llm-apps",
       "url": "https://github.com/Shubhamsaboo/awesome-llm-apps",
-      "stars": 144523,
+      "stars": 144593,
       "category": "Agents & Automation",
-      "delta_7d": 539,
+      "delta_7d": 537,
       "delta_7d_pct": 0.37,
       "timing": "emerging",
       "signals": [],
       "cross_signal": false,
-      "one_liner": "100+ open-source AI agents and RAG apps for automation.",
-      "pain_point": "Saves businesses time by automating tasks with AI agents, appealing to SMBs and enterprises.",
+      "one_liner": "100+ open-source AI agents and RAG apps",
+      "pain_point": "Businesses and developers seeking cost-effective, customizable AI solutions for automation and data retrieval, saving time and money",
       "app_ideas": [
-        "AI-powered customer support chatbot for small businesses using RAG for FAQs.",
-        "Automated content moderation tool for social media platforms using AI agents.",
-        "AI assistant for HR to automate resume screening and scheduling interviews."
+        "AI-powered customer support chatbot for small businesses, integrating with popular CRM tools",
+        "Automated content moderation tool for social media platforms, leveraging pre-trained models",
+        "Personalized learning assistant for educational platforms, using RAG to retrieve relevant learning materials"
       ],
-      "monetization": "Freemium with enterprise API wrapper for custom integrations.",
+      "monetization": "Freemium model with enterprise-grade support and customization options",
       "opportunity": 8,
-      "why_now": "Growing demand for AI automation tools post-pandemic."
+      "why_now": "Increased demand for AI-driven automation and the rise of open-source AI tools"
+    },
+    {
+      "name": "github/spec-kit",
+      "url": "https://github.com/github/spec-kit",
+      "stars": 149709,
+      "category": "Applications",
+      "delta_7d": null,
+      "delta_7d_pct": null,
+      "timing": "steady",
+      "signals": [],
+      "cross_signal": false,
+      "one_liner": "Toolkit for software development processes like SDD",
+      "pain_point": "Helps teams follow development processes, saving time and reducing errors. Paid by development teams and consulting firms.",
+      "app_ideas": [
+        "SDD Process Guide App: Interactive guide for teams to follow SDD process",
+        "Process Customizer: Tool for teams to customize and adopt SDD or other processes",
+        "Process Compliance Checker: App to check if a team is following their chosen process"
+      ],
+      "monetization": "Freemium with paid add-ons for advanced features and support",
+      "opportunity": 7,
+      "why_now": "Increased demand for structured development processes in the wake of the pandemic"
     },
     {
       "name": "deanpeters/Product-Manager-Skills",
       "url": "https://github.com/deanpeters/Product-Manager-Skills",
-      "stars": 8001,
+      "stars": 8014,
       "category": "Agents & Automation",
       "delta_7d": null,
       "delta_7d_pct": null,
       "timing": "steady",
       "signals": [],
       "cross_signal": false,
-      "one_liner": "AI-powered product management framework for agents and automation",
-      "pain_point": "Helps product managers and developers build AI agents and automation tools efficiently, attracting startups and enterprises",
+      "one_liner": "Product management framework for AI agents",
+      "pain_point": "Helps product managers and teams build AI agents efficiently, saving time and resources",
       "app_ideas": [
-        "AI-powered product roadmap generator for startups",
-        "Automated feature prioritization tool for product managers",
-        "AI-driven product analytics dashboard for SaaS companies"
+        "AI-powered product management assistant for startups",
+        "AI agent builder for enterprises",
+        "Product management training platform with AI feedback"
       ],
-      "monetization": "Freemium with enterprise pricing for advanced features",
+      "monetization": "Freemium with enterprise pricing for AI agent builder",
       "opportunity": 7,
-      "why_now": "Increased demand for AI agents and automation tools in the market"
+      "why_now": "Increased demand for AI agents and product management tools"
     },
     {
       "name": "nguyenlevel/product-manager-skills",
@@ -82,16 +99,16 @@
       "timing": "steady",
       "signals": [],
       "cross_signal": false,
-      "one_liner": "AI-powered product management framework for startups",
-      "pain_point": "Startups struggle with product management, especially with AI tools. They'd pay for a battle-tested framework",
+      "one_liner": "AI-powered product management framework for agents and automation",
+      "pain_point": "Helps product managers and teams streamline product development and management using AI, saving time and resources",
       "app_ideas": [
         "AI-powered product roadmap generator for startups",
-        "AI assistant for product managers to automate routine tasks",
-        "AI-powered product analytics dashboard for startups"
+        "AI-driven feature prioritization tool for enterprises",
+        "AI-based product feedback analysis dashboard for SaaS companies"
       ],
-      "monetization": "Freemium with premium features for startups",
+      "monetization": "Freemium with enterprise pricing for advanced features",
       "opportunity": 7,
-      "why_now": "Increased adoption of AI tools in startups"
+      "why_now": "Increasing demand for AI-powered productivity tools and the rise of AI agents and automation"
     }
   ]
 }
