@@ -1,7 +1,4 @@
 {
-  "2026-10-16": {
-    "Shubhamsaboo/awesome-llm-apps": 141897
-  },
   "2026-10-17": {
     "Shubhamsaboo/awesome-llm-apps": 142033
   },
@@ -117,6 +114,13 @@
     "ai-job-search-dev/ai-job-search": 71623,
     "github/spec-kit": 149709,
     "Shubhamsaboo/awesome-llm-apps": 144593,
+    "nguyenlevel/product-manager-skills": 1
+  },
+  "2026-11-15": {
+    "deanpeters/Product-Manager-Skills": 8023,
+    "ai-job-search-dev/ai-job-search": 71768,
+    "github/spec-kit": 149818,
+    "Shubhamsaboo/awesome-llm-apps": 144653,
     "nguyenlevel/product-manager-skills": 1
   }
 }

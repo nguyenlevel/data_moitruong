@@ -1,35 +1,35 @@
 {
-  "generated_at": "2026-11-14T04:42:45.626401+00:00",
-  "week_of": "2026-45",
+  "generated_at": "2026-11-15T04:31:58.481159+00:00",
+  "week_of": "2026-46",
   "meta": {
     "papers_tracked": 15,
-    "technologies_tracked": 22,
-    "ideas_tracked": 554,
+    "technologies_tracked": 33,
+    "ideas_tracked": 545,
     "repos_tracked": 5,
     "last_research_update": ""
   },
   "accelerating_technologies": [
     {
+      "name": "Reinforcement Learning from Human Feedback",
+      "description": "Reinforcement Learning from Human Feedback",
+      "trend": "rising",
+      "confidence": 0.8,
+      "maturity": "medium",
+      "paper_count": 1,
+      "signal": "rising"
+    },
+    {
+      "name": "Retrieval Augmented Generation",
+      "description": "Retrieval Augmented Generation",
+      "trend": "rising",
+      "confidence": 0.8,
+      "maturity": "medium",
+      "paper_count": 1,
+      "signal": "rising"
+    },
+    {
       "name": "Multimodal Learning",
       "description": "Multimodal Learning",
-      "trend": "rising",
-      "confidence": 0.7,
-      "maturity": "medium",
-      "paper_count": 1,
-      "signal": "rising"
-    },
-    {
-      "name": "Self-Grounded Verification",
-      "description": "Self-Grounded Verification",
-      "trend": "rising",
-      "confidence": 0.7,
-      "maturity": "medium",
-      "paper_count": 1,
-      "signal": "rising"
-    },
-    {
-      "name": "Agreement Bias Mitigation",
-      "description": "Agreement Bias Mitigation",
       "trend": "rising",
       "confidence": 0.7,
       "maturity": "medium",
@@ -59,12 +59,12 @@
       "score": 1943
     },
     {
-      "title": "What do you pay for monthly to maintain your saas?",
-      "url": "https://reddit.com/r/SaaS/comments/1xva19e/",
+      "title": "My Mac side project: mouse-controlled fetch with a desktop dog or cat",
+      "url": "https://reddit.com/r/SideProject/comments/1xwk54h/",
       "revenue_signal": "$2",
       "source": "reddit",
       "category": "",
-      "business_model": "subscription",
+      "business_model": "subscription,app-store",
       "ai_potential": 40,
       "score": 0
     }
@@ -81,11 +81,11 @@
           "url": ""
         },
         {
-          "title": "Micius-Flash: Lightweight Agentic Intelligence for Engineering",
+          "title": "TraceKV: Policy-Preserving Low-Rank KV Cache Compression for Reasoning Vision-Language Models",
           "url": ""
         },
         {
-          "title": "Science Edge Evaluation: SEE the Missing Step Toward Real Scientific Discovery",
+          "title": "Micius-Flash: Lightweight Agentic Intelligence for Engineering",
           "url": ""
         }
       ]
@@ -93,7 +93,7 @@
     {
       "technology": "Self-Grounded Verification",
       "description": "Self-Grounded Verification",
-      "confidence": 0.7,
+      "confidence": 0.62,
       "paper_count": 1,
       "related_papers": [
         {
@@ -108,7 +108,7 @@
       "name": "github/spec-kit",
       "url": "https://github.com/github/spec-kit",
       "description": "💫 Toolkit to help you get started with SDD or any other process!",
-      "stars": 149709,
+      "stars": 149818,
       "language": "Python",
       "topics": [
         "ai",
@@ -123,7 +123,7 @@
       "name": "Shubhamsaboo/awesome-llm-apps",
       "url": "https://github.com/Shubhamsaboo/awesome-llm-apps",
       "description": "100+ AI Agents, Agent Skills and RAG Apps - Free and Open Source.",
-      "stars": 144593,
+      "stars": 144653,
       "language": "Python",
       "topics": [
         "agents",
@@ -137,7 +137,7 @@
       "name": "ai-job-search-dev/ai-job-search",
       "url": "https://github.com/ai-job-search-dev/ai-job-search",
       "description": "The job search that runs on your machine. AI job application framework built on Claude Code: evaluate postings, tailor CVs, write cover letters, prep interviews. Fork it and own it.",
-      "stars": 71623,
+      "stars": 71768,
       "language": "Python",
       "topics": [
         "ai",
@@ -152,7 +152,7 @@
       "name": "deanpeters/Product-Manager-Skills",
       "url": "https://github.com/deanpeters/Product-Manager-Skills",
       "description": "Product Management skills framework built on battle-tested methods for Claude Code, Cowork, Codex, and AI agents.",
-      "stars": 8014,
+      "stars": 8023,
       "language": "Python",
       "topics": [
         "ai-agents",
