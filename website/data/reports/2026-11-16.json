@@ -1,0 +1,109 @@
+{
+  "date": "2026-11-16",
+  "generated_at": "2026-11-16T04:31:29.722301+00:00",
+  "backend": "llm7",
+  "model": "default",
+  "brief": [],
+  "items": [
+    {
+      "name": "ai-job-search-dev/ai-job-search",
+      "url": "https://github.com/ai-job-search-dev/ai-job-search",
+      "stars": 71941,
+      "category": "Data & Evaluation",
+      "delta_7d": 1314,
+      "delta_7d_pct": 1.86,
+      "timing": "emerging",
+      "signals": [],
+      "cross_signal": false,
+      "one_liner": "AI-powered job search and application tool",
+      "pain_point": "Job seekers struggle with tailoring applications and standing out in a competitive market",
+      "app_ideas": [
+        "Freemium web app with AI-powered CV tailoring and cover letter generation",
+        "Chrome extension that evaluates job postings and suggests improvements to your application",
+        "Mobile app for on-the-go job application preparation"
+      ],
+      "monetization": "Freemium with premium features for advanced AI capabilities and priority support",
+      "opportunity": 8,
+      "why_now": "Increased demand for AI tools in the job search process due to remote work trends"
+    },
+    {
+      "name": "Shubhamsaboo/awesome-llm-apps",
+      "url": "https://github.com/Shubhamsaboo/awesome-llm-apps",
+      "stars": 144776,
+      "category": "Agents & Automation",
+      "delta_7d": 549,
+      "delta_7d_pct": 0.38,
+      "timing": "emerging",
+      "signals": [],
+      "cross_signal": false,
+      "one_liner": "100+ open-source AI agents and RAG apps",
+      "pain_point": "Saves developers time by providing pre-built AI agents and RAG apps for various use cases, appealing to startups and enterprises",
+      "app_ideas": [
+        "AI-powered customer support chatbot for small businesses",
+        "Automated content generation tool for marketers",
+        "Personalized learning assistant for online education platforms"
+      ],
+      "monetization": "Freemium model with premium features and enterprise support",
+      "opportunity": 8,
+      "why_now": "Increasing demand for AI agents and RAG apps in the post-pandemic era"
+    },
+    {
+      "name": "github/spec-kit",
+      "url": "https://github.com/github/spec-kit",
+      "stars": 149961,
+      "category": "Applications",
+      "delta_7d": null,
+      "delta_7d_pct": null,
+      "timing": "steady",
+      "signals": [],
+      "cross_signal": false,
+      "one_liner": "Toolkit for software development processes like SDD",
+      "pain_point": "Helps teams streamline development processes, saving time and reducing errors. Enterprises and startups would pay for efficiency gains.",
+      "app_ideas": [
+        "SDD Process Automation Tool: A web app that automates the SDD process using spec-kit, reducing manual work and errors.",
+        "Process Template Marketplace: A platform where users can buy and sell custom process templates built with spec-kit."
+      ],
+      "monetization": "Freemium model with premium templates and advanced features for enterprises.",
+      "opportunity": 7,
+      "why_now": "Increased demand for streamlined development processes in the post-pandemic era."
+    },
+    {
+      "name": "deanpeters/Product-Manager-Skills",
+      "url": "https://github.com/deanpeters/Product-Manager-Skills",
+      "stars": 8035,
+      "category": "Agents & Automation",
+      "delta_7d": null,
+      "delta_7d_pct": null,
+      "timing": "steady",
+      "signals": [],
+      "cross_signal": false,
+      "one_liner": "AI-powered product management framework for agents and automation",
+      "pain_point": "Helps product managers and teams streamline product development with AI, saving time and resources for startups and enterprises",
+      "app_ideas": [
+        "AI-powered product roadmap generator for startups",
+        "Automated feature prioritization tool for product teams",
+        "AI-driven competitor analysis dashboard for product managers"
+      ],
+      "monetization": "Freemium with enterprise pricing for advanced features and API access",
+      "opportunity": 7,
+      "why_now": "Increased demand for AI-powered tools in product management due to remote work and automation trends"
+    },
+    {
+      "name": "nguyenlevel/product-manager-skills",
+      "url": "https://github.com/nguyenlevel/product-manager-skills",
+      "stars": 1,
+      "category": "Agents & Automation",
+      "delta_7d": null,
+      "delta_7d_pct": null,
+      "timing": "steady",
+      "signals": [],
+      "cross_signal": false,
+      "one_liner": "",
+      "pain_point": "",
+      "app_ideas": [],
+      "monetization": "",
+      "opportunity": 5,
+      "why_now": ""
+    }
+  ]
+}

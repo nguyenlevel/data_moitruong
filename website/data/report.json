@@ -1,6 +1,6 @@
 {
-  "date": "2026-11-15",
-  "generated_at": "2026-11-15T04:31:58.431524+00:00",
+  "date": "2026-11-16",
+  "generated_at": "2026-11-16T04:31:29.722301+00:00",
   "backend": "llm7",
   "model": "default",
   "brief": [],
@@ -8,86 +8,85 @@
     {
       "name": "ai-job-search-dev/ai-job-search",
       "url": "https://github.com/ai-job-search-dev/ai-job-search",
-      "stars": 71768,
+      "stars": 71941,
       "category": "Data & Evaluation",
-      "delta_7d": 1468,
-      "delta_7d_pct": 2.09,
+      "delta_7d": 1314,
+      "delta_7d_pct": 1.86,
       "timing": "emerging",
       "signals": [],
       "cross_signal": false,
       "one_liner": "AI-powered job search and application tool",
-      "pain_point": "Job seekers struggle with tailoring applications and preparing for interviews; recruiters need efficient tools to evaluate candidates",
+      "pain_point": "Job seekers struggle with tailoring applications and standing out in a competitive market",
       "app_ideas": [
-        "Freemium web app for job seekers with AI-powered CV tailoring and cover letter generation",
-        "B2B API wrapper for recruiters to integrate AI-powered candidate evaluation into their ATS",
-        "Vertical SaaS for tech job seekers with AI-powered interview preparation and mock interviews"
+        "Freemium web app with AI-powered CV tailoring and cover letter generation",
+        "Chrome extension that evaluates job postings and suggests improvements to your application",
+        "Mobile app for on-the-go job application preparation"
       ],
-      "monetization": "Freemium with premium features for job seekers; B2B API wrapper with tiered pricing for recruiters",
+      "monetization": "Freemium with premium features for advanced AI capabilities and priority support",
       "opportunity": 8,
-      "why_now": "Increased demand for AI-powered tools in the job search and recruitment space"
+      "why_now": "Increased demand for AI tools in the job search process due to remote work trends"
     },
     {
       "name": "Shubhamsaboo/awesome-llm-apps",
       "url": "https://github.com/Shubhamsaboo/awesome-llm-apps",
-      "stars": 144653,
+      "stars": 144776,
       "category": "Agents & Automation",
-      "delta_7d": 523,
-      "delta_7d_pct": 0.36,
+      "delta_7d": 549,
+      "delta_7d_pct": 0.38,
       "timing": "emerging",
       "signals": [],
       "cross_signal": false,
-      "one_liner": "Curated collection of 100+ open-source LLM agent templates",
-      "pain_point": "Developers waste weeks reverse-engineering agent patterns; solo devs and startups need production-ready templates they can ship fast",
+      "one_liner": "100+ open-source AI agents and RAG apps",
+      "pain_point": "Saves developers time by providing pre-built AI agents and RAG apps for various use cases, appealing to startups and enterprises",
       "app_ideas": [
-        "Agent Builder SaaS - no-code drag-drop interface for chaining LLM agents with pre-built skill blocks",
-        "RAG API Service - one-click document ingestion + Q&A endpoint for developers不想自己搭建",
-        "AI Workflow Automator - connect agents to internal tools (Slack, Notion, DBs) with visual orchestration"
+        "AI-powered customer support chatbot for small businesses",
+        "Automated content generation tool for marketers",
+        "Personalized learning assistant for online education platforms"
       ],
-      "monetization": "Freemium with usage-based API pricing; B2B enterprise tier at $500-2000/mo for compliance, SSO, analytics",
-      "opportunity": 7,
-      "why_now": "LLM inference costs dropped 90% making agent workflows economically viable while enterprises are still hunting for turnkey solutions"
+      "monetization": "Freemium model with premium features and enterprise support",
+      "opportunity": 8,
+      "why_now": "Increasing demand for AI agents and RAG apps in the post-pandemic era"
     },
     {
       "name": "github/spec-kit",
       "url": "https://github.com/github/spec-kit",
-      "stars": 149818,
+      "stars": 149961,
       "category": "Applications",
       "delta_7d": null,
       "delta_7d_pct": null,
       "timing": "steady",
       "signals": [],
       "cross_signal": false,
-      "one_liner": "Starter toolkit for structured software design and development processes",
-      "pain_point": "Developers and small teams lack standardized starting templates and workflows for consistent project kickoffs and documentation",
+      "one_liner": "Toolkit for software development processes like SDD",
+      "pain_point": "Helps teams streamline development processes, saving time and reducing errors. Enterprises and startups would pay for efficiency gains.",
       "app_ideas": [
-        "Web-based spec editor with collaborative templates and AI-assisted document generation",
-        "CLI tool that scaffolds entire project structures from structured spec inputs",
-        "Notion-like wiki for engineering teams with built-in spec templates and process workflows"
+        "SDD Process Automation Tool: A web app that automates the SDD process using spec-kit, reducing manual work and errors.",
+        "Process Template Marketplace: A platform where users can buy and sell custom process templates built with spec-kit."
       ],
-      "monetization": "freemium with team/enterprise tiers for collaboration features and integrations",
+      "monetization": "Freemium model with premium templates and advanced features for enterprises.",
       "opportunity": 7,
-      "why_now": "AI coding boom makes spec-driven development essential and remote work increases demand for async documentation tools"
+      "why_now": "Increased demand for streamlined development processes in the post-pandemic era."
     },
     {
       "name": "deanpeters/Product-Manager-Skills",
       "url": "https://github.com/deanpeters/Product-Manager-Skills",
-      "stars": 8023,
+      "stars": 8035,
       "category": "Agents & Automation",
       "delta_7d": null,
       "delta_7d_pct": null,
       "timing": "steady",
       "signals": [],
       "cross_signal": false,
-      "one_liner": "PM skills framework that makes AI coding agents product-smart",
-      "pain_point": "AI coding agents write code but lack product judgment—solo devs and startups using AI agents need structured PM thinking to avoid building the wrong things",
+      "one_liner": "AI-powered product management framework for agents and automation",
+      "pain_point": "Helps product managers and teams streamline product development with AI, saving time and resources for startups and enterprises",
       "app_ideas": [
-        "VS Code extension: PM sidebar that guides AI pair programming with framework prompts",
-        "CLI tool: local product manager agent that reviews specs and roadmaps for AI-generated code",
-        "SaaS API: product management layer that AI agents call before writing code"
+        "AI-powered product roadmap generator for startups",
+        "Automated feature prioritization tool for product teams",
+        "AI-driven competitor analysis dashboard for product managers"
       ],
-      "monetization": "B2B API wrapper (sell to AI agent developers) + freemium dev tools",
+      "monetization": "Freemium with enterprise pricing for advanced features and API access",
       "opportunity": 7,
-      "why_now": "AI coding agents hit mainstream in 2024-2025 but none have product management skills—this gap is now visible and growing"
+      "why_now": "Increased demand for AI-powered tools in product management due to remote work and automation trends"
     },
     {
       "name": "nguyenlevel/product-manager-skills",
@@ -99,16 +98,12 @@
       "timing": "steady",
       "signals": [],
       "cross_signal": false,
-      "one_liner": "Product management framework for AI agents",
-      "pain_point": "Helps product managers and teams build AI agents efficiently, saving time and resources",
-      "app_ideas": [
-        "AI-powered product roadmap generator",
-        "AI agent performance analytics dashboard",
-        "AI agent training and deployment platform"
-      ],
-      "monetization": "Freemium with enterprise pricing for advanced features",
-      "opportunity": 7,
-      "why_now": "Increased demand for AI agents and product management tools"
+      "one_liner": "",
+      "pain_point": "",
+      "app_ideas": [],
+      "monetization": "",
+      "opportunity": 5,
+      "why_now": ""
     }
   ]
 }

@@ -1,17 +1,17 @@
 {
-  "generated_at": "2026-11-15T04:31:58.481159+00:00",
+  "generated_at": "2026-11-16T04:31:29.773957+00:00",
   "week_of": "2026-46",
   "meta": {
     "papers_tracked": 15,
-    "technologies_tracked": 33,
-    "ideas_tracked": 545,
+    "technologies_tracked": 40,
+    "ideas_tracked": 543,
     "repos_tracked": 5,
     "last_research_update": ""
   },
   "accelerating_technologies": [
     {
-      "name": "Reinforcement Learning from Human Feedback",
-      "description": "Reinforcement Learning from Human Feedback",
+      "name": "Continual Pretraining",
+      "description": "Continual Pretraining",
       "trend": "rising",
       "confidence": 0.8,
       "maturity": "medium",
@@ -19,8 +19,8 @@
       "signal": "rising"
     },
     {
-      "name": "Retrieval Augmented Generation",
-      "description": "Retrieval Augmented Generation",
+      "name": "Supervised Fine-Tuning",
+      "description": "Supervised Fine-Tuning",
       "trend": "rising",
       "confidence": 0.8,
       "maturity": "medium",
@@ -28,10 +28,10 @@
       "signal": "rising"
     },
     {
-      "name": "Multimodal Learning",
-      "description": "Multimodal Learning",
+      "name": "Final Token Preference Optimization",
+      "description": "Final Token Preference Optimization",
       "trend": "rising",
-      "confidence": 0.7,
+      "confidence": 0.8,
       "maturity": "medium",
       "paper_count": 1,
       "signal": "rising"
@@ -59,12 +59,12 @@
       "score": 1943
     },
     {
-      "title": "My Mac side project: mouse-controlled fetch with a desktop dog or cat",
-      "url": "https://reddit.com/r/SideProject/comments/1xwk54h/",
-      "revenue_signal": "$2",
+      "title": "I made AI crawlers pay per page with HTTP 402 instead of blocking them. People still browse free.",
+      "url": "https://reddit.com/r/SideProject/comments/1xwlwy2/",
+      "revenue_signal": "$0",
       "source": "reddit",
       "category": "",
-      "business_model": "subscription,app-store",
+      "business_model": "api",
       "ai_potential": 40,
       "score": 0
     }
@@ -73,7 +73,7 @@
     {
       "technology": "Multimodal Learning",
       "description": "Multimodal Learning",
-      "confidence": 0.7,
+      "confidence": 0.62,
       "paper_count": 1,
       "related_papers": [
         {
@@ -108,7 +108,7 @@
       "name": "github/spec-kit",
       "url": "https://github.com/github/spec-kit",
       "description": "💫 Toolkit to help you get started with SDD or any other process!",
-      "stars": 149818,
+      "stars": 149961,
       "language": "Python",
       "topics": [
         "ai",
@@ -123,7 +123,7 @@
       "name": "Shubhamsaboo/awesome-llm-apps",
       "url": "https://github.com/Shubhamsaboo/awesome-llm-apps",
       "description": "100+ AI Agents, Agent Skills and RAG Apps - Free and Open Source.",
-      "stars": 144653,
+      "stars": 144776,
       "language": "Python",
       "topics": [
         "agents",
@@ -137,7 +137,7 @@
       "name": "ai-job-search-dev/ai-job-search",
       "url": "https://github.com/ai-job-search-dev/ai-job-search",
       "description": "The job search that runs on your machine. AI job application framework built on Claude Code: evaluate postings, tailor CVs, write cover letters, prep interviews. Fork it and own it.",
-      "stars": 71768,
+      "stars": 71941,
       "language": "Python",
       "topics": [
         "ai",
@@ -152,7 +152,7 @@
       "name": "deanpeters/Product-Manager-Skills",
       "url": "https://github.com/deanpeters/Product-Manager-Skills",
       "description": "Product Management skills framework built on battle-tested methods for Claude Code, Cowork, Codex, and AI agents.",
-      "stars": 8023,
+      "stars": 8035,
       "language": "Python",
       "topics": [
         "ai-agents",
