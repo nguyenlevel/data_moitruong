@@ -1,43 +1,63 @@
 {
-  "generated_at": "2026-11-16T04:31:29.773957+00:00",
+  "generated_at": "2026-11-17T06:16:01.273101+00:00",
   "week_of": "2026-46",
   "meta": {
     "papers_tracked": 15,
-    "technologies_tracked": 40,
-    "ideas_tracked": 543,
+    "technologies_tracked": 14,
+    "ideas_tracked": 540,
     "repos_tracked": 5,
     "last_research_update": ""
   },
   "accelerating_technologies": [
     {
-      "name": "Continual Pretraining",
-      "description": "Continual Pretraining",
+      "name": "Multimodal Learning",
+      "description": "Multimodal Learning",
       "trend": "rising",
-      "confidence": 0.8,
+      "confidence": 0.7,
       "maturity": "medium",
       "paper_count": 1,
       "signal": "rising"
     },
     {
-      "name": "Supervised Fine-Tuning",
-      "description": "Supervised Fine-Tuning",
+      "name": "Reinforcement Learning from Human Feedback",
+      "description": "Reinforcement Learning from Human Feedback",
       "trend": "rising",
-      "confidence": 0.8,
+      "confidence": 0.7,
       "maturity": "medium",
       "paper_count": 1,
       "signal": "rising"
     },
     {
-      "name": "Final Token Preference Optimization",
-      "description": "Final Token Preference Optimization",
+      "name": "Sparse Attention",
+      "description": "Sparse Attention",
       "trend": "rising",
-      "confidence": 0.8,
+      "confidence": 0.7,
       "maturity": "medium",
       "paper_count": 1,
       "signal": "rising"
     }
   ],
   "startup_ideas_with_revenue": [
+    {
+      "title": "Grok Bot is wasting your usage",
+      "url": "https://reddit.com/r/SideProject/comments/1xybrvn/",
+      "revenue_signal": "$5/mo",
+      "source": "reddit",
+      "category": "",
+      "business_model": "subscription",
+      "ai_potential": 70,
+      "score": 0
+    },
+    {
+      "title": "How are you stopping users from overspending their AI credits?",
+      "url": "https://reddit.com/r/SaaS/comments/1xy21cx/",
+      "revenue_signal": "$5",
+      "source": "reddit",
+      "category": "",
+      "business_model": "api",
+      "ai_potential": 55,
+      "score": 0
+    },
     {
       "title": "Show HN: San Francisco Compute – 512 H100s at <$2/hr for research and startups",
       "url": "https://sfcompute.org/",
@@ -47,57 +67,45 @@
       "business_model": null,
       "ai_potential": 45,
       "score": 727
-    },
-    {
-      "title": "Show HN: Non.io, a Reddit-like platform Ive been working on for the last 4 years",
-      "url": "https://non.io",
-      "revenue_signal": "$2",
-      "source": "hackernews",
-      "category": "",
-      "business_model": "subscription,marketplace,ads,freemium",
-      "ai_potential": 40,
-      "score": 1943
-    },
-    {
-      "title": "I made AI crawlers pay per page with HTTP 402 instead of blocking them. People still browse free.",
-      "url": "https://reddit.com/r/SideProject/comments/1xwlwy2/",
-      "revenue_signal": "$0",
-      "source": "reddit",
-      "category": "",
-      "business_model": "api",
-      "ai_potential": 40,
-      "score": 0
     }
   ],
   "hidden_gems": [
     {
       "technology": "Multimodal Learning",
       "description": "Multimodal Learning",
-      "confidence": 0.62,
+      "confidence": 0.7,
       "paper_count": 1,
       "related_papers": [
         {
+          "title": "Gamer: A Generalist Vision-Language-Action Foundation Model for Long-Horizon Real-Time Game Agent",
+          "url": ""
+        },
+        {
+          "title": "WebArena-Pro: A Heterogeneous, Multimodal, Reproducible Benchmark for Web Agents",
+          "url": ""
+        },
+        {
           "title": "Let's Think in Two Steps: Mitigating Agreement Bias in MLLMs with Self-Grounded Verification",
-          "url": ""
-        },
-        {
-          "title": "TraceKV: Policy-Preserving Low-Rank KV Cache Compression for Reasoning Vision-Language Models",
-          "url": ""
-        },
-        {
-          "title": "Micius-Flash: Lightweight Agentic Intelligence for Engineering",
           "url": ""
         }
       ]
     },
     {
-      "technology": "Self-Grounded Verification",
-      "description": "Self-Grounded Verification",
-      "confidence": 0.62,
+      "technology": "Reinforcement Learning from Human Feedback",
+      "description": "Reinforcement Learning from Human Feedback",
+      "confidence": 0.7,
       "paper_count": 1,
       "related_papers": [
         {
-          "title": "Let's Think in Two Steps: Mitigating Agreement Bias in MLLMs with Self-Grounded Verification",
+          "title": "Gamer: A Generalist Vision-Language-Action Foundation Model for Long-Horizon Real-Time Game Agent",
+          "url": ""
+        },
+        {
+          "title": "WebArena-Pro: A Heterogeneous, Multimodal, Reproducible Benchmark for Web Agents",
+          "url": ""
+        },
+        {
+          "title": "Axion 1.0: Open Agent Foundation Models, Simplified",
           "url": ""
         }
       ]
@@ -108,7 +116,7 @@
       "name": "github/spec-kit",
       "url": "https://github.com/github/spec-kit",
       "description": "💫 Toolkit to help you get started with SDD or any other process!",
-      "stars": 149961,
+      "stars": 150150,
       "language": "Python",
       "topics": [
         "ai",
@@ -123,7 +131,7 @@
       "name": "Shubhamsaboo/awesome-llm-apps",
       "url": "https://github.com/Shubhamsaboo/awesome-llm-apps",
       "description": "100+ AI Agents, Agent Skills and RAG Apps - Free and Open Source.",
-      "stars": 144776,
+      "stars": 144902,
       "language": "Python",
       "topics": [
         "agents",
@@ -137,7 +145,7 @@
       "name": "ai-job-search-dev/ai-job-search",
       "url": "https://github.com/ai-job-search-dev/ai-job-search",
       "description": "The job search that runs on your machine. AI job application framework built on Claude Code: evaluate postings, tailor CVs, write cover letters, prep interviews. Fork it and own it.",
-      "stars": 71941,
+      "stars": 72138,
       "language": "Python",
       "topics": [
         "ai",
@@ -152,7 +160,7 @@
       "name": "deanpeters/Product-Manager-Skills",
       "url": "https://github.com/deanpeters/Product-Manager-Skills",
       "description": "Product Management skills framework built on battle-tested methods for Claude Code, Cowork, Codex, and AI agents.",
-      "stars": 8035,
+      "stars": 8049,
       "language": "Python",
       "topics": [
         "ai-agents",

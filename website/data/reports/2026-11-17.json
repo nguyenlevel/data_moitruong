@@ -1,0 +1,109 @@
+{
+  "date": "2026-11-17",
+  "generated_at": "2026-11-17T06:16:01.210673+00:00",
+  "backend": "llm7",
+  "model": "default",
+  "brief": [],
+  "items": [
+    {
+      "name": "Shubhamsaboo/awesome-llm-apps",
+      "url": "https://github.com/Shubhamsaboo/awesome-llm-apps",
+      "stars": 144902,
+      "category": "Agents & Automation",
+      "delta_7d": 583,
+      "delta_7d_pct": 0.4,
+      "timing": "emerging",
+      "signals": [],
+      "cross_signal": false,
+      "one_liner": "Open-source collection of AI agents & RAG apps",
+      "pain_point": "Enterprises struggle to implement and scale AI agents; lack of ready-to-use, open-source options",
+      "app_ideas": [
+        "AI Agent Marketplace: Curated, searchable directory of open-source agents with easy integration",
+        "AI Agent Orchestrator: Tool to manage, monitor, and optimize multiple AI agents in a single interface"
+      ],
+      "monetization": "B2B API wrapper with premium support, customization, and enterprise-grade features",
+      "opportunity": 8,
+      "why_now": "Growing interest in AI agents and RAG, increasing demand for open-source solutions"
+    },
+    {
+      "name": "deanpeters/Product-Manager-Skills",
+      "url": "https://github.com/deanpeters/Product-Manager-Skills",
+      "stars": 8049,
+      "category": "Agents & Automation",
+      "delta_7d": null,
+      "delta_7d_pct": null,
+      "timing": "steady",
+      "signals": [],
+      "cross_signal": false,
+      "one_liner": "A product management skills framework for AI coding agents.",
+      "pain_point": "AI agents make poor product decisions without structured PM methods; product teams and AI tool builders would pay for reliable guidance.",
+      "app_ideas": [
+        "A PM copilot CLI that injects battle-tested PM frameworks into Claude Code/Codex workflows for discovery and prioritization",
+        "A marketplace of skill packs (user research, roadmap, metrics) that agents load on-demand",
+        "An eval harness that scores agent PM outputs against the framework to benchmark and improve"
+      ],
+      "monetization": "Freemium: free core framework, paid premium skill packs and team analytics",
+      "opportunity": 8,
+      "why_now": "AI coding agents are exploding but lack domain-specific PM playbooks, leaving a clear whitespace for structured skill frameworks."
+    },
+    {
+      "name": "nguyenlevel/product-manager-skills",
+      "url": "https://github.com/nguyenlevel/product-manager-skills",
+      "stars": 1,
+      "category": "Agents & Automation",
+      "delta_7d": null,
+      "delta_7d_pct": null,
+      "timing": "steady",
+      "signals": [],
+      "cross_signal": false,
+      "one_liner": "Product management framework for AI agents",
+      "pain_point": "Helps product managers and teams build AI agents efficiently, saving time and resources",
+      "app_ideas": [
+        "AI-powered product roadmap generator",
+        "AI agent performance dashboard",
+        "AI agent training and deployment platform"
+      ],
+      "monetization": "Freemium with enterprise pricing for advanced features",
+      "opportunity": 7,
+      "why_now": "Increased demand for AI agents and automation tools"
+    },
+    {
+      "name": "github/spec-kit",
+      "url": "https://github.com/github/spec-kit",
+      "stars": 150150,
+      "category": "Applications",
+      "delta_7d": null,
+      "delta_7d_pct": null,
+      "timing": "steady",
+      "signals": [],
+      "cross_signal": false,
+      "one_liner": "Toolkit for adopting Spec-Driven Development or custom workflows",
+      "pain_point": "Engineering teams struggle to enforce structured specs; adopters need tooling to define, track, and validate specs. Payers: dev tooling buyers, engineering leads, consultancies.",
+      "app_ideas": [
+        "Spec-to-PR bot that checks code diffs against spec requirements and flags gaps",
+        "Spec-to-issue generator that breaks specs into actionable GitHub/Jira tasks with acceptance criteria",
+        "Spec coverage dashboard that visualizes which features have specs and tracks drift across repos"
+      ],
+      "monetization": "B2B SaaS freemium: free for solo devs, paid team plans with workflow automation and analytics",
+      "opportunity": 6,
+      "why_now": "AI accelerates spec writing, but process enforcement tooling remains fragmented—ripe for a focused vertical solution"
+    },
+    {
+      "name": "ai-job-search-dev/ai-job-search",
+      "url": "https://github.com/ai-job-search-dev/ai-job-search",
+      "stars": 72138,
+      "category": "Data & Evaluation",
+      "delta_7d": 1218,
+      "delta_7d_pct": 1.72,
+      "timing": "emerging",
+      "signals": [],
+      "cross_signal": false,
+      "one_liner": "",
+      "pain_point": "",
+      "app_ideas": [],
+      "monetization": "",
+      "opportunity": 5,
+      "why_now": ""
+    }
+  ]
+}

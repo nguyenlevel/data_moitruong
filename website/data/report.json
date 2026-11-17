@@ -1,92 +1,50 @@
 {
-  "date": "2026-11-16",
-  "generated_at": "2026-11-16T04:31:29.722301+00:00",
+  "date": "2026-11-17",
+  "generated_at": "2026-11-17T06:16:01.210673+00:00",
   "backend": "llm7",
   "model": "default",
   "brief": [],
   "items": [
     {
-      "name": "ai-job-search-dev/ai-job-search",
-      "url": "https://github.com/ai-job-search-dev/ai-job-search",
-      "stars": 71941,
-      "category": "Data & Evaluation",
-      "delta_7d": 1314,
-      "delta_7d_pct": 1.86,
-      "timing": "emerging",
-      "signals": [],
-      "cross_signal": false,
-      "one_liner": "AI-powered job search and application tool",
-      "pain_point": "Job seekers struggle with tailoring applications and standing out in a competitive market",
-      "app_ideas": [
-        "Freemium web app with AI-powered CV tailoring and cover letter generation",
-        "Chrome extension that evaluates job postings and suggests improvements to your application",
-        "Mobile app for on-the-go job application preparation"
-      ],
-      "monetization": "Freemium with premium features for advanced AI capabilities and priority support",
-      "opportunity": 8,
-      "why_now": "Increased demand for AI tools in the job search process due to remote work trends"
-    },
-    {
       "name": "Shubhamsaboo/awesome-llm-apps",
       "url": "https://github.com/Shubhamsaboo/awesome-llm-apps",
-      "stars": 144776,
+      "stars": 144902,
       "category": "Agents & Automation",
-      "delta_7d": 549,
-      "delta_7d_pct": 0.38,
+      "delta_7d": 583,
+      "delta_7d_pct": 0.4,
       "timing": "emerging",
       "signals": [],
       "cross_signal": false,
-      "one_liner": "100+ open-source AI agents and RAG apps",
-      "pain_point": "Saves developers time by providing pre-built AI agents and RAG apps for various use cases, appealing to startups and enterprises",
+      "one_liner": "Open-source collection of AI agents & RAG apps",
+      "pain_point": "Enterprises struggle to implement and scale AI agents; lack of ready-to-use, open-source options",
       "app_ideas": [
-        "AI-powered customer support chatbot for small businesses",
-        "Automated content generation tool for marketers",
-        "Personalized learning assistant for online education platforms"
+        "AI Agent Marketplace: Curated, searchable directory of open-source agents with easy integration",
+        "AI Agent Orchestrator: Tool to manage, monitor, and optimize multiple AI agents in a single interface"
       ],
-      "monetization": "Freemium model with premium features and enterprise support",
+      "monetization": "B2B API wrapper with premium support, customization, and enterprise-grade features",
       "opportunity": 8,
-      "why_now": "Increasing demand for AI agents and RAG apps in the post-pandemic era"
-    },
-    {
-      "name": "github/spec-kit",
-      "url": "https://github.com/github/spec-kit",
-      "stars": 149961,
-      "category": "Applications",
-      "delta_7d": null,
-      "delta_7d_pct": null,
-      "timing": "steady",
-      "signals": [],
-      "cross_signal": false,
-      "one_liner": "Toolkit for software development processes like SDD",
-      "pain_point": "Helps teams streamline development processes, saving time and reducing errors. Enterprises and startups would pay for efficiency gains.",
-      "app_ideas": [
-        "SDD Process Automation Tool: A web app that automates the SDD process using spec-kit, reducing manual work and errors.",
-        "Process Template Marketplace: A platform where users can buy and sell custom process templates built with spec-kit."
-      ],
-      "monetization": "Freemium model with premium templates and advanced features for enterprises.",
-      "opportunity": 7,
-      "why_now": "Increased demand for streamlined development processes in the post-pandemic era."
+      "why_now": "Growing interest in AI agents and RAG, increasing demand for open-source solutions"
     },
     {
       "name": "deanpeters/Product-Manager-Skills",
       "url": "https://github.com/deanpeters/Product-Manager-Skills",
-      "stars": 8035,
+      "stars": 8049,
       "category": "Agents & Automation",
       "delta_7d": null,
       "delta_7d_pct": null,
       "timing": "steady",
       "signals": [],
       "cross_signal": false,
-      "one_liner": "AI-powered product management framework for agents and automation",
-      "pain_point": "Helps product managers and teams streamline product development with AI, saving time and resources for startups and enterprises",
+      "one_liner": "A product management skills framework for AI coding agents.",
+      "pain_point": "AI agents make poor product decisions without structured PM methods; product teams and AI tool builders would pay for reliable guidance.",
       "app_ideas": [
-        "AI-powered product roadmap generator for startups",
-        "Automated feature prioritization tool for product teams",
-        "AI-driven competitor analysis dashboard for product managers"
+        "A PM copilot CLI that injects battle-tested PM frameworks into Claude Code/Codex workflows for discovery and prioritization",
+        "A marketplace of skill packs (user research, roadmap, metrics) that agents load on-demand",
+        "An eval harness that scores agent PM outputs against the framework to benchmark and improve"
       ],
-      "monetization": "Freemium with enterprise pricing for advanced features and API access",
-      "opportunity": 7,
-      "why_now": "Increased demand for AI-powered tools in product management due to remote work and automation trends"
+      "monetization": "Freemium: free core framework, paid premium skill packs and team analytics",
+      "opportunity": 8,
+      "why_now": "AI coding agents are exploding but lack domain-specific PM playbooks, leaving a clear whitespace for structured skill frameworks."
     },
     {
       "name": "nguyenlevel/product-manager-skills",
@@ -96,6 +54,48 @@
       "delta_7d": null,
       "delta_7d_pct": null,
       "timing": "steady",
+      "signals": [],
+      "cross_signal": false,
+      "one_liner": "Product management framework for AI agents",
+      "pain_point": "Helps product managers and teams build AI agents efficiently, saving time and resources",
+      "app_ideas": [
+        "AI-powered product roadmap generator",
+        "AI agent performance dashboard",
+        "AI agent training and deployment platform"
+      ],
+      "monetization": "Freemium with enterprise pricing for advanced features",
+      "opportunity": 7,
+      "why_now": "Increased demand for AI agents and automation tools"
+    },
+    {
+      "name": "github/spec-kit",
+      "url": "https://github.com/github/spec-kit",
+      "stars": 150150,
+      "category": "Applications",
+      "delta_7d": null,
+      "delta_7d_pct": null,
+      "timing": "steady",
+      "signals": [],
+      "cross_signal": false,
+      "one_liner": "Toolkit for adopting Spec-Driven Development or custom workflows",
+      "pain_point": "Engineering teams struggle to enforce structured specs; adopters need tooling to define, track, and validate specs. Payers: dev tooling buyers, engineering leads, consultancies.",
+      "app_ideas": [
+        "Spec-to-PR bot that checks code diffs against spec requirements and flags gaps",
+        "Spec-to-issue generator that breaks specs into actionable GitHub/Jira tasks with acceptance criteria",
+        "Spec coverage dashboard that visualizes which features have specs and tracks drift across repos"
+      ],
+      "monetization": "B2B SaaS freemium: free for solo devs, paid team plans with workflow automation and analytics",
+      "opportunity": 6,
+      "why_now": "AI accelerates spec writing, but process enforcement tooling remains fragmented—ripe for a focused vertical solution"
+    },
+    {
+      "name": "ai-job-search-dev/ai-job-search",
+      "url": "https://github.com/ai-job-search-dev/ai-job-search",
+      "stars": 72138,
+      "category": "Data & Evaluation",
+      "delta_7d": 1218,
+      "delta_7d_pct": 1.72,
+      "timing": "emerging",
       "signals": [],
       "cross_signal": false,
       "one_liner": "",
