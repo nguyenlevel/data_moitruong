@@ -1,50 +1,30 @@
 {
-  "date": "2026-11-17",
-  "generated_at": "2026-11-17T06:16:01.210673+00:00",
+  "date": "2026-11-18",
+  "generated_at": "2026-11-18T05:45:00.530845+00:00",
   "backend": "llm7",
   "model": "default",
   "brief": [],
   "items": [
     {
-      "name": "Shubhamsaboo/awesome-llm-apps",
-      "url": "https://github.com/Shubhamsaboo/awesome-llm-apps",
-      "stars": 144902,
-      "category": "Agents & Automation",
-      "delta_7d": 583,
-      "delta_7d_pct": 0.4,
-      "timing": "emerging",
-      "signals": [],
-      "cross_signal": false,
-      "one_liner": "Open-source collection of AI agents & RAG apps",
-      "pain_point": "Enterprises struggle to implement and scale AI agents; lack of ready-to-use, open-source options",
-      "app_ideas": [
-        "AI Agent Marketplace: Curated, searchable directory of open-source agents with easy integration",
-        "AI Agent Orchestrator: Tool to manage, monitor, and optimize multiple AI agents in a single interface"
-      ],
-      "monetization": "B2B API wrapper with premium support, customization, and enterprise-grade features",
-      "opportunity": 8,
-      "why_now": "Growing interest in AI agents and RAG, increasing demand for open-source solutions"
-    },
-    {
       "name": "deanpeters/Product-Manager-Skills",
       "url": "https://github.com/deanpeters/Product-Manager-Skills",
-      "stars": 8049,
+      "stars": 8058,
       "category": "Agents & Automation",
       "delta_7d": null,
       "delta_7d_pct": null,
       "timing": "steady",
       "signals": [],
       "cross_signal": false,
-      "one_liner": "A product management skills framework for AI coding agents.",
-      "pain_point": "AI agents make poor product decisions without structured PM methods; product teams and AI tool builders would pay for reliable guidance.",
+      "one_liner": "Standardized PM skill frameworks for guiding AI coding agents.",
+      "pain_point": "AI agents lack business context and requirements precision; PMs/Founders pay.",
       "app_ideas": [
-        "A PM copilot CLI that injects battle-tested PM frameworks into Claude Code/Codex workflows for discovery and prioritization",
-        "A marketplace of skill packs (user research, roadmap, metrics) that agents load on-demand",
-        "An eval harness that scores agent PM outputs against the framework to benchmark and improve"
+        "AI PRD-to-Agent Pipeline: Converts business requirements into agent-executable specs.",
+        "Agentic Product Backlog Manager: Auto-prioritizes tasks using the framework's logic.",
+        "AI Agent Quality Auditor: Validates agent output against PM skill benchmarks."
       ],
-      "monetization": "Freemium: free core framework, paid premium skill packs and team analytics",
+      "monetization": "B2B SaaS / Monthly subscription for product teams",
       "opportunity": 8,
-      "why_now": "AI coding agents are exploding but lack domain-specific PM playbooks, leaving a clear whitespace for structured skill frameworks."
+      "why_now": "Shift from simple chat to autonomous agents requires structured governance."
     },
     {
       "name": "nguyenlevel/product-manager-skills",
@@ -56,54 +36,79 @@
       "timing": "steady",
       "signals": [],
       "cross_signal": false,
-      "one_liner": "Product management framework for AI agents",
-      "pain_point": "Helps product managers and teams build AI agents efficiently, saving time and resources",
+      "one_liner": "Standardized PM skill frameworks for optimizing AI agent task execution.",
+      "pain_point": "AI agents struggle with ambiguous requirements; PMs and founders need structured prompts to ensure quality outputs.",
       "app_ideas": [
-        "AI-powered product roadmap generator",
-        "AI agent performance dashboard",
-        "AI agent training and deployment platform"
+        "AI PRD Generator that converts raw ideas into agent-ready technical specs",
+        "Agent Performance Auditor that scores AI outputs against PM framework benchmarks",
+        "Interactive PM Onboarding Bot for new hires using these battle-tested methods"
       ],
-      "monetization": "Freemium with enterprise pricing for advanced features",
+      "monetization": "B2B SaaS subscription for product teams",
+      "opportunity": 8,
+      "why_now": "The shift from simple LLM chat to autonomous coding agents requires rigorous requirement engineering."
+    },
+    {
+      "name": "ai-job-search-dev/ai-job-search",
+      "url": "https://github.com/ai-job-search-dev/ai-job-search",
+      "stars": 72325,
+      "category": "Data & Evaluation",
+      "delta_7d": 1197,
+      "delta_7d_pct": 1.68,
+      "timing": "emerging",
+      "signals": [],
+      "cross_signal": false,
+      "one_liner": "Local AI agent for automated job application and interview preparation.",
+      "pain_point": "High-volume application fatigue and generic resumes for mid-career professionals.",
+      "app_ideas": [
+        "Hyper-personalized Resume-to-JD Optimizer as a Chrome Extension",
+        "AI Interview Coach that simulates specific company culture and roles",
+        "Automated Job Application Tracker with AI-generated follow-up sequences"
+      ],
+      "monetization": "Freemium with monthly subscription for premium AI model tokens",
       "opportunity": 7,
-      "why_now": "Increased demand for AI agents and automation tools"
+      "why_now": "Massive shift toward agentic workflows and Claude Code's increased capabilities."
+    },
+    {
+      "name": "Shubhamsaboo/awesome-llm-apps",
+      "url": "https://github.com/Shubhamsaboo/awesome-llm-apps",
+      "stars": 144980,
+      "category": "Agents & Automation",
+      "delta_7d": 595,
+      "delta_7d_pct": 0.41,
+      "timing": "emerging",
+      "signals": [],
+      "cross_signal": false,
+      "one_liner": "A comprehensive blueprint library for production-ready LLM agents and RAG.",
+      "pain_point": "High engineering overhead for SMEs to build custom AI workflows.",
+      "app_ideas": [
+        "AI-powered automated customer support agent for Shopify stores",
+        "Vertical RAG tool for legal document discovery and synthesis",
+        "Automated LinkedIn content engine based on curated industry RSS feeds"
+      ],
+      "monetization": "Vertical SaaS with monthly subscription",
+      "opportunity": 7,
+      "why_now": "Shift from generic chatbots to specialized, task-oriented autonomous agents."
     },
     {
       "name": "github/spec-kit",
       "url": "https://github.com/github/spec-kit",
-      "stars": 150150,
+      "stars": 150328,
       "category": "Applications",
       "delta_7d": null,
       "delta_7d_pct": null,
       "timing": "steady",
       "signals": [],
       "cross_signal": false,
-      "one_liner": "Toolkit for adopting Spec-Driven Development or custom workflows",
-      "pain_point": "Engineering teams struggle to enforce structured specs; adopters need tooling to define, track, and validate specs. Payers: dev tooling buyers, engineering leads, consultancies.",
+      "one_liner": "Standardized toolkit for Specification-Driven Development (SDD) and technical documentation.",
+      "pain_point": "Engineering misalignment and 'requirement drift' in fast-paced teams; CTOs/PMs would pay.",
       "app_ideas": [
-        "Spec-to-PR bot that checks code diffs against spec requirements and flags gaps",
-        "Spec-to-issue generator that breaks specs into actionable GitHub/Jira tasks with acceptance criteria",
-        "Spec coverage dashboard that visualizes which features have specs and tracks drift across repos"
+        "AI-powered PRD to Technical Spec converter for agile teams",
+        "SDD Compliance Auditor that flags code deviating from original specs",
+        "Interactive Spec-to-Test Case generator for QA automation"
       ],
-      "monetization": "B2B SaaS freemium: free for solo devs, paid team plans with workflow automation and analytics",
-      "opportunity": 6,
-      "why_now": "AI accelerates spec writing, but process enforcement tooling remains fragmented—ripe for a focused vertical solution"
-    },
-    {
-      "name": "ai-job-search-dev/ai-job-search",
-      "url": "https://github.com/ai-job-search-dev/ai-job-search",
-      "stars": 72138,
-      "category": "Data & Evaluation",
-      "delta_7d": 1218,
-      "delta_7d_pct": 1.72,
-      "timing": "emerging",
-      "signals": [],
-      "cross_signal": false,
-      "one_liner": "",
-      "pain_point": "",
-      "app_ideas": [],
-      "monetization": "",
-      "opportunity": 5,
-      "why_now": ""
+      "monetization": "B2B SaaS per-seat license",
+      "opportunity": 7,
+      "why_now": "Rise of LLM-coding agents requires strict specifications to prevent hallucinated logic."
     }
   ]
 }
