@@ -1,38 +1,38 @@
 {
-  "generated_at": "2026-11-19T05:41:59.203710+00:00",
+  "generated_at": "2026-11-20T05:34:08.318504+00:00",
   "week_of": "2026-46",
   "meta": {
     "papers_tracked": 15,
-    "technologies_tracked": 8,
+    "technologies_tracked": 3,
     "ideas_tracked": 539,
     "repos_tracked": 5,
     "last_research_update": ""
   },
   "accelerating_technologies": [
     {
-      "name": "Topological Reasoning Benchmark",
-      "description": "Topological Reasoning Benchmark",
+      "name": "Mixture of Experts",
+      "description": "Mixture of Experts",
       "trend": "rising",
-      "confidence": 0.8,
-      "maturity": "medium",
+      "confidence": 0.65,
+      "maturity": "early",
       "paper_count": 1,
       "signal": "rising"
     },
     {
-      "name": "Multimodal Large Language Models",
-      "description": "Multimodal Large Language Models",
+      "name": "Diffusion Models",
+      "description": "Diffusion Models",
       "trend": "rising",
-      "confidence": 0.8,
-      "maturity": "medium",
+      "confidence": 0.65,
+      "maturity": "early",
       "paper_count": 1,
       "signal": "rising"
     },
     {
-      "name": "Procedural Generation for Benchmark Creation",
-      "description": "Procedural Generation for Benchmark Creation",
+      "name": "Reinforcement Learning",
+      "description": "Reinforcement Learning",
       "trend": "rising",
-      "confidence": 0.8,
-      "maturity": "medium",
+      "confidence": 0.65,
+      "maturity": "early",
       "paper_count": 1,
       "signal": "rising"
     }
@@ -73,7 +73,7 @@
     {
       "technology": "Mixture of Experts",
       "description": "Mixture of Experts",
-      "confidence": 0.7,
+      "confidence": 0.65,
       "paper_count": 1,
       "related_papers": [
         {
@@ -85,7 +85,7 @@
     {
       "technology": "Diffusion Models",
       "description": "Diffusion Models",
-      "confidence": 0.7,
+      "confidence": 0.65,
       "paper_count": 1,
       "related_papers": [
         {
@@ -100,7 +100,7 @@
       "name": "github/spec-kit",
       "url": "https://github.com/github/spec-kit",
       "description": "💫 Toolkit to help you get started with SDD or any other process!",
-      "stars": 150535,
+      "stars": 150725,
       "language": "Python",
       "topics": [
         "ai",
@@ -115,7 +115,7 @@
       "name": "Shubhamsaboo/awesome-llm-apps",
       "url": "https://github.com/Shubhamsaboo/awesome-llm-apps",
       "description": "100+ AI Agents, Agent Skills and RAG Apps - Free and Open Source.",
-      "stars": 145039,
+      "stars": 145098,
       "language": "Python",
       "topics": [
         "agents",
@@ -129,7 +129,7 @@
       "name": "ai-job-search-dev/ai-job-search",
       "url": "https://github.com/ai-job-search-dev/ai-job-search",
       "description": "The job search that runs on your machine. AI job application framework built on Claude Code: evaluate postings, tailor CVs, write cover letters, prep interviews. Fork it and own it.",
-      "stars": 72472,
+      "stars": 72646,
       "language": "Python",
       "topics": [
         "ai",
@@ -144,7 +144,7 @@
       "name": "deanpeters/Product-Manager-Skills",
       "url": "https://github.com/deanpeters/Product-Manager-Skills",
       "description": "Product Management skills framework built on battle-tested methods for Claude Code, Cowork, Codex, and AI agents.",
-      "stars": 8078,
+      "stars": 8098,
       "language": "Python",
       "topics": [
         "ai-agents",

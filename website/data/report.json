@@ -1,6 +1,6 @@
 {
-  "date": "2026-11-19",
-  "generated_at": "2026-11-19T05:41:59.140723+00:00",
+  "date": "2026-11-20",
+  "generated_at": "2026-11-20T05:34:08.268100+00:00",
   "backend": "llm7",
   "model": "default",
   "brief": [],
@@ -8,85 +8,70 @@
     {
       "name": "ai-job-search-dev/ai-job-search",
       "url": "https://github.com/ai-job-search-dev/ai-job-search",
-      "stars": 72472,
+      "stars": 72646,
       "category": "Data & Evaluation",
-      "delta_7d": 1175,
-      "delta_7d_pct": 1.65,
+      "delta_7d": 1163,
+      "delta_7d_pct": 1.63,
       "timing": "emerging",
       "signals": [],
       "cross_signal": false,
-      "one_liner": "AI-powered job search and application tool",
-      "pain_point": "Job seekers struggle with application processes; recruiters need efficient screening",
-      "app_ideas": [
-        "Freemium job search app with AI-powered CV tailoring and cover letter generation",
-        "B2B API wrapper for recruiters to automate job posting evaluation and candidate screening",
-        "Vertical SaaS for tech job seekers with AI-powered interview preparation"
-      ],
-      "monetization": "Freemium with premium features for both B2C and B2B",
-      "opportunity": 8,
-      "why_now": "Increasing demand for AI-powered tools in the job search and recruitment industry"
+      "one_liner": "",
+      "pain_point": "",
+      "app_ideas": [],
+      "monetization": "",
+      "opportunity": 5,
+      "why_now": ""
     },
     {
       "name": "Shubhamsaboo/awesome-llm-apps",
       "url": "https://github.com/Shubhamsaboo/awesome-llm-apps",
-      "stars": 145039,
+      "stars": 145098,
       "category": "Agents & Automation",
-      "delta_7d": 589,
-      "delta_7d_pct": 0.41,
+      "delta_7d": 575,
+      "delta_7d_pct": 0.4,
       "timing": "emerging",
       "signals": [],
       "cross_signal": false,
-      "one_liner": "100+ open-source AI agents and RAG apps for automation",
-      "pain_point": "Saves businesses time by automating tasks like customer support, data analysis, and content creation",
-      "app_ideas": [
-        "AI-powered virtual assistant for small businesses to automate customer inquiries and appointment scheduling",
-        "AI-driven content generator for marketers to create blog posts and social media content",
-        "AI-based data analyzer for finance teams to automate financial reporting and forecasting"
-      ],
-      "monetization": "Freemium with enterprise support and customization",
-      "opportunity": 8,
-      "why_now": "Increased demand for AI automation tools due to remote work and digital transformation"
+      "one_liner": "",
+      "pain_point": "",
+      "app_ideas": [],
+      "monetization": "",
+      "opportunity": 5,
+      "why_now": ""
+    },
+    {
+      "name": "deanpeters/Product-Manager-Skills",
+      "url": "https://github.com/deanpeters/Product-Manager-Skills",
+      "stars": 8098,
+      "category": "Agents & Automation",
+      "delta_7d": 97,
+      "delta_7d_pct": 1.21,
+      "timing": "steady",
+      "signals": [],
+      "cross_signal": false,
+      "one_liner": "",
+      "pain_point": "",
+      "app_ideas": [],
+      "monetization": "",
+      "opportunity": 5,
+      "why_now": ""
     },
     {
       "name": "github/spec-kit",
       "url": "https://github.com/github/spec-kit",
-      "stars": 150535,
+      "stars": 150725,
       "category": "Applications",
       "delta_7d": null,
       "delta_7d_pct": null,
       "timing": "steady",
       "signals": [],
       "cross_signal": false,
-      "one_liner": "Web app that auto‑generates Software Design Documents using spec-kit",
-      "pain_point": "Product managers, dev leads, and consulting firms need fast, consistent SDD creation",
-      "app_ideas": [
-        "SDD generator web app with template library and export to PDF/Markdown",
-        "Browser extension that injects spec-kit templates into GitHub issues or Confluence pages"
-      ],
-      "monetization": "Freemium SaaS with premium template packs and API access",
-      "opportunity": 8,
-      "why_now": "Remote teams and AI-driven documentation tools demand rapid, structured docs"
-    },
-    {
-      "name": "deanpeters/Product-Manager-Skills",
-      "url": "https://github.com/deanpeters/Product-Manager-Skills",
-      "stars": 8078,
-      "category": "Agents & Automation",
-      "delta_7d": 93,
-      "delta_7d_pct": 1.16,
-      "timing": "steady",
-      "signals": [],
-      "cross_signal": false,
-      "one_liner": "AI-powered product management framework for agents",
-      "pain_point": "Helps product managers and teams streamline processes and improve efficiency using AI agents, appealing to startups and enterprises",
-      "app_ideas": [
-        "AI-powered product roadmap generator for startups",
-        "Automated product feedback analysis tool for SaaS companies",
-        "AI-driven product prioritization dashboard for product teams"
-      ],
-      "monetization": "Freemium with enterprise pricing for advanced features and support",
-      "opportunity": 7,
-      "why_now": "Increased adoption of AI agents and automation tools in product management"
+      "one_liner": "",
+      "pain_point": "",
+      "app_ideas": [],
+      "monetization": "",
+      "opportunity": 5,
+      "why_now": ""
     },
     {
       "name": "nguyenlevel/product-manager-skills",
@@ -98,16 +83,12 @@
       "timing": "saturated",
       "signals": [],
       "cross_signal": false,
-      "one_liner": "AI-powered PM skill framework for modern product teams",
-      "pain_point": "Product managers struggle to acquire AI integration skills, limiting efficiency",
-      "app_ideas": [
-        "AI PM Coach chatbot delivering microlearning and quizzes",
-        "Skill assessment dashboard mapping AI skill gaps with learning paths",
-        "Jira plugin auto‑suggesting AI features and tasks"
-      ],
-      "monetization": "Freemium SaaS with premium skill tracks and analytics",
-      "opportunity": 6,
-      "why_now": "AI agent tech is mainstream, PMs need rapid upskilling"
+      "one_liner": "",
+      "pain_point": "",
+      "app_ideas": [],
+      "monetization": "",
+      "opportunity": 5,
+      "why_now": ""
     }
   ]
 }
