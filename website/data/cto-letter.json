@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-20T05:34:08.318504+00:00",
+  "generated_at": "2026-11-21T05:25:39.472754+00:00",
   "week_of": "2026-46",
   "meta": {
     "papers_tracked": 15,
@@ -13,7 +13,7 @@
       "name": "Mixture of Experts",
       "description": "Mixture of Experts",
       "trend": "rising",
-      "confidence": 0.65,
+      "confidence": 0.6,
       "maturity": "early",
       "paper_count": 1,
       "signal": "rising"
@@ -22,7 +22,7 @@
       "name": "Diffusion Models",
       "description": "Diffusion Models",
       "trend": "rising",
-      "confidence": 0.65,
+      "confidence": 0.6,
       "maturity": "early",
       "paper_count": 1,
       "signal": "rising"
@@ -31,7 +31,7 @@
       "name": "Reinforcement Learning",
       "description": "Reinforcement Learning",
       "trend": "rising",
-      "confidence": 0.65,
+      "confidence": 0.6,
       "maturity": "early",
       "paper_count": 1,
       "signal": "rising"
@@ -73,7 +73,7 @@
     {
       "technology": "Mixture of Experts",
       "description": "Mixture of Experts",
-      "confidence": 0.65,
+      "confidence": 0.6,
       "paper_count": 1,
       "related_papers": [
         {
@@ -85,7 +85,7 @@
     {
       "technology": "Diffusion Models",
       "description": "Diffusion Models",
-      "confidence": 0.65,
+      "confidence": 0.6,
       "paper_count": 1,
       "related_papers": [
         {
@@ -100,7 +100,7 @@
       "name": "github/spec-kit",
       "url": "https://github.com/github/spec-kit",
       "description": "💫 Toolkit to help you get started with SDD or any other process!",
-      "stars": 150725,
+      "stars": 150851,
       "language": "Python",
       "topics": [
         "ai",
@@ -115,7 +115,7 @@
       "name": "Shubhamsaboo/awesome-llm-apps",
       "url": "https://github.com/Shubhamsaboo/awesome-llm-apps",
       "description": "100+ AI Agents, Agent Skills and RAG Apps - Free and Open Source.",
-      "stars": 145098,
+      "stars": 145232,
       "language": "Python",
       "topics": [
         "agents",
@@ -129,7 +129,7 @@
       "name": "ai-job-search-dev/ai-job-search",
       "url": "https://github.com/ai-job-search-dev/ai-job-search",
       "description": "The job search that runs on your machine. AI job application framework built on Claude Code: evaluate postings, tailor CVs, write cover letters, prep interviews. Fork it and own it.",
-      "stars": 72646,
+      "stars": 72854,
       "language": "Python",
       "topics": [
         "ai",
@@ -144,7 +144,7 @@
       "name": "deanpeters/Product-Manager-Skills",
       "url": "https://github.com/deanpeters/Product-Manager-Skills",
       "description": "Product Management skills framework built on battle-tested methods for Claude Code, Cowork, Codex, and AI agents.",
-      "stars": 8098,
+      "stars": 8109,
       "language": "Python",
       "topics": [
         "ai-agents",
