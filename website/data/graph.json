@@ -1,6 +1,20 @@
 {
-  "updated_at": "2026-11-20T14:15:42.339872+00:00",
+  "updated_at": "2026-11-21T13:40:44.805039+00:00",
   "nodes": [
+    {
+      "id": "paper:2611.25071",
+      "type": "paper",
+      "label": "FinVeriQA: Financial Research Agents for Question Answering: Routing, Retrieval,",
+      "href": "",
+      "confidence": 0.0
+    },
+    {
+      "id": "paper:2610.05608",
+      "type": "paper",
+      "label": "Kandinsky 6.0 Video: Foundation Models for Synchronized Video and Audio Generati",
+      "href": "",
+      "confidence": 0.0
+    },
     {
       "id": "paper:2611.21003",
       "type": "paper",
@@ -78,20 +92,6 @@
       "confidence": 0.0
     },
     {
-      "id": "paper:2611.25071",
-      "type": "paper",
-      "label": "FinVeriQA: Financial Research Agents for Question Answering: Routing, Retrieval,",
-      "href": "",
-      "confidence": 0.0
-    },
-    {
-      "id": "paper:2610.05608",
-      "type": "paper",
-      "label": "Kandinsky 6.0 Video: Foundation Models for Synchronized Video and Audio Generati",
-      "href": "",
-      "confidence": 0.0
-    },
-    {
       "id": "paper:2611.25387",
       "type": "paper",
       "label": "TuringSpace: Grounding Spatial Intelligence in Action with Interactive CAPTCHAs",
@@ -138,7 +138,7 @@
       "type": "repo",
       "label": "github/spec-kit",
       "href": "https://github.com/github/spec-kit",
-      "stars": 150725,
+      "stars": 150851,
       "language": "Python"
     },
     {
@@ -146,7 +146,7 @@
       "type": "repo",
       "label": "Shubhamsaboo/awesome-llm-apps",
       "href": "https://github.com/Shubhamsaboo/awesome-llm-apps",
-      "stars": 145098,
+      "stars": 145232,
       "language": "Python"
     },
     {
@@ -166,7 +166,7 @@
       "type": "repo",
       "label": "ai-job-search-dev/ai-job-search",
       "href": "https://github.com/ai-job-search-dev/ai-job-search",
-      "stars": 72646,
+      "stars": 72854,
       "language": "Python"
     },
     {
@@ -174,7 +174,7 @@
       "type": "repo",
       "label": "deanpeters/Product-Manager-Skills",
       "href": "https://github.com/deanpeters/Product-Manager-Skills",
-      "stars": 8098,
+      "stars": 8109,
       "language": "Python"
     },
     {
@@ -196,22 +196,6 @@
       "composite_score": 51
     },
     {
-      "id": "idea:d9abc628660eb346",
-      "type": "idea",
-      "label": "Gauth: AI Study Companion",
-      "href": "https://play.google.com/store/apps/details?id=com.education.android.h.intelligence",
-      "source": "playstore",
-      "score": 95,
-      "revenue": false,
-      "composite_score": 50
-    },
-    {
-      "id": "tech:ppo",
-      "type": "tech",
-      "label": "ppo",
-      "href": ""
-    },
-    {
       "id": "idea:102729d39305209b",
       "type": "idea",
       "label": "Show HN: Non.io, a Reddit-like platform Ive been working on for the last 4 years",
@@ -220,6 +204,12 @@
       "score": 1943,
       "revenue": true,
       "composite_score": 48
+    },
+    {
+      "id": "tech:ppo",
+      "type": "tech",
+      "label": "ppo",
+      "href": ""
     },
     {
       "id": "idea:10379a3fcf8d363f",
@@ -278,32 +268,6 @@
       "composite_score": 45
     },
     {
-      "id": "idea:eeee9f875b89cb49",
-      "type": "idea",
-      "label": "MachinePulse 开源多模态决策模型 Karpo Decision 31B：登顶 Decision Index #1，单次前向中位延迟 94ms（0.8B-31B 全家桶）",
-      "href": "https://www.v2ex.com/t/1257834",
-      "source": "v2ex",
-      "score": 0,
-      "revenue": true,
-      "composite_score": 45
-    },
-    {
-      "id": "tech:gemma",
-      "type": "tech",
-      "label": "gemma",
-      "href": ""
-    },
-    {
-      "id": "idea:e5775d1bde4d3d52",
-      "type": "idea",
-      "label": "SplashLearn: Kids Learning App",
-      "href": "https://play.google.com/store/apps/details?id=com.splash.kids.education.learning.games.free.multiplication.reading.math.grade.app.splashmath",
-      "source": "playstore",
-      "score": 91,
-      "revenue": false,
-      "composite_score": 44
-    },
-    {
       "id": "idea:0c7afafcab1e838c",
       "type": "idea",
       "label": "Minecraft Education",
@@ -317,6 +281,22 @@
       "id": "tech:gan",
       "type": "tech",
       "label": "gan",
+      "href": ""
+    },
+    {
+      "id": "idea:eeee9f875b89cb49",
+      "type": "idea",
+      "label": "MachinePulse 开源多模态决策模型 Karpo Decision 31B：登顶 Decision Index #1，单次前向中位延迟 94ms（0.8B-31B 全家桶）",
+      "href": "https://www.v2ex.com/t/1257834",
+      "source": "v2ex",
+      "score": 0,
+      "revenue": true,
+      "composite_score": 44
+    },
+    {
+      "id": "tech:gemma",
+      "type": "tech",
+      "label": "gemma",
       "href": ""
     },
     {
@@ -340,15 +320,15 @@
       "composite_score": 32
     },
     {
-      "id": "tech:diffusion",
-      "type": "tech",
-      "label": "diffusion",
-      "href": ""
-    },
-    {
       "id": "tech:stable diffusion",
       "type": "tech",
       "label": "stable diffusion",
+      "href": ""
+    },
+    {
+      "id": "tech:diffusion",
+      "type": "tech",
+      "label": "diffusion",
       "href": ""
     },
     {
@@ -398,20 +378,14 @@
       "href": ""
     },
     {
-      "id": "idea:9cf79fce8acf810a",
+      "id": "idea:453317e8403ce447",
       "type": "idea",
-      "label": "给 Claude Code / Codex / OpenCode 记一本本地时间账：别把你发呆和点确认的时间算成 AI 干活",
-      "href": "https://www.v2ex.com/t/1258230",
+      "label": "「挖坟」22 年发的关于 AI 的帖子 回头再看看？？",
+      "href": "https://www.v2ex.com/t/1258689",
       "source": "v2ex",
       "score": 0,
       "revenue": false,
       "composite_score": 22
-    },
-    {
-      "id": "tech:deepseek",
-      "type": "tech",
-      "label": "deepseek",
-      "href": ""
     },
     {
       "id": "idea:f46758829c8aa261",
@@ -442,14 +416,30 @@
       "href": ""
     },
     {
-      "id": "idea:4ae57e391f7e818f",
+      "id": "idea:6e2cf9566f08af51",
       "type": "idea",
-      "label": "装了一年 SKILLS，我用 SkillDeck 做了次体检",
-      "href": "https://www.v2ex.com/t/1257878",
+      "label": "openccode go 使用感觉，不知道有没有问题",
+      "href": "https://www.v2ex.com/t/1258544",
       "source": "v2ex",
       "score": 0,
       "revenue": false,
       "composite_score": 21
+    },
+    {
+      "id": "idea:9cf79fce8acf810a",
+      "type": "idea",
+      "label": "给 Claude Code / Codex / OpenCode 记一本本地时间账：别把你发呆和点确认的时间算成 AI 干活",
+      "href": "https://www.v2ex.com/t/1258230",
+      "source": "v2ex",
+      "score": 0,
+      "revenue": false,
+      "composite_score": 21
+    },
+    {
+      "id": "tech:deepseek",
+      "type": "tech",
+      "label": "deepseek",
+      "href": ""
     },
     {
       "id": "idea:b4d2b1de1cef9b93",
@@ -478,6 +468,26 @@
       "href": ""
     },
     {
+      "id": "idea:4ae57e391f7e818f",
+      "type": "idea",
+      "label": "装了一年 SKILLS，我用 SkillDeck 做了次体检",
+      "href": "https://www.v2ex.com/t/1257878",
+      "source": "v2ex",
+      "score": 0,
+      "revenue": false,
+      "composite_score": 20
+    },
+    {
+      "id": "idea:232e72901d139c1b",
+      "type": "idea",
+      "label": "黎曼猜想证明意味着…….",
+      "href": "https://www.v2ex.com/t/1258688",
+      "source": "v2ex",
+      "score": 0,
+      "revenue": false,
+      "composite_score": 19
+    },
+    {
       "id": "idea:f381c5ab494b9f41",
       "type": "idea",
       "label": "使用机场定制客户端的要注意(你的信息已打包上传)",
@@ -485,33 +495,13 @@
       "source": "v2ex",
       "score": 0,
       "revenue": false,
-      "composite_score": 20
+      "composite_score": 19
     },
     {
       "id": "tech:mcp",
       "type": "tech",
       "label": "mcp",
       "href": ""
-    },
-    {
-      "id": "idea:31aa44ea11de09fc",
-      "type": "idea",
-      "label": "微信小游戏，一个 bug 卡了我四天",
-      "href": "https://www.v2ex.com/t/1257389",
-      "source": "v2ex",
-      "score": 0,
-      "revenue": false,
-      "composite_score": 20
-    },
-    {
-      "id": "idea:ab232a41fe9e8a9d",
-      "type": "idea",
-      "label": "资深 AI 资讯观察者的一些思考",
-      "href": "https://www.v2ex.com/t/1258462",
-      "source": "v2ex",
-      "score": 0,
-      "revenue": false,
-      "composite_score": 19
     },
     {
       "id": "idea:05c4486b603f763d",
@@ -544,6 +534,16 @@
       "composite_score": 17
     },
     {
+      "id": "idea:61122fcd57d8a64c",
+      "type": "idea",
+      "label": "Show HN: Factorio Learning Environment – Agents Build Factories",
+      "href": "https://jackhopkins.github.io/factorio-learning-environment/",
+      "source": "hackernews",
+      "score": 749,
+      "revenue": false,
+      "composite_score": 16
+    },
+    {
       "id": "idea:a33e7f12a28149cf",
       "type": "idea",
       "label": "发现一个新的 DIY NAS 系统 能混用不同大小硬盘 有 ZFS 支持",
@@ -551,7 +551,7 @@
       "source": "v2ex",
       "score": 0,
       "revenue": false,
-      "composite_score": 17
+      "composite_score": 16
     },
     {
       "id": "idea:77eddb8997a575f9",
@@ -560,16 +560,6 @@
       "href": "https://www.v2ex.com/t/1257604",
       "source": "v2ex",
       "score": 0,
-      "revenue": false,
-      "composite_score": 17
-    },
-    {
-      "id": "idea:61122fcd57d8a64c",
-      "type": "idea",
-      "label": "Show HN: Factorio Learning Environment – Agents Build Factories",
-      "href": "https://jackhopkins.github.io/factorio-learning-environment/",
-      "source": "hackernews",
-      "score": 749,
       "revenue": false,
       "composite_score": 16
     },
@@ -589,7 +579,7 @@
       "label": "deepseek-ai/deepseek-harness",
       "href": "https://github.com/deepseek-ai/deepseek-harness",
       "source": "githubtrending",
-      "score": 284333,
+      "score": 284775,
       "revenue": false,
       "composite_score": 14
     },
@@ -750,16 +740,6 @@
       "composite_score": 12
     },
     {
-      "id": "idea:4ba0ed13a7de28ec",
-      "type": "idea",
-      "label": "国产软件真是蠢到家了",
-      "href": "https://www.v2ex.com/t/1257345",
-      "source": "v2ex",
-      "score": 0,
-      "revenue": false,
-      "composite_score": 12
-    },
-    {
       "id": "idea:85410ed6b5081321",
       "type": "idea",
       "label": "Show HN: InstantDB – A Modern Firebase",
@@ -812,6 +792,26 @@
       "composite_score": 10
     },
     {
+      "id": "idea:0bc43718d057f5d5",
+      "type": "idea",
+      "label": "DMV Practice Test 2026 myDMV",
+      "href": "https://apps.apple.com/us/app/dmv-practice-test-2026-mydmv/id1625234008?uo=2",
+      "source": "appstore",
+      "score": 0,
+      "revenue": false,
+      "composite_score": 10
+    },
+    {
+      "id": "idea:2c9a248e878ad50b",
+      "type": "idea",
+      "label": "Solvely - AI Study Tools",
+      "href": "https://apps.apple.com/us/app/solvely-ai-study-tools/id6446930976?uo=2",
+      "source": "appstore",
+      "score": 0,
+      "revenue": false,
+      "composite_score": 10
+    },
+    {
       "id": "idea:4a8306c47e1749ba",
       "type": "idea",
       "label": "YayTalk: Learn & Speak English",
@@ -822,20 +822,20 @@
       "composite_score": 10
     },
     {
-      "id": "idea:7a15193234cc2011",
+      "id": "idea:a7a62dbeff7c97f1",
       "type": "idea",
-      "label": "Google Calendar: Get Organized",
-      "href": "https://apps.apple.com/us/app/google-calendar-get-organized/id909319292?uo=2",
+      "label": "Yahoo Mail: Your Email & Inbox",
+      "href": "https://apps.apple.com/us/app/yahoo-mail-your-email-inbox/id577586159?uo=2",
       "source": "appstore",
       "score": 0,
       "revenue": false,
       "composite_score": 10
     },
     {
-      "id": "idea:a7a62dbeff7c97f1",
+      "id": "idea:7a15193234cc2011",
       "type": "idea",
-      "label": "Yahoo Mail: Your Email & Inbox",
-      "href": "https://apps.apple.com/us/app/yahoo-mail-your-email-inbox/id577586159?uo=2",
+      "label": "Google Calendar: Get Organized",
+      "href": "https://apps.apple.com/us/app/google-calendar-get-organized/id909319292?uo=2",
       "source": "appstore",
       "score": 0,
       "revenue": false,
@@ -857,7 +857,7 @@
       "label": "Significant-Gravitas/AutoGPT",
       "href": "https://github.com/Significant-Gravitas/AutoGPT",
       "source": "githubtrending",
-      "score": 188115,
+      "score": 188120,
       "revenue": false,
       "composite_score": 8
     },
@@ -1174,14 +1174,6 @@
       ]
     },
     {
-      "source": "idea:d9abc628660eb346",
-      "target": "tech:ppo",
-      "weight": 3,
-      "keywords": [
-        "ppo"
-      ]
-    },
-    {
       "source": "idea:102729d39305209b",
       "target": "tech:rag",
       "weight": 3,
@@ -1238,6 +1230,14 @@
       ]
     },
     {
+      "source": "idea:0c7afafcab1e838c",
+      "target": "tech:gan",
+      "weight": 3,
+      "keywords": [
+        "gan"
+      ]
+    },
+    {
       "source": "idea:eeee9f875b89cb49",
       "target": "tech:llm",
       "weight": 3,
@@ -1251,22 +1251,6 @@
       "weight": 3,
       "keywords": [
         "gemma"
-      ]
-    },
-    {
-      "source": "idea:e5775d1bde4d3d52",
-      "target": "tech:ppo",
-      "weight": 3,
-      "keywords": [
-        "ppo"
-      ]
-    },
-    {
-      "source": "idea:0c7afafcab1e838c",
-      "target": "tech:gan",
-      "weight": 3,
-      "keywords": [
-        "gan"
       ]
     },
     {
@@ -1287,14 +1271,6 @@
     },
     {
       "source": "idea:cdcfd3af4a13f2f9",
-      "target": "tech:diffusion",
-      "weight": 3,
-      "keywords": [
-        "diffusion"
-      ]
-    },
-    {
-      "source": "idea:cdcfd3af4a13f2f9",
       "target": "tech:stable diffusion",
       "weight": 3,
       "keywords": [
@@ -1307,6 +1283,14 @@
       "weight": 3,
       "keywords": [
         "ppo"
+      ]
+    },
+    {
+      "source": "idea:cdcfd3af4a13f2f9",
+      "target": "tech:diffusion",
+      "weight": 3,
+      "keywords": [
+        "diffusion"
       ]
     },
     {
@@ -1350,11 +1334,11 @@
       ]
     },
     {
-      "source": "idea:9cf79fce8acf810a",
-      "target": "tech:deepseek",
+      "source": "idea:453317e8403ce447",
+      "target": "tech:gpt",
       "weight": 3,
       "keywords": [
-        "deepseek"
+        "gpt"
       ]
     },
     {
@@ -1375,14 +1359,6 @@
     },
     {
       "source": "idea:f46758829c8aa261",
-      "target": "tech:phi",
-      "weight": 3,
-      "keywords": [
-        "phi"
-      ]
-    },
-    {
-      "source": "idea:f46758829c8aa261",
       "target": "tech:gpt",
       "weight": 3,
       "keywords": [
@@ -1390,11 +1366,27 @@
       ]
     },
     {
-      "source": "idea:4ae57e391f7e818f",
-      "target": "tech:llm",
+      "source": "idea:f46758829c8aa261",
+      "target": "tech:phi",
       "weight": 3,
       "keywords": [
-        "llm"
+        "phi"
+      ]
+    },
+    {
+      "source": "idea:6e2cf9566f08af51",
+      "target": "tech:gpt",
+      "weight": 3,
+      "keywords": [
+        "gpt"
+      ]
+    },
+    {
+      "source": "idea:9cf79fce8acf810a",
+      "target": "tech:deepseek",
+      "weight": 3,
+      "keywords": [
+        "deepseek"
       ]
     },
     {
@@ -1419,14 +1411,6 @@
       "weight": 3,
       "keywords": [
         "ppo"
-      ]
-    },
-    {
-      "source": "idea:6d63ed9551677756",
-      "target": "tech:rag",
-      "weight": 3,
-      "keywords": [
-        "rag"
       ]
     },
     {
@@ -1439,10 +1423,34 @@
     },
     {
       "source": "idea:6d63ed9551677756",
+      "target": "tech:rag",
+      "weight": 3,
+      "keywords": [
+        "rag"
+      ]
+    },
+    {
+      "source": "idea:6d63ed9551677756",
       "target": "tech:ppo",
       "weight": 3,
       "keywords": [
         "ppo"
+      ]
+    },
+    {
+      "source": "idea:4ae57e391f7e818f",
+      "target": "tech:llm",
+      "weight": 3,
+      "keywords": [
+        "llm"
+      ]
+    },
+    {
+      "source": "idea:232e72901d139c1b",
+      "target": "tech:llm",
+      "weight": 3,
+      "keywords": [
+        "llm"
       ]
     },
     {
@@ -1451,22 +1459,6 @@
       "weight": 3,
       "keywords": [
         "mcp"
-      ]
-    },
-    {
-      "source": "idea:31aa44ea11de09fc",
-      "target": "tech:gpt",
-      "weight": 3,
-      "keywords": [
-        "gpt"
-      ]
-    },
-    {
-      "source": "idea:ab232a41fe9e8a9d",
-      "target": "tech:deepseek",
-      "weight": 3,
-      "keywords": [
-        "deepseek"
       ]
     },
     {
@@ -1502,22 +1494,6 @@
       ]
     },
     {
-      "source": "idea:a33e7f12a28149cf",
-      "target": "tech:ppo",
-      "weight": 3,
-      "keywords": [
-        "ppo"
-      ]
-    },
-    {
-      "source": "idea:77eddb8997a575f9",
-      "target": "tech:gpt",
-      "weight": 3,
-      "keywords": [
-        "gpt"
-      ]
-    },
-    {
       "source": "idea:61122fcd57d8a64c",
       "target": "tech:llm",
       "weight": 3,
@@ -1531,6 +1507,22 @@
       "weight": 3,
       "keywords": [
         "gan"
+      ]
+    },
+    {
+      "source": "idea:a33e7f12a28149cf",
+      "target": "tech:ppo",
+      "weight": 3,
+      "keywords": [
+        "ppo"
+      ]
+    },
+    {
+      "source": "idea:77eddb8997a575f9",
+      "target": "tech:gpt",
+      "weight": 3,
+      "keywords": [
+        "gpt"
       ]
     },
     {
@@ -1583,14 +1575,6 @@
     },
     {
       "source": "idea:a477e1e4a1fbe394",
-      "target": "tech:llm",
-      "weight": 3,
-      "keywords": [
-        "llm"
-      ]
-    },
-    {
-      "source": "idea:a477e1e4a1fbe394",
       "target": "tech:transformer",
       "weight": 3,
       "keywords": [
@@ -1598,7 +1582,7 @@
       ]
     },
     {
-      "source": "idea:f1b070b7d1be246d",
+      "source": "idea:a477e1e4a1fbe394",
       "target": "tech:llm",
       "weight": 3,
       "keywords": [
@@ -1611,6 +1595,14 @@
       "weight": 3,
       "keywords": [
         "sam"
+      ]
+    },
+    {
+      "source": "idea:f1b070b7d1be246d",
+      "target": "tech:llm",
+      "weight": 3,
+      "keywords": [
+        "llm"
       ]
     },
     {
@@ -1679,18 +1671,18 @@
     },
     {
       "source": "idea:dea7ab8418b008a9",
-      "target": "tech:gan",
-      "weight": 3,
-      "keywords": [
-        "gan"
-      ]
-    },
-    {
-      "source": "idea:dea7ab8418b008a9",
       "target": "tech:phi",
       "weight": 3,
       "keywords": [
         "phi"
+      ]
+    },
+    {
+      "source": "idea:dea7ab8418b008a9",
+      "target": "tech:gan",
+      "weight": 3,
+      "keywords": [
+        "gan"
       ]
     },
     {
@@ -1726,14 +1718,6 @@
       ]
     },
     {
-      "source": "idea:4ba0ed13a7de28ec",
-      "target": "tech:ppo",
-      "weight": 3,
-      "keywords": [
-        "ppo"
-      ]
-    },
-    {
       "source": "idea:85410ed6b5081321",
       "target": "tech:dpo",
       "weight": 3,
@@ -1751,18 +1735,18 @@
     },
     {
       "source": "idea:3b639f9018730a3b",
-      "target": "tech:llm",
-      "weight": 3,
-      "keywords": [
-        "llm"
-      ]
-    },
-    {
-      "source": "idea:3b639f9018730a3b",
       "target": "tech:clip",
       "weight": 3,
       "keywords": [
         "clip"
+      ]
+    },
+    {
+      "source": "idea:3b639f9018730a3b",
+      "target": "tech:llm",
+      "weight": 3,
+      "keywords": [
+        "llm"
       ]
     },
     {
@@ -1775,22 +1759,30 @@
     },
     {
       "source": "idea:96c10d926cafb6be",
-      "target": "tech:ppo",
+      "target": "tech:sam",
       "weight": 3,
       "keywords": [
-        "ppo"
+        "sam"
       ]
     },
     {
       "source": "idea:96c10d926cafb6be",
-      "target": "tech:sam",
+      "target": "tech:ppo",
       "weight": 3,
       "keywords": [
-        "sam"
+        "ppo"
       ]
     },
     {
-      "source": "idea:4a8306c47e1749ba",
+      "source": "idea:0bc43718d057f5d5",
+      "target": "tech:ppo",
+      "weight": 3,
+      "keywords": [
+        "ppo"
+      ]
+    },
+    {
+      "source": "idea:2c9a248e878ad50b",
       "target": "tech:ppo",
       "weight": 3,
       "keywords": [
@@ -1806,27 +1798,11 @@
       ]
     },
     {
-      "source": "idea:7a15193234cc2011",
-      "target": "tech:gan",
+      "source": "idea:4a8306c47e1749ba",
+      "target": "tech:ppo",
       "weight": 3,
       "keywords": [
-        "gan"
-      ]
-    },
-    {
-      "source": "idea:7a15193234cc2011",
-      "target": "tech:sam",
-      "weight": 3,
-      "keywords": [
-        "sam"
-      ]
-    },
-    {
-      "source": "idea:a7a62dbeff7c97f1",
-      "target": "tech:gan",
-      "weight": 3,
-      "keywords": [
-        "gan"
+        "ppo"
       ]
     },
     {
@@ -1835,6 +1811,30 @@
       "weight": 3,
       "keywords": [
         "phi"
+      ]
+    },
+    {
+      "source": "idea:a7a62dbeff7c97f1",
+      "target": "tech:gan",
+      "weight": 3,
+      "keywords": [
+        "gan"
+      ]
+    },
+    {
+      "source": "idea:7a15193234cc2011",
+      "target": "tech:sam",
+      "weight": 3,
+      "keywords": [
+        "sam"
+      ]
+    },
+    {
+      "source": "idea:7a15193234cc2011",
+      "target": "tech:gan",
+      "weight": 3,
+      "keywords": [
+        "gan"
       ]
     },
     {
@@ -1879,14 +1879,6 @@
     },
     {
       "source": "idea:213b5c19804f1abc",
-      "target": "tech:gemma",
-      "weight": 3,
-      "keywords": [
-        "gemma"
-      ]
-    },
-    {
-      "source": "idea:213b5c19804f1abc",
       "target": "tech:kv cache",
       "weight": 3,
       "keywords": [
@@ -1894,11 +1886,11 @@
       ]
     },
     {
-      "source": "idea:1c6457a9f263854d",
-      "target": "tech:gan",
+      "source": "idea:213b5c19804f1abc",
+      "target": "tech:gemma",
       "weight": 3,
       "keywords": [
-        "gan"
+        "gemma"
       ]
     },
     {
@@ -1907,6 +1899,14 @@
       "weight": 3,
       "keywords": [
         "ppo"
+      ]
+    },
+    {
+      "source": "idea:1c6457a9f263854d",
+      "target": "tech:gan",
+      "weight": 3,
+      "keywords": [
+        "gan"
       ]
     },
     {
@@ -1943,6 +1943,14 @@
     },
     {
       "source": "idea:7faabca066561da7",
+      "target": "tech:sam",
+      "weight": 3,
+      "keywords": [
+        "sam"
+      ]
+    },
+    {
+      "source": "idea:7faabca066561da7",
       "target": "tech:ppo",
       "weight": 3,
       "keywords": [
@@ -1950,7 +1958,7 @@
       ]
     },
     {
-      "source": "idea:7faabca066561da7",
+      "source": "idea:8a2d4b45529a30ba",
       "target": "tech:sam",
       "weight": 3,
       "keywords": [
@@ -1966,7 +1974,7 @@
       ]
     },
     {
-      "source": "idea:8a2d4b45529a30ba",
+      "source": "idea:1278b986f8d334be",
       "target": "tech:sam",
       "weight": 3,
       "keywords": [
@@ -1987,14 +1995,6 @@
       "weight": 3,
       "keywords": [
         "rag"
-      ]
-    },
-    {
-      "source": "idea:1278b986f8d334be",
-      "target": "tech:sam",
-      "weight": 3,
-      "keywords": [
-        "sam"
       ]
     },
     {
@@ -2055,6 +2055,14 @@
     },
     {
       "source": "idea:a1c94035657ab563",
+      "target": "tech:gpt",
+      "weight": 3,
+      "keywords": [
+        "gpt"
+      ]
+    },
+    {
+      "source": "idea:a1c94035657ab563",
       "target": "tech:ppo",
       "weight": 3,
       "keywords": [
@@ -2062,11 +2070,11 @@
       ]
     },
     {
-      "source": "idea:a1c94035657ab563",
-      "target": "tech:gpt",
+      "source": "idea:598c54b4d65cac89",
+      "target": "tech:sam",
       "weight": 3,
       "keywords": [
-        "gpt"
+        "sam"
       ]
     },
     {
@@ -2078,7 +2086,7 @@
       ]
     },
     {
-      "source": "idea:598c54b4d65cac89",
+      "source": "idea:06903784f9061cee",
       "target": "tech:sam",
       "weight": 3,
       "keywords": [
@@ -2094,7 +2102,7 @@
       ]
     },
     {
-      "source": "idea:06903784f9061cee",
+      "source": "idea:0851ba17f656a459",
       "target": "tech:sam",
       "weight": 3,
       "keywords": [
@@ -2110,7 +2118,7 @@
       ]
     },
     {
-      "source": "idea:0851ba17f656a459",
+      "source": "idea:1a26b6d6de5e9ec3",
       "target": "tech:sam",
       "weight": 3,
       "keywords": [
@@ -2131,14 +2139,6 @@
       "weight": 3,
       "keywords": [
         "gan"
-      ]
-    },
-    {
-      "source": "idea:1a26b6d6de5e9ec3",
-      "target": "tech:sam",
-      "weight": 3,
-      "keywords": [
-        "sam"
       ]
     },
     {
@@ -2159,6 +2159,14 @@
     },
     {
       "source": "idea:5ca1e40406eddc40",
+      "target": "tech:sam",
+      "weight": 3,
+      "keywords": [
+        "sam"
+      ]
+    },
+    {
+      "source": "idea:5ca1e40406eddc40",
       "target": "tech:gpt",
       "weight": 3,
       "keywords": [
@@ -2166,7 +2174,7 @@
       ]
     },
     {
-      "source": "idea:5ca1e40406eddc40",
+      "source": "idea:34ab374aaa59a4d9",
       "target": "tech:sam",
       "weight": 3,
       "keywords": [
@@ -2182,27 +2190,11 @@
       ]
     },
     {
-      "source": "idea:34ab374aaa59a4d9",
-      "target": "tech:sam",
-      "weight": 3,
-      "keywords": [
-        "sam"
-      ]
-    },
-    {
       "source": "idea:9f9cf1fee52eb0ac",
       "target": "tech:rag",
       "weight": 3,
       "keywords": [
         "rag"
-      ]
-    },
-    {
-      "source": "idea:5224a0c7e8628b49",
-      "target": "tech:gan",
-      "weight": 3,
-      "keywords": [
-        "gan"
       ]
     },
     {
@@ -2214,7 +2206,7 @@
       ]
     },
     {
-      "source": "idea:7d374a9da2b07a0c",
+      "source": "idea:5224a0c7e8628b49",
       "target": "tech:gan",
       "weight": 3,
       "keywords": [
@@ -2227,6 +2219,14 @@
       "weight": 3,
       "keywords": [
         "sam"
+      ]
+    },
+    {
+      "source": "idea:7d374a9da2b07a0c",
+      "target": "tech:gan",
+      "weight": 3,
+      "keywords": [
+        "gan"
       ]
     },
     {
@@ -2271,19 +2271,11 @@
     },
     {
       "source": "repo:Shubhamsaboo/awesome-llm-apps",
-      "target": "idea:4ae57e391f7e818f",
-      "weight": 2,
-      "keywords": [
-        "llm"
-      ]
-    },
-    {
-      "source": "repo:Shubhamsaboo/awesome-llm-apps",
       "target": "idea:b4d2b1de1cef9b93",
       "weight": 2,
       "keywords": [
-        "rag",
-        "llm"
+        "llm",
+        "rag"
       ]
     },
     {
@@ -2292,6 +2284,22 @@
       "weight": 2,
       "keywords": [
         "rag"
+      ]
+    },
+    {
+      "source": "repo:Shubhamsaboo/awesome-llm-apps",
+      "target": "idea:4ae57e391f7e818f",
+      "weight": 2,
+      "keywords": [
+        "llm"
+      ]
+    },
+    {
+      "source": "repo:Shubhamsaboo/awesome-llm-apps",
+      "target": "idea:232e72901d139c1b",
+      "weight": 2,
+      "keywords": [
+        "llm"
       ]
     },
     {
@@ -2403,8 +2411,8 @@
       "target": "idea:1278b986f8d334be",
       "weight": 2,
       "keywords": [
-        "rag",
-        "llm"
+        "llm",
+        "rag"
       ]
     },
     {
@@ -2428,8 +2436,8 @@
       "target": "idea:9c9b08343abad819",
       "weight": 2,
       "keywords": [
-        "rag",
-        "llm"
+        "llm",
+        "rag"
       ]
     },
     {
@@ -2467,7 +2475,7 @@
   ],
   "stats": {
     "nodes": 128,
-    "edges": 167,
+    "edges": 168,
     "by_type": {
       "paper": 15,
       "tech": 28,
